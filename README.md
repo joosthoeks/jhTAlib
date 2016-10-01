@@ -1,0 +1,2 @@
+# jhTAlib
+Technical Analysis Library
