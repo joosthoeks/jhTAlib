@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='jhTAlib',
-    version='20161001',
+    version='20161012.0',
     description='Technical Analysis Library',
     keywords='Technical Analysis Library',
     url='https://github.com/joosthoeks/jhTAlib',
@@ -24,7 +24,7 @@ setup(
         'jhtalib.volume_indicators',
     ],
     install_requires=[
-        'pandas',
+#        'pandas',
     ],
     zip_safe=False
 )

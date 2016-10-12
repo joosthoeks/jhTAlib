@@ -1,4 +1,2 @@
-#from .atr import *
-#from .natr import *
-#from .trange import *
+from .volatility_indicators import *
 
