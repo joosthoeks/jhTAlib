@@ -1,7 +1,18 @@
 def AD(df):
     """
     Chaikin A/D Line
+    source: http://www.fmlabs.com/reference/default.htm?url=AccumDist.htm
     """
+    ad_list = []
+    i = 0
+    while i < len(df['Close']):
+        ad = 0
+        if i > 0:
+            clv = ((df['Close'][i] - df['Low'][i]) - (df['High'][i] - df['Close'][i])) / (df['High'][i] - df['Low'][i])
+            ad = ad_list[i - 1] + clv * df['Volume'][i]
+        ad_list.append(ad)
+        i += 1
+    return ad_list
 
 def ADOSC(df):
     """

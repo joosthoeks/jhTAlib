@@ -12,6 +12,17 @@ def MAX(df, n, price='Close'):
     """
     Highest value over a specified period
     """
+    max_list = []
+    i = 0
+    while i < len(df[price]):
+        start = i + 1 - n
+        end = i + 1
+        MAX = 0
+        if start >= 0:
+            MAX = max(df[price][start:end])
+        max_list.append(MAX)
+        i += 1
+    return max_list
 
 def MAXINDEX(df, n, price='Close'):
     """
@@ -22,6 +33,17 @@ def MIN(df, n, price='Close'):
     """
     Lowest value over a specified period
     """
+    min_list = []
+    i = 0
+    while i < len(df[price]):
+        start = i + 1 - n
+        end = i + 1
+        MIN = 0
+        if start >= 0:
+            MIN = min(df[price][start:end])
+        min_list.append(MIN)
+        i += 1
+    return min_list
 
 def MININDEX(df, n, price='Close'):
     """
@@ -52,4 +74,13 @@ def SUM(df, n, price='Close'):
     """
     Summation
     """
+    sum_list = []
+    i = 0
+    while i < len(df[price]):
+        start = i + 1 - n
+        end = i + 1
+        SUM = sum(df[price][start:end])
+        sum_list.append(SUM)
+        i += 1
+    return sum_list
 
