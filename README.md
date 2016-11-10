@@ -40,7 +40,7 @@ TANH | Vector Trigonometric Tanh |
 **momentum_indicators** | |
 ADX | Average Directional Movement Index |
 ADXR | Average Directional Movement Index Rating |
-APO | Absolute Price Oscillator |
+APO | Absolute Price Oscillator | DONE
 AROON | Aroon |
 AROONOSC | Aroon Oscillator |
 BOP | Balance Of Power |
@@ -67,7 +67,7 @@ STOCHF | Stochastic Fast |
 STOCHRSI | Stochastic Relative Strength Index |
 TRIX | 1-day Rate-Of-Change (ROC) of a Triple Smooth EMA |
 ULTOSC | Ultimate Oscillator |
-WILLR | Williams' %R |
+WILLR | Williams' %R | DONE
 **overlap_studies** | |
 BBANDS | Bollinger Bands |
 DEMA | Double Exponential Moving Average |
@@ -77,14 +77,14 @@ KAMA | Kaufman Adaptive Moving Average |
 MA | Moving Average |
 MAMA | MESA Adaptive Moving Average |
 MAVP | Moving Average with Variable Period |
-MIDPOINT | MidPoint over period |
-MIDPRICE | MidPoint over period |
+MIDPOINT | MidPoint over period | DONE
+MIDPRICE | MidPoint Price over period | DONE
 SAR | Parabolic SAR |
 SAREXT | Parabolic SAR - Extended |
 SMA | Simple Moving Average | DONE
 T3 | Triple Exponential Moving Average (T3) |
 TEMA | Triple Exponential Moving Average |
-TRIMA | Triangular Moving Average |
+TRIMA | Triangular Moving Average | DONE
 WMA | Weighted Moving Average |
 **pattern_recognition** | |
 CDL2CROWS | Two Crows |

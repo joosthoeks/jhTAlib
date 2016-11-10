@@ -52,8 +52,8 @@ def main():
         }
     df_pandas = pd.Series(df_numpy)
 
-    indicator = ta.MAX(df_numpy['Close'], 3)
-    indicator2 = jhta.MAX(df, 3)
+    indicator = ta.APO(df_numpy['Close'], 12, 26)
+    indicator2 = jhta.APO(df, 12, 26)
 
     i = 0
     while i < len(data_list):

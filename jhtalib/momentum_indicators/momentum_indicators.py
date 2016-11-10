@@ -8,10 +8,25 @@ def ADXR(df, n):
     Average Directional Movement Index Rating
     """
 
-def APO(df, price='Close'):
+def APO(df, n_fast, n_slow, price='Close'):
     """
     Absolute Price Oscillator
+    http://www.fmlabs.com/reference/default.htm?url=PriceOscillator.htm
     """
+    apo_list = []
+    i = 0
+    while i < len(df[price]):
+        start_fast = i + 1 - n_fast
+        end = i + 1
+        sma_fast = sum(df[price][start_fast:end]) / n_fast
+        start_slow = i + 1 - n_slow
+        end = i + 1
+        sma_slow = sum(df[price][start_slow:end]) / n_slow
+        apo = sma_slow - sma_fast
+#        apo *= -1
+        apo_list.append(apo)
+        i += 1
+    return apo_list
 
 def AROON(df, n):
     """
@@ -151,8 +166,21 @@ def ULTOSC(df):
     Ultimate Oscillator
     """
 
-def WILLR(df,n):
+def WILLR(df, n):
     """
     Williams' %R
+    http://www.fmlabs.com/reference/default.htm?url=WilliamsR.htm
     """
-    
+    willr_list = []
+    i = 0
+    while i < len(df['Close']):
+        start = i + 1 - n
+        end = i + 1
+        willr = 0
+        if start >= 0:
+            willr = (max(df['High'][start:end]) - df['Close'][i]) / (max(df['High'][start:end]) - min(df['Low'][start:end])) * 100
+#        willr *= -1
+        willr_list.append(willr)
+        i += 1
+    return willr_list
+
