@@ -11,7 +11,7 @@ def ADXR(df, n):
 def APO(df, n_fast, n_slow, price='Close'):
     """
     Absolute Price Oscillator
-    http://www.fmlabs.com/reference/default.htm?url=PriceOscillator.htm
+    source: http://www.fmlabs.com/reference/default.htm?url=PriceOscillator.htm
     """
     apo_list = []
     i = 0
@@ -169,7 +169,7 @@ def ULTOSC(df):
 def WILLR(df, n):
     """
     Williams' %R
-    http://www.fmlabs.com/reference/default.htm?url=WilliamsR.htm
+    source: http://www.fmlabs.com/reference/default.htm?url=WilliamsR.htm
     """
     willr_list = []
     i = 0

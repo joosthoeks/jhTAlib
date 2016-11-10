@@ -41,7 +41,7 @@ def MAVP(df, price='Close'):
 def MIDPOINT(df, n, price='Close'):
     """
     MidPoint over period
-    http://www.tadoc.org/indicator/MIDPOINT.htm
+    source: http://www.tadoc.org/indicator/MIDPOINT.htm
     """
     midpoint_list = []
     i = 0
@@ -58,7 +58,7 @@ def MIDPOINT(df, n, price='Close'):
 def MIDPRICE(df, n):
     """
     Midpoint Price over period
-    http://www.tadoc.org/indicator/MIDPRICE.htm
+    source: http://www.tadoc.org/indicator/MIDPRICE.htm
     """
     midprice_list = []
     i = 0
@@ -110,7 +110,7 @@ def TEMA(df, n, price='Close'):
 def TRIMA(df, n, price='Close'):
     """
     Triangular Moving Average
-    http://www.fmlabs.com/reference/default.htm?url=TriangularMA.htm
+    source: http://www.fmlabs.com/reference/default.htm?url=TriangularMA.htm
     """
     tma_list = []
     sma_list = []
