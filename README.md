@@ -1,6 +1,19 @@
 # jhTAlib
 Technical Analysis Library
 
+## Install
+```
+$ pip install jhtalib
+```
+
+## Test
+```
+$ cd test/
+```
+```
+$ python test.py
+```
+
 Indicator | Name | TODO
 --- | --- | ---
 **cycle_indicators** | |
