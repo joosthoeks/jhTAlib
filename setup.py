@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='jhTAlib',
-    version='20170124.0',
+    version='20170124.1',
     description='Technical Analysis Library',
     keywords='Technical Analysis Library',
     url='https://github.com/joosthoeks/jhTAlib',
