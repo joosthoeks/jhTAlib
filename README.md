@@ -5,6 +5,12 @@ Technical Analysis Library
 ```
 $ pip install jhtalib
 ```
+or
+```
+$ git clone https://github.com/joosthoeks/jhTAlib.git
+$ cd jhTAlib
+$ pip install -e .
+```
 
 ## Test
 ```
