@@ -42,13 +42,14 @@ def main():
         'Close': Close_list,
         'Volume': Volume_list
         }
+#    df = jhta.HEIKIN_ASHI(df)
     df_numpy = {
-        'datetime': np.array(datetime_list),
-        'Open': np.array(Open_list, dtype='float'),
-        'High': np.array(High_list, dtype='float'),
-        'Low': np.array(Low_list, dtype='float'),
-        'Close': np.array(Close_list, dtype='float'),
-        'Volume': np.array(Volume_list, dtype='int')
+        'datetime': np.array(df['datetime']),
+        'Open': np.array(df['Open'], dtype='float'),
+        'High': np.array(df['High'], dtype='float'),
+        'Low': np.array(df['Low'], dtype='float'),
+        'Close': np.array(df['Close'], dtype='float'),
+        'Volume': np.array(df['Volume'], dtype='int')
         }
     df_pandas = pd.Series(df_numpy)
 

@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='jhTAlib',
-    version='20161110.1',
+    version='20170124.0',
     description='Technical Analysis Library',
     keywords='Technical Analysis Library',
     url='https://github.com/joosthoeks/jhTAlib',
@@ -13,6 +13,7 @@ setup(
     packages=[
         'jhtalib',
         'jhtalib.cycle_indicators',
+        'jhtalib.data',
         'jhtalib.math_operators',
         'jhtalib.math_transform',
         'jhtalib.momentum_indicators',

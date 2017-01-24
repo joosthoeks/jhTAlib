@@ -22,6 +22,8 @@ HT_DCPHASE | Hilbert Transform - Dominant Cycle Phase |
 HT_PHASOR | Hilbert Transform - Phasor Components |
 HT_SINE | Hilbert Transform - SineWave |
 HT_TRENDMODE | Hilbert Transform - Trend vs Cycle Mode |
+**data** | |
+HEIKIN_ASHI | Heikin-Ashi Bars | DONE
 **math_operators** | |
 ADD | Vector Arithmetic Add |
 DIV | Vector Arithmetic Div |
