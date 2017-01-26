@@ -1,6 +1,38 @@
-def HEIKIN_ASHI(df):
+import csv
+
+
+def CSV2DF(csv_file_path):
     """
-    HEIKIN-ASHI Bars
+    CSV file 2 DataFeed
+    """
+    datetime_list = []
+    Open_list = []
+    High_list = []
+    Low_list = []
+    Close_list = []
+    Volume_list = []
+    with open(csv_file_path) as csv_file:
+        reader = csv.DictReader(csv_file)
+        for row in reader:
+            datetime_list.append(row['datetime'])
+            Open_list.append(float(row['Open']))
+            High_list.append(float(row['High']))
+            Low_list.append(float(row['Low']))
+            Close_list.append(float(row['Close']))
+            Volume_list.append(int(row['Volume']))
+
+    return {
+        'datetime': datetime_list,
+        'Open': Open_list,
+        'High': High_list,
+        'Low': Low_list,
+        'Close': Close_list,
+        'Volume': Volume_list
+        }
+
+def DF2HEIKIN_ASHI(df):
+    """
+    DataFeed 2 Heikin-Ashi DataFeed
     """
     ha_Open_list = []
     ha_High_list = []

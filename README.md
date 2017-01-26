@@ -29,7 +29,8 @@ HT_PHASOR | Hilbert Transform - Phasor Components |
 HT_SINE | Hilbert Transform - SineWave |
 HT_TRENDMODE | Hilbert Transform - Trend vs Cycle Mode |
 **data** | |
-HEIKIN_ASHI | Heikin-Ashi Bars | DONE
+CSV2DF | CSV file 2 DataFeed | DONE
+DF2HEIKIN_ASHI | DataFeed 2 Heikin-Ashi DataFeed | DONE
 **math_operators** | |
 ADD | Vector Arithmetic Add |
 DIV | Vector Arithmetic Div |
