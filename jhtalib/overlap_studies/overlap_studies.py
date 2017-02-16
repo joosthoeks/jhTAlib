@@ -46,10 +46,11 @@ def MIDPOINT(df, n, price='Close'):
     midpoint_list = []
     i = 0
     while i < len(df[price]):
-        start = i + 1 - n
-        end = i + 1
-        midpoint = 0
-        if start >= 0:
+        if i + 1 < n:
+            midpoint = float('NaN')
+        else:
+            start = i + 1 - n
+            end = i + 1
             midpoint = (max(df[price][start:end]) + min(df[price][start:end])) / 2
         midpoint_list.append(midpoint)
         i += 1
@@ -63,10 +64,11 @@ def MIDPRICE(df, n):
     midprice_list = []
     i = 0
     while i < len(df['Close']):
-        start = i + 1 - n
-        end = i + 1
-        midprice = 0
-        if start >= 0:
+        if i + 1 < n:
+            midprice = float('NaN')
+        else:
+            start = i + 1 - n
+            end = i + 1
             midprice = (max(df['High'][start:end]) + min(df['Low'][start:end])) / 2
         midprice_list.append(midprice)
         i += 1
@@ -90,9 +92,12 @@ def SMA(df, n, price='Close'):
     sma_list = []
     i = 0
     while i < len(df[price]):
-        start = i + 1 - n
-        end = i + 1
-        sma = sum(df[price][start:end]) / n
+        if i + 1 < n:
+            sma = float('NaN')
+        else:
+            start = i + 1 - n
+            end = i + 1
+            sma = sum(df[price][start:end]) / n
         sma_list.append(sma)
         i += 1
     return sma_list
@@ -125,7 +130,6 @@ def TRIMA(df, n, price='Close'):
             n_tma = n / 2
             start = i + 1 - n_tma
             end = i + 1
-            tma = sum(sma_list[start:end]) / n_tma
         else:
             n_sma = (n + 1) / 2
             start = i + 1 - n_sma
@@ -135,6 +139,9 @@ def TRIMA(df, n, price='Close'):
             n_tma = (n + 1) / 2
             start = i + 1 - n_tma
             end = i + 1
+        if i + 1 < n:
+            tma = float('NaN')
+        else:
             tma = sum(sma_list[start:end]) / n_tma
         tma_list.append(tma)
         i += 1

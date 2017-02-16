@@ -16,14 +16,17 @@ def APO(df, n_fast, n_slow, price='Close'):
     apo_list = []
     i = 0
     while i < len(df[price]):
-        start_fast = i + 1 - n_fast
-        end = i + 1
-        sma_fast = sum(df[price][start_fast:end]) / n_fast
-        start_slow = i + 1 - n_slow
-        end = i + 1
-        sma_slow = sum(df[price][start_slow:end]) / n_slow
-        apo = sma_slow - sma_fast
-#        apo *= -1
+        if i + 1 < n_slow:
+            apo = float('NaN')
+        else:
+            start_fast = i + 1 - n_fast
+            end = i + 1
+            sma_fast = sum(df[price][start_fast:end]) / n_fast
+            start_slow = i + 1 - n_slow
+            end = i + 1
+            sma_slow = sum(df[price][start_slow:end]) / n_slow
+            apo = sma_slow - sma_fast
+#            apo *= -1
         apo_list.append(apo)
         i += 1
     return apo_list
@@ -96,7 +99,10 @@ def MOM(df, n, price='Close'):
     mom_list = []
     i = 0
     while i < len(df[price]):
-        mom = df[price][i] - df[price][i - n]
+        if i + 1 < n:
+            mom = float('NaN')
+        else:
+            mom = df[price][i] - df[price][i - n]
         mom_list.append(mom)
         i += 1
     return mom_list
@@ -174,12 +180,13 @@ def WILLR(df, n):
     willr_list = []
     i = 0
     while i < len(df['Close']):
-        start = i + 1 - n
-        end = i + 1
-        willr = 0
-        if start >= 0:
+        if i + 1 < n:
+            willr = float('NaN')
+        else:
+            start = i + 1 - n
+            end = i + 1
             willr = (max(df['High'][start:end]) - df['Close'][i]) / (max(df['High'][start:end]) - min(df['Low'][start:end])) * 100
-#        willr *= -1
+#            willr *= -1
         willr_list.append(willr)
         i += 1
     return willr_list

@@ -20,7 +20,6 @@ def CSV2DF(csv_file_path):
             Low_list.append(float(row['Low']))
             Close_list.append(float(row['Close']))
             Volume_list.append(int(row['Volume']))
-
     return {
         'datetime': datetime_list,
         'Open': Open_list,

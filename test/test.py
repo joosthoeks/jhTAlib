@@ -20,8 +20,8 @@ def main():
         }
     df_pandas = pd.Series(df_numpy)
 
-    indicator = ta.APO(df_numpy['Close'], 12, 26)
-    indicator2 = jhta.APO(df, 12, 26)
+    indicator = ta.SMA(df_numpy['Close'], 10)
+    indicator2 = jhta.SMA(df, 10)
 
     i = 0
     while i < len(df['Close']):

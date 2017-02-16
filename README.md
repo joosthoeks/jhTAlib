@@ -3,13 +3,13 @@ Technical Analysis Library
 
 ## Install
 ```
-$ pip install jhtalib
+$ sudo pip install jhtalib
 ```
 or
 ```
 $ git clone https://github.com/joosthoeks/jhTAlib.git
 $ cd jhTAlib
-$ pip install -e .
+$ sudo pip install -e .
 ```
 
 ## Test

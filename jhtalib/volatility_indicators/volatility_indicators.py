@@ -1,4 +1,4 @@
-def ATR(df, n=14):
+def ATR(df, n):
     """
     Average True Range
     source: http://www.fmlabs.com/reference/default.htm?url=ATR.htm
@@ -15,12 +15,15 @@ def ATR(df, n=14):
             true_low = df['Close'][i - 1]
         tr = true_high - true_low
         tr_list.append(tr)
-        atr = ((tr_list[i - 1] * (n - 1)) + tr_list[i]) / n
+        if i + 1 < n:
+            atr = float('NaN')
+        else:
+            atr = ((tr_list[i - 1] * (n - 1)) + tr_list[i]) / n
         atr_list.append(atr)
         i += 1
     return atr_list
 
-def NATR(df, n=14):
+def NATR(df, n):
     """
     Normalized Average True Range
     """
