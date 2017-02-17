@@ -15,10 +15,11 @@ def MAX(df, n, price='Close'):
     max_list = []
     i = 0
     while i < len(df[price]):
-        start = i + 1 - n
-        end = i + 1
-        MAX = 0
-        if start >= 0:
+        if i + 1 < n:
+            MAX = float('NaN')
+        else:
+            start = i + 1 - n
+            end = i + 1
             MAX = max(df[price][start:end])
         max_list.append(MAX)
         i += 1
@@ -36,10 +37,11 @@ def MIN(df, n, price='Close'):
     min_list = []
     i = 0
     while i < len(df[price]):
-        start = i + 1 - n
-        end = i + 1
-        MIN = 0
-        if start >= 0:
+        if i + 1 < n:
+            MIN = float('NaN')
+        else:
+            start = i + 1 - n
+            end = i + 1
             MIN = min(df[price][start:end])
         min_list.append(MIN)
         i += 1
@@ -77,9 +79,12 @@ def SUM(df, n, price='Close'):
     sum_list = []
     i = 0
     while i < len(df[price]):
-        start = i + 1 - n
-        end = i + 1
-        SUM = sum(df[price][start:end])
+        if i + 1 < n:
+            SUM = float('NaN')
+        else:
+            start = i + 1 - n
+            end = i + 1
+            SUM = sum(df[price][start:end])
         sum_list.append(SUM)
         i += 1
     return sum_list
