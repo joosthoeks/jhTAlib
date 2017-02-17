@@ -1,15 +1,19 @@
 # jhTAlib
 Technical Analysis Library
 
+jhTAlib is based on the idea of [mrjbq7/ta-lib](https://github.com/mrjbq7/ta-lib) but without the need for installation of [TA-LIB](http://ta-lib.org).
+
+Work in progress...
+
 ## Install
 ```
-$ sudo pip install jhtalib
+$ [sudo] pip install jhtalib
 ```
 or
 ```
 $ git clone https://github.com/joosthoeks/jhTAlib.git
 $ cd jhTAlib
-$ sudo pip install -e .
+$ [sudo] pip install -e .
 ```
 
 ## Test
