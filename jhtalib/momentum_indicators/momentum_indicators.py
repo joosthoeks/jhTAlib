@@ -61,6 +61,25 @@ def DX(df, n):
     Directional Movement Index
     """
 
+def IMI(df):
+    """
+    Intraday Momentum Index
+    source: http://www.fmlabs.com/reference/default.htm?url=IMI.htm
+    """
+    imi_list = []
+    upsum = .0
+    downsum = .0
+    i = 0
+    while i < len(df['Close']):
+        if df['Close'][i] > df['Open'][i]:
+            upsum = upsum + (df['Close'][i] - df['Open'][i])
+        else:
+            downsum = downsum + (df['Open'][i] - df['Close'][i])
+        imi = 100 * (upsum / (upsum + downsum))
+        imi_list.append(imi)
+        i += 1
+    return imi_list
+
 def MACD(df, price='Close'):
     """
     Moving Average Convergence/Divergence

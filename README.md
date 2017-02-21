@@ -35,6 +35,9 @@ HT_TRENDMODE | Hilbert Transform - Trend vs Cycle Mode |
 **data** | |
 CSV2DF | CSV file 2 DataFeed | DONE
 DF2HEIKIN_ASHI | DataFeed 2 Heikin-Ashi DataFeed | DONE
+**event_driven** | |
+ASI | Accumulation Swing Index (J. Welles Wilder) | DONE
+SI | Swing Index (J. Welles Wilder) | DONE
 **math_operators** | |
 ADD | Vector Arithmetic Add |
 DIV | Vector Arithmetic Div |
@@ -73,6 +76,7 @@ BOP | Balance Of Power |
 CCI | Commodity Channel Index |
 CMO | Chande Momentum Oscillator |
 DX | Directional Movement Index |
+IMI | Intraday Momentum Index | DONE
 MACD | Moving Average Convergence/Divergence |
 MACDEXT | MACD with controllable MA type |
 MACDFIX | Moving Average Convergence/Divergence Fix 12/26 |
