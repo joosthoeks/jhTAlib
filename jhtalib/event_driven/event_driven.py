@@ -4,12 +4,16 @@ def ASI(df, L):
     source: book: New Concepts in Technical Trading Systems
     """
     asi_list = []
-    asi = .0
     si = SI(df, L)
     i = 0
     while i < len(df['Close']):
-        asi = asi + si[i]
-        asi_list.append(asi)
+        if i < 1:
+            asi = float('NaN')
+            asi_list.append(asi)
+            asi = .0
+        else:
+            asi = asi + si[i]
+            asi_list.append(asi)
         i += 1
     return asi_list
 
@@ -22,7 +26,7 @@ def SI(df, L):
     i = 0
     while i < len(df['Close']):
         if i < 1:
-            si = .0
+            si = float('NaN')
         else:
             N = (df['Close'][i] - df['Close'][i - 1]) + (.5 * (df['Close'][i] - df['Open'][i])) + (.25 *(df['Close'][i - 1] - df['Open'][i - 1]))
             R1 = df['High'][i] - df['Close'][i - 1]
