@@ -109,7 +109,7 @@ MAMA | MESA Adaptive Moving Average |
 MAVP | Moving Average with Variable Period |
 MIDPOINT | MidPoint over period | DONE
 MIDPRICE | MidPoint Price over period | DONE
-SAR | Parabolic SAR |
+SAR | Parabolic SAR | DONE
 SAREXT | Parabolic SAR - Extended |
 SMA | Simple Moving Average | DONE
 T3 | Triple Exponential Moving Average (T3) |

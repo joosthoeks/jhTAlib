@@ -74,10 +74,84 @@ def MIDPRICE(df, n):
         i += 1
     return midprice_list
 
-def SAR(df):
+def SAR(df, af_step=.02, af_max=.2):
     """
-    Parabolic SAR
+    Parabolic SAR (J. Welles Wilder)
+    source: book: New Concepts in Technical Trading Systems
     """
+    sar_list = []
+    i = 0
+    while i < len(df['Close']):
+        if i < 1:
+            sar = float('NaN')
+            sar_list.append(sar)
+            is_long = True
+            sar = df['Low'][i]
+            ep = df['High'][i]
+            af = af_step
+        else:
+            if is_long:
+                if df['Low'][i] <= sar:
+                    is_long = False
+                    sar = ep
+                    if sar < df['High'][i - 1]:
+                        sar = df['High'][i - 1]
+                    if sar < df['High'][i]:
+                        sar = df['High'][i]
+                    sar_list.append(sar)
+                    af = af_step
+                    ep = df['Low'][i]
+                    sar = sar + af * (ep - sar)
+#                    sar = round(sar)
+                    if sar < df['High'][i - 1]:
+                        sar = df['High'][i - 1]
+                    if sar < df['High'][i]:
+                        sar = df['High'][i]
+                else:
+                    sar_list.append(sar)
+                    if df['High'][i] > ep:
+                        ep = df['High'][i]
+                        af += af_step
+                        if af > af_max:
+                            af = af_max
+                    sar = sar + af * (ep - sar)
+#                    sar = round(sar)
+                    if sar > df['Low'][i - 1]:
+                        sar = df['Low'][i - 1]
+                    if sar > df['Low'][i]:
+                        sar = df['Low'][i]
+            else:
+                if df['High'][i] >= sar:
+                    is_long = True
+                    sar = ep
+                    if sar > df['Low'][i - 1]:
+                        sar = df['Low'][i - 1]
+                    if sar > df['Low'][i]:
+                        sar = df['Low'][i]
+                    sar_list.append(sar)
+                    af = af_step
+                    ep = df['High'][i]
+                    sar = sar + af * (ep - sar)
+#                    sar = round(sar)
+                    if sar > df['Low'][i - 1]:
+                        sar = df['Low'][i - 1]
+                    if sar > df['Low'][i]:
+                        sar = df['Low'][i]
+                else:
+                    sar_list.append(sar)
+                    if df['Low'][i] < ep:
+                        ep = df['Low'][i]
+                        af += af_step
+                        if af > af_max:
+                            af = af_max
+                    sar = sar + af * (ep - sar)
+#                    sar = round(sar)
+                    if sar < df['High'][i - 1]:
+                        sar = df['High'][i - 1]
+                    if sar < df['High'][i]:
+                        sar = df['High'][i]
+        i += 1
+    return sar_list
 
 def SAREXT(df):
     """
