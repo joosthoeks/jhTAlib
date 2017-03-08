@@ -103,12 +103,79 @@ def MFI(df, n):
 def MINUS_DI(df, n):
     """
     Minus Directional Indicator
+    source: http://www.fmlabs.com/reference/default.htm?url=DI.htm
     """
+    # TODO
+    # NOT FINISHED
+    minus_di_list = []
+    tr_list = []
+    i = 0
+    while i < len(df['Close']):
+        if i + 1 < n:
+            minus_di = float('NaN')
+
+            plus_dm_sum = .0
+            minus_dm_sum = .0
+
+            true_high = max(df['High'][i], df['Close'][i - 1])
+            true_low = min(df['Low'][i], df['Close'][i - 1])
+            tr = true_high - true_low
+            tr_list.append(tr)
+        else:
+            delta_high = df['High'][i - 1] - df['High'][i]
+            delta_low = df['Low'][i] - df['Low'][i - 1]
+            if (delta_high < 0 and delta_low < 0) or delta_high == delta_low:
+                plus_dm = 0
+                minus_dm = 0
+            if delta_high > delta_low:
+                plus_dm = delta_high
+                minus_dm = 0
+            if delta_high < delta_low:
+                plus_dm = 0
+                minus_dm = delta_low
+
+            plus_dm_sum = plus_dm_sum - (plus_dm_sum / n) + plus_dm
+            minus_dm_sum = minus_dm_sum - (minus_dm_sum / n) + minus_dm
+
+            true_high = max(df['High'][i], df['Close'][i - 1])
+            true_low = min(df['Low'][i], df['Close'][i - 1])
+            tr = true_high - true_low
+            tr_list.append(tr)
+
+            tr_sum = tr_list[i -1] - (tr_list[i - 1] / n) + tr_list[i]
+
+            minus_di = 100 * (minus_dm_sum / tr_sum)
+        minus_di_list.append(minus_di)
+        i += 1
+    return minus_di_list
 
 def MINUS_DM(df, n):
     """
     Minus Directional Movement
     """
+    # TODO
+    # NOT FINISHED
+    minus_dm_list = []
+    i = 0
+    while i < len(df['Close']):
+        if i + 1 < n:
+            minus_dm = float('NaN')
+            minus_dm_sum = 1.
+        else:
+            delta_high = df['High'][i - 1] - df['High'][i]
+            delta_low = df['Low'][i] - df['Low'][i - 1]
+            if (delta_high < 0 and delta_low < 0) or delta_high == delta_low:
+                minus_dm = 0
+            if delta_high > delta_low:
+                minus_dm = 0
+            if delta_high < delta_low:
+                minus_dm = delta_low
+            minus_dm_sum = minus_dm_sum - (minus_dm_sum / n) + minus_dm
+            minus_dm = minus_dm_sum
+        minus_dm_list.append(minus_dm)
+        i += 1
+    return minus_dm_list
+
 
 def MOM(df, n, price='Close'):
     """
