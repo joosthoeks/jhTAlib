@@ -38,6 +38,7 @@ DF2HEIKIN_ASHI | DataFeed 2 Heikin-Ashi DataFeed | DONE
 **event_driven** | |
 ASI | Accumulation Swing Index (J. Welles Wilder) | DONE
 SI | Swing Index (J. Welles Wilder) | DONE
+**experimental** | |
 **math_operators** | |
 ADD | Vector Arithmetic Add |
 DIV | Vector Arithmetic Div |

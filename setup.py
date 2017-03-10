@@ -15,6 +15,7 @@ setup(
         'jhtalib.cycle_indicators',
         'jhtalib.data',
         'jhtalib.event_driven',
+        'jhtalib.experimental',
         'jhtalib.math_operators',
         'jhtalib.math_transform',
         'jhtalib.momentum_indicators',
