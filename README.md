@@ -39,6 +39,8 @@ DF2HEIKIN_ASHI | DataFeed 2 Heikin-Ashi DataFeed | DONE
 ASI | Accumulation Swing Index (J. Welles Wilder) | DONE
 SI | Swing Index (J. Welles Wilder) | DONE
 **experimental** | |
+JH_SCC | Swing Close - previous Close | DONE
+JH_SCCS | Swing Close - previous Close Summation | DONE
 **math_operators** | |
 ADD | Vector Arithmetic Add |
 DIV | Vector Arithmetic Div |
