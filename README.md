@@ -41,6 +41,8 @@ SI | Swing Index (J. Welles Wilder) | DONE
 **experimental** | |
 JH_SCC | Swing Close - previous Close | DONE
 JH_SCCS | Swing Close - previous Close Summation | DONE
+JH_SCO | Swing Close - Open | DONE
+JH_SCOS | Swing Close - Open Summation | DONE
 **math_operators** | |
 ADD | Vector Arithmetic Add |
 DIV | Vector Arithmetic Div |

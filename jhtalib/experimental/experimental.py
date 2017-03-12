@@ -31,3 +31,29 @@ def JH_SCCS(df):
         i += 1
     return sccs_list
 
+def JH_SCO(df):
+    """
+    Swing Close - Open
+    """
+    sco_list = []
+    i = 0
+    while i < len(df['Close']):
+        sco = df['Close'][i] - df['Open'][i]
+        sco_list.append(sco)
+        i += 1
+    return sco_list
+
+def JH_SCOS(df):
+    """
+    Swing Close - Open Summation
+    """
+    scos_list = []
+    sco = JH_SCO(df)
+    scos = .0
+    i = 0
+    while i < len(df['Close']):
+        scos = scos + sco[i]
+        scos_list.append(scos)
+        i += 1
+    return scos_list
+
