@@ -4,7 +4,7 @@ def ASI(df, L):
     source: book: New Concepts in Technical Trading Systems
     """
     asi_list = []
-    si = SI(df, L)
+    si_list = SI(df, L)
     i = 0
     while i < len(df['Close']):
         if i < 1:
@@ -12,7 +12,7 @@ def ASI(df, L):
             asi_list.append(asi)
             asi = .0
         else:
-            asi = asi + si[i]
+            asi = asi + si_list[i]
             asi_list.append(asi)
         i += 1
     return asi_list
