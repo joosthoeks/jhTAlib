@@ -18,7 +18,7 @@ def JH_SCCS(df):
     Swing Close - previous Close Summation
     """
     sccs_list = []
-    scc = JH_SCC(df)
+    scc_list = JH_SCC(df)
     i = 0
     while i < len(df['Close']):
         if i < 1:
@@ -26,7 +26,7 @@ def JH_SCCS(df):
             sccs_list.append(sccs)
             sccs = .0
         else:
-            sccs = sccs + scc[i]
+            sccs = sccs + scc_list[i]
             sccs_list.append(sccs)
         i += 1
     return sccs_list
@@ -48,11 +48,11 @@ def JH_SCOS(df):
     Swing Close - Open Summation
     """
     scos_list = []
-    sco = JH_SCO(df)
+    sco_list = JH_SCO(df)
     scos = .0
     i = 0
     while i < len(df['Close']):
-        scos = scos + sco[i]
+        scos = scos + sco_list[i]
         scos_list.append(scos)
         i += 1
     return scos_list
