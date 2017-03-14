@@ -3,18 +3,10 @@ def ATR(df, n):
     Average True Range
     source: http://www.fmlabs.com/reference/default.htm?url=ATR.htm
     """
-    tr_list = []
+    tr_list = TRANGE(df)
     atr_list = []
     i = 0
     while i < len(df['Close']):
-        true_high = df['High'][i]
-        if df['Close'][i - 1] > df['High'][i]:
-            true_high = df['Close'][i - 1]
-        true_low = df['Low'][i]
-        if df['Close'][i - 1] < df['Low'][i]:
-            true_low = df['Close'][i - 1]
-        tr = true_high - true_low
-        tr_list.append(tr)
         if i + 1 < n:
             atr = float('NaN')
         else:
@@ -36,13 +28,16 @@ def TRANGE(df):
     tr_list = []
     i = 0
     while i < len(df['Close']):
-        true_high = df['High'][i]
-        if df['Close'][i - 1] > df['High'][i]:
-            true_high = df['Close'][i - 1]
-        true_low = df['Low'][i]
-        if df['Close'][i - 1] < df['Low'][i]:
-            true_low = df['Close'][i - 1]
-        tr = true_high - true_low
+        if i < 1:
+            tr = float('NaN')
+        else:
+            true_high = df['High'][i]
+            if df['Close'][i - 1] > df['High'][i]:
+                true_high = df['Close'][i - 1]
+            true_low = df['Low'][i]
+            if df['Close'][i - 1] < df['Low'][i]:
+                true_low = df['Close'][i - 1]
+            tr = true_high - true_low
         tr_list.append(tr)
         i += 1
     return tr_list
