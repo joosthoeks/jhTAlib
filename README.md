@@ -64,21 +64,21 @@ MULT | Vector Arithmetic Mult |
 SUB | Vector Arithmetic Subtraction |
 SUM | Summation | DONE
 **math_transform** | |
-ACOS | Vector Trigonometric ACos |
-ASIN | Vector Trigonometric ASin |
-ATAN | Vector Trigonometric ATan |
-CEIL | Vector Ceil |
-COS | Vector Trigonometric Cos |
-COSH | Vector Trigonometric Cosh |
-EXP | Vector Arithmetric Exp |
-FLOOR | Vector Floor |
-LN | Vector Log Naturel |
-LOG10 | Vector Log10 |
-SIN | Vector Trigonometric Sin |
-SINH | Vector Trigonometric Sinh |
-SQRT | Vector Square Root |
-TAN | Vector Trigonometric Tan |
-TANH | Vector Trigonometric Tanh |
+ACOS | Vector Trigonometric ACos | DONE
+ASIN | Vector Trigonometric ASin | DONE
+ATAN | Vector Trigonometric ATan | DONE
+CEIL | Vector Ceil | DONE
+COS | Vector Trigonometric Cos | DONE
+COSH | Vector Trigonometric Cosh | DONE
+EXP | Vector Arithmetric Exp | DONE
+FLOOR | Vector Floor | DONE
+LN | Vector Log Naturel | DONE
+LOG10 | Vector Log10 | DONE
+SIN | Vector Trigonometric Sin | DONE
+SINH | Vector Trigonometric Sinh | DONE
+SQRT | Vector Square Root | DONE
+TAN | Vector Trigonometric Tan | DONE
+TANH | Vector Trigonometric Tanh | DONE
 **momentum_indicators** | |
 ADX | Average Directional Movement Index |
 ADXR | Average Directional Movement Index Rating |
