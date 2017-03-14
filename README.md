@@ -39,10 +39,18 @@ DF2HEIKIN_ASHI | DataFeed 2 Heikin-Ashi DataFeed | DONE
 ASI | Accumulation Swing Index (J. Welles Wilder) | DONE
 SI | Swing Index (J. Welles Wilder) | DONE
 **experimental** | |
+JH_SAVGP | Swing Average Price - previous Average Price | DONE
+JH_SAVGPS | Swing Average Price - previous Average Price Summation | DONE
 JH_SCC | Swing Close - previous Close | DONE
 JH_SCCS | Swing Close - previous Close Summation | DONE
 JH_SCO | Swing Close - Open | DONE
 JH_SCOS | Swing Close - Open Summation | DONE
+JH_SMEDP | Swing Median Price - previous Median Price | DONE
+JH_SMEDPS | Swing Median Price - previous Median Price Summation | DONE
+JH_STYPP | Swing Typical Price - previous Typical Price | DONE
+JH_STYPPS | Swing Typical Price - previous Typical Price Summation | DONE
+JH_SWCLP | Swing Weighted Close Price - previous Weighted Close Price | DONE
+JH_SWCLPS | Swing Weighted Close Price - previous Weighted Close Price Summation | DONE
 **math_operators** | |
 ADD | Vector Arithmetic Add |
 DIV | Vector Arithmetic Div |
