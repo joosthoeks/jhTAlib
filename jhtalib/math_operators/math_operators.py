@@ -2,11 +2,25 @@ def ADD(df):
     """
     Vector Arithmetic Add
     """
+    add_list = []
+    i = 0
+    while i < len(df['Close']):
+        add = df['High'][i] + df['Low'][i]
+        add_list.append(add)
+        i += 1
+    return add_list
 
 def DIV(df):
     """
     Vector Arithmetic Div
     """
+    div_list = []
+    i = 0
+    while i < len(df['Close']):
+        div = df['High'][i] / df['Low'][i]
+        div_list.append(div)
+        i += 1
+    return div_list
 
 def MAX(df, n, price='Close'):
     """
@@ -66,11 +80,25 @@ def MULT(df):
     """
     Vector Arithmetic Mult
     """
+    mult_list = []
+    i = 0
+    while i < len(df['Close']):
+        mult = df['High'][i] * df['Low'][i]
+        mult_list.append(mult)
+        i += 1
+    return mult_list
 
 def SUB(df):
     """
     Vector Arithmetic Substraction
     """
+    sub_list = []
+    i = 0
+    while i < len(df['Close']):
+        sub = df['High'][i] - df['Low'][i]
+        sub_list.append(sub)
+        i += 1
+    return sub_list
 
 def SUM(df, n, price='Close'):
     """

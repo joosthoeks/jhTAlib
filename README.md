@@ -52,16 +52,16 @@ JH_STYPPS | Swing Typical Price - previous Typical Price Summation | DONE
 JH_SWCLP | Swing Weighted Close Price - previous Weighted Close Price | DONE
 JH_SWCLPS | Swing Weighted Close Price - previous Weighted Close Price Summation | DONE
 **math_operators** | |
-ADD | Vector Arithmetic Add |
-DIV | Vector Arithmetic Div |
+ADD | Vector Arithmetic Add | DONE
+DIV | Vector Arithmetic Div | DONE
 MAX | Highest value over a specified period | DONE
 MAXINDEX | Index of highest value over a specified period |
 MIN | Lowest value over a specified period | DONE
 MININDEX | Index of lowest value over a specified period |
 MINMAX | Lowest and Highest values over a specified period |
 MINMAXINDEX | Indexes of lowest and highest values over a specified period |
-MULT | Vector Arithmetic Mult |
-SUB | Vector Arithmetic Subtraction |
+MULT | Vector Arithmetic Mult | DONE
+SUB | Vector Arithmetic Subtraction | DONE
 SUM | Summation | DONE
 **math_transform** | |
 ACOS | Vector Trigonometric ACos | DONE
