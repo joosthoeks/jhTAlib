@@ -37,11 +37,11 @@ def main():
     i = 0
     while i < len(df['Close']):
         # print row:
-        print df['datetime'][i]+' Open: '+str(df['Open'][i])+' High: '+str(df['High'][i])+' Low: '+str(df['Low'][i])+' Close: '+str(df['Close'][i])+' Volume: '+str(df['Volume'][i])
+        print (df['datetime'][i]+' Open: '+str(df['Open'][i])+' High: '+str(df['High'][i])+' Low: '+str(df['Low'][i])+' Close: '+str(df['Close'][i])+' Volume: '+str(df['Volume'][i]))
 
         # print indicators and check for differences between talib and jhtalib:
-        print str(indicator[i])+' (talib)'
-        print str(indicator2[i])+' (jhTAlib)'
+        print (str(indicator[i])+' (talib)')
+        print (str(indicator2[i])+' (jhTAlib)')
         i += 1
 
 
