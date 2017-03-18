@@ -5,6 +5,11 @@ jhTAlib is based on the idea of [mrjbq7/ta-lib](https://github.com/mrjbq7/ta-lib
 
 Work in progress...
 
+## Depends on
+* [math](https://docs.python.org/3/library/math)
+* [cmath](https://docs.python.org/3/library/cmath)
+* [statistics](https://docs.python.org/3/library/statistics)
+
 ## Install
 ```
 $ [sudo] pip install jhtalib
@@ -197,6 +202,17 @@ MEDPRICE | Median Price | DONE
 TYPPRICE | Typical Price | DONE
 WCLPRICE | Weighted Close Price | DONE
 **statistic_functions** | |
+MEAN | Arithmetic mean (average) of data | DONE
+HARMONIC_MEAN | Harmonic mean of data | DONE
+MEDIAN | Median (middle value) of data | DONE
+MEDIAN_LOW | Low median of data | DONE
+MEDIAN_HIGH | High median of data | DONE
+MEDIAN_GROUPED | Median, or 50th percentile, of grouped data | DONE
+MODE | Mode (most common value) of discrete data | DONE
+PSTDEV | Population standard deviation of data | DONE
+PVARIANCE | Population variance of data | DONE
+STDEV | Sample standard deviation of data | DONE
+VARIANCE | Sample variance of data | DONE
 BETA | Beta |
 CORREL | Pearson's Correlation Coefficient (r) |
 LINEARREG | Linear Regression |
