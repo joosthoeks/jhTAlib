@@ -56,6 +56,30 @@ JH_STYPP | Swing Typical Price - previous Typical Price | DONE
 JH_STYPPS | Swing Typical Price - previous Typical Price Summation | DONE
 JH_SWCLP | Swing Weighted Close Price - previous Weighted Close Price | DONE
 JH_SWCLPS | Swing Weighted Close Price - previous Weighted Close Price Summation | DONE
+**math_functions** | |
+EXP | Exponential | DONE
+LOG | Logarithm | DONE
+LOG10 | Base-10 Logarithm | DONE
+SQRT | Square Root | DONE
+ACOS | Arc Cosine | DONE
+ASIN | Arc Sine | DONE
+ATAN | Arc Tangent | DONE
+COS | Cosine | DONE
+SIN | Sine | DONE
+TAN | Tangent | DONE
+ACOSH | Inverse Hyperbolic Cosine | DONE
+ASINH | Inverse Hyperbolic Sine | DONE
+ATANH | Inverse Hyperbolic Tangent | DONE
+COSH | Hyperbolic Cosine | DONE
+SINH | Hyperbolic Sine | DONE
+TANH | Hyperbolic Tangent | DONE
+PI | Mathematical constant PI | DONE
+E | Mathematical constant E | DONE
+TAU | Mathematical constant TAU | DONE
+CEIL | Ceiling | DONE
+FLOOR | Floor | DONE
+DEGREES | Radians to Degrees | DONE
+RADIANS | Degrees to Radians | DONE
 **math_operators** | |
 ADD | Vector Arithmetic Add | DONE
 DIV | Vector Arithmetic Div | DONE
@@ -68,22 +92,6 @@ MINMAXINDEX | Indexes of lowest and highest values over a specified period |
 MULT | Vector Arithmetic Mult | DONE
 SUB | Vector Arithmetic Subtraction | DONE
 SUM | Summation | DONE
-**math_transform** | |
-ACOS | Vector Trigonometric ACos | DONE
-ASIN | Vector Trigonometric ASin | DONE
-ATAN | Vector Trigonometric ATan | DONE
-CEIL | Vector Ceil | DONE
-COS | Vector Trigonometric Cos | DONE
-COSH | Vector Trigonometric Cosh | DONE
-EXP | Vector Arithmetric Exp | DONE
-FLOOR | Vector Floor | DONE
-LN | Vector Log Naturel | DONE
-LOG10 | Vector Log10 | DONE
-SIN | Vector Trigonometric Sin | DONE
-SINH | Vector Trigonometric Sinh | DONE
-SQRT | Vector Square Root | DONE
-TAN | Vector Trigonometric Tan | DONE
-TANH | Vector Trigonometric Tanh | DONE
 **momentum_indicators** | |
 ADX | Average Directional Movement Index |
 ADXR | Average Directional Movement Index Rating |
