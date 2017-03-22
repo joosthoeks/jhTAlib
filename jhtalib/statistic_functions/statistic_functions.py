@@ -86,7 +86,7 @@ def MEDIAN_HIGH(df, n, price='Close'):
         i += 1
     return median_high_list
 
-def MEDIAN_GROUPED(df, n, interval=1, price='Close'):
+def MEDIAN_GROUPED(df, n, price='Close', interval=1):
     """
     Median, or 50th percentile, of grouped data
     """
@@ -120,7 +120,7 @@ def MODE(df, n, price='Close'):
         i += 1
     return mode_list
 
-def PSTDEV(df, n, mu=None, price='Close'):
+def PSTDEV(df, n, price='Close', mu=None):
     """
     Population standard deviation of data
     """
@@ -137,7 +137,7 @@ def PSTDEV(df, n, mu=None, price='Close'):
         i += 1
     return pstdev_list
 
-def PVARIANCE(df, n, mu=None, price='Close'):
+def PVARIANCE(df, n, price='Close', mu=None):
     """
     Population variance of data
     """
@@ -154,7 +154,7 @@ def PVARIANCE(df, n, mu=None, price='Close'):
         i += 1
     return pvariance_list
 
-def STDEV(df, n, xbar=None, price='Close'):
+def STDEV(df, n, price='Close', xbar=None):
     """
     Sample standard deviation of data
     """
@@ -171,7 +171,7 @@ def STDEV(df, n, xbar=None, price='Close'):
         i += 1
     return stdev_list
 
-def VARIANCE(df, n, xbar=None, price='Close'):
+def VARIANCE(df, n, price='Close', xbar=None):
     """
     Sample variance of data
     """
@@ -187,49 +187,4 @@ def VARIANCE(df, n, xbar=None, price='Close'):
         variance_list.append(variance)
         i += 1
     return variance_list
-
-def BETA(df, n):
-    """
-    Beta
-    """
-
-def CORREL(df, n):
-    """
-    Pearson's Correlation Coefficient (r)
-    """
-
-def LINEARREG(df, n, price='Close'):
-    """
-    Linear Regression
-    """
-
-def LINEARREG_ANGLE(df, n, price='Close'):
-    """
-    Linear Regression Angle
-    """
-
-def LINEARREG_INTERCEPT(df, n, price='Close'):
-    """
-    Linear Regression Intercept
-    """
-
-def LINEARREG_SLOPE(df, n, price='Close'):
-    """
-    Linear Regression Slope
-    """
-
-def STDDEV(df, n, price='Close'):
-    """
-    Standard Deviation
-    """
-
-def TSF(df, n, price='Close'):
-    """
-    Time Series Forecast
-    """
-
-def VAR(df, n, price='Close'):
-    """
-    Variance
-    """
 
