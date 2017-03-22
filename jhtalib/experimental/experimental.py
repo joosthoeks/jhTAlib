@@ -35,39 +35,6 @@ def JH_SAVGPS(df):
         i += 1
     return savgps_list
 
-def JH_SCC(df):
-    """
-    Swing Close - previous Close
-    """
-    scc_list = []
-    i = 0
-    while i < len(df['Close']):
-        if i < 1:
-            scc = float('NaN')
-        else:
-            scc = df['Close'][i] - df['Close'][i - 1]
-        scc_list.append(scc)
-        i += 1
-    return scc_list
-
-def JH_SCCS(df):
-    """
-    Swing Close - previous Close Summation
-    """
-    sccs_list = []
-    scc_list = JH_SCC(df)
-    i = 0
-    while i < len(df['Close']):
-        if i < 1:
-            sccs = float('NaN')
-            sccs_list.append(sccs)
-            sccs = .0
-        else:
-            sccs = sccs + scc_list[i]
-            sccs_list.append(sccs)
-        i += 1
-    return sccs_list
-
 def JH_SCO(df):
     """
     Swing Close - Open
@@ -127,6 +94,39 @@ def JH_SMEDPS(df):
             smedps_list.append(smedps)
         i += 1
     return smedps_list
+
+def JH_SPP(df, price='Close'):
+    """
+    Swing Price - previous Price
+    """
+    spp_list = []
+    i = 0
+    while i < len(df[price]):
+        if i < 1:
+            spp = float('NaN')
+        else:
+            spp = df[price][i] - df[price][i - 1]
+        spp_list.append(spp)
+        i += 1
+    return spp_list
+
+def JH_SPPS(df, price='Close'):
+    """
+    Swing Price - previous Price Summation
+    """
+    spps_list = []
+    spp_list = JH_SPP(df, price)
+    i = 0
+    while i < len(df[price]):
+        if i < 1:
+            spps = float('NaN')
+            spps_list.append(spps)
+            spps = .0
+        else:
+            spps = spps + spp_list[i]
+            spps_list.append(spps)
+        i += 1
+    return spps_list
 
 def JH_STYPP(df):
     """
