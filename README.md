@@ -6,8 +6,8 @@ jhTAlib is based on the idea of [mrjbq7/ta-lib](https://github.com/mrjbq7/ta-lib
 Work in progress...
 
 ## Depends on
-* [math](https://docs.python.org/3/library/math)
 * [cmath](https://docs.python.org/3/library/cmath)
+* [math](https://docs.python.org/3/library/math)
 * [statistics](https://docs.python.org/3/library/statistics)
 
 ## Install
@@ -80,17 +80,16 @@ CEIL | Ceiling | DONE
 FLOOR | Floor | DONE
 DEGREES | Radians to Degrees | DONE
 RADIANS | Degrees to Radians | DONE
-**math_operators** | |
-ADD | Vector Arithmetic Add | DONE
-DIV | Vector Arithmetic Div | DONE
+ADD | Addition High + Low | DONE
+DIV | Division High / Low | DONE
 MAX | Highest value over a specified period | DONE
 MAXINDEX | Index of highest value over a specified period |
 MIN | Lowest value over a specified period | DONE
 MININDEX | Index of lowest value over a specified period |
 MINMAX | Lowest and Highest values over a specified period |
 MINMAXINDEX | Indexes of lowest and highest values over a specified period |
-MULT | Vector Arithmetic Mult | DONE
-SUB | Vector Arithmetic Subtraction | DONE
+MULT | Multiply High * Low | DONE
+SUB | Subtraction High - Low | DONE
 SUM | Summation | DONE
 **momentum_indicators** | |
 ADX | Average Directional Movement Index |

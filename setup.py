@@ -17,7 +17,6 @@ setup(
         'jhtalib.event_driven',
         'jhtalib.experimental',
         'jhtalib.math_functions',
-        'jhtalib.math_operators',
         'jhtalib.momentum_indicators',
         'jhtalib.overlap_studies',
         'jhtalib.pattern_recognition',
