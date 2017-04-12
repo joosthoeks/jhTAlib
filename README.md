@@ -76,6 +76,7 @@ TANH | Hyperbolic Tangent | DONE
 PI | Mathematical constant PI | DONE
 E | Mathematical constant E | DONE
 TAU | Mathematical constant TAU | DONE
+PHI | Mathematical constant PHI | DONE
 CEIL | Ceiling | DONE
 FLOOR | Floor | DONE
 DEGREES | Radians to Degrees | DONE

@@ -212,6 +212,12 @@ def TAU():
     """
     return cmath.tau
 
+def PHI():
+    """
+    Mathematical constant PHI
+    """
+    return (cmath.sqrt(5).real + 1) / 2
+
 def CEIL(df, price='Close'):
     """
     Ceiling
