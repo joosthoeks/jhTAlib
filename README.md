@@ -31,6 +31,7 @@ $ python test.py
 
 Indicator | Name | TODO
 --- | --- | ---
+**behavioral_techniques** | |
 **cycle_indicators** | |
 HT_DCPERIOD | Hilbert Transform - Dominant Cycle Period |
 HT_DCPHASE | Hilbert Transform - Dominant Cycle Phase |

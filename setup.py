@@ -12,6 +12,7 @@ setup(
     license='GNU',
     packages=[
         'jhtalib',
+        'jhtalib.behavioral_techniques',
         'jhtalib.cycle_indicators',
         'jhtalib.data',
         'jhtalib.event_driven',
