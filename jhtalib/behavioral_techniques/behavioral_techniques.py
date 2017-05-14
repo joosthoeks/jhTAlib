@@ -1,25 +1,25 @@
-def HT_DCPERIOD(df, price='Close'):
+def FIBOPR(df, price='Close'):
     """
-    Hilbert Transform - Dominant Cycle Period
-    """
-
-def HT_DCPHASE(df, price='Close'):
-    """
-    Hilbert Transform - Dominant Cycle Phase
+    Fibonacci Price Retracements
     """
 
-def HT_PHASOR(df, price='Close'):
+def FIBOTR(df, price='Close'):
     """
-    Hilbert Transform - Phasor Components
-    """
-
-def HT_SINE(df, price='Close'):
-    """
-    Hilbert Transform - SineWave
+    Fibonacci Time Retracements
     """
 
-def HT_TRENDMODE(df, price='Close'):
+def GANNPR(df, price='Close'):
     """
-    Hilbert Transform - Trend vs Cycle Mode
+    W. D. Gann Price Retracements
+    """
+
+def GANNTR(df, price='Close'):
+    """
+    W. D. Gann Time Retracements
+    """
+
+def LUNARPHASES(df):
+    """
+    Lunar Phases
     """
 

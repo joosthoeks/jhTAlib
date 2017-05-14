@@ -32,6 +32,11 @@ $ python test.py
 Indicator | Name | TODO
 --- | --- | ---
 **behavioral_techniques** | |
+FIBOPR | Fibonacci Price Retracements |
+FIBOTR | Fibonacci Time Retracements |
+GANNPR | W. D. Gann Price Retracements |
+GANNTR | W. D. Gann Time Retracements |
+LUNARPHASES | Lunar Phases |
 **cycle_indicators** | |
 HT_DCPERIOD | Hilbert Transform - Dominant Cycle Period |
 HT_DCPHASE | Hilbert Transform - Dominant Cycle Phase |
