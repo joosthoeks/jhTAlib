@@ -36,7 +36,17 @@ FIBOPR | Fibonacci Price Retracements |
 FIBOTR | Fibonacci Time Retracements |
 GANNPR | W. D. Gann Price Retracements |
 GANNTR | W. D. Gann Time Retracements |
-LUNARPHASES | Lunar Phases |
+SUNC | Sun Cycle |
+MERCURYC | Mercury Cycle |
+VENUSC | Venus Cycle |
+EARTHC | Earth Cycle |
+MARSC | Mars Cycle |
+JUPITERC | Jupiter Cycle |
+SATURNC | Saturn Cycle |
+URANUSC | Uranus Cycle |
+NEPTUNEC | Neptune Cycle |
+PLUTOC | Pluto Cycle |
+MOONC | Moon Cycle |
 **cycle_indicators** | |
 HT_DCPERIOD | Hilbert Transform - Dominant Cycle Period |
 HT_DCPHASE | Hilbert Transform - Dominant Cycle Phase |

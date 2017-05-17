@@ -18,8 +18,58 @@ def GANNTR(df, price='Close'):
     W. D. Gann Time Retracements
     """
 
-def LUNARPHASES(df):
+def SUNC(df):
     """
-    Lunar Phases
+    Sun Cycle
+    """
+
+def MERCURYC(df):
+    """
+    Mercury Cycle
+    """
+
+def VENUSC(df):
+    """
+    Venus Cycle
+    """
+
+def EARTHC(df):
+    """
+    Earth Cycle
+    """
+
+def MARSC(df):
+    """
+    Mars Cycle
+    """
+
+def JUPITERC(df):
+    """
+    Jupiter Cycle
+    """
+
+def SATURNC(df):
+    """
+    Saturn Cycle
+    """
+
+def URANUSC(df):
+    """
+    Uranus Cycle
+    """
+
+def NEPTUNEC(df):
+    """
+    Neptune Cycle
+    """
+
+def PLUTOC(df):
+    """
+    Pluto Cycle
+    """
+
+def MOONC(df):
+    """
+    Moon Cycle
     """
 
