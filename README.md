@@ -36,6 +36,8 @@ FIBOPR | Fibonacci Price Retracements |
 FIBOTR | Fibonacci Time Retracements |
 GANNPR | W. D. Gann Price Retracements |
 GANNTR | W. D. Gann Time Retracements |
+JDN | Julian Day Number | DONE
+JD | Julian Date | DONE
 SUNC | Sun Cycle |
 MERCURYC | Mercury Cycle |
 VENUSC | Venus Cycle |
