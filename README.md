@@ -33,7 +33,7 @@ Indicator | Name | TODO
 --- | --- | ---
 **behavioral_techniques** | |
 PP | Pivot Point | DONE
-FIBOPR | Fibonacci Price Retracements |
+FIBOPR | Fibonacci Price Retracements | DONE
 FIBOTR | Fibonacci Time Retracements |
 GANNPR | W. D. Gann Price Retracements | DONE
 GANNTR | W. D. Gann Time Retracements |

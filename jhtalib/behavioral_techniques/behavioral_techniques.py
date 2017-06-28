@@ -1,4 +1,5 @@
 import math
+import jhtalib as jhta
 
 
 def PP(df):
@@ -25,6 +26,19 @@ def FIBOPR(df, price='Close'):
     """
     Fibonacci Price Retracements
     """
+    fibopr_list = []
+    i = 0
+    p0618 = jhta.PHI() - 1
+    p0381 = 1 - p0618
+    while i < len(df[price]):
+        p = df[price][i]
+        fibopr_dict = {
+            '618': p+(p*p0618), '-618': p-(p*p0618),
+            '381': p+(p*p0381), '-381': p-(p*p0381)
+            }
+        fibopr_list.append(fibopr_dict)
+        i += 1
+    return fibopr_list
 
 def FIBOTR(df, price='Close'):
     """
