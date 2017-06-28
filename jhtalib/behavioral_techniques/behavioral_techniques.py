@@ -15,6 +15,22 @@ def GANNPR(df, price='Close'):
     """
     W. D. Gann Price Retracements
     """
+    gannpr_list = []
+    i = 0
+    while i < len(df[price]):
+        p = df[price][i]
+        gannpr_dict = {
+            '1x8': p+(p/8), '-1x8': p-(p/8),
+            '1x4': p+(p/8*2), '-1x4': p-(p/8*2),
+            '1x2': p+(p/8*3), '-1x2': p-(p/8*3),
+            '1x1': p+(p/8*4), '-1x1': p-(p/8*4),
+            '2x1': p+(p/8*5), '-2x1': p-(p/8*5),
+            '4x1': p+(p/8*6), '-4x1': p-(p/8*6),
+            '8x1': p+(p/8*7), '-8x1': p-(p/8*7)
+            }
+        gannpr_list.append(gannpr_dict)
+        i += 1
+    return gannpr_list
 
 def GANNTR(df, price='Close'):
     """

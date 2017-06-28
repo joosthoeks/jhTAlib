@@ -34,7 +34,7 @@ Indicator | Name | TODO
 **behavioral_techniques** | |
 FIBOPR | Fibonacci Price Retracements |
 FIBOTR | Fibonacci Time Retracements |
-GANNPR | W. D. Gann Price Retracements |
+GANNPR | W. D. Gann Price Retracements | DONE
 GANNTR | W. D. Gann Time Retracements |
 JDN | Julian Day Number | DONE
 JD | Julian Date | DONE
