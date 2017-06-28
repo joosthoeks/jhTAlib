@@ -32,6 +32,7 @@ $ python test.py
 Indicator | Name | TODO
 --- | --- | ---
 **behavioral_techniques** | |
+PP | Pivot Point | DONE
 FIBOPR | Fibonacci Price Retracements |
 FIBOTR | Fibonacci Time Retracements |
 GANNPR | W. D. Gann Price Retracements | DONE

@@ -1,6 +1,26 @@
 import math
 
 
+def PP(df):
+    """
+    Pivot Point
+    source: https://en.wikipedia.org/wiki/Pivot_point_(technical_analysis)
+    """
+    pp_list = []
+    i = 0
+    while i < len(df['Close']):
+        p = (df['High'][i] + df['Low'][i] + df['Close'][i]) / 3
+        r1 = p + (p - df['Low'][i])
+        s1 = p - (df['High'][i] - p)
+        r2 = p + (df['High'][i] - df['Low'][i])
+        s2 = p - (df['High'][i] - df['Low'][i])
+        r3 = r1 + (df['High'][i] - df['Low'][i])
+        s3 = s1 - (df['High'][i] - df['Low'][i])
+        pp_dict = {'p': p, 'r1': r1, 's1': s1, 'r2': r2, 's2': s2, 'r3': r3, 's3': s3}
+        pp_list.append(pp_dict)
+        i += 1
+    return pp_list
+
 def FIBOPR(df, price='Close'):
     """
     Fibonacci Price Retracements
