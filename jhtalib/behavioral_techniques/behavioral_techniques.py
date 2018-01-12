@@ -2,6 +2,18 @@ import math
 import jhtalib as jhta
 
 
+def ATH(df, price='High'):
+    """
+    All Time High
+    """
+    ath_list = []
+    i = 0
+    while i < len(df[price]):
+        ath = max(df[price][0:i+1])
+        ath_list.append(ath)
+        i += 1
+    return ath_list
+
 def PP(df):
     """
     Pivot Point

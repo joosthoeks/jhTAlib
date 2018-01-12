@@ -12,13 +12,19 @@ Work in progress...
 
 ## Install
 ```
-$ [sudo] pip install jhtalib
+$ [sudo] pip3 install jhtalib
 ```
 or
 ```
 $ git clone https://github.com/joosthoeks/jhTAlib.git
 $ cd jhTAlib
-$ [sudo] pip install -e .
+$ [sudo] pip3 install -e .
+```
+
+## Update
+```
+$ cd jhTalib
+$ git pull
 ```
 
 ## Test
@@ -26,12 +32,13 @@ $ [sudo] pip install -e .
 $ cd test/
 ```
 ```
-$ python test.py
+$ python3 test.py
 ```
 
 Indicator | Name | TODO
 --- | --- | ---
 **behavioral_techniques** | |
+ATH | All Time High | DONE
 PP | Pivot Point | DONE
 FIBOPR | Fibonacci Price Retracements | DONE
 FIBOTR | Fibonacci Time Retracements |
