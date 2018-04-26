@@ -23,7 +23,11 @@ $ [sudo] pip3 install -e .
 
 ## Update
 ```
-$ cd jhTalib
+$ [sudo] pip3 install --upgrade jhtalib
+```
+or
+```
+$ cd jhTAlib
 $ git pull
 ```
 
