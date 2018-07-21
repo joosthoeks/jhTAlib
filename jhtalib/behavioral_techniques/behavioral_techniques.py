@@ -9,10 +9,29 @@ def ATH(df, price='High'):
     ath_list = []
     i = 0
     while i < len(df[price]):
-        ath = max(df[price][0:i+1])
-        ath_list.append(ath)
+        df_part_list = df[price][0:i+1]
+        ath = max(df_part_list)
+        ath_index = df_part_list.index(max(df_part_list))
+        ath_dict = {'ath': ath, 'ath_index': ath_index}
+        ath_list.append(ath_dict)
         i += 1
     return ath_list
+
+def LMC(df, price='Low'):
+    """
+    Last Major Correction
+    """
+    lmc_list = []
+    ath_list = ATH(df)
+    i = 0
+    while i < len(df[price]):
+        df_part_list = df[price][ath_list[i]['ath_index']:i+1]
+        lmc = min(df_part_list)
+        lmc_index = df_part_list.index(min(df_part_list))
+        lmc_dict = {'lmc': lmc, 'lmc_index': lmc_index}
+        lmc_list.append(lmc_dict)
+        i += 1
+    return lmc_list
 
 def PP(df):
     """

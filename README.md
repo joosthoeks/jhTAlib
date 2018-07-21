@@ -43,6 +43,7 @@ Indicator | Name | TODO
 --- | --- | ---
 **behavioral_techniques** | |
 ATH | All Time High | DONE
+LMC | Last Major Correction | DONE
 PP | Pivot Point | DONE
 FIBOPR | Fibonacci Price Retracements | DONE
 FIBOTR | Fibonacci Time Retracements |
