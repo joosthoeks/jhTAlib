@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='jhTAlib',
-    version='20180426.0',
+    version='20180721.0',
     description='Technical Analysis Library',
     keywords='Technical Analysis Library',
     url='https://github.com/joosthoeks/jhTAlib',
@@ -11,10 +11,7 @@ setup(
     author_email='joosthoeks@gmail.com',
     license='GNU',
     packages=find_packages(),
-    install_requires=[
-#        'numpy',
-#        'pandas',
-    ],
+    install_requires=[],
     zip_safe=False
 )
 
