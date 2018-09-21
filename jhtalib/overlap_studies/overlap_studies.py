@@ -74,6 +74,23 @@ def MIDPRICE(df, n):
         i += 1
     return midprice_list
 
+def MMR(df, n=200, price='Close'):
+    """
+    Mayer Multiple Ratio
+    source: https://www.theinvestorspodcast.com/bitcoin-mayer-multiple/
+    """
+    mmr_list = []
+    sma_list = SMA(df, n, price)
+    i = 0
+    while i < len(df[price]):
+        if i + 1 < n:
+            mmr = float('NaN')
+        else:
+            mmr = df[price][i] / sma_list[i]
+        mmr_list.append(mmr)
+        i += 1
+    return mmr_list
+
 def SAR(df, af_step=.02, af_max=.2):
     """
     Parabolic SAR (J. Welles Wilder)
