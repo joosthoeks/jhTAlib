@@ -1,7 +1,30 @@
-def BBANDS(df, n):
+import jhtalib as jhta
+
+
+def BBANDS(df, n, f=2):
     """
     Bollinger Bands
+    source: https://www.fmlabs.com/reference/default.htm?url=Bollinger.htm
     """
+    bbands_list = []
+    tp_dict = {'tp': jhta.TYPPRICE(df)}
+    sma_list = SMA(tp_dict, n, 'tp')
+    stdev_list = jhta.STDEV(tp_dict, n, 'tp')
+    i = 0
+    while i < len(df['Close']):
+        if i + 1 < n:
+            midband = float('NaN')
+            upperband = float('NaN')
+            lowerband = float('NaN')
+            bbands_dict = {'midband': midband, 'upperband': upperband, 'lowerband': lowerband}
+        else:
+            midband = sma_list[i]
+            upperband = midband + f * stdev_list[i]
+            lowerband = midband - f * stdev_list[i]
+            bbands_dict = {'midband': midband, 'upperband': upperband, 'lowerband': lowerband}
+        bbands_list.append(bbands_dict)
+        i += 1
+    return bbands_list
 
 def DEMA(df, n):
     """
