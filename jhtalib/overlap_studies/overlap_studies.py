@@ -26,6 +26,24 @@ def BBANDS(df, n, f=2):
         i += 1
     return bbands_list
 
+def BBANDW(df, n, f=2):
+    """
+    Bollinger Band Width
+    source: https://www.fmlabs.com/reference/default.htm?url=BollingerWidth.htm
+    """
+    bbandw_list = []
+    tp_dict = {'tp': jhta.TYPPRICE(df)}
+    stdev_list = jhta.STDEV(tp_dict, n, 'tp')
+    i = 0
+    while i < len(df['Close']):
+        if i + 1 < n:
+            bbandw = float('NaN')
+        else:
+            bbandw = 2 * f * stdev_list[i]
+        bbandw_list.append(bbandw)
+        i += 1
+    return bbandw_list
+
 def DEMA(df, n):
     """
     Double Exponential Moving Average
