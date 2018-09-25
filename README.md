@@ -156,7 +156,7 @@ TRIX | 1-day Rate-Of-Change (ROC) of a Triple Smooth EMA |
 ULTOSC | Ultimate Oscillator |
 WILLR | Williams' %R | DONE
 **overlap_studies** | |
-BBANDS | Bollinger Bands |
+BBANDS | Bollinger Bands | DONE
 DEMA | Double Exponential Moving Average |
 EMA | Exponential Moving Average |
 HT_TRENDLINE | Hilbert Transform - Instantaneous Trendline |
