@@ -157,6 +157,7 @@ ULTOSC | Ultimate Oscillator |
 WILLR | Williams' %R | DONE
 **overlap_studies** | |
 BBANDS | Bollinger Bands | DONE
+BBANDW | Bollinger Band Width | DONE
 DEMA | Double Exponential Moving Average |
 EMA | Exponential Moving Average |
 HT_TRENDLINE | Hilbert Transform - Instantaneous Trendline |
