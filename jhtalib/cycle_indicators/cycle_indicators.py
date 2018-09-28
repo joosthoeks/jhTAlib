@@ -28,3 +28,33 @@ def HT_TRENDMODE(df, price='Close'):
     Hilbert Transform - Trend vs Cycle Mode
     """
 
+def TS(df, n, price='Close'):
+    """
+    Trend Score
+    source: https://www.fmlabs.com/reference/default.htm?url=TrendScore.htm
+    """
+    t_list = []
+    i = 0
+    while i < len(df[price]):
+        if i < 1:
+            t = 0
+        else:
+            if df[price][i] >= df[price][i - 1]:
+                t = 1
+            else:
+                t = -1
+        t_list.append(t)
+        i += 1
+    ts_list = []
+    i = 0
+    while i < len(df[price]):
+        if i + 1 < n:
+            ts = float('NaN')
+        else:
+            start = i + 1 - n
+            end = i + 1
+            ts = sum(t_list[start:end])
+        ts_list.append(ts)
+        i += 1
+    return ts_list
+

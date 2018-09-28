@@ -69,6 +69,7 @@ HT_PHASOR | Hilbert Transform - Phasor Components |
 HT_SINE | Hilbert Transform - SineWave |
 HT_TRENDLINE | Hilbert Transform - Instantaneous Trendline |
 HT_TRENDMODE | Hilbert Transform - Trend vs Cycle Mode |
+TS | Trend Score | DONE
 **data** | |
 CSV2DF | CSV file 2 DataFeed | DONE
 DF2HEIKIN_ASHI | DataFeed 2 Heikin-Ashi DataFeed | DONE
