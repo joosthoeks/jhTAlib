@@ -18,6 +18,11 @@ def HT_SINE(df, price='Close'):
     Hilbert Transform - SineWave
     """
 
+def HT_TRENDLINE(df, price='Close'):
+    """
+    Hilbert Transform - Instantaneous Trendline
+    """
+
 def HT_TRENDMODE(df, price='Close'):
     """
     Hilbert Transform - Trend vs Cycle Mode

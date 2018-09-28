@@ -67,6 +67,7 @@ HT_DCPERIOD | Hilbert Transform - Dominant Cycle Period |
 HT_DCPHASE | Hilbert Transform - Dominant Cycle Phase |
 HT_PHASOR | Hilbert Transform - Phasor Components |
 HT_SINE | Hilbert Transform - SineWave |
+HT_TRENDLINE | Hilbert Transform - Instantaneous Trendline |
 HT_TRENDMODE | Hilbert Transform - Trend vs Cycle Mode |
 **data** | |
 CSV2DF | CSV file 2 DataFeed | DONE
@@ -160,7 +161,6 @@ BBANDS | Bollinger Bands | DONE
 BBANDW | Bollinger Band Width | DONE
 DEMA | Double Exponential Moving Average |
 EMA | Exponential Moving Average |
-HT_TRENDLINE | Hilbert Transform - Instantaneous Trendline |
 KAMA | Kaufman Adaptive Moving Average |
 MA | Moving Average |
 MAMA | MESA Adaptive Moving Average |

@@ -54,11 +54,6 @@ def EMA(df, n):
     Exponential Moving Average
     """
 
-def HT_TRENDLINE(df, price='Close'):
-    """
-    Hilbert Transform - Instantaneous Trendline
-    """
-
 def KAMA(df, n):
     """
     Kaufman Adaptive Moving Average
