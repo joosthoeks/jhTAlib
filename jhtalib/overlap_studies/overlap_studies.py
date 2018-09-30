@@ -6,7 +6,7 @@ def BBANDS(df, n, f=2):
     Bollinger Bands
     source: https://www.fmlabs.com/reference/default.htm?url=Bollinger.htm
     """
-    bbands_list = []
+    bbands_dict = {'midband': [], 'upperband': [], 'lowerband': []}
     tp_dict = {'tp': jhta.TYPPRICE(df)}
     sma_list = SMA(tp_dict, n, 'tp')
     stdev_list = jhta.STDEV(tp_dict, n, 'tp')
@@ -16,15 +16,15 @@ def BBANDS(df, n, f=2):
             midband = float('NaN')
             upperband = float('NaN')
             lowerband = float('NaN')
-            bbands_dict = {'midband': midband, 'upperband': upperband, 'lowerband': lowerband}
         else:
             midband = sma_list[i]
             upperband = midband + f * stdev_list[i]
             lowerband = midband - f * stdev_list[i]
-            bbands_dict = {'midband': midband, 'upperband': upperband, 'lowerband': lowerband}
-        bbands_list.append(bbands_dict)
+        bbands_dict['midband'].append(midband)
+        bbands_dict['upperband'].append(upperband)
+        bbands_dict['lowerband'].append(lowerband)
         i += 1
-    return bbands_list
+    return bbands_dict
 
 def BBANDW(df, n, f=2):
     """
