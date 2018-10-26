@@ -40,5 +40,5 @@ $ python3 test.py
 ```
 
 ## Wiki
-* ![Wiki](https://github.com/joosthoeks/jhTAlib/wiki)
+* ![jhTAlib doc](https://github.com/joosthoeks/jhTAlib/wiki)
 
