@@ -31,6 +31,14 @@ $ cd jhTAlib
 $ git pull
 ```
 
+## Example
+```
+$ cd example/
+```
+```
+$ python3 example-1-plot.py
+```
+
 ## Test
 ```
 $ cd test/
