@@ -29,6 +29,26 @@ def CSV2DF(csv_file_path):
         'Volume': Volume_list
         }
 
+def DF2CSV(df, csv_file_path):
+    """
+    DataFeed 2 CSV file
+    """
+    with open(csv_file_path, 'w') as csv_file:
+        fieldnames = ['datetime', 'Open', 'High', 'Low', 'Close', 'Volume']
+        writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+        writer.writeheader()
+        i = 0
+        while i < len(df['Close']):
+            writer.writerow({
+                'datetime': df['datetime'][i],
+                'Open': float(df['Open'][i]),
+                'High': float(df['High'][i]),
+                'Low': float(df['Low'][i]),
+                'Close': float(df['Close'][i]),
+                'Volume': int(df['Volume'][i])
+                })
+            i += 1
+
 def DF2HEIKIN_ASHI(df):
     """
     DataFeed 2 Heikin-Ashi DataFeed
