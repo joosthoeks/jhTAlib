@@ -51,6 +51,10 @@ $ python3 example-3-plot.py
 $ python3 example-4-plot-quandl.py
 ```
 * [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-4-plot-quandl.ipynb)
+```
+$ python3 example-5-plot-quandl.py
+```
+* [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-5-plot-quandl.ipynb)
 
 ## Test
 ```
