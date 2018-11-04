@@ -31,26 +31,31 @@ $ cd jhTAlib
 $ git pull
 ```
 
-## Example
+## Examples
 ```
 $ cd example/
 ```
+### Example 1
 ```
 $ python3 example-1-plot.py
 ```
 * [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-1-plot.ipynb)
+### Example 2
 ```
 $ python3 example-2-plot.py
 ```
 * [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-2-plot.ipynb)
+### Example 3
 ```
 $ python3 example-3-plot.py
 ```
 * [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-3-plot.ipynb)
+### Example 4
 ```
 $ python3 example-4-plot-quandl.py
 ```
 * [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-4-plot-quandl.ipynb)
+### Example 5
 ```
 $ python3 example-5-plot-quandl.py
 ```
