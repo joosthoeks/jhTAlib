@@ -13,7 +13,8 @@ def main():
     df = {'datetime': [], 'Open': [], 'High': [], 'Low': [], 'Close': [], 'Volume': []}
     i = 0
     while i < len(quandl_data['Close']):
-        df['datetime'].append(str(quandl_data['Date'][i]))
+#        df['datetime'].append(str(quandl_data['Date'][i]))
+        df['datetime'].append(i)
         df['Open'].append(float(quandl_data['Open'][i]))
         df['High'].append(float(quandl_data['High'][i]))
         df['Low'].append(float(quandl_data['Low'][i]))
@@ -21,12 +22,7 @@ def main():
         df['Volume'].append(int(quandl_data['Volume (BTC)'][i]))
         i += 1
 
-#    x = df['datetime']
-    x = []
-    i = 0
-    while i < len(df['datetime']):
-        x.append(i)
-        i += 1
+    x = df['datetime']
 
     sma_list = jhta.SMA(df, 200)
     mmr_list = jhta.MMR(df)
