@@ -231,7 +231,28 @@ def ROCR100(df, n, price='Close'):
 def RSI(df, n, price='Close'):
     """
     Relative Strength Index
+    source: https://www.fmlabs.com/reference/default.htm?url=RSI.htm
     """
+    rsi_list = []
+    upavg = .0
+    dnavg = .0
+    i = 0
+    while i < len(df[price]):
+        if i + 1 < n:
+            rsi = float('NaN')
+        else:
+            if df[price][i] > df[price][i - 1]:
+                up = df[price][i] - df[price][i - 1]
+                dn = 0
+            else:
+                up = 0
+                dn = df[price][i - 1] - df[price][i]
+            upavg = (upavg * (n - 1) + up) / n
+            dnavg = (dnavg * (n - 1) + dn) / n
+            rsi = 100 * upavg / (upavg + dnavg)
+        rsi_list.append(rsi)
+        i += 1
+    return rsi_list
 
 def STOCH(df):
     """
