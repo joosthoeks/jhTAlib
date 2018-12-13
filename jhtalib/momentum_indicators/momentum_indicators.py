@@ -217,6 +217,16 @@ def ROCP(df, n, price='Close'):
     """
     Rate of change Percentage: (price-prevPrice)/prevPrice
     """
+    rocp_list = []
+    i = 0
+    while i < len(df[price]):
+        if i + 1 < n:
+            rocp = float('NaN')
+        else:
+            rocp = (df[price][i] - df[price][i - n]) / df[price][i - n]
+        rocp_list.append(rocp)
+        i += 1
+    return rocp_list
 
 def ROCR(df, n, price='Close'):
     """
