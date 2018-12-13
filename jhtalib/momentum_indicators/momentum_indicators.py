@@ -222,6 +222,16 @@ def ROCR(df, n, price='Close'):
     """
     Rate of change ratio: (price/prevPrice)
     """
+    rocr_list = []
+    i = 0
+    while i < len(df[price]):
+        if i + 1 < n:
+            rocr = float('NaN')
+        else:
+            rocr = df[price][i] / df[price][i - n]
+        rocr_list.append(rocr)
+        i += 1
+    return rocr_list
 
 def ROCR100(df, n, price='Close'):
     """
