@@ -212,6 +212,16 @@ def ROC(df, n, price='Close'):
     """
     Rate of change : ((price/prevPrice)-1)*100
     """
+    roc_list = []
+    i = 0
+    while i < len(df[price]):
+        if i + 1 < n:
+            roc = float('NaN')
+        else:
+            roc = ((df[price][i] / df[price][i - n]) - 1) * 100
+        roc_list.append(roc)
+        i += 1
+    return roc_list
 
 def ROCP(df, n, price='Close'):
     """
