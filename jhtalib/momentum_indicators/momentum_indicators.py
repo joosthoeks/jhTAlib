@@ -226,7 +226,18 @@ def ROCR(df, n, price='Close'):
 def ROCR100(df, n, price='Close'):
     """
     Rate of change ratio 100 scale: (price/prevPrice)*100
+    source: https://www.fmlabs.com/reference/default.htm?url=RateOfChange.htm
     """
+    rocr100_list = []
+    i = 0
+    while i < len(df[price]):
+        if i + 1 < n:
+            rocr100 = float('NaN')
+        else:
+            rocr100 = (df[price][i] / df[price][i - n]) * 100
+        rocr100_list.append(rocr100)
+        i += 1
+    return rocr100_list
 
 def RSI(df, n, price='Close'):
     """
