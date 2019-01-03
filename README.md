@@ -69,7 +69,7 @@ $ python3 example-6-plot-quandl.py
 ```
 $ python3 example-7-quandl-2-df.py
 ```
-* [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-7--quandl-2-df.ipynb)
+* [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-7-quandl-2-df.ipynb)
 ### Example 8
 ```
 $ python3 example-8-alphavantage-2-df.py
