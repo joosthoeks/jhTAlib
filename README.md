@@ -75,6 +75,11 @@ $ python3 example-7-quandl-2-df.py
 $ python3 example-8-alphavantage-2-df.py
 ```
 * [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-8-alphavantage-2-df.ipynb)
+### Example 9
+```
+$ python3 example-9-cryptocompare-2-df.py
+```
+* [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-9-cryptocompare-2-df.ipynb)
 
 ## Test
 ```
