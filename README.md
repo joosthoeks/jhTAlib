@@ -5,10 +5,8 @@ jhTAlib is based on the idea of [mrjbq7/ta-lib](https://github.com/mrjbq7/ta-lib
 
 Work in progress...
 
-## Depends on
-* [cmath](https://docs.python.org/3/library/cmath)
-* [math](https://docs.python.org/3/library/math)
-* [statistics](https://docs.python.org/3/library/statistics)
+## Depends only on
+* [The Python Standard Library](https://docs.python.org/3/library/index.html)
 
 ## Install
 ```
@@ -28,7 +26,7 @@ $ [sudo] pip3 install --upgrade jhtalib
 or
 ```
 $ cd jhTAlib
-$ git pull
+$ git pull [upstream master]
 ```
 
 ## Examples
@@ -90,5 +88,5 @@ $ python3 test.py
 ```
 
 ## Wiki
-* ![jhTAlib doc](https://github.com/joosthoeks/jhTAlib/wiki)
+* [jhTAlib doc](https://github.com/joosthoeks/jhTAlib/wiki)
 
