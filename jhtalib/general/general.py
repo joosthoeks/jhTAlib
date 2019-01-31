@@ -19,7 +19,7 @@ def AVG(df, price='Close'):
 
 def MED (df, price='Close'):
     """
-    MEDIAN
+    Median
     """
     med_list = []
     i = 0
@@ -32,4 +32,20 @@ def MED (df, price='Close'):
         med_list.append(med)
         i += 1
     return med_list
+
+def NORMALIZE(df, price_max='High', price_min='Low', price='Close'):
+    """
+    Normalize
+    source: https://machinelearningmastery.com/normalize-standardize-time-series-data-python/
+    """
+    normalize_list = []
+    i = 0
+    while i < len(df[price]):
+        end = i + 1
+        norm_max = max(df[price_max][0:end])
+        norm_min = min(df[price_min][0:end])
+        normalize = (df[price][i] - norm_min) / (norm_max - norm_min)
+        normalize_list.append(normalize)
+        i += 1
+    return normalize_list
 
