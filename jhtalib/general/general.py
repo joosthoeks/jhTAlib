@@ -73,3 +73,19 @@ def STANDARDIZE(df, price='Close'):
         i += 1
     return standardize_list
 
+def COV(list1, list2):
+    """
+    Covariance
+    source: https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Covariance
+    """
+    avg1 = AVG({'list1': list1}, 'list1')[-1]
+    avg2 = AVG({'list2': list2}, 'list2')[-1]
+    covariance = .0
+    i = 0
+    while i < len(list1):
+        a = list1[i] - avg1
+        b = list2[i] - avg2
+        covariance += a * b / len(list1)
+        i += 1
+    return covariance
+
