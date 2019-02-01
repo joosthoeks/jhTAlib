@@ -89,3 +89,24 @@ def COV(list1, list2):
         i += 1
     return covariance
 
+def BETA(df1, df2, price1='Close', price2='Close'):
+    """
+    Beta
+    source: https://en.wikipedia.org/wiki/Beta_(finance)
+    """
+    beta_list = []
+    i = 0
+    while i < len(df1[price1]):
+        if df1[price1][i] != df1[price1][i] or df2[price2][i] != df2[price2][i] or i < 1:
+            beta = float('NaN')
+        else:
+            end = i + 1
+            list1 = df1[price1][0:end]
+            list2 = df2[price2][0:end]
+            covariance = COV(list1, list2)
+            variance = jhta.VARIANCE({'list2': list2}, len(list2), 'list2')[-1]
+            beta = covariance / variance
+        beta_list.append(beta)
+        i += 1
+    return beta_list
+
