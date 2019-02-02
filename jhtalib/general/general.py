@@ -117,3 +117,10 @@ def HR(hit_trades_int, total_trades_int):
     """
     return float(hit_trades_int / total_trades_int)
 
+def PLR(avg_trade_profit_float, avg_trade_loss_float):
+    """
+    Profit/Loss Ratio
+    source: https://www.investopedia.com/terms/p/profit_loss_ratio.asp
+    """
+    return float(avg_trade_profit_float / avg_trade_loss_float)
+
