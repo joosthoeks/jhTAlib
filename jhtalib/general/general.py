@@ -129,5 +129,11 @@ def EV(hitrate, avg_trade_profit_float, avg_trade_loss_float):
     Expected Value
     source: https://en.wikipedia.org/wiki/Expected_value
     """
-    return (hitrate * avg_trade_profit_float) + ((1 - hitrate) * avg_trade_loss_float)
+    return float((hitrate * avg_trade_profit_float) + ((1 - hitrate) * avg_trade_loss_float))
+
+def POR():
+    """
+    Probability of Ruin (Table of Lucas and LeBeau)
+    source: book: Computer Analysis of the Futures Markets
+    """
 
