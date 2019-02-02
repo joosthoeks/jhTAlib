@@ -110,3 +110,10 @@ def BETA(df1, df2, price1='Close', price2='Close'):
         i += 1
     return beta_list
 
+def HR(hit_trades_int, total_trades_int):
+    """
+    Hit Rate / Win Rate
+    source: http://traderskillset.com/hit-rate-stock-trading/
+    """
+    return float(hit_trades_int / total_trades_int)
+
