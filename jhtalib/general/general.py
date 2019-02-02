@@ -131,9 +131,27 @@ def EV(hitrate, avg_trade_profit_float, avg_trade_loss_float):
     """
     return float((hitrate * avg_trade_profit_float) + ((1 - hitrate) * avg_trade_loss_float))
 
-def POR():
+def POR(hitrate_float, profit_loss_ratio_float):
     """
     Probability of Ruin (Table of Lucas and LeBeau)
     source: book: Computer Analysis of the Futures Markets
     """
+    hitrate_list = [.25, .3, .35, .4, .45, .5, .55, .6, .65, .7]
+    profit_loss_ratio_list = [.75, 1, 1.5, 2, 2.5, 3, 3.5, 4]
+
+    table_lucas_lebeau_dict = {
+        0: [100, 100, 100, 100, 100, 98, 77, 15, 1, 0],
+        1: [100, 100, 100,  99,  92, 50,  7,  1, 0, 0],
+        2: [100,  99,  90,  50,  12,  2,  0,  0, 0, 0],
+        3: [97,   79,  35,   9,   2,  1,  0,  0, 0, 0],
+        4: [79,   38,  12,   4,   1,  0,  0,  0, 0, 0],
+        5: [50,   19,   6,   2,   1,  0,  0,  0, 0, 0],
+        6: [31,   12,   5,   2,   1,  0,  0,  0, 0, 0],
+        7: [21,    9,   4,   2,   1,  0,  0,  0, 0, 0]
+        }
+
+    key_hitrate = min(range(len(hitrate_list)), key=lambda i: abs(hitrate_list[i] - hitrate_float))
+    key_profit_loss_ratio = min(range(len(profit_loss_ratio_list)), key=lambda i: abs(profit_loss_ratio_list[i] - profit_loss_ratio_float))
+
+    return table_lucas_lebeau_dict[key_profit_loss_ratio][key_hitrate]
 
