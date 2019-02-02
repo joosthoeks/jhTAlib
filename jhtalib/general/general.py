@@ -124,12 +124,12 @@ def PLR(avg_trade_profit_float, avg_trade_loss_float):
     """
     return float(avg_trade_profit_float / avg_trade_loss_float)
 
-def EV(hitrate, avg_trade_profit_float, avg_trade_loss_float):
+def EV(hitrate_float, avg_trade_profit_float, avg_trade_loss_float):
     """
     Expected Value
     source: https://en.wikipedia.org/wiki/Expected_value
     """
-    return float((hitrate * avg_trade_profit_float) + ((1 - hitrate) * avg_trade_loss_float))
+    return float((hitrate_float * avg_trade_profit_float) + ((1 - hitrate_float) * avg_trade_loss_float))
 
 def POR(hitrate_float, profit_loss_ratio_float):
     """
