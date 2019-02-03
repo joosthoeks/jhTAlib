@@ -136,22 +136,34 @@ def POR(hitrate_float, profit_loss_ratio_float):
     Probability of Ruin (Table of Lucas and LeBeau)
     source: book: Computer Analysis of the Futures Markets
     """
-    hitrate_list = [.25, .3, .35, .4, .45, .5, .55, .6, .65, .7]
-    profit_loss_ratio_list = [.75, 1, 1.5, 2, 2.5, 3, 3.5, 4]
+    hitrate_list = [.0, .25, .3, .35, .4, .45, .5, .55, .6, .65, .7]
+    profit_loss_ratio_list = [.0, .75, 1, 1.5, 2, 2.5, 3, 3.5, 4]
 
-    table_lucas_lebeau_dict = {
-        0: [100, 100, 100, 100, 100, 98, 77, 15, 1, 0],
-        1: [100, 100, 100,  99,  92, 50,  7,  1, 0, 0],
-        2: [100,  99,  90,  50,  12,  2,  0,  0, 0, 0],
-        3: [97,   79,  35,   9,   2,  1,  0,  0, 0, 0],
-        4: [79,   38,  12,   4,   1,  0,  0,  0, 0, 0],
-        5: [50,   19,   6,   2,   1,  0,  0,  0, 0, 0],
-        6: [31,   12,   5,   2,   1,  0,  0,  0, 0, 0],
-        7: [21,    9,   4,   2,   1,  0,  0,  0, 0, 0]
-        }
+    table_lucas_lebeau_list = [
+        [100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100],
+        [100, 100, 100, 100, 100, 100,  98,  77,  15,   1,   0],
+        [100, 100, 100, 100,  99,  92,  50,   7,   1,   0,   0],
+        [100, 100,  99,  90,  50,  12,   2,   0,   0,   0,   0],
+        [100,  97,  79,  35,   9,   2,   1,   0,   0,   0,   0],
+        [100,  79,  38,  12,   4,   1,   0,   0,   0,   0,   0],
+        [100,  50,  19,   6,   2,   1,   0,   0,   0,   0,   0],
+        [100,  31,  12,   5,   2,   1,   0,   0,   0,   0,   0],
+        [100,  21,   9,   4,   2,   1,   0,   0,   0,   0,   0]
+    ]
 
-    key_hitrate = min(range(len(hitrate_list)), key=lambda i: abs(hitrate_list[i] - hitrate_float))
-    key_profit_loss_ratio = min(range(len(profit_loss_ratio_list)), key=lambda i: abs(profit_loss_ratio_list[i] - profit_loss_ratio_float))
+    key_hitrate = 0
+    i = 0
+    while i < len(hitrate_list):
+        if hitrate_float >= hitrate_list[i]:
+            key_hitrate = i
+        i += 1
 
-    return table_lucas_lebeau_dict[key_profit_loss_ratio][key_hitrate]
+    key_profit_loss_ratio = 0
+    i = 0
+    while i < len(profit_loss_ratio_list):
+        if profit_loss_ratio_float >= profit_loss_ratio_list[i]:
+            key_profit_loss_ratio = i
+        i += 1
+
+    return int(table_lucas_lebeau_list[key_profit_loss_ratio][key_hitrate])
 
