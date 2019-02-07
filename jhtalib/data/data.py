@@ -37,6 +37,22 @@ def DF2CSV(df, csv_file_path):
                 })
             i += 1
 
+def DF2DFREV(df):
+    """
+    DataFeed 2 DataFeed Reversed
+    """
+    df_r = {'datetime': [], 'Open': [], 'High': [], 'Low': [], 'Close': [], 'Volume': []}
+    i = len(df['Close'])-1
+    while i > -1:
+        df_r['datetime'].append(df['datetime'][i])
+        df_r['Open'].append(df['Open'][i])
+        df_r['High'].append(df['High'][i])
+        df_r['Low'].append(df['Low'][i])
+        df_r['Close'].append(df['Close'][i])
+        df_r['Volume'].append(df['Volume'][i])
+        i -= 1
+    return df_r
+
 def DF2HEIKIN_ASHI(df):
     """
     DataFeed 2 Heikin-Ashi DataFeed
