@@ -22,7 +22,7 @@ def LOG(df, price='Close'):
     i = 0
     while i < len(df[price]):
         log = cmath.log(df[price][i]).real
-        log_list.append(ln)
+        log_list.append(log)
         i += 1
     return log_list
 
