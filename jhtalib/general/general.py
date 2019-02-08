@@ -32,7 +32,7 @@ def MED (df, price='Close'):
         if df[price][i] != df[price][i]:
             med = float('NaN')
         else:
-            if start = None:
+            if start is None:
                 start = i
             end = i + 1
             med = (max(df[price][start:end]) + min(df[price][start:end])) / 2
