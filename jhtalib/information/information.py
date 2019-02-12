@@ -14,8 +14,8 @@ def INFO_TRADES(profit_trades_list, loss_trades_list):
     plr = jhta.PLR((sum(profit_trades_list) / len(profit_trades_list)), (sum(loss_trades_list) / len(loss_trades_list)))
     ev = jhta.EV(hr, (sum(profit_trades_list) / len(profit_trades_list)), (sum(loss_trades_list) / len(loss_trades_list)))
     por = jhta.POR(hr, plr)
-    print ('Hit Rate / Win Rate: %f' % hr)
-    print ('Profit/Loss Ratio: %f' % plr)
-    print ('Expected Value: %f' % ev)
-    print ('Probability of Ruin: %i' % por)
+    print ('{:28} {:>16.5f}'.format('Hit Rate / Win Rate:', hr))
+    print ('{:28} {:>16.5f}'.format('Profit/Loss Ratio:', plr))
+    print ('{:28} {:>16.5f}'.format('Expected Value:', ev))
+    print ('{:28} {:>10d}'.format('Probability of Ruin:', por))
 
