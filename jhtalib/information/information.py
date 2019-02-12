@@ -6,11 +6,13 @@ def INFO(df, price='Close', columns=['datetime', 'Open', 'High', 'Low', 'Close',
     Print df Information
     """
     print ('{:28} {:>16.5f}'.format('LEN:', len(df[price])))
-    print ('{:28} {:>16.5f}'.format('MEAN:', jhta.MEAN(df, len(df[price]), price)))
-    print ('{:28} {:>16.5f}'.format('STDEV:', jhta.STDEV(df, len(df[price]), price)))
+    print ('{:28} {:>16.5f}'.format('MEAN:', jhta.MEAN(df, len(df[price]), price)[-1]))
+    print ('{:28} {:>16.5f}'.format('STDEV:', jhta.STDEV(df, len(df[price]), price)[-1]))
     print ('{:28} {:>16.5f}'.format('MIN:', min(df[price])))
-    print ('{:28} {:>16.5f}'.format('MEDIAN:', jhta.MEDIAN(df, len(df[price]), price)))
-    print ('{:28} {:>16.5f}'.format('MAX:', len(df[price])))
+    print ('{:28} {:>16.5f}'.format('MEDIAN_LOW:', jhta.MEDIAN_LOW(df, len(df[price]), price)[-1]))
+    print ('{:28} {:>16.5f}'.format('MEDIAN:', jhta.MEDIAN(df, len(df[price]), price)[-1]))
+    print ('{:28} {:>16.5f}'.format('MEDIAN_HIGH:', jhta.MEDIAN_HIGH(df, len(df[price]), price)[-1]))
+    print ('{:28} {:>16.5f}'.format('MAX:', max(df[price])))
 
 def INFO_TRADES(profit_trades_list, loss_trades_list):
     """
