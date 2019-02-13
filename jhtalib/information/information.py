@@ -19,6 +19,7 @@ def INFO(df, price='Close', columns=['datetime', 'Open', 'High', 'Low', 'Close',
 #    print ('{:28} {:>16.5f}'.format('VARIANCE:', jhta.VARIANCE(df, len(df[price]), price)[-1]))
     print ('{:28} {:>16.5f}'.format('MIN:', jhta.MIN(df, len(df[price]), price)[-1]))
     print ('{:28} {:>16.5f}'.format('MAX:', jhta.MAX(df, len(df[price]), price)[-1]))
+    print ('{:28} {:>16.5f}'.format('SUM:', jhta.SUM(df, len(df[price]), price)[-1]))
 
 def INFO_TRADES(profit_trades_list, loss_trades_list):
     """
