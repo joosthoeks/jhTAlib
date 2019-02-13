@@ -316,7 +316,10 @@ def VARIANCE(df, n, price='Close', xbar=None):
                 if start is None:
                     start = i
                 end = i + 1
-                variance = statistics.variance(df[price][start:end], xbar)
+                if len(df[price][start:end]) < 2:
+                    variance = float('NaN')
+                else:
+                    variance = statistics.variance(df[price][start:end], xbar)
             variance_list.append(variance)
             i += 1
     else:
