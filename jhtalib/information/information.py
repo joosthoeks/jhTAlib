@@ -7,12 +7,18 @@ def INFO(df, price='Close', columns=['datetime', 'Open', 'High', 'Low', 'Close',
     """
     print ('{:28} {:>16.5f}'.format('LEN:', len(df[price])))
     print ('{:28} {:>16.5f}'.format('MEAN:', jhta.MEAN(df, len(df[price]), price)[-1]))
-    print ('{:28} {:>16.5f}'.format('STDEV:', jhta.STDEV(df, len(df[price]), price)[-1]))
-    print ('{:28} {:>16.5f}'.format('MIN:', min(df[price])))
-    print ('{:28} {:>16.5f}'.format('MEDIAN_LOW:', jhta.MEDIAN_LOW(df, len(df[price]), price)[-1]))
+#    print ('{:28} {:>16.5f}'.format('HARMONIC_MEAN:', jhta.HARMONIC_MEAN(df, len(df[price]), price)[-1]))
     print ('{:28} {:>16.5f}'.format('MEDIAN:', jhta.MEDIAN(df, len(df[price]), price)[-1]))
+    print ('{:28} {:>16.5f}'.format('MEDIAN_LOW:', jhta.MEDIAN_LOW(df, len(df[price]), price)[-1]))
     print ('{:28} {:>16.5f}'.format('MEDIAN_HIGH:', jhta.MEDIAN_HIGH(df, len(df[price]), price)[-1]))
-    print ('{:28} {:>16.5f}'.format('MAX:', max(df[price])))
+    print ('{:28} {:>16.5f}'.format('MEDIAN_GROUPED:', jhta.MEDIAN_GROUPED(df, len(df[price]), price)[-1]))
+#    print ('{:28} {:>16.5f}'.format('MODE:', jhta.MODE(df, len(df[price]), price)[-1]))
+    print ('{:28} {:>16.5f}'.format('PSTDEV:', jhta.PSTDEV(df, len(df[price]), price)[-1]))
+    print ('{:28} {:>16.5f}'.format('PVARIANCE:', jhta.PVARIANCE(df, len(df[price]), price)[-1]))
+#    print ('{:28} {:>16.5f}'.format('STDEV:', jhta.STDEV(df, len(df[price]), price)[-1]))
+#    print ('{:28} {:>16.5f}'.format('VARIANCE:', jhta.VARIANCE(df, len(df[price]), price)[-1]))
+    print ('{:28} {:>16.5f}'.format('MIN:', jhta.MIN(df, len(df[price]), price)[-1]))
+    print ('{:28} {:>16.5f}'.format('MAX:', jhta.MAX(df, len(df[price]), price)[-1]))
 
 def INFO_TRADES(profit_trades_list, loss_trades_list):
     """
