@@ -7,7 +7,7 @@ def MEAN(df, n, price='Close'):
     """
     mean_list = []
     i = 0
-    if n is len(df[price]):
+    if n == len(df[price]):
         start = None
         while i < len(df[price]):
             if df[price][i] != df[price][i]:
@@ -37,7 +37,7 @@ def HARMONIC_MEAN(df, n, price='Close'):
     """
     harmonic_mean_list = []
     i = 0
-    if n is len(df[price]):
+    if n == len(df[price]):
         start = None
         while i < len(df[price]):
             if df[price][i] != df[price][i]:
@@ -67,7 +67,7 @@ def MEDIAN(df, n, price='Close'):
     """
     median_list = []
     i = 0
-    if n is len(df[price]):
+    if n == len(df[price]):
         start = None
         while i < len(df[price]):
             if df[price][i] != df[price][i]:
@@ -97,7 +97,7 @@ def MEDIAN_LOW(df, n, price='Close'):
     """
     median_low_list = []
     i = 0
-    if n is len(df[price]):
+    if n == len(df[price]):
         start = None
         while i < len(df[price]):
             if df[price][i] != df[price][i]:
@@ -127,7 +127,7 @@ def MEDIAN_HIGH(df, n, price='Close'):
     """
     median_high_list = []
     i = 0
-    if n is len(df[price]):
+    if n == len(df[price]):
         start = None
         while i < len(df[price]):
             if df[price][i] != df[price][i]:
@@ -157,7 +157,7 @@ def MEDIAN_GROUPED(df, n, price='Close', interval=1):
     """
     median_grouped_list = []
     i = 0
-    if n is len(df[price]):
+    if n == len(df[price]):
         start = None
         while i < len(df[price]):
             if df[price][i] != df[price][i]:
@@ -187,7 +187,7 @@ def MODE(df, n, price='Close'):
     """
     mode_list = []
     i = 0
-    if n is len(df[price]):
+    if n == len(df[price]):
         start = None
         while i < len(df[price]):
             if df[price][i] != df[price][i]:
@@ -217,7 +217,7 @@ def PSTDEV(df, n, price='Close', mu=None):
     """
     pstdev_list = []
     i = 0
-    if n is len(df[price]):
+    if n == len(df[price]):
         start = None
         while i < len(df[price]):
             if df[price][i] != df[price][i]:
@@ -247,7 +247,7 @@ def PVARIANCE(df, n, price='Close', mu=None):
     """
     pvariance_list = []
     i = 0
-    if n is len(df[price]):
+    if n == len(df[price]):
         start = None
         while i < len(df[price]):
             if df[price][i] != df[price][i]:
@@ -277,7 +277,7 @@ def STDEV(df, n, price='Close', xbar=None):
     """
     stdev_list = []
     i = 0
-    if n is len(df[price]):
+    if n == len(df[price]):
         start = None
         while i < len(df[price]):
             if df[price][i] != df[price][i]:
@@ -307,7 +307,7 @@ def VARIANCE(df, n, price='Close', xbar=None):
     """
     variance_list = []
     i = 0
-    if n is len(df[price]):
+    if n == len(df[price]):
         start = None
         while i < len(df[price]):
             if df[price][i] != df[price][i]:
