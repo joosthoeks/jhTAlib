@@ -296,7 +296,7 @@ def MAX(df, n, price='Close'):
     """
     max_list = []
     i = 0
-    if n is len(df[price]):
+    if n == len(df[price]):
         start = None
         while i < len(df[price]):
             if df[price][i] != df[price][i]:
@@ -331,7 +331,7 @@ def MIN(df, n, price='Close'):
     """
     min_list = []
     i = 0
-    if n is len(df[price]):
+    if n == len(df[price]):
         start = None
         while i < len(df[price]):
             if df[price][i] != df[price][i]:
@@ -400,7 +400,7 @@ def SUM(df, n, price='Close'):
     """
     sum_list = []
     i = 0
-    if n is len(df[price]):
+    if n == len(df[price]):
         start = None
         while i < len(df[price]):
             if df[price][i] != df[price][i]:
