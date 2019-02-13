@@ -5,7 +5,7 @@ def INFO(df, price='Close', columns=['datetime', 'Open', 'High', 'Low', 'Close',
     """
     Print df Information
     """
-    print ('{:28} {:>16.5f}'.format('LEN:', len(df[price])))
+    print ('{:28} {:>10d}'.format('LEN:', len(df[price])))
     print ('{:28} {:>16.5f}'.format('MEAN:', jhta.MEAN(df, len(df[price]), price)[-1]))
 #    print ('{:28} {:>16.5f}'.format('HARMONIC_MEAN:', jhta.HARMONIC_MEAN(df, len(df[price]), price)[-1]))
     print ('{:28} {:>16.5f}'.format('MEDIAN:', jhta.MEDIAN(df, len(df[price]), price)[-1]))
