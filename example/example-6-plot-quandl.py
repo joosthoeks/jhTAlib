@@ -2,8 +2,6 @@
 
 
 import quandl
-#from datetime import datetime as dt
-from pprint import pprint as pp
 import matplotlib.dates as mdates
 import matplotlib.pyplot as plt
 import jhtalib as jhta
