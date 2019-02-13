@@ -1,7 +1,7 @@
 import jhtalib as jhta
 
 
-def INFO(df, price='Close', columns=['datetime', 'Open', 'High', 'Low', 'Close', 'Volume']):
+def INFO(df, price='Close'):
     """
     Print df Information
     """
