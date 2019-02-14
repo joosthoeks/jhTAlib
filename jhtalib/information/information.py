@@ -6,6 +6,9 @@ def INFO(df, price='Close'):
     Print df Information
     """
     print ('{:_<28}:{:_>22d}'.format('LEN', len(df[price])))
+    print ('{:_<28}:{:_>28.5f}'.format('MIN', jhta.MIN(df, len(df[price]), price)[-1]))
+    print ('{:_<28}:{:_>28.5f}'.format('MAX', jhta.MAX(df, len(df[price]), price)[-1]))
+    print ('{:_<28}:{:_>28.5f}'.format('SUM', jhta.SUM(df, len(df[price]), price)[-1]))
     print ('{:_<28}:{:_>28.5f}'.format('MEAN', jhta.MEAN(df, len(df[price]), price)[-1]))
 #    print ('{:_<28}:{:_>28.5f}'.format('HARMONIC_MEAN', jhta.HARMONIC_MEAN(df, len(df[price]), price)[-1]))
     print ('{:_<28}:{:_>28.5f}'.format('MEDIAN', jhta.MEDIAN(df, len(df[price]), price)[-1]))
@@ -17,9 +20,6 @@ def INFO(df, price='Close'):
     print ('{:_<28}:{:_>28.5f}'.format('PVARIANCE', jhta.PVARIANCE(df, len(df[price]), price)[-1]))
     print ('{:_<28}:{:_>28.5f}'.format('STDEV', jhta.STDEV(df, len(df[price]), price)[-1]))
     print ('{:_<28}:{:_>28.5f}'.format('VARIANCE', jhta.VARIANCE(df, len(df[price]), price)[-1]))
-    print ('{:_<28}:{:_>28.5f}'.format('MIN', jhta.MIN(df, len(df[price]), price)[-1]))
-    print ('{:_<28}:{:_>28.5f}'.format('MAX', jhta.MAX(df, len(df[price]), price)[-1]))
-    print ('{:_<28}:{:_>28.5f}'.format('SUM', jhta.SUM(df, len(df[price]), price)[-1]))
 
 def INFO_TRADES(profit_trades_list, loss_trades_list):
     """
