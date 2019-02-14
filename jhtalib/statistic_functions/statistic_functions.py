@@ -286,7 +286,10 @@ def STDEV(df, n, price='Close', xbar=None):
                 if start is None:
                     start = i
                 end = i + 1
-                stdev = statistics.stdev(df[price][start:end], xbar)
+                if len(df[price][start:end]) < 2:
+                    stdev = float('NaN')
+                else:
+                    stdev = statistics.stdev(df[price][start:end], xbar)
             stdev_list.append(stdev)
             i += 1
     else:
@@ -296,7 +299,10 @@ def STDEV(df, n, price='Close', xbar=None):
             else:
                 start = i + 1 - n
                 end = i + 1
-                stdev = statistics.stdev(df[price][start:end], xbar)
+                if len(df[price][start:end]) < 2:
+                    stdev = float('NaN')
+                else:
+                    stdev = statistics.stdev(df[price][start:end], xbar)
             stdev_list.append(stdev)
             i += 1
     return stdev_list
@@ -329,7 +335,10 @@ def VARIANCE(df, n, price='Close', xbar=None):
             else:
                 start = i + 1 - n
                 end = i + 1
-                variance = statistics.variance(df[price][start:end], xbar)
+                if len(df[price][start:end]) < 2:
+                    variance = float('NaN')
+                else:
+                    variance = statistics.variance(df[price][start:end], xbar)
             variance_list.append(variance)
             i += 1
     return variance_list
