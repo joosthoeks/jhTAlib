@@ -86,6 +86,24 @@ def BETA(df1, df2, price1='Close', price2='Close'):
         i += 1
     return beta_list
 
+def CP(df):
+    """
+    Comparative Performance
+    source: https://www.fmlabs.com/reference/default.htm?url=CompPerformance.htm
+    """
+
+def CRSI(df, n):
+    """
+    Comparative Relative Strength Index
+    source: https://www.fmlabs.com/reference/default.htm?url=RSIC.htm
+    """
+
+def CS(df):
+    """
+    Comparative Strength
+    source: https://www.fmlabs.com/reference/default.htm?url=CompStrength.htm
+    """
+
 def HR(hit_trades_int, total_trades_int):
     """
     Hit Rate / Win Rate
