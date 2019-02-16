@@ -46,19 +46,19 @@ def STANDARDIZE(df, price='Close'):
         i += 1
     return standardize_list
 
-def COV(list1, list2):
+def COV(df1, df2, price1='Close', price2='Close'):
     """
     Covariance
     source: https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Covariance
     """
-    mean1 = jhta.MEAN({'list1': list1}, len(list1), 'list1')[-1]
-    mean2 = jhta.MEAN({'list2': list2}, len(list2), 'list2')[-1]
+    mean1 = jhta.MEAN(df1, len(df1[price1]), price1)[-1]
+    mean2 = jhta.MEAN(df2, len(df2[price2]), price2)[-1]
     covariance = .0
     i = 0
-    while i < len(list1):
-        a = list1[i] - mean1
-        b = list2[i] - mean2
-        covariance += a * b / len(list1)
+    while i < len(df1[price1]):
+        a = df1[price1][i] - mean1
+        b = df2[price2][i] - mean2
+        covariance += a * b / len(df1[price1])
         i += 1
     return covariance
 
@@ -79,7 +79,7 @@ def BETA(df1, df2, price1='Close', price2='Close'):
             end = i + 1
             list1 = df1[price1][start:end]
             list2 = df2[price2][start:end]
-            covariance = COV(list1, list2)
+            covariance = COV({'list1': list1}, {'list2': list2}, 'list1', 'list2')
             variance = jhta.VARIANCE({'list2': list2}, len(list2), 'list2')[-1]
             beta = covariance / variance
         beta_list.append(beta)
