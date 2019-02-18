@@ -140,7 +140,7 @@ def CP(df1, df2, price1='Close', price2='Close'):
     cp_list = []
     i = 0
     while i < len(df1[price1]):
-        cp = 1 + (((df1[price1][i] / df2[price2][i]) - (df1[price1][0] / df2[price2][0])) / df1[price1][0]) / df2[price2][0]))
+        cp = 1 + (((df1[price1][i] / df2[price2][i]) - (df1[price1][0] / df2[price2][0])) / (df1[price1][0] / df2[price2][0]))
         cp_list.append(cp)
         i += 1
     return cp_list
