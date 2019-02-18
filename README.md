@@ -1,8 +1,6 @@
 # jhTAlib
 Technical Analysis Library Time-Series
 
-jhTAlib is based on the idea of [mrjbq7/ta-lib](https://github.com/mrjbq7/ta-lib) but without the need for installation of [TA-LIB](http://ta-lib.org).
-
 You can use and import it for your:
 * Technical Analysis Software
 * Charting Software
