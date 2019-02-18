@@ -54,6 +54,21 @@ def EMA(df, n):
     Exponential Moving Average
     """
 
+def ENVP(df, pct=.01, price='Close'):
+    """
+    Envelope Percent
+    source: https://www.fmlabs.com/reference/default.htm?url=EnvelopePct.htm
+    """
+    envp_dict = {'hi': [], 'lo': []}
+    i = 0
+    while i < len(df[price]):
+        hi = df[price][i] + df[price][i] * pct
+        lo = df[price][i] - df[price][i] * pct
+        envp_dict['hi'].append(hi)
+        envp_dict['lo'].append(lo)
+        i += 1
+    return envp_dict
+
 def KAMA(df, n):
     """
     Kaufman Adaptive Moving Average
