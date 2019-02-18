@@ -132,11 +132,18 @@ def BETA(df1, df2, n, price1='Close', price2='Close'):
             i += 1
     return beta_list
 
-def CP(df):
+def CP(df1, df2, price1='Close', price2='Close'):
     """
     Comparative Performance
     source: https://www.fmlabs.com/reference/default.htm?url=CompPerformance.htm
     """
+    cp_list = []
+    i = 0
+    while i < len(df1[price1]):
+        cp = 1 + ((df1[price1][i] / df2[price2][i]) - (df1[price1][0] / df2[price2][0]) / (df1[price1][0] / df2[price2][0]))
+        cp_list.append(cp)
+        i += 1
+    return cp_list
 
 def CRSI(df, n):
     """
