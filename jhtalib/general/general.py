@@ -145,11 +145,21 @@ def CP(df1, df2, price1='Close', price2='Close'):
         i += 1
     return cp_list
 
-def CRSI(df, n):
+def CRSI(df1, df2, n, price1='Close', price2='Close'):
     """
     Comparative Relative Strength Index
     source: https://www.fmlabs.com/reference/default.htm?url=RSIC.htm
     """
+    crsi_list = []
+    i = 0
+    while i < len(df1[price1]):
+        if i + 1 < n:
+            crsi = float('NaN')
+        else:
+            crsi =  ((df1[price1][i] / df2[price2][i]) - (df1[price1][i - n] / df2[price2][i - n]) / (df1[price1][i - n] / df2[price2][i - n]))
+        crsi_list.append(crsi)
+        i += 1
+    return crsi_list
 
 def CS(df):
     """
