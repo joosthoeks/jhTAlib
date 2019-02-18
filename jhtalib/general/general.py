@@ -161,11 +161,18 @@ def CRSI(df1, df2, n, price1='Close', price2='Close'):
         i += 1
     return crsi_list
 
-def CS(df):
+def CS(df1, df2, price1='Close', price2='Close'):
     """
     Comparative Strength
     source: https://www.fmlabs.com/reference/default.htm?url=CompStrength.htm
     """
+    cs_list = []
+    i = 0
+    while i < len(df1[price1]):
+        cs = df1[price1][i] / df2[price2][i]
+        cs_list.append(cs)
+        i += 1
+    return cs_list
 
 def HR(hit_trades_int, total_trades_int):
     """
