@@ -5,6 +5,7 @@ def INFO(df, price='Close'):
     """
     Print df Information
     """
+    print ('{:_<28}:{:_>22}'.format('DF PRICE COLUMN', price))
     print ('{:_<28}:{:_>22d}'.format('LEN', len(df[price])))
     print ('{:_<28}:{:_>28.5f}'.format('MIN', jhta.MIN(df, len(df[price]), price)[-1]))
     print ('{:_<28}:{:_>28.5f}'.format('MAX', jhta.MAX(df, len(df[price]), price)[-1]))
