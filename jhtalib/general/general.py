@@ -9,6 +9,8 @@ def NORMALIZE(df, price_max='High', price_min='Low', price='Close'):
     normalize_list = []
     i = 0
     start = None
+    norm_max = max(df[price_max])
+    norm_min = min(df[price_min])
     while i < len(df[price]):
         if df[price_max][i] != df[price_max][i] or df[price_min][i] != df[price_min][i] or df[price][i] != df[price][i] or i < 1:
             normalize = float('NaN')
@@ -16,8 +18,8 @@ def NORMALIZE(df, price_max='High', price_min='Low', price='Close'):
             if start is None:
                 start = i
             end = i + 1
-            norm_max = max(df[price_max][start:end])
-            norm_min = min(df[price_min][start:end])
+#            norm_max = max(df[price_max][start:end])
+#            norm_min = min(df[price_min][start:end])
             normalize = (df[price][i] - norm_min) / (norm_max - norm_min)
         normalize_list.append(normalize)
         i += 1
