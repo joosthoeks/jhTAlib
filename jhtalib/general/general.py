@@ -48,6 +48,18 @@ def STANDARDIZE(df, price='Close'):
         i += 1
     return standardize_list
 
+def SPREAD(df1, df2, price1='Close', price2='Close'):
+    """
+    Spread
+    """
+    spread_list = []
+    i = 0
+    while i < len(df1[price1]):
+        spread = df1[price1][i] - df2[price2][i]
+        spread_list.append(spread)
+        i += 1
+    return spread_list
+
 def COV(list1, list2):
     """
     Covariance
