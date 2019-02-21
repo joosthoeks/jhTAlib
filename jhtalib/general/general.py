@@ -48,6 +48,52 @@ def STANDARDIZE(df, price='Close'):
         i += 1
     return standardize_list
 
+def LSR(df, price='Close'):
+    """
+    Least Squares Regression
+    source: https://www.mathsisfun.com/data/least-squares-regression.html
+    """
+    x_list = []
+    y_list = []
+    x2_list = []
+    xy_list = []
+    i = 0
+    while i < len(df[price]):
+        # For each (x,y) calculate x2 and xy:
+        x = i
+        y = df[price][i]
+        x2 = x * x
+        xy = x * y
+        x_list.append(x)
+        y_list.append(y)
+        x2_list.append(x2)
+        xy_list.append(xy)
+        i += 1
+
+    # Sum all x, y, x2 and xy, which gives us Σx, Σy, Σx2 and Σxy:
+    x_sum = jhta.SUM({'x_list': x_list}, len(x_list), 'x_list')[-1]
+    y_sum = jhta.SUM({'y_list': y_list}, len(y_list), 'y_list')[-1]
+    x2_sum = jhta.SUM({'x2_list': x2_list}, len(x2_list), 'x2_list')[-1]
+    xy_sum = jhta.SUM({'xy_list': xy_list}, len(xy_list), 'xy_list')[-1]
+
+    # set n:
+    n = len(df[price])
+
+    # Calculate Slope:
+    m = (n * xy_sum - x_sum * y_sum) / (n * x2_sum - x_sum * x_sum)
+
+    # Calculate Intercept:
+    b = (y_sum - m * x_sum) / n
+
+    lsr_list = []
+    i = 0
+    while i < len(df[price]):
+        # Assemble the equation of a line:
+        lsr = m * i + b
+        lsr_list.append(lsr)
+        i += 1
+    return lsr_list
+
 def SPREAD(df1, df2, price1='Close', price2='Close'):
     """
     Spread
