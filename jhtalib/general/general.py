@@ -48,7 +48,7 @@ def STANDARDIZE(df, price='Close'):
         i += 1
     return standardize_list
 
-def LSR(df, price='Close'):
+def LSR(df, price='Close', predictions_int=0):
     """
     Least Squares Regression
     source: https://www.mathsisfun.com/data/least-squares-regression.html
@@ -87,7 +87,7 @@ def LSR(df, price='Close'):
 
     lsr_list = []
     i = 0
-    while i < len(df[price]):
+    while i < len(df[price]) + predictions_int:
         # Assemble the equation of a line:
         lsr = m * i + b
         lsr_list.append(lsr)
