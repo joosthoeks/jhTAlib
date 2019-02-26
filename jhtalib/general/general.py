@@ -94,6 +94,22 @@ def LSR(df, price='Close', predictions_int=0):
         i += 1
     return lsr_list
 
+def SLR(df, price='Close', predictions_int=0):
+    """
+    Simple Linear Regression
+    source: https://machinelearningmastery.com/implement-simple-linear-regression-scratch-python/
+    """
+    x_list = list(range(len(df[price])))
+    b1 = jhta.COVARIANCE({'x': x_list}, {'y': df[price]}, len(x_list), 'x', 'y')[-1] / jhta.VARIANCE({'x': x_list}, len(x_list), 'x')[-1]
+    b0 = jhta.MEAN({'y': df[price]}, len(df[price]), 'y')[-1] - b1 * jhta.MEAN({'x': x_list}, len(x_list), 'x')[-1]
+    slr_list = []
+    i = 0
+    while i < len(df[price]) + predictions_int:
+        slr = b0 + b1 * i
+        slr_list.append(slr)
+        i += 1
+    return slr_list
+
 def SPREAD(df1, df2, price1='Close', price2='Close'):
     """
     Spread
