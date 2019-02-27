@@ -53,6 +53,19 @@ def DF2DFREV(df):
         i -= 1
     return df_r
 
+def DF2DFWIN(df, start=0, end=10):
+    """
+    DataFeed 2 DataFeed Window
+    """
+    return {
+        'datetime': df['datetime'][start:end],
+        'Open': df['Open'][start:end],
+        'High': df['High'][start:end],
+        'Low': df['Low'][start:end],
+        'Close': df['Close'][start:end],
+        'Volume': df['Volume'][start:end]
+        }
+
 def DF2HEIKIN_ASHI(df):
     """
     DataFeed 2 Heikin-Ashi DataFeed
