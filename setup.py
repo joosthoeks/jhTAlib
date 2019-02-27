@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='jhTAlib',
-    version='20190226.0',
+    version='20190227.0',
     description='Technical Analysis Library Time-Series',
     long_description='Technical Analysis Library Time-Series',
     keywords=['Technical', 'Analysis', 'Library', 'Time-Series'],
