@@ -66,6 +66,35 @@ def DF2DFWIN(df, start=0, end=10):
         'Volume': df['Volume'][start:end]
         }
 
+def DF_HEAD(df, n=5):
+    """
+    DataFeed HEAD
+    """
+    end = n
+    return {
+        'datetime': df['datetime'][0:end],
+        'Open': df['Open'][0:end],
+        'High': df['High'][0:end],
+        'Low': df['Low'][0:end],
+        'Close': df['Close'][0:end],
+        'Volume': df['Volume'][0:end]
+        }
+
+def DF_TAIL(df, n=5):
+    """
+    DataFeed TAIL
+    """
+    start = len(df['Close']) - n
+    end = len(df['Close'])
+    return {
+        'datetime': df['datetime'][start:end],
+        'Open': df['Open'][start:end],
+        'High': df['High'][start:end],
+        'Low': df['Low'][start:end],
+        'Close': df['Close'][start:end],
+        'Volume': df['Volume'][start:end]
+        }
+
 def DF2HEIKIN_ASHI(df):
     """
     DataFeed 2 Heikin-Ashi DataFeed
