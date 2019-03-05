@@ -16,7 +16,13 @@ def CSV2DF(csv_file_path):
             df['Low'].append(float(row['Low']))
             df['Close'].append(float(row['Close']))
             df['Volume'].append(int(row['Volume']))
-    return df
+    df['datetime'] = tuple(df['datetime'])
+    df['Open'] = tuple(df['Open'])
+    df['High'] = tuple(df['High'])
+    df['Low'] = tuple(df['Low'])
+    df['Close'] = tuple(df['Close'])
+    df['Volume'] = tuple(df['Volume'])
+    return dict(df)
 
 def CSVURL2DF(csv_file_url):
     """
@@ -74,34 +80,40 @@ def DF2DFREV(df):
         df_r['Close'].append(df['Close'][i])
         df_r['Volume'].append(df['Volume'][i])
         i -= 1
-    return df_r
+    df_r['datetime'] = tuple(df_r['datetime'])
+    df_r['Open'] = tuple(df_r['Open'])
+    df_r['High'] = tuple(df_r['High'])
+    df_r['Low'] = tuple(df_r['Low'])
+    df_r['Close'] = tuple(df_r['Close'])
+    df_r['Volume'] = tuple(df_r['Volume'])
+    return dict(df_r)
 
 def DF2DFWIN(df, start=0, end=10):
     """
     DataFeed 2 DataFeed Window
     """
-    return {
-        'datetime': df['datetime'][start:end],
-        'Open': df['Open'][start:end],
-        'High': df['High'][start:end],
-        'Low': df['Low'][start:end],
-        'Close': df['Close'][start:end],
-        'Volume': df['Volume'][start:end]
-        }
+    return dict({
+        'datetime': tuple(df['datetime'][start:end]),
+        'Open': tuple(df['Open'][start:end]),
+        'High': tuple(df['High'][start:end]),
+        'Low': tuple(df['Low'][start:end]),
+        'Close': tuple(df['Close'][start:end]),
+        'Volume': tuple(df['Volume'][start:end])
+        })
 
 def DF_HEAD(df, n=5):
     """
     DataFeed HEAD
     """
     end = n
-    return {
-        'datetime': df['datetime'][0:end],
-        'Open': df['Open'][0:end],
-        'High': df['High'][0:end],
-        'Low': df['Low'][0:end],
-        'Close': df['Close'][0:end],
-        'Volume': df['Volume'][0:end]
-        }
+    return dict({
+        'datetime': tuple(df['datetime'][0:end]),
+        'Open': tuple(df['Open'][0:end]),
+        'High': tuple(df['High'][0:end]),
+        'Low': tuple(df['Low'][0:end]),
+        'Close': tuple(df['Close'][0:end]),
+        'Volume': tuple(df['Volume'][0:end])
+        })
 
 def DF_TAIL(df, n=5):
     """
@@ -109,14 +121,14 @@ def DF_TAIL(df, n=5):
     """
     start = len(df['Close']) - n
     end = len(df['Close'])
-    return {
-        'datetime': df['datetime'][start:end],
-        'Open': df['Open'][start:end],
-        'High': df['High'][start:end],
-        'Low': df['Low'][start:end],
-        'Close': df['Close'][start:end],
-        'Volume': df['Volume'][start:end]
-        }
+    return dict({
+        'datetime': tuple(df['datetime'][start:end]),
+        'Open': tuple(df['Open'][start:end]),
+        'High': tuple(df['High'][start:end]),
+        'Low': tuple(df['Low'][start:end]),
+        'Close': tuple(df['Close'][start:end]),
+        'Volume': tuple(df['Volume'][start:end])
+        })
 
 def DF2HEIKIN_ASHI(df):
     """
@@ -138,17 +150,17 @@ def DF2HEIKIN_ASHI(df):
             ha_Close = (df['Open'][i] + df['High'][i] + df['Low'][i] + df['Close'][i]) / 4
             ha_High = max([df['High'][i], ha_Open, ha_Close])
             ha_Low = min([df['Low'][i], ha_Open, ha_Close])
-        ha_Open_list.append(ha_Open)
-        ha_High_list.append(ha_High)
-        ha_Low_list.append(ha_Low)
-        ha_Close_list.append(ha_Close)
+        ha_Open_list.append(float(ha_Open))
+        ha_High_list.append(float(ha_High))
+        ha_Low_list.append(float(ha_Low))
+        ha_Close_list.append(float(ha_Close))
         i += 1
-    return {
-        'datetime': df['datetime'],
-        'Open': ha_Open_list,
-        'High': ha_High_list,
-        'Low': ha_Low_list,
-        'Close': ha_Close_list,
-        'Volume': df['Volume']
-        }
+    return dict({
+        'datetime': tuple(df['datetime']),
+        'Open': tuple(ha_Open_list),
+        'High': tuple(ha_High_list),
+        'Low': tuple(ha_Low_list),
+        'Close': tuple(ha_Close_list),
+        'Volume': tuple(df['Volume'])
+        })
 
