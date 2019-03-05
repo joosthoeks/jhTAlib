@@ -1,4 +1,5 @@
 import csv
+import urllib.request
 
 
 def CSV2DF(csv_file_path):
@@ -16,6 +17,28 @@ def CSV2DF(csv_file_path):
             df['Close'].append(float(row['Close']))
             df['Volume'].append(int(row['Volume']))
     return df
+
+def CSVURL2DF(csv_file_url):
+    """
+    CSV file url 2 DataFeed
+    """
+    df = {'datetime': [], 'Open': [], 'High': [], 'Low': [], 'Close': [], 'Volume': []}
+    csv_file = urllib.request.urlopen(csv_file_url).read().decode('utf-8').splitlines()
+    reader = csv.DictReader(csv_file)
+    for row in reader:
+        df['datetime'].append(row['datetime'])
+        df['Open'].append(float(row['Open']))
+        df['High'].append(float(row['High']))
+        df['Low'].append(float(row['Low']))
+        df['Close'].append(float(row['Close']))
+        df['Volume'].append(int(row['Volume']))
+    df['datetime'] = tuple(df['datetime'])
+    df['Open'] = tuple(df['Open'])
+    df['High'] = tuple(df['High'])
+    df['Low'] = tuple(df['Low'])
+    df['Close'] = tuple(df['Close'])
+    df['Volume'] = tuple(df['Volume'])
+    return dict(df)
 
 def DF2CSV(df, csv_file_path):
     """
