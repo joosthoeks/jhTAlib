@@ -45,6 +45,8 @@ Work in progress...
     
     * [Example 9](https://jhtalib.joosthoeks.com/index.html#example-9)
 
+    * [Example 10](https://jhtalib.joosthoeks.com/index.html#example-10)
+
 * [Test](https://jhtalib.joosthoeks.com/index.html#test)
 
 * [Reference](https://jhtalib.joosthoeks.com/index.html#reference)
@@ -161,6 +163,9 @@ $ python3 example-9-cryptocompare-2-df.py
 or
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-9-cryptocompare-2-df.ipynb)
+
+### Example 10
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-10-df-numpy-pandas.ipynb)
 
 ## Test
 ```
