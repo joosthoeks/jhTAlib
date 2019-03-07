@@ -483,7 +483,7 @@ def SLR(df, price='Close', predictions_int=0):
     """
     x_list = list(range(len(df[price])))
 #    b1 = COVARIANCE({'x': x_list}, {'y': df[price]}, len(x_list), 'x', 'y')[-1] / VARIANCE({'x': x_list}, len(x_list), 'x')[-1]
-    b1 = COV(x_list, df[price] / VARIANCE({'x': x_list}, len(x_list), 'x')[-1]
+    b1 = COV(x_list, df[price]) / VARIANCE({'x': x_list}, len(x_list), 'x')[-1]
     b0 = MEAN({'y': df[price]}, len(df[price]), 'y')[-1] - b1 * MEAN({'x': x_list}, len(x_list), 'x')[-1]
     slr_list = []
     i = 0
