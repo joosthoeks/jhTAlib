@@ -274,12 +274,6 @@ SLR | Simple Linear Regression | DONE
 list | ```jhta.SLR(df, price='Close', predictions_int=0)``` |
 SPREAD | Spread | DONE
 list | ```jhta.SPREAD(df1, df2, price1='Close', price2='Close')``` |
-COV | Covariance | DONE
-float | ```jhta.COV(list1, list2)``` |
-COVARIANCE | Covariance | DONE
-list | ```jhta.COVARIANCE(df1, df2, n, price1='Close', price2='Close')``` |
-BETA | Beta | DONE
-list | ```jhta.BETA(df1, df2, n, price1='Close', price2='Close')``` |
 CP | Comparative Performance | DONE
 list | ```jhta.CP(df1, df2, price1='Close', price2='Close')``` |
 CRSI | Comparative Relative Strength Index | DONE
