@@ -1,2 +1,1687 @@
-<!--<meta http-equiv="refresh" content="0; url=./build/html/index.html" />-->
-jhTAlib
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>jhTAlib – </title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+<h1 id="jhtalib">jhTAlib</h1>
+<p>Technical Analysis Library Time-Series</p>
+<p>You can use and import it for your:</p>
+<ul>
+<li><p>Technical Analysis Software</p></li>
+<li><p>Charting Software</p></li>
+<li><p>Backtest Software</p></li>
+<li><p>Trading Robot Software</p></li>
+<li><p>Trading Software in general</p></li>
+</ul>
+<p>Work in progress...</p>
+<h2 id="table-of-contents-toc">Table of Contents (ToC)</h2>
+<ul>
+<li><p><a href="https://jhtalib.joosthoeks.com/">Home</a></p></li>
+<li><p><a href="https://jhtalib.joosthoeks.com/index.html#depends-only-on">Depends only on</a></p></li>
+<li><p><a href="https://jhtalib.joosthoeks.com/index.html#install">Install</a></p></li>
+<li><p><a href="https://jhtalib.joosthoeks.com/index.html#update">Update</a></p></li>
+<li><p><a href="https://jhtalib.joosthoeks.com/index.html#examples">Examples</a></p>
+<ul>
+<li><p><a href="https://jhtalib.joosthoeks.com/index.html#example-1">Example 1</a></p></li>
+<li><p><a href="https://jhtalib.joosthoeks.com/index.html#example-2">Example 2</a></p></li>
+<li><p><a href="https://jhtalib.joosthoeks.com/index.html#example-3">Example 3</a></p></li>
+<li><p><a href="https://jhtalib.joosthoeks.com/index.html#example-4">Example 4</a></p></li>
+<li><p><a href="https://jhtalib.joosthoeks.com/index.html#example-5">Example 5</a></p></li>
+<li><p><a href="https://jhtalib.joosthoeks.com/index.html#example-6">Example 6</a></p></li>
+<li><p><a href="https://jhtalib.joosthoeks.com/index.html#example-7">Example 7</a></p></li>
+<li><p><a href="https://jhtalib.joosthoeks.com/index.html#example-8">Example 8</a></p></li>
+<li><p><a href="https://jhtalib.joosthoeks.com/index.html#example-9">Example 9</a></p></li>
+</ul></li>
+<li><p><a href="https://jhtalib.joosthoeks.com/index.html#test">Test</a></p></li>
+<li><p><a href="https://jhtalib.joosthoeks.com/index.html#reference">Reference</a></p></li>
+</ul>
+<h2 id="depends-only-on">Depends only on</h2>
+<ul>
+<li><a href="https://docs.python.org/3/library/index.html">The Python Standard Library</a></li>
+</ul>
+<h2 id="install">Install</h2>
+<p>From <a href="https://pypi.org/project/jhTAlib/">PyPI</a>:</p>
+<pre><code>$ [sudo] pip3 install jhtalib</code></pre>
+<p>From <a href="https://github.com/joosthoeks/jhTAlib">source</a>:</p>
+<pre><code>$ git clone https://github.com/joosthoeks/jhTAlib.git
+$ cd jhTAlib
+$ [sudo] pip3 install -e .</code></pre>
+<h2 id="update">Update</h2>
+<p>From <a href="https://pypi.org/project/jhTAlib/">PyPI</a>:</p>
+<pre><code>$ [sudo] pip3 install --upgrade jhtalib</code></pre>
+<p>From <a href="https://github.com/joosthoeks/jhTAlib">source</a>:</p>
+<pre><code>$ cd jhTAlib
+$ git pull [upstream master]</code></pre>
+<h2 id="examples">Examples</h2>
+<pre><code>$ cd example/</code></pre>
+<h3 id="example-1">Example 1</h3>
+<pre><code>$ python3 example-1-plot.py</code></pre>
+<p>or</p>
+<p><a href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-1-plot.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" /></a></p>
+<h3 id="example-2">Example 2</h3>
+<pre><code>$ python3 example-2-plot.py</code></pre>
+<p>or</p>
+<p><a href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-2-plot.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" /></a></p>
+<h3 id="example-3">Example 3</h3>
+<pre><code>$ python3 example-3-plot.py</code></pre>
+<p>or</p>
+<p><a href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-3-plot.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" /></a></p>
+<h3 id="example-4">Example 4</h3>
+<pre><code>$ python3 example-4-plot-quandl.py</code></pre>
+<p>or</p>
+<p><a href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-4-plot-quandl.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" /></a></p>
+<h3 id="example-5">Example 5</h3>
+<pre><code>$ python3 example-5-plot-quandl.py</code></pre>
+<p>or</p>
+<p><a href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-5-plot-quandl.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" /></a></p>
+<h3 id="example-6">Example 6</h3>
+<pre><code>$ python3 example-6-plot-quandl.py</code></pre>
+<p>or</p>
+<p><a href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-6-plot-quandl.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" /></a></p>
+<h3 id="example-7">Example 7</h3>
+<pre><code>$ python3 example-7-quandl-2-df.py</code></pre>
+<p>or</p>
+<p><a href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-7-quandl-2-df.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" /></a></p>
+<h3 id="example-8">Example 8</h3>
+<pre><code>$ python3 example-8-alphavantage-2-df.py</code></pre>
+<p>or</p>
+<p><a href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-8-alphavantage-2-df.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" /></a></p>
+<h3 id="example-9">Example 9</h3>
+<pre><code>$ python3 example-9-cryptocompare-2-df.py</code></pre>
+<p>or</p>
+<p><a href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-9-cryptocompare-2-df.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" /></a></p>
+<h2 id="test">Test</h2>
+<pre><code>$ cd test/
+$ python3 test.py</code></pre>
+<h2 id="reference">Reference</h2>
+<pre><code>import jhtalib as jhta</code></pre>
+<table style="width:17%;">
+<colgroup>
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Indicator / Returns</th>
+<th align="left">Name / Params</th>
+<th align="left">TODO</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><strong><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/behavioral_techniques/behavioral_techniques.py">behavioral_techniques</a></strong></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">ATH</td>
+<td align="left">All Time High</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">dict of lists</td>
+<td align="left"><code>jhta.ATH(df, price='High')</code></td>
+</tr>
+<tr class="even">
+<td align="left">LMC</td>
+<td align="left">Last Major Correction</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">dict of lists</td>
+<td align="left"><code>jhta.LMC(df, price='Low')</code></td>
+</tr>
+<tr class="even">
+<td align="left">PP</td>
+<td align="left">Pivot Point</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">dict of lists</td>
+<td align="left"><code>jhta.PP(df)</code></td>
+</tr>
+<tr class="even">
+<td align="left">FIBOPR</td>
+<td align="left">Fibonacci Price Retracements</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">dict of lists</td>
+<td align="left"><code>jhta.FIBOPR(df, price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">FIBOTR</td>
+<td align="left">Fibonacci Time Retracements</td>
+</tr>
+<tr class="odd">
+<td align="left">GANNPR</td>
+<td align="left">W. D. Gann Price Retracements</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="even">
+<td align="left">dict of lists</td>
+<td align="left"><code>jhta.GANNPR(df, price='Close')</code></td>
+</tr>
+<tr class="odd">
+<td align="left">GANNTR</td>
+<td align="left">W. D. Gann Time Retracements</td>
+</tr>
+<tr class="even">
+<td align="left">JDN</td>
+<td align="left">Julian Day Number</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">jdn</td>
+<td align="left"><code>jhta.JDN(utc_year, utc_month, utc_day)</code></td>
+</tr>
+<tr class="even">
+<td align="left">JD</td>
+<td align="left">Julian Date</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">jd</td>
+<td align="left"><code>jhta.JD(utc_year, utc_month, utc_day, utc_hour, utc_minute, utc_second)</code></td>
+</tr>
+<tr class="even">
+<td align="left">SUNC</td>
+<td align="left">Sun Cycle</td>
+</tr>
+<tr class="odd">
+<td align="left">MERCURYC</td>
+<td align="left">Mercury Cycle</td>
+</tr>
+<tr class="even">
+<td align="left">VENUSC</td>
+<td align="left">Venus Cycle</td>
+</tr>
+<tr class="odd">
+<td align="left">EARTHC</td>
+<td align="left">Earth Cycle</td>
+</tr>
+<tr class="even">
+<td align="left">MARSC</td>
+<td align="left">Mars Cycle</td>
+</tr>
+<tr class="odd">
+<td align="left">JUPITERC</td>
+<td align="left">Jupiter Cycle</td>
+</tr>
+<tr class="even">
+<td align="left">SATURNC</td>
+<td align="left">Saturn Cycle</td>
+</tr>
+<tr class="odd">
+<td align="left">URANUSC</td>
+<td align="left">Uranus Cycle</td>
+</tr>
+<tr class="even">
+<td align="left">NEPTUNEC</td>
+<td align="left">Neptune Cycle</td>
+</tr>
+<tr class="odd">
+<td align="left">PLUTOC</td>
+<td align="left">Pluto Cycle</td>
+</tr>
+<tr class="even">
+<td align="left">MOONC</td>
+<td align="left">Moon Cycle</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/cycle_indicators/cycle_indicators.py">cycle_indicators</a></strong></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">HT_DCPERIOD</td>
+<td align="left">Hilbert Transform - Dominant Cycle Period</td>
+</tr>
+<tr class="odd">
+<td align="left">HT_DCPHASE</td>
+<td align="left">Hilbert Transform - Dominant Cycle Phase</td>
+</tr>
+<tr class="even">
+<td align="left">HT_PHASOR</td>
+<td align="left">Hilbert Transform - Phasor Components</td>
+</tr>
+<tr class="odd">
+<td align="left">HT_SINE</td>
+<td align="left">Hilbert Transform - SineWave</td>
+</tr>
+<tr class="even">
+<td align="left">HT_TRENDLINE</td>
+<td align="left">Hilbert Transform - Instantaneous Trendline</td>
+</tr>
+<tr class="odd">
+<td align="left">HT_TRENDMODE</td>
+<td align="left">Hilbert Transform - Trend vs Cycle Mode</td>
+</tr>
+<tr class="even">
+<td align="left">TS</td>
+<td align="left">Trend Score</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.TS(df, n, price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left"><strong><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/data/data.py">data</a></strong></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">CSV2DF</td>
+<td align="left">CSV file 2 DataFeed</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="even">
+<td align="left">dict of tuples</td>
+<td align="left"><code>jhta.CSV2DF(csv_file_path)</code></td>
+</tr>
+<tr class="odd">
+<td align="left">CSVURL2DF</td>
+<td align="left">CSV file url 2 DataFeed</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="even">
+<td align="left">dict of tuples</td>
+<td align="left"><code>jhta.CSVURL2DF(csv_file_url)</code></td>
+</tr>
+<tr class="odd">
+<td align="left">DF2CSV</td>
+<td align="left">DataFeed 2 CSV file</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="even">
+<td align="left">csv file</td>
+<td align="left"><code>jhta.DF2CSV(df, csv_file_path)</code></td>
+</tr>
+<tr class="odd">
+<td align="left">DF2DFREV</td>
+<td align="left">DataFeed 2 DataFeed Reversed</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="even">
+<td align="left">dict of tuples</td>
+<td align="left"><code>jhta.DF2DFREV(df)</code></td>
+</tr>
+<tr class="odd">
+<td align="left">DF2DFWIN</td>
+<td align="left">DataFeed 2 DataFeed Window</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="even">
+<td align="left">dict of tuples</td>
+<td align="left"><code>jhta.DF2DFWIN(df, start=0, end=10)</code></td>
+</tr>
+<tr class="odd">
+<td align="left">DF_HEAD</td>
+<td align="left">DataFeed HEAD</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="even">
+<td align="left">dict of tuples</td>
+<td align="left"><code>jhta.DF_HEAD(df, n=5)</code></td>
+</tr>
+<tr class="odd">
+<td align="left">DF_TAIL</td>
+<td align="left">DataFeed TAIL</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="even">
+<td align="left">dict of tuples</td>
+<td align="left"><code>jhta.DF_TAIL(df, n=5)</code></td>
+</tr>
+<tr class="odd">
+<td align="left">DF2HEIKIN_ASHI</td>
+<td align="left">DataFeed 2 Heikin-Ashi DataFeed</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="even">
+<td align="left">dict of tuples</td>
+<td align="left"><code>jhta.DF2HEIKIN_ASHI(df)</code></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/event_driven/event_driven.py">event_driven</a></strong></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">ASI</td>
+<td align="left">Accumulation Swing Index (J. Welles Wilder)</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.ASI(df, L)</code></td>
+</tr>
+<tr class="even">
+<td align="left">SI</td>
+<td align="left">Swing Index (J. Welles Wilder)</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.SI(df, L)</code></td>
+</tr>
+<tr class="even">
+<td align="left"><strong><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/experimental/experimental.py">experimental</a></strong></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">JH_SAVGP</td>
+<td align="left">Swing Average Price - previous Average Price</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="even">
+<td align="left">list</td>
+<td align="left"><code>jhta.JH_SAVGP(df)</code></td>
+</tr>
+<tr class="odd">
+<td align="left">JH_SAVGPS</td>
+<td align="left">Swing Average Price - previous Average Price Summation</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="even">
+<td align="left">list</td>
+<td align="left"><code>jhta.JH_SAVGPS(df)</code></td>
+</tr>
+<tr class="odd">
+<td align="left">JH_SCO</td>
+<td align="left">Swing Close - Open</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="even">
+<td align="left">list</td>
+<td align="left"><code>jhta.JH_SCO(df)</code></td>
+</tr>
+<tr class="odd">
+<td align="left">JH_SCOS</td>
+<td align="left">Swing Close - Open Summation</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="even">
+<td align="left">list</td>
+<td align="left"><code>jhta.JH_SCOS(df)</code></td>
+</tr>
+<tr class="odd">
+<td align="left">JH_SMEDP</td>
+<td align="left">Swing Median Price - previous Median Price</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="even">
+<td align="left">list</td>
+<td align="left"><code>jhta.JH_SMEDP(df)</code></td>
+</tr>
+<tr class="odd">
+<td align="left">JH_SMEDPS</td>
+<td align="left">Swing Median Price - previous Median Price Summation</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="even">
+<td align="left">list</td>
+<td align="left"><code>jhta.JH_SMEDPS(df)</code></td>
+</tr>
+<tr class="odd">
+<td align="left">JH_SPP</td>
+<td align="left">Swing Price - previous Price</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="even">
+<td align="left">list</td>
+<td align="left"><code>jhta.JH_SPP(df, price='Close')</code></td>
+</tr>
+<tr class="odd">
+<td align="left">JH_SPPS</td>
+<td align="left">Swing Price - previous Price Summation</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="even">
+<td align="left">list</td>
+<td align="left"><code>jhta.JH_SPPS(df, price='Close')</code></td>
+</tr>
+<tr class="odd">
+<td align="left">JH_STYPP</td>
+<td align="left">Swing Typical Price - previous Typical Price</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="even">
+<td align="left">list</td>
+<td align="left"><code>jhta.JH_STYPP(df)</code></td>
+</tr>
+<tr class="odd">
+<td align="left">JH_STYPPS</td>
+<td align="left">Swing Typical Price - previous Typical Price Summation</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="even">
+<td align="left">list</td>
+<td align="left"><code>jhta.JH_STYPPS(df)</code></td>
+</tr>
+<tr class="odd">
+<td align="left">JH_SWCLP</td>
+<td align="left">Swing Weighted Close Price - previous Weighted Close Price</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="even">
+<td align="left">list</td>
+<td align="left"><code>jhta.JH_SWCLP(df)</code></td>
+</tr>
+<tr class="odd">
+<td align="left">JH_SWCLPS</td>
+<td align="left">Swing Weighted Close Price - previous Weighted Close Price Summation</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="even">
+<td align="left">list</td>
+<td align="left"><code>jhta.JH_SWCLPS(df)</code></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/general/general.py">general</a></strong></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">NORMALIZE</td>
+<td align="left">Normalize</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.NORMALIZE(df, price_max='High', price_min='Low', price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">STANDARDIZE</td>
+<td align="left">Standardize</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.STANDARDIZE(df, price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">LSR</td>
+<td align="left">Least Squares Regression</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.LSR(df, price='Close', predictions_int=0)</code></td>
+</tr>
+<tr class="even">
+<td align="left">SLR</td>
+<td align="left">Simple Linear Regression</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.SLR(df, price='Close', predictions_int=0)</code></td>
+</tr>
+<tr class="even">
+<td align="left">SPREAD</td>
+<td align="left">Spread</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.SPREAD(df1, df2, price1='Close', price2='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">COV</td>
+<td align="left">Covariance</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">float</td>
+<td align="left"><code>jhta.COV(list1, list2)</code></td>
+</tr>
+<tr class="even">
+<td align="left">COVARIANCE</td>
+<td align="left">Covariance</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.COVARIANCE(df1, df2, n, price1='Close', price2='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">BETA</td>
+<td align="left">Beta</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.BETA(df1, df2, n, price1='Close', price2='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">CP</td>
+<td align="left">Comparative Performance</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.CP(df1, df2, price1='Close', price2='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">CRSI</td>
+<td align="left">Comparative Relative Strength Index</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.CRSI(df1, df2, n, price1='Close', price2='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">CS</td>
+<td align="left">Comparative Strength</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.CS(df1, df2, price1='Close', price2='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">HR</td>
+<td align="left">Hit Rate / Win Rate</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">float</td>
+<td align="left"><code>jhta.HR(hit_trades_int, total_trades_int)</code></td>
+</tr>
+<tr class="even">
+<td align="left">PLR</td>
+<td align="left">Profit/Loss Ratio</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">float</td>
+<td align="left"><code>jhta.PLR(mean_trade_profit_float, mean_trade_loss_float)</code></td>
+</tr>
+<tr class="even">
+<td align="left">EV</td>
+<td align="left">Expected Value</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">float</td>
+<td align="left"><code>jhta.EV(hitrade_float, mean_trade_profit_float, mean_trade_loss_float)</code></td>
+</tr>
+<tr class="even">
+<td align="left">POR</td>
+<td align="left">Probability of Ruin (Table of Lucas and LeBeau)</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">int</td>
+<td align="left"><code>jhta.POR(hitrade_float, profit_loss_ratio_float)</code></td>
+</tr>
+<tr class="even">
+<td align="left"><strong><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/information/information.py">information</a></strong></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">INFO</td>
+<td align="left">Print df Information</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="even">
+<td align="left">print</td>
+<td align="left"><code>jhta.INFO(df, price='Close')</code></td>
+</tr>
+<tr class="odd">
+<td align="left">INFO_TRADES</td>
+<td align="left">Print Trades Information</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="even">
+<td align="left">print</td>
+<td align="left"><code>jhta.INFO_TRADES(profit_trades_list, loss_trades_list)</code></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/math_functions/math_functions.py">math_functions</a></strong></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">EXP</td>
+<td align="left">Exponential</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.EXP(df, price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">LOG</td>
+<td align="left">Logarithm</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.LOG(df, price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">LOG10</td>
+<td align="left">Base-10 Logarithm</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.LOG10(df, price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">SQRT</td>
+<td align="left">Square Root</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.SQRT(df, price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">ACOS</td>
+<td align="left">Arc Cosine</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.ACOS(df, price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">ASIN</td>
+<td align="left">Arc Sine</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.ASIN(df, price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">ATAN</td>
+<td align="left">Arc Tangent</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.ATAN(df, price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">COS</td>
+<td align="left">Cosine</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.COS(df, price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">SIN</td>
+<td align="left">Sine</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.SIN(df, price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">TAN</td>
+<td align="left">Tangent</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.TAN(df, price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">ACOSH</td>
+<td align="left">Inverse Hyperbolic Cosine</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.ACOSH(df, price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">ASINH</td>
+<td align="left">Inverse Hyperbolic Sine</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.ASINH(df, price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">ATANH</td>
+<td align="left">Inverse Hyperbolic Tangent</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.ATANH(df, price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">COSH</td>
+<td align="left">Hyperbolic Cosine</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.COSH(df, price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">SINH</td>
+<td align="left">Hyperbolic Sine</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.SINH(df, price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">TANH</td>
+<td align="left">Hyperbolic Tangent</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.TANH(df, price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">PI</td>
+<td align="left">Mathematical constant PI</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">float</td>
+<td align="left"><code>jhta.PI()</code></td>
+</tr>
+<tr class="even">
+<td align="left">E</td>
+<td align="left">Mathematical constant E</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">float</td>
+<td align="left"><code>jhta.E()</code></td>
+</tr>
+<tr class="even">
+<td align="left">TAU</td>
+<td align="left">Mathematical constant TAU</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">float</td>
+<td align="left"><code>jhta.TAU()</code></td>
+</tr>
+<tr class="even">
+<td align="left">PHI</td>
+<td align="left">Mathematical constant PHI</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">float</td>
+<td align="left"><code>jhta.PHI()</code></td>
+</tr>
+<tr class="even">
+<td align="left">CEIL</td>
+<td align="left">Ceiling</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.CEIL(df, price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">FLOOR</td>
+<td align="left">Floor</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.FLOOR(df, price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">DEGREES</td>
+<td align="left">Radians to Degrees</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.DEGREES(df, price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">RADIANS</td>
+<td align="left">Degrees to Radians</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.RADIANS(df, price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">ADD</td>
+<td align="left">Addition High + Low</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.ADD(df)</code></td>
+</tr>
+<tr class="even">
+<td align="left">DIV</td>
+<td align="left">Division High / Low</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.DIV(df)</code></td>
+</tr>
+<tr class="even">
+<td align="left">MAX</td>
+<td align="left">Highest value over a specified period</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.MAX(df, n, price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">MAXINDEX</td>
+<td align="left">Index of highest value over a specified period</td>
+</tr>
+<tr class="odd">
+<td align="left">MIN</td>
+<td align="left">Lowest value over a specified period</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="even">
+<td align="left">list</td>
+<td align="left"><code>jhta.MIN(df, n, price='Close')</code></td>
+</tr>
+<tr class="odd">
+<td align="left">MININDEX</td>
+<td align="left">Index of lowest value over a specified period</td>
+</tr>
+<tr class="even">
+<td align="left">MINMAX</td>
+<td align="left">Lowest and Highest values over a specified period</td>
+</tr>
+<tr class="odd">
+<td align="left">MINMAXINDEX</td>
+<td align="left">Indexes of lowest and highest values over a specified period</td>
+</tr>
+<tr class="even">
+<td align="left">MULT</td>
+<td align="left">Multiply High * Low</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.MULT(df)</code></td>
+</tr>
+<tr class="even">
+<td align="left">SUB</td>
+<td align="left">Subtraction High - Low</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.SUB(df)</code></td>
+</tr>
+<tr class="even">
+<td align="left">SUM</td>
+<td align="left">Summation</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.SUM(df, n, price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left"><strong><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/momentum_indicators/momentum_indicators.py">momentum_indicators</a></strong></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">ADX</td>
+<td align="left">Average Directional Movement Index</td>
+</tr>
+<tr class="even">
+<td align="left">ADXR</td>
+<td align="left">Average Directional Movement Index Rating</td>
+</tr>
+<tr class="odd">
+<td align="left">APO</td>
+<td align="left">Absolute Price Oscillator</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="even">
+<td align="left">list</td>
+<td align="left"><code>jhta.APO(df, n_fast, n_slow, price='Close')</code></td>
+</tr>
+<tr class="odd">
+<td align="left">AROON</td>
+<td align="left">Aroon</td>
+</tr>
+<tr class="even">
+<td align="left">AROONOSC</td>
+<td align="left">Aroon Oscillator</td>
+</tr>
+<tr class="odd">
+<td align="left">BOP</td>
+<td align="left">Balance Of Power</td>
+</tr>
+<tr class="even">
+<td align="left">CCI</td>
+<td align="left">Commodity Channel Index</td>
+</tr>
+<tr class="odd">
+<td align="left">CMO</td>
+<td align="left">Chande Momentum Oscillator</td>
+</tr>
+<tr class="even">
+<td align="left">DX</td>
+<td align="left">Directional Movement Index</td>
+</tr>
+<tr class="odd">
+<td align="left">IMI</td>
+<td align="left">Intraday Momentum Index</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="even">
+<td align="left">list</td>
+<td align="left"><code>jhta.IMI(df)</code></td>
+</tr>
+<tr class="odd">
+<td align="left">MACD</td>
+<td align="left">Moving Average Convergence/Divergence</td>
+</tr>
+<tr class="even">
+<td align="left">MACDEXT</td>
+<td align="left">MACD with controllable MA type</td>
+</tr>
+<tr class="odd">
+<td align="left">MACDFIX</td>
+<td align="left">Moving Average Convergence/Divergence Fix 12/26</td>
+</tr>
+<tr class="even">
+<td align="left">MFI</td>
+<td align="left">Money Flow Index</td>
+</tr>
+<tr class="odd">
+<td align="left">MINUS_DI</td>
+<td align="left">Minus Directional Indicator</td>
+</tr>
+<tr class="even">
+<td align="left">MINUS_DM</td>
+<td align="left">Minus Directional Movement</td>
+</tr>
+<tr class="odd">
+<td align="left">MOM</td>
+<td align="left">Momentum</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="even">
+<td align="left">list</td>
+<td align="left"><code>jhta.MOM(df, n, price='Close')</code></td>
+</tr>
+<tr class="odd">
+<td align="left">PLUS_DI</td>
+<td align="left">Plus Directional Indicator</td>
+</tr>
+<tr class="even">
+<td align="left">PLUS_DM</td>
+<td align="left">Plus Directional Movement</td>
+</tr>
+<tr class="odd">
+<td align="left">PPO</td>
+<td align="left">Percentage Price Oscillator</td>
+</tr>
+<tr class="even">
+<td align="left">ROC</td>
+<td align="left">Rate of Change</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.ROC(df, n, price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">ROCP</td>
+<td align="left">Rate of Change Percentage</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.ROCP(df, n, price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">ROCR</td>
+<td align="left">Rate of Change Ratio</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.ROCR(df, n, price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">ROCR100</td>
+<td align="left">Rate of Change Ratio 100 scale</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.ROCR100(df, n, price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">RSI</td>
+<td align="left">Relative Strength Index</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.RSI(df, n, price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">STOCH</td>
+<td align="left">Stochastic</td>
+</tr>
+<tr class="odd">
+<td align="left">STOCHF</td>
+<td align="left">Stochastic Fast</td>
+</tr>
+<tr class="even">
+<td align="left">STOCHRSI</td>
+<td align="left">Stochastic Relative Strength Index</td>
+</tr>
+<tr class="odd">
+<td align="left">TRIX</td>
+<td align="left">1-day Rate-Of-Change (ROC) of a Triple Smooth EMA</td>
+</tr>
+<tr class="even">
+<td align="left">ULTOSC</td>
+<td align="left">Ultimate Oscillator</td>
+</tr>
+<tr class="odd">
+<td align="left">WILLR</td>
+<td align="left">Williams' %R</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="even">
+<td align="left">list</td>
+<td align="left"><code>jhta.WILLR(df, n)</code></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/overlap_studies/overlap_studies.py">overlap_studies</a></strong></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">BBANDS</td>
+<td align="left">Bollinger Bands</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">dict of lists</td>
+<td align="left"><code>jhta.BBANDS(df, n, f=2)</code></td>
+</tr>
+<tr class="even">
+<td align="left">BBANDW</td>
+<td align="left">Bollinger Band Width</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.BBANDW(df, n, f=2)</code></td>
+</tr>
+<tr class="even">
+<td align="left">DEMA</td>
+<td align="left">Double Exponential Moving Average</td>
+</tr>
+<tr class="odd">
+<td align="left">EMA</td>
+<td align="left">Exponential Moving Average</td>
+</tr>
+<tr class="even">
+<td align="left">ENVP</td>
+<td align="left">Envelope Percent</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">dict of lists</td>
+<td align="left"><code>jhta.ENVP(df, pct=.01, price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">KAMA</td>
+<td align="left">Kaufman Adaptive Moving Average</td>
+</tr>
+<tr class="odd">
+<td align="left">MA</td>
+<td align="left">Moving Average</td>
+</tr>
+<tr class="even">
+<td align="left">MAMA</td>
+<td align="left">MESA Adaptive Moving Average</td>
+</tr>
+<tr class="odd">
+<td align="left">MAVP</td>
+<td align="left">Moving Average with Variable Period</td>
+</tr>
+<tr class="even">
+<td align="left">MIDPOINT</td>
+<td align="left">MidPoint over period</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.MIDPOINT(df, n, price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">MIDPRICE</td>
+<td align="left">MidPoint Price over period</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.MIDPRICE(df, n)</code></td>
+</tr>
+<tr class="even">
+<td align="left">MMR</td>
+<td align="left">Mayer Multiple Ratio</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.MMR(df, n=200, price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">SAR</td>
+<td align="left">Parabolic SAR</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.SAR(df, af_step=.02, af_max=.2)</code></td>
+</tr>
+<tr class="even">
+<td align="left">SAREXT</td>
+<td align="left">Parabolic SAR - Extended</td>
+</tr>
+<tr class="odd">
+<td align="left">SMA</td>
+<td align="left">Simple Moving Average</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="even">
+<td align="left">list</td>
+<td align="left"><code>jhta.SMA(df, n, price='Close')</code></td>
+</tr>
+<tr class="odd">
+<td align="left">T3</td>
+<td align="left">Triple Exponential Moving Average (T3)</td>
+</tr>
+<tr class="even">
+<td align="left">TEMA</td>
+<td align="left">Triple Exponential Moving Average</td>
+</tr>
+<tr class="odd">
+<td align="left">TRIMA</td>
+<td align="left">Triangular Moving Average</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="even">
+<td align="left">list</td>
+<td align="left"><code>jhta.TRIMA(df, n, price='Close')</code></td>
+</tr>
+<tr class="odd">
+<td align="left">WMA</td>
+<td align="left">Weighted Moving Average</td>
+</tr>
+<tr class="even">
+<td align="left"><strong><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/pattern_recognition/pattern_recognition.py">pattern_recognition</a></strong></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">CDL2CROWS</td>
+<td align="left">Two Crows</td>
+</tr>
+<tr class="even">
+<td align="left">CDL3BLACKCROWS</td>
+<td align="left">Three Black Crows</td>
+</tr>
+<tr class="odd">
+<td align="left">CDL3INSIDE</td>
+<td align="left">Three Inside Up/Down</td>
+</tr>
+<tr class="even">
+<td align="left">CDL3LINESTRIKE</td>
+<td align="left">Three-Line Strike</td>
+</tr>
+<tr class="odd">
+<td align="left">CDL3OUTSIDE</td>
+<td align="left">Three Outside Up/Down</td>
+</tr>
+<tr class="even">
+<td align="left">CDL3STARSINSOUTH</td>
+<td align="left">Three Stars In The South</td>
+</tr>
+<tr class="odd">
+<td align="left">CDL3WHITESOLDIERS</td>
+<td align="left">Three Advancing White Soldiers</td>
+</tr>
+<tr class="even">
+<td align="left">CDLABANDONEDBABY</td>
+<td align="left">Abandoned Baby</td>
+</tr>
+<tr class="odd">
+<td align="left">CDLADVANCEBLOCK</td>
+<td align="left">Advance Block</td>
+</tr>
+<tr class="even">
+<td align="left">CDLBELTHOLD</td>
+<td align="left">Belt-hold</td>
+</tr>
+<tr class="odd">
+<td align="left">CDLBREAKAWAY</td>
+<td align="left">Breakaway</td>
+</tr>
+<tr class="even">
+<td align="left">CDLCLOSINGMARUBOZU</td>
+<td align="left">Closing Marubozu</td>
+</tr>
+<tr class="odd">
+<td align="left">CDLCONSEALBABYSWALL</td>
+<td align="left">Concealing Baby Swallow</td>
+</tr>
+<tr class="even">
+<td align="left">CDLCOUNTERATTACK</td>
+<td align="left">Counterattack</td>
+</tr>
+<tr class="odd">
+<td align="left">CDLDARKCLOUDCOVER</td>
+<td align="left">Dark Cloud Cover</td>
+</tr>
+<tr class="even">
+<td align="left">CDLDOJI</td>
+<td align="left">Doji</td>
+</tr>
+<tr class="odd">
+<td align="left">CDLDOJISTAR</td>
+<td align="left">Doji Star</td>
+</tr>
+<tr class="even">
+<td align="left">CDLDRAGONFLYDOJI</td>
+<td align="left">Dragonfly Doji</td>
+</tr>
+<tr class="odd">
+<td align="left">CDLENGULFING</td>
+<td align="left">Engulfing Pattern</td>
+</tr>
+<tr class="even">
+<td align="left">CDLEVENINGDOJISTAR</td>
+<td align="left">Evening Doji Star</td>
+</tr>
+<tr class="odd">
+<td align="left">CDLEVENINGSTAR</td>
+<td align="left">Evening Star</td>
+</tr>
+<tr class="even">
+<td align="left">CDLGAPSIDESIDEWHITE</td>
+<td align="left">Up/Down-gap side-by-side white lines</td>
+</tr>
+<tr class="odd">
+<td align="left">CDLGRAVESTONEDOJI</td>
+<td align="left">Gravestone Doji</td>
+</tr>
+<tr class="even">
+<td align="left">CDLHAMMER</td>
+<td align="left">Hammer</td>
+</tr>
+<tr class="odd">
+<td align="left">CDLHANGINGMAN</td>
+<td align="left">Hanging Man</td>
+</tr>
+<tr class="even">
+<td align="left">CDLHARAMI</td>
+<td align="left">Harami Pattern</td>
+</tr>
+<tr class="odd">
+<td align="left">CDLHARAMICROSS</td>
+<td align="left">Harami Cross Pattern</td>
+</tr>
+<tr class="even">
+<td align="left">CDLHIGHWAVE</td>
+<td align="left">High-Wave Candle</td>
+</tr>
+<tr class="odd">
+<td align="left">CDLHIKKAKE</td>
+<td align="left">Hikkake Pattern</td>
+</tr>
+<tr class="even">
+<td align="left">CDLHIKKAKEMOD</td>
+<td align="left">Modified Hikkake Pattern</td>
+</tr>
+<tr class="odd">
+<td align="left">CDLHOMINGPIGEON</td>
+<td align="left">Homing Pigeon</td>
+</tr>
+<tr class="even">
+<td align="left">CDLIDENTICAL3CROWS</td>
+<td align="left">Identical Three Crows</td>
+</tr>
+<tr class="odd">
+<td align="left">CDLINNECK</td>
+<td align="left">In-Neck Pattern</td>
+</tr>
+<tr class="even">
+<td align="left">CDLINVERTEDHAMMER</td>
+<td align="left">Inverted Hammer</td>
+</tr>
+<tr class="odd">
+<td align="left">CDLKICKING</td>
+<td align="left">Kicking</td>
+</tr>
+<tr class="even">
+<td align="left">CDLKICKINGBYLENGTH</td>
+<td align="left">Kicking - bull/bear determined by the longer marubozu</td>
+</tr>
+<tr class="odd">
+<td align="left">CDLLADDERBOTTOM</td>
+<td align="left">Ladder Bottom</td>
+</tr>
+<tr class="even">
+<td align="left">CDLLONGLEGGEDDOJI</td>
+<td align="left">Long Legged Doji</td>
+</tr>
+<tr class="odd">
+<td align="left">CDLLONGLINE</td>
+<td align="left">Long Line Candle</td>
+</tr>
+<tr class="even">
+<td align="left">CDLMARUBOZU</td>
+<td align="left">Marubozu</td>
+</tr>
+<tr class="odd">
+<td align="left">CDLMATCHINGLOW</td>
+<td align="left">Matching Low</td>
+</tr>
+<tr class="even">
+<td align="left">CDLMATHOLD</td>
+<td align="left">Mat Hold</td>
+</tr>
+<tr class="odd">
+<td align="left">CDLMORNINGDOJISTAR</td>
+<td align="left">Morning Doji Star</td>
+</tr>
+<tr class="even">
+<td align="left">CDLMORNINGSTAR</td>
+<td align="left">Morning Star</td>
+</tr>
+<tr class="odd">
+<td align="left">CDLONNECK</td>
+<td align="left">On-Neck Pattern</td>
+</tr>
+<tr class="even">
+<td align="left">CDLPIERCING</td>
+<td align="left">Piercing Pattern</td>
+</tr>
+<tr class="odd">
+<td align="left">CDLRICKSHAWMAN</td>
+<td align="left">Rickshaw Man</td>
+</tr>
+<tr class="even">
+<td align="left">CDLRISEFALL3METHODS</td>
+<td align="left">Rising/Falling Three Methods</td>
+</tr>
+<tr class="odd">
+<td align="left">CDLSEPARATINGLINES</td>
+<td align="left">Separating Lines</td>
+</tr>
+<tr class="even">
+<td align="left">CDLSHOOTINGSTAR</td>
+<td align="left">Shooting Star</td>
+</tr>
+<tr class="odd">
+<td align="left">CDLSHORTLINE</td>
+<td align="left">Short Line Candle</td>
+</tr>
+<tr class="even">
+<td align="left">CDLSPINNINGTOP</td>
+<td align="left">Spinning Top</td>
+</tr>
+<tr class="odd">
+<td align="left">CDLSTALLEDPATTERN</td>
+<td align="left">Stalled Pattern</td>
+</tr>
+<tr class="even">
+<td align="left">CDLSTICKSANDWICH</td>
+<td align="left">Stick Sandwich</td>
+</tr>
+<tr class="odd">
+<td align="left">CDLTAKURI</td>
+<td align="left">Takuri (Dragonfly Doji with very long lower shadow)</td>
+</tr>
+<tr class="even">
+<td align="left">CDLTASUKIGAP</td>
+<td align="left">Tasuki Gap</td>
+</tr>
+<tr class="odd">
+<td align="left">CDLTHRUSTING</td>
+<td align="left">Thrusting Pattern</td>
+</tr>
+<tr class="even">
+<td align="left">CDLTRISTAR</td>
+<td align="left">Tristar Pattern</td>
+</tr>
+<tr class="odd">
+<td align="left">CDLUNIQUE3RIVER</td>
+<td align="left">Unique 3 River</td>
+</tr>
+<tr class="even">
+<td align="left">CDLUPSIDEGAP2CROWS</td>
+<td align="left">Upside Gap Two Crows</td>
+</tr>
+<tr class="odd">
+<td align="left">CDLXSIDEGAP3METHODS</td>
+<td align="left">Upside/Downside Gap Three Methods</td>
+</tr>
+<tr class="even">
+<td align="left"><strong><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/price_transform/price_transform.py">price_transform</a></strong></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">AVGPRICE</td>
+<td align="left">Average Price</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="even">
+<td align="left">list</td>
+<td align="left"><code>jhta.AVGPRICE(df)</code></td>
+</tr>
+<tr class="odd">
+<td align="left">MEDPRICE</td>
+<td align="left">Median Price</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="even">
+<td align="left">list</td>
+<td align="left"><code>jhta.MEDPRICE(df)</code></td>
+</tr>
+<tr class="odd">
+<td align="left">TYPPRICE</td>
+<td align="left">Typical Price</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="even">
+<td align="left">list</td>
+<td align="left"><code>jhta.TYPPRICE(df)</code></td>
+</tr>
+<tr class="odd">
+<td align="left">WCLPRICE</td>
+<td align="left">Weighted Close Price</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="even">
+<td align="left">list</td>
+<td align="left"><code>jhta.WCLPRICE(df)</code></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/statistic_functions/statistic_functions.py">statistic_functions</a></strong></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">MEAN</td>
+<td align="left">Arithmetic mean (average) of data</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.MEAN(df, n, price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">HARMONIC_MEAN</td>
+<td align="left">Harmonic mean of data</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.HARMONIC_MEAN(df, n, price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">MEDIAN</td>
+<td align="left">Median (middle value) of data</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.MEDIAN(df, n, price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">MEDIAN_LOW</td>
+<td align="left">Low median of data</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.MEDIAN_LOW(df, n, price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">MEDIAN_HIGH</td>
+<td align="left">High median of data</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.MEDIAN_HIGH(df, n, price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">MEDIAN_GROUPED</td>
+<td align="left">Median, or 50th percentile, of grouped data</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.MEDIAN_GROUPED(df, n, price='Close', interval=1)</code></td>
+</tr>
+<tr class="even">
+<td align="left">MODE</td>
+<td align="left">Mode (most common value) of discrete data</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.MODE(df, n, price='Close')</code></td>
+</tr>
+<tr class="even">
+<td align="left">PSTDEV</td>
+<td align="left">Population standard deviation of data</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.PSTDEV(df, n, price='Close', mu=None)</code></td>
+</tr>
+<tr class="even">
+<td align="left">PVARIANCE</td>
+<td align="left">Population variance of data</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.PVARIANCE(df, n, price='Close', mu=None)</code></td>
+</tr>
+<tr class="even">
+<td align="left">STDEV</td>
+<td align="left">Sample standard deviation of data</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.STDEV(df, n, price='Close', xbar=None)</code></td>
+</tr>
+<tr class="even">
+<td align="left">VARIANCE</td>
+<td align="left">Sample variance of data</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.VARIANCE(df, n, price='Close', xbar=None)</code></td>
+</tr>
+<tr class="even">
+<td align="left"><strong><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/volatility_indicators/volatility_indicators.py">volatility_indicators</a></strong></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">ATR</td>
+<td align="left">Average True Range</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="even">
+<td align="left">list</td>
+<td align="left"><code>jhta.ATR(df, n)</code></td>
+</tr>
+<tr class="odd">
+<td align="left">NATR</td>
+<td align="left">Normalized Average True Range</td>
+</tr>
+<tr class="even">
+<td align="left">TRANGE</td>
+<td align="left">True Range</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.TRANGE(df)</code></td>
+</tr>
+<tr class="even">
+<td align="left"><strong><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/volume_indicators/volume_indicators.py">volume_indicators</a></strong></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">AD</td>
+<td align="left">Chaikin A/D Line</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="even">
+<td align="left">list</td>
+<td align="left"><code>jhta.AD(df)</code></td>
+</tr>
+<tr class="odd">
+<td align="left">ADOSC</td>
+<td align="left">Chaikin A/D Oscillator</td>
+</tr>
+<tr class="even">
+<td align="left">OBV</td>
+<td align="left">On Balance Volume</td>
+<td align="left">DONE</td>
+</tr>
+<tr class="odd">
+<td align="left">list</td>
+<td align="left"><code>jhta.OBV(df)</code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
