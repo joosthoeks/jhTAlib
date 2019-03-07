@@ -530,6 +530,12 @@ STDEV | Sample standard deviation of data | DONE
 list | ```jhta.STDEV(df, n, price='Close', xbar=None)``` |
 VARIANCE | Sample variance of data | DONE
 list | ```jhta.VARIANCE(df, n, price='Close', xbar=None)``` |
+COV | Covariance | DONE
+float | ```jhta.COV(list1, list2)``` |
+COVARIANCE | Covariance | DONE
+list | ```jhta.COVARIANCE(df1, df2, n, price1='Close', price2='Close')``` |
+BETA | Beta | DONE
+list | ```jhta.BETA(df1, df2, n, price1='Close', price2='Close')``` |
 **[volatility_indicators](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/volatility_indicators/volatility_indicators.py)** | |
 ATR | Average True Range | DONE
 list | ```jhta.ATR(df, n)``` |
@@ -542,3 +548,4 @@ list | ```jhta.AD(df)``` |
 ADOSC | Chaikin A/D Oscillator |
 OBV | On Balance Volume | DONE
 list | ```jhta.OBV(df)``` |
+
