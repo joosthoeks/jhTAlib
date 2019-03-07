@@ -268,10 +268,6 @@ NORMALIZE | Normalize | DONE
 list | ```jhta.NORMALIZE(df, price_max='High', price_min='Low', price='Close')``` |
 STANDARDIZE | Standardize | DONE
 list | ```jhta.STANDARDIZE(df, price='Close')``` |
-LSR | Least Squares Regression | DONE
-list | ```jhta.LSR(df, price='Close', predictions_int=0)``` |
-SLR | Simple Linear Regression | DONE
-list | ```jhta.SLR(df, price='Close', predictions_int=0)``` |
 SPREAD | Spread | DONE
 list | ```jhta.SPREAD(df1, df2, price1='Close', price2='Close')``` |
 CP | Comparative Performance | DONE
@@ -530,6 +526,10 @@ COVARIANCE | Covariance | DONE
 list | ```jhta.COVARIANCE(df1, df2, n, price1='Close', price2='Close')``` |
 BETA | Beta | DONE
 list | ```jhta.BETA(df1, df2, n, price1='Close', price2='Close')``` |
+LSR | Least Squares Regression | DONE
+list | ```jhta.LSR(df, price='Close', predictions_int=0)``` |
+SLR | Simple Linear Regression | DONE
+list | ```jhta.SLR(df, price='Close', predictions_int=0)``` |
 **[volatility_indicators](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/volatility_indicators/volatility_indicators.py)** | |
 ATR | Average True Range | DONE
 list | ```jhta.ATR(df, n)``` |
