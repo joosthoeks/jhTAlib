@@ -1,4 +1,5 @@
 import statistics
+import jhtalib as jhta
 
 
 def MEAN(df, n, price='Close'):
@@ -428,4 +429,67 @@ def BETA(df1, df2, n, price1='Close', price2='Close'):
             beta_list.append(beta)
             i += 1
     return beta_list
+
+def LSR(df, price='Close', predictions_int=0):
+    """
+    Least Squares Regression
+    source: https://www.mathsisfun.com/data/least-squares-regression.html
+    """
+    x_list = []
+    y_list = []
+    x2_list = []
+    xy_list = []
+    i = 0
+    while i < len(df[price]):
+        # For each (x,y) calculate x2 and xy:
+        x = i
+        y = df[price][i]
+        x2 = x * x
+        xy = x * y
+        x_list.append(x)
+        y_list.append(y)
+        x2_list.append(x2)
+        xy_list.append(xy)
+        i += 1
+
+    # Sum all x, y, x2 and xy, which gives us Σx, Σy, Σx2 and Σxy:
+    x_sum = jhta.SUM({'x_list': x_list}, len(x_list), 'x_list')[-1]
+    y_sum = jhta.SUM({'y_list': y_list}, len(y_list), 'y_list')[-1]
+    x2_sum = jhta.SUM({'x2_list': x2_list}, len(x2_list), 'x2_list')[-1]
+    xy_sum = jhta.SUM({'xy_list': xy_list}, len(xy_list), 'xy_list')[-1]
+
+    # set n:
+    n = len(df[price])
+
+    # Calculate Slope:
+    m = (n * xy_sum - x_sum * y_sum) / (n * x2_sum - x_sum * x_sum)
+
+    # Calculate Intercept:
+    b = (y_sum - m * x_sum) / n
+
+    lsr_list = []
+    i = 0
+    while i < len(df[price]) + predictions_int:
+        # Assemble the equation of a line:
+        lsr = m * i + b
+        lsr_list.append(lsr)
+        i += 1
+    return lsr_list
+
+def SLR(df, price='Close', predictions_int=0):
+    """
+    Simple Linear Regression
+    source: https://machinelearningmastery.com/implement-simple-linear-regression-scratch-python/
+    """
+    x_list = list(range(len(df[price])))
+#    b1 = COVARIANCE({'x': x_list}, {'y': df[price]}, len(x_list), 'x', 'y')[-1] / VARIANCE({'x': x_list}, len(x_list), 'x')[-1]
+    b1 = COV(x_list, df[price] / jhta.VARIANCE({'x': x_list}, len(x_list), 'x')[-1]
+    b0 = MEAN({'y': df[price]}, len(df[price]), 'y')[-1] - b1 * MEAN({'x': x_list}, len(x_list), 'x')[-1]
+    slr_list = []
+    i = 0
+    while i < len(df[price]) + predictions_int:
+        slr = b0 + b1 * i
+        slr_list.append(slr)
+        i += 1
+    return slr_list
 
