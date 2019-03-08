@@ -1,3 +1,7 @@
+---
+title: jhTAlib
+author: Joost Hoeks
+---
 # jhTAlib
 Technical Analysis Library Time-Series
 
@@ -14,42 +18,6 @@ You can use and import it for your:
 * Trading Software in general
 
 Work in progress...
-
-## Table of Contents (ToC)
-
-* [Home](https://jhtalib.joosthoeks.com/)
-
-* [Depends only on](https://jhtalib.joosthoeks.com/index.html#depends-only-on)
-
-* [Install](https://jhtalib.joosthoeks.com/index.html#install)
-
-* [Update](https://jhtalib.joosthoeks.com/index.html#update)
-
-* [Examples](https://jhtalib.joosthoeks.com/index.html#examples)
-    
-    * [Example 1](https://jhtalib.joosthoeks.com/index.html#example-1)
-    
-    * [Example 2](https://jhtalib.joosthoeks.com/index.html#example-2)
-    
-    * [Example 3](https://jhtalib.joosthoeks.com/index.html#example-3)
-    
-    * [Example 4](https://jhtalib.joosthoeks.com/index.html#example-4)
-    
-    * [Example 5](https://jhtalib.joosthoeks.com/index.html#example-5)
-    
-    * [Example 6](https://jhtalib.joosthoeks.com/index.html#example-6)
-    
-    * [Example 7](https://jhtalib.joosthoeks.com/index.html#example-7)
-    
-    * [Example 8](https://jhtalib.joosthoeks.com/index.html#example-8)
-    
-    * [Example 9](https://jhtalib.joosthoeks.com/index.html#example-9)
-
-    * [Example 10](https://jhtalib.joosthoeks.com/index.html#example-10)
-
-* [Test](https://jhtalib.joosthoeks.com/index.html#test)
-
-* [Reference](https://jhtalib.joosthoeks.com/index.html#reference)
 
 ## Depends only on
 
@@ -165,13 +133,9 @@ or
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-9-cryptocompare-2-df.ipynb)
 
 ### Example 10
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-10-df-numpy-pandas.ipynb)
+DF NumPy Pandas
 
-## Test
-```
-$ cd test/
-$ python3 test.py
-```
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-10-df-numpy-pandas.ipynb)
 
 ## Reference
 ```
@@ -542,4 +506,10 @@ list | ```jhta.AD(df)``` |
 ADOSC | Chaikin A/D Oscillator |
 OBV | On Balance Volume | DONE
 list | ```jhta.OBV(df)``` |
+
+## Test
+```
+$ cd test/
+$ python3 test.py
+```
 
