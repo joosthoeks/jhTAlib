@@ -83,7 +83,8 @@ Example 1
 
 or
 
-|Open In Colab|
+`Open In
+Colab <https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-1-plot.ipynb>`__
 
 Example 2
 ~~~~~~~~~
@@ -94,7 +95,8 @@ Example 2
 
 or
 
-|Open In Colab|
+`Open In
+Colab <https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-2-plot.ipynb>`__
 
 Example 3
 ~~~~~~~~~
@@ -105,7 +107,8 @@ Example 3
 
 or
 
-|Open In Colab|
+`Open In
+Colab <https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-3-plot.ipynb>`__
 
 Example 4
 ~~~~~~~~~
@@ -116,7 +119,8 @@ Example 4
 
 or
 
-|Open In Colab|
+`Open In
+Colab <https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-4-plot-quandl.ipynb>`__
 
 Example 5
 ~~~~~~~~~
@@ -127,7 +131,8 @@ Example 5
 
 or
 
-|Open In Colab|
+`Open In
+Colab <https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-5-plot-quandl.ipynb>`__
 
 Example 6
 ~~~~~~~~~
@@ -138,7 +143,8 @@ Example 6
 
 or
 
-|Open In Colab|
+`Open In
+Colab <https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-6-plot-quandl.ipynb>`__
 
 Example 7
 ~~~~~~~~~
@@ -149,7 +155,8 @@ Example 7
 
 or
 
-|Open In Colab|
+`Open In
+Colab <https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-7-quandl-2-df.ipynb>`__
 
 Example 8
 ~~~~~~~~~
@@ -160,7 +167,8 @@ Example 8
 
 or
 
-|Open In Colab|
+`Open In
+Colab <https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-8-alphavantage-2-df.ipynb>`__
 
 Example 9
 ~~~~~~~~~
@@ -171,14 +179,16 @@ Example 9
 
 or
 
-|Open In Colab|
+`Open In
+Colab <https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-9-cryptocompare-2-df.ipynb>`__
 
 Example 10
 ~~~~~~~~~~
 
 DF NumPy Pandas
 
-|Open In Colab|
+`Open In
+Colab <https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-10-df-numpy-pandas.ipynb>`__
 
 Test
 ----
@@ -3485,24 +3495,3 @@ Reference
 |      | BV(d |
 |      | f)`` |
 +------+------+------+
-
-.. |Open In Colab| image:: https://colab.research.google.com/assets/colab-badge.svg
-   :target: https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-1-plot.ipynb
-.. |Open In Colab| image:: https://colab.research.google.com/assets/colab-badge.svg
-   :target: https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-2-plot.ipynb
-.. |Open In Colab| image:: https://colab.research.google.com/assets/colab-badge.svg
-   :target: https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-3-plot.ipynb
-.. |Open In Colab| image:: https://colab.research.google.com/assets/colab-badge.svg
-   :target: https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-4-plot-quandl.ipynb
-.. |Open In Colab| image:: https://colab.research.google.com/assets/colab-badge.svg
-   :target: https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-5-plot-quandl.ipynb
-.. |Open In Colab| image:: https://colab.research.google.com/assets/colab-badge.svg
-   :target: https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-6-plot-quandl.ipynb
-.. |Open In Colab| image:: https://colab.research.google.com/assets/colab-badge.svg
-   :target: https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-7-quandl-2-df.ipynb
-.. |Open In Colab| image:: https://colab.research.google.com/assets/colab-badge.svg
-   :target: https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-8-alphavantage-2-df.ipynb
-.. |Open In Colab| image:: https://colab.research.google.com/assets/colab-badge.svg
-   :target: https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-9-cryptocompare-2-df.ipynb
-.. |Open In Colab| image:: https://colab.research.google.com/assets/colab-badge.svg
-   :target: https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-10-df-numpy-pandas.ipynb
