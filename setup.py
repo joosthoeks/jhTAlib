@@ -1,11 +1,16 @@
 from setuptools import setup, find_packages
 
 
+def readme():
+    with open('docs/README.rst') as f:
+        return f.read()
+
+
 setup(
     name='jhTAlib',
-    version='20190307.1',
+    version='20190308.0',
     description='Technical Analysis Library Time-Series',
-    long_description='Technical Analysis Library Time-Series',
+    long_description=readme(),
     keywords=['Technical', 'Analysis', 'Library', 'Time-Series'],
     url='https://github.com/joosthoeks/jhTAlib',
     author='Joost Hoeks',
