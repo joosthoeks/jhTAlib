@@ -1,7 +1,9 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
+date: 2019-03-08
 ---
+
 # jhTAlib
 Technical Analysis Library Time-Series
 
@@ -136,6 +138,12 @@ or
 DF NumPy Pandas
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-10-df-numpy-pandas.ipynb)
+
+## Test
+```
+$ cd test/
+$ python3 test.py
+```
 
 ## Reference
 ```
@@ -506,10 +514,4 @@ list | ```jhta.AD(df)``` |
 ADOSC | Chaikin A/D Oscillator |
 OBV | On Balance Volume | DONE
 list | ```jhta.OBV(df)``` |
-
-## Test
-```
-$ cd test/
-$ python3 test.py
-```
 
