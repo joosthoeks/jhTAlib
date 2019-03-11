@@ -8,7 +8,7 @@ def readme():
 
 setup(
     name='jhTAlib',
-    version='20190308.0',
+    version='20190311.0',
     description='Technical Analysis Library Time-Series',
     long_description=readme(),
     keywords=['Technical', 'Analysis', 'Library', 'Time-Series'],
