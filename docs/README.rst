@@ -208,647 +208,749 @@ Reference
 `Behavioral Techniques <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/behavioral_techniques/behavioral_techniques.py>`__
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-All Time High
-^^^^^^^^^^^^^
+ATH \| All Time High \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``dict of lists = jhta.ATH(df, price='High')``
 
-Last Major Correction
-^^^^^^^^^^^^^^^^^^^^^
+LMC \| Last Major Correction \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``dict of lists = jhta.LMC(df, price='Low')``
 
-Pivot Point
-^^^^^^^^^^^
+PP \| Pivot Point \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``dict of lists = jhta.PP(df)``
 
-Fibonacci Price Retracements
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FIBOPR \| Fibonacci Price Retracements \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``dict of lists = jhta.FIBOPR(df, price='Close')``
 
-Fibonacci Time Retracements
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FIBTR \| Fibonacci Time Retracements \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-W. D. Gann Price Retracements
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+GANNPR \| W. D. Gann Price Retracements \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``dict of lists = jhta.GANNPR(df, price='Close')``
 
-W. D. Gann Time Retracements
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+GANNTR \| W. D. Gann Time Retracements \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Julian Day Number
-^^^^^^^^^^^^^^^^^
+JDN \| Julian Day Number \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``jdn = jhta.JDN(utc_year, utc_month, utc_day)``
 
-Julian Date
-^^^^^^^^^^^
+JD \| Julian Date \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``jd = jhta.JD(utc_year, utc_month, utc_day, utc_hour, utc_minute, utc_second)``
 
-SUNC \| Sun Cycle
-^^^^^^^^^^^^^^^^^
+SUNC \| Sun Cycle \|
+^^^^^^^^^^^^^^^^^^^^
 
-MERCURYC \| Mercury Cycle
-^^^^^^^^^^^^^^^^^^^^^^^^^
+-  
 
-VENUSC \| Venus Cycle
-^^^^^^^^^^^^^^^^^^^^^
+MERCURYC \| Mercury Cycle \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-EARTHC \| Earth Cycle
-^^^^^^^^^^^^^^^^^^^^^
+-  
 
-MARSC \| Mars Cycle
-^^^^^^^^^^^^^^^^^^^
+VENUSC \| Venus Cycle \|
+^^^^^^^^^^^^^^^^^^^^^^^^
 
-JUPITERC \| Jupiter Cycle
-^^^^^^^^^^^^^^^^^^^^^^^^^
+-  
 
-SATURNC \| Saturn Cycle
-^^^^^^^^^^^^^^^^^^^^^^^
+EARTHC \| Earth Cycle \|
+^^^^^^^^^^^^^^^^^^^^^^^^
 
-URANUSC \| Uranus Cycle
-^^^^^^^^^^^^^^^^^^^^^^^
+-  
 
-NEPTUNEC \| Neptune Cycle
-^^^^^^^^^^^^^^^^^^^^^^^^^
+MARSC \| Mars Cycle \|
+^^^^^^^^^^^^^^^^^^^^^^
 
-PLUTOC \| Pluto Cycle
-^^^^^^^^^^^^^^^^^^^^^
+-  
 
-MOONC \| Moon Cycle
-^^^^^^^^^^^^^^^^^^^
+JUPITERC \| Jupiter Cycle \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  
+
+SATURNC \| Saturn Cycle \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  
+
+URANUSC \| Uranus Cycle \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  
+
+NEPTUNEC \| Neptune Cycle \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  
+
+PLUTOC \| Pluto Cycle \|
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  
+
+MOONC \| Moon Cycle \|
+^^^^^^^^^^^^^^^^^^^^^^
+
+-  
 
 `Cycle Indicators <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/cycle_indicators/cycle_indicators.py>`__
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-HT\_DCPERIOD \| Hilbert Transform - Dominant Cycle Period
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-HT\_DCPHASE \| Hilbert Transform - Dominant Cycle Phase
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-HT\_PHASOR \| Hilbert Transform - Phasor Components
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-HT\_SINE \| Hilbert Transform - SineWave
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-HT\_TRENDLINE \| Hilbert Transform - Instantaneous Trendline
+HT\_DCPERIOD \| Hilbert Transform - Dominant Cycle Period \|
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-HT\_TRENDMODE \| Hilbert Transform - Trend vs Cycle Mode
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-  
 
-Trend Score
-^^^^^^^^^^^
+HT\_DCPHASE \| Hilbert Transform - Dominant Cycle Phase \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  
+
+HT\_PHASOR \| Hilbert Transform - Phasor Components \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  
+
+HT\_SINE \| Hilbert Transform - SineWave \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  
+
+HT\_TRENDLINE \| Hilbert Transform - Instantaneous Trendline \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  
+
+HT\_TRENDMODE \| Hilbert Transform - Trend vs Cycle Mode \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+TS \| Trend Score \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.TS(df, n, price='Close')``
 
 `Data <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/data/data.py>`__
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-CSV file 2 DataFeed
-^^^^^^^^^^^^^^^^^^^
+CSV2DF \| CSV file 2 DataFeed \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``dict of tuples = jhta.CSV2DF(csv_file_path)``
 
-CSV file url 2 DataFeed
-^^^^^^^^^^^^^^^^^^^^^^^
+CSVURL2DF \| CSV file url 2 DataFeed \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``dict of tuples = jhta.CSVURL2DF(csv_file_url)``
 
-DataFeed 2 CSV file
-^^^^^^^^^^^^^^^^^^^
+DF2CSV \| DataFeed 2 CSV file \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``csv file = jhta.DF2CSV(df, csv_file_path)``
 
-DataFeed 2 DataFeed Reversed
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+DF2DFREV \| DataFeed 2 DataFeed Reversed \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``dict of tuples = jhta.DF2DFREV(df)``
 
-DataFeed 2 DataFeed Window
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+DF2DFWIN \| DataFeed 2 DataFeed Window \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``dict of tuples = jhta.DF2DFWIN(df, start=0, end=10)``
 
-DataFeed HEAD
-^^^^^^^^^^^^^
+DF\_HEAD \| DataFeed HEAD \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``dict of tuples = jhta.DF_HEAD(df, n=5)``
 
-DataFeed TAIL
-^^^^^^^^^^^^^
+DF\_TAIL \| DataFeed TAIL \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``dict of tuples = jhta.DF_TAIL(df, n=5)``
 
-DataFeed 2 Heikin-Ashi DataFeed
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+DF2HEIKIN\_ASHI \| DataFeed 2 Heikin-Ashi DataFeed \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``dict of tuples = jhta.DF2HEIKIN_ASHI(df)``
 
 `Event Driven <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/event_driven/event_driven.py>`__
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Accumulation Swing Index (J. Welles Wilder)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ASI \| Accumulation Swing Index (J. Welles Wilder) \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.ASI(df, L)``
 
-Swing Index (J. Welles Wilder)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SI \| Swing Index (J. Welles Wilder) \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.SI(df, L)``
 
 `Experimental <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/experimental/experimental.py>`__
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Swing Average Price - previous Average Price
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+JH\_SAVGP \| Swing Average Price - previous Average Price \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.JH_SAVGP(df)``
 
-Swing Average Price - previous Average Price Summation
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+JH\_SAVGPS \| Swing Average Price - previous Average Price Summation \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.JH_SAVGPS(df)``
 
-Swing Close - Open
-^^^^^^^^^^^^^^^^^^
+JH\_SCO \| Swing Close - Open \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.JH_SCO(df)``
 
-Swing Close - Open Summation
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+JH\_SCOS \| Swing Close - Open Summation \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.JH_SCOS(df)``
 
-Swing Median Price - previous Median Price
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+JH\_SMEDP \| Swing Median Price - previous Median Price \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.JH_SMEDP(df)``
 
-Swing Median Price - previous Median Price Summation
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+jh\_SMEDPS \| Swing Median Price - previous Median Price Summation \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.JH_SMEDPS(df)``
 
-Swing Price - previous Price
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+JH\_SPP \| Swing Price - previous Price \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.JH_SPP(df, price='Close')``
 
-Swing Price - previous Price Summation
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+JH\_SPPS \| Swing Price - previous Price Summation \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.JH_SPPS(df, price='Close')``
 
-Swing Typical Price - previous Typical Price
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+JH\_STYPP \| Swing Typical Price - previous Typical Price \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.JH_STYPP(df)``
 
-Swing Typical Price - previous Typical Price Summation
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+JH\_STYPPS \| Swing Typical Price - previous Typical Price Summation \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.JH_STYPPS(df)``
 
-Swing Weighted Close Price - previous Weighted Close Price
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+JH\_SWCLP \| Swing Weighted Close Price - previous Weighted Close Price \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.JH_SWCLP(df)``
 
-Swing Weighted Close Price - previous Weighted Close Price Summation
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+JH\_SWCLPS \| Swing Weighted Close Price - previous Weighted Close Price Summation \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.JH_SWCLPS(df)``
 
 `General <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/general/general.py>`__
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Normalize
-^^^^^^^^^
+NORMALIZE \| Normalize \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.NORMALIZE(df, price_max='High', price_min='Low', price='Close')``
 
-Standardize
-^^^^^^^^^^^
+STANDARDIZE \| Standardize \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.STANDARDIZE(df, price='Close')``
 
-Spread
-^^^^^^
+SPREAD \| Spread \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.SPREAD(df1, df2, price1='Close', price2='Close')``
 
-Comparative Performance
-^^^^^^^^^^^^^^^^^^^^^^^
+CP \| Comparative Performance \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.CP(df1, df2, price1='Close', price2='Close')``
 
-Comparative Relative Strength Index
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CRSI \| Comparative Relative Strength Index \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.CRSI(df1, df2, n, price1='Close', price2='Close')``
 
-Comparative Strength
-^^^^^^^^^^^^^^^^^^^^
+CS \| Comparative Strength \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.CS(df1, df2, price1='Close', price2='Close')``
 
-Hit Rate / Win Rate
-^^^^^^^^^^^^^^^^^^^
+HR \| Hit Rate / Win Rate \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``float = jhta.HR(hit_trades_int, total_trades_int)``
 
-Profit/Loss Ratio
-^^^^^^^^^^^^^^^^^
+PLR \| Profit/Loss Ratio \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``float = jhta.PLR(mean_trade_profit_float, mean_trade_loss_float)``
 
-Expected Value
-^^^^^^^^^^^^^^
+EV \| Expected Value \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``float = jhta.EV(hitrade_float, mean_trade_profit_float, mean_trade_loss_float)``
 
-Probability of Ruin (Table of Lucas and LeBeau)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+POR \| Probability of Ruin (Table of Lucas and LeBeau) \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``int = jhta.POR(hitrade_float, profit_loss_ratio_float)``
 
 `Information <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/information/information.py>`__
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Print df Information
-^^^^^^^^^^^^^^^^^^^^
+INFO \| Print df Information \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``print = jhta.INFO(df, price='Close')``
 
-Print Trades Information
-^^^^^^^^^^^^^^^^^^^^^^^^
+INFO\_TRADES \| Print Trades Information \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``print = jhta.INFO_TRADES(profit_trades_list, loss_trades_list)``
 
 `Math Functions <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/math_functions/math_functions.py>`__
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Exponential
-^^^^^^^^^^^
+EXP \| Exponential \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.EXP(df, price='Close')``
 
-Logarithm
-^^^^^^^^^
+LOG \| Logarithm \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.LOG(df, price='Close')``
 
-Base-10 Logarithm
-^^^^^^^^^^^^^^^^^
+LOG10 \| Base-10 Logarithm \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.LOG10(df, price='Close')``
 
-Square Root
-^^^^^^^^^^^
+SQRT \| Square Root \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.SQRT(df, price='Close')``
 
-Arc Cosine
-^^^^^^^^^^
+ACOS \| Arc Cosine \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.ACOS(df, price='Close')``
 
-Arc Sine
-^^^^^^^^
+ASIN \| Arc Sine \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.ASIN(df, price='Close')``
 
-Arc Tangent
-^^^^^^^^^^^
+ATAN \| Arc Tangent \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.ATAN(df, price='Close')``
 
-Cosine
-^^^^^^
+COS \| Cosine \| DONE
+^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.COS(df, price='Close')``
 
-Sine
-^^^^
+SIN \| Sine \| DONE
+^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.SIN(df, price='Close')``
 
-Tangent
-^^^^^^^
+TAN \| Tangent \| DONE
+^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.TAN(df, price='Close')``
 
-Inverse Hyperbolic Cosine
-^^^^^^^^^^^^^^^^^^^^^^^^^
+ACOSH \| Inverse Hyperbolic Cosine \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.ACOSH(df, price='Close')``
 
-Inverse Hyperbolic Sine
-^^^^^^^^^^^^^^^^^^^^^^^
+ASINH \| Inverse Hyperbolic Sine \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.ASINH(df, price='Close')``
 
-Inverse Hyperbolic Tangent
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+ATANH \| Inverse Hyperbolic Tangent \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.ATANH(df, price='Close')``
 
-Hyperbolic Cosine
-^^^^^^^^^^^^^^^^^
+COSH \| Hyperbolic Cosine \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.COSH(df, price='Close')``
 
-Hyperbolic Sine
-^^^^^^^^^^^^^^^
+SINH \| Hyperbolic Sine \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.SINH(df, price='Close')``
 
-Hyperbolic Tangent
-^^^^^^^^^^^^^^^^^^
+TANH \| Hyperbolic Tangent \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.TANH(df, price='Close')``
 
-Mathematical constant PI
-^^^^^^^^^^^^^^^^^^^^^^^^
+PI \| Mathematical constant PI \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``float = jhta.PI()``
 
-Mathematical constant E
-^^^^^^^^^^^^^^^^^^^^^^^
+E \| Mathematical constant E \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``float = jhta.E()``
 
-Mathematical constant TAU
-^^^^^^^^^^^^^^^^^^^^^^^^^
+TAU \| Mathematical constant TAU \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``float = jhta.TAU()``
 
-Mathematical constant PHI
-^^^^^^^^^^^^^^^^^^^^^^^^^
+PHI \| Mathematical constant PHI \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``float = jhta.PHI()``
 
-Ceiling
-^^^^^^^
+CEIL \| Ceiling \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.CEIL(df, price='Close')``
 
-Floor
-^^^^^
+FLOOR \| Floor \| DONE
+^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.FLOOR(df, price='Close')``
 
-Radians to Degrees
-^^^^^^^^^^^^^^^^^^
+DEGREES \| Radians to Degrees \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.DEGREES(df, price='Close')``
 
-Degrees to Radians
-^^^^^^^^^^^^^^^^^^
+RADIANS \| Degrees to Radians \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.RADIANS(df, price='Close')``
 
-Addition High + Low
-^^^^^^^^^^^^^^^^^^^
+ADD \| Addition High + Low \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.ADD(df)``
 
-Division High / Low
-^^^^^^^^^^^^^^^^^^^
+DIV \| Division High / Low \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.DIV(df)``
 
-Highest value over a specified period
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MAX \| Highest value over a specified period \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.MAX(df, n, price='Close')``
 
-MAXINDEX \| Index of highest value over a specified period
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MAXINDEX \| Index of highest value over a specified period \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Lowest value over a specified period
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-  
+
+MIN \| Lowest value over a specified period \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.MIN(df, n, price='Close')``
 
-MININDEX \| Index of lowest value over a specified period
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MININDEX \| Index of lowest value over a specified period \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-MINMAX \| Lowest and Highest values over a specified period
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-  
 
-MINMAXINDEX \| Indexes of lowest and highest values over a specified period
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MINMAX \| Lowest and Highest values over a specified period \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Multiply High \* Low
-^^^^^^^^^^^^^^^^^^^^
+-  
+
+MINMAXINDEX \| Indexes of lowest and highest values over a specified period \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  
+
+MULT \| Multiply High \* Low \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.MULT(df)``
 
-Subtraction High - Low
-^^^^^^^^^^^^^^^^^^^^^^
+SUB \| Subtraction High - Low \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.SUB(df)``
 
-Summation
-^^^^^^^^^
+SUM \| Summation \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.SUM(df, n, price='Close')``
 
 `Momentum Indicators <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/momentum_indicators/momentum_indicators.py>`__
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-ADX \| Average Directional Movement Index
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ADX \| Average Directional Movement Index \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-ADXR \| Average Directional Movement Index Rating
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-  
 
-Absolute Price Oscillator
-^^^^^^^^^^^^^^^^^^^^^^^^^
+ADXR \| Average Directional Movement Index Rating \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  
+
+APO \| Absolute Price Oscillator \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.APO(df, n_fast, n_slow, price='Close')``
 
-AROON \| Aroon
-^^^^^^^^^^^^^^
+AROON \| Aroon \|
+^^^^^^^^^^^^^^^^^
 
-AROONOSC \| Aroon Oscillator
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-  
 
-BOP \| Balance Of Power
-^^^^^^^^^^^^^^^^^^^^^^^
+AROONOSC \| Aroon Oscillator \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-CCI \| Commodity Channel Index
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-  
 
-CMO \| Chande Momentum Oscillator
+BOP \| Balance Of Power \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  
+
+CCI \| Commodity Channel Index \|
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-DX \| Directional Movement Index
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-  
 
-Intraday Momentum Index
-^^^^^^^^^^^^^^^^^^^^^^^
+CMO \| Chande Momentum Oscillator \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  
+
+DX \| Directional Movement Index \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  
+
+IMI \| Intraday Momentum Index \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.IMI(df)``
 
-MACD \| Moving Average Convergence/Divergence
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MACD \| Moving Average Convergence/Divergence \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-MACDEXT \| MACD with controllable MA type
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-  
 
-MACDFIX \| Moving Average Convergence/Divergence Fix 12/26
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MACDEXT \| MACD with controllable MA type \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-MFI \| Money Flow Index
+-  
+
+MACDFIX \| Moving Average Convergence/Divergence Fix 12/26 \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  
+
+MFI \| Money Flow Index \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  
+
+MINUS\_DI \| Minus Directional Indicator \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  
+
+MINUS\_DM \| Minus Directional Movement \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  
+
+MOM \| Momentum \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^
-
-MINUS\_DI \| Minus Directional Indicator
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-MINUS\_DM \| Minus Directional Movement
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Momentum
-^^^^^^^^
 
 -  ``list = jhta.MOM(df, n, price='Close')``
 
-PLUS\_DI \| Plus Directional Indicator
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PLUS\_DI \| Plus Directional Indicator \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-PLUS\_DM \| Plus Directional Movement
+-  
+
+PLUS\_DM \| Plus Directional Movement \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  
+
+PPO \| Percentage Price Oscillator \|
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-PPO \| Percentage Price Oscillator
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-  
 
-Rate of Change
-^^^^^^^^^^^^^^
+ROC \| Rate of Change \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.ROC(df, n, price='Close')``
 
-Rate of Change Percentage
-^^^^^^^^^^^^^^^^^^^^^^^^^
+ROCP \| Rate of Change Percentage \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.ROCP(df, n, price='Close')``
 
-Rate of Change Ratio
-^^^^^^^^^^^^^^^^^^^^
+ROCR \| Rate of Change Ratio \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.ROCR(df, n, price='Close')``
 
-Rate of Change Ratio 100 scale
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ROCR100 \| Rate of Change Ratio 100 scale \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.ROCR100(df, n, price='Close')``
 
-Relative Strength Index
-^^^^^^^^^^^^^^^^^^^^^^^
+RSI \| Relative Strength Index \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.RSI(df, n, price='Close')``
 
-STOCH \| Stochastic
-^^^^^^^^^^^^^^^^^^^
+STOCH \| Stochastic \|
+^^^^^^^^^^^^^^^^^^^^^^
 
-STOCHF \| Stochastic Fast
-^^^^^^^^^^^^^^^^^^^^^^^^^
+-  
 
-STOCHRSI \| Stochastic Relative Strength Index
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+STOCHF \| Stochastic Fast \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-TRIX \| 1-day Rate-Of-Change (ROC) of a Triple Smooth EMA
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-  
 
-ULTOSC \| Ultimate Oscillator
+STOCHRSI \| Stochastic Relative Strength Index \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  
+
+TRIX \| 1-day Rate-Of-Change (ROC) of a Triple Smooth EMA \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  
+
+ULTOSC \| Ultimate Oscillator \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  
+
+WILLR \| Williams' %R \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Williams' %R
-^^^^^^^^^^^^
 
 -  ``list = jhta.WILLR(df, n)``
 
 `Overlap Studies <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/overlap_studies/overlap_studies.py>`__
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Bollinger Bands
-^^^^^^^^^^^^^^^
+BBANDS \| Bollinger Bands \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``dict of lists = jhta.BBANDS(df, n, f=2)``
 
-Bollinger Band Width
-^^^^^^^^^^^^^^^^^^^^
+BBANDW \| Bollinger Band Width \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.BBANDW(df, n, f=2)``
 
-DEMA \| Double Exponential Moving Average
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+DEMA \| Double Exponential Moving Average \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-EMA \| Exponential Moving Average
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-  
 
-Envelope Percent
-^^^^^^^^^^^^^^^^
+EMA \| Exponential Moving Average \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  
+
+ENVP \| Envelope Percent \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``dict of lists = jhta.ENVP(df, pct=.01, price='Close')``
 
-KAMA \| Kaufman Adaptive Moving Average
+KAMA \| Kaufman Adaptive Moving Average \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  
+
+MA \| Moving Average \|
+^^^^^^^^^^^^^^^^^^^^^^^
+
+-  
+
+MAMA \| MESA Adaptive Moving Average \|
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-MA \| Moving Average
-^^^^^^^^^^^^^^^^^^^^
+-  
 
-MAMA \| MESA Adaptive Moving Average
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MAVP \| Moving Average with Variable Period \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-MAVP \| Moving Average with Variable Period
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-  
 
-MidPoint over period
-^^^^^^^^^^^^^^^^^^^^
+MIDPOINT \| MidPoint over period \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.MIDPOINT(df, n, price='Close')``
 
-MidPoint Price over period
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+MIDPRICE \| MidPoint Price over period \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.MIDPRICE(df, n)``
 
-Mayer Multiple Ratio
-^^^^^^^^^^^^^^^^^^^^
+MMR \| Mayer Multiple Ratio \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.MMR(df, n=200, price='Close')``
 
-Parabolic SAR
-^^^^^^^^^^^^^
+SAR \| Parabolic SAR \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.SAR(df, af_step=.02, af_max=.2)``
 
-SAREXT \| Parabolic SAR - Extended
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SAREXT \| Parabolic SAR - Extended \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Simple Moving Average
-^^^^^^^^^^^^^^^^^^^^^
+-  
+
+SMA \| Simple Moving Average \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.SMA(df, n, price='Close')``
 
-T3 \| Triple Exponential Moving Average (T3)
+T3 \| Triple Exponential Moving Average (T3) \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  
+
+TEMA \| Triple Exponential Moving Average \|
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-TEMA \| Triple Exponential Moving Average
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-  
 
-Triangular Moving Average
-^^^^^^^^^^^^^^^^^^^^^^^^^
+TRIMA \| Triangular Moving Average \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.TRIMA(df, n, price='Close')``
 
