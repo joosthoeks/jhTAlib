@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2019-03-08
+:Date:   2019-03-11
 
 .. contents::
    :depth: 3
@@ -205,3293 +205,976 @@ Reference
 
     import jhtalib as jhta
 
-+------+------+------+
-| Indi | Name | TODO |
-| cato | /    |      |
-| r    | Para |      |
-| /    | ms   |      |
-| Retu |      |      |
-| rns  |      |      |
-+======+======+======+
-| **`b |      |
-| ehav |      |
-| iora |      |
-| l\_t |      |
-| echn |      |
-| ique |      |
-| s <h |      |
-| ttps |      |
-| ://g |      |
-| ithu |      |
-| b.co |      |
-| m/jo |      |
-| osth |      |
-| oeks |      |
-| /jhT |      |
-| Alib |      |
-| /blo |      |
-| b/ma |      |
-| ster |      |
-| /jht |      |
-| alib |      |
-| /beh |      |
-| avio |      |
-| ral_ |      |
-| tech |      |
-| niqu |      |
-| es/b |      |
-| ehav |      |
-| iora |      |
-| l_te |      |
-| chni |      |
-| ques |      |
-| .py> |      |
-| `__* |      |
-| *    |      |
-+------+------+------+
-| ATH  | All  | DONE |
-|      | Time |      |
-|      | High |      |
-+------+------+------+
-| dict | ``jh |
-| of   | ta.A |
-| list | TH(d |
-| s    | f, p |
-|      | rice |
-|      | ='Hi |
-|      | gh') |
-|      | ``   |
-+------+------+------+
-| LMC  | Last | DONE |
-|      | Majo |      |
-|      | r    |      |
-|      | Corr |      |
-|      | ecti |      |
-|      | on   |      |
-+------+------+------+
-| dict | ``jh |
-| of   | ta.L |
-| list | MC(d |
-| s    | f, p |
-|      | rice |
-|      | ='Lo |
-|      | w')` |
-|      | `    |
-+------+------+------+
-| PP   | Pivo | DONE |
-|      | t    |      |
-|      | Poin |      |
-|      | t    |      |
-+------+------+------+
-| dict | ``jh |
-| of   | ta.P |
-| list | P(df |
-| s    | )``  |
-+------+------+------+
-| FIBO | Fibo | DONE |
-| PR   | nacc |      |
-|      | i    |      |
-|      | Pric |      |
-|      | e    |      |
-|      | Retr |      |
-|      | acem |      |
-|      | ents |      |
-+------+------+------+
-| dict | ``jh |
-| of   | ta.F |
-| list | IBOP |
-| s    | R(df |
-|      | , pr |
-|      | ice= |
-|      | 'Clo |
-|      | se') |
-|      | ``   |
-+------+------+------+
-| FIBO | Fibo |
-| TR   | nacc |
-|      | i    |
-|      | Time |
-|      | Retr |
-|      | acem |
-|      | ents |
-+------+------+------+
-| GANN | W.   | DONE |
-| PR   | D.   |      |
-|      | Gann |      |
-|      | Pric |      |
-|      | e    |      |
-|      | Retr |      |
-|      | acem |      |
-|      | ents |      |
-+------+------+------+
-| dict | ``jh |
-| of   | ta.G |
-| list | ANNP |
-| s    | R(df |
-|      | , pr |
-|      | ice= |
-|      | 'Clo |
-|      | se') |
-|      | ``   |
-+------+------+------+
-| GANN | W.   |
-| TR   | D.   |
-|      | Gann |
-|      | Time |
-|      | Retr |
-|      | acem |
-|      | ents |
-+------+------+------+
-| JDN  | Juli | DONE |
-|      | an   |      |
-|      | Day  |      |
-|      | Numb |      |
-|      | er   |      |
-+------+------+------+
-| jdn  | ``jh |
-|      | ta.J |
-|      | DN(u |
-|      | tc_y |
-|      | ear, |
-|      |  utc |
-|      | _mon |
-|      | th,  |
-|      | utc_ |
-|      | day) |
-|      | ``   |
-+------+------+------+
-| JD   | Juli | DONE |
-|      | an   |      |
-|      | Date |      |
-+------+------+------+
-| jd   | ``jh |
-|      | ta.J |
-|      | D(ut |
-|      | c_ye |
-|      | ar,  |
-|      | utc_ |
-|      | mont |
-|      | h, u |
-|      | tc_d |
-|      | ay,  |
-|      | utc_ |
-|      | hour |
-|      | , ut |
-|      | c_mi |
-|      | nute |
-|      | , ut |
-|      | c_se |
-|      | cond |
-|      | )``  |
-+------+------+------+
-| SUNC | Sun  |
-|      | Cycl |
-|      | e    |
-+------+------+------+
-| MERC | Merc |
-| URYC | ury  |
-|      | Cycl |
-|      | e    |
-+------+------+------+
-| VENU | Venu |
-| SC   | s    |
-|      | Cycl |
-|      | e    |
-+------+------+------+
-| EART | Eart |
-| HC   | h    |
-|      | Cycl |
-|      | e    |
-+------+------+------+
-| MARS | Mars |
-| C    | Cycl |
-|      | e    |
-+------+------+------+
-| JUPI | Jupi |
-| TERC | ter  |
-|      | Cycl |
-|      | e    |
-+------+------+------+
-| SATU | Satu |
-| RNC  | rn   |
-|      | Cycl |
-|      | e    |
-+------+------+------+
-| URAN | Uran |
-| USC  | us   |
-|      | Cycl |
-|      | e    |
-+------+------+------+
-| NEPT | Nept |
-| UNEC | une  |
-|      | Cycl |
-|      | e    |
-+------+------+------+
-| PLUT | Plut |
-| OC   | o    |
-|      | Cycl |
-|      | e    |
-+------+------+------+
-| MOON | Moon |
-| C    | Cycl |
-|      | e    |
-+------+------+------+
-| **`c |      |
-| ycle |      |
-| \_in |      |
-| dica |      |
-| tors |      |
-|  <ht |      |
-| tps: |      |
-| //gi |      |
-| thub |      |
-| .com |      |
-| /joo |      |
-| stho |      |
-| eks/ |      |
-| jhTA |      |
-| lib/ |      |
-| blob |      |
-| /mas |      |
-| ter/ |      |
-| jhta |      |
-| lib/ |      |
-| cycl |      |
-| e_in |      |
-| dica |      |
-| tors |      |
-| /cyc |      |
-| le_i |      |
-| ndic |      |
-| ator |      |
-| s.py |      |
-| >`__ |      |
-| **   |      |
-+------+------+------+
-| HT\_ | Hilb |
-| DCPE | ert  |
-| RIOD | Tran |
-|      | sfor |
-|      | m    |
-|      | -    |
-|      | Domi |
-|      | nant |
-|      | Cycl |
-|      | e    |
-|      | Peri |
-|      | od   |
-+------+------+------+
-| HT\_ | Hilb |
-| DCPH | ert  |
-| ASE  | Tran |
-|      | sfor |
-|      | m    |
-|      | -    |
-|      | Domi |
-|      | nant |
-|      | Cycl |
-|      | e    |
-|      | Phas |
-|      | e    |
-+------+------+------+
-| HT\_ | Hilb |
-| PHAS | ert  |
-| OR   | Tran |
-|      | sfor |
-|      | m    |
-|      | -    |
-|      | Phas |
-|      | or   |
-|      | Comp |
-|      | onen |
-|      | ts   |
-+------+------+------+
-| HT\_ | Hilb |
-| SINE | ert  |
-|      | Tran |
-|      | sfor |
-|      | m    |
-|      | -    |
-|      | Sine |
-|      | Wave |
-+------+------+------+
-| HT\_ | Hilb |
-| TREN | ert  |
-| DLIN | Tran |
-| E    | sfor |
-|      | m    |
-|      | -    |
-|      | Inst |
-|      | anta |
-|      | neou |
-|      | s    |
-|      | Tren |
-|      | dlin |
-|      | e    |
-+------+------+------+
-| HT\_ | Hilb |
-| TREN | ert  |
-| DMOD | Tran |
-| E    | sfor |
-|      | m    |
-|      | -    |
-|      | Tren |
-|      | d    |
-|      | vs   |
-|      | Cycl |
-|      | e    |
-|      | Mode |
-+------+------+------+
-| TS   | Tren | DONE |
-|      | d    |      |
-|      | Scor |      |
-|      | e    |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.T |
-|      | S(df |
-|      | , n, |
-|      |  pri |
-|      | ce=' |
-|      | Clos |
-|      | e')` |
-|      | `    |
-+------+------+------+
-| **`d |      |
-| ata  |      |
-| <htt |      |
-| ps:/ |      |
-| /git |      |
-| hub. |      |
-| com/ |      |
-| joos |      |
-| thoe |      |
-| ks/j |      |
-| hTAl |      |
-| ib/b |      |
-| lob/ |      |
-| mast |      |
-| er/j |      |
-| htal |      |
-| ib/d |      |
-| ata/ |      |
-| data |      |
-| .py> |      |
-| `__* |      |
-| *    |      |
-+------+------+------+
-| CSV2 | CSV  | DONE |
-| DF   | file |      |
-|      | 2    |      |
-|      | Data |      |
-|      | Feed |      |
-+------+------+------+
-| dict | ``jh |
-| of   | ta.C |
-| tupl | SV2D |
-| es   | F(cs |
-|      | v_fi |
-|      | le_p |
-|      | ath) |
-|      | ``   |
-+------+------+------+
-| CSVU | CSV  | DONE |
-| RL2D | file |      |
-| F    | url  |      |
-|      | 2    |      |
-|      | Data |      |
-|      | Feed |      |
-+------+------+------+
-| dict | ``jh |
-| of   | ta.C |
-| tupl | SVUR |
-| es   | L2DF |
-|      | (csv |
-|      | _fil |
-|      | e_ur |
-|      | l)`` |
-+------+------+------+
-| DF2C | Data | DONE |
-| SV   | Feed |      |
-|      | 2    |      |
-|      | CSV  |      |
-|      | file |      |
-+------+------+------+
-| csv  | ``jh |
-| file | ta.D |
-|      | F2CS |
-|      | V(df |
-|      | , cs |
-|      | v_fi |
-|      | le_p |
-|      | ath) |
-|      | ``   |
-+------+------+------+
-| DF2D | Data | DONE |
-| FREV | Feed |      |
-|      | 2    |      |
-|      | Data |      |
-|      | Feed |      |
-|      | Reve |      |
-|      | rsed |      |
-+------+------+------+
-| dict | ``jh |
-| of   | ta.D |
-| tupl | F2DF |
-| es   | REV( |
-|      | df)` |
-|      | `    |
-+------+------+------+
-| DF2D | Data | DONE |
-| FWIN | Feed |      |
-|      | 2    |      |
-|      | Data |      |
-|      | Feed |      |
-|      | Wind |      |
-|      | ow   |      |
-+------+------+------+
-| dict | ``jh |
-| of   | ta.D |
-| tupl | F2DF |
-| es   | WIN( |
-|      | df,  |
-|      | star |
-|      | t=0, |
-|      |  end |
-|      | =10) |
-|      | ``   |
-+------+------+------+
-| DF\_ | Data | DONE |
-| HEAD | Feed |      |
-|      | HEAD |      |
-+------+------+------+
-| dict | ``jh |
-| of   | ta.D |
-| tupl | F_HE |
-| es   | AD(d |
-|      | f, n |
-|      | =5)` |
-|      | `    |
-+------+------+------+
-| DF\_ | Data | DONE |
-| TAIL | Feed |      |
-|      | TAIL |      |
-+------+------+------+
-| dict | ``jh |
-| of   | ta.D |
-| tupl | F_TA |
-| es   | IL(d |
-|      | f, n |
-|      | =5)` |
-|      | `    |
-+------+------+------+
-| DF2H | Data | DONE |
-| EIKI | Feed |      |
-| N\_A | 2    |      |
-| SHI  | Heik |      |
-|      | in-A |      |
-|      | shi  |      |
-|      | Data |      |
-|      | Feed |      |
-+------+------+------+
-| dict | ``jh |
-| of   | ta.D |
-| tupl | F2HE |
-| es   | IKIN |
-|      | _ASH |
-|      | I(df |
-|      | )``  |
-+------+------+------+
-| **`e |      |
-| vent |      |
-| \_dr |      |
-| iven |      |
-|  <ht |      |
-| tps: |      |
-| //gi |      |
-| thub |      |
-| .com |      |
-| /joo |      |
-| stho |      |
-| eks/ |      |
-| jhTA |      |
-| lib/ |      |
-| blob |      |
-| /mas |      |
-| ter/ |      |
-| jhta |      |
-| lib/ |      |
-| even |      |
-| t_dr |      |
-| iven |      |
-| /eve |      |
-| nt_d |      |
-| rive |      |
-| n.py |      |
-| >`__ |      |
-| **   |      |
-+------+------+------+
-| ASI  | Accu | DONE |
-|      | mula |      |
-|      | tion |      |
-|      | Swin |      |
-|      | g    |      |
-|      | Inde |      |
-|      | x    |      |
-|      | (J.  |      |
-|      | Well |      |
-|      | es   |      |
-|      | Wild |      |
-|      | er)  |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.A |
-|      | SI(d |
-|      | f, L |
-|      | )``  |
-+------+------+------+
-| SI   | Swin | DONE |
-|      | g    |      |
-|      | Inde |      |
-|      | x    |      |
-|      | (J.  |      |
-|      | Well |      |
-|      | es   |      |
-|      | Wild |      |
-|      | er)  |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.S |
-|      | I(df |
-|      | , L) |
-|      | ``   |
-+------+------+------+
-| **`e |      |
-| xper |      |
-| imen |      |
-| tal  |      |
-| <htt |      |
-| ps:/ |      |
-| /git |      |
-| hub. |      |
-| com/ |      |
-| joos |      |
-| thoe |      |
-| ks/j |      |
-| hTAl |      |
-| ib/b |      |
-| lob/ |      |
-| mast |      |
-| er/j |      |
-| htal |      |
-| ib/e |      |
-| xper |      |
-| imen |      |
-| tal/ |      |
-| expe |      |
-| rime |      |
-| ntal |      |
-| .py> |      |
-| `__* |      |
-| *    |      |
-+------+------+------+
-| JH\_ | Swin | DONE |
-| SAVG | g    |      |
-| P    | Aver |      |
-|      | age  |      |
-|      | Pric |      |
-|      | e    |      |
-|      | -    |      |
-|      | prev |      |
-|      | ious |      |
-|      | Aver |      |
-|      | age  |      |
-|      | Pric |      |
-|      | e    |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.J |
-|      | H_SA |
-|      | VGP( |
-|      | df)` |
-|      | `    |
-+------+------+------+
-| JH\_ | Swin | DONE |
-| SAVG | g    |      |
-| PS   | Aver |      |
-|      | age  |      |
-|      | Pric |      |
-|      | e    |      |
-|      | -    |      |
-|      | prev |      |
-|      | ious |      |
-|      | Aver |      |
-|      | age  |      |
-|      | Pric |      |
-|      | e    |      |
-|      | Summ |      |
-|      | atio |      |
-|      | n    |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.J |
-|      | H_SA |
-|      | VGPS |
-|      | (df) |
-|      | ``   |
-+------+------+------+
-| JH\_ | Swin | DONE |
-| SCO  | g    |      |
-|      | Clos |      |
-|      | e    |      |
-|      | -    |      |
-|      | Open |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.J |
-|      | H_SC |
-|      | O(df |
-|      | )``  |
-+------+------+------+
-| JH\_ | Swin | DONE |
-| SCOS | g    |      |
-|      | Clos |      |
-|      | e    |      |
-|      | -    |      |
-|      | Open |      |
-|      | Summ |      |
-|      | atio |      |
-|      | n    |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.J |
-|      | H_SC |
-|      | OS(d |
-|      | f)`` |
-+------+------+------+
-| JH\_ | Swin | DONE |
-| SMED | g    |      |
-| P    | Medi |      |
-|      | an   |      |
-|      | Pric |      |
-|      | e    |      |
-|      | -    |      |
-|      | prev |      |
-|      | ious |      |
-|      | Medi |      |
-|      | an   |      |
-|      | Pric |      |
-|      | e    |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.J |
-|      | H_SM |
-|      | EDP( |
-|      | df)` |
-|      | `    |
-+------+------+------+
-| JH\_ | Swin | DONE |
-| SMED | g    |      |
-| PS   | Medi |      |
-|      | an   |      |
-|      | Pric |      |
-|      | e    |      |
-|      | -    |      |
-|      | prev |      |
-|      | ious |      |
-|      | Medi |      |
-|      | an   |      |
-|      | Pric |      |
-|      | e    |      |
-|      | Summ |      |
-|      | atio |      |
-|      | n    |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.J |
-|      | H_SM |
-|      | EDPS |
-|      | (df) |
-|      | ``   |
-+------+------+------+
-| JH\_ | Swin | DONE |
-| SPP  | g    |      |
-|      | Pric |      |
-|      | e    |      |
-|      | -    |      |
-|      | prev |      |
-|      | ious |      |
-|      | Pric |      |
-|      | e    |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.J |
-|      | H_SP |
-|      | P(df |
-|      | , pr |
-|      | ice= |
-|      | 'Clo |
-|      | se') |
-|      | ``   |
-+------+------+------+
-| JH\_ | Swin | DONE |
-| SPPS | g    |      |
-|      | Pric |      |
-|      | e    |      |
-|      | -    |      |
-|      | prev |      |
-|      | ious |      |
-|      | Pric |      |
-|      | e    |      |
-|      | Summ |      |
-|      | atio |      |
-|      | n    |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.J |
-|      | H_SP |
-|      | PS(d |
-|      | f, p |
-|      | rice |
-|      | ='Cl |
-|      | ose' |
-|      | )``  |
-+------+------+------+
-| JH\_ | Swin | DONE |
-| STYP | g    |      |
-| P    | Typi |      |
-|      | cal  |      |
-|      | Pric |      |
-|      | e    |      |
-|      | -    |      |
-|      | prev |      |
-|      | ious |      |
-|      | Typi |      |
-|      | cal  |      |
-|      | Pric |      |
-|      | e    |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.J |
-|      | H_ST |
-|      | YPP( |
-|      | df)` |
-|      | `    |
-+------+------+------+
-| JH\_ | Swin | DONE |
-| STYP | g    |      |
-| PS   | Typi |      |
-|      | cal  |      |
-|      | Pric |      |
-|      | e    |      |
-|      | -    |      |
-|      | prev |      |
-|      | ious |      |
-|      | Typi |      |
-|      | cal  |      |
-|      | Pric |      |
-|      | e    |      |
-|      | Summ |      |
-|      | atio |      |
-|      | n    |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.J |
-|      | H_ST |
-|      | YPPS |
-|      | (df) |
-|      | ``   |
-+------+------+------+
-| JH\_ | Swin | DONE |
-| SWCL | g    |      |
-| P    | Weig |      |
-|      | hted |      |
-|      | Clos |      |
-|      | e    |      |
-|      | Pric |      |
-|      | e    |      |
-|      | -    |      |
-|      | prev |      |
-|      | ious |      |
-|      | Weig |      |
-|      | hted |      |
-|      | Clos |      |
-|      | e    |      |
-|      | Pric |      |
-|      | e    |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.J |
-|      | H_SW |
-|      | CLP( |
-|      | df)` |
-|      | `    |
-+------+------+------+
-| JH\_ | Swin | DONE |
-| SWCL | g    |      |
-| PS   | Weig |      |
-|      | hted |      |
-|      | Clos |      |
-|      | e    |      |
-|      | Pric |      |
-|      | e    |      |
-|      | -    |      |
-|      | prev |      |
-|      | ious |      |
-|      | Weig |      |
-|      | hted |      |
-|      | Clos |      |
-|      | e    |      |
-|      | Pric |      |
-|      | e    |      |
-|      | Summ |      |
-|      | atio |      |
-|      | n    |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.J |
-|      | H_SW |
-|      | CLPS |
-|      | (df) |
-|      | ``   |
-+------+------+------+
-| **`g |      |
-| ener |      |
-| al < |      |
-| http |      |
-| s:// |      |
-| gith |      |
-| ub.c |      |
-| om/j |      |
-| oost |      |
-| hoek |      |
-| s/jh |      |
-| TAli |      |
-| b/bl |      |
-| ob/m |      |
-| aste |      |
-| r/jh |      |
-| tali |      |
-| b/ge |      |
-| nera |      |
-| l/ge |      |
-| nera |      |
-| l.py |      |
-| >`__ |      |
-| **   |      |
-+------+------+------+
-| NORM | Norm | DONE |
-| ALIZ | aliz |      |
-| E    | e    |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.N |
-|      | ORMA |
-|      | LIZE |
-|      | (df, |
-|      |  pri |
-|      | ce_m |
-|      | ax=' |
-|      | High |
-|      | ', p |
-|      | rice |
-|      | _min |
-|      | ='Lo |
-|      | w',  |
-|      | pric |
-|      | e='C |
-|      | lose |
-|      | ')`` |
-+------+------+------+
-| STAN | Stan | DONE |
-| DARD | dard |      |
-| IZE  | ize  |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.S |
-|      | TAND |
-|      | ARDI |
-|      | ZE(d |
-|      | f, p |
-|      | rice |
-|      | ='Cl |
-|      | ose' |
-|      | )``  |
-+------+------+------+
-| SPRE | Spre | DONE |
-| AD   | ad   |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.S |
-|      | PREA |
-|      | D(df |
-|      | 1, d |
-|      | f2,  |
-|      | pric |
-|      | e1=' |
-|      | Clos |
-|      | e',  |
-|      | pric |
-|      | e2=' |
-|      | Clos |
-|      | e')` |
-|      | `    |
-+------+------+------+
-| CP   | Comp | DONE |
-|      | arat |      |
-|      | ive  |      |
-|      | Perf |      |
-|      | orma |      |
-|      | nce  |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.C |
-|      | P(df |
-|      | 1, d |
-|      | f2,  |
-|      | pric |
-|      | e1=' |
-|      | Clos |
-|      | e',  |
-|      | pric |
-|      | e2=' |
-|      | Clos |
-|      | e')` |
-|      | `    |
-+------+------+------+
-| CRSI | Comp | DONE |
-|      | arat |      |
-|      | ive  |      |
-|      | Rela |      |
-|      | tive |      |
-|      | Stre |      |
-|      | ngth |      |
-|      | Inde |      |
-|      | x    |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.C |
-|      | RSI( |
-|      | df1, |
-|      |  df2 |
-|      | , n, |
-|      |  pri |
-|      | ce1= |
-|      | 'Clo |
-|      | se', |
-|      |  pri |
-|      | ce2= |
-|      | 'Clo |
-|      | se') |
-|      | ``   |
-+------+------+------+
-| CS   | Comp | DONE |
-|      | arat |      |
-|      | ive  |      |
-|      | Stre |      |
-|      | ngth |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.C |
-|      | S(df |
-|      | 1, d |
-|      | f2,  |
-|      | pric |
-|      | e1=' |
-|      | Clos |
-|      | e',  |
-|      | pric |
-|      | e2=' |
-|      | Clos |
-|      | e')` |
-|      | `    |
-+------+------+------+
-| HR   | Hit  | DONE |
-|      | Rate |      |
-|      | /    |      |
-|      | Win  |      |
-|      | Rate |      |
-+------+------+------+
-| floa | ``jh |
-| t    | ta.H |
-|      | R(hi |
-|      | t_tr |
-|      | ades |
-|      | _int |
-|      | , to |
-|      | tal_ |
-|      | trad |
-|      | es_i |
-|      | nt)` |
-|      | `    |
-+------+------+------+
-| PLR  | Prof | DONE |
-|      | it/L |      |
-|      | oss  |      |
-|      | Rati |      |
-|      | o    |      |
-+------+------+------+
-| floa | ``jh |
-| t    | ta.P |
-|      | LR(m |
-|      | ean_ |
-|      | trad |
-|      | e_pr |
-|      | ofit |
-|      | _flo |
-|      | at,  |
-|      | mean |
-|      | _tra |
-|      | de_l |
-|      | oss_ |
-|      | floa |
-|      | t)`` |
-+------+------+------+
-| EV   | Expe | DONE |
-|      | cted |      |
-|      | Valu |      |
-|      | e    |      |
-+------+------+------+
-| floa | ``jh |
-| t    | ta.E |
-|      | V(hi |
-|      | trad |
-|      | e_fl |
-|      | oat, |
-|      |  mea |
-|      | n_tr |
-|      | ade_ |
-|      | prof |
-|      | it_f |
-|      | loat |
-|      | , me |
-|      | an_t |
-|      | rade |
-|      | _los |
-|      | s_fl |
-|      | oat) |
-|      | ``   |
-+------+------+------+
-| POR  | Prob | DONE |
-|      | abil |      |
-|      | ity  |      |
-|      | of   |      |
-|      | Ruin |      |
-|      | (Tab |      |
-|      | le   |      |
-|      | of   |      |
-|      | Luca |      |
-|      | s    |      |
-|      | and  |      |
-|      | LeBe |      |
-|      | au)  |      |
-+------+------+------+
-| int  | ``jh |
-|      | ta.P |
-|      | OR(h |
-|      | itra |
-|      | de_f |
-|      | loat |
-|      | , pr |
-|      | ofit |
-|      | _los |
-|      | s_ra |
-|      | tio_ |
-|      | floa |
-|      | t)`` |
-+------+------+------+
-| **`i |      |
-| nfor |      |
-| mati |      |
-| on < |      |
-| http |      |
-| s:// |      |
-| gith |      |
-| ub.c |      |
-| om/j |      |
-| oost |      |
-| hoek |      |
-| s/jh |      |
-| TAli |      |
-| b/bl |      |
-| ob/m |      |
-| aste |      |
-| r/jh |      |
-| tali |      |
-| b/in |      |
-| form |      |
-| atio |      |
-| n/in |      |
-| form |      |
-| atio |      |
-| n.py |      |
-| >`__ |      |
-| **   |      |
-+------+------+------+
-| INFO | Prin | DONE |
-|      | t    |      |
-|      | df   |      |
-|      | Info |      |
-|      | rmat |      |
-|      | ion  |      |
-+------+------+------+
-| prin | ``jh |
-| t    | ta.I |
-|      | NFO( |
-|      | df,  |
-|      | pric |
-|      | e='C |
-|      | lose |
-|      | ')`` |
-+------+------+------+
-| INFO | Prin | DONE |
-| \_TR | t    |      |
-| ADES | Trad |      |
-|      | es   |      |
-|      | Info |      |
-|      | rmat |      |
-|      | ion  |      |
-+------+------+------+
-| prin | ``jh |
-| t    | ta.I |
-|      | NFO_ |
-|      | TRAD |
-|      | ES(p |
-|      | rofi |
-|      | t_tr |
-|      | ades |
-|      | _lis |
-|      | t, l |
-|      | oss_ |
-|      | trad |
-|      | es_l |
-|      | ist) |
-|      | ``   |
-+------+------+------+
-| **`m |      |
-| ath\ |      |
-| _fun |      |
-| ctio |      |
-| ns < |      |
-| http |      |
-| s:// |      |
-| gith |      |
-| ub.c |      |
-| om/j |      |
-| oost |      |
-| hoek |      |
-| s/jh |      |
-| TAli |      |
-| b/bl |      |
-| ob/m |      |
-| aste |      |
-| r/jh |      |
-| tali |      |
-| b/ma |      |
-| th_f |      |
-| unct |      |
-| ions |      |
-| /mat |      |
-| h_fu |      |
-| ncti |      |
-| ons. |      |
-| py>` |      |
-| __** |      |
-+------+------+------+
-| EXP  | Expo | DONE |
-|      | nent |      |
-|      | ial  |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.E |
-|      | XP(d |
-|      | f, p |
-|      | rice |
-|      | ='Cl |
-|      | ose' |
-|      | )``  |
-+------+------+------+
-| LOG  | Loga | DONE |
-|      | rith |      |
-|      | m    |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.L |
-|      | OG(d |
-|      | f, p |
-|      | rice |
-|      | ='Cl |
-|      | ose' |
-|      | )``  |
-+------+------+------+
-| LOG1 | Base | DONE |
-| 0    | -10  |      |
-|      | Loga |      |
-|      | rith |      |
-|      | m    |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.L |
-|      | OG10 |
-|      | (df, |
-|      |  pri |
-|      | ce=' |
-|      | Clos |
-|      | e')` |
-|      | `    |
-+------+------+------+
-| SQRT | Squa | DONE |
-|      | re   |      |
-|      | Root |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.S |
-|      | QRT( |
-|      | df,  |
-|      | pric |
-|      | e='C |
-|      | lose |
-|      | ')`` |
-+------+------+------+
-| ACOS | Arc  | DONE |
-|      | Cosi |      |
-|      | ne   |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.A |
-|      | COS( |
-|      | df,  |
-|      | pric |
-|      | e='C |
-|      | lose |
-|      | ')`` |
-+------+------+------+
-| ASIN | Arc  | DONE |
-|      | Sine |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.A |
-|      | SIN( |
-|      | df,  |
-|      | pric |
-|      | e='C |
-|      | lose |
-|      | ')`` |
-+------+------+------+
-| ATAN | Arc  | DONE |
-|      | Tang |      |
-|      | ent  |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.A |
-|      | TAN( |
-|      | df,  |
-|      | pric |
-|      | e='C |
-|      | lose |
-|      | ')`` |
-+------+------+------+
-| COS  | Cosi | DONE |
-|      | ne   |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.C |
-|      | OS(d |
-|      | f, p |
-|      | rice |
-|      | ='Cl |
-|      | ose' |
-|      | )``  |
-+------+------+------+
-| SIN  | Sine | DONE |
-+------+------+------+
-| list | ``jh |
-|      | ta.S |
-|      | IN(d |
-|      | f, p |
-|      | rice |
-|      | ='Cl |
-|      | ose' |
-|      | )``  |
-+------+------+------+
-| TAN  | Tang | DONE |
-|      | ent  |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.T |
-|      | AN(d |
-|      | f, p |
-|      | rice |
-|      | ='Cl |
-|      | ose' |
-|      | )``  |
-+------+------+------+
-| ACOS | Inve | DONE |
-| H    | rse  |      |
-|      | Hype |      |
-|      | rbol |      |
-|      | ic   |      |
-|      | Cosi |      |
-|      | ne   |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.A |
-|      | COSH |
-|      | (df, |
-|      |  pri |
-|      | ce=' |
-|      | Clos |
-|      | e')` |
-|      | `    |
-+------+------+------+
-| ASIN | Inve | DONE |
-| H    | rse  |      |
-|      | Hype |      |
-|      | rbol |      |
-|      | ic   |      |
-|      | Sine |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.A |
-|      | SINH |
-|      | (df, |
-|      |  pri |
-|      | ce=' |
-|      | Clos |
-|      | e')` |
-|      | `    |
-+------+------+------+
-| ATAN | Inve | DONE |
-| H    | rse  |      |
-|      | Hype |      |
-|      | rbol |      |
-|      | ic   |      |
-|      | Tang |      |
-|      | ent  |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.A |
-|      | TANH |
-|      | (df, |
-|      |  pri |
-|      | ce=' |
-|      | Clos |
-|      | e')` |
-|      | `    |
-+------+------+------+
-| COSH | Hype | DONE |
-|      | rbol |      |
-|      | ic   |      |
-|      | Cosi |      |
-|      | ne   |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.C |
-|      | OSH( |
-|      | df,  |
-|      | pric |
-|      | e='C |
-|      | lose |
-|      | ')`` |
-+------+------+------+
-| SINH | Hype | DONE |
-|      | rbol |      |
-|      | ic   |      |
-|      | Sine |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.S |
-|      | INH( |
-|      | df,  |
-|      | pric |
-|      | e='C |
-|      | lose |
-|      | ')`` |
-+------+------+------+
-| TANH | Hype | DONE |
-|      | rbol |      |
-|      | ic   |      |
-|      | Tang |      |
-|      | ent  |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.T |
-|      | ANH( |
-|      | df,  |
-|      | pric |
-|      | e='C |
-|      | lose |
-|      | ')`` |
-+------+------+------+
-| PI   | Math | DONE |
-|      | emat |      |
-|      | ical |      |
-|      | cons |      |
-|      | tant |      |
-|      | PI   |      |
-+------+------+------+
-| floa | ``jh |
-| t    | ta.P |
-|      | I()` |
-|      | `    |
-+------+------+------+
-| E    | Math | DONE |
-|      | emat |      |
-|      | ical |      |
-|      | cons |      |
-|      | tant |      |
-|      | E    |      |
-+------+------+------+
-| floa | ``jh |
-| t    | ta.E |
-|      | ()`` |
-+------+------+------+
-| TAU  | Math | DONE |
-|      | emat |      |
-|      | ical |      |
-|      | cons |      |
-|      | tant |      |
-|      | TAU  |      |
-+------+------+------+
-| floa | ``jh |
-| t    | ta.T |
-|      | AU() |
-|      | ``   |
-+------+------+------+
-| PHI  | Math | DONE |
-|      | emat |      |
-|      | ical |      |
-|      | cons |      |
-|      | tant |      |
-|      | PHI  |      |
-+------+------+------+
-| floa | ``jh |
-| t    | ta.P |
-|      | HI() |
-|      | ``   |
-+------+------+------+
-| CEIL | Ceil | DONE |
-|      | ing  |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.C |
-|      | EIL( |
-|      | df,  |
-|      | pric |
-|      | e='C |
-|      | lose |
-|      | ')`` |
-+------+------+------+
-| FLOO | Floo | DONE |
-| R    | r    |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.F |
-|      | LOOR |
-|      | (df, |
-|      |  pri |
-|      | ce=' |
-|      | Clos |
-|      | e')` |
-|      | `    |
-+------+------+------+
-| DEGR | Radi | DONE |
-| EES  | ans  |      |
-|      | to   |      |
-|      | Degr |      |
-|      | ees  |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.D |
-|      | EGRE |
-|      | ES(d |
-|      | f, p |
-|      | rice |
-|      | ='Cl |
-|      | ose' |
-|      | )``  |
-+------+------+------+
-| RADI | Degr | DONE |
-| ANS  | ees  |      |
-|      | to   |      |
-|      | Radi |      |
-|      | ans  |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.R |
-|      | ADIA |
-|      | NS(d |
-|      | f, p |
-|      | rice |
-|      | ='Cl |
-|      | ose' |
-|      | )``  |
-+------+------+------+
-| ADD  | Addi | DONE |
-|      | tion |      |
-|      | High |      |
-|      | +    |      |
-|      | Low  |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.A |
-|      | DD(d |
-|      | f)`` |
-+------+------+------+
-| DIV  | Divi | DONE |
-|      | sion |      |
-|      | High |      |
-|      | /    |      |
-|      | Low  |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.D |
-|      | IV(d |
-|      | f)`` |
-+------+------+------+
-| MAX  | High | DONE |
-|      | est  |      |
-|      | valu |      |
-|      | e    |      |
-|      | over |      |
-|      | a    |      |
-|      | spec |      |
-|      | ifie |      |
-|      | d    |      |
-|      | peri |      |
-|      | od   |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.M |
-|      | AX(d |
-|      | f, n |
-|      | , pr |
-|      | ice= |
-|      | 'Clo |
-|      | se') |
-|      | ``   |
-+------+------+------+
-| MAXI | Inde |
-| NDEX | x    |
-|      | of   |
-|      | high |
-|      | est  |
-|      | valu |
-|      | e    |
-|      | over |
-|      | a    |
-|      | spec |
-|      | ifie |
-|      | d    |
-|      | peri |
-|      | od   |
-+------+------+------+
-| MIN  | Lowe | DONE |
-|      | st   |      |
-|      | valu |      |
-|      | e    |      |
-|      | over |      |
-|      | a    |      |
-|      | spec |      |
-|      | ifie |      |
-|      | d    |      |
-|      | peri |      |
-|      | od   |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.M |
-|      | IN(d |
-|      | f, n |
-|      | , pr |
-|      | ice= |
-|      | 'Clo |
-|      | se') |
-|      | ``   |
-+------+------+------+
-| MINI | Inde |
-| NDEX | x    |
-|      | of   |
-|      | lowe |
-|      | st   |
-|      | valu |
-|      | e    |
-|      | over |
-|      | a    |
-|      | spec |
-|      | ifie |
-|      | d    |
-|      | peri |
-|      | od   |
-+------+------+------+
-| MINM | Lowe |
-| AX   | st   |
-|      | and  |
-|      | High |
-|      | est  |
-|      | valu |
-|      | es   |
-|      | over |
-|      | a    |
-|      | spec |
-|      | ifie |
-|      | d    |
-|      | peri |
-|      | od   |
-+------+------+------+
-| MINM | Inde |
-| AXIN | xes  |
-| DEX  | of   |
-|      | lowe |
-|      | st   |
-|      | and  |
-|      | high |
-|      | est  |
-|      | valu |
-|      | es   |
-|      | over |
-|      | a    |
-|      | spec |
-|      | ifie |
-|      | d    |
-|      | peri |
-|      | od   |
-+------+------+------+
-| MULT | Mult | DONE |
-|      | iply |      |
-|      | High |      |
-|      | \*   |      |
-|      | Low  |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.M |
-|      | ULT( |
-|      | df)` |
-|      | `    |
-+------+------+------+
-| SUB  | Subt | DONE |
-|      | ract |      |
-|      | ion  |      |
-|      | High |      |
-|      | -    |      |
-|      | Low  |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.S |
-|      | UB(d |
-|      | f)`` |
-+------+------+------+
-| SUM  | Summ | DONE |
-|      | atio |      |
-|      | n    |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.S |
-|      | UM(d |
-|      | f, n |
-|      | , pr |
-|      | ice= |
-|      | 'Clo |
-|      | se') |
-|      | ``   |
-+------+------+------+
-| **`m |      |
-| omen |      |
-| tum\ |      |
-| _ind |      |
-| icat |      |
-| ors  |      |
-| <htt |      |
-| ps:/ |      |
-| /git |      |
-| hub. |      |
-| com/ |      |
-| joos |      |
-| thoe |      |
-| ks/j |      |
-| hTAl |      |
-| ib/b |      |
-| lob/ |      |
-| mast |      |
-| er/j |      |
-| htal |      |
-| ib/m |      |
-| omen |      |
-| tum_ |      |
-| indi |      |
-| cato |      |
-| rs/m |      |
-| omen |      |
-| tum_ |      |
-| indi |      |
-| cato |      |
-| rs.p |      |
-| y>`_ |      |
-| _**  |      |
-+------+------+------+
-| ADX  | Aver |
-|      | age  |
-|      | Dire |
-|      | ctio |
-|      | nal  |
-|      | Move |
-|      | ment |
-|      | Inde |
-|      | x    |
-+------+------+------+
-| ADXR | Aver |
-|      | age  |
-|      | Dire |
-|      | ctio |
-|      | nal  |
-|      | Move |
-|      | ment |
-|      | Inde |
-|      | x    |
-|      | Rati |
-|      | ng   |
-+------+------+------+
-| APO  | Abso | DONE |
-|      | lute |      |
-|      | Pric |      |
-|      | e    |      |
-|      | Osci |      |
-|      | llat |      |
-|      | or   |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.A |
-|      | PO(d |
-|      | f, n |
-|      | _fas |
-|      | t, n |
-|      | _slo |
-|      | w, p |
-|      | rice |
-|      | ='Cl |
-|      | ose' |
-|      | )``  |
-+------+------+------+
-| AROO | Aroo |
-| N    | n    |
-+------+------+------+
-| AROO | Aroo |
-| NOSC | n    |
-|      | Osci |
-|      | llat |
-|      | or   |
-+------+------+------+
-| BOP  | Bala |
-|      | nce  |
-|      | Of   |
-|      | Powe |
-|      | r    |
-+------+------+------+
-| CCI  | Comm |
-|      | odit |
-|      | y    |
-|      | Chan |
-|      | nel  |
-|      | Inde |
-|      | x    |
-+------+------+------+
-| CMO  | Chan |
-|      | de   |
-|      | Mome |
-|      | ntum |
-|      | Osci |
-|      | llat |
-|      | or   |
-+------+------+------+
-| DX   | Dire |
-|      | ctio |
-|      | nal  |
-|      | Move |
-|      | ment |
-|      | Inde |
-|      | x    |
-+------+------+------+
-| IMI  | Intr | DONE |
-|      | aday |      |
-|      | Mome |      |
-|      | ntum |      |
-|      | Inde |      |
-|      | x    |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.I |
-|      | MI(d |
-|      | f)`` |
-+------+------+------+
-| MACD | Movi |
-|      | ng   |
-|      | Aver |
-|      | age  |
-|      | Conv |
-|      | erge |
-|      | nce/ |
-|      | Dive |
-|      | rgen |
-|      | ce   |
-+------+------+------+
-| MACD | MACD |
-| EXT  | with |
-|      | cont |
-|      | roll |
-|      | able |
-|      | MA   |
-|      | type |
-+------+------+------+
-| MACD | Movi |
-| FIX  | ng   |
-|      | Aver |
-|      | age  |
-|      | Conv |
-|      | erge |
-|      | nce/ |
-|      | Dive |
-|      | rgen |
-|      | ce   |
-|      | Fix  |
-|      | 12/2 |
-|      | 6    |
-+------+------+------+
-| MFI  | Mone |
-|      | y    |
-|      | Flow |
-|      | Inde |
-|      | x    |
-+------+------+------+
-| MINU | Minu |
-| S\_D | s    |
-| I    | Dire |
-|      | ctio |
-|      | nal  |
-|      | Indi |
-|      | cato |
-|      | r    |
-+------+------+------+
-| MINU | Minu |
-| S\_D | s    |
-| M    | Dire |
-|      | ctio |
-|      | nal  |
-|      | Move |
-|      | ment |
-+------+------+------+
-| MOM  | Mome | DONE |
-|      | ntum |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.M |
-|      | OM(d |
-|      | f, n |
-|      | , pr |
-|      | ice= |
-|      | 'Clo |
-|      | se') |
-|      | ``   |
-+------+------+------+
-| PLUS | Plus |
-| \_DI | Dire |
-|      | ctio |
-|      | nal  |
-|      | Indi |
-|      | cato |
-|      | r    |
-+------+------+------+
-| PLUS | Plus |
-| \_DM | Dire |
-|      | ctio |
-|      | nal  |
-|      | Move |
-|      | ment |
-+------+------+------+
-| PPO  | Perc |
-|      | enta |
-|      | ge   |
-|      | Pric |
-|      | e    |
-|      | Osci |
-|      | llat |
-|      | or   |
-+------+------+------+
-| ROC  | Rate | DONE |
-|      | of   |      |
-|      | Chan |      |
-|      | ge   |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.R |
-|      | OC(d |
-|      | f, n |
-|      | , pr |
-|      | ice= |
-|      | 'Clo |
-|      | se') |
-|      | ``   |
-+------+------+------+
-| ROCP | Rate | DONE |
-|      | of   |      |
-|      | Chan |      |
-|      | ge   |      |
-|      | Perc |      |
-|      | enta |      |
-|      | ge   |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.R |
-|      | OCP( |
-|      | df,  |
-|      | n, p |
-|      | rice |
-|      | ='Cl |
-|      | ose' |
-|      | )``  |
-+------+------+------+
-| ROCR | Rate | DONE |
-|      | of   |      |
-|      | Chan |      |
-|      | ge   |      |
-|      | Rati |      |
-|      | o    |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.R |
-|      | OCR( |
-|      | df,  |
-|      | n, p |
-|      | rice |
-|      | ='Cl |
-|      | ose' |
-|      | )``  |
-+------+------+------+
-| ROCR | Rate | DONE |
-| 100  | of   |      |
-|      | Chan |      |
-|      | ge   |      |
-|      | Rati |      |
-|      | o    |      |
-|      | 100  |      |
-|      | scal |      |
-|      | e    |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.R |
-|      | OCR1 |
-|      | 00(d |
-|      | f, n |
-|      | , pr |
-|      | ice= |
-|      | 'Clo |
-|      | se') |
-|      | ``   |
-+------+------+------+
-| RSI  | Rela | DONE |
-|      | tive |      |
-|      | Stre |      |
-|      | ngth |      |
-|      | Inde |      |
-|      | x    |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.R |
-|      | SI(d |
-|      | f, n |
-|      | , pr |
-|      | ice= |
-|      | 'Clo |
-|      | se') |
-|      | ``   |
-+------+------+------+
-| STOC | Stoc |
-| H    | hast |
-|      | ic   |
-+------+------+------+
-| STOC | Stoc |
-| HF   | hast |
-|      | ic   |
-|      | Fast |
-+------+------+------+
-| STOC | Stoc |
-| HRSI | hast |
-|      | ic   |
-|      | Rela |
-|      | tive |
-|      | Stre |
-|      | ngth |
-|      | Inde |
-|      | x    |
-+------+------+------+
-| TRIX | 1-da |
-|      | y    |
-|      | Rate |
-|      | -Of- |
-|      | Chan |
-|      | ge   |
-|      | (ROC |
-|      | )    |
-|      | of a |
-|      | Trip |
-|      | le   |
-|      | Smoo |
-|      | th   |
-|      | EMA  |
-+------+------+------+
-| ULTO | Ulti |
-| SC   | mate |
-|      | Osci |
-|      | llat |
-|      | or   |
-+------+------+------+
-| WILL | Will | DONE |
-| R    | iams |      |
-|      | '    |      |
-|      | %R   |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.W |
-|      | ILLR |
-|      | (df, |
-|      |  n)` |
-|      | `    |
-+------+------+------+
-| **`o |      |
-| verl |      |
-| ap\_ |      |
-| stud |      |
-| ies  |      |
-| <htt |      |
-| ps:/ |      |
-| /git |      |
-| hub. |      |
-| com/ |      |
-| joos |      |
-| thoe |      |
-| ks/j |      |
-| hTAl |      |
-| ib/b |      |
-| lob/ |      |
-| mast |      |
-| er/j |      |
-| htal |      |
-| ib/o |      |
-| verl |      |
-| ap_s |      |
-| tudi |      |
-| es/o |      |
-| verl |      |
-| ap_s |      |
-| tudi |      |
-| es.p |      |
-| y>`_ |      |
-| _**  |      |
-+------+------+------+
-| BBAN | Boll | DONE |
-| DS   | inge |      |
-|      | r    |      |
-|      | Band |      |
-|      | s    |      |
-+------+------+------+
-| dict | ``jh |
-| of   | ta.B |
-| list | BAND |
-| s    | S(df |
-|      | , n, |
-|      |  f=2 |
-|      | )``  |
-+------+------+------+
-| BBAN | Boll | DONE |
-| DW   | inge |      |
-|      | r    |      |
-|      | Band |      |
-|      | Widt |      |
-|      | h    |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.B |
-|      | BAND |
-|      | W(df |
-|      | , n, |
-|      |  f=2 |
-|      | )``  |
-+------+------+------+
-| DEMA | Doub |
-|      | le   |
-|      | Expo |
-|      | nent |
-|      | ial  |
-|      | Movi |
-|      | ng   |
-|      | Aver |
-|      | age  |
-+------+------+------+
-| EMA  | Expo |
-|      | nent |
-|      | ial  |
-|      | Movi |
-|      | ng   |
-|      | Aver |
-|      | age  |
-+------+------+------+
-| ENVP | Enve | DONE |
-|      | lope |      |
-|      | Perc |      |
-|      | ent  |      |
-+------+------+------+
-| dict | ``jh |
-| of   | ta.E |
-| list | NVP( |
-| s    | df,  |
-|      | pct= |
-|      | .01, |
-|      |  pri |
-|      | ce=' |
-|      | Clos |
-|      | e')` |
-|      | `    |
-+------+------+------+
-| KAMA | Kauf |
-|      | man  |
-|      | Adap |
-|      | tive |
-|      | Movi |
-|      | ng   |
-|      | Aver |
-|      | age  |
-+------+------+------+
-| MA   | Movi |
-|      | ng   |
-|      | Aver |
-|      | age  |
-+------+------+------+
-| MAMA | MESA |
-|      | Adap |
-|      | tive |
-|      | Movi |
-|      | ng   |
-|      | Aver |
-|      | age  |
-+------+------+------+
-| MAVP | Movi |
-|      | ng   |
-|      | Aver |
-|      | age  |
-|      | with |
-|      | Vari |
-|      | able |
-|      | Peri |
-|      | od   |
-+------+------+------+
-| MIDP | MidP | DONE |
-| OINT | oint |      |
-|      | over |      |
-|      | peri |      |
-|      | od   |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.M |
-|      | IDPO |
-|      | INT( |
-|      | df,  |
-|      | n, p |
-|      | rice |
-|      | ='Cl |
-|      | ose' |
-|      | )``  |
-+------+------+------+
-| MIDP | MidP | DONE |
-| RICE | oint |      |
-|      | Pric |      |
-|      | e    |      |
-|      | over |      |
-|      | peri |      |
-|      | od   |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.M |
-|      | IDPR |
-|      | ICE( |
-|      | df,  |
-|      | n)`` |
-+------+------+------+
-| MMR  | Maye | DONE |
-|      | r    |      |
-|      | Mult |      |
-|      | iple |      |
-|      | Rati |      |
-|      | o    |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.M |
-|      | MR(d |
-|      | f, n |
-|      | =200 |
-|      | , pr |
-|      | ice= |
-|      | 'Clo |
-|      | se') |
-|      | ``   |
-+------+------+------+
-| SAR  | Para | DONE |
-|      | boli |      |
-|      | c    |      |
-|      | SAR  |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.S |
-|      | AR(d |
-|      | f, a |
-|      | f_st |
-|      | ep=. |
-|      | 02,  |
-|      | af_m |
-|      | ax=. |
-|      | 2)`` |
-+------+------+------+
-| SARE | Para |
-| XT   | boli |
-|      | c    |
-|      | SAR  |
-|      | -    |
-|      | Exte |
-|      | nded |
-+------+------+------+
-| SMA  | Simp | DONE |
-|      | le   |      |
-|      | Movi |      |
-|      | ng   |      |
-|      | Aver |      |
-|      | age  |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.S |
-|      | MA(d |
-|      | f, n |
-|      | , pr |
-|      | ice= |
-|      | 'Clo |
-|      | se') |
-|      | ``   |
-+------+------+------+
-| T3   | Trip |
-|      | le   |
-|      | Expo |
-|      | nent |
-|      | ial  |
-|      | Movi |
-|      | ng   |
-|      | Aver |
-|      | age  |
-|      | (T3) |
-+------+------+------+
-| TEMA | Trip |
-|      | le   |
-|      | Expo |
-|      | nent |
-|      | ial  |
-|      | Movi |
-|      | ng   |
-|      | Aver |
-|      | age  |
-+------+------+------+
-| TRIM | Tria | DONE |
-| A    | ngul |      |
-|      | ar   |      |
-|      | Movi |      |
-|      | ng   |      |
-|      | Aver |      |
-|      | age  |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.T |
-|      | RIMA |
-|      | (df, |
-|      |  n,  |
-|      | pric |
-|      | e='C |
-|      | lose |
-|      | ')`` |
-+------+------+------+
-| WMA  | Weig |
-|      | hted |
-|      | Movi |
-|      | ng   |
-|      | Aver |
-|      | age  |
-+------+------+------+
-| **`p |      |
-| atte |      |
-| rn\_ |      |
-| reco |      |
-| gnit |      |
-| ion  |      |
-| <htt |      |
-| ps:/ |      |
-| /git |      |
-| hub. |      |
-| com/ |      |
-| joos |      |
-| thoe |      |
-| ks/j |      |
-| hTAl |      |
-| ib/b |      |
-| lob/ |      |
-| mast |      |
-| er/j |      |
-| htal |      |
-| ib/p |      |
-| atte |      |
-| rn_r |      |
-| ecog |      |
-| niti |      |
-| on/p |      |
-| atte |      |
-| rn_r |      |
-| ecog |      |
-| niti |      |
-| on.p |      |
-| y>`_ |      |
-| _**  |      |
-+------+------+------+
-| CDL2 | Two  |
-| CROW | Crow |
-| S    | s    |
-+------+------+------+
-| CDL3 | Thre |
-| BLAC | e    |
-| KCRO | Blac |
-| WS   | k    |
-|      | Crow |
-|      | s    |
-+------+------+------+
-| CDL3 | Thre |
-| INSI | e    |
-| DE   | Insi |
-|      | de   |
-|      | Up/D |
-|      | own  |
-+------+------+------+
-| CDL3 | Thre |
-| LINE | e-Li |
-| STRI | ne   |
-| KE   | Stri |
-|      | ke   |
-+------+------+------+
-| CDL3 | Thre |
-| OUTS | e    |
-| IDE  | Outs |
-|      | ide  |
-|      | Up/D |
-|      | own  |
-+------+------+------+
-| CDL3 | Thre |
-| STAR | e    |
-| SINS | Star |
-| OUTH | s    |
-|      | In   |
-|      | The  |
-|      | Sout |
-|      | h    |
-+------+------+------+
-| CDL3 | Thre |
-| WHIT | e    |
-| ESOL | Adva |
-| DIER | ncin |
-| S    | g    |
-|      | Whit |
-|      | e    |
-|      | Sold |
-|      | iers |
-+------+------+------+
-| CDLA | Aban |
-| BAND | done |
-| ONED | d    |
-| BABY | Baby |
-+------+------+------+
-| CDLA | Adva |
-| DVAN | nce  |
-| CEBL | Bloc |
-| OCK  | k    |
-+------+------+------+
-| CDLB | Belt |
-| ELTH | -hol |
-| OLD  | d    |
-+------+------+------+
-| CDLB | Brea |
-| REAK | kawa |
-| AWAY | y    |
-+------+------+------+
-| CDLC | Clos |
-| LOSI | ing  |
-| NGMA | Maru |
-| RUBO | bozu |
-| ZU   |      |
-+------+------+------+
-| CDLC | Conc |
-| ONSE | eali |
-| ALBA | ng   |
-| BYSW | Baby |
-| ALL  | Swal |
-|      | low  |
-+------+------+------+
-| CDLC | Coun |
-| OUNT | tera |
-| ERAT | ttac |
-| TACK | k    |
-+------+------+------+
-| CDLD | Dark |
-| ARKC | Clou |
-| LOUD | d    |
-| COVE | Cove |
-| R    | r    |
-+------+------+------+
-| CDLD | Doji |
-| OJI  |      |
-+------+------+------+
-| CDLD | Doji |
-| OJIS | Star |
-| TAR  |      |
-+------+------+------+
-| CDLD | Drag |
-| RAGO | onfl |
-| NFLY | y    |
-| DOJI | Doji |
-+------+------+------+
-| CDLE | Engu |
-| NGUL | lfin |
-| FING | g    |
-|      | Patt |
-|      | ern  |
-+------+------+------+
-| CDLE | Even |
-| VENI | ing  |
-| NGDO | Doji |
-| JIST | Star |
-| AR   |      |
-+------+------+------+
-| CDLE | Even |
-| VENI | ing  |
-| NGST | Star |
-| AR   |      |
-+------+------+------+
-| CDLG | Up/D |
-| APSI | own- |
-| DESI | gap  |
-| DEWH | side |
-| ITE  | -by- |
-|      | side |
-|      | whit |
-|      | e    |
-|      | line |
-|      | s    |
-+------+------+------+
-| CDLG | Grav |
-| RAVE | esto |
-| STON | ne   |
-| EDOJ | Doji |
-| I    |      |
-+------+------+------+
-| CDLH | Hamm |
-| AMME | er   |
-| R    |      |
-+------+------+------+
-| CDLH | Hang |
-| ANGI | ing  |
-| NGMA | Man  |
-| N    |      |
-+------+------+------+
-| CDLH | Hara |
-| ARAM | mi   |
-| I    | Patt |
-|      | ern  |
-+------+------+------+
-| CDLH | Hara |
-| ARAM | mi   |
-| ICRO | Cros |
-| SS   | s    |
-|      | Patt |
-|      | ern  |
-+------+------+------+
-| CDLH | High |
-| IGHW | -Wav |
-| AVE  | e    |
-|      | Cand |
-|      | le   |
-+------+------+------+
-| CDLH | Hikk |
-| IKKA | ake  |
-| KE   | Patt |
-|      | ern  |
-+------+------+------+
-| CDLH | Modi |
-| IKKA | fied |
-| KEMO | Hikk |
-| D    | ake  |
-|      | Patt |
-|      | ern  |
-+------+------+------+
-| CDLH | Homi |
-| OMIN | ng   |
-| GPIG | Pige |
-| EON  | on   |
-+------+------+------+
-| CDLI | Iden |
-| DENT | tica |
-| ICAL | l    |
-| 3CRO | Thre |
-| WS   | e    |
-|      | Crow |
-|      | s    |
-+------+------+------+
-| CDLI | In-N |
-| NNEC | eck  |
-| K    | Patt |
-|      | ern  |
-+------+------+------+
-| CDLI | Inve |
-| NVER | rted |
-| TEDH | Hamm |
-| AMME | er   |
-| R    |      |
-+------+------+------+
-| CDLK | Kick |
-| ICKI | ing  |
-| NG   |      |
-+------+------+------+
-| CDLK | Kick |
-| ICKI | ing  |
-| NGBY | -    |
-| LENG | bull |
-| TH   | /bea |
-|      | r    |
-|      | dete |
-|      | rmin |
-|      | ed   |
-|      | by   |
-|      | the  |
-|      | long |
-|      | er   |
-|      | maru |
-|      | bozu |
-+------+------+------+
-| CDLL | Ladd |
-| ADDE | er   |
-| RBOT | Bott |
-| TOM  | om   |
-+------+------+------+
-| CDLL | Long |
-| ONGL | Legg |
-| EGGE | ed   |
-| DDOJ | Doji |
-| I    |      |
-+------+------+------+
-| CDLL | Long |
-| ONGL | Line |
-| INE  | Cand |
-|      | le   |
-+------+------+------+
-| CDLM | Maru |
-| ARUB | bozu |
-| OZU  |      |
-+------+------+------+
-| CDLM | Matc |
-| ATCH | hing |
-| INGL | Low  |
-| OW   |      |
-+------+------+------+
-| CDLM | Mat  |
-| ATHO | Hold |
-| LD   |      |
-+------+------+------+
-| CDLM | Morn |
-| ORNI | ing  |
-| NGDO | Doji |
-| JIST | Star |
-| AR   |      |
-+------+------+------+
-| CDLM | Morn |
-| ORNI | ing  |
-| NGST | Star |
-| AR   |      |
-+------+------+------+
-| CDLO | On-N |
-| NNEC | eck  |
-| K    | Patt |
-|      | ern  |
-+------+------+------+
-| CDLP | Pier |
-| IERC | cing |
-| ING  | Patt |
-|      | ern  |
-+------+------+------+
-| CDLR | Rick |
-| ICKS | shaw |
-| HAWM | Man  |
-| AN   |      |
-+------+------+------+
-| CDLR | Risi |
-| ISEF | ng/F |
-| ALL3 | alli |
-| METH | ng   |
-| ODS  | Thre |
-|      | e    |
-|      | Meth |
-|      | ods  |
-+------+------+------+
-| CDLS | Sepa |
-| EPAR | rati |
-| ATIN | ng   |
-| GLIN | Line |
-| ES   | s    |
-+------+------+------+
-| CDLS | Shoo |
-| HOOT | ting |
-| INGS | Star |
-| TAR  |      |
-+------+------+------+
-| CDLS | Shor |
-| HORT | t    |
-| LINE | Line |
-|      | Cand |
-|      | le   |
-+------+------+------+
-| CDLS | Spin |
-| PINN | ning |
-| INGT | Top  |
-| OP   |      |
-+------+------+------+
-| CDLS | Stal |
-| TALL | led  |
-| EDPA | Patt |
-| TTER | ern  |
-| N    |      |
-+------+------+------+
-| CDLS | Stic |
-| TICK | k    |
-| SAND | Sand |
-| WICH | wich |
-+------+------+------+
-| CDLT | Taku |
-| AKUR | ri   |
-| I    | (Dra |
-|      | gonf |
-|      | ly   |
-|      | Doji |
-|      | with |
-|      | very |
-|      | long |
-|      | lowe |
-|      | r    |
-|      | shad |
-|      | ow)  |
-+------+------+------+
-| CDLT | Tasu |
-| ASUK | ki   |
-| IGAP | Gap  |
-+------+------+------+
-| CDLT | Thru |
-| HRUS | stin |
-| TING | g    |
-|      | Patt |
-|      | ern  |
-+------+------+------+
-| CDLT | Tris |
-| RIST | tar  |
-| AR   | Patt |
-|      | ern  |
-+------+------+------+
-| CDLU | Uniq |
-| NIQU | ue   |
-| E3RI | 3    |
-| VER  | Rive |
-|      | r    |
-+------+------+------+
-| CDLU | Upsi |
-| PSID | de   |
-| EGAP | Gap  |
-| 2CRO | Two  |
-| WS   | Crow |
-|      | s    |
-+------+------+------+
-| CDLX | Upsi |
-| SIDE | de/D |
-| GAP3 | owns |
-| METH | ide  |
-| ODS  | Gap  |
-|      | Thre |
-|      | e    |
-|      | Meth |
-|      | ods  |
-+------+------+------+
-| **`p |      |
-| rice |      |
-| \_tr |      |
-| ansf |      |
-| orm  |      |
-| <htt |      |
-| ps:/ |      |
-| /git |      |
-| hub. |      |
-| com/ |      |
-| joos |      |
-| thoe |      |
-| ks/j |      |
-| hTAl |      |
-| ib/b |      |
-| lob/ |      |
-| mast |      |
-| er/j |      |
-| htal |      |
-| ib/p |      |
-| rice |      |
-| _tra |      |
-| nsfo |      |
-| rm/p |      |
-| rice |      |
-| _tra |      |
-| nsfo |      |
-| rm.p |      |
-| y>`_ |      |
-| _**  |      |
-+------+------+------+
-| AVGP | Aver | DONE |
-| RICE | age  |      |
-|      | Pric |      |
-|      | e    |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.A |
-|      | VGPR |
-|      | ICE( |
-|      | df)` |
-|      | `    |
-+------+------+------+
-| MEDP | Medi | DONE |
-| RICE | an   |      |
-|      | Pric |      |
-|      | e    |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.M |
-|      | EDPR |
-|      | ICE( |
-|      | df)` |
-|      | `    |
-+------+------+------+
-| TYPP | Typi | DONE |
-| RICE | cal  |      |
-|      | Pric |      |
-|      | e    |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.T |
-|      | YPPR |
-|      | ICE( |
-|      | df)` |
-|      | `    |
-+------+------+------+
-| WCLP | Weig | DONE |
-| RICE | hted |      |
-|      | Clos |      |
-|      | e    |      |
-|      | Pric |      |
-|      | e    |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.W |
-|      | CLPR |
-|      | ICE( |
-|      | df)` |
-|      | `    |
-+------+------+------+
-| **`s |      |
-| tati |      |
-| stic |      |
-| \_fu |      |
-| ncti |      |
-| ons  |      |
-| <htt |      |
-| ps:/ |      |
-| /git |      |
-| hub. |      |
-| com/ |      |
-| joos |      |
-| thoe |      |
-| ks/j |      |
-| hTAl |      |
-| ib/b |      |
-| lob/ |      |
-| mast |      |
-| er/j |      |
-| htal |      |
-| ib/s |      |
-| tati |      |
-| stic |      |
-| _fun |      |
-| ctio |      |
-| ns/s |      |
-| tati |      |
-| stic |      |
-| _fun |      |
-| ctio |      |
-| ns.p |      |
-| y>`_ |      |
-| _**  |      |
-+------+------+------+
-| MEAN | Arit | DONE |
-|      | hmet |      |
-|      | ic   |      |
-|      | mean |      |
-|      | (ave |      |
-|      | rage |      |
-|      | )    |      |
-|      | of   |      |
-|      | data |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.M |
-|      | EAN( |
-|      | df,  |
-|      | n, p |
-|      | rice |
-|      | ='Cl |
-|      | ose' |
-|      | )``  |
-+------+------+------+
-| HARM | Harm | DONE |
-| ONIC | onic |      |
-| \_ME | mean |      |
-| AN   | of   |      |
-|      | data |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.H |
-|      | ARMO |
-|      | NIC_ |
-|      | MEAN |
-|      | (df, |
-|      |  n,  |
-|      | pric |
-|      | e='C |
-|      | lose |
-|      | ')`` |
-+------+------+------+
-| MEDI | Medi | DONE |
-| AN   | an   |      |
-|      | (mid |      |
-|      | dle  |      |
-|      | valu |      |
-|      | e)   |      |
-|      | of   |      |
-|      | data |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.M |
-|      | EDIA |
-|      | N(df |
-|      | , n, |
-|      |  pri |
-|      | ce=' |
-|      | Clos |
-|      | e')` |
-|      | `    |
-+------+------+------+
-| MEDI | Low  | DONE |
-| AN\_ | medi |      |
-| LOW  | an   |      |
-|      | of   |      |
-|      | data |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.M |
-|      | EDIA |
-|      | N_LO |
-|      | W(df |
-|      | , n, |
-|      |  pri |
-|      | ce=' |
-|      | Clos |
-|      | e')` |
-|      | `    |
-+------+------+------+
-| MEDI | High | DONE |
-| AN\_ | medi |      |
-| HIGH | an   |      |
-|      | of   |      |
-|      | data |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.M |
-|      | EDIA |
-|      | N_HI |
-|      | GH(d |
-|      | f, n |
-|      | , pr |
-|      | ice= |
-|      | 'Clo |
-|      | se') |
-|      | ``   |
-+------+------+------+
-| MEDI | Medi | DONE |
-| AN\_ | an,  |      |
-| GROU | or   |      |
-| PED  | 50th |      |
-|      | perc |      |
-|      | enti |      |
-|      | le,  |      |
-|      | of   |      |
-|      | grou |      |
-|      | ped  |      |
-|      | data |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.M |
-|      | EDIA |
-|      | N_GR |
-|      | OUPE |
-|      | D(df |
-|      | , n, |
-|      |  pri |
-|      | ce=' |
-|      | Clos |
-|      | e',  |
-|      | inte |
-|      | rval |
-|      | =1)` |
-|      | `    |
-+------+------+------+
-| MODE | Mode | DONE |
-|      | (mos |      |
-|      | t    |      |
-|      | comm |      |
-|      | on   |      |
-|      | valu |      |
-|      | e)   |      |
-|      | of   |      |
-|      | disc |      |
-|      | rete |      |
-|      | data |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.M |
-|      | ODE( |
-|      | df,  |
-|      | n, p |
-|      | rice |
-|      | ='Cl |
-|      | ose' |
-|      | )``  |
-+------+------+------+
-| PSTD | Popu | DONE |
-| EV   | lati |      |
-|      | on   |      |
-|      | stan |      |
-|      | dard |      |
-|      | devi |      |
-|      | atio |      |
-|      | n    |      |
-|      | of   |      |
-|      | data |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.P |
-|      | STDE |
-|      | V(df |
-|      | , n, |
-|      |  pri |
-|      | ce=' |
-|      | Clos |
-|      | e',  |
-|      | mu=N |
-|      | one) |
-|      | ``   |
-+------+------+------+
-| PVAR | Popu | DONE |
-| IANC | lati |      |
-| E    | on   |      |
-|      | vari |      |
-|      | ance |      |
-|      | of   |      |
-|      | data |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.P |
-|      | VARI |
-|      | ANCE |
-|      | (df, |
-|      |  n,  |
-|      | pric |
-|      | e='C |
-|      | lose |
-|      | ', m |
-|      | u=No |
-|      | ne)` |
-|      | `    |
-+------+------+------+
-| STDE | Samp | DONE |
-| V    | le   |      |
-|      | stan |      |
-|      | dard |      |
-|      | devi |      |
-|      | atio |      |
-|      | n    |      |
-|      | of   |      |
-|      | data |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.S |
-|      | TDEV |
-|      | (df, |
-|      |  n,  |
-|      | pric |
-|      | e='C |
-|      | lose |
-|      | ', x |
-|      | bar= |
-|      | None |
-|      | )``  |
-+------+------+------+
-| VARI | Samp | DONE |
-| ANCE | le   |      |
-|      | vari |      |
-|      | ance |      |
-|      | of   |      |
-|      | data |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.V |
-|      | ARIA |
-|      | NCE( |
-|      | df,  |
-|      | n, p |
-|      | rice |
-|      | ='Cl |
-|      | ose' |
-|      | , xb |
-|      | ar=N |
-|      | one) |
-|      | ``   |
-+------+------+------+
-| COV  | Cova | DONE |
-|      | rian |      |
-|      | ce   |      |
-+------+------+------+
-| floa | ``jh |
-| t    | ta.C |
-|      | OV(l |
-|      | ist1 |
-|      | , li |
-|      | st2) |
-|      | ``   |
-+------+------+------+
-| COVA | Cova | DONE |
-| RIAN | rian |      |
-| CE   | ce   |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.C |
-|      | OVAR |
-|      | IANC |
-|      | E(df |
-|      | 1, d |
-|      | f2,  |
-|      | n, p |
-|      | rice |
-|      | 1='C |
-|      | lose |
-|      | ', p |
-|      | rice |
-|      | 2='C |
-|      | lose |
-|      | ')`` |
-+------+------+------+
-| BETA | Beta | DONE |
-+------+------+------+
-| list | ``jh |
-|      | ta.B |
-|      | ETA( |
-|      | df1, |
-|      |  df2 |
-|      | , n, |
-|      |  pri |
-|      | ce1= |
-|      | 'Clo |
-|      | se', |
-|      |  pri |
-|      | ce2= |
-|      | 'Clo |
-|      | se') |
-|      | ``   |
-+------+------+------+
-| LSR  | Leas | DONE |
-|      | t    |      |
-|      | Squa |      |
-|      | res  |      |
-|      | Regr |      |
-|      | essi |      |
-|      | on   |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.L |
-|      | SR(d |
-|      | f, p |
-|      | rice |
-|      | ='Cl |
-|      | ose' |
-|      | , pr |
-|      | edic |
-|      | tion |
-|      | s_in |
-|      | t=0) |
-|      | ``   |
-+------+------+------+
-| SLR  | Simp | DONE |
-|      | le   |      |
-|      | Line |      |
-|      | ar   |      |
-|      | Regr |      |
-|      | essi |      |
-|      | on   |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.S |
-|      | LR(d |
-|      | f, p |
-|      | rice |
-|      | ='Cl |
-|      | ose' |
-|      | , pr |
-|      | edic |
-|      | tion |
-|      | s_in |
-|      | t=0) |
-|      | ``   |
-+------+------+------+
-| **`v |      |
-| olat |      |
-| ilit |      |
-| y\_i |      |
-| ndic |      |
-| ator |      |
-| s <h |      |
-| ttps |      |
-| ://g |      |
-| ithu |      |
-| b.co |      |
-| m/jo |      |
-| osth |      |
-| oeks |      |
-| /jhT |      |
-| Alib |      |
-| /blo |      |
-| b/ma |      |
-| ster |      |
-| /jht |      |
-| alib |      |
-| /vol |      |
-| atil |      |
-| ity_ |      |
-| indi |      |
-| cato |      |
-| rs/v |      |
-| olat |      |
-| ilit |      |
-| y_in |      |
-| dica |      |
-| tors |      |
-| .py> |      |
-| `__* |      |
-| *    |      |
-+------+------+------+
-| ATR  | Aver | DONE |
-|      | age  |      |
-|      | True |      |
-|      | Rang |      |
-|      | e    |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.A |
-|      | TR(d |
-|      | f, n |
-|      | )``  |
-+------+------+------+
-| NATR | Norm |
-|      | aliz |
-|      | ed   |
-|      | Aver |
-|      | age  |
-|      | True |
-|      | Rang |
-|      | e    |
-+------+------+------+
-| TRAN | True | DONE |
-| GE   | Rang |      |
-|      | e    |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.T |
-|      | RANG |
-|      | E(df |
-|      | )``  |
-+------+------+------+
-| **`v |      |
-| olum |      |
-| e\_i |      |
-| ndic |      |
-| ator |      |
-| s <h |      |
-| ttps |      |
-| ://g |      |
-| ithu |      |
-| b.co |      |
-| m/jo |      |
-| osth |      |
-| oeks |      |
-| /jhT |      |
-| Alib |      |
-| /blo |      |
-| b/ma |      |
-| ster |      |
-| /jht |      |
-| alib |      |
-| /vol |      |
-| ume_ |      |
-| indi |      |
-| cato |      |
-| rs/v |      |
-| olum |      |
-| e_in |      |
-| dica |      |
-| tors |      |
-| .py> |      |
-| `__* |      |
-| *    |      |
-+------+------+------+
-| AD   | Chai | DONE |
-|      | kin  |      |
-|      | A/D  |      |
-|      | Line |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.A |
-|      | D(df |
-|      | )``  |
-+------+------+------+
-| ADOS | Chai |
-| C    | kin  |
-|      | A/D  |
-|      | Osci |
-|      | llat |
-|      | or   |
-+------+------+------+
-| OBV  | On   | DONE |
-|      | Bala |      |
-|      | nce  |      |
-|      | Volu |      |
-|      | me   |      |
-+------+------+------+
-| list | ``jh |
-|      | ta.O |
-|      | BV(d |
-|      | f)`` |
-+------+------+------+
+`Behavioral Techniques <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/behavioral_techniques/behavioral_techniques.py>`__
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+All Time High
+^^^^^^^^^^^^^
+
+-  ``dict of lists = jhta.ATH(df, price='High')``
+
+Last Major Correction
+^^^^^^^^^^^^^^^^^^^^^
+
+-  ``dict of lists = jhta.LMC(df, price='Low')``
+
+Pivot Point
+^^^^^^^^^^^
+
+-  ``dict of lists = jhta.PP(df)``
+
+Fibonacci Price Retracements
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``dict of lists = jhta.FIBOPR(df, price='Close')``
+
+Fibonacci Time Retracements
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+W. D. Gann Price Retracements
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``dict of lists = jhta.GANNPR(df, price='Close')``
+
+W. D. Gann Time Retracements
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Julian Day Number
+^^^^^^^^^^^^^^^^^
+
+-  ``jdn = jhta.JDN(utc_year, utc_month, utc_day)``
+
+Julian Date
+^^^^^^^^^^^
+
+-  ``jd = jhta.JD(utc_year, utc_month, utc_day, utc_hour, utc_minute, utc_second)``
+
+SUNC \| Sun Cycle
+^^^^^^^^^^^^^^^^^
+
+MERCURYC \| Mercury Cycle
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+VENUSC \| Venus Cycle
+^^^^^^^^^^^^^^^^^^^^^
+
+EARTHC \| Earth Cycle
+^^^^^^^^^^^^^^^^^^^^^
+
+MARSC \| Mars Cycle
+^^^^^^^^^^^^^^^^^^^
+
+JUPITERC \| Jupiter Cycle
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SATURNC \| Saturn Cycle
+^^^^^^^^^^^^^^^^^^^^^^^
+
+URANUSC \| Uranus Cycle
+^^^^^^^^^^^^^^^^^^^^^^^
+
+NEPTUNEC \| Neptune Cycle
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+PLUTOC \| Pluto Cycle
+^^^^^^^^^^^^^^^^^^^^^
+
+MOONC \| Moon Cycle
+^^^^^^^^^^^^^^^^^^^
+
+`Cycle Indicators <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/cycle_indicators/cycle_indicators.py>`__
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+HT\_DCPERIOD \| Hilbert Transform - Dominant Cycle Period
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+HT\_DCPHASE \| Hilbert Transform - Dominant Cycle Phase
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+HT\_PHASOR \| Hilbert Transform - Phasor Components
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+HT\_SINE \| Hilbert Transform - SineWave
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+HT\_TRENDLINE \| Hilbert Transform - Instantaneous Trendline
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+HT\_TRENDMODE \| Hilbert Transform - Trend vs Cycle Mode
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Trend Score
+^^^^^^^^^^^
+
+-  ``list = jhta.TS(df, n, price='Close')``
+
+`Data <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/data/data.py>`__
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+CSV file 2 DataFeed
+^^^^^^^^^^^^^^^^^^^
+
+-  ``dict of tuples = jhta.CSV2DF(csv_file_path)``
+
+CSV file url 2 DataFeed
+^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``dict of tuples = jhta.CSVURL2DF(csv_file_url)``
+
+DataFeed 2 CSV file
+^^^^^^^^^^^^^^^^^^^
+
+-  ``csv file = jhta.DF2CSV(df, csv_file_path)``
+
+DataFeed 2 DataFeed Reversed
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``dict of tuples = jhta.DF2DFREV(df)``
+
+DataFeed 2 DataFeed Window
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``dict of tuples = jhta.DF2DFWIN(df, start=0, end=10)``
+
+DataFeed HEAD
+^^^^^^^^^^^^^
+
+-  ``dict of tuples = jhta.DF_HEAD(df, n=5)``
+
+DataFeed TAIL
+^^^^^^^^^^^^^
+
+-  ``dict of tuples = jhta.DF_TAIL(df, n=5)``
+
+DataFeed 2 Heikin-Ashi DataFeed
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``dict of tuples = jhta.DF2HEIKIN_ASHI(df)``
+
+`Event Driven <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/event_driven/event_driven.py>`__
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Accumulation Swing Index (J. Welles Wilder)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.ASI(df, L)``
+
+Swing Index (J. Welles Wilder)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.SI(df, L)``
+
+`Experimental <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/experimental/experimental.py>`__
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Swing Average Price - previous Average Price
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.JH_SAVGP(df)``
+
+Swing Average Price - previous Average Price Summation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.JH_SAVGPS(df)``
+
+Swing Close - Open
+^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.JH_SCO(df)``
+
+Swing Close - Open Summation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.JH_SCOS(df)``
+
+Swing Median Price - previous Median Price
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.JH_SMEDP(df)``
+
+Swing Median Price - previous Median Price Summation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.JH_SMEDPS(df)``
+
+Swing Price - previous Price
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.JH_SPP(df, price='Close')``
+
+Swing Price - previous Price Summation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.JH_SPPS(df, price='Close')``
+
+Swing Typical Price - previous Typical Price
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.JH_STYPP(df)``
+
+Swing Typical Price - previous Typical Price Summation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.JH_STYPPS(df)``
+
+Swing Weighted Close Price - previous Weighted Close Price
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.JH_SWCLP(df)``
+
+Swing Weighted Close Price - previous Weighted Close Price Summation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.JH_SWCLPS(df)``
+
+`General <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/general/general.py>`__
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Normalize
+^^^^^^^^^
+
+-  ``list = jhta.NORMALIZE(df, price_max='High', price_min='Low', price='Close')``
+
+Standardize
+^^^^^^^^^^^
+
+-  ``list = jhta.STANDARDIZE(df, price='Close')``
+
+Spread
+^^^^^^
+
+-  ``list = jhta.SPREAD(df1, df2, price1='Close', price2='Close')``
+
+Comparative Performance
+^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.CP(df1, df2, price1='Close', price2='Close')``
+
+Comparative Relative Strength Index
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.CRSI(df1, df2, n, price1='Close', price2='Close')``
+
+Comparative Strength
+^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.CS(df1, df2, price1='Close', price2='Close')``
+
+Hit Rate / Win Rate
+^^^^^^^^^^^^^^^^^^^
+
+-  ``float = jhta.HR(hit_trades_int, total_trades_int)``
+
+Profit/Loss Ratio
+^^^^^^^^^^^^^^^^^
+
+-  ``float = jhta.PLR(mean_trade_profit_float, mean_trade_loss_float)``
+
+Expected Value
+^^^^^^^^^^^^^^
+
+-  ``float = jhta.EV(hitrade_float, mean_trade_profit_float, mean_trade_loss_float)``
+
+Probability of Ruin (Table of Lucas and LeBeau)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``int = jhta.POR(hitrade_float, profit_loss_ratio_float)``
+
+`Information <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/information/information.py>`__
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Print df Information
+^^^^^^^^^^^^^^^^^^^^
+
+-  ``print = jhta.INFO(df, price='Close')``
+
+Print Trades Information
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``print = jhta.INFO_TRADES(profit_trades_list, loss_trades_list)``
+
+`Math Functions <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/math_functions/math_functions.py>`__
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Exponential
+^^^^^^^^^^^
+
+-  ``list = jhta.EXP(df, price='Close')``
+
+Logarithm
+^^^^^^^^^
+
+-  ``list = jhta.LOG(df, price='Close')``
+
+Base-10 Logarithm
+^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.LOG10(df, price='Close')``
+
+Square Root
+^^^^^^^^^^^
+
+-  ``list = jhta.SQRT(df, price='Close')``
+
+Arc Cosine
+^^^^^^^^^^
+
+-  ``list = jhta.ACOS(df, price='Close')``
+
+Arc Sine
+^^^^^^^^
+
+-  ``list = jhta.ASIN(df, price='Close')``
+
+Arc Tangent
+^^^^^^^^^^^
+
+-  ``list = jhta.ATAN(df, price='Close')``
+
+Cosine
+^^^^^^
+
+-  ``list = jhta.COS(df, price='Close')``
+
+Sine
+^^^^
+
+-  ``list = jhta.SIN(df, price='Close')``
+
+Tangent
+^^^^^^^
+
+-  ``list = jhta.TAN(df, price='Close')``
+
+Inverse Hyperbolic Cosine
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.ACOSH(df, price='Close')``
+
+Inverse Hyperbolic Sine
+^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.ASINH(df, price='Close')``
+
+Inverse Hyperbolic Tangent
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.ATANH(df, price='Close')``
+
+Hyperbolic Cosine
+^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.COSH(df, price='Close')``
+
+Hyperbolic Sine
+^^^^^^^^^^^^^^^
+
+-  ``list = jhta.SINH(df, price='Close')``
+
+Hyperbolic Tangent
+^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.TANH(df, price='Close')``
+
+Mathematical constant PI
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``float = jhta.PI()``
+
+Mathematical constant E
+^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``float = jhta.E()``
+
+Mathematical constant TAU
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``float = jhta.TAU()``
+
+Mathematical constant PHI
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``float = jhta.PHI()``
+
+Ceiling
+^^^^^^^
+
+-  ``list = jhta.CEIL(df, price='Close')``
+
+Floor
+^^^^^
+
+-  ``list = jhta.FLOOR(df, price='Close')``
+
+Radians to Degrees
+^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.DEGREES(df, price='Close')``
+
+Degrees to Radians
+^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.RADIANS(df, price='Close')``
+
+Addition High + Low
+^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.ADD(df)``
+
+Division High / Low
+^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.DIV(df)``
+
+Highest value over a specified period
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.MAX(df, n, price='Close')``
+
+MAXINDEX \| Index of highest value over a specified period
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Lowest value over a specified period
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.MIN(df, n, price='Close')``
+
+MININDEX \| Index of lowest value over a specified period
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+MINMAX \| Lowest and Highest values over a specified period
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+MINMAXINDEX \| Indexes of lowest and highest values over a specified period
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Multiply High \* Low
+^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.MULT(df)``
+
+Subtraction High - Low
+^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.SUB(df)``
+
+Summation
+^^^^^^^^^
+
+-  ``list = jhta.SUM(df, n, price='Close')``
+
+`Momentum Indicators <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/momentum_indicators/momentum_indicators.py>`__
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ADX \| Average Directional Movement Index
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ADXR \| Average Directional Movement Index Rating
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Absolute Price Oscillator
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.APO(df, n_fast, n_slow, price='Close')``
+
+AROON \| Aroon
+^^^^^^^^^^^^^^
+
+AROONOSC \| Aroon Oscillator
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+BOP \| Balance Of Power
+^^^^^^^^^^^^^^^^^^^^^^^
+
+CCI \| Commodity Channel Index
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CMO \| Chande Momentum Oscillator
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+DX \| Directional Movement Index
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Intraday Momentum Index
+^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.IMI(df)``
+
+MACD \| Moving Average Convergence/Divergence
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+MACDEXT \| MACD with controllable MA type
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+MACDFIX \| Moving Average Convergence/Divergence Fix 12/26
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+MFI \| Money Flow Index
+^^^^^^^^^^^^^^^^^^^^^^^
+
+MINUS\_DI \| Minus Directional Indicator
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+MINUS\_DM \| Minus Directional Movement
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Momentum
+^^^^^^^^
+
+-  ``list = jhta.MOM(df, n, price='Close')``
+
+PLUS\_DI \| Plus Directional Indicator
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+PLUS\_DM \| Plus Directional Movement
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+PPO \| Percentage Price Oscillator
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Rate of Change
+^^^^^^^^^^^^^^
+
+-  ``list = jhta.ROC(df, n, price='Close')``
+
+Rate of Change Percentage
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.ROCP(df, n, price='Close')``
+
+Rate of Change Ratio
+^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.ROCR(df, n, price='Close')``
+
+Rate of Change Ratio 100 scale
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.ROCR100(df, n, price='Close')``
+
+Relative Strength Index
+^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.RSI(df, n, price='Close')``
+
+STOCH \| Stochastic
+^^^^^^^^^^^^^^^^^^^
+
+STOCHF \| Stochastic Fast
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+STOCHRSI \| Stochastic Relative Strength Index
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+TRIX \| 1-day Rate-Of-Change (ROC) of a Triple Smooth EMA
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ULTOSC \| Ultimate Oscillator
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Williams' %R
+^^^^^^^^^^^^
+
+-  ``list = jhta.WILLR(df, n)``
+
+`Overlap Studies <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/overlap_studies/overlap_studies.py>`__
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Bollinger Bands
+^^^^^^^^^^^^^^^
+
+-  ``dict of lists = jhta.BBANDS(df, n, f=2)``
+
+Bollinger Band Width
+^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.BBANDW(df, n, f=2)``
+
+DEMA \| Double Exponential Moving Average
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+EMA \| Exponential Moving Average
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Envelope Percent
+^^^^^^^^^^^^^^^^
+
+-  ``dict of lists = jhta.ENVP(df, pct=.01, price='Close')``
+
+KAMA \| Kaufman Adaptive Moving Average
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+MA \| Moving Average
+^^^^^^^^^^^^^^^^^^^^
+
+MAMA \| MESA Adaptive Moving Average
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+MAVP \| Moving Average with Variable Period
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+MidPoint over period
+^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.MIDPOINT(df, n, price='Close')``
+
+MidPoint Price over period
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.MIDPRICE(df, n)``
+
+Mayer Multiple Ratio
+^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.MMR(df, n=200, price='Close')``
+
+Parabolic SAR
+^^^^^^^^^^^^^
+
+-  ``list = jhta.SAR(df, af_step=.02, af_max=.2)``
+
+SAREXT \| Parabolic SAR - Extended
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Simple Moving Average
+^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.SMA(df, n, price='Close')``
+
+T3 \| Triple Exponential Moving Average (T3)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+TEMA \| Triple Exponential Moving Average
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Triangular Moving Average
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.TRIMA(df, n, price='Close')``
+
+WMA \| Weighted Moving Average
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+`Pattern Recognition <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/pattern_recognition/pattern_recognition.py>`__
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+CDL2CROWS \| Two Crows \|
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDL3BLACKCROWS \| Three Black Crows \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDL3INSIDE \| Three Inside Up/Down \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDL3LINESTRIKE \| Three-Line Strike \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDL3OUTSIDE \| Three Outside Up/Down \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDL3STARSINSOUTH \| Three Stars In The South \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDL3WHITESOLDIERS \| Three Advancing White Soldiers \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLABANDONEDBABY \| Abandoned Baby \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLADVANCEBLOCK \| Advance Block \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLBELTHOLD \| Belt-hold \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLBREAKAWAY \| Breakaway \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLCLOSINGMARUBOZU \| Closing Marubozu \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLCONSEALBABYSWALL \| Concealing Baby Swallow \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLCOUNTERATTACK \| Counterattack \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLDARKCLOUDCOVER \| Dark Cloud Cover \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLDOJI \| Doji \|
+^^^^^^^^^^^^^^^^^^
+
+CDLDOJISTAR \| Doji Star \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLDRAGONFLYDOJI \| Dragonfly Doji \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLENGULFING \| Engulfing Pattern \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLEVENINGDOJISTAR \| Evening Doji Star \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLEVENINGSTAR \| Evening Star \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLGAPSIDESIDEWHITE \| Up/Down-gap side-by-side white lines \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLGRAVESTONEDOJI \| Gravestone Doji \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLHAMMER \| Hammer \|
+^^^^^^^^^^^^^^^^^^^^^^
+
+CDLHANGINGMAN \| Hanging Man \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLHARAMI \| Harami Pattern \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLHARAMICROSS \| Harami Cross Pattern \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLHIGHWAVE \| High-Wave Candle \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLHIKKAKE \| Hikkake Pattern \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLHIKKAKEMOD \| Modified Hikkake Pattern \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLHOMINGPIGEON \| Homing Pigeon \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLIDENTICAL3CROWS \| Identical Three Crows \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLINNECK \| In-Neck Pattern \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLINVERTEDHAMMER \| Inverted Hammer \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLKICKING \| Kicking \|
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLKICKINGBYLENGTH \| Kicking - bull/bear determined by the longer marubozu \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLLADDERBOTTOM \| Ladder Bottom \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLLONGLEGGEDDOJI \| Long Legged Doji \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLLONGLINE \| Long Line Candle \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLMARUBOZU \| Marubozu \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLMATCHINGLOW \| Matching Low \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLMATHOLD \| Mat Hold \|
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLMORNINGDOJISTAR \| Morning Doji Star \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLMORNINGSTAR \| Morning Star \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLONNECK \| On-Neck Pattern \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLPIERCING \| Piercing Pattern \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLRICKSHAWMAN \| Rickshaw Man \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLRISEFALL3METHODS \| Rising/Falling Three Methods \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLSEPARATINGLINES \| Separating Lines \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLSHOOTINGSTAR \| Shooting Star \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLSHORTLINE \| Short Line Candle \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLSPINNINGTOP \| Spinning Top \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLSTALLEDPATTERN \| Stalled Pattern \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLSTICKSANDWICH \| Stick Sandwich \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLTAKURI \| Takuri (Dragonfly Doji with very long lower shadow) \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLTASUKIGAP \| Tasuki Gap \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLTHRUSTING \| Thrusting Pattern \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLTRISTAR \| Tristar Pattern \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLUNIQUE3RIVER \| Unique 3 River \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLUPSIDEGAP2CROWS \| Upside Gap Two Crows \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CDLXSIDEGAP3METHODS \| Upside/Downside Gap Three Methods \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+`Price Transform <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/price_transform/price_transform.py>`__
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+AVGPRICE \| Average Price \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.AVGPRICE(df)``
+
+MEDPRICE \| Median Price \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.MEDPRICE(df)``
+
+TYPPRICE \| Typical Price \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.TYPPRICE(df)``
+
+WCLPRICE \| Weighted Close Price \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.WCLPRICE(df)``
+
+`Statistic Functions <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/statistic_functions/statistic_functions.py>`__
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+MEAN \| Arithmetic mean (average) of data \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.MEAN(df, n, price='Close')``
+
+HARMONIC\_MEAN \| Harmonic mean of data \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.HARMONIC_MEAN(df, n, price='Close')``
+
+MEDIAN \| Median (middle value) of data \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.MEDIAN(df, n, price='Close')``
+
+MEDIAN\_LOW \| Low median of data \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.MEDIAN_LOW(df, n, price='Close')``
+
+MEDIAN\_HIGH \| High median of data \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.MEDIAN_HIGH(df, n, price='Close')``
+
+MEDIAN\_GROUPED \| Median, or 50th percentile, of grouped data \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.MEDIAN_GROUPED(df, n, price='Close', interval=1)``
+
+MODE \| Mode (most common value) of discrete data \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.MODE(df, n, price='Close')``
+
+PSTDEV \| Population standard deviation of data \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.PSTDEV(df, n, price='Close', mu=None)``
+
+PVARIANCE \| Population variance of data \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.PVARIANCE(df, n, price='Close', mu=None)``
+
+STDEV \| Sample standard deviation of data \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.STDEV(df, n, price='Close', xbar=None)``
+
+VARIANCE \| Sample variance of data \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.VARIANCE(df, n, price='Close', xbar=None)``
+
+COV \| Covariance \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``float = jhta.COV(list1, list2)``
+
+COVARIANCE \| Covariance \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.COVARIANCE(df1, df2, n, price1='Close', price2='Close')``
+
+BETA \| Beta \| DONE
+^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.BETA(df1, df2, n, price1='Close', price2='Close')``
+
+LSR \| Least Squares Regression \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.LSR(df, price='Close', predictions_int=0)``
+
+SLR \| Simple Linear Regression \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.SLR(df, price='Close', predictions_int=0)``
+
+`Volatility Indicators <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/volatility_indicators/volatility_indicators.py>`__
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ATR \| Average True Range \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.ATR(df, n)``
+
+NATR \| Normalized Average True Range \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+TRANGE \| True Range \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.TRANGE(df)``
+
+`Volume Indicators <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/volume_indicators/volume_indicators.py>`__
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+AD \| Chaikin A/D Line \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.AD(df)``
+
+ADOSC \| Chaikin A/D Oscillator \|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+OBV \| On Balance Volume \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.OBV(df)``
