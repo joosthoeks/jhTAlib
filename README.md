@@ -25,6 +25,8 @@ Work in progress...
 
 - [The Python Standard Library](https://docs.python.org/3/library/index.html)
 
+---
+
 ## Install
 From [PyPI](https://pypi.org/project/jhTAlib/):
 
@@ -40,6 +42,8 @@ $ cd jhTAlib
 $ [sudo] pip3 install -e .
 ```
 
+---
+
 ## Update
 From [PyPI](https://pypi.org/project/jhTAlib/):
 
@@ -53,6 +57,8 @@ From [source](https://github.com/joosthoeks/jhTAlib):
 $ cd jhTAlib
 $ git pull [upstream master]
 ```
+
+---
 
 ## Examples
 
@@ -70,6 +76,8 @@ or
 
 [Open In Colab](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-1-plot.ipynb)
 
+---
+
 ### Example 2
 
 ```
@@ -79,6 +87,8 @@ $ python3 example-2-plot.py
 or
 
 [Open In Colab](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-2-plot.ipynb)
+
+---
 
 ### Example 3
 
@@ -90,6 +100,8 @@ or
 
 [Open In Colab](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-3-plot.ipynb)
 
+---
+
 ### Example 4
 
 ```
@@ -99,6 +111,8 @@ $ python3 example-4-plot-quandl.py
 or
 
 [Open In Colab](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-4-plot-quandl.ipynb)
+
+---
 
 ### Example 5
 
@@ -110,6 +124,8 @@ or
 
 [Open In Colab](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-5-plot-quandl.ipynb)
 
+---
+
 ### Example 6
 
 ```
@@ -119,6 +135,8 @@ $ python3 example-6-plot-quandl.py
 or
 
 [Open In Colab](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-6-plot-quandl.ipynb)
+
+---
 
 ### Example 7
 
@@ -130,6 +148,8 @@ or
 
 [Open In Colab](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-7-quandl-2-df.ipynb)
 
+---
+
 ### Example 8
 
 ```
@@ -139,6 +159,8 @@ $ python3 example-8-alphavantage-2-df.py
 or
 
 [Open In Colab](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-8-alphavantage-2-df.ipynb)
+
+---
 
 ### Example 9
 
@@ -150,11 +172,15 @@ or
 
 [Open In Colab](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-9-cryptocompare-2-df.ipynb)
 
+---
+
 ### Example 10
 
 DF NumPy Pandas
 
 [Open In Colab](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-10-df-numpy-pandas.ipynb)
+
+---
 
 ## Test
 
@@ -162,6 +188,8 @@ DF NumPy Pandas
 $ cd test/
 $ python3 test.py
 ```
+
+---
 
 ## Reference
 
