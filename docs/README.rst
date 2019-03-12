@@ -28,11 +28,24 @@ You can use and import it for your:
 
 Work in progress...
 
+--------------
+
 Depends only on
 ---------------
 
 -  `The Python Standard
    Library <https://docs.python.org/3/library/index.html>`__
+
+--------------
+
+Docs
+----
+
+-  `html <https://jhtalib.joosthoeks.com>`__
+
+-  `pdf <https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.pdf>`__
+
+-  `rst <https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.rst>`__
 
 --------------
 

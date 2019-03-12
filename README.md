@@ -21,9 +21,21 @@ You can use and import it for your:
 
 Work in progress...
 
+---
+
 ## Depends only on
 
 - [The Python Standard Library](https://docs.python.org/3/library/index.html)
+
+---
+
+## Docs
+
+- [html](https://jhtalib.joosthoeks.com)
+
+- [pdf](https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.pdf)
+
+- [rst](https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.rst)
 
 ---
 
