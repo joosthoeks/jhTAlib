@@ -8,9 +8,9 @@ def readme():
 
 setup(
     name='jhTAlib',
-    version='20190311.1',
+    version='20190312.0',
     description='Technical Analysis Library Time-Series',
-#    long_description=readme(),
+    long_description=readme(),
     keywords=['Technical', 'Analysis', 'Library', 'Time-Series'],
     url='https://github.com/joosthoeks/jhTAlib',
     author='Joost Hoeks',
