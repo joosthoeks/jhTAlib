@@ -391,6 +391,22 @@ def COVARIANCE(df1, df2, n, price1='Close', price2='Close'):
             i += 1
     return covariance_list
 
+def COR(list1, list2):
+    """
+    Correlation
+    """
+    stdev1 = STDEV({'list1': list1}, len(list1), 'list1')[-1]
+    stdev2 = STDEV({'list2': list2}, len(list2), 'list2')[-1]
+    return COV(list1, list2) / (stdev1 * stdev2)
+
+def PCOR(list1, list2):
+    """
+    Population Correlation
+    """
+    pstdev1 = PSTDEV({'list1': list1}, len(list1), 'list1')[-1]
+    pstdev2 = PSTDEV({'list2': list2}, len(list2), 'list2')[-1]
+    return COV(list1, list2) / (pstdev1 * pstdev2)
+
 def BETA(list1, list2):
     """
     Beta
