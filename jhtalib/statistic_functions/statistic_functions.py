@@ -376,7 +376,9 @@ def COVARIANCE(df1, df2, n, price1='Close', price2='Close'):
                 if start is None:
                     start = i
                 end = i + 1
-                covariance = COV(df1[price1][start:end], df2[price2][start:end])
+                list1 = df1[price1][start:end]
+                list2 = df2[price2][start:end]
+                covariance = COV(list1, list2)
             covariance_list.append(covariance)
             i += 1
     else:
@@ -386,7 +388,9 @@ def COVARIANCE(df1, df2, n, price1='Close', price2='Close'):
             else:
                 start = i + 1 - n
                 end = i + 1
-                covariance = COV(df1[price1][start:end], df2[price2][start:end])
+                list1 = df1[price1][start:end]
+                list2 = df2[price2][start:end]
+                covariance = COV(list1, list2)
             covariance_list.append(covariance)
             i += 1
     return covariance_list
