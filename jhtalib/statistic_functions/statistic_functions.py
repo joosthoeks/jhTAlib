@@ -403,6 +403,40 @@ def COR(list1, list2):
     stdev2 = STDEV({'list2': list2}, len(list2), 'list2')[-1]
     return COV(list1, list2) / (stdev1 * stdev2)
 
+def CORRELATION(df1, df2, n, price1='Close', price2='Close'):
+    """
+    Correlation
+    """
+    correlation_list = []
+    i = 0
+    if n == len(df1[price1]):
+        start = None
+        while i < len(df1[price1]):
+            if df1[price1][i] != df1[price1][i] or df2[price2][i] != df2[price2][i]:
+                correlation = float('NaN')
+            else:
+                if start is None:
+                    start = i
+                end = i + 1
+                list1 = df1[price1][start:end]
+                list2 = df2[price2][start:end]
+                correlation = COR(list1, list2)
+            correlation_list.append(correlation)
+            i += 1
+    else:
+        while i < len(df1[price1]):
+            if i + 1 < n:
+                correlation = float('NaN')
+            else:
+                start = i + 1 - n
+                end = i + 1
+                list1 = df1[price1][start:end]
+                list2 = df2[price2][start:end]
+                correlation = COR(list1, list2)
+            correlation_list.append(correlation)
+            i += 1
+    return correlation_list
+
 def PCOR(list1, list2):
     """
     Population Correlation
@@ -410,6 +444,40 @@ def PCOR(list1, list2):
     pstdev1 = PSTDEV({'list1': list1}, len(list1), 'list1')[-1]
     pstdev2 = PSTDEV({'list2': list2}, len(list2), 'list2')[-1]
     return COV(list1, list2) / (pstdev1 * pstdev2)
+
+def PCORRELATION(df1, df2, n, price1='Close', price2='Close'):
+    """
+    Population Correlation
+    """
+    pcorrelation_list = []
+    i = 0
+    if n == len(df1[price1]):
+        start = None
+        while i < len(df1[price1]):
+            if df1[price1][i] != df1[price1][i] or df2[price2][i] != df2[price2][i]:
+                pcorrelation = float('NaN')
+            else:
+                if start is None:
+                    start = i
+                end = i + 1
+                list1 = df1[price1][start:end]
+                list2 = df2[price2][start:end]
+                pcorrelation = PCOR(list1, list2)
+            pcorrelation_list.append(pcorrelation)
+            i += 1
+    else:
+        while i < len(df1[price1]):
+            if i + 1 < n:
+                pcorrelation = float('NaN')
+            else:
+                start = i + 1 - n
+                end = i + 1
+                list1 = df1[price1][start:end]
+                list2 = df2[price2][start:end]
+                pcorrelation = PCOR(list1, list2)
+            pcorrelation_list.append(pcorrelation)
+            i += 1
+    return pcorrelation_list
 
 def BETA(list1, list2):
     """
