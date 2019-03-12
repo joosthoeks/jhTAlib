@@ -391,9 +391,18 @@ def COVARIANCE(df1, df2, n, price1='Close', price2='Close'):
             i += 1
     return covariance_list
 
-def BETA(df1, df2, n, price1='Close', price2='Close'):
+def BETA(list1, list2):
     """
     Beta
+    source: https://en.wikipedia.org/wiki/Beta_(finance)
+    """
+    covariance = COV(list1, list2)
+    variance = VARIANCE({'list2': list2}, len(list2), 'list2')[-1]
+    return float(covariance / variance)
+
+def BETAS(df1, df2, n, price1='Close', price2='Close'):
+    """
+    Betas
     source: https://en.wikipedia.org/wiki/Beta_(finance)
     """
     beta_list = []
@@ -409,9 +418,7 @@ def BETA(df1, df2, n, price1='Close', price2='Close'):
                 end = i + 1
                 list1 = df1[price1][start:end]
                 list2 = df2[price2][start:end]
-                covariance = COV(list1, list2)
-                variance = VARIANCE({'list2': list2}, len(list2), 'list2')[-1]
-                beta = covariance / variance
+                beta = BETA(list1, list2)
             beta_list.append(beta)
             i += 1
     else:
@@ -423,9 +430,7 @@ def BETA(df1, df2, n, price1='Close', price2='Close'):
                 end = i + 1
                 list1 = df1[price1][start:end]
                 list2 = df2[price2][start:end]
-                covariance = COV(list1, list2)
-                variance = VARIANCE({'list2': list2}, len(list2), 'list2')[-1]
-                beta = covariance / variance
+                beta = BETA(list1, list2)
             beta_list.append(beta)
             i += 1
     return beta_list
