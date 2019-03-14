@@ -102,8 +102,7 @@ Example 1
 
 or
 
-`Open In
-Colab <https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-1-plot.ipynb>`__
+https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-1-plot.ipynb
 
 --------------
 
@@ -116,8 +115,7 @@ Example 2
 
 or
 
-`Open In
-Colab <https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-2-plot.ipynb>`__
+https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-2-plot.ipynb
 
 --------------
 
@@ -130,8 +128,7 @@ Example 3
 
 or
 
-`Open In
-Colab <https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-3-plot.ipynb>`__
+https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-3-plot.ipynb
 
 --------------
 
@@ -144,8 +141,7 @@ Example 4
 
 or
 
-`Open In
-Colab <https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-4-plot-quandl.ipynb>`__
+https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-4-plot-quandl.ipynb
 
 --------------
 
@@ -158,8 +154,7 @@ Example 5
 
 or
 
-`Open In
-Colab <https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-5-plot-quandl.ipynb>`__
+https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-5-plot-quandl.ipynb
 
 --------------
 
@@ -172,8 +167,7 @@ Example 6
 
 or
 
-`Open In
-Colab <https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-6-plot-quandl.ipynb>`__
+https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-6-plot-quandl.ipynb
 
 --------------
 
@@ -186,8 +180,7 @@ Example 7
 
 or
 
-`Open In
-Colab <https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-7-quandl-2-df.ipynb>`__
+https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-7-quandl-2-df.ipynb
 
 --------------
 
@@ -200,8 +193,7 @@ Example 8
 
 or
 
-`Open In
-Colab <https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-8-alphavantage-2-df.ipynb>`__
+https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-8-alphavantage-2-df.ipynb
 
 --------------
 
@@ -214,8 +206,7 @@ Example 9
 
 or
 
-`Open In
-Colab <https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-9-cryptocompare-2-df.ipynb>`__
+https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-9-cryptocompare-2-df.ipynb
 
 --------------
 
@@ -224,8 +215,7 @@ Example 10
 
 DF NumPy Pandas
 
-`Open In
-Colab <https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-10-df-numpy-pandas.ipynb>`__
+https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-10-df-numpy-pandas.ipynb
 
 --------------
 
@@ -268,6 +258,8 @@ PP \| Pivot Point \| DONE
 
 -  ``dict of lists = jhta.PP(df)``
 
+-  https://en.wikipedia.org/wiki/Pivot_point_(technical_analysis)
+
 --------------
 
 FIBOPR \| Fibonacci Price Retracements \| DONE
@@ -303,12 +295,16 @@ JDN \| Julian Day Number \| DONE
 
 -  ``jdn = jhta.JDN(utc_year, utc_month, utc_day)``
 
+-  https://en.wikipedia.org/wiki/Julian_day
+
 --------------
 
 JD \| Julian Date \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``jd = jhta.JD(utc_year, utc_month, utc_day, utc_hour, utc_minute, utc_second)``
+
+-  https://en.wikipedia.org/wiki/Julian_day
 
 --------------
 
@@ -439,6 +435,8 @@ TS \| Trend Score \| DONE
 
 -  ``list = jhta.TS(df, n, price='Close')``
 
+-  https://www.fmlabs.com/reference/default.htm?url=TrendScore.htm
+
 --------------
 
 `Data <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/data/data.py>`__
@@ -508,12 +506,16 @@ ASI \| Accumulation Swing Index (J. Welles Wilder) \| DONE
 
 -  ``list = jhta.ASI(df, L)``
 
+-  book: New Concepts in Technical Trading Systems
+
 --------------
 
 SI \| Swing Index (J. Welles Wilder) \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.SI(df, L)``
+
+-  book: New Concepts in Technical Trading Systems
 
 --------------
 
@@ -612,12 +614,16 @@ NORMALIZE \| Normalize \| DONE
 
 -  ``list = jhta.NORMALIZE(df, price_max='High', price_min='Low', price='Close')``
 
+-  https://machinelearningmastery.com/normalize-standardize-time-series-data-python/
+
 --------------
 
 STANDARDIZE \| Standardize \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.STANDARDIZE(df, price='Close')``
+
+-  https://machinelearningmastery.com/normalize-standardize-time-series-data-python/
 
 --------------
 
@@ -633,12 +639,16 @@ CP \| Comparative Performance \| DONE
 
 -  ``list = jhta.CP(df1, df2, price1='Close', price2='Close')``
 
+-  https://www.fmlabs.com/reference/default.htm?url=CompPerformance.htm
+
 --------------
 
 CRSI \| Comparative Relative Strength Index \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.CRSI(df1, df2, n, price1='Close', price2='Close')``
+
+-  https://www.fmlabs.com/reference/default.htm?url=RSIC.htm
 
 --------------
 
@@ -647,12 +657,16 @@ CS \| Comparative Strength \| DONE
 
 -  ``list = jhta.CS(df1, df2, price1='Close', price2='Close')``
 
+-  https://www.fmlabs.com/reference/default.htm?url=CompStrength.htm
+
 --------------
 
 HR \| Hit Rate / Win Rate \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``float = jhta.HR(hit_trades_int, total_trades_int)``
+
+-  http://traderskillset.com/hit-rate-stock-trading/
 
 --------------
 
@@ -661,6 +675,8 @@ PLR \| Profit/Loss Ratio \| DONE
 
 -  ``float = jhta.PLR(mean_trade_profit_float, mean_trade_loss_float)``
 
+-  https://www.investopedia.com/terms/p/profit_loss_ratio.asp
+
 --------------
 
 EV \| Expected Value \| DONE
@@ -668,12 +684,16 @@ EV \| Expected Value \| DONE
 
 -  ``float = jhta.EV(hitrade_float, mean_trade_profit_float, mean_trade_loss_float)``
 
+-  https://en.wikipedia.org/wiki/Expected_value
+
 --------------
 
 POR \| Probability of Ruin (Table of Lucas and LeBeau) \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``int = jhta.POR(hitrade_float, profit_loss_ratio_float)``
+
+-  book: Computer Analysis of the Futures Markets
 
 --------------
 
@@ -964,6 +984,8 @@ APO \| Absolute Price Oscillator \| DONE
 
 -  ``list = jhta.APO(df, n_fast, n_slow, price='Close')``
 
+-  https://www.fmlabs.com/reference/default.htm?url=PriceOscillator.htm
+
 --------------
 
 AROON \| Aroon \|
@@ -1012,6 +1034,8 @@ IMI \| Intraday Momentum Index \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.IMI(df)``
+
+-  https://www.fmlabs.com/reference/default.htm?url=IMI.htm
 
 --------------
 
@@ -1062,6 +1086,8 @@ MOM \| Momentum \| DONE
 
 -  ``list = jhta.MOM(df, n, price='Close')``
 
+-  https://www.fmlabs.com/reference/default.htm?url=Momentum.htm
+
 --------------
 
 PLUS\_DI \| Plus Directional Indicator \|
@@ -1111,12 +1137,16 @@ ROCR100 \| Rate of Change Ratio 100 scale \| DONE
 
 -  ``list = jhta.ROCR100(df, n, price='Close')``
 
+-  https://www.fmlabs.com/reference/default.htm?url=RateOfChange.htm
+
 --------------
 
 RSI \| Relative Strength Index \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.RSI(df, n, price='Close')``
+
+-  https://www.fmlabs.com/reference/default.htm?url=RSI.htm
 
 --------------
 
@@ -1160,6 +1190,8 @@ WILLR \| Williams' %R \| DONE
 
 -  ``list = jhta.WILLR(df, n)``
 
+-  https://www.fmlabs.com/reference/default.htm?url=WilliamsR.htm
+
 --------------
 
 `Overlap Studies <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/overlap_studies/overlap_studies.py>`__
@@ -1170,12 +1202,16 @@ BBANDS \| Bollinger Bands \| DONE
 
 -  ``dict of lists = jhta.BBANDS(df, n, f=2)``
 
+-  https://www.fmlabs.com/reference/default.htm?url=Bollinger.htm
+
 --------------
 
 BBANDW \| Bollinger Band Width \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.BBANDW(df, n, f=2)``
+
+-  https://www.fmlabs.com/reference/default.htm?url=BollingerWidth.htm
 
 --------------
 
@@ -1197,6 +1233,8 @@ ENVP \| Envelope Percent \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``dict of lists = jhta.ENVP(df, pct=.01, price='Close')``
+
+-  https://www.fmlabs.com/reference/default.htm?url=EnvelopePct.htm
 
 --------------
 
@@ -1233,12 +1271,16 @@ MIDPOINT \| MidPoint over period \| DONE
 
 -  ``list = jhta.MIDPOINT(df, n, price='Close')``
 
+-  http://www.tadoc.org/indicator/MIDPOINT.htm
+
 --------------
 
 MIDPRICE \| MidPoint Price over period \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.MIDPRICE(df, n)``
+
+-  http://www.tadoc.org/indicator/MIDPRICE.htm
 
 --------------
 
@@ -1247,12 +1289,16 @@ MMR \| Mayer Multiple Ratio \| DONE
 
 -  ``list = jhta.MMR(df, n=200, price='Close')``
 
+-  https://www.theinvestorspodcast.com/bitcoin-mayer-multiple/
+
 --------------
 
 SAR \| Parabolic SAR \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.SAR(df, af_step=.02, af_max=.2)``
+
+-  book: New Concepts in Technical Trading Systems
 
 --------------
 
@@ -1267,6 +1313,8 @@ SMA \| Simple Moving Average \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.SMA(df, n, price='Close')``
+
+-  https://www.fmlabs.com/reference/default.htm?url=SimpleMA.htm
 
 --------------
 
@@ -1288,6 +1336,8 @@ TRIMA \| Triangular Moving Average \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.TRIMA(df, n, price='Close')``
+
+-  https://www.fmlabs.com/reference/default.htm?url=TriangularMA.htm
 
 --------------
 
@@ -1492,12 +1542,16 @@ AVGPRICE \| Average Price \| DONE
 
 -  ``list = jhta.AVGPRICE(df)``
 
+-  https://www.fmlabs.com/reference/default.htm?url=AvgPrices.htm
+
 --------------
 
 MEDPRICE \| Median Price \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.MEDPRICE(df)``
+
+-  https://www.fmlabs.com/reference/default.htm?url=MedianPrices.htm
 
 --------------
 
@@ -1506,12 +1560,16 @@ TYPPRICE \| Typical Price \| DONE
 
 -  ``list = jhta.TYPPRICE(df)``
 
+-  https://www.fmlabs.com/reference/default.htm?url=TypicalPrices.htm
+
 --------------
 
 WCLPRICE \| Weighted Close Price \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.WCLPRICE(df)``
+
+-  https://www.fmlabs.com/reference/default.htm?url=WeightedCloses.htm
 
 --------------
 
@@ -1600,12 +1658,16 @@ COV \| Covariance \| DONE
 
 -  ``float = jhta.COV(list1, list2)``
 
+-  https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Covariance
+
 --------------
 
 COVARIANCE \| Covariance \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.COVARIANCE(df1, df2, n, price1='Close', price2='Close')``
+
+-  https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Covariance
 
 --------------
 
@@ -1642,12 +1704,16 @@ BETA \| Beta \| DONE
 
 -  ``float = jhta.BETA(list1, list2)``
 
+-  https://en.wikipedia.org/wiki/Beta_(finance)
+
 --------------
 
 BETAS \| Betas \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.BETAS(df1, df2, n, price1='Close', price2='Close')``
+
+-  https://en.wikipedia.org/wiki/Beta_(finance)
 
 --------------
 
@@ -1656,12 +1722,16 @@ LSR \| Least Squares Regression \| DONE
 
 -  ``list = jhta.LSR(df, price='Close', predictions_int=0)``
 
+-  https://www.mathsisfun.com/data/least-squares-regression.html
+
 --------------
 
 SLR \| Simple Linear Regression \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.SLR(df, price='Close', predictions_int=0)``
+
+-  https://machinelearningmastery.com/implement-simple-linear-regression-scratch-python/
 
 --------------
 
@@ -1675,6 +1745,8 @@ ATR \| Average True Range \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.ATR(df, n)``
+
+-  https://www.fmlabs.com/reference/default.htm?url=ATR.htm
 
 --------------
 
@@ -1690,6 +1762,8 @@ TRANGE \| True Range \| DONE
 
 -  ``list = jhta.TRANGE(df)``
 
+-  https://www.fmlabs.com/reference/default.htm?url=TR.htm
+
 --------------
 
 `Volume Indicators <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/volume_indicators/volume_indicators.py>`__
@@ -1699,6 +1773,8 @@ AD \| Chaikin A/D Line \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.AD(df)``
+
+-  https://www.fmlabs.com/reference/default.htm?url=AccumDist.htm
 
 --------------
 
@@ -1713,5 +1789,7 @@ OBV \| On Balance Volume \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list = jhta.OBV(df)``
+
+-  https://www.fmlabs.com/reference/default.htm?url=OBV.htm
 
 --------------
