@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2019-03-12
+:Date:   2019-03-14
 
 .. contents::
    :depth: 3
@@ -41,11 +41,21 @@ Depends only on
 Docs
 ----
 
--  `html <https://jhtalib.joosthoeks.com>`__
+-  `.html <https://jhtalib.joosthoeks.com>`__
 
--  `pdf <https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.pdf>`__
+-  `.epub <https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.epub>`__
 
--  `rst <https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.rst>`__
+-  `.json <https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.json>`__
+
+-  `.odt <https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.odt>`__
+
+-  `.pdf <https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.pdf>`__
+
+-  `.rst <https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.rst>`__
+
+-  `.rtf <https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.rtf>`__
+
+-  `.xml <https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.xml>`__
 
 --------------
 

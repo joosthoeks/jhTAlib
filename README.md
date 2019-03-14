@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2019-03-12
+date: 2019-03-14
 ---
 
 # jhTAlib
@@ -31,11 +31,21 @@ Work in progress...
 
 ## Docs
 
-- [html](https://jhtalib.joosthoeks.com)
+- [.html](https://jhtalib.joosthoeks.com)
 
-- [pdf](https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.pdf)
+- [.epub](https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.epub)
 
-- [rst](https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.rst)
+- [.json](https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.json)
+
+- [.odt](https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.odt)
+
+- [.pdf](https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.pdf)
+
+- [.rst](https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.rst)
+
+- [.rtf](https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.rtf)
+
+- [.xml](https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.xml)
 
 ---
 

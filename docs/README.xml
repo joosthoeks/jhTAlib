@@ -6366,7 +6366,7 @@
 <office:text>
 <text:p text:style-name="Title">jhTAlib</text:p>
 <text:p text:style-name="Author">Joost Hoeks</text:p>
-<text:p text:style-name="Date">2019-03-12</text:p>
+<text:p text:style-name="Date">2019-03-14</text:p>
 <text:h text:style-name="Heading_20_1" text:outline-level="1">jhTAlib</text:h>
 <text:p text:style-name="First_20_paragraph">Technical Analysis Library
 Time-Series</text:p>
@@ -6404,13 +6404,28 @@ only on</text:h>
 <text:h text:style-name="Heading_20_2" text:outline-level="2">Docs</text:h>
 <text:list text:style-name="L3">
   <text:list-item>
-    <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="https://jhtalib.joosthoeks.com" office:name=""><text:span text:style-name="Definition">html</text:span></text:a></text:p>
+    <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="https://jhtalib.joosthoeks.com" office:name=""><text:span text:style-name="Definition">.html</text:span></text:a></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.pdf" office:name=""><text:span text:style-name="Definition">pdf</text:span></text:a></text:p>
+    <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.epub" office:name=""><text:span text:style-name="Definition">.epub</text:span></text:a></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.rst" office:name=""><text:span text:style-name="Definition">rst</text:span></text:a></text:p>
+    <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.json" office:name=""><text:span text:style-name="Definition">.json</text:span></text:a></text:p>
+  </text:list-item>
+  <text:list-item>
+    <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.odt" office:name=""><text:span text:style-name="Definition">.odt</text:span></text:a></text:p>
+  </text:list-item>
+  <text:list-item>
+    <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.pdf" office:name=""><text:span text:style-name="Definition">.pdf</text:span></text:a></text:p>
+  </text:list-item>
+  <text:list-item>
+    <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.rst" office:name=""><text:span text:style-name="Definition">.rst</text:span></text:a></text:p>
+  </text:list-item>
+  <text:list-item>
+    <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.rtf" office:name=""><text:span text:style-name="Definition">.rtf</text:span></text:a></text:p>
+  </text:list-item>
+  <text:list-item>
+    <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.xml" office:name=""><text:span text:style-name="Definition">.xml</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
