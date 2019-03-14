@@ -4,7 +4,6 @@ import jhtalib as jhta
 def NORMALIZE(df, price_max='High', price_min='Low', price='Close'):
     """
     Normalize
-    source: https://machinelearningmastery.com/normalize-standardize-time-series-data-python/
     """
     normalize_list = []
     i = 0
@@ -28,7 +27,6 @@ def NORMALIZE(df, price_max='High', price_min='Low', price='Close'):
 def STANDARDIZE(df, price='Close'):
     """
     Standardize
-    source: https://machinelearningmastery.com/normalize-standardize-time-series-data-python/
     """
     standardize_list = []
     i = 0
@@ -63,7 +61,6 @@ def SPREAD(df1, df2, price1='Close', price2='Close'):
 def CP(df1, df2, price1='Close', price2='Close'):
     """
     Comparative Performance
-    source: https://www.fmlabs.com/reference/default.htm?url=CompPerformance.htm
     """
     cp_list = []
     i = 0
@@ -76,7 +73,6 @@ def CP(df1, df2, price1='Close', price2='Close'):
 def CRSI(df1, df2, n, price1='Close', price2='Close'):
     """
     Comparative Relative Strength Index
-    source: https://www.fmlabs.com/reference/default.htm?url=RSIC.htm
     """
     crsi_list = []
     i = 0
@@ -92,7 +88,6 @@ def CRSI(df1, df2, n, price1='Close', price2='Close'):
 def CS(df1, df2, price1='Close', price2='Close'):
     """
     Comparative Strength
-    source: https://www.fmlabs.com/reference/default.htm?url=CompStrength.htm
     """
     cs_list = []
     i = 0
@@ -105,28 +100,24 @@ def CS(df1, df2, price1='Close', price2='Close'):
 def HR(hit_trades_int, total_trades_int):
     """
     Hit Rate / Win Rate
-    source: http://traderskillset.com/hit-rate-stock-trading/
     """
     return float(hit_trades_int / total_trades_int)
 
 def PLR(mean_trade_profit_float, mean_trade_loss_float):
     """
     Profit/Loss Ratio
-    source: https://www.investopedia.com/terms/p/profit_loss_ratio.asp
     """
     return float(mean_trade_profit_float / mean_trade_loss_float)
 
 def EV(hitrate_float, mean_trade_profit_float, mean_trade_loss_float):
     """
     Expected Value
-    source: https://en.wikipedia.org/wiki/Expected_value
     """
     return float((hitrate_float * mean_trade_profit_float) + ((1 - hitrate_float) * mean_trade_loss_float))
 
 def POR(hitrate_float, profit_loss_ratio_float):
     """
     Probability of Ruin (Table of Lucas and LeBeau)
-    source: book: Computer Analysis of the Futures Markets
     """
     hitrate_list = [.0, .25, .3, .35, .4, .45, .5, .55, .6, .65, .7]
     profit_loss_ratio_list = [.0, .75, 1, 1.5, 2, 2.5, 3, 3.5, 4]

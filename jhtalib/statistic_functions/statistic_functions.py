@@ -347,7 +347,6 @@ def VARIANCE(df, n, price='Close', xbar=None):
 def COV(list1, list2):
     """
     Covariance
-    source: https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Covariance
     """
     mean1 = MEAN({'list1': list1}, len(list1), 'list1')[-1]
     mean2 = MEAN({'list2': list2}, len(list2), 'list2')[-1]
@@ -363,7 +362,6 @@ def COV(list1, list2):
 def COVARIANCE(df1, df2, n, price1='Close', price2='Close'):
     """
     Covariance
-    source: https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Covariance
     """
     covariance_list = []
     i = 0
@@ -482,7 +480,6 @@ def PCORRELATION(df1, df2, n, price1='Close', price2='Close'):
 def BETA(list1, list2):
     """
     Beta
-    source: https://en.wikipedia.org/wiki/Beta_(finance)
     """
     covariance = COV(list1, list2)
     variance = VARIANCE({'list2': list2}, len(list2), 'list2')[-1]
@@ -491,7 +488,6 @@ def BETA(list1, list2):
 def BETAS(df1, df2, n, price1='Close', price2='Close'):
     """
     Betas
-    source: https://en.wikipedia.org/wiki/Beta_(finance)
     """
     beta_list = []
     i = 0
@@ -526,7 +522,6 @@ def BETAS(df1, df2, n, price1='Close', price2='Close'):
 def LSR(df, price='Close', predictions_int=0):
     """
     Least Squares Regression
-    source: https://www.mathsisfun.com/data/least-squares-regression.html
     """
     x_list = []
     y_list = []
@@ -572,7 +567,6 @@ def LSR(df, price='Close', predictions_int=0):
 def SLR(df, price='Close', predictions_int=0):
     """
     Simple Linear Regression
-    source: https://machinelearningmastery.com/implement-simple-linear-regression-scratch-python/
     """
     x_list = list(range(len(df[price])))
 #    b1 = COVARIANCE({'x': x_list}, {'y': df[price]}, len(x_list), 'x', 'y')[-1] / VARIANCE({'x': x_list}, len(x_list), 'x')[-1]

@@ -31,7 +31,6 @@ def HT_TRENDMODE(df, price='Close'):
 def TS(df, n, price='Close'):
     """
     Trend Score
-    source: https://www.fmlabs.com/reference/default.htm?url=TrendScore.htm
     """
     t_list = []
     i = 0

@@ -36,7 +36,6 @@ def LMC(df, price='Low'):
 def PP(df):
     """
     Pivot Point
-    source: https://en.wikipedia.org/wiki/Pivot_point_(technical_analysis)
     """
     pp_dict = {'p': [], 'r1': [], 's1': [], 'r2': [], 's2': [], 'r3': [], 's3': []}
     i = 0
@@ -124,7 +123,6 @@ def GANNTR(df, price='Close'):
 def JDN(utc_year, utc_month, utc_day):
     """
     Julian Day Number
-    source: https://en.wikipedia.org/wiki/Julian_day
     """
     year = int(utc_year)
     month = int(utc_month)
@@ -139,7 +137,6 @@ def JDN(utc_year, utc_month, utc_day):
 def JD(utc_year, utc_month, utc_day, utc_hour, utc_minute, utc_second):
     """
     Julian Date
-    source: https://en.wikipedia.org/wiki/Julian_day
     """
     hour = int(utc_hour)
     minute = int(utc_minute)

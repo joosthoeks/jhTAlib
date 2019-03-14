@@ -1,7 +1,6 @@
 def AVGPRICE(df):
     """
     Average Price
-    source: http://www.fmlabs.com/reference/default.htm?url=AvgPrices.htm
     """
     avgprice_list = []
     i = 0
@@ -14,7 +13,6 @@ def AVGPRICE(df):
 def MEDPRICE(df):
     """
     Median Price
-    source: http://www.fmlabs.com/reference/default.htm?url=MedianPrices.htm
     """
     medprice_list = []
     i = 0
@@ -27,7 +25,6 @@ def MEDPRICE(df):
 def TYPPRICE(df):
     """
     Typical Price
-    source: http://www.fmlabs.com/reference/default.htm?url=TypicalPrices.htm
     """
     typprice_list = []
     i = 0
@@ -40,7 +37,6 @@ def TYPPRICE(df):
 def WCLPRICE(df):
     """
     Weighted Close Price
-    source: http://www.fmlabs.com/reference/default.htm?url=WeightedCloses.htm
     """
     wclprice_list = []
     i = 0

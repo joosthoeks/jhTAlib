@@ -11,7 +11,6 @@ def ADXR(df, n):
 def APO(df, n_fast, n_slow, price='Close'):
     """
     Absolute Price Oscillator
-    source: http://www.fmlabs.com/reference/default.htm?url=PriceOscillator.htm
     """
     apo_list = []
     i = 0
@@ -64,7 +63,6 @@ def DX(df, n):
 def IMI(df):
     """
     Intraday Momentum Index
-    source: http://www.fmlabs.com/reference/default.htm?url=IMI.htm
     """
     imi_list = []
     upsum = .0
@@ -113,7 +111,6 @@ def MINUS_DM(df, n):
 def MOM(df, n, price='Close'):
     """
     Momentum
-    source: http://www.fmlabs.com/reference/default.htm?url=Momentum.htm
     """
     mom_list = []
     i = 0
@@ -189,7 +186,6 @@ def ROCR(df, n, price='Close'):
 def ROCR100(df, n, price='Close'):
     """
     Rate of change ratio 100 scale: (price/prevPrice)*100
-    source: https://www.fmlabs.com/reference/default.htm?url=RateOfChange.htm
     """
     rocr100_list = []
     i = 0
@@ -205,7 +201,6 @@ def ROCR100(df, n, price='Close'):
 def RSI(df, n, price='Close'):
     """
     Relative Strength Index
-    source: https://www.fmlabs.com/reference/default.htm?url=RSI.htm
     """
     rsi_list = []
     upavg = .0
@@ -256,7 +251,6 @@ def ULTOSC(df):
 def WILLR(df, n):
     """
     Williams' %R
-    source: http://www.fmlabs.com/reference/default.htm?url=WilliamsR.htm
     """
     willr_list = []
     i = 0

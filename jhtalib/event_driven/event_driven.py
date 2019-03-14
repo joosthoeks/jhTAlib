@@ -1,7 +1,6 @@
 def ASI(df, L):
     """
     Accumulation Swing Index (J. Welles Wilder)
-    source: book: New Concepts in Technical Trading Systems
     """
     asi_list = []
     si_list = SI(df, L)
@@ -20,7 +19,6 @@ def ASI(df, L):
 def SI(df, L):
     """
     Swing Index (J. Welles Wilder)
-    source: book: New Concepts in Technical Trading Systems
     """
     si_list = []
     i = 0

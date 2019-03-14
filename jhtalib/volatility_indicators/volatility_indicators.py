@@ -1,7 +1,6 @@
 def ATR(df, n):
     """
     Average True Range
-    source: http://www.fmlabs.com/reference/default.htm?url=ATR.htm
     """
     tr_list = TRANGE(df)
     atr_list = []
@@ -23,7 +22,6 @@ def NATR(df, n):
 def TRANGE(df):
     """
     True Range
-    source: http://www.fmlabs.com/reference/default.htm?url=TR.htm
     """
     tr_list = []
     i = 0

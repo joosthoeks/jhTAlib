@@ -1,7 +1,6 @@
 def AD(df):
     """
     Chaikin A/D Line
-    source: http://www.fmlabs.com/reference/default.htm?url=AccumDist.htm
     """
     ad_list = []
     i = 0
@@ -22,7 +21,6 @@ def ADOSC(df):
 def OBV(df):
     """
     On Balance Volume
-    source: http://www.fmlabs.com/reference/default.htm?url=OBV.htm
     """
     obv_list = []
     i = 0

@@ -4,7 +4,6 @@ import jhtalib as jhta
 def BBANDS(df, n, f=2):
     """
     Bollinger Bands
-    source: https://www.fmlabs.com/reference/default.htm?url=Bollinger.htm
     """
     bbands_dict = {'midband': [], 'upperband': [], 'lowerband': []}
     tp_dict = {'tp': jhta.TYPPRICE(df)}
@@ -29,7 +28,6 @@ def BBANDS(df, n, f=2):
 def BBANDW(df, n, f=2):
     """
     Bollinger Band Width
-    source: https://www.fmlabs.com/reference/default.htm?url=BollingerWidth.htm
     """
     bbandw_list = []
     tp_dict = {'tp': jhta.TYPPRICE(df)}
@@ -57,7 +55,6 @@ def EMA(df, n):
 def ENVP(df, pct=.01, price='Close'):
     """
     Envelope Percent
-    source: https://www.fmlabs.com/reference/default.htm?url=EnvelopePct.htm
     """
     envp_dict = {'hi': [], 'lo': []}
     i = 0
@@ -92,7 +89,6 @@ def MAVP(df, price='Close'):
 def MIDPOINT(df, n, price='Close'):
     """
     MidPoint over period
-    source: http://www.tadoc.org/indicator/MIDPOINT.htm
     """
     midpoint_list = []
     i = 0
@@ -110,7 +106,6 @@ def MIDPOINT(df, n, price='Close'):
 def MIDPRICE(df, n):
     """
     Midpoint Price over period
-    source: http://www.tadoc.org/indicator/MIDPRICE.htm
     """
     midprice_list = []
     i = 0
@@ -128,7 +123,6 @@ def MIDPRICE(df, n):
 def MMR(df, n=200, price='Close'):
     """
     Mayer Multiple Ratio
-    source: https://www.theinvestorspodcast.com/bitcoin-mayer-multiple/
     """
     mmr_list = []
     sma_list = SMA(df, n, price)
@@ -145,7 +139,6 @@ def MMR(df, n=200, price='Close'):
 def SAR(df, af_step=.02, af_max=.2):
     """
     Parabolic SAR (J. Welles Wilder)
-    source: book: New Concepts in Technical Trading Systems
     """
     sar_list = []
     i = 0
@@ -229,7 +222,6 @@ def SAREXT(df):
 def SMA(df, n, price='Close'):
     """
     Simple Moving Average
-    source: http://www.fmlabs.com/reference/default.htm?url=SimpleMA.htm
     """
     sma_list = []
     i = 0
@@ -257,7 +249,6 @@ def TEMA(df, n, price='Close'):
 def TRIMA(df, n, price='Close'):
     """
     Triangular Moving Average
-    source: http://www.fmlabs.com/reference/default.htm?url=TriangularMA.htm
     """
     tma_list = []
     sma_list = []
