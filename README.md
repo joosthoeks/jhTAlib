@@ -33,19 +33,19 @@ Work in progress...
 
 - [.html](https://jhtalib.joosthoeks.com)
 
-- [.epub](https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.epub)
+- [.epub](https://jhtalib.joosthoeks.com/README.epub)
 
-- [.json](https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.json)
+- [.json](https://jhtalib.joosthoeks.com/README.json)
 
-- [.odt](https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.odt)
+- [.odt](https://jhtalib.joosthoeks.com/README.odt)
 
-- [.pdf](https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.pdf)
+- [.pdf](https://jhtalib.joosthoeks.com/README.pdf)
 
-- [.rst](https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.rst)
+- [.rst](https://jhtalib.joosthoeks.com/README.rst)
 
-- [.rtf](https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.rtf)
+- [.rtf](https://jhtalib.joosthoeks.com/README.rtf)
 
-- [.xml](https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.xml)
+- [.xml](https://jhtalib.joosthoeks.com/README.xml)
 
 ---
 
