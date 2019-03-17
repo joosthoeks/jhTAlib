@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2019-03-14
+:Date:   2019-03-17
 
 .. contents::
    :depth: 3
@@ -43,19 +43,19 @@ Docs
 
 -  `.html <https://jhtalib.joosthoeks.com>`__
 
--  `.epub <https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.epub>`__
+-  `.epub <https://jhtalib.joosthoeks.com/README.epub>`__
 
--  `.json <https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.json>`__
+-  `.json <https://jhtalib.joosthoeks.com/README.json>`__
 
--  `.odt <https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.odt>`__
+-  `.odt <https://jhtalib.joosthoeks.com/README.odt>`__
 
--  `.pdf <https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.pdf>`__
+-  `.pdf <https://jhtalib.joosthoeks.com/README.pdf>`__
 
--  `.rst <https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.rst>`__
+-  `.rst <https://jhtalib.joosthoeks.com/README.rst>`__
 
--  `.rtf <https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.rtf>`__
+-  `.rtf <https://jhtalib.joosthoeks.com/README.rtf>`__
 
--  `.xml <https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.xml>`__
+-  `.xml <https://jhtalib.joosthoeks.com/README.xml>`__
 
 --------------
 
@@ -1156,14 +1156,16 @@ RSI \| Relative Strength Index \| DONE
 
 -  ``list = jhta.RSI(df, n, price='Close')``
 
--  https://www.fmlabs.com/reference/default.htm?url=RSI.htm
+-  https://www.fmlabs.com/reference/default.htm?url=rsi.htm
 
 --------------
 
-STOCH \| Stochastic \|
-^^^^^^^^^^^^^^^^^^^^^^
+STOCH \| Stochastic \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
--  
+-  ``list = jhta.STOCH(df, n, price='Close')``
+
+-  https://www.fmlabs.com/reference/default.htm?url=Stochastic.htm
 
 --------------
 

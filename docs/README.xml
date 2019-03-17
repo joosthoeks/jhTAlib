@@ -5884,6 +5884,7 @@
     <style:style style:name="T118" style:family="text"><style:text-properties style:font-name="Courier New" style:font-name-asian="Courier New" style:font-name-complex="Courier New" /></style:style>
     <style:style style:name="T119" style:family="text"><style:text-properties style:font-name="Courier New" style:font-name-asian="Courier New" style:font-name-complex="Courier New" /></style:style>
     <style:style style:name="T120" style:family="text"><style:text-properties style:font-name="Courier New" style:font-name-asian="Courier New" style:font-name-complex="Courier New" /></style:style>
+    <style:style style:name="T121" style:family="text"><style:text-properties style:font-name="Courier New" style:font-name-asian="Courier New" style:font-name-complex="Courier New" /></style:style>
     <style:style style:name="P1" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L1">
     </style:style>
     <style:style style:name="P2" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L2">
@@ -6366,7 +6367,7 @@
 <office:text>
 <text:p text:style-name="Title">jhTAlib</text:p>
 <text:p text:style-name="Author">Joost Hoeks</text:p>
-<text:p text:style-name="Date">2019-03-14</text:p>
+<text:p text:style-name="Date">2019-03-17</text:p>
 <text:h text:style-name="Heading_20_1" text:outline-level="1">jhTAlib</text:h>
 <text:p text:style-name="First_20_paragraph">Technical Analysis Library
 Time-Series</text:p>
@@ -6407,25 +6408,25 @@ only on</text:h>
     <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="https://jhtalib.joosthoeks.com" office:name=""><text:span text:style-name="Definition">.html</text:span></text:a></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.epub" office:name=""><text:span text:style-name="Definition">.epub</text:span></text:a></text:p>
+    <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="https://jhtalib.joosthoeks.com/README.epub" office:name=""><text:span text:style-name="Definition">.epub</text:span></text:a></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.json" office:name=""><text:span text:style-name="Definition">.json</text:span></text:a></text:p>
+    <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="https://jhtalib.joosthoeks.com/README.json" office:name=""><text:span text:style-name="Definition">.json</text:span></text:a></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.odt" office:name=""><text:span text:style-name="Definition">.odt</text:span></text:a></text:p>
+    <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="https://jhtalib.joosthoeks.com/README.odt" office:name=""><text:span text:style-name="Definition">.odt</text:span></text:a></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.pdf" office:name=""><text:span text:style-name="Definition">.pdf</text:span></text:a></text:p>
+    <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="https://jhtalib.joosthoeks.com/README.pdf" office:name=""><text:span text:style-name="Definition">.pdf</text:span></text:a></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.rst" office:name=""><text:span text:style-name="Definition">.rst</text:span></text:a></text:p>
+    <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="https://jhtalib.joosthoeks.com/README.rst" office:name=""><text:span text:style-name="Definition">.rst</text:span></text:a></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.rtf" office:name=""><text:span text:style-name="Definition">.rtf</text:span></text:a></text:p>
+    <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="https://jhtalib.joosthoeks.com/README.rtf" office:name=""><text:span text:style-name="Definition">.rtf</text:span></text:a></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="https://github.com/joosthoeks/jhTAlib/blob/master/docs/README.xml" office:name=""><text:span text:style-name="Definition">.xml</text:span></text:a></text:p>
+    <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="https://jhtalib.joosthoeks.com/README.xml" office:name=""><text:span text:style-name="Definition">.xml</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7519,14 +7520,18 @@ Relative Strength Index | DONE</text:h>
     <text:p text:style-name="P144"><text:span text:style-name="T81">list = jhta.RSI(df, n, price='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P144"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=RSI.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=RSI.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P144"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=rsi.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=rsi.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">STOCH |
-Stochastic |</text:h>
+Stochastic | DONE</text:h>
 <text:list text:style-name="L125">
   <text:list-item>
+    <text:p text:style-name="P145"><text:span text:style-name="T82">list = jhta.STOCH(df, n, price='Close')</text:span></text:p>
+  </text:list-item>
+  <text:list-item>
+    <text:p text:style-name="P145"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=Stochastic.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=Stochastic.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7562,7 +7567,7 @@ Ultimate Oscillator |</text:h>
 Williams' %R | DONE</text:h>
 <text:list text:style-name="L130">
   <text:list-item>
-    <text:p text:style-name="P150"><text:span text:style-name="T82">list = jhta.WILLR(df, n)</text:span></text:p>
+    <text:p text:style-name="P150"><text:span text:style-name="T83">list = jhta.WILLR(df, n)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P150"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=WilliamsR.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=WilliamsR.htm</text:span></text:a></text:p>
@@ -7575,7 +7580,7 @@ Studies</text:span></text:a></text:h>
 Bollinger Bands | DONE</text:h>
 <text:list text:style-name="L131">
   <text:list-item>
-    <text:p text:style-name="P151"><text:span text:style-name="T83">dict of lists = jhta.BBANDS(df, n, f=2)</text:span></text:p>
+    <text:p text:style-name="P151"><text:span text:style-name="T84">dict of lists = jhta.BBANDS(df, n, f=2)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P151"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=Bollinger.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=Bollinger.htm</text:span></text:a></text:p>
@@ -7586,7 +7591,7 @@ Bollinger Bands | DONE</text:h>
 Bollinger Band Width | DONE</text:h>
 <text:list text:style-name="L132">
   <text:list-item>
-    <text:p text:style-name="P152"><text:span text:style-name="T84">list = jhta.BBANDW(df, n, f=2)</text:span></text:p>
+    <text:p text:style-name="P152"><text:span text:style-name="T85">list = jhta.BBANDW(df, n, f=2)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P152"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=BollingerWidth.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=BollingerWidth.htm</text:span></text:a></text:p>
@@ -7611,7 +7616,7 @@ Exponential Moving Average |</text:h>
 Envelope Percent | DONE</text:h>
 <text:list text:style-name="L135">
   <text:list-item>
-    <text:p text:style-name="P155"><text:span text:style-name="T85">dict of lists = jhta.ENVP(df, pct=.01, price='Close')</text:span></text:p>
+    <text:p text:style-name="P155"><text:span text:style-name="T86">dict of lists = jhta.ENVP(df, pct=.01, price='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P155"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=EnvelopePct.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=EnvelopePct.htm</text:span></text:a></text:p>
@@ -7650,7 +7655,7 @@ Moving Average with Variable Period |</text:h>
 MidPoint over period | DONE</text:h>
 <text:list text:style-name="L140">
   <text:list-item>
-    <text:p text:style-name="P160"><text:span text:style-name="T86">list = jhta.MIDPOINT(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P160"><text:span text:style-name="T87">list = jhta.MIDPOINT(df, n, price='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P160"><text:a xlink:type="simple" xlink:href="http://www.tadoc.org/indicator/MIDPOINT.htm" office:name=""><text:span text:style-name="Definition">http://www.tadoc.org/indicator/MIDPOINT.htm</text:span></text:a></text:p>
@@ -7661,7 +7666,7 @@ MidPoint over period | DONE</text:h>
 MidPoint Price over period | DONE</text:h>
 <text:list text:style-name="L141">
   <text:list-item>
-    <text:p text:style-name="P161"><text:span text:style-name="T87">list = jhta.MIDPRICE(df, n)</text:span></text:p>
+    <text:p text:style-name="P161"><text:span text:style-name="T88">list = jhta.MIDPRICE(df, n)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P161"><text:a xlink:type="simple" xlink:href="http://www.tadoc.org/indicator/MIDPRICE.htm" office:name=""><text:span text:style-name="Definition">http://www.tadoc.org/indicator/MIDPRICE.htm</text:span></text:a></text:p>
@@ -7672,7 +7677,7 @@ MidPoint Price over period | DONE</text:h>
 Mayer Multiple Ratio | DONE</text:h>
 <text:list text:style-name="L142">
   <text:list-item>
-    <text:p text:style-name="P162"><text:span text:style-name="T88">list = jhta.MMR(df, n=200, price='Close')</text:span></text:p>
+    <text:p text:style-name="P162"><text:span text:style-name="T89">list = jhta.MMR(df, n=200, price='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P162"><text:a xlink:type="simple" xlink:href="https://www.theinvestorspodcast.com/bitcoin-mayer-multiple/" office:name=""><text:span text:style-name="Definition">https://www.theinvestorspodcast.com/bitcoin-mayer-multiple/</text:span></text:a></text:p>
@@ -7683,7 +7688,7 @@ Mayer Multiple Ratio | DONE</text:h>
 Parabolic SAR | DONE</text:h>
 <text:list text:style-name="L143">
   <text:list-item>
-    <text:p text:style-name="P163"><text:span text:style-name="T89">list = jhta.SAR(df, af_step=.02, af_max=.2)</text:span></text:p>
+    <text:p text:style-name="P163"><text:span text:style-name="T90">list = jhta.SAR(df, af_step=.02, af_max=.2)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P163">book: New Concepts in Technical
@@ -7702,7 +7707,7 @@ Parabolic SAR - Extended |</text:h>
 Simple Moving Average | DONE</text:h>
 <text:list text:style-name="L145">
   <text:list-item>
-    <text:p text:style-name="P165"><text:span text:style-name="T90">list = jhta.SMA(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P165"><text:span text:style-name="T91">list = jhta.SMA(df, n, price='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P165"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=SimpleMA.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=SimpleMA.htm</text:span></text:a></text:p>
@@ -7727,7 +7732,7 @@ Triple Exponential Moving Average |</text:h>
 Triangular Moving Average | DONE</text:h>
 <text:list text:style-name="L148">
   <text:list-item>
-    <text:p text:style-name="P168"><text:span text:style-name="T91">list = jhta.TRIMA(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P168"><text:span text:style-name="T92">list = jhta.TRIMA(df, n, price='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P168"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=TriangularMA.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=TriangularMA.htm</text:span></text:a></text:p>
@@ -7871,7 +7876,7 @@ Transform</text:span></text:a></text:h>
 Average Price | DONE</text:h>
 <text:list text:style-name="L150">
   <text:list-item>
-    <text:p text:style-name="P170"><text:span text:style-name="T92">list = jhta.AVGPRICE(df)</text:span></text:p>
+    <text:p text:style-name="P170"><text:span text:style-name="T93">list = jhta.AVGPRICE(df)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P170"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=AvgPrices.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=AvgPrices.htm</text:span></text:a></text:p>
@@ -7882,7 +7887,7 @@ Average Price | DONE</text:h>
 Median Price | DONE</text:h>
 <text:list text:style-name="L151">
   <text:list-item>
-    <text:p text:style-name="P171"><text:span text:style-name="T93">list = jhta.MEDPRICE(df)</text:span></text:p>
+    <text:p text:style-name="P171"><text:span text:style-name="T94">list = jhta.MEDPRICE(df)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P171"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=MedianPrices.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=MedianPrices.htm</text:span></text:a></text:p>
@@ -7893,7 +7898,7 @@ Median Price | DONE</text:h>
 Typical Price | DONE</text:h>
 <text:list text:style-name="L152">
   <text:list-item>
-    <text:p text:style-name="P172"><text:span text:style-name="T94">list = jhta.TYPPRICE(df)</text:span></text:p>
+    <text:p text:style-name="P172"><text:span text:style-name="T95">list = jhta.TYPPRICE(df)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P172"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=TypicalPrices.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=TypicalPrices.htm</text:span></text:a></text:p>
@@ -7904,7 +7909,7 @@ Typical Price | DONE</text:h>
 Weighted Close Price | DONE</text:h>
 <text:list text:style-name="L153">
   <text:list-item>
-    <text:p text:style-name="P173"><text:span text:style-name="T95">list = jhta.WCLPRICE(df)</text:span></text:p>
+    <text:p text:style-name="P173"><text:span text:style-name="T96">list = jhta.WCLPRICE(df)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P173"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=WeightedCloses.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=WeightedCloses.htm</text:span></text:a></text:p>
@@ -7917,7 +7922,7 @@ Functions</text:span></text:a></text:h>
 Arithmetic mean (average) of data | DONE</text:h>
 <text:list text:style-name="L154">
   <text:list-item>
-    <text:p text:style-name="P174"><text:span text:style-name="T96">list = jhta.MEAN(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P174"><text:span text:style-name="T97">list = jhta.MEAN(df, n, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7925,7 +7930,7 @@ Arithmetic mean (average) of data | DONE</text:h>
 | Harmonic mean of data | DONE</text:h>
 <text:list text:style-name="L155">
   <text:list-item>
-    <text:p text:style-name="P175"><text:span text:style-name="T97">list = jhta.HARMONIC_MEAN(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P175"><text:span text:style-name="T98">list = jhta.HARMONIC_MEAN(df, n, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7933,7 +7938,7 @@ Arithmetic mean (average) of data | DONE</text:h>
 Median (middle value) of data | DONE</text:h>
 <text:list text:style-name="L156">
   <text:list-item>
-    <text:p text:style-name="P176"><text:span text:style-name="T98">list = jhta.MEDIAN(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P176"><text:span text:style-name="T99">list = jhta.MEDIAN(df, n, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7941,7 +7946,7 @@ Median (middle value) of data | DONE</text:h>
 | Low median of data | DONE</text:h>
 <text:list text:style-name="L157">
   <text:list-item>
-    <text:p text:style-name="P177"><text:span text:style-name="T99">list = jhta.MEDIAN_LOW(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P177"><text:span text:style-name="T100">list = jhta.MEDIAN_LOW(df, n, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7949,7 +7954,7 @@ Median (middle value) of data | DONE</text:h>
 | High median of data | DONE</text:h>
 <text:list text:style-name="L158">
   <text:list-item>
-    <text:p text:style-name="P178"><text:span text:style-name="T100">list = jhta.MEDIAN_HIGH(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P178"><text:span text:style-name="T101">list = jhta.MEDIAN_HIGH(df, n, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7957,7 +7962,7 @@ Median (middle value) of data | DONE</text:h>
 | Median, or 50th percentile, of grouped data | DONE</text:h>
 <text:list text:style-name="L159">
   <text:list-item>
-    <text:p text:style-name="P179"><text:span text:style-name="T101">list = jhta.MEDIAN_GROUPED(df, n, price='Close', interval=1)</text:span></text:p>
+    <text:p text:style-name="P179"><text:span text:style-name="T102">list = jhta.MEDIAN_GROUPED(df, n, price='Close', interval=1)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7965,7 +7970,7 @@ Median (middle value) of data | DONE</text:h>
 Mode (most common value) of discrete data | DONE</text:h>
 <text:list text:style-name="L160">
   <text:list-item>
-    <text:p text:style-name="P180"><text:span text:style-name="T102">list = jhta.MODE(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P180"><text:span text:style-name="T103">list = jhta.MODE(df, n, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7973,7 +7978,7 @@ Mode (most common value) of discrete data | DONE</text:h>
 Population standard deviation of data | DONE</text:h>
 <text:list text:style-name="L161">
   <text:list-item>
-    <text:p text:style-name="P181"><text:span text:style-name="T103">list = jhta.PSTDEV(df, n, price='Close', mu=None)</text:span></text:p>
+    <text:p text:style-name="P181"><text:span text:style-name="T104">list = jhta.PSTDEV(df, n, price='Close', mu=None)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7981,7 +7986,7 @@ Population standard deviation of data | DONE</text:h>
 | Population variance of data | DONE</text:h>
 <text:list text:style-name="L162">
   <text:list-item>
-    <text:p text:style-name="P182"><text:span text:style-name="T104">list = jhta.PVARIANCE(df, n, price='Close', mu=None)</text:span></text:p>
+    <text:p text:style-name="P182"><text:span text:style-name="T105">list = jhta.PVARIANCE(df, n, price='Close', mu=None)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7989,7 +7994,7 @@ Population standard deviation of data | DONE</text:h>
 Sample standard deviation of data | DONE</text:h>
 <text:list text:style-name="L163">
   <text:list-item>
-    <text:p text:style-name="P183"><text:span text:style-name="T105">list = jhta.STDEV(df, n, price='Close', xbar=None)</text:span></text:p>
+    <text:p text:style-name="P183"><text:span text:style-name="T106">list = jhta.STDEV(df, n, price='Close', xbar=None)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7997,7 +8002,7 @@ Sample standard deviation of data | DONE</text:h>
 Sample variance of data | DONE</text:h>
 <text:list text:style-name="L164">
   <text:list-item>
-    <text:p text:style-name="P184"><text:span text:style-name="T106">list = jhta.VARIANCE(df, n, price='Close', xbar=None)</text:span></text:p>
+    <text:p text:style-name="P184"><text:span text:style-name="T107">list = jhta.VARIANCE(df, n, price='Close', xbar=None)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -8005,7 +8010,7 @@ Sample variance of data | DONE</text:h>
 Covariance | DONE</text:h>
 <text:list text:style-name="L165">
   <text:list-item>
-    <text:p text:style-name="P185"><text:span text:style-name="T107">float = jhta.COV(list1, list2)</text:span></text:p>
+    <text:p text:style-name="P185"><text:span text:style-name="T108">float = jhta.COV(list1, list2)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P185"><text:a xlink:type="simple" xlink:href="https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Covariance" office:name=""><text:span text:style-name="Definition">https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Covariance</text:span></text:a></text:p>
@@ -8016,7 +8021,7 @@ Covariance | DONE</text:h>
 | Covariance | DONE</text:h>
 <text:list text:style-name="L166">
   <text:list-item>
-    <text:p text:style-name="P186"><text:span text:style-name="T108">list = jhta.COVARIANCE(df1, df2, n, price1='Close', price2='Close')</text:span></text:p>
+    <text:p text:style-name="P186"><text:span text:style-name="T109">list = jhta.COVARIANCE(df1, df2, n, price1='Close', price2='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P186"><text:a xlink:type="simple" xlink:href="https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Covariance" office:name=""><text:span text:style-name="Definition">https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Covariance</text:span></text:a></text:p>
@@ -8027,7 +8032,7 @@ Covariance | DONE</text:h>
 Correlation | DONE</text:h>
 <text:list text:style-name="L167">
   <text:list-item>
-    <text:p text:style-name="P187"><text:span text:style-name="T109">float = jhta.COR(list1, list2)</text:span></text:p>
+    <text:p text:style-name="P187"><text:span text:style-name="T110">float = jhta.COR(list1, list2)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -8035,7 +8040,7 @@ Correlation | DONE</text:h>
 | Correlation | DONE</text:h>
 <text:list text:style-name="L168">
   <text:list-item>
-    <text:p text:style-name="P188"><text:span text:style-name="T110">list = jhta.CORRELATION(df1, df2, n, price1='Close', price2='Close')</text:span></text:p>
+    <text:p text:style-name="P188"><text:span text:style-name="T111">list = jhta.CORRELATION(df1, df2, n, price1='Close', price2='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -8043,7 +8048,7 @@ Correlation | DONE</text:h>
 Population Correlation | DONE</text:h>
 <text:list text:style-name="L169">
   <text:list-item>
-    <text:p text:style-name="P189"><text:span text:style-name="T111">float = jhta.PCOR(list1, list2)</text:span></text:p>
+    <text:p text:style-name="P189"><text:span text:style-name="T112">float = jhta.PCOR(list1, list2)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -8051,7 +8056,7 @@ Population Correlation | DONE</text:h>
 | Population Correlation | DONE</text:h>
 <text:list text:style-name="L170">
   <text:list-item>
-    <text:p text:style-name="P190"><text:span text:style-name="T112">list = jhta.PCORRELATION(df1, df2, n, price1='Close', price2='Close')</text:span></text:p>
+    <text:p text:style-name="P190"><text:span text:style-name="T113">list = jhta.PCORRELATION(df1, df2, n, price1='Close', price2='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -8059,7 +8064,7 @@ Population Correlation | DONE</text:h>
 Beta | DONE</text:h>
 <text:list text:style-name="L171">
   <text:list-item>
-    <text:p text:style-name="P191"><text:span text:style-name="T113">float = jhta.BETA(list1, list2)</text:span></text:p>
+    <text:p text:style-name="P191"><text:span text:style-name="T114">float = jhta.BETA(list1, list2)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P191"><text:a xlink:type="simple" xlink:href="https://en.wikipedia.org/wiki/Beta_(finance)" office:name=""><text:span text:style-name="Definition">https://en.wikipedia.org/wiki/Beta_(finance)</text:span></text:a></text:p>
@@ -8070,7 +8075,7 @@ Beta | DONE</text:h>
 Betas | DONE</text:h>
 <text:list text:style-name="L172">
   <text:list-item>
-    <text:p text:style-name="P192"><text:span text:style-name="T114">list = jhta.BETAS(df1, df2, n, price1='Close', price2='Close')</text:span></text:p>
+    <text:p text:style-name="P192"><text:span text:style-name="T115">list = jhta.BETAS(df1, df2, n, price1='Close', price2='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P192"><text:a xlink:type="simple" xlink:href="https://en.wikipedia.org/wiki/Beta_(finance)" office:name=""><text:span text:style-name="Definition">https://en.wikipedia.org/wiki/Beta_(finance)</text:span></text:a></text:p>
@@ -8081,7 +8086,7 @@ Betas | DONE</text:h>
 Least Squares Regression | DONE</text:h>
 <text:list text:style-name="L173">
   <text:list-item>
-    <text:p text:style-name="P193"><text:span text:style-name="T115">list = jhta.LSR(df, price='Close', predictions_int=0)</text:span></text:p>
+    <text:p text:style-name="P193"><text:span text:style-name="T116">list = jhta.LSR(df, price='Close', predictions_int=0)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P193"><text:a xlink:type="simple" xlink:href="https://www.mathsisfun.com/data/least-squares-regression.html" office:name=""><text:span text:style-name="Definition">https://www.mathsisfun.com/data/least-squares-regression.html</text:span></text:a></text:p>
@@ -8092,7 +8097,7 @@ Least Squares Regression | DONE</text:h>
 Simple Linear Regression | DONE</text:h>
 <text:list text:style-name="L174">
   <text:list-item>
-    <text:p text:style-name="P194"><text:span text:style-name="T116">list = jhta.SLR(df, price='Close', predictions_int=0)</text:span></text:p>
+    <text:p text:style-name="P194"><text:span text:style-name="T117">list = jhta.SLR(df, price='Close', predictions_int=0)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P194"><text:a xlink:type="simple" xlink:href="https://machinelearningmastery.com/implement-simple-linear-regression-scratch-python/" office:name=""><text:span text:style-name="Definition">https://machinelearningmastery.com/implement-simple-linear-regression-scratch-python/</text:span></text:a></text:p>
@@ -8106,7 +8111,7 @@ Indicators</text:span></text:a></text:h>
 Average True Range | DONE</text:h>
 <text:list text:style-name="L175">
   <text:list-item>
-    <text:p text:style-name="P195"><text:span text:style-name="T117">list = jhta.ATR(df, n)</text:span></text:p>
+    <text:p text:style-name="P195"><text:span text:style-name="T118">list = jhta.ATR(df, n)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P195"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=ATR.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=ATR.htm</text:span></text:a></text:p>
@@ -8124,7 +8129,7 @@ Normalized Average True Range |</text:h>
 True Range | DONE</text:h>
 <text:list text:style-name="L177">
   <text:list-item>
-    <text:p text:style-name="P197"><text:span text:style-name="T118">list = jhta.TRANGE(df)</text:span></text:p>
+    <text:p text:style-name="P197"><text:span text:style-name="T119">list = jhta.TRANGE(df)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P197"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=TR.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=TR.htm</text:span></text:a></text:p>
@@ -8137,7 +8142,7 @@ Indicators</text:span></text:a></text:h>
 Chaikin A/D Line | DONE</text:h>
 <text:list text:style-name="L178">
   <text:list-item>
-    <text:p text:style-name="P198"><text:span text:style-name="T119">list = jhta.AD(df)</text:span></text:p>
+    <text:p text:style-name="P198"><text:span text:style-name="T120">list = jhta.AD(df)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P198"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=AccumDist.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=AccumDist.htm</text:span></text:a></text:p>
@@ -8155,7 +8160,7 @@ Chaikin A/D Oscillator |</text:h>
 Balance Volume | DONE</text:h>
 <text:list text:style-name="L180">
   <text:list-item>
-    <text:p text:style-name="P200"><text:span text:style-name="T120">list = jhta.OBV(df)</text:span></text:p>
+    <text:p text:style-name="P200"><text:span text:style-name="T121">list = jhta.OBV(df)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P200"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=OBV.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=OBV.htm</text:span></text:a></text:p>
