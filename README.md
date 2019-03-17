@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2019-03-14
+date: 2019-03-17
 ---
 
 # jhTAlib
@@ -999,13 +999,15 @@ import jhtalib as jhta
 
 - ```list = jhta.RSI(df, n, price='Close')```
 
-- [https://www.fmlabs.com/reference/default.htm?url=RSI.htm](https://www.fmlabs.com/reference/default.htm?url=RSI.htm)
+- [https://www.fmlabs.com/reference/default.htm?url=rsi.htm](https://www.fmlabs.com/reference/default.htm?url=rsi.htm)
 
 ---
 
-#### STOCH | Stochastic |
+#### STOCH | Stochastic | DONE
 
--
+- ```list = jhta.STOCH(df, n, price='Close')```
+
+- [https://www.fmlabs.com/reference/default.htm?url=Stochastic.htm](https://www.fmlabs.com/reference/default.htm?url=Stochastic.htm)
 
 ---
 
