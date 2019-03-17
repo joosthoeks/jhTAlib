@@ -223,10 +223,24 @@ def RSI(df, n, price='Close'):
         i += 1
     return rsi_list
 
-def STOCH(df):
+def STOCH(df, n, price='Close'):
     """
     Stochastic
     """
+    stoch_list = []
+    i = 0
+    while i < len(df[price]):
+        if i + 1 < n:
+            stoch = float('NaN')
+        else:
+            start = i + 1 - n
+            end = i + 1
+            lowest = min(df[price][start:end])
+            highest = max(df[price][start:end])
+            stoch = (df[price][i] - lowest) / (highest - lowest)
+        stoch_list.append(stoch)
+        i += 1
+    return stoch_list
 
 def STOCHF(df):
     """
