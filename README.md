@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2019-03-17
+date: 2019-03-19
 ---
 
 # jhTAlib
@@ -969,6 +969,14 @@ import jhtalib as jhta
 
 ---
 
+#### RMI | Relative Momentum Index | DONE
+
+- ```list = jhta.RMI(df, n, price='Close')```
+
+- [https://www.fmlabs.com/reference/default.htm?url=RMI.htm](https://www.fmlabs.com/reference/default.htm?url=RMI.htm)
+
+---
+
 #### ROC | Rate of Change | DONE
 
 - ```list = jhta.ROC(df, n, price='Close')```
@@ -1490,6 +1498,14 @@ import jhtalib as jhta
 #### NATR | Normalized Average True Range |
 
 -
+
+---
+
+#### RVI | Relative Volatility Index | DONE
+
+- ```list = jhta.RVI(df, n)```
+
+- [https://www.fmlabs.com/reference/default.htm?url=RVI.htm](https://www.fmlabs.com/reference/default.htm?url=RVI.htm)
 
 ---
 
