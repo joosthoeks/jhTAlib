@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <meta name="author" content="Joost Hoeks">
-  <meta name="dcterms.date" content="2019-03-17">
+  <meta name="dcterms.date" content="2019-03-19">
   <title>jhTAlib</title>
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" href="pandoc.css">
@@ -17,7 +17,7 @@
 <header>
 <h1 class="title">jhTAlib</h1>
 <h2 class="author">Joost Hoeks</h2>
-<h3 class="date">2019-03-17</h3>
+<h3 class="date">2019-03-19</h3>
 </header>
 <nav id="TOC">
 <ul>
@@ -41,6 +41,7 @@
 <li><a href="#test">Test</a></li>
 <li><a href="#reference">Reference</a><ul>
 <li><a href="#behavioral-techniques"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/behavioral_techniques/behavioral_techniques.py">Behavioral Techniques</a></a></li>
+<li><a href="#candlestick"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/candlestick/candlestick.py">Candlestick</a></a></li>
 <li><a href="#cycle-indicators"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/cycle_indicators/cycle_indicators.py">Cycle Indicators</a></a></li>
 <li><a href="#data"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/data/data.py">Data</a></a></li>
 <li><a href="#event-driven"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/event_driven/event_driven.py">Event Driven</a></a></li>
@@ -265,6 +266,7 @@ $ python3 test.py</code></pre>
 <li></li>
 </ul>
 <hr />
+<h3 id="candlestick"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/candlestick/candlestick.py">Candlestick</a></h3>
 <h3 id="cycle-indicators"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/cycle_indicators/cycle_indicators.py">Cycle Indicators</a></h3>
 <h4 id="ht_dcperiod-hilbert-transform---dominant-cycle-period">HT_DCPERIOD | Hilbert Transform - Dominant Cycle Period |</h4>
 <ul>
@@ -768,6 +770,12 @@ $ python3 test.py</code></pre>
 <li></li>
 </ul>
 <hr />
+<h4 id="rmi-relative-momentum-index-done">RMI | Relative Momentum Index | DONE</h4>
+<ul>
+<li><p><code>list = jhta.RMI(df, n, price='Close')</code></p></li>
+<li><p><a href="https://www.fmlabs.com/reference/default.htm?url=RMI.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=RMI.htm</a></p></li>
+</ul>
+<hr />
 <h4 id="roc-rate-of-change-done">ROC | Rate of Change | DONE</h4>
 <ul>
 <li><code>list = jhta.ROC(df, n, price='Close')</code></li>
@@ -1142,6 +1150,12 @@ $ python3 test.py</code></pre>
 <h4 id="natr-normalized-average-true-range">NATR | Normalized Average True Range |</h4>
 <ul>
 <li></li>
+</ul>
+<hr />
+<h4 id="rvi-relative-volatility-index-done">RVI | Relative Volatility Index | DONE</h4>
+<ul>
+<li><p><code>list = jhta.RVI(df, n)</code></p></li>
+<li><p><a href="https://www.fmlabs.com/reference/default.htm?url=RVI.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=RVI.htm</a></p></li>
 </ul>
 <hr />
 <h4 id="trange-true-range-done">TRANGE | True Range | DONE</h4>

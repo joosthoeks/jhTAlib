@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2019-03-17
+:Date:   2019-03-19
 
 .. contents::
    :depth: 3
@@ -394,6 +394,9 @@ MOONC \| Moon Cycle \|
 -  
 
 --------------
+
+`Candlestick <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/candlestick/candlestick.py>`__
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 `Cycle Indicators <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/cycle_indicators/cycle_indicators.py>`__
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1121,6 +1124,15 @@ PPO \| Percentage Price Oscillator \|
 
 --------------
 
+RMI \| Relative Momentum Index \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.RMI(df, n, price='Close')``
+
+-  https://www.fmlabs.com/reference/default.htm?url=RMI.htm
+
+--------------
+
 ROC \| Rate of Change \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -1766,6 +1778,15 @@ NATR \| Normalized Average True Range \|
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  
+
+--------------
+
+RVI \| Relative Volatility Index \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.RVI(df, n)``
+
+-  https://www.fmlabs.com/reference/default.htm?url=RVI.htm
 
 --------------
 
