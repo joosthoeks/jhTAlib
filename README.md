@@ -347,6 +347,8 @@ import jhtalib as jhta
 
 ---
 
+### [Candlestick](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/candlestick/candlestick.py)
+
 ### [Cycle Indicators](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/cycle_indicators/cycle_indicators.py)
 
 #### HT_DCPERIOD | Hilbert Transform - Dominant Cycle Period |
