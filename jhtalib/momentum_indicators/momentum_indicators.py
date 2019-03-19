@@ -138,6 +138,34 @@ def PPO(df, price='Close'):
     Percentage Price Oscillator
     """
 
+def RMI(df, n, price='Close'):
+    """
+    Relative Momentum Index
+    """
+    rmi_list = []
+    upavg = .0
+    dnavg = .0
+    i = 0
+    while i < len(df[price]):
+        if i + 1 < n:
+            rmi = float('NaN')
+        else:
+            if df[price][i] > df[price][i - n]:
+                up = df[price][i] - df[price][i - n]
+                dn = 0
+            else:
+                up = 0
+                dn = df[price][i - n] - df[price][i]
+            upavg = (upavg * (n - 1) + up) / n
+            dnavg = (dnavg * (n - 1) + dn) / n
+        if (upavg + dnavg) == 0:
+            rmi = float('NaN')
+        else:
+            rmi = 100 * upavg / (upavg + dnavg)
+        rmi_list.append(rmi)
+        i += 1
+    return rmi_list
+
 def ROC(df, n, price='Close'):
     """
     Rate of change : ((price/prevPrice)-1)*100
