@@ -1,4 +1,5 @@
 from .behavioral_techniques import *
+from .candlestick import *
 from .cycle_indicators import *
 from .data import *
 from .event_driven import *
