@@ -398,6 +398,42 @@ MOONC \| Moon Cycle \|
 `Candlestick <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/candlestick/candlestick.py>`__
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+CDLBODYS \| Candle Body Size \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``jhta.CDLBODYS(df)``
+
+-  https://www.tradeciety.com/understand-candlesticks-patterns/
+
+--------------
+
+CDLWICKS \| Candle Wick Size \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``jhta.CDLWICKS(df)``
+
+-  https://www.tradeciety.com/understand-candlesticks-patterns/
+
+--------------
+
+CDLUPPSHAS \| Candle Upper Shadow Size \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``jhta.CDLUPPSHAS(df)``
+
+-  https://www.tradeciety.com/understand-candlesticks-patterns/
+
+--------------
+
+CDLLOWSHAS \| Candle Lower Shadow Size \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``jhta.CDLLOWSHAS(df)``
+
+-  https://www.tradeciety.com/understand-candlesticks-patterns/
+
+--------------
+
 `Cycle Indicators <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/cycle_indicators/cycle_indicators.py>`__
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
