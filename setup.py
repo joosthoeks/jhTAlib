@@ -1,13 +1,13 @@
 from setuptools import setup, find_packages
 
 
-with open('docs/README.md', 'r') as f:
+with open('docs/README.md', encoding='utf-8') as f:
     long_description = f.read()
 
 
 setup(
     name='jhTAlib',
-    version='20190320.1',
+    version='20190320.2',
     author='Joost Hoeks',
     author_email='joosthoeks@gmail.com',
     description='Technical Analysis Library Time-Series',
