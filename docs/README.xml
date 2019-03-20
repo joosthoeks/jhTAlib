@@ -5828,6 +5828,38 @@
         <style:list-level-properties text:space-before="2.5in" text:min-label-width="0.25in" />
       </text:list-level-style-bullet>
     </text:list-style>
+    <text:list-style style:name="L183">
+      <text:list-level-style-bullet text:level="1" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
+        <style:list-level-properties text:space-before="0.25in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="2" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="‣">
+        <style:list-level-properties text:space-before="0.5in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="3" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="⁃">
+        <style:list-level-properties text:space-before="0.75in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="4" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
+        <style:list-level-properties text:space-before="1.0in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="5" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="‣">
+        <style:list-level-properties text:space-before="1.25in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="6" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="⁃">
+        <style:list-level-properties text:space-before="1.5in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="7" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
+        <style:list-level-properties text:space-before="1.75in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="8" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="‣">
+        <style:list-level-properties text:space-before="2.0in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="9" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="⁃">
+        <style:list-level-properties text:space-before="2.25in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="10" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
+        <style:list-level-properties text:space-before="2.5in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+    </text:list-style>
     <style:style style:name="T1" style:family="text"><style:text-properties style:font-name="Courier New" style:font-name-asian="Courier New" style:font-name-complex="Courier New" /></style:style>
     <style:style style:name="T2" style:family="text"><style:text-properties style:font-name="Courier New" style:font-name-asian="Courier New" style:font-name-complex="Courier New" /></style:style>
     <style:style style:name="T3" style:family="text"><style:text-properties style:font-name="Courier New" style:font-name-asian="Courier New" style:font-name-complex="Courier New" /></style:style>
@@ -6432,12 +6464,14 @@
     </style:style>
     <style:style style:name="P202" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L182">
     </style:style>
+    <style:style style:name="P203" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L183">
+    </style:style>
   </office:automatic-styles>
 <office:body>
 <office:text>
 <text:p text:style-name="Title">jhTAlib</text:p>
 <text:p text:style-name="Author">Joost Hoeks</text:p>
-<text:p text:style-name="Date">2019-03-19</text:p>
+<text:p text:style-name="Date">2019-03-20</text:p>
 <text:h text:style-name="Heading_20_1" text:outline-level="1">jhTAlib</text:h>
 <text:p text:style-name="First_20_paragraph">Technical Analysis Library
 Time-Series</text:p>
@@ -8218,14 +8252,21 @@ Relative Volatility Index | DONE</text:h>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_4" text:outline-level="4">TRANGE |
-True Range | DONE</text:h>
+<text:h text:style-name="Heading_20_4" text:outline-level="4">INERTIA |
+Inertia |</text:h>
 <text:list text:style-name="L179">
   <text:list-item>
-    <text:p text:style-name="P199"><text:span text:style-name="T121">list = jhta.TRANGE(df)</text:span></text:p>
+  </text:list-item>
+</text:list>
+<text:p text:style-name="Horizontal_20_Line" />
+<text:h text:style-name="Heading_20_4" text:outline-level="4">TRANGE |
+True Range | DONE</text:h>
+<text:list text:style-name="L180">
+  <text:list-item>
+    <text:p text:style-name="P200"><text:span text:style-name="T121">list = jhta.TRANGE(df)</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P199"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=TR.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=TR.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P200"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=TR.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=TR.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -8233,30 +8274,30 @@ True Range | DONE</text:h>
 Indicators</text:span></text:a></text:h>
 <text:h text:style-name="Heading_20_4" text:outline-level="4">AD |
 Chaikin A/D Line | DONE</text:h>
-<text:list text:style-name="L180">
+<text:list text:style-name="L181">
   <text:list-item>
-    <text:p text:style-name="P200"><text:span text:style-name="T122">list = jhta.AD(df)</text:span></text:p>
+    <text:p text:style-name="P201"><text:span text:style-name="T122">list = jhta.AD(df)</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P200"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=AccumDist.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=AccumDist.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P201"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=AccumDist.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=AccumDist.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">ADOSC |
 Chaikin A/D Oscillator |</text:h>
-<text:list text:style-name="L181">
+<text:list text:style-name="L182">
   <text:list-item>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">OBV | On
 Balance Volume | DONE</text:h>
-<text:list text:style-name="L182">
+<text:list text:style-name="L183">
   <text:list-item>
-    <text:p text:style-name="P202"><text:span text:style-name="T123">list = jhta.OBV(df)</text:span></text:p>
+    <text:p text:style-name="P203"><text:span text:style-name="T123">list = jhta.OBV(df)</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P202"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=OBV.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=OBV.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P203"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=OBV.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=OBV.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />

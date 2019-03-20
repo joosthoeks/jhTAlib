@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2019-03-19
+:Date:   2019-03-20
 
 .. contents::
    :depth: 3
@@ -1787,6 +1787,13 @@ RVI \| Relative Volatility Index \| DONE
 -  ``list = jhta.RVI(df, n)``
 
 -  https://www.fmlabs.com/reference/default.htm?url=RVI.htm
+
+--------------
+
+INERTIA \| Inertia \|
+^^^^^^^^^^^^^^^^^^^^^
+
+-  
 
 --------------
 
