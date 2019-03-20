@@ -16,23 +16,34 @@
         -   [Example 10](#example-10)
     -   [Test](#test)
     -   [Reference](#reference)
-        -   [[Behavioral Techniques](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/behavioral_techniques/behavioral_techniques.py)](#behavioral-techniques)
+        -   [[Behavioral
+            Techniques](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/behavioral_techniques/behavioral_techniques.py)](#behavioral-techniques)
         -   [[Candlestick](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/candlestick/candlestick.py)](#candlestick)
-        -   [[Cycle Indicators](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/cycle_indicators/cycle_indicators.py)](#cycle-indicators)
+        -   [[Cycle
+            Indicators](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/cycle_indicators/cycle_indicators.py)](#cycle-indicators)
         -   [[Data](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/data/data.py)](#data)
-        -   [[Event Driven](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/event_driven/event_driven.py)](#event-driven)
+        -   [[Event
+            Driven](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/event_driven/event_driven.py)](#event-driven)
         -   [[Experimental](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/experimental/experimental.py)](#experimental)
         -   [[General](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/general/general.py)](#general)
         -   [[Information](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/information/information.py)](#information)
-        -   [[Math Functions](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/math_functions/math_functions.py)](#math-functions)
-        -   [[Momentum Indicators](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/momentum_indicators/momentum_indicators.py)](#momentum-indicators)
-        -   [[Overlap Studies](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/overlap_studies/overlap_studies.py)](#overlap-studies)
-        -   [[Pattern Recognition](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/pattern_recognition/pattern_recognition.py)](#pattern-recognition)
-        -   [[Price Transform](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/price_transform/price_transform.py)](#price-transform)
-        -   [[Statistic Functions](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/statistic_functions/statistic_functions.py)](#statistic-functions)
+        -   [[Math
+            Functions](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/math_functions/math_functions.py)](#math-functions)
+        -   [[Momentum
+            Indicators](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/momentum_indicators/momentum_indicators.py)](#momentum-indicators)
+        -   [[Overlap
+            Studies](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/overlap_studies/overlap_studies.py)](#overlap-studies)
+        -   [[Pattern
+            Recognition](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/pattern_recognition/pattern_recognition.py)](#pattern-recognition)
+        -   [[Price
+            Transform](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/price_transform/price_transform.py)](#price-transform)
+        -   [[Statistic
+            Functions](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/statistic_functions/statistic_functions.py)](#statistic-functions)
         -   [[Uncategorised](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/uncategorised/uncategorised.py)](#uncategorised)
-        -   [[Volatility Indicators](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/volatility_indicators/volatility_indicators.py)](#volatility-indicators)
-        -   [[Volume Indicators](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/volume_indicators/volume_indicators.py)](#volume-indicators)
+        -   [[Volatility
+            Indicators](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/volatility_indicators/volatility_indicators.py)](#volatility-indicators)
+        -   [[Volume
+            Indicators](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/volume_indicators/volume_indicators.py)](#volume-indicators)
 
 jhTAlib
 =======
@@ -58,7 +69,8 @@ Work in progress...
 Depends only on
 ---------------
 
--   [The Python Standard Library](https://docs.python.org/3/library/index.html)
+-   [The Python Standard
+    Library](https://docs.python.org/3/library/index.html)
 
 ------------------------------------------------------------------------
 
