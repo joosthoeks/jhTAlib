@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2019-03-19
+date: 2019-03-20
 ---
 
 # jhTAlib
@@ -1508,6 +1508,12 @@ import jhtalib as jhta
 - ```list = jhta.RVI(df, n)```
 
 - [https://www.fmlabs.com/reference/default.htm?url=RVI.htm](https://www.fmlabs.com/reference/default.htm?url=RVI.htm)
+
+---
+
+#### INERTIA | Inertia |
+
+-
 
 ---
 
