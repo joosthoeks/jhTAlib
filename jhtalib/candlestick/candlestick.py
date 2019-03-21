@@ -74,3 +74,21 @@ def QSTICK(df, n):
         i += 1
     return qstick_list
 
+def IMI(df):
+    """
+    Intraday Momentum Index
+    """
+    imi_list = []
+    upsum = .0
+    downsum = .0
+    i = 0
+    while i < len(df['Close']):
+        if df['Close'][i] > df['Open'][i]:
+            upsum = upsum + (df['Close'][i] - df['Open'][i])
+        else:
+            downsum = downsum + (df['Open'][i] - df['Close'][i])
+        imi = 100 * (upsum / (upsum + downsum))
+        imi_list.append(imi)
+        i += 1
+    return imi_list
+
