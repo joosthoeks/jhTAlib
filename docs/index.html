@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <meta name="author" content="Joost Hoeks">
-  <meta name="dcterms.date" content="2019-03-20">
+  <meta name="dcterms.date" content="2019-03-21">
   <title>jhTAlib</title>
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" href="pandoc.css">
@@ -17,7 +17,7 @@
 <header>
 <h1 class="title">jhTAlib</h1>
 <h2 class="author">Joost Hoeks</h2>
-<h3 class="date">2019-03-20</h3>
+<h3 class="date">2019-03-21</h3>
 </header>
 <nav id="TOC">
 <ul>
@@ -269,26 +269,44 @@ $ python3 test.py</code></pre>
 <h3 id="candlestick"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/candlestick/candlestick.py">Candlestick</a></h3>
 <h4 id="cdlbodys-candle-body-size-done">CDLBODYS | Candle Body Size | DONE</h4>
 <ul>
-<li><p><code>jhta.CDLBODYS(df)</code></p></li>
+<li><p><code>list = jhta.CDLBODYS(df)</code></p></li>
 <li><p><a href="https://www.tradeciety.com/understand-candlesticks-patterns/" class="uri">https://www.tradeciety.com/understand-candlesticks-patterns/</a></p></li>
 </ul>
 <hr />
 <h4 id="cdlwicks-candle-wick-size-done">CDLWICKS | Candle Wick Size | DONE</h4>
 <ul>
-<li><p><code>jhta.CDLWICKS(df)</code></p></li>
+<li><p><code>list = jhta.CDLWICKS(df)</code></p></li>
 <li><p><a href="https://www.tradeciety.com/understand-candlesticks-patterns/" class="uri">https://www.tradeciety.com/understand-candlesticks-patterns/</a></p></li>
 </ul>
 <hr />
 <h4 id="cdluppshas-candle-upper-shadow-size-done">CDLUPPSHAS | Candle Upper Shadow Size | DONE</h4>
 <ul>
-<li><p><code>jhta.CDLUPPSHAS(df)</code></p></li>
+<li><p><code>list = jhta.CDLUPPSHAS(df)</code></p></li>
 <li><p><a href="https://www.tradeciety.com/understand-candlesticks-patterns/" class="uri">https://www.tradeciety.com/understand-candlesticks-patterns/</a></p></li>
 </ul>
 <hr />
 <h4 id="cdllowshas-candle-lower-shadow-size-done">CDLLOWSHAS | Candle Lower Shadow Size | DONE</h4>
 <ul>
-<li><p><code>jhta.CDLLOWSHAS(df)</code></p></li>
+<li><p><code>list = jhta.CDLLOWSHAS(df)</code></p></li>
 <li><p><a href="https://www.tradeciety.com/understand-candlesticks-patterns/" class="uri">https://www.tradeciety.com/understand-candlesticks-patterns/</a></p></li>
+</ul>
+<hr />
+<h4 id="qstick-qstick-done">QSTICK | Qstick | DONE</h4>
+<ul>
+<li><p><code>list = jhta.QSTICK(df, n)</code></p></li>
+<li><p><a href="https://www.fmlabs.com/reference/default.htm?url=Qstick.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=Qstick.htm</a></p></li>
+</ul>
+<hr />
+<h4 id="shadowt-shadow-trends-done">SHADOWT | Shadow Trends | DONE</h4>
+<ul>
+<li><p><code>dict of lists = jhta.SHADOWT(df, n)</code></p></li>
+<li><p>book: The New Technical Trader</p></li>
+</ul>
+<hr />
+<h4 id="imi-intraday-momentum-index-done">IMI | Intraday Momentum Index | DONE</h4>
+<ul>
+<li><p><code>list = jhta.IMI(df)</code></p></li>
+<li><p><a href="https://www.fmlabs.com/reference/default.htm?url=IMI.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=IMI.htm</a></p></li>
 </ul>
 <hr />
 <h3 id="cycle-indicators"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/cycle_indicators/cycle_indicators.py">Cycle Indicators</a></h3>
@@ -735,12 +753,6 @@ $ python3 test.py</code></pre>
 <h4 id="dx-directional-movement-index">DX | Directional Movement Index |</h4>
 <ul>
 <li></li>
-</ul>
-<hr />
-<h4 id="imi-intraday-momentum-index-done">IMI | Intraday Momentum Index | DONE</h4>
-<ul>
-<li><p><code>list = jhta.IMI(df)</code></p></li>
-<li><p><a href="https://www.fmlabs.com/reference/default.htm?url=IMI.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=IMI.htm</a></p></li>
 </ul>
 <hr />
 <h4 id="macd-moving-average-convergencedivergence">MACD | Moving Average Convergence/Divergence |</h4>

@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2019-03-20
+:Date:   2019-03-21
 
 .. contents::
    :depth: 3
@@ -401,7 +401,7 @@ MOONC \| Moon Cycle \|
 CDLBODYS \| Candle Body Size \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
--  ``jhta.CDLBODYS(df)``
+-  ``list = jhta.CDLBODYS(df)``
 
 -  https://www.tradeciety.com/understand-candlesticks-patterns/
 
@@ -410,7 +410,7 @@ CDLBODYS \| Candle Body Size \| DONE
 CDLWICKS \| Candle Wick Size \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
--  ``jhta.CDLWICKS(df)``
+-  ``list = jhta.CDLWICKS(df)``
 
 -  https://www.tradeciety.com/understand-candlesticks-patterns/
 
@@ -419,7 +419,7 @@ CDLWICKS \| Candle Wick Size \| DONE
 CDLUPPSHAS \| Candle Upper Shadow Size \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
--  ``jhta.CDLUPPSHAS(df)``
+-  ``list = jhta.CDLUPPSHAS(df)``
 
 -  https://www.tradeciety.com/understand-candlesticks-patterns/
 
@@ -428,9 +428,36 @@ CDLUPPSHAS \| Candle Upper Shadow Size \| DONE
 CDLLOWSHAS \| Candle Lower Shadow Size \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
--  ``jhta.CDLLOWSHAS(df)``
+-  ``list = jhta.CDLLOWSHAS(df)``
 
 -  https://www.tradeciety.com/understand-candlesticks-patterns/
+
+--------------
+
+QSTICK \| Qstick \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.QSTICK(df, n)``
+
+-  https://www.fmlabs.com/reference/default.htm?url=Qstick.htm
+
+--------------
+
+SHADOWT \| Shadow Trends \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``dict of lists = jhta.SHADOWT(df, n)``
+
+-  book: The New Technical Trader
+
+--------------
+
+IMI \| Intraday Momentum Index \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.IMI(df)``
+
+-  https://www.fmlabs.com/reference/default.htm?url=IMI.htm
 
 --------------
 
@@ -1076,15 +1103,6 @@ DX \| Directional Movement Index \|
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  
-
---------------
-
-IMI \| Intraday Momentum Index \| DONE
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
--  ``list = jhta.IMI(df)``
-
--  https://www.fmlabs.com/reference/default.htm?url=IMI.htm
 
 --------------
 
