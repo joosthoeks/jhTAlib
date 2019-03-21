@@ -57,3 +57,20 @@ def CDLLOWSHAS(df):
         i += 1
     return cdl_list
 
+def QSTICK(df, n):
+    """
+    Qstick
+    """
+    qstick_list = []
+    i = 0
+    while i < len(df['Close']):
+        if i + 1 < n:
+            qstick = float('NaN')
+        else:
+            start = i + 1 - n
+            end = i + 1
+            qstick = sum(CDLBODYS(df)[start:end]) / n
+        qstick_list.append(qstick)
+        i += 1
+    return qstick_list
+
