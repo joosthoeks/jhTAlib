@@ -389,6 +389,14 @@ import jhtalib as jhta
 
 ---
 
+#### SHADOWT | Shadow Trends | DONE
+
+- ```dict of lists = jhta.SHADOWT(df, n)```
+
+- book: The New Technical Trader
+
+---
+
 #### IMI | Intraday Momentum Index | DONE
 
 - ```list = jhta.IMI(df)```
