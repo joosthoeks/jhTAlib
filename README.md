@@ -351,7 +351,7 @@ import jhtalib as jhta
 
 #### CDLBODYS | Candle Body Size | DONE
 
-- ```jhta.CDLBODYS(df)```
+- ```list = jhta.CDLBODYS(df)```
 
 - [https://www.tradeciety.com/understand-candlesticks-patterns/](https://www.tradeciety.com/understand-candlesticks-patterns/)
 
@@ -359,7 +359,7 @@ import jhtalib as jhta
 
 #### CDLWICKS | Candle Wick Size | DONE
 
-- ```jhta.CDLWICKS(df)```
+- ```list = jhta.CDLWICKS(df)```
 
 - [https://www.tradeciety.com/understand-candlesticks-patterns/](https://www.tradeciety.com/understand-candlesticks-patterns/)
 
@@ -367,7 +367,7 @@ import jhtalib as jhta
 
 #### CDLUPPSHAS | Candle Upper Shadow Size | DONE
 
-- ```jhta.CDLUPPSHAS(df)```
+- ```list = jhta.CDLUPPSHAS(df)```
 
 - [https://www.tradeciety.com/understand-candlesticks-patterns/](https://www.tradeciety.com/understand-candlesticks-patterns/)
 
@@ -375,7 +375,7 @@ import jhtalib as jhta
 
 #### CDLLOWSHAS | Candle Lower Shadow Size | DONE
 
-- ```jhta.CDLLOWSHAS(df)```
+- ```list = jhta.CDLLOWSHAS(df)```
 
 - [https://www.tradeciety.com/understand-candlesticks-patterns/](https://www.tradeciety.com/understand-candlesticks-patterns/)
 
@@ -383,7 +383,7 @@ import jhtalib as jhta
 
 #### QSTICK | Qstick | DONE
 
-- ```jhta.QSTICK(df, n)```
+- ```list = jhta.QSTICK(df, n)```
 
 - [https://www.fmlabs.com/reference/default.htm?url=Qstick.htm](https://www.fmlabs.com/reference/default.htm?url=Qstick.htm)
 
