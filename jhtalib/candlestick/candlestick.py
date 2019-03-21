@@ -1,6 +1,3 @@
-import jhtalib as jhta
-
-
 def CDLBODYS(df):
     """
     Candle Body Size
