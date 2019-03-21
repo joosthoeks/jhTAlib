@@ -7,7 +7,7 @@ with open('README.md', 'r') as f:
 
 setup(
     name='jhTAlib',
-    version='20190320.4',
+    version='20190321.0',
     author='Joost Hoeks',
     author_email='joosthoeks@gmail.com',
     description='Technical Analysis Library Time-Series',
