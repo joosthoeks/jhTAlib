@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2019-03-20
+date: 2019-03-21
 ---
 
 # jhTAlib
@@ -378,6 +378,22 @@ import jhtalib as jhta
 - ```jhta.CDLLOWSHAS(df)```
 
 - [https://www.tradeciety.com/understand-candlesticks-patterns/](https://www.tradeciety.com/understand-candlesticks-patterns/)
+
+---
+
+#### QSTICK | Qstick | DONE
+
+- ```jhta.QSTICK(df, n)```
+
+- [https://www.fmlabs.com/reference/default.htm?url=Qstick.htm](https://www.fmlabs.com/reference/default.htm?url=Qstick.htm)
+
+---
+
+#### IMI | Intraday Momentum Index | DONE
+
+- ```list = jhta.IMI(df)```
+
+- [https://www.fmlabs.com/reference/default.htm?url=IMI.htm](https://www.fmlabs.com/reference/default.htm?url=IMI.htm)
 
 ---
 
@@ -930,14 +946,6 @@ import jhtalib as jhta
 #### DX | Directional Movement Index |
 
 -
-
----
-
-#### IMI | Intraday Momentum Index | DONE
-
-- ```list = jhta.IMI(df)```
-
-- [https://www.fmlabs.com/reference/default.htm?url=IMI.htm](https://www.fmlabs.com/reference/default.htm?url=IMI.htm)
 
 ---
 
