@@ -74,6 +74,26 @@ def QSTICK(df, n):
         i += 1
     return qstick_list
 
+def SHADOWT(df, n):
+    """
+    Shadow Trends
+    """
+    shadowt_dict = {'upper': [], 'lower': []}
+    i = 0
+    while i < len(df['Close']):
+        if i + 1 < n:
+            upper = float('NaN')
+            lower = float('NaN')
+        else:
+            start = i + 1 - n
+            end = i + 1
+            upper = sum(CDLUPPSHAS(df)[start:end]) / n
+            lower = sum(CDLLOWSHAS(df)[start:end]) / n
+        shadowt_dict['upper'].append(upper)
+        shadowt_dict['lower'].append(lower)
+        i += 1
+    return shadowt_dict
+
 def IMI(df):
     """
     Intraday Momentum Index
