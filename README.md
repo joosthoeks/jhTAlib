@@ -387,6 +387,14 @@ import jhtalib as jhta
 
 ---
 
+#### CDLBODYM | Candle Body Momentum | DONE
+
+- ```list = jhta.CDLBODYM(df, n)```
+
+- book: Trading Systems and Methods
+
+---
+
 #### QSTICK | Qstick | DONE
 
 - ```list = jhta.QSTICK(df, n)```
