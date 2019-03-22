@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2019-03-21
+:Date:   2019-03-22
 
 .. contents::
    :depth: 3
@@ -431,6 +431,22 @@ CDLLOWSHAS \| Candle Lower Shadow Size \| DONE
 -  ``list = jhta.CDLLOWSHAS(df)``
 
 -  https://www.tradeciety.com/understand-candlesticks-patterns/
+
+--------------
+
+CDLBODYP \| Candle Body Percent \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.CDLBODYP(p)``
+
+--------------
+
+CDLBODYM \| Candle Body Momentum \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list = jhta.CDLBODYM(df, n)``
+
+-  book: Trading Systems and Methods
 
 --------------
 
