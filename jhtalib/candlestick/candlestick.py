@@ -54,6 +54,18 @@ def CDLLOWSHAS(df):
         i += 1
     return cdl_list
 
+def CDLBODYP(df):
+    """
+    Candle Body Percent
+    """
+    cdl_list = []
+    i = 0
+    while i < len(df['Close']):
+        cdl = (df['Close'][i] - df['Open'][i]) / df['Open'][i]
+        cdl_list.append(cdl)
+        i += 1
+    return cdl_list
+
 def QSTICK(df, n):
     """
     Qstick

@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2019-03-21
+date: 2019-03-22
 ---
 
 # jhTAlib
@@ -378,6 +378,12 @@ import jhtalib as jhta
 - ```list = jhta.CDLLOWSHAS(df)```
 
 - [https://www.tradeciety.com/understand-candlesticks-patterns/](https://www.tradeciety.com/understand-candlesticks-patterns/)
+
+---
+
+#### CDLBODYP | Candle Body Percent | DONE
+
+- ```list = jhta.CDLBODYP(p)```
 
 ---
 
