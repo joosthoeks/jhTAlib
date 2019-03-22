@@ -66,6 +66,33 @@ def CDLBODYP(df):
         i += 1
     return cdl_list
 
+def CDLBODYM(df, n):
+    """
+    Candle Body Momentum
+    """
+    cdl_list = []
+    i = 0
+    while i < len(df['Close']):
+        if i + 1 < n:
+            cdl = float('NaN')
+        else:
+            start = i + 1 - n
+            end = i + 1
+            cdlbodys = CDLBODYS(df)[start:end]
+            upsum = 0
+            downsum = 0
+            i2 = 0
+            while i2 < len(cdlbodys):
+                if cdlbodys[i2] > 0:
+                    upsum = upsum + 1
+                else:
+                    downsum = downsum + 1
+                i2 += 1
+            cdl = upsum / (upsum + downsum)
+        cdl_list.append(cdl)
+        i += 1
+    return cdl_list
+
 def QSTICK(df, n):
     """
     Qstick
