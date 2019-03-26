@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2019-03-22
+date: 2019-03-26
 ---
 
 # jhTAlib
@@ -1139,9 +1139,11 @@ import jhtalib as jhta
 
 ---
 
-#### EMA | Exponential Moving Average |
+#### EMA | Exponential Moving Average | DONE
 
--
+- ```list = jhta.EMA(df, n, price='Close')```
+
+- [https://www.fmlabs.com/reference/default.htm?url=ExpMA.htm](https://www.fmlabs.com/reference/default.htm?url=ExpMA.htm)
 
 ---
 
