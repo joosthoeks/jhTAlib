@@ -47,10 +47,23 @@ def DEMA(df, n):
     Double Exponential Moving Average
     """
 
-def EMA(df, n):
+def EMA(df, n, price='Close'):
     """
     Exponential Moving Average
     """
+    ema_list = []
+    i = 0
+    while i < len(df[price]):
+        if i + 1 < n:
+            ema = float('NaN')
+        else:
+            if ema != ema:
+                ema = df[price][i]
+            k = 2 / (n + 1)
+            ema = k * df[price][i] + (1 - k) * ema
+        ema_list.append(ema)
+        i += 1
+    return ema_list
 
 def ENVP(df, pct=.01, price='Close'):
     """
