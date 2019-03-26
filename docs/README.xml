@@ -6247,6 +6247,7 @@
     <style:style style:name="T129" style:family="text"><style:text-properties style:font-name="Courier New" style:font-name-asian="Courier New" style:font-name-complex="Courier New" /></style:style>
     <style:style style:name="T130" style:family="text"><style:text-properties style:font-name="Courier New" style:font-name-asian="Courier New" style:font-name-complex="Courier New" /></style:style>
     <style:style style:name="T131" style:family="text"><style:text-properties style:font-name="Courier New" style:font-name-asian="Courier New" style:font-name-complex="Courier New" /></style:style>
+    <style:style style:name="T132" style:family="text"><style:text-properties style:font-name="Courier New" style:font-name-asian="Courier New" style:font-name-complex="Courier New" /></style:style>
     <style:style style:name="P1" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L1">
     </style:style>
     <style:style style:name="P2" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L2">
@@ -6752,7 +6753,7 @@
 <office:text>
 <text:p text:style-name="Title">jhTAlib</text:p>
 <text:p text:style-name="Author">Joost Hoeks</text:p>
-<text:p text:style-name="Date">2019-03-22</text:p>
+<text:p text:style-name="Date">2019-03-26</text:p>
 <text:h text:style-name="Heading_20_1" text:outline-level="1">jhTAlib</text:h>
 <text:p text:style-name="First_20_paragraph">Technical Analysis Library
 Time-Series</text:p>
@@ -6907,7 +6908,7 @@ Techniques</text:span></text:a></text:h>
 Time High | DONE</text:h>
 <text:list text:style-name="L4">
   <text:list-item>
-    <text:p text:style-name="P24"><text:span text:style-name="T1">dict of lists = jhta.ATH(df, price='High')</text:span></text:p>
+    <text:p text:style-name="P24"><text:span text:style-name="T1">dict of lists of floats = jhta.ATH(df, price='High')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -6915,7 +6916,7 @@ Time High | DONE</text:h>
 Major Correction | DONE</text:h>
 <text:list text:style-name="L5">
   <text:list-item>
-    <text:p text:style-name="P25"><text:span text:style-name="T2">dict of lists = jhta.LMC(df, price='Low')</text:span></text:p>
+    <text:p text:style-name="P25"><text:span text:style-name="T2">dict of lists of floats = jhta.LMC(df, price='Low')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -6923,7 +6924,7 @@ Major Correction | DONE</text:h>
 Point | DONE</text:h>
 <text:list text:style-name="L6">
   <text:list-item>
-    <text:p text:style-name="P26"><text:span text:style-name="T3">dict of lists = jhta.PP(df)</text:span></text:p>
+    <text:p text:style-name="P26"><text:span text:style-name="T3">dict of lists of floats = jhta.PP(df)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P26"><text:a xlink:type="simple" xlink:href="https://en.wikipedia.org/wiki/Pivot_point_(technical_analysis)" office:name=""><text:span text:style-name="Definition">https://en.wikipedia.org/wiki/Pivot_point_(technical_analysis)</text:span></text:a></text:p>
@@ -6934,7 +6935,7 @@ Point | DONE</text:h>
 Fibonacci Price Retracements | DONE</text:h>
 <text:list text:style-name="L7">
   <text:list-item>
-    <text:p text:style-name="P27"><text:span text:style-name="T4">dict of lists = jhta.FIBOPR(df, price='Close')</text:span></text:p>
+    <text:p text:style-name="P27"><text:span text:style-name="T4">dict of lists of floats = jhta.FIBOPR(df, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -6949,7 +6950,7 @@ Fibonacci Time Retracements |</text:h>
 W. D. Gann Price Retracements | DONE</text:h>
 <text:list text:style-name="L9">
   <text:list-item>
-    <text:p text:style-name="P29"><text:span text:style-name="T5">dict of lists = jhta.GANNPR(df, price='Close')</text:span></text:p>
+    <text:p text:style-name="P29"><text:span text:style-name="T5">dict of lists of floats = jhta.GANNPR(df, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7064,7 +7065,7 @@ Moon Cycle |</text:h>
 Candle Body Size | DONE</text:h>
 <text:list text:style-name="L24">
   <text:list-item>
-    <text:p text:style-name="P44"><text:span text:style-name="T8">list = jhta.CDLBODYS(df)</text:span></text:p>
+    <text:p text:style-name="P44"><text:span text:style-name="T8">list of floats = jhta.CDLBODYS(df)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P44"><text:a xlink:type="simple" xlink:href="https://www.tradeciety.com/understand-candlesticks-patterns/" office:name=""><text:span text:style-name="Definition">https://www.tradeciety.com/understand-candlesticks-patterns/</text:span></text:a></text:p>
@@ -7075,7 +7076,7 @@ Candle Body Size | DONE</text:h>
 Candle Wick Size | DONE</text:h>
 <text:list text:style-name="L25">
   <text:list-item>
-    <text:p text:style-name="P45"><text:span text:style-name="T9">list = jhta.CDLWICKS(df)</text:span></text:p>
+    <text:p text:style-name="P45"><text:span text:style-name="T9">list of floats = jhta.CDLWICKS(df)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P45"><text:a xlink:type="simple" xlink:href="https://www.tradeciety.com/understand-candlesticks-patterns/" office:name=""><text:span text:style-name="Definition">https://www.tradeciety.com/understand-candlesticks-patterns/</text:span></text:a></text:p>
@@ -7086,7 +7087,7 @@ Candle Wick Size | DONE</text:h>
 | Candle Upper Shadow Size | DONE</text:h>
 <text:list text:style-name="L26">
   <text:list-item>
-    <text:p text:style-name="P46"><text:span text:style-name="T10">list = jhta.CDLUPPSHAS(df)</text:span></text:p>
+    <text:p text:style-name="P46"><text:span text:style-name="T10">list of floats = jhta.CDLUPPSHAS(df)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P46"><text:a xlink:type="simple" xlink:href="https://www.tradeciety.com/understand-candlesticks-patterns/" office:name=""><text:span text:style-name="Definition">https://www.tradeciety.com/understand-candlesticks-patterns/</text:span></text:a></text:p>
@@ -7097,7 +7098,7 @@ Candle Wick Size | DONE</text:h>
 | Candle Lower Shadow Size | DONE</text:h>
 <text:list text:style-name="L27">
   <text:list-item>
-    <text:p text:style-name="P47"><text:span text:style-name="T11">list = jhta.CDLLOWSHAS(df)</text:span></text:p>
+    <text:p text:style-name="P47"><text:span text:style-name="T11">list of floats = jhta.CDLLOWSHAS(df)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P47"><text:a xlink:type="simple" xlink:href="https://www.tradeciety.com/understand-candlesticks-patterns/" office:name=""><text:span text:style-name="Definition">https://www.tradeciety.com/understand-candlesticks-patterns/</text:span></text:a></text:p>
@@ -7108,7 +7109,7 @@ Candle Wick Size | DONE</text:h>
 Candle Body Percent | DONE</text:h>
 <text:list text:style-name="L28">
   <text:list-item>
-    <text:p text:style-name="P48"><text:span text:style-name="T12">list = jhta.CDLBODYP(p)</text:span></text:p>
+    <text:p text:style-name="P48"><text:span text:style-name="T12">list of floats = jhta.CDLBODYP(p)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7116,7 +7117,7 @@ Candle Body Percent | DONE</text:h>
 Candle Body Momentum | DONE</text:h>
 <text:list text:style-name="L29">
   <text:list-item>
-    <text:p text:style-name="P49"><text:span text:style-name="T13">list = jhta.CDLBODYM(df, n)</text:span></text:p>
+    <text:p text:style-name="P49"><text:span text:style-name="T13">list of floats = jhta.CDLBODYM(df, n)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P49">book: Trading Systems and
@@ -7128,7 +7129,7 @@ Candle Body Momentum | DONE</text:h>
 Qstick | DONE</text:h>
 <text:list text:style-name="L30">
   <text:list-item>
-    <text:p text:style-name="P50"><text:span text:style-name="T14">list = jhta.QSTICK(df, n)</text:span></text:p>
+    <text:p text:style-name="P50"><text:span text:style-name="T14">list of floats = jhta.QSTICK(df, n)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P50"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=Qstick.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=Qstick.htm</text:span></text:a></text:p>
@@ -7139,7 +7140,7 @@ Qstick | DONE</text:h>
 Shadow Trends | DONE</text:h>
 <text:list text:style-name="L31">
   <text:list-item>
-    <text:p text:style-name="P51"><text:span text:style-name="T15">dict of lists = jhta.SHADOWT(df, n)</text:span></text:p>
+    <text:p text:style-name="P51"><text:span text:style-name="T15">dict of lists of floats = jhta.SHADOWT(df, n)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P51">book: The New Technical
@@ -7151,7 +7152,7 @@ Shadow Trends | DONE</text:h>
 Intraday Momentum Index | DONE</text:h>
 <text:list text:style-name="L32">
   <text:list-item>
-    <text:p text:style-name="P52"><text:span text:style-name="T16">list = jhta.IMI(df)</text:span></text:p>
+    <text:p text:style-name="P52"><text:span text:style-name="T16">list of floats = jhta.IMI(df)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P52"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=IMI.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=IMI.htm</text:span></text:a></text:p>
@@ -7206,7 +7207,7 @@ Hilbert Transform - SineWave |</text:h>
 Score | DONE</text:h>
 <text:list text:style-name="L39">
   <text:list-item>
-    <text:p text:style-name="P59"><text:span text:style-name="T17">list = jhta.TS(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P59"><text:span text:style-name="T17">list of floats = jhta.TS(df, n, price='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P59"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=TrendScore.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=TrendScore.htm</text:span></text:a></text:p>
@@ -7218,7 +7219,7 @@ Score | DONE</text:h>
 CSV file 2 DataFeed | DONE</text:h>
 <text:list text:style-name="L40">
   <text:list-item>
-    <text:p text:style-name="P60"><text:span text:style-name="T18">dict of tuples = jhta.CSV2DF(csv_file_path)</text:span></text:p>
+    <text:p text:style-name="P60"><text:span text:style-name="T18">dict of tuples of floats = jhta.CSV2DF(csv_file_path)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7226,7 +7227,7 @@ CSV file 2 DataFeed | DONE</text:h>
 | CSV file url 2 DataFeed | DONE</text:h>
 <text:list text:style-name="L41">
   <text:list-item>
-    <text:p text:style-name="P61"><text:span text:style-name="T19">dict of tuples = jhta.CSVURL2DF(csv_file_url)</text:span></text:p>
+    <text:p text:style-name="P61"><text:span text:style-name="T19">dict of tuples of floats = jhta.CSVURL2DF(csv_file_url)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7242,7 +7243,7 @@ DataFeed 2 CSV file | DONE</text:h>
 DataFeed 2 DataFeed Reversed | DONE</text:h>
 <text:list text:style-name="L43">
   <text:list-item>
-    <text:p text:style-name="P63"><text:span text:style-name="T21">dict of tuples = jhta.DF2DFREV(df)</text:span></text:p>
+    <text:p text:style-name="P63"><text:span text:style-name="T21">dict of tuples of floats = jhta.DF2DFREV(df)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7250,7 +7251,7 @@ DataFeed 2 DataFeed Reversed | DONE</text:h>
 DataFeed 2 DataFeed Window | DONE</text:h>
 <text:list text:style-name="L44">
   <text:list-item>
-    <text:p text:style-name="P64"><text:span text:style-name="T22">dict of tuples = jhta.DF2DFWIN(df, start=0, end=10)</text:span></text:p>
+    <text:p text:style-name="P64"><text:span text:style-name="T22">dict of tuples of floats = jhta.DF2DFWIN(df, start=0, end=10)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7258,7 +7259,7 @@ DataFeed 2 DataFeed Window | DONE</text:h>
 DataFeed HEAD | DONE</text:h>
 <text:list text:style-name="L45">
   <text:list-item>
-    <text:p text:style-name="P65"><text:span text:style-name="T23">dict of tuples = jhta.DF_HEAD(df, n=5)</text:span></text:p>
+    <text:p text:style-name="P65"><text:span text:style-name="T23">dict of tuples of floats = jhta.DF_HEAD(df, n=5)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7266,7 +7267,7 @@ DataFeed HEAD | DONE</text:h>
 DataFeed TAIL | DONE</text:h>
 <text:list text:style-name="L46">
   <text:list-item>
-    <text:p text:style-name="P66"><text:span text:style-name="T24">dict of tuples = jhta.DF_TAIL(df, n=5)</text:span></text:p>
+    <text:p text:style-name="P66"><text:span text:style-name="T24">dict of tuples of floats = jhta.DF_TAIL(df, n=5)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7274,7 +7275,7 @@ DataFeed TAIL | DONE</text:h>
 | DataFeed 2 Heikin-Ashi DataFeed | DONE</text:h>
 <text:list text:style-name="L47">
   <text:list-item>
-    <text:p text:style-name="P67"><text:span text:style-name="T25">dict of tuples = jhta.DF2HEIKIN_ASHI(df)</text:span></text:p>
+    <text:p text:style-name="P67"><text:span text:style-name="T25">dict of tuples of floats = jhta.DF2HEIKIN_ASHI(df)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7284,7 +7285,7 @@ Driven</text:span></text:a></text:h>
 Accumulation Swing Index (J. Welles Wilder) | DONE</text:h>
 <text:list text:style-name="L48">
   <text:list-item>
-    <text:p text:style-name="P68"><text:span text:style-name="T26">list = jhta.ASI(df, L)</text:span></text:p>
+    <text:p text:style-name="P68"><text:span text:style-name="T26">list of floats = jhta.ASI(df, L)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P68">book: New Concepts in Technical
@@ -7296,7 +7297,7 @@ Accumulation Swing Index (J. Welles Wilder) | DONE</text:h>
 Index (J. Welles Wilder) | DONE</text:h>
 <text:list text:style-name="L49">
   <text:list-item>
-    <text:p text:style-name="P69"><text:span text:style-name="T27">list = jhta.SI(df, L)</text:span></text:p>
+    <text:p text:style-name="P69"><text:span text:style-name="T27">list of floats = jhta.SI(df, L)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P69">book: New Concepts in Technical
@@ -7309,7 +7310,7 @@ Index (J. Welles Wilder) | DONE</text:h>
 Swing Average Price - previous Average Price | DONE</text:h>
 <text:list text:style-name="L50">
   <text:list-item>
-    <text:p text:style-name="P70"><text:span text:style-name="T28">list = jhta.JH_SAVGP(df)</text:span></text:p>
+    <text:p text:style-name="P70"><text:span text:style-name="T28">list of floats = jhta.JH_SAVGP(df)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7317,7 +7318,7 @@ Swing Average Price - previous Average Price | DONE</text:h>
 | Swing Average Price - previous Average Price Summation | DONE</text:h>
 <text:list text:style-name="L51">
   <text:list-item>
-    <text:p text:style-name="P71"><text:span text:style-name="T29">list = jhta.JH_SAVGPS(df)</text:span></text:p>
+    <text:p text:style-name="P71"><text:span text:style-name="T29">list of floats = jhta.JH_SAVGPS(df)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7325,7 +7326,7 @@ Swing Average Price - previous Average Price | DONE</text:h>
 Swing Close - Open | DONE</text:h>
 <text:list text:style-name="L52">
   <text:list-item>
-    <text:p text:style-name="P72"><text:span text:style-name="T30">list = jhta.JH_SCO(df)</text:span></text:p>
+    <text:p text:style-name="P72"><text:span text:style-name="T30">list of floats = jhta.JH_SCO(df)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7333,7 +7334,7 @@ Swing Close - Open | DONE</text:h>
 Swing Close - Open Summation | DONE</text:h>
 <text:list text:style-name="L53">
   <text:list-item>
-    <text:p text:style-name="P73"><text:span text:style-name="T31">list = jhta.JH_SCOS(df)</text:span></text:p>
+    <text:p text:style-name="P73"><text:span text:style-name="T31">list of floats = jhta.JH_SCOS(df)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7341,7 +7342,7 @@ Swing Close - Open Summation | DONE</text:h>
 Swing Median Price - previous Median Price | DONE</text:h>
 <text:list text:style-name="L54">
   <text:list-item>
-    <text:p text:style-name="P74"><text:span text:style-name="T32">list = jhta.JH_SMEDP(df)</text:span></text:p>
+    <text:p text:style-name="P74"><text:span text:style-name="T32">list of floats = jhta.JH_SMEDP(df)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7349,7 +7350,7 @@ Swing Median Price - previous Median Price | DONE</text:h>
 | Swing Median Price - previous Median Price Summation | DONE</text:h>
 <text:list text:style-name="L55">
   <text:list-item>
-    <text:p text:style-name="P75"><text:span text:style-name="T33">list = jhta.JH_SMEDPS(df)</text:span></text:p>
+    <text:p text:style-name="P75"><text:span text:style-name="T33">list of floats = jhta.JH_SMEDPS(df)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7357,7 +7358,7 @@ Swing Median Price - previous Median Price | DONE</text:h>
 Swing Price - previous Price | DONE</text:h>
 <text:list text:style-name="L56">
   <text:list-item>
-    <text:p text:style-name="P76"><text:span text:style-name="T34">list = jhta.JH_SPP(df, price='Close')</text:span></text:p>
+    <text:p text:style-name="P76"><text:span text:style-name="T34">list of floats = jhta.JH_SPP(df, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7365,7 +7366,7 @@ Swing Price - previous Price | DONE</text:h>
 Swing Price - previous Price Summation | DONE</text:h>
 <text:list text:style-name="L57">
   <text:list-item>
-    <text:p text:style-name="P77"><text:span text:style-name="T35">list = jhta.JH_SPPS(df, price='Close')</text:span></text:p>
+    <text:p text:style-name="P77"><text:span text:style-name="T35">list of floats = jhta.JH_SPPS(df, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7373,7 +7374,7 @@ Swing Price - previous Price Summation | DONE</text:h>
 Swing Typical Price - previous Typical Price | DONE</text:h>
 <text:list text:style-name="L58">
   <text:list-item>
-    <text:p text:style-name="P78"><text:span text:style-name="T36">list = jhta.JH_STYPP(df)</text:span></text:p>
+    <text:p text:style-name="P78"><text:span text:style-name="T36">list of floats = jhta.JH_STYPP(df)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7381,7 +7382,7 @@ Swing Typical Price - previous Typical Price | DONE</text:h>
 | Swing Typical Price - previous Typical Price Summation | DONE</text:h>
 <text:list text:style-name="L59">
   <text:list-item>
-    <text:p text:style-name="P79"><text:span text:style-name="T37">list = jhta.JH_STYPPS(df)</text:span></text:p>
+    <text:p text:style-name="P79"><text:span text:style-name="T37">list of floats = jhta.JH_STYPPS(df)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7390,7 +7391,7 @@ Swing Weighted Close Price - previous Weighted Close Price |
 DONE</text:h>
 <text:list text:style-name="L60">
   <text:list-item>
-    <text:p text:style-name="P80"><text:span text:style-name="T38">list = jhta.JH_SWCLP(df)</text:span></text:p>
+    <text:p text:style-name="P80"><text:span text:style-name="T38">list of floats = jhta.JH_SWCLP(df)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7399,7 +7400,7 @@ DONE</text:h>
 DONE</text:h>
 <text:list text:style-name="L61">
   <text:list-item>
-    <text:p text:style-name="P81"><text:span text:style-name="T39">list = jhta.JH_SWCLPS(df)</text:span></text:p>
+    <text:p text:style-name="P81"><text:span text:style-name="T39">list of floats = jhta.JH_SWCLPS(df)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7408,7 +7409,7 @@ DONE</text:h>
 | Normalize | DONE</text:h>
 <text:list text:style-name="L62">
   <text:list-item>
-    <text:p text:style-name="P82"><text:span text:style-name="T40">list = jhta.NORMALIZE(df, price_max='High', price_min='Low', price='Close')</text:span></text:p>
+    <text:p text:style-name="P82"><text:span text:style-name="T40">list of floats = jhta.NORMALIZE(df, price_max='High', price_min='Low', price='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P82"><text:a xlink:type="simple" xlink:href="https://machinelearningmastery.com/normalize-standardize-time-series-data-python/" office:name=""><text:span text:style-name="Definition">https://machinelearningmastery.com/normalize-standardize-time-series-data-python/</text:span></text:a></text:p>
@@ -7419,7 +7420,7 @@ DONE</text:h>
 | Standardize | DONE</text:h>
 <text:list text:style-name="L63">
   <text:list-item>
-    <text:p text:style-name="P83"><text:span text:style-name="T41">list = jhta.STANDARDIZE(df, price='Close')</text:span></text:p>
+    <text:p text:style-name="P83"><text:span text:style-name="T41">list of floats = jhta.STANDARDIZE(df, price='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P83"><text:a xlink:type="simple" xlink:href="https://machinelearningmastery.com/normalize-standardize-time-series-data-python/" office:name=""><text:span text:style-name="Definition">https://machinelearningmastery.com/normalize-standardize-time-series-data-python/</text:span></text:a></text:p>
@@ -7430,7 +7431,7 @@ DONE</text:h>
 Spread | DONE</text:h>
 <text:list text:style-name="L64">
   <text:list-item>
-    <text:p text:style-name="P84"><text:span text:style-name="T42">list = jhta.SPREAD(df1, df2, price1='Close', price2='Close')</text:span></text:p>
+    <text:p text:style-name="P84"><text:span text:style-name="T42">list of floats = jhta.SPREAD(df1, df2, price1='Close', price2='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7438,7 +7439,7 @@ Spread | DONE</text:h>
 Comparative Performance | DONE</text:h>
 <text:list text:style-name="L65">
   <text:list-item>
-    <text:p text:style-name="P85"><text:span text:style-name="T43">list = jhta.CP(df1, df2, price1='Close', price2='Close')</text:span></text:p>
+    <text:p text:style-name="P85"><text:span text:style-name="T43">list of floats = jhta.CP(df1, df2, price1='Close', price2='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P85"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=CompPerformance.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=CompPerformance.htm</text:span></text:a></text:p>
@@ -7449,7 +7450,7 @@ Comparative Performance | DONE</text:h>
 Comparative Relative Strength Index | DONE</text:h>
 <text:list text:style-name="L66">
   <text:list-item>
-    <text:p text:style-name="P86"><text:span text:style-name="T44">list = jhta.CRSI(df1, df2, n, price1='Close', price2='Close')</text:span></text:p>
+    <text:p text:style-name="P86"><text:span text:style-name="T44">list of floats = jhta.CRSI(df1, df2, n, price1='Close', price2='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P86"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=RSIC.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=RSIC.htm</text:span></text:a></text:p>
@@ -7460,7 +7461,7 @@ Comparative Relative Strength Index | DONE</text:h>
 Comparative Strength | DONE</text:h>
 <text:list text:style-name="L67">
   <text:list-item>
-    <text:p text:style-name="P87"><text:span text:style-name="T45">list = jhta.CS(df1, df2, price1='Close', price2='Close')</text:span></text:p>
+    <text:p text:style-name="P87"><text:span text:style-name="T45">list of floats = jhta.CS(df1, df2, price1='Close', price2='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P87"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=CompStrength.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=CompStrength.htm</text:span></text:a></text:p>
@@ -7535,7 +7536,7 @@ Functions</text:span></text:a></text:h>
 Exponential | DONE</text:h>
 <text:list text:style-name="L74">
   <text:list-item>
-    <text:p text:style-name="P94"><text:span text:style-name="T52">list = jhta.EXP(df, price='Close')</text:span></text:p>
+    <text:p text:style-name="P94"><text:span text:style-name="T52">list of floats = jhta.EXP(df, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7543,7 +7544,7 @@ Exponential | DONE</text:h>
 Logarithm | DONE</text:h>
 <text:list text:style-name="L75">
   <text:list-item>
-    <text:p text:style-name="P95"><text:span text:style-name="T53">list = jhta.LOG(df, price='Close')</text:span></text:p>
+    <text:p text:style-name="P95"><text:span text:style-name="T53">list of floats = jhta.LOG(df, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7551,7 +7552,7 @@ Logarithm | DONE</text:h>
 Base-10 Logarithm | DONE</text:h>
 <text:list text:style-name="L76">
   <text:list-item>
-    <text:p text:style-name="P96"><text:span text:style-name="T54">list = jhta.LOG10(df, price='Close')</text:span></text:p>
+    <text:p text:style-name="P96"><text:span text:style-name="T54">list of floats = jhta.LOG10(df, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7559,7 +7560,7 @@ Base-10 Logarithm | DONE</text:h>
 Square Root | DONE</text:h>
 <text:list text:style-name="L77">
   <text:list-item>
-    <text:p text:style-name="P97"><text:span text:style-name="T55">list = jhta.SQRT(df, price='Close')</text:span></text:p>
+    <text:p text:style-name="P97"><text:span text:style-name="T55">list of floats = jhta.SQRT(df, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7567,7 +7568,7 @@ Square Root | DONE</text:h>
 Cosine | DONE</text:h>
 <text:list text:style-name="L78">
   <text:list-item>
-    <text:p text:style-name="P98"><text:span text:style-name="T56">list = jhta.ACOS(df, price='Close')</text:span></text:p>
+    <text:p text:style-name="P98"><text:span text:style-name="T56">list of floats = jhta.ACOS(df, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7575,7 +7576,7 @@ Cosine | DONE</text:h>
 Sine | DONE</text:h>
 <text:list text:style-name="L79">
   <text:list-item>
-    <text:p text:style-name="P99"><text:span text:style-name="T57">list = jhta.ASIN(df, price='Close')</text:span></text:p>
+    <text:p text:style-name="P99"><text:span text:style-name="T57">list of floats = jhta.ASIN(df, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7583,7 +7584,7 @@ Sine | DONE</text:h>
 Tangent | DONE</text:h>
 <text:list text:style-name="L80">
   <text:list-item>
-    <text:p text:style-name="P100"><text:span text:style-name="T58">list = jhta.ATAN(df, price='Close')</text:span></text:p>
+    <text:p text:style-name="P100"><text:span text:style-name="T58">list of floats = jhta.ATAN(df, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7591,7 +7592,7 @@ Tangent | DONE</text:h>
 Cosine | DONE</text:h>
 <text:list text:style-name="L81">
   <text:list-item>
-    <text:p text:style-name="P101"><text:span text:style-name="T59">list = jhta.COS(df, price='Close')</text:span></text:p>
+    <text:p text:style-name="P101"><text:span text:style-name="T59">list of floats = jhta.COS(df, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7599,7 +7600,7 @@ Cosine | DONE</text:h>
 | DONE</text:h>
 <text:list text:style-name="L82">
   <text:list-item>
-    <text:p text:style-name="P102"><text:span text:style-name="T60">list = jhta.SIN(df, price='Close')</text:span></text:p>
+    <text:p text:style-name="P102"><text:span text:style-name="T60">list of floats = jhta.SIN(df, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7607,7 +7608,7 @@ Cosine | DONE</text:h>
 Tangent | DONE</text:h>
 <text:list text:style-name="L83">
   <text:list-item>
-    <text:p text:style-name="P103"><text:span text:style-name="T61">list = jhta.TAN(df, price='Close')</text:span></text:p>
+    <text:p text:style-name="P103"><text:span text:style-name="T61">list of floats = jhta.TAN(df, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7615,7 +7616,7 @@ Tangent | DONE</text:h>
 Inverse Hyperbolic Cosine | DONE</text:h>
 <text:list text:style-name="L84">
   <text:list-item>
-    <text:p text:style-name="P104"><text:span text:style-name="T62">list = jhta.ACOSH(df, price='Close')</text:span></text:p>
+    <text:p text:style-name="P104"><text:span text:style-name="T62">list of floats = jhta.ACOSH(df, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7623,7 +7624,7 @@ Inverse Hyperbolic Cosine | DONE</text:h>
 Inverse Hyperbolic Sine | DONE</text:h>
 <text:list text:style-name="L85">
   <text:list-item>
-    <text:p text:style-name="P105"><text:span text:style-name="T63">list = jhta.ASINH(df, price='Close')</text:span></text:p>
+    <text:p text:style-name="P105"><text:span text:style-name="T63">list of floats = jhta.ASINH(df, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7631,7 +7632,7 @@ Inverse Hyperbolic Sine | DONE</text:h>
 Inverse Hyperbolic Tangent | DONE</text:h>
 <text:list text:style-name="L86">
   <text:list-item>
-    <text:p text:style-name="P106"><text:span text:style-name="T64">list = jhta.ATANH(df, price='Close')</text:span></text:p>
+    <text:p text:style-name="P106"><text:span text:style-name="T64">list of floats = jhta.ATANH(df, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7639,7 +7640,7 @@ Inverse Hyperbolic Tangent | DONE</text:h>
 Hyperbolic Cosine | DONE</text:h>
 <text:list text:style-name="L87">
   <text:list-item>
-    <text:p text:style-name="P107"><text:span text:style-name="T65">list = jhta.COSH(df, price='Close')</text:span></text:p>
+    <text:p text:style-name="P107"><text:span text:style-name="T65">list of floats = jhta.COSH(df, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7647,7 +7648,7 @@ Hyperbolic Cosine | DONE</text:h>
 Hyperbolic Sine | DONE</text:h>
 <text:list text:style-name="L88">
   <text:list-item>
-    <text:p text:style-name="P108"><text:span text:style-name="T66">list = jhta.SINH(df, price='Close')</text:span></text:p>
+    <text:p text:style-name="P108"><text:span text:style-name="T66">list of floats = jhta.SINH(df, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7655,7 +7656,7 @@ Hyperbolic Sine | DONE</text:h>
 Hyperbolic Tangent | DONE</text:h>
 <text:list text:style-name="L89">
   <text:list-item>
-    <text:p text:style-name="P109"><text:span text:style-name="T67">list = jhta.TANH(df, price='Close')</text:span></text:p>
+    <text:p text:style-name="P109"><text:span text:style-name="T67">list of floats = jhta.TANH(df, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7695,7 +7696,7 @@ Mathematical constant PHI | DONE</text:h>
 Ceiling | DONE</text:h>
 <text:list text:style-name="L94">
   <text:list-item>
-    <text:p text:style-name="P114"><text:span text:style-name="T72">list = jhta.CEIL(df, price='Close')</text:span></text:p>
+    <text:p text:style-name="P114"><text:span text:style-name="T72">list of floats = jhta.CEIL(df, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7703,7 +7704,7 @@ Ceiling | DONE</text:h>
 Floor | DONE</text:h>
 <text:list text:style-name="L95">
   <text:list-item>
-    <text:p text:style-name="P115"><text:span text:style-name="T73">list = jhta.FLOOR(df, price='Close')</text:span></text:p>
+    <text:p text:style-name="P115"><text:span text:style-name="T73">list of floats = jhta.FLOOR(df, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7711,7 +7712,7 @@ Floor | DONE</text:h>
 Radians to Degrees | DONE</text:h>
 <text:list text:style-name="L96">
   <text:list-item>
-    <text:p text:style-name="P116"><text:span text:style-name="T74">list = jhta.DEGREES(df, price='Close')</text:span></text:p>
+    <text:p text:style-name="P116"><text:span text:style-name="T74">list of floats = jhta.DEGREES(df, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7719,7 +7720,7 @@ Radians to Degrees | DONE</text:h>
 Degrees to Radians | DONE</text:h>
 <text:list text:style-name="L97">
   <text:list-item>
-    <text:p text:style-name="P117"><text:span text:style-name="T75">list = jhta.RADIANS(df, price='Close')</text:span></text:p>
+    <text:p text:style-name="P117"><text:span text:style-name="T75">list of floats = jhta.RADIANS(df, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7727,7 +7728,7 @@ Degrees to Radians | DONE</text:h>
 Addition High + Low | DONE</text:h>
 <text:list text:style-name="L98">
   <text:list-item>
-    <text:p text:style-name="P118"><text:span text:style-name="T76">list = jhta.ADD(df)</text:span></text:p>
+    <text:p text:style-name="P118"><text:span text:style-name="T76">list of floats = jhta.ADD(df)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7735,7 +7736,7 @@ Addition High + Low | DONE</text:h>
 Division High / Low | DONE</text:h>
 <text:list text:style-name="L99">
   <text:list-item>
-    <text:p text:style-name="P119"><text:span text:style-name="T77">list = jhta.DIV(df)</text:span></text:p>
+    <text:p text:style-name="P119"><text:span text:style-name="T77">list of floats = jhta.DIV(df)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7743,7 +7744,7 @@ Division High / Low | DONE</text:h>
 Highest value over a specified period | DONE</text:h>
 <text:list text:style-name="L100">
   <text:list-item>
-    <text:p text:style-name="P120"><text:span text:style-name="T78">list = jhta.MAX(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P120"><text:span text:style-name="T78">list of floats = jhta.MAX(df, n, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7758,7 +7759,7 @@ Index of highest value over a specified period |</text:h>
 Lowest value over a specified period | DONE</text:h>
 <text:list text:style-name="L102">
   <text:list-item>
-    <text:p text:style-name="P122"><text:span text:style-name="T79">list = jhta.MIN(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P122"><text:span text:style-name="T79">list of floats = jhta.MIN(df, n, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7788,7 +7789,7 @@ Lowest and Highest values over a specified period |</text:h>
 Multiply High * Low | DONE</text:h>
 <text:list text:style-name="L106">
   <text:list-item>
-    <text:p text:style-name="P126"><text:span text:style-name="T80">list = jhta.MULT(df)</text:span></text:p>
+    <text:p text:style-name="P126"><text:span text:style-name="T80">list of floats = jhta.MULT(df)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7796,7 +7797,7 @@ Multiply High * Low | DONE</text:h>
 Subtraction High - Low | DONE</text:h>
 <text:list text:style-name="L107">
   <text:list-item>
-    <text:p text:style-name="P127"><text:span text:style-name="T81">list = jhta.SUB(df)</text:span></text:p>
+    <text:p text:style-name="P127"><text:span text:style-name="T81">list of floats = jhta.SUB(df)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7804,7 +7805,7 @@ Subtraction High - Low | DONE</text:h>
 Summation | DONE</text:h>
 <text:list text:style-name="L108">
   <text:list-item>
-    <text:p text:style-name="P128"><text:span text:style-name="T82">list = jhta.SUM(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P128"><text:span text:style-name="T82">list of floats = jhta.SUM(df, n, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7828,7 +7829,7 @@ Average Directional Movement Index Rating |</text:h>
 Absolute Price Oscillator | DONE</text:h>
 <text:list text:style-name="L111">
   <text:list-item>
-    <text:p text:style-name="P131"><text:span text:style-name="T83">list = jhta.APO(df, n_fast, n_slow, price='Close')</text:span></text:p>
+    <text:p text:style-name="P131"><text:span text:style-name="T83">list of floats = jhta.APO(df, n_fast, n_slow, price='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P131"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=PriceOscillator.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=PriceOscillator.htm</text:span></text:a></text:p>
@@ -7923,7 +7924,7 @@ Minus Directional Movement |</text:h>
 Momentum | DONE</text:h>
 <text:list text:style-name="L124">
   <text:list-item>
-    <text:p text:style-name="P144"><text:span text:style-name="T84">list = jhta.MOM(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P144"><text:span text:style-name="T84">list of floats = jhta.MOM(df, n, price='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P144"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=Momentum.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=Momentum.htm</text:span></text:a></text:p>
@@ -7955,7 +7956,7 @@ Percentage Price Oscillator |</text:h>
 Relative Momentum Index | DONE</text:h>
 <text:list text:style-name="L128">
   <text:list-item>
-    <text:p text:style-name="P148"><text:span text:style-name="T85">list = jhta.RMI(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P148"><text:span text:style-name="T85">list of floats = jhta.RMI(df, n, price='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P148"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=RMI.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=RMI.htm</text:span></text:a></text:p>
@@ -7966,7 +7967,7 @@ Relative Momentum Index | DONE</text:h>
 of Change | DONE</text:h>
 <text:list text:style-name="L129">
   <text:list-item>
-    <text:p text:style-name="P149"><text:span text:style-name="T86">list = jhta.ROC(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P149"><text:span text:style-name="T86">list of floats = jhta.ROC(df, n, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7974,7 +7975,7 @@ of Change | DONE</text:h>
 Rate of Change Percentage | DONE</text:h>
 <text:list text:style-name="L130">
   <text:list-item>
-    <text:p text:style-name="P150"><text:span text:style-name="T87">list = jhta.ROCP(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P150"><text:span text:style-name="T87">list of floats = jhta.ROCP(df, n, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7982,7 +7983,7 @@ Rate of Change Percentage | DONE</text:h>
 Rate of Change Ratio | DONE</text:h>
 <text:list text:style-name="L131">
   <text:list-item>
-    <text:p text:style-name="P151"><text:span text:style-name="T88">list = jhta.ROCR(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P151"><text:span text:style-name="T88">list of floats = jhta.ROCR(df, n, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7990,7 +7991,7 @@ Rate of Change Ratio | DONE</text:h>
 Rate of Change Ratio 100 scale | DONE</text:h>
 <text:list text:style-name="L132">
   <text:list-item>
-    <text:p text:style-name="P152"><text:span text:style-name="T89">list = jhta.ROCR100(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P152"><text:span text:style-name="T89">list of floats = jhta.ROCR100(df, n, price='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P152"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=RateOfChange.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=RateOfChange.htm</text:span></text:a></text:p>
@@ -8001,7 +8002,7 @@ Rate of Change Ratio 100 scale | DONE</text:h>
 Relative Strength Index | DONE</text:h>
 <text:list text:style-name="L133">
   <text:list-item>
-    <text:p text:style-name="P153"><text:span text:style-name="T90">list = jhta.RSI(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P153"><text:span text:style-name="T90">list of floats = jhta.RSI(df, n, price='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P153"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=rsi.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=rsi.htm</text:span></text:a></text:p>
@@ -8012,7 +8013,7 @@ Relative Strength Index | DONE</text:h>
 Stochastic | DONE</text:h>
 <text:list text:style-name="L134">
   <text:list-item>
-    <text:p text:style-name="P154"><text:span text:style-name="T91">list = jhta.STOCH(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P154"><text:span text:style-name="T91">list of floats = jhta.STOCH(df, n, price='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P154"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=Stochastic.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=Stochastic.htm</text:span></text:a></text:p>
@@ -8051,7 +8052,7 @@ Ultimate Oscillator |</text:h>
 Williams' %R | DONE</text:h>
 <text:list text:style-name="L139">
   <text:list-item>
-    <text:p text:style-name="P159"><text:span text:style-name="T92">list = jhta.WILLR(df, n)</text:span></text:p>
+    <text:p text:style-name="P159"><text:span text:style-name="T92">list of floats = jhta.WILLR(df, n)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P159"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=WilliamsR.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=WilliamsR.htm</text:span></text:a></text:p>
@@ -8064,7 +8065,7 @@ Studies</text:span></text:a></text:h>
 Bollinger Bands | DONE</text:h>
 <text:list text:style-name="L140">
   <text:list-item>
-    <text:p text:style-name="P160"><text:span text:style-name="T93">dict of lists = jhta.BBANDS(df, n, f=2)</text:span></text:p>
+    <text:p text:style-name="P160"><text:span text:style-name="T93">dict of lists of floats = jhta.BBANDS(df, n, f=2)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P160"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=Bollinger.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=Bollinger.htm</text:span></text:a></text:p>
@@ -8075,7 +8076,7 @@ Bollinger Bands | DONE</text:h>
 Bollinger Band Width | DONE</text:h>
 <text:list text:style-name="L141">
   <text:list-item>
-    <text:p text:style-name="P161"><text:span text:style-name="T94">list = jhta.BBANDW(df, n, f=2)</text:span></text:p>
+    <text:p text:style-name="P161"><text:span text:style-name="T94">list of floats = jhta.BBANDW(df, n, f=2)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P161"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=BollingerWidth.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=BollingerWidth.htm</text:span></text:a></text:p>
@@ -8090,9 +8091,13 @@ Double Exponential Moving Average |</text:h>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">EMA |
-Exponential Moving Average |</text:h>
+Exponential Moving Average | DONE</text:h>
 <text:list text:style-name="L143">
   <text:list-item>
+    <text:p text:style-name="P163"><text:span text:style-name="T95">list of floats = jhta.EMA(df, n, price='Close')</text:span></text:p>
+  </text:list-item>
+  <text:list-item>
+    <text:p text:style-name="P163"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=ExpMA.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=ExpMA.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -8100,7 +8105,7 @@ Exponential Moving Average |</text:h>
 Envelope Percent | DONE</text:h>
 <text:list text:style-name="L144">
   <text:list-item>
-    <text:p text:style-name="P164"><text:span text:style-name="T95">dict of lists = jhta.ENVP(df, pct=.01, price='Close')</text:span></text:p>
+    <text:p text:style-name="P164"><text:span text:style-name="T96">dict of lists of floats = jhta.ENVP(df, pct=.01, price='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P164"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=EnvelopePct.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=EnvelopePct.htm</text:span></text:a></text:p>
@@ -8139,7 +8144,7 @@ Moving Average with Variable Period |</text:h>
 MidPoint over period | DONE</text:h>
 <text:list text:style-name="L149">
   <text:list-item>
-    <text:p text:style-name="P169"><text:span text:style-name="T96">list = jhta.MIDPOINT(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P169"><text:span text:style-name="T97">list of floats = jhta.MIDPOINT(df, n, price='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P169"><text:a xlink:type="simple" xlink:href="http://www.tadoc.org/indicator/MIDPOINT.htm" office:name=""><text:span text:style-name="Definition">http://www.tadoc.org/indicator/MIDPOINT.htm</text:span></text:a></text:p>
@@ -8150,7 +8155,7 @@ MidPoint over period | DONE</text:h>
 MidPoint Price over period | DONE</text:h>
 <text:list text:style-name="L150">
   <text:list-item>
-    <text:p text:style-name="P170"><text:span text:style-name="T97">list = jhta.MIDPRICE(df, n)</text:span></text:p>
+    <text:p text:style-name="P170"><text:span text:style-name="T98">list of floats = jhta.MIDPRICE(df, n)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P170"><text:a xlink:type="simple" xlink:href="http://www.tadoc.org/indicator/MIDPRICE.htm" office:name=""><text:span text:style-name="Definition">http://www.tadoc.org/indicator/MIDPRICE.htm</text:span></text:a></text:p>
@@ -8161,7 +8166,7 @@ MidPoint Price over period | DONE</text:h>
 Mayer Multiple Ratio | DONE</text:h>
 <text:list text:style-name="L151">
   <text:list-item>
-    <text:p text:style-name="P171"><text:span text:style-name="T98">list = jhta.MMR(df, n=200, price='Close')</text:span></text:p>
+    <text:p text:style-name="P171"><text:span text:style-name="T99">list of floats = jhta.MMR(df, n=200, price='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P171"><text:a xlink:type="simple" xlink:href="https://www.theinvestorspodcast.com/bitcoin-mayer-multiple/" office:name=""><text:span text:style-name="Definition">https://www.theinvestorspodcast.com/bitcoin-mayer-multiple/</text:span></text:a></text:p>
@@ -8172,7 +8177,7 @@ Mayer Multiple Ratio | DONE</text:h>
 Parabolic SAR | DONE</text:h>
 <text:list text:style-name="L152">
   <text:list-item>
-    <text:p text:style-name="P172"><text:span text:style-name="T99">list = jhta.SAR(df, af_step=.02, af_max=.2)</text:span></text:p>
+    <text:p text:style-name="P172"><text:span text:style-name="T100">list of floats = jhta.SAR(df, af_step=.02, af_max=.2)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P172">book: New Concepts in Technical
@@ -8191,7 +8196,7 @@ Parabolic SAR - Extended |</text:h>
 Simple Moving Average | DONE</text:h>
 <text:list text:style-name="L154">
   <text:list-item>
-    <text:p text:style-name="P174"><text:span text:style-name="T100">list = jhta.SMA(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P174"><text:span text:style-name="T101">list of floats = jhta.SMA(df, n, price='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P174"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=SimpleMA.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=SimpleMA.htm</text:span></text:a></text:p>
@@ -8216,7 +8221,7 @@ Triple Exponential Moving Average |</text:h>
 Triangular Moving Average | DONE</text:h>
 <text:list text:style-name="L157">
   <text:list-item>
-    <text:p text:style-name="P177"><text:span text:style-name="T101">list = jhta.TRIMA(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P177"><text:span text:style-name="T102">list of floats = jhta.TRIMA(df, n, price='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P177"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=TriangularMA.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=TriangularMA.htm</text:span></text:a></text:p>
@@ -8360,7 +8365,7 @@ Transform</text:span></text:a></text:h>
 Average Price | DONE</text:h>
 <text:list text:style-name="L159">
   <text:list-item>
-    <text:p text:style-name="P179"><text:span text:style-name="T102">list = jhta.AVGPRICE(df)</text:span></text:p>
+    <text:p text:style-name="P179"><text:span text:style-name="T103">list of floats = jhta.AVGPRICE(df)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P179"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=AvgPrices.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=AvgPrices.htm</text:span></text:a></text:p>
@@ -8371,7 +8376,7 @@ Average Price | DONE</text:h>
 Median Price | DONE</text:h>
 <text:list text:style-name="L160">
   <text:list-item>
-    <text:p text:style-name="P180"><text:span text:style-name="T103">list = jhta.MEDPRICE(df)</text:span></text:p>
+    <text:p text:style-name="P180"><text:span text:style-name="T104">list of floats = jhta.MEDPRICE(df)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P180"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=MedianPrices.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=MedianPrices.htm</text:span></text:a></text:p>
@@ -8382,7 +8387,7 @@ Median Price | DONE</text:h>
 Typical Price | DONE</text:h>
 <text:list text:style-name="L161">
   <text:list-item>
-    <text:p text:style-name="P181"><text:span text:style-name="T104">list = jhta.TYPPRICE(df)</text:span></text:p>
+    <text:p text:style-name="P181"><text:span text:style-name="T105">list of floats = jhta.TYPPRICE(df)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P181"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=TypicalPrices.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=TypicalPrices.htm</text:span></text:a></text:p>
@@ -8393,7 +8398,7 @@ Typical Price | DONE</text:h>
 Weighted Close Price | DONE</text:h>
 <text:list text:style-name="L162">
   <text:list-item>
-    <text:p text:style-name="P182"><text:span text:style-name="T105">list = jhta.WCLPRICE(df)</text:span></text:p>
+    <text:p text:style-name="P182"><text:span text:style-name="T106">list of floats = jhta.WCLPRICE(df)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P182"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=WeightedCloses.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=WeightedCloses.htm</text:span></text:a></text:p>
@@ -8406,7 +8411,7 @@ Functions</text:span></text:a></text:h>
 Arithmetic mean (average) of data | DONE</text:h>
 <text:list text:style-name="L163">
   <text:list-item>
-    <text:p text:style-name="P183"><text:span text:style-name="T106">list = jhta.MEAN(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P183"><text:span text:style-name="T107">list of floats = jhta.MEAN(df, n, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -8414,7 +8419,7 @@ Arithmetic mean (average) of data | DONE</text:h>
 | Harmonic mean of data | DONE</text:h>
 <text:list text:style-name="L164">
   <text:list-item>
-    <text:p text:style-name="P184"><text:span text:style-name="T107">list = jhta.HARMONIC_MEAN(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P184"><text:span text:style-name="T108">list of floats = jhta.HARMONIC_MEAN(df, n, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -8422,7 +8427,7 @@ Arithmetic mean (average) of data | DONE</text:h>
 Median (middle value) of data | DONE</text:h>
 <text:list text:style-name="L165">
   <text:list-item>
-    <text:p text:style-name="P185"><text:span text:style-name="T108">list = jhta.MEDIAN(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P185"><text:span text:style-name="T109">list of floats = jhta.MEDIAN(df, n, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -8430,7 +8435,7 @@ Median (middle value) of data | DONE</text:h>
 | Low median of data | DONE</text:h>
 <text:list text:style-name="L166">
   <text:list-item>
-    <text:p text:style-name="P186"><text:span text:style-name="T109">list = jhta.MEDIAN_LOW(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P186"><text:span text:style-name="T110">list of floats = jhta.MEDIAN_LOW(df, n, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -8438,7 +8443,7 @@ Median (middle value) of data | DONE</text:h>
 | High median of data | DONE</text:h>
 <text:list text:style-name="L167">
   <text:list-item>
-    <text:p text:style-name="P187"><text:span text:style-name="T110">list = jhta.MEDIAN_HIGH(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P187"><text:span text:style-name="T111">list of floats = jhta.MEDIAN_HIGH(df, n, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -8446,7 +8451,7 @@ Median (middle value) of data | DONE</text:h>
 | Median, or 50th percentile, of grouped data | DONE</text:h>
 <text:list text:style-name="L168">
   <text:list-item>
-    <text:p text:style-name="P188"><text:span text:style-name="T111">list = jhta.MEDIAN_GROUPED(df, n, price='Close', interval=1)</text:span></text:p>
+    <text:p text:style-name="P188"><text:span text:style-name="T112">list of floats = jhta.MEDIAN_GROUPED(df, n, price='Close', interval=1)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -8454,7 +8459,7 @@ Median (middle value) of data | DONE</text:h>
 Mode (most common value) of discrete data | DONE</text:h>
 <text:list text:style-name="L169">
   <text:list-item>
-    <text:p text:style-name="P189"><text:span text:style-name="T112">list = jhta.MODE(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P189"><text:span text:style-name="T113">list of floats = jhta.MODE(df, n, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -8462,7 +8467,7 @@ Mode (most common value) of discrete data | DONE</text:h>
 Population standard deviation of data | DONE</text:h>
 <text:list text:style-name="L170">
   <text:list-item>
-    <text:p text:style-name="P190"><text:span text:style-name="T113">list = jhta.PSTDEV(df, n, price='Close', mu=None)</text:span></text:p>
+    <text:p text:style-name="P190"><text:span text:style-name="T114">list of floats = jhta.PSTDEV(df, n, price='Close', mu=None)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -8470,7 +8475,7 @@ Population standard deviation of data | DONE</text:h>
 | Population variance of data | DONE</text:h>
 <text:list text:style-name="L171">
   <text:list-item>
-    <text:p text:style-name="P191"><text:span text:style-name="T114">list = jhta.PVARIANCE(df, n, price='Close', mu=None)</text:span></text:p>
+    <text:p text:style-name="P191"><text:span text:style-name="T115">list of floats = jhta.PVARIANCE(df, n, price='Close', mu=None)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -8478,7 +8483,7 @@ Population standard deviation of data | DONE</text:h>
 Sample standard deviation of data | DONE</text:h>
 <text:list text:style-name="L172">
   <text:list-item>
-    <text:p text:style-name="P192"><text:span text:style-name="T115">list = jhta.STDEV(df, n, price='Close', xbar=None)</text:span></text:p>
+    <text:p text:style-name="P192"><text:span text:style-name="T116">list of floats = jhta.STDEV(df, n, price='Close', xbar=None)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -8486,7 +8491,7 @@ Sample standard deviation of data | DONE</text:h>
 Sample variance of data | DONE</text:h>
 <text:list text:style-name="L173">
   <text:list-item>
-    <text:p text:style-name="P193"><text:span text:style-name="T116">list = jhta.VARIANCE(df, n, price='Close', xbar=None)</text:span></text:p>
+    <text:p text:style-name="P193"><text:span text:style-name="T117">list of floats = jhta.VARIANCE(df, n, price='Close', xbar=None)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -8494,7 +8499,7 @@ Sample variance of data | DONE</text:h>
 Covariance | DONE</text:h>
 <text:list text:style-name="L174">
   <text:list-item>
-    <text:p text:style-name="P194"><text:span text:style-name="T117">float = jhta.COV(list1, list2)</text:span></text:p>
+    <text:p text:style-name="P194"><text:span text:style-name="T118">float = jhta.COV(list1, list2)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P194"><text:a xlink:type="simple" xlink:href="https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Covariance" office:name=""><text:span text:style-name="Definition">https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Covariance</text:span></text:a></text:p>
@@ -8505,7 +8510,7 @@ Covariance | DONE</text:h>
 | Covariance | DONE</text:h>
 <text:list text:style-name="L175">
   <text:list-item>
-    <text:p text:style-name="P195"><text:span text:style-name="T118">list = jhta.COVARIANCE(df1, df2, n, price1='Close', price2='Close')</text:span></text:p>
+    <text:p text:style-name="P195"><text:span text:style-name="T119">list of floats = jhta.COVARIANCE(df1, df2, n, price1='Close', price2='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P195"><text:a xlink:type="simple" xlink:href="https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Covariance" office:name=""><text:span text:style-name="Definition">https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Covariance</text:span></text:a></text:p>
@@ -8516,7 +8521,7 @@ Covariance | DONE</text:h>
 Correlation | DONE</text:h>
 <text:list text:style-name="L176">
   <text:list-item>
-    <text:p text:style-name="P196"><text:span text:style-name="T119">float = jhta.COR(list1, list2)</text:span></text:p>
+    <text:p text:style-name="P196"><text:span text:style-name="T120">float = jhta.COR(list1, list2)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -8524,7 +8529,7 @@ Correlation | DONE</text:h>
 | Correlation | DONE</text:h>
 <text:list text:style-name="L177">
   <text:list-item>
-    <text:p text:style-name="P197"><text:span text:style-name="T120">list = jhta.CORRELATION(df1, df2, n, price1='Close', price2='Close')</text:span></text:p>
+    <text:p text:style-name="P197"><text:span text:style-name="T121">list of floats = jhta.CORRELATION(df1, df2, n, price1='Close', price2='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -8532,7 +8537,7 @@ Correlation | DONE</text:h>
 Population Correlation | DONE</text:h>
 <text:list text:style-name="L178">
   <text:list-item>
-    <text:p text:style-name="P198"><text:span text:style-name="T121">float = jhta.PCOR(list1, list2)</text:span></text:p>
+    <text:p text:style-name="P198"><text:span text:style-name="T122">float = jhta.PCOR(list1, list2)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -8540,7 +8545,7 @@ Population Correlation | DONE</text:h>
 | Population Correlation | DONE</text:h>
 <text:list text:style-name="L179">
   <text:list-item>
-    <text:p text:style-name="P199"><text:span text:style-name="T122">list = jhta.PCORRELATION(df1, df2, n, price1='Close', price2='Close')</text:span></text:p>
+    <text:p text:style-name="P199"><text:span text:style-name="T123">list of floats = jhta.PCORRELATION(df1, df2, n, price1='Close', price2='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -8548,7 +8553,7 @@ Population Correlation | DONE</text:h>
 Beta | DONE</text:h>
 <text:list text:style-name="L180">
   <text:list-item>
-    <text:p text:style-name="P200"><text:span text:style-name="T123">float = jhta.BETA(list1, list2)</text:span></text:p>
+    <text:p text:style-name="P200"><text:span text:style-name="T124">float = jhta.BETA(list1, list2)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P200"><text:a xlink:type="simple" xlink:href="https://en.wikipedia.org/wiki/Beta_(finance)" office:name=""><text:span text:style-name="Definition">https://en.wikipedia.org/wiki/Beta_(finance)</text:span></text:a></text:p>
@@ -8559,7 +8564,7 @@ Beta | DONE</text:h>
 Betas | DONE</text:h>
 <text:list text:style-name="L181">
   <text:list-item>
-    <text:p text:style-name="P201"><text:span text:style-name="T124">list = jhta.BETAS(df1, df2, n, price1='Close', price2='Close')</text:span></text:p>
+    <text:p text:style-name="P201"><text:span text:style-name="T125">list of floats = jhta.BETAS(df1, df2, n, price1='Close', price2='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P201"><text:a xlink:type="simple" xlink:href="https://en.wikipedia.org/wiki/Beta_(finance)" office:name=""><text:span text:style-name="Definition">https://en.wikipedia.org/wiki/Beta_(finance)</text:span></text:a></text:p>
@@ -8570,7 +8575,7 @@ Betas | DONE</text:h>
 Least Squares Regression | DONE</text:h>
 <text:list text:style-name="L182">
   <text:list-item>
-    <text:p text:style-name="P202"><text:span text:style-name="T125">list = jhta.LSR(df, price='Close', predictions_int=0)</text:span></text:p>
+    <text:p text:style-name="P202"><text:span text:style-name="T126">list of floats = jhta.LSR(df, price='Close', predictions_int=0)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P202"><text:a xlink:type="simple" xlink:href="https://www.mathsisfun.com/data/least-squares-regression.html" office:name=""><text:span text:style-name="Definition">https://www.mathsisfun.com/data/least-squares-regression.html</text:span></text:a></text:p>
@@ -8581,7 +8586,7 @@ Least Squares Regression | DONE</text:h>
 Simple Linear Regression | DONE</text:h>
 <text:list text:style-name="L183">
   <text:list-item>
-    <text:p text:style-name="P203"><text:span text:style-name="T126">list = jhta.SLR(df, price='Close', predictions_int=0)</text:span></text:p>
+    <text:p text:style-name="P203"><text:span text:style-name="T127">list of floats = jhta.SLR(df, price='Close', predictions_int=0)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P203"><text:a xlink:type="simple" xlink:href="https://machinelearningmastery.com/implement-simple-linear-regression-scratch-python/" office:name=""><text:span text:style-name="Definition">https://machinelearningmastery.com/implement-simple-linear-regression-scratch-python/</text:span></text:a></text:p>
@@ -8595,7 +8600,7 @@ Indicators</text:span></text:a></text:h>
 Average True Range | DONE</text:h>
 <text:list text:style-name="L184">
   <text:list-item>
-    <text:p text:style-name="P204"><text:span text:style-name="T127">list = jhta.ATR(df, n)</text:span></text:p>
+    <text:p text:style-name="P204"><text:span text:style-name="T128">list of floats = jhta.ATR(df, n)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P204"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=ATR.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=ATR.htm</text:span></text:a></text:p>
@@ -8613,7 +8618,7 @@ Normalized Average True Range |</text:h>
 Relative Volatility Index | DONE</text:h>
 <text:list text:style-name="L186">
   <text:list-item>
-    <text:p text:style-name="P206"><text:span text:style-name="T128">list = jhta.RVI(df, n)</text:span></text:p>
+    <text:p text:style-name="P206"><text:span text:style-name="T129">list of floats = jhta.RVI(df, n)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P206"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=RVI.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=RVI.htm</text:span></text:a></text:p>
@@ -8631,7 +8636,7 @@ Inertia |</text:h>
 True Range | DONE</text:h>
 <text:list text:style-name="L188">
   <text:list-item>
-    <text:p text:style-name="P208"><text:span text:style-name="T129">list = jhta.TRANGE(df)</text:span></text:p>
+    <text:p text:style-name="P208"><text:span text:style-name="T130">list of floats = jhta.TRANGE(df)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P208"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=TR.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=TR.htm</text:span></text:a></text:p>
@@ -8644,7 +8649,7 @@ Indicators</text:span></text:a></text:h>
 Chaikin A/D Line | DONE</text:h>
 <text:list text:style-name="L189">
   <text:list-item>
-    <text:p text:style-name="P209"><text:span text:style-name="T130">list = jhta.AD(df)</text:span></text:p>
+    <text:p text:style-name="P209"><text:span text:style-name="T131">list of floats = jhta.AD(df)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P209"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=AccumDist.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=AccumDist.htm</text:span></text:a></text:p>
@@ -8662,7 +8667,7 @@ Chaikin A/D Oscillator |</text:h>
 Balance Volume | DONE</text:h>
 <text:list text:style-name="L191">
   <text:list-item>
-    <text:p text:style-name="P211"><text:span text:style-name="T131">list = jhta.OBV(df)</text:span></text:p>
+    <text:p text:style-name="P211"><text:span text:style-name="T132">list of floats = jhta.OBV(df)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P211"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=OBV.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=OBV.htm</text:span></text:a></text:p>
