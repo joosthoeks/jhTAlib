@@ -223,19 +223,19 @@ import jhtalib as jhta
 
 #### ATH | All Time High | DONE
 
-- ```dict of lists = jhta.ATH(df, price='High')```
+- ```dict of lists of floats = jhta.ATH(df, price='High')```
 
 ---
 
 #### LMC | Last Major Correction | DONE
 
-- ```dict of lists = jhta.LMC(df, price='Low')```
+- ```dict of lists of floats = jhta.LMC(df, price='Low')```
 
 ---
 
 #### PP | Pivot Point | DONE
 
-- ```dict of lists = jhta.PP(df)```
+- ```dict of lists of floats = jhta.PP(df)```
 
 - [https://en.wikipedia.org/wiki/Pivot_point_(technical_analysis)](https://en.wikipedia.org/wiki/Pivot_point_(technical_analysis))
 
@@ -243,7 +243,7 @@ import jhtalib as jhta
 
 #### FIBOPR | Fibonacci Price Retracements | DONE
 
-- ```dict of lists = jhta.FIBOPR(df, price='Close')```
+- ```dict of lists of floats = jhta.FIBOPR(df, price='Close')```
 
 ---
 
@@ -255,7 +255,7 @@ import jhtalib as jhta
 
 #### GANNPR | W. D. Gann Price Retracements | DONE
 
-- ```dict of lists = jhta.GANNPR(df, price='Close')```
+- ```dict of lists of floats = jhta.GANNPR(df, price='Close')```
 
 ---
 
@@ -351,7 +351,7 @@ import jhtalib as jhta
 
 #### CDLBODYS | Candle Body Size | DONE
 
-- ```list = jhta.CDLBODYS(df)```
+- ```list of floats = jhta.CDLBODYS(df)```
 
 - [https://www.tradeciety.com/understand-candlesticks-patterns/](https://www.tradeciety.com/understand-candlesticks-patterns/)
 
@@ -359,7 +359,7 @@ import jhtalib as jhta
 
 #### CDLWICKS | Candle Wick Size | DONE
 
-- ```list = jhta.CDLWICKS(df)```
+- ```list of floats = jhta.CDLWICKS(df)```
 
 - [https://www.tradeciety.com/understand-candlesticks-patterns/](https://www.tradeciety.com/understand-candlesticks-patterns/)
 
@@ -367,7 +367,7 @@ import jhtalib as jhta
 
 #### CDLUPPSHAS | Candle Upper Shadow Size | DONE
 
-- ```list = jhta.CDLUPPSHAS(df)```
+- ```list of floats = jhta.CDLUPPSHAS(df)```
 
 - [https://www.tradeciety.com/understand-candlesticks-patterns/](https://www.tradeciety.com/understand-candlesticks-patterns/)
 
@@ -375,7 +375,7 @@ import jhtalib as jhta
 
 #### CDLLOWSHAS | Candle Lower Shadow Size | DONE
 
-- ```list = jhta.CDLLOWSHAS(df)```
+- ```list of floats = jhta.CDLLOWSHAS(df)```
 
 - [https://www.tradeciety.com/understand-candlesticks-patterns/](https://www.tradeciety.com/understand-candlesticks-patterns/)
 
@@ -383,13 +383,13 @@ import jhtalib as jhta
 
 #### CDLBODYP | Candle Body Percent | DONE
 
-- ```list = jhta.CDLBODYP(p)```
+- ```list of floats = jhta.CDLBODYP(p)```
 
 ---
 
 #### CDLBODYM | Candle Body Momentum | DONE
 
-- ```list = jhta.CDLBODYM(df, n)```
+- ```list of floats = jhta.CDLBODYM(df, n)```
 
 - book: Trading Systems and Methods
 
@@ -397,7 +397,7 @@ import jhtalib as jhta
 
 #### QSTICK | Qstick | DONE
 
-- ```list = jhta.QSTICK(df, n)```
+- ```list of floats = jhta.QSTICK(df, n)```
 
 - [https://www.fmlabs.com/reference/default.htm?url=Qstick.htm](https://www.fmlabs.com/reference/default.htm?url=Qstick.htm)
 
@@ -405,7 +405,7 @@ import jhtalib as jhta
 
 #### SHADOWT | Shadow Trends | DONE
 
-- ```dict of lists = jhta.SHADOWT(df, n)```
+- ```dict of lists of floats = jhta.SHADOWT(df, n)```
 
 - book: The New Technical Trader
 
@@ -413,7 +413,7 @@ import jhtalib as jhta
 
 #### IMI | Intraday Momentum Index | DONE
 
-- ```list = jhta.IMI(df)```
+- ```list of floats = jhta.IMI(df)```
 
 - [https://www.fmlabs.com/reference/default.htm?url=IMI.htm](https://www.fmlabs.com/reference/default.htm?url=IMI.htm)
 
@@ -459,7 +459,7 @@ import jhtalib as jhta
 
 #### TS | Trend Score | DONE
 
-- ```list = jhta.TS(df, n, price='Close')```
+- ```list of floats = jhta.TS(df, n, price='Close')```
 
 - [https://www.fmlabs.com/reference/default.htm?url=TrendScore.htm](https://www.fmlabs.com/reference/default.htm?url=TrendScore.htm)
 
@@ -469,13 +469,13 @@ import jhtalib as jhta
 
 #### CSV2DF | CSV file 2 DataFeed | DONE
 
-- ```dict of tuples = jhta.CSV2DF(csv_file_path)```
+- ```dict of tuples of floats = jhta.CSV2DF(csv_file_path)```
 
 ---
 
 #### CSVURL2DF | CSV file url 2 DataFeed | DONE
 
-- ```dict of tuples = jhta.CSVURL2DF(csv_file_url)```
+- ```dict of tuples of floats = jhta.CSVURL2DF(csv_file_url)```
 
 ---
 
@@ -487,31 +487,31 @@ import jhtalib as jhta
 
 #### DF2DFREV | DataFeed 2 DataFeed Reversed | DONE
 
-- ```dict of tuples = jhta.DF2DFREV(df)```
+- ```dict of tuples of floats = jhta.DF2DFREV(df)```
 
 ---
 
 #### DF2DFWIN | DataFeed 2 DataFeed Window | DONE
 
-- ```dict of tuples = jhta.DF2DFWIN(df, start=0, end=10)```
+- ```dict of tuples of floats = jhta.DF2DFWIN(df, start=0, end=10)```
 
 ---
 
 #### DF_HEAD | DataFeed HEAD | DONE
 
-- ```dict of tuples = jhta.DF_HEAD(df, n=5)```
+- ```dict of tuples of floats = jhta.DF_HEAD(df, n=5)```
 
 ---
 
 #### DF_TAIL | DataFeed TAIL | DONE
 
-- ```dict of tuples = jhta.DF_TAIL(df, n=5)```
+- ```dict of tuples of floats = jhta.DF_TAIL(df, n=5)```
 
 ---
 
 #### DF2HEIKIN_ASHI | DataFeed 2 Heikin-Ashi DataFeed | DONE
 
-- ```dict of tuples = jhta.DF2HEIKIN_ASHI(df)```
+- ```dict of tuples of floats = jhta.DF2HEIKIN_ASHI(df)```
 
 ---
 
@@ -519,7 +519,7 @@ import jhtalib as jhta
 
 #### ASI | Accumulation Swing Index (J. Welles Wilder) | DONE
 
-- ```list = jhta.ASI(df, L)```
+- ```list of floats = jhta.ASI(df, L)```
 
 - book: New Concepts in Technical Trading Systems
 
@@ -527,7 +527,7 @@ import jhtalib as jhta
 
 #### SI | Swing Index (J. Welles Wilder) | DONE
 
-- ```list = jhta.SI(df, L)```
+- ```list of floats = jhta.SI(df, L)```
 
 - book: New Concepts in Technical Trading Systems
 
@@ -537,73 +537,73 @@ import jhtalib as jhta
 
 #### JH_SAVGP | Swing Average Price - previous Average Price | DONE
 
-- ```list = jhta.JH_SAVGP(df)```
+- ```list of floats = jhta.JH_SAVGP(df)```
 
 ---
 
 #### JH_SAVGPS | Swing Average Price - previous Average Price Summation | DONE
 
-- ```list = jhta.JH_SAVGPS(df)```
+- ```list of floats = jhta.JH_SAVGPS(df)```
 
 ---
 
 #### JH_SCO | Swing Close - Open | DONE
 
-- ```list = jhta.JH_SCO(df)```
+- ```list of floats = jhta.JH_SCO(df)```
 
 ---
 
 #### JH_SCOS | Swing Close - Open Summation | DONE
 
-- ```list = jhta.JH_SCOS(df)```
+- ```list of floats = jhta.JH_SCOS(df)```
 
 ---
 
 #### JH_SMEDP | Swing Median Price - previous Median Price | DONE
 
-- ```list = jhta.JH_SMEDP(df)```
+- ```list of floats = jhta.JH_SMEDP(df)```
 
 ---
 
 #### jh_SMEDPS | Swing Median Price - previous Median Price Summation | DONE
 
-- ```list = jhta.JH_SMEDPS(df)```
+- ```list of floats = jhta.JH_SMEDPS(df)```
 
 ---
 
 #### JH_SPP | Swing Price - previous Price | DONE
 
-- ```list = jhta.JH_SPP(df, price='Close')```
+- ```list of floats = jhta.JH_SPP(df, price='Close')```
 
 ---
 
 #### JH_SPPS | Swing Price - previous Price Summation | DONE
 
-- ```list = jhta.JH_SPPS(df, price='Close')```
+- ```list of floats = jhta.JH_SPPS(df, price='Close')```
 
 ---
 
 #### JH_STYPP | Swing Typical Price - previous Typical Price | DONE
 
-- ```list = jhta.JH_STYPP(df)```
+- ```list of floats = jhta.JH_STYPP(df)```
 
 ---
 
 #### JH_STYPPS | Swing Typical Price - previous Typical Price Summation | DONE
 
-- ```list = jhta.JH_STYPPS(df)```
+- ```list of floats = jhta.JH_STYPPS(df)```
 
 ---
 
 #### JH_SWCLP | Swing Weighted Close Price - previous Weighted Close Price | DONE
 
-- ```list = jhta.JH_SWCLP(df)```
+- ```list of floats = jhta.JH_SWCLP(df)```
 
 ---
 
 #### JH_SWCLPS | Swing Weighted Close Price - previous Weighted Close Price Summation | DONE
 
-- ```list = jhta.JH_SWCLPS(df)```
+- ```list of floats = jhta.JH_SWCLPS(df)```
 
 ---
 
@@ -611,7 +611,7 @@ import jhtalib as jhta
 
 #### NORMALIZE | Normalize | DONE
 
-- ```list = jhta.NORMALIZE(df, price_max='High', price_min='Low', price='Close')```
+- ```list of floats = jhta.NORMALIZE(df, price_max='High', price_min='Low', price='Close')```
 
 - [https://machinelearningmastery.com/normalize-standardize-time-series-data-python/](https://machinelearningmastery.com/normalize-standardize-time-series-data-python/)
 
@@ -619,7 +619,7 @@ import jhtalib as jhta
 
 #### STANDARDIZE | Standardize | DONE
 
-- ```list = jhta.STANDARDIZE(df, price='Close')```
+- ```list of floats = jhta.STANDARDIZE(df, price='Close')```
 
 - [https://machinelearningmastery.com/normalize-standardize-time-series-data-python/](https://machinelearningmastery.com/normalize-standardize-time-series-data-python/)
 
@@ -627,13 +627,13 @@ import jhtalib as jhta
 
 #### SPREAD | Spread | DONE
 
-- ```list = jhta.SPREAD(df1, df2, price1='Close', price2='Close')```
+- ```list of floats = jhta.SPREAD(df1, df2, price1='Close', price2='Close')```
 
 ---
 
 #### CP | Comparative Performance | DONE
 
-- ```list = jhta.CP(df1, df2, price1='Close', price2='Close')```
+- ```list of floats = jhta.CP(df1, df2, price1='Close', price2='Close')```
 
 - [https://www.fmlabs.com/reference/default.htm?url=CompPerformance.htm](https://www.fmlabs.com/reference/default.htm?url=CompPerformance.htm)
 
@@ -641,7 +641,7 @@ import jhtalib as jhta
 
 #### CRSI | Comparative Relative Strength Index | DONE
 
-- ```list = jhta.CRSI(df1, df2, n, price1='Close', price2='Close')```
+- ```list of floats = jhta.CRSI(df1, df2, n, price1='Close', price2='Close')```
 
 - [https://www.fmlabs.com/reference/default.htm?url=RSIC.htm](https://www.fmlabs.com/reference/default.htm?url=RSIC.htm)
 
@@ -649,7 +649,7 @@ import jhtalib as jhta
 
 #### CS | Comparative Strength | DONE
 
-- ```list = jhta.CS(df1, df2, price1='Close', price2='Close')```
+- ```list of floats = jhta.CS(df1, df2, price1='Close', price2='Close')```
 
 - [https://www.fmlabs.com/reference/default.htm?url=CompStrength.htm](https://www.fmlabs.com/reference/default.htm?url=CompStrength.htm)
 
@@ -705,97 +705,97 @@ import jhtalib as jhta
 
 #### EXP | Exponential | DONE
 
-- ```list = jhta.EXP(df, price='Close')```
+- ```list of floats = jhta.EXP(df, price='Close')```
 
 ---
 
 #### LOG | Logarithm | DONE
 
-- ```list = jhta.LOG(df, price='Close')```
+- ```list of floats = jhta.LOG(df, price='Close')```
 
 ---
 
 #### LOG10 | Base-10 Logarithm | DONE
 
-- ```list = jhta.LOG10(df, price='Close')```
+- ```list of floats = jhta.LOG10(df, price='Close')```
 
 ---
 
 #### SQRT | Square Root | DONE
 
-- ```list = jhta.SQRT(df, price='Close')```
+- ```list of floats = jhta.SQRT(df, price='Close')```
 
 ---
 
 #### ACOS | Arc Cosine | DONE
 
-- ```list = jhta.ACOS(df, price='Close')```
+- ```list of floats = jhta.ACOS(df, price='Close')```
 
 ---
 
 #### ASIN | Arc Sine | DONE
 
-- ```list = jhta.ASIN(df, price='Close')```
+- ```list of floats = jhta.ASIN(df, price='Close')```
 
 ---
 
 #### ATAN | Arc Tangent | DONE
 
-- ```list = jhta.ATAN(df, price='Close')```
+- ```list of floats = jhta.ATAN(df, price='Close')```
 
 ---
 
 #### COS | Cosine | DONE
 
-- ```list = jhta.COS(df, price='Close')```
+- ```list of floats = jhta.COS(df, price='Close')```
 
 ---
 
 #### SIN | Sine | DONE
 
-- ```list = jhta.SIN(df, price='Close')```
+- ```list of floats = jhta.SIN(df, price='Close')```
 
 ---
 
 #### TAN | Tangent | DONE
 
-- ```list = jhta.TAN(df, price='Close')```
+- ```list of floats = jhta.TAN(df, price='Close')```
 
 ---
 
 #### ACOSH | Inverse Hyperbolic Cosine | DONE
 
-- ```list = jhta.ACOSH(df, price='Close')```
+- ```list of floats = jhta.ACOSH(df, price='Close')```
 
 ---
 
 #### ASINH | Inverse Hyperbolic Sine | DONE
 
-- ```list = jhta.ASINH(df, price='Close')```
+- ```list of floats = jhta.ASINH(df, price='Close')```
 
 ---
 
 #### ATANH | Inverse Hyperbolic Tangent | DONE
 
-- ```list = jhta.ATANH(df, price='Close')```
+- ```list of floats = jhta.ATANH(df, price='Close')```
 
 ---
 
 #### COSH | Hyperbolic Cosine | DONE
 
-- ```list = jhta.COSH(df, price='Close')```
+- ```list of floats = jhta.COSH(df, price='Close')```
 
 ---
 
 #### SINH | Hyperbolic Sine | DONE
 
-- ```list = jhta.SINH(df, price='Close')```
+- ```list of floats = jhta.SINH(df, price='Close')```
 
 ---
 
 #### TANH | Hyperbolic Tangent | DONE
 
-- ```list = jhta.TANH(df, price='Close')```
+- ```list of floats = jhta.TANH(df, price='Close')```
 
 ---
 
@@ -825,43 +825,43 @@ import jhtalib as jhta
 
 #### CEIL | Ceiling | DONE
 
-- ```list = jhta.CEIL(df, price='Close')```
+- ```list of floats = jhta.CEIL(df, price='Close')```
 
 ---
 
 #### FLOOR | Floor | DONE
 
-- ```list = jhta.FLOOR(df, price='Close')```
+- ```list of floats = jhta.FLOOR(df, price='Close')```
 
 ---
 
 #### DEGREES | Radians to Degrees | DONE
 
-- ```list = jhta.DEGREES(df, price='Close')```
+- ```list of floats = jhta.DEGREES(df, price='Close')```
 
 ---
 
 #### RADIANS | Degrees to Radians | DONE
 
-- ```list = jhta.RADIANS(df, price='Close')```
+- ```list of floats = jhta.RADIANS(df, price='Close')```
 
 ---
 
 #### ADD | Addition High + Low | DONE
 
-- ```list = jhta.ADD(df)```
+- ```list of floats = jhta.ADD(df)```
 
 ---
 
 #### DIV | Division High / Low | DONE
 
-- ```list = jhta.DIV(df)```
+- ```list of floats = jhta.DIV(df)```
 
 ---
 
 #### MAX | Highest value over a specified period | DONE
 
-- ```list = jhta.MAX(df, n, price='Close')```
+- ```list of floats = jhta.MAX(df, n, price='Close')```
 
 ---
 
@@ -873,7 +873,7 @@ import jhtalib as jhta
 
 #### MIN | Lowest value over a specified period | DONE
 
-- ```list = jhta.MIN(df, n, price='Close')```
+- ```list of floats = jhta.MIN(df, n, price='Close')```
 
 ---
 
@@ -897,19 +897,19 @@ import jhtalib as jhta
 
 #### MULT | Multiply High * Low | DONE
 
-- ```list = jhta.MULT(df)```
+- ```list of floats = jhta.MULT(df)```
 
 ---
 
 #### SUB | Subtraction High - Low | DONE
 
-- ```list = jhta.SUB(df)```
+- ```list of floats = jhta.SUB(df)```
 
 ---
 
 #### SUM | Summation | DONE
 
-- ```list = jhta.SUM(df, n, price='Close')```
+- ```list of floats = jhta.SUM(df, n, price='Close')```
 
 ---
 
@@ -929,7 +929,7 @@ import jhtalib as jhta
 
 #### APO | Absolute Price Oscillator | DONE
 
-- ```list = jhta.APO(df, n_fast, n_slow, price='Close')```
+- ```list of floats = jhta.APO(df, n_fast, n_slow, price='Close')```
 
 - [https://www.fmlabs.com/reference/default.htm?url=PriceOscillator.htm](https://www.fmlabs.com/reference/default.htm?url=PriceOscillator.htm)
 
@@ -1009,7 +1009,7 @@ import jhtalib as jhta
 
 #### MOM | Momentum | DONE
 
-- ``` list = jhta.MOM(df, n, price='Close')```
+- ``` list of floats = jhta.MOM(df, n, price='Close')```
 
 - [https://www.fmlabs.com/reference/default.htm?url=Momentum.htm](https://www.fmlabs.com/reference/default.htm?url=Momentum.htm)
 
@@ -1035,7 +1035,7 @@ import jhtalib as jhta
 
 #### RMI | Relative Momentum Index | DONE
 
-- ```list = jhta.RMI(df, n, price='Close')```
+- ```list of floats = jhta.RMI(df, n, price='Close')```
 
 - [https://www.fmlabs.com/reference/default.htm?url=RMI.htm](https://www.fmlabs.com/reference/default.htm?url=RMI.htm)
 
@@ -1043,25 +1043,25 @@ import jhtalib as jhta
 
 #### ROC | Rate of Change | DONE
 
-- ```list = jhta.ROC(df, n, price='Close')```
+- ```list of floats = jhta.ROC(df, n, price='Close')```
 
 ---
 
 #### ROCP | Rate of Change Percentage | DONE
 
-- ```list = jhta.ROCP(df, n, price='Close')```
+- ```list of floats = jhta.ROCP(df, n, price='Close')```
 
 ---
 
 #### ROCR | Rate of Change Ratio | DONE
 
-- ```list = jhta.ROCR(df, n, price='Close')```
+- ```list of floats = jhta.ROCR(df, n, price='Close')```
 
 ---
 
 #### ROCR100 | Rate of Change Ratio 100 scale | DONE
 
-- ```list = jhta.ROCR100(df, n, price='Close')```
+- ```list of floats = jhta.ROCR100(df, n, price='Close')```
 
 - [https://www.fmlabs.com/reference/default.htm?url=RateOfChange.htm](https://www.fmlabs.com/reference/default.htm?url=RateOfChange.htm)
 
@@ -1069,7 +1069,7 @@ import jhtalib as jhta
 
 #### RSI | Relative Strength Index | DONE
 
-- ```list = jhta.RSI(df, n, price='Close')```
+- ```list of floats = jhta.RSI(df, n, price='Close')```
 
 - [https://www.fmlabs.com/reference/default.htm?url=rsi.htm](https://www.fmlabs.com/reference/default.htm?url=rsi.htm)
 
@@ -1077,7 +1077,7 @@ import jhtalib as jhta
 
 #### STOCH | Stochastic | DONE
 
-- ```list = jhta.STOCH(df, n, price='Close')```
+- ```list of floats = jhta.STOCH(df, n, price='Close')```
 
 - [https://www.fmlabs.com/reference/default.htm?url=Stochastic.htm](https://www.fmlabs.com/reference/default.htm?url=Stochastic.htm)
 
@@ -1109,7 +1109,7 @@ import jhtalib as jhta
 
 #### WILLR | Williams' %R | DONE
 
-- ```list = jhta.WILLR(df, n)```
+- ```list of floats = jhta.WILLR(df, n)```
 
 - [https://www.fmlabs.com/reference/default.htm?url=WilliamsR.htm](https://www.fmlabs.com/reference/default.htm?url=WilliamsR.htm)
 
@@ -1119,7 +1119,7 @@ import jhtalib as jhta
 
 #### BBANDS | Bollinger Bands | DONE
 
-- ```dict of lists = jhta.BBANDS(df, n, f=2)```
+- ```dict of lists of floats = jhta.BBANDS(df, n, f=2)```
 
 - [https://www.fmlabs.com/reference/default.htm?url=Bollinger.htm](https://www.fmlabs.com/reference/default.htm?url=Bollinger.htm)
 
@@ -1127,7 +1127,7 @@ import jhtalib as jhta
 
 #### BBANDW | Bollinger Band Width | DONE
 
-- ```list = jhta.BBANDW(df, n, f=2)```
+- ```list of floats = jhta.BBANDW(df, n, f=2)```
 
 - [https://www.fmlabs.com/reference/default.htm?url=BollingerWidth.htm](https://www.fmlabs.com/reference/default.htm?url=BollingerWidth.htm)
 
@@ -1141,7 +1141,7 @@ import jhtalib as jhta
 
 #### EMA | Exponential Moving Average | DONE
 
-- ```list = jhta.EMA(df, n, price='Close')```
+- ```list of floats = jhta.EMA(df, n, price='Close')```
 
 - [https://www.fmlabs.com/reference/default.htm?url=ExpMA.htm](https://www.fmlabs.com/reference/default.htm?url=ExpMA.htm)
 
@@ -1149,7 +1149,7 @@ import jhtalib as jhta
 
 #### ENVP | Envelope Percent | DONE
 
-- ```dict of lists = jhta.ENVP(df, pct=.01, price='Close')```
+- ```dict of lists of floats = jhta.ENVP(df, pct=.01, price='Close')```
 
 - [https://www.fmlabs.com/reference/default.htm?url=EnvelopePct.htm](https://www.fmlabs.com/reference/default.htm?url=EnvelopePct.htm)
 
@@ -1181,7 +1181,7 @@ import jhtalib as jhta
 
 #### MIDPOINT | MidPoint over period | DONE
 
-- ```list = jhta.MIDPOINT(df, n, price='Close')```
+- ```list of floats = jhta.MIDPOINT(df, n, price='Close')```
 
 - [http://www.tadoc.org/indicator/MIDPOINT.htm](http://www.tadoc.org/indicator/MIDPOINT.htm)
 
@@ -1189,7 +1189,7 @@ import jhtalib as jhta
 
 #### MIDPRICE | MidPoint Price over period | DONE
 
-- ```list = jhta.MIDPRICE(df, n)```
+- ```list of floats = jhta.MIDPRICE(df, n)```
 
 - [http://www.tadoc.org/indicator/MIDPRICE.htm](http://www.tadoc.org/indicator/MIDPRICE.htm)
 
@@ -1197,7 +1197,7 @@ import jhtalib as jhta
 
 #### MMR | Mayer Multiple Ratio | DONE
 
-- ```list = jhta.MMR(df, n=200, price='Close')```
+- ```list of floats = jhta.MMR(df, n=200, price='Close')```
 
 - [https://www.theinvestorspodcast.com/bitcoin-mayer-multiple/](https://www.theinvestorspodcast.com/bitcoin-mayer-multiple/)
 
@@ -1205,7 +1205,7 @@ import jhtalib as jhta
 
 #### SAR | Parabolic SAR | DONE
 
-- ```list = jhta.SAR(df, af_step=.02, af_max=.2)```
+- ```list of floats = jhta.SAR(df, af_step=.02, af_max=.2)```
 
 - book: New Concepts in Technical Trading Systems
 
@@ -1219,7 +1219,7 @@ import jhtalib as jhta
 
 #### SMA | Simple Moving Average | DONE
 
-- ```list = jhta.SMA(df, n, price='Close')```
+- ```list of floats = jhta.SMA(df, n, price='Close')```
 
 - [https://www.fmlabs.com/reference/default.htm?url=SimpleMA.htm](https://www.fmlabs.com/reference/default.htm?url=SimpleMA.htm)
 
@@ -1239,7 +1239,7 @@ import jhtalib as jhta
 
 #### TRIMA | Triangular Moving Average | DONE
 
-- ```list = jhta.TRIMA(df, n, price='Close')```
+- ```list of floats = jhta.TRIMA(df, n, price='Close')```
 
 - [https://www.fmlabs.com/reference/default.htm?url=TriangularMA.htm](https://www.fmlabs.com/reference/default.htm?url=TriangularMA.htm)
 
@@ -1379,7 +1379,7 @@ import jhtalib as jhta
 
 #### AVGPRICE | Average Price | DONE
 
-- ```list = jhta.AVGPRICE(df)```
+- ```list of floats = jhta.AVGPRICE(df)```
 
 - [https://www.fmlabs.com/reference/default.htm?url=AvgPrices.htm](https://www.fmlabs.com/reference/default.htm?url=AvgPrices.htm)
 
@@ -1387,7 +1387,7 @@ import jhtalib as jhta
 
 #### MEDPRICE | Median Price | DONE
 
-- ```list = jhta.MEDPRICE(df)```
+- ```list of floats = jhta.MEDPRICE(df)```
 
 - [https://www.fmlabs.com/reference/default.htm?url=MedianPrices.htm](https://www.fmlabs.com/reference/default.htm?url=MedianPrices.htm)
 
@@ -1395,7 +1395,7 @@ import jhtalib as jhta
 
 #### TYPPRICE | Typical Price | DONE
 
-- ```list = jhta.TYPPRICE(df)```
+- ```list of floats = jhta.TYPPRICE(df)```
 
 - [https://www.fmlabs.com/reference/default.htm?url=TypicalPrices.htm](https://www.fmlabs.com/reference/default.htm?url=TypicalPrices.htm)
 
@@ -1403,7 +1403,7 @@ import jhtalib as jhta
 
 #### WCLPRICE | Weighted Close Price | DONE
 
-- ```list = jhta.WCLPRICE(df)```
+- ```list of floats = jhta.WCLPRICE(df)```
 
 - [https://www.fmlabs.com/reference/default.htm?url=WeightedCloses.htm](https://www.fmlabs.com/reference/default.htm?url=WeightedCloses.htm)
 
@@ -1413,67 +1413,67 @@ import jhtalib as jhta
 
 #### MEAN | Arithmetic mean (average) of data | DONE
 
-- ```list = jhta.MEAN(df, n, price='Close')```
+- ```list of floats = jhta.MEAN(df, n, price='Close')```
 
 ---
 
 #### HARMONIC_MEAN | Harmonic mean of data | DONE
 
-- ```list = jhta.HARMONIC_MEAN(df, n, price='Close')```
+- ```list of floats = jhta.HARMONIC_MEAN(df, n, price='Close')```
 
 ---
 
 #### MEDIAN | Median (middle value) of data | DONE
 
-- ```list = jhta.MEDIAN(df, n, price='Close')```
+- ```list of floats = jhta.MEDIAN(df, n, price='Close')```
 
 ---
 
 #### MEDIAN_LOW | Low median of data | DONE
 
-- ```list = jhta.MEDIAN_LOW(df, n, price='Close')```
+- ```list of floats = jhta.MEDIAN_LOW(df, n, price='Close')```
 
 ---
 
 #### MEDIAN_HIGH | High median of data | DONE
 
-- ```list = jhta.MEDIAN_HIGH(df, n, price='Close')```
+- ```list of floats = jhta.MEDIAN_HIGH(df, n, price='Close')```
 
 ---
 
 #### MEDIAN_GROUPED | Median, or 50th percentile, of grouped data | DONE
 
-- ```list = jhta.MEDIAN_GROUPED(df, n, price='Close', interval=1)```
+- ```list of floats = jhta.MEDIAN_GROUPED(df, n, price='Close', interval=1)```
 
 ---
 
 #### MODE | Mode (most common value) of discrete data | DONE
 
-- ```list = jhta.MODE(df, n, price='Close')```
+- ```list of floats = jhta.MODE(df, n, price='Close')```
 
 ---
 
 #### PSTDEV | Population standard deviation of data | DONE
 
-- ```list = jhta.PSTDEV(df, n, price='Close', mu=None)```
+- ```list of floats = jhta.PSTDEV(df, n, price='Close', mu=None)```
 
 ---
 
 #### PVARIANCE | Population variance of data | DONE
 
-- ```list = jhta.PVARIANCE(df, n, price='Close', mu=None)```
+- ```list of floats = jhta.PVARIANCE(df, n, price='Close', mu=None)```
 
 ---
 
 #### STDEV | Sample standard deviation of data | DONE
 
-- ```list = jhta.STDEV(df, n, price='Close', xbar=None)```
+- ```list of floats = jhta.STDEV(df, n, price='Close', xbar=None)```
 
 ---
 
 #### VARIANCE | Sample variance of data | DONE
 
-- ```list = jhta.VARIANCE(df, n, price='Close', xbar=None)```
+- ```list of floats = jhta.VARIANCE(df, n, price='Close', xbar=None)```
 
 ---
 
@@ -1487,7 +1487,7 @@ import jhtalib as jhta
 
 #### COVARIANCE | Covariance | DONE
 
-- ```list = jhta.COVARIANCE(df1, df2, n, price1='Close', price2='Close')```
+- ```list of floats = jhta.COVARIANCE(df1, df2, n, price1='Close', price2='Close')```
 
 - [https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Covariance](https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Covariance)
 
@@ -1501,7 +1501,7 @@ import jhtalib as jhta
 
 #### CORRELATION | Correlation | DONE
 
-- ```list = jhta.CORRELATION(df1, df2, n, price1='Close', price2='Close')```
+- ```list of floats = jhta.CORRELATION(df1, df2, n, price1='Close', price2='Close')```
 
 ---
 
@@ -1513,7 +1513,7 @@ import jhtalib as jhta
 
 #### PCORRELATION | Population Correlation | DONE
 
-- ```list = jhta.PCORRELATION(df1, df2, n, price1='Close', price2='Close')```
+- ```list of floats = jhta.PCORRELATION(df1, df2, n, price1='Close', price2='Close')```
 
 ---
 
@@ -1527,7 +1527,7 @@ import jhtalib as jhta
 
 #### BETAS | Betas | DONE
 
-- ```list = jhta.BETAS(df1, df2, n, price1='Close', price2='Close')```
+- ```list of floats = jhta.BETAS(df1, df2, n, price1='Close', price2='Close')```
 
 - [https://en.wikipedia.org/wiki/Beta_(finance)](https://en.wikipedia.org/wiki/Beta_(finance))
 
@@ -1535,7 +1535,7 @@ import jhtalib as jhta
 
 #### LSR | Least Squares Regression | DONE
 
-- ```list = jhta.LSR(df, price='Close', predictions_int=0)```
+- ```list of floats = jhta.LSR(df, price='Close', predictions_int=0)```
 
 - [https://www.mathsisfun.com/data/least-squares-regression.html](https://www.mathsisfun.com/data/least-squares-regression.html)
 
@@ -1543,7 +1543,7 @@ import jhtalib as jhta
 
 #### SLR | Simple Linear Regression | DONE
 
-- ```list = jhta.SLR(df, price='Close', predictions_int=0)```
+- ```list of floats = jhta.SLR(df, price='Close', predictions_int=0)```
 
 - [https://machinelearningmastery.com/implement-simple-linear-regression-scratch-python/](https://machinelearningmastery.com/implement-simple-linear-regression-scratch-python/)
 
@@ -1555,7 +1555,7 @@ import jhtalib as jhta
 
 #### ATR | Average True Range | DONE
 
-- ```list = jhta.ATR(df, n)```
+- ```list of floats = jhta.ATR(df, n)```
 
 - [https://www.fmlabs.com/reference/default.htm?url=ATR.htm](https://www.fmlabs.com/reference/default.htm?url=ATR.htm)
 
@@ -1569,7 +1569,7 @@ import jhtalib as jhta
 
 #### RVI | Relative Volatility Index | DONE
 
-- ```list = jhta.RVI(df, n)```
+- ```list of floats = jhta.RVI(df, n)```
 
 - [https://www.fmlabs.com/reference/default.htm?url=RVI.htm](https://www.fmlabs.com/reference/default.htm?url=RVI.htm)
 
@@ -1583,7 +1583,7 @@ import jhtalib as jhta
 
 #### TRANGE | True Range | DONE
 
-- ```list = jhta.TRANGE(df)```
+- ```list of floats = jhta.TRANGE(df)```
 
 - [https://www.fmlabs.com/reference/default.htm?url=TR.htm](https://www.fmlabs.com/reference/default.htm?url=TR.htm)
 
@@ -1593,7 +1593,7 @@ import jhtalib as jhta
 
 #### AD | Chaikin A/D Line | DONE
 
-- ```list = jhta.AD(df)```
+- ```list of floats = jhta.AD(df)```
 
 - [https://www.fmlabs.com/reference/default.htm?url=AccumDist.htm](https://www.fmlabs.com/reference/default.htm?url=AccumDist.htm)
 
@@ -1607,7 +1607,7 @@ import jhtalib as jhta
 
 #### OBV | On Balance Volume | DONE
 
-- ```list = jhta.OBV(df)```
+- ```list of floats = jhta.OBV(df)```
 
 - [https://www.fmlabs.com/reference/default.htm?url=OBV.htm](https://www.fmlabs.com/reference/default.htm?url=OBV.htm)
 
