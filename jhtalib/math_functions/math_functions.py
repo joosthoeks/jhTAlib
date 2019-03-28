@@ -414,6 +414,10 @@ def MINMAX(df, n, price='Close'):
     """
     Lowest and highest values over a specified period
     """
+    return {
+        'min': MIN(df, n, price),
+        'max': MAX(df, n, price)
+        }
 
 def MINMAXINDEX(df, n, price='Close'):
     """
