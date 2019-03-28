@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2019-03-26
+date: 2019-03-28
 ---
 
 # jhTAlib
@@ -865,9 +865,9 @@ import jhtalib as jhta
 
 ---
 
-#### MAXINDEX | Index of highest value over a specified period |
+#### MAXINDEX | Index of highest value over a specified period | DONE
 
--
+- ```list of ints = jhta.MAXINDEX(df, n, price='Close')```
 
 ---
 
@@ -877,21 +877,21 @@ import jhtalib as jhta
 
 ---
 
-#### MININDEX | Index of lowest value over a specified period |
+#### MININDEX | Index of lowest value over a specified period | DONE
 
--
-
----
-
-#### MINMAX | Lowest and Highest values over a specified period |
-
--
+- ```list of ints = jhta.MININDEX(df, n, price='Close')```
 
 ---
 
-#### MINMAXINDEX | Indexes of lowest and highest values over a specified period |
+#### MINMAX | Lowest and Highest values over a specified period | DONE
 
--
+- ```dict of lists of floats = jhta.MINMAX(df, n, price='Close')```
+
+---
+
+#### MINMAXINDEX | Indexes of lowest and highest values over a specified period | DONE
+
+- ```dict of lists of ints = jhta.MINMAXINDEX(df, n, price='Close')```
 
 ---
 
