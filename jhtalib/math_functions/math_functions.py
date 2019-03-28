@@ -324,6 +324,31 @@ def MAXINDEX(df, n, price='Close'):
     """
     Index of highest value over a specified period
     """
+    max_index_list = []
+    i = 0
+    if n == len(df[price]):
+        start = None
+        while i < len(df[price]):
+            if df[price][i] != df[price][i]:
+                max_index = float('NaN')
+            else:
+                if start is None:
+                    start = i
+                end = i + 1
+                max_index = df[price][start:end].index(max(df[price][start:end]))
+            max_index_list.append(max_index)
+            i += 1
+    else:
+        while i < len(df[price]):
+            if i + 1 < n:
+                max_index = float('NaN')
+            else:
+                start = i + 1 - n
+                end = i + 1
+                max_index = df[price][start:end].index(max(df[price][start:end]))
+            max_index_list.append(max_index)
+            i += 1
+    return max_index_list
 
 def MIN(df, n, price='Close'):
     """
