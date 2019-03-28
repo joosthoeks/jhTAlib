@@ -423,6 +423,10 @@ def MINMAXINDEX(df, n, price='Close'):
     """
     Indexes of lowest and highest values over a specified period
     """
+    return {
+        'min': MININDEX(df, n, price),
+        'max': MAXINDEX(df, n, price)
+        }
 
 def MULT(df):
     """
