@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <meta name="author" content="Joost Hoeks">
-  <meta name="dcterms.date" content="2019-03-26">
+  <meta name="dcterms.date" content="2019-03-28">
   <title>jhTAlib</title>
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" href="pandoc.css">
@@ -17,7 +17,7 @@
 <header>
 <h1 class="title">jhTAlib</h1>
 <h2 class="author">Joost Hoeks</h2>
-<h3 class="date">2019-03-26</h3>
+<h3 class="date">2019-03-28</h3>
 </header>
 <nav id="TOC">
 <ul>
@@ -679,9 +679,9 @@ $ python3 test.py</code></pre>
 <li><code>list of floats = jhta.MAX(df, n, price='Close')</code></li>
 </ul>
 <hr />
-<h4 id="maxindex-index-of-highest-value-over-a-specified-period">MAXINDEX | Index of highest value over a specified period |</h4>
+<h4 id="maxindex-index-of-highest-value-over-a-specified-period-done">MAXINDEX | Index of highest value over a specified period | DONE</h4>
 <ul>
-<li></li>
+<li><code>list of ints = jhta.MAXINDEX(df, n, price='Close')</code></li>
 </ul>
 <hr />
 <h4 id="min-lowest-value-over-a-specified-period-done">MIN | Lowest value over a specified period | DONE</h4>
@@ -689,19 +689,19 @@ $ python3 test.py</code></pre>
 <li><code>list of floats = jhta.MIN(df, n, price='Close')</code></li>
 </ul>
 <hr />
-<h4 id="minindex-index-of-lowest-value-over-a-specified-period">MININDEX | Index of lowest value over a specified period |</h4>
+<h4 id="minindex-index-of-lowest-value-over-a-specified-period-done">MININDEX | Index of lowest value over a specified period | DONE</h4>
 <ul>
-<li></li>
+<li><code>list of ints = jhta.MININDEX(df, n, price='Close')</code></li>
 </ul>
 <hr />
-<h4 id="minmax-lowest-and-highest-values-over-a-specified-period">MINMAX | Lowest and Highest values over a specified period |</h4>
+<h4 id="minmax-lowest-and-highest-values-over-a-specified-period-done">MINMAX | Lowest and Highest values over a specified period | DONE</h4>
 <ul>
-<li></li>
+<li><code>dict of lists of floats = jhta.MINMAX(df, n, price='Close')</code></li>
 </ul>
 <hr />
-<h4 id="minmaxindex-indexes-of-lowest-and-highest-values-over-a-specified-period">MINMAXINDEX | Indexes of lowest and highest values over a specified period |</h4>
+<h4 id="minmaxindex-indexes-of-lowest-and-highest-values-over-a-specified-period-done">MINMAXINDEX | Indexes of lowest and highest values over a specified period | DONE</h4>
 <ul>
-<li></li>
+<li><code>dict of lists of ints = jhta.MINMAXINDEX(df, n, price='Close')</code></li>
 </ul>
 <hr />
 <h4 id="mult-multiply-high-low-done">MULT | Multiply High * Low | DONE</h4>

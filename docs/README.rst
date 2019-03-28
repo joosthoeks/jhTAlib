@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2019-03-26
+:Date:   2019-03-28
 
 .. contents::
    :depth: 3
@@ -998,10 +998,10 @@ MAX \| Highest value over a specified period \| DONE
 
 --------------
 
-MAXINDEX \| Index of highest value over a specified period \|
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MAXINDEX \| Index of highest value over a specified period \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
--  
+-  ``list of ints = jhta.MAXINDEX(df, n, price='Close')``
 
 --------------
 
@@ -1012,24 +1012,24 @@ MIN \| Lowest value over a specified period \| DONE
 
 --------------
 
-MININDEX \| Index of lowest value over a specified period \|
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MININDEX \| Index of lowest value over a specified period \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
--  
-
---------------
-
-MINMAX \| Lowest and Highest values over a specified period \|
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
--  
+-  ``list of ints = jhta.MININDEX(df, n, price='Close')``
 
 --------------
 
-MINMAXINDEX \| Indexes of lowest and highest values over a specified period \|
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MINMAX \| Lowest and Highest values over a specified period \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
--  
+-  ``dict of lists of floats = jhta.MINMAX(df, n, price='Close')``
+
+--------------
+
+MINMAXINDEX \| Indexes of lowest and highest values over a specified period \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``dict of lists of ints = jhta.MINMAXINDEX(df, n, price='Close')``
 
 --------------
 
