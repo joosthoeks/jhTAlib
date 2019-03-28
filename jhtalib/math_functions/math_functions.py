@@ -384,6 +384,31 @@ def MININDEX(df, n, price='Close'):
     """
     Index of lowest value over a specified period
     """
+    min_index_list = []
+    i = 0
+    if n == len(df[price]):
+        start = None
+        while i < len(df[price]):
+            if df[price][i] != df[price][i]:
+                min_index = float('NaN')
+            else:
+                if start is None:
+                    start = i
+                end = i + 1
+                min_index = df[price][start:end].index(min(df[price][start:end]))
+            min_index_list.append(min_index)
+            i += 1
+    else:
+        while i < len(df[price]):
+            if i + 1 < n:
+                min_index = float('NaN')
+            else:
+                start = i + 1 - n
+                end = i + 1
+                min_index = df[price][start:end].index(min(df[price][start:end]))
+            min_index_list.append(min_index)
+            i += 1
+    return min_index_list
 
 def MINMAX(df, n, price='Close'):
     """
