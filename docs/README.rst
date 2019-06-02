@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2019-03-28
+:Date:   2019-06-02
 
 .. contents::
    :depth: 3
@@ -226,6 +226,15 @@ Example 10
 DF NumPy Pandas
 
 https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-10-df-numpy-pandas.ipynb
+
+--------------
+
+Example 11
+~~~~~~~~~~
+
+Basic Usage
+
+https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-11-basic-usage.ipynb
 
 --------------
 

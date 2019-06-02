@@ -6761,7 +6761,7 @@
 <office:text>
 <text:p text:style-name="Title">jhTAlib</text:p>
 <text:p text:style-name="Author">Joost Hoeks</text:p>
-<text:p text:style-name="Date">2019-03-28</text:p>
+<text:p text:style-name="Date">2019-06-02</text:p>
 <text:h text:style-name="Heading_20_1" text:outline-level="1">jhTAlib</text:h>
 <text:p text:style-name="First_20_paragraph">Technical Analysis Library
 Time-Series</text:p>
@@ -6903,6 +6903,11 @@ only on</text:h>
 10</text:h>
 <text:p text:style-name="First_20_paragraph">DF NumPy Pandas</text:p>
 <text:p text:style-name="Text_20_body"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-10-df-numpy-pandas.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-10-df-numpy-pandas.ipynb</text:span></text:a></text:p>
+<text:p text:style-name="Horizontal_20_Line" />
+<text:h text:style-name="Heading_20_3" text:outline-level="3">Example
+11</text:h>
+<text:p text:style-name="First_20_paragraph">Basic Usage</text:p>
+<text:p text:style-name="Text_20_body"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-11-basic-usage.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-11-basic-usage.ipynb</text:span></text:a></text:p>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_2" text:outline-level="2">Test</text:h>
 <text:p text:style-name="P21">$ cd test/</text:p>
