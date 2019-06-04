@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2019-06-02
+date: 2019-06-04
 ---
 
 # jhTAlib
@@ -828,6 +828,12 @@ import jhtalib as jhta
 #### PHI | Mathematical constant PHI | DONE
 
 - ```float = jhta.PHI()```
+
+---
+
+#### FIB | Fibonacci series up to n | DONE
+
+- ```list of ints = jhta.FIB(n)```
 
 ---
 

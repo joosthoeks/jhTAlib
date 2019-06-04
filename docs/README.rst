@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2019-06-02
+:Date:   2019-06-04
 
 .. contents::
    :depth: 3
@@ -955,6 +955,13 @@ PHI \| Mathematical constant PHI \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``float = jhta.PHI()``
+
+--------------
+
+FIB \| Fibonacci series up to n \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list of ints = jhta.FIB(n)``
 
 --------------
 
