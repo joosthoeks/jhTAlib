@@ -218,6 +218,17 @@ def PHI():
     """
     return (cmath.sqrt(5).real + 1) / 2
 
+def FIB(n):
+    """
+    Fibonacci series up to n
+    """
+    fib_list = []
+    a, b = 0, 1
+    while a < n:
+        fib_list.append(a)
+        a, b = b, a + b
+    return fib_list
+
 def CEIL(df, price='Close'):
     """
     Ceiling
