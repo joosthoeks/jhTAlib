@@ -26,7 +26,6 @@
 <li><a href="#docs">Docs</a></li>
 <li><a href="#install">Install</a></li>
 <li><a href="#update">Update</a></li>
-<li><a href="#basic-usage">Basic Usage</a></li>
 <li><a href="#examples">Examples</a><ul>
 <li><a href="#example-1">Example 1</a></li>
 <li><a href="#example-2">Example 2</a></li>
@@ -87,6 +86,8 @@
 <li><p><a href="https://jhtalib.joosthoeks.com/README.json">.json</a></p></li>
 <li><p><a href="https://jhtalib.joosthoeks.com/README.odt">.odt</a></p></li>
 <li><p><a href="https://jhtalib.joosthoeks.com/README.pdf">.pdf</a></p></li>
+<li><p><a href="https://jhtalib.joosthoeks.com/README.rst">.rst</a></p></li>
+<li><p><a href="https://jhtalib.joosthoeks.com/README.rtf">.rtf</a></p></li>
 <li><p><a href="https://jhtalib.joosthoeks.com/README.xml">.xml</a></p></li>
 </ul>
 <hr />
@@ -104,21 +105,6 @@ $ [sudo] pip3 install -e .</code></pre>
 <p>From <a href="https://github.com/joosthoeks/jhTAlib">source</a>:</p>
 <pre><code>$ cd jhTAlib
 $ git pull [upstream master]</code></pre>
-<hr />
-<h2 id="basic-usage">Basic Usage</h2>
-<pre><code>import jhtalib as jhta</code></pre>
-<pre><code>from pprint import pprint as pp</code></pre>
-<pre><code>df = {</code></pre>
-<pre><code>    &#39;datetime&#39;: (&#39;20151217&#39;, &#39;20151218&#39;, &#39;20151221&#39;, &#39;20151222&#39;, &#39;20151223&#39;, &#39;20151224&#39;, &#39;20151228&#39;, &#39;20151229&#39;, &#39;20151230&#39;, &#39;20151231&#39;),</code></pre>
-<pre><code>    &#39;Open&#39;: (235.8, 232.3, 234.1, 232.2, 232.7, 235.4, 236.9, 234.85, 236.45, 235.0),</code></pre>
-<pre><code>    &#39;High&#39;: (238.05, 236.9, 237.3, 232.4, 235.2, 236.15, 236.9, 237.6, 238.3, 237.25),</code></pre>
-<pre><code>    &#39;Low&#39;: (234.55, 230.6, 230.2, 226.8, 231.5, 233.85, 233.05, 234.6, 234.55, 234.4),</code></pre>
-<pre><code>    &#39;Close&#39;: (234.6, 233.6, 230.2, 230.05, 234.15, 236.15, 233.25, 237.6, 235.75, 234.4),</code></pre>
-<pre><code>    &#39;Volume&#39;: (448294, 629039, 292528, 214170, 215545, 23548, 97574, 192908, 176839, 69347)</code></pre>
-<pre><code>     }</code></pre>
-<pre><code>pp (df)</code></pre>
-<pre><code>pp (jhta.SMA(df, 10))</code></pre>
-<pre><code>pp (jhta.BBANDS(df, 10))</code></pre>
 <hr />
 <h2 id="examples">Examples</h2>
 <pre><code>$ cd example/</code></pre>
