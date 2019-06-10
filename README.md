@@ -41,8 +41,6 @@ Work in progress...
 
 - [.pdf](https://jhtalib.joosthoeks.com/README.pdf)
 
-- [.rst](https://jhtalib.joosthoeks.com/README.rst)
-
 - [.rtf](https://jhtalib.joosthoeks.com/README.rtf)
 
 - [.xml](https://jhtalib.joosthoeks.com/README.xml)
