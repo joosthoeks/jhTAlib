@@ -177,7 +177,6 @@ $ git pull [upstream master]\par}
 from pprint import pprint as pp\line
 \line
 \line
-# df is DataFeed:\line
 df = \{\line
     'datetime': ('20151217', '20151218', '20151221', '20151222', '20151223', '20151224', '20151228', '20151229', '20151230', '20151231'),\line
     'Open': (235.8, 232.3, 234.1, 232.2, 232.7, 235.4, 236.9, 234.85, 236.45, 235.0),\line
@@ -187,10 +186,9 @@ df = \{\line
     'Volume': (448294, 629039, 292528, 214170, 215545, 23548, 97574, 192908, 176839, 69347)\line
      \}\line
 \line
-# basic usage:\line
-#pp (df)\line
+pp (df)\line
 pp (jhta.SMA(df, 10))\line
-#pp (jhta.BBANDS(df, 10))\par}
+pp (jhta.BBANDS(df, 10))\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Examples\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \f1 $ cd example/\par}
