@@ -633,6 +633,14 @@ import jhtalib as jhta
 
 ---
 
+#### RATIO | Ratio | DONE
+
+- ```list of floats = jhta.RATIO(df1, df2, price1='Close', price2='Close')```
+
+- [https://www.fmlabs.com/reference/default.htm?url=Ratio.htm](https://www.fmlabs.com/reference/default.htm?url=Ratio.htm)
+
+---
+
 #### SPREAD | Spread | DONE
 
 - ```list of floats = jhta.SPREAD(df1, df2, price1='Close', price2='Close')```

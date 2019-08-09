@@ -46,6 +46,18 @@ def STANDARDIZE(df, price='Close'):
         i += 1
     return standardize_list
 
+def RATIO(df1, df2, price1='Close', price2='Close'):
+    """
+    Ratio
+    """
+    ratio_list = []
+    i = 0
+    while i < len(df1[price1]):
+        ratio = df1[price1][i] / df2[price2][i]
+        ratio_list.append(ratio)
+        i += 1
+    return ratio_list
+
 def SPREAD(df1, df2, price1='Close', price2='Close'):
     """
     Spread
