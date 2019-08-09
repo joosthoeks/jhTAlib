@@ -1935,6 +1935,6 @@ Donation and Funding
 --------------------
 
 -  BTC:
-   `3KCoXMyUDgVABoFSuV8GQT3k8qkUhEDG9X <https://insight.bitpay.com/address/3KCoXMyUDgVABoFSuV8GQT3k8qkUhEDG9X%5D>`__\ 3KCoXMyUDgVABoFSuV8GQT3k8qkUhEDG9X)
+   `3KCoXMyUDgVABoFSuV8GQT3k8qkUhEDG9X <https://insight.bitpay.com/address/3KCoXMyUDgVABoFSuV8GQT3k8qkUhEDG9X>`__
 
 --------------

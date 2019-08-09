@@ -1637,7 +1637,7 @@ import jhtalib as jhta
 
 ## Donation and Funding
 
-- BTC: [3KCoXMyUDgVABoFSuV8GQT3k8qkUhEDG9X](https://insight.bitpay.com/address/3KCoXMyUDgVABoFSuV8GQT3k8qkUhEDG9X])3KCoXMyUDgVABoFSuV8GQT3k8qkUhEDG9X)
+- BTC: [3KCoXMyUDgVABoFSuV8GQT3k8qkUhEDG9X](https://insight.bitpay.com/address/3KCoXMyUDgVABoFSuV8GQT3k8qkUhEDG9X)
 
 ---
 
