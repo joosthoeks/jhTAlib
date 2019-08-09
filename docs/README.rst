@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2019-06-10
+:Date:   2019-08-09
 
 .. contents::
    :depth: 3
@@ -728,6 +728,15 @@ STANDARDIZE \| Standardize \| DONE
 
 --------------
 
+RATIO \| Ratio \| DONE
+^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list of floats = jhta.RATIO(df1, df2, price1='Close', price2='Close')``
+
+-  https://www.fmlabs.com/reference/default.htm?url=Ratio.htm
+
+--------------
+
 SPREAD \| Spread \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -759,42 +768,6 @@ CS \| Comparative Strength \| DONE
 -  ``list of floats = jhta.CS(df1, df2, price1='Close', price2='Close')``
 
 -  https://www.fmlabs.com/reference/default.htm?url=CompStrength.htm
-
---------------
-
-HR \| Hit Rate / Win Rate \| DONE
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
--  ``float = jhta.HR(hit_trades_int, total_trades_int)``
-
--  http://traderskillset.com/hit-rate-stock-trading/
-
---------------
-
-PLR \| Profit/Loss Ratio \| DONE
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
--  ``float = jhta.PLR(mean_trade_profit_float, mean_trade_loss_float)``
-
--  https://www.investopedia.com/terms/p/profit_loss_ratio.asp
-
---------------
-
-EV \| Expected Value \| DONE
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
--  ``float = jhta.EV(hitrade_float, mean_trade_profit_float, mean_trade_loss_float)``
-
--  https://en.wikipedia.org/wiki/Expected_value
-
---------------
-
-POR \| Probability of Ruin (Table of Lucas and LeBeau) \| DONE
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
--  ``int = jhta.POR(hitrade_float, profit_loss_ratio_float)``
-
--  book: Computer Analysis of the Futures Markets
 
 --------------
 
@@ -1850,6 +1823,42 @@ SLR \| Simple Linear Regression \| DONE
 `Uncategorised <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/uncategorised/uncategorised.py>`__
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+HR \| Hit Rate / Win Rate \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``float = jhta.HR(hit_trades_int, total_trades_int)``
+
+-  http://traderskillset.com/hit-rate-stock-trading/
+
+--------------
+
+PLR \| Profit/Loss Ratio \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``float = jhta.PLR(mean_trade_profit_float, mean_trade_loss_float)``
+
+-  https://www.investopedia.com/terms/p/profit_loss_ratio.asp
+
+--------------
+
+EV \| Expected Value \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``float = jhta.EV(hitrade_float, mean_trade_profit_float, mean_trade_loss_float)``
+
+-  https://en.wikipedia.org/wiki/Expected_value
+
+--------------
+
+POR \| Probability of Ruin (Table of Lucas and LeBeau) \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``int = jhta.POR(hitrade_float, profit_loss_ratio_float)``
+
+-  book: Computer Analysis of the Futures Markets
+
+--------------
+
 `Volatility Indicators <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/volatility_indicators/volatility_indicators.py>`__
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -1919,5 +1928,13 @@ OBV \| On Balance Volume \| DONE
 -  ``list of floats = jhta.OBV(df)``
 
 -  https://www.fmlabs.com/reference/default.htm?url=OBV.htm
+
+--------------
+
+Donation and Funding
+--------------------
+
+BTC:
+`https://insight.bitpay.com/address/3KCoXMyUDgVABoFSuV8GQT3k8qkUhEDG9X <3KCoXMyUDgVABoFSuV8GQT3k8qkUhEDG9X>`__
 
 --------------

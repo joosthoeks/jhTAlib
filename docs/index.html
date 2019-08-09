@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <meta name="author" content="Joost Hoeks">
-  <meta name="dcterms.date" content="2019-06-10">
+  <meta name="dcterms.date" content="2019-08-09">
   <title>jhTAlib</title>
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" href="pandoc.css">
@@ -16,8 +16,8 @@
 <body>
 <header>
 <h1 class="title">jhTAlib</h1>
-<h2 class="author">Joost Hoeks</h2>
-<h3 class="date">2019-06-10</h3>
+<p class="author">Joost Hoeks</p>
+<p class="date">2019-08-09</p>
 </header>
 <nav id="TOC">
 <ul>
@@ -59,6 +59,7 @@
 <li><a href="#volatility-indicators"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/volatility_indicators/volatility_indicators.py">Volatility Indicators</a></a></li>
 <li><a href="#volume-indicators"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/volume_indicators/volume_indicators.py">Volume Indicators</a></a></li>
 </ul></li>
+<li><a href="#donation-and-funding">Donation and Funding</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -490,6 +491,12 @@ $ python3 test.py</code></pre>
 <li><p><a href="https://machinelearningmastery.com/normalize-standardize-time-series-data-python/" class="uri">https://machinelearningmastery.com/normalize-standardize-time-series-data-python/</a></p></li>
 </ul>
 <hr />
+<h4 id="ratio-ratio-done">RATIO | Ratio | DONE</h4>
+<ul>
+<li><p><code>list of floats = jhta.RATIO(df1, df2, price1='Close', price2='Close')</code></p></li>
+<li><p><a href="https://www.fmlabs.com/reference/default.htm?url=Ratio.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=Ratio.htm</a></p></li>
+</ul>
+<hr />
 <h4 id="spread-spread-done">SPREAD | Spread | DONE</h4>
 <ul>
 <li><code>list of floats = jhta.SPREAD(df1, df2, price1='Close', price2='Close')</code></li>
@@ -511,30 +518,6 @@ $ python3 test.py</code></pre>
 <ul>
 <li><p><code>list of floats = jhta.CS(df1, df2, price1='Close', price2='Close')</code></p></li>
 <li><p><a href="https://www.fmlabs.com/reference/default.htm?url=CompStrength.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=CompStrength.htm</a></p></li>
-</ul>
-<hr />
-<h4 id="hr-hit-rate-win-rate-done">HR | Hit Rate / Win Rate | DONE</h4>
-<ul>
-<li><p><code>float = jhta.HR(hit_trades_int, total_trades_int)</code></p></li>
-<li><p><a href="http://traderskillset.com/hit-rate-stock-trading/" class="uri">http://traderskillset.com/hit-rate-stock-trading/</a></p></li>
-</ul>
-<hr />
-<h4 id="plr-profitloss-ratio-done">PLR | Profit/Loss Ratio | DONE</h4>
-<ul>
-<li><p><code>float = jhta.PLR(mean_trade_profit_float, mean_trade_loss_float)</code></p></li>
-<li><p><a href="https://www.investopedia.com/terms/p/profit_loss_ratio.asp" class="uri">https://www.investopedia.com/terms/p/profit_loss_ratio.asp</a></p></li>
-</ul>
-<hr />
-<h4 id="ev-expected-value-done">EV | Expected Value | DONE</h4>
-<ul>
-<li><p><code>float = jhta.EV(hitrade_float, mean_trade_profit_float, mean_trade_loss_float)</code></p></li>
-<li><p><a href="https://en.wikipedia.org/wiki/Expected_value" class="uri">https://en.wikipedia.org/wiki/Expected_value</a></p></li>
-</ul>
-<hr />
-<h4 id="por-probability-of-ruin-table-of-lucas-and-lebeau-done">POR | Probability of Ruin (Table of Lucas and LeBeau) | DONE</h4>
-<ul>
-<li><p><code>int = jhta.POR(hitrade_float, profit_loss_ratio_float)</code></p></li>
-<li><p>book: Computer Analysis of the Futures Markets</p></li>
 </ul>
 <hr />
 <h3 id="information"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/information/information.py">Information</a></h3>
@@ -1198,6 +1181,30 @@ $ python3 test.py</code></pre>
 </ul>
 <hr />
 <h3 id="uncategorised"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/uncategorised/uncategorised.py">Uncategorised</a></h3>
+<h4 id="hr-hit-rate-win-rate-done">HR | Hit Rate / Win Rate | DONE</h4>
+<ul>
+<li><p><code>float = jhta.HR(hit_trades_int, total_trades_int)</code></p></li>
+<li><p><a href="http://traderskillset.com/hit-rate-stock-trading/" class="uri">http://traderskillset.com/hit-rate-stock-trading/</a></p></li>
+</ul>
+<hr />
+<h4 id="plr-profitloss-ratio-done">PLR | Profit/Loss Ratio | DONE</h4>
+<ul>
+<li><p><code>float = jhta.PLR(mean_trade_profit_float, mean_trade_loss_float)</code></p></li>
+<li><p><a href="https://www.investopedia.com/terms/p/profit_loss_ratio.asp" class="uri">https://www.investopedia.com/terms/p/profit_loss_ratio.asp</a></p></li>
+</ul>
+<hr />
+<h4 id="ev-expected-value-done">EV | Expected Value | DONE</h4>
+<ul>
+<li><p><code>float = jhta.EV(hitrade_float, mean_trade_profit_float, mean_trade_loss_float)</code></p></li>
+<li><p><a href="https://en.wikipedia.org/wiki/Expected_value" class="uri">https://en.wikipedia.org/wiki/Expected_value</a></p></li>
+</ul>
+<hr />
+<h4 id="por-probability-of-ruin-table-of-lucas-and-lebeau-done">POR | Probability of Ruin (Table of Lucas and LeBeau) | DONE</h4>
+<ul>
+<li><p><code>int = jhta.POR(hitrade_float, profit_loss_ratio_float)</code></p></li>
+<li><p>book: Computer Analysis of the Futures Markets</p></li>
+</ul>
+<hr />
 <h3 id="volatility-indicators"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/volatility_indicators/volatility_indicators.py">Volatility Indicators</a></h3>
 <h4 id="atr-average-true-range-done">ATR | Average True Range | DONE</h4>
 <ul>
@@ -1244,6 +1251,9 @@ $ python3 test.py</code></pre>
 <li><p><code>list of floats = jhta.OBV(df)</code></p></li>
 <li><p><a href="https://www.fmlabs.com/reference/default.htm?url=OBV.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=OBV.htm</a></p></li>
 </ul>
+<hr />
+<h2 id="donation-and-funding">Donation and Funding</h2>
+<p>BTC: <a href="3KCoXMyUDgVABoFSuV8GQT3k8qkUhEDG9X">https://insight.bitpay.com/address/3KCoXMyUDgVABoFSuV8GQT3k8qkUhEDG9X</a></p>
 <hr />
 </body>
 </html>

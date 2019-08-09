@@ -4,7 +4,7 @@
 
 {\pard \qc \f0 \sa180 \li0 \fi0 \b \fs36 jhTAlib\par}
 {\pard \qc \f0 \sa180 \li0 \fi0  Joost Hoeks\par}
-{\pard \qc \f0 \sa180 \li0 \fi0  2019-06-10\par}
+{\pard \qc \f0 \sa180 \li0 \fi0  2019-08-09\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Contents\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab jhTAlib\par}
@@ -93,7 +93,8 @@ Volatility Indicators
 {\pard \ql \f0 \sa0 \li1080 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/volume_indicators/volume_indicators.py"}}{\fldrslt{\ul
 Volume Indicators
 }}}
-\sa180\sa180\sa180\par}
+\sa180\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Donation and Funding\sa180\sa180\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 jhTAlib\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 Technical Analysis Library Time-Series\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 You can use and import it for your:\par}
@@ -525,6 +526,13 @@ https://machinelearningmastery.com/normalize-standardize-time-series-data-python
 }}}
 \sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 RATIO | Ratio | DONE\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.RATIO(df1, df2, price1='Close', price2='Close')}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://www.fmlabs.com/reference/default.htm?url=Ratio.htm"}}{\fldrslt{\ul
+https://www.fmlabs.com/reference/default.htm?url=Ratio.htm
+}}}
+\sa180\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 SPREAD | Spread | DONE\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.SPREAD(df1, df2, price1='Close', price2='Close')}\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
@@ -548,31 +556,6 @@ https://www.fmlabs.com/reference/default.htm?url=RSIC.htm
 https://www.fmlabs.com/reference/default.htm?url=CompStrength.htm
 }}}
 \sa180\par}
-{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 HR | Hit Rate / Win Rate | DONE\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 float = jhta.HR(hit_trades_int, total_trades_int)}\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "http://traderskillset.com/hit-rate-stock-trading/"}}{\fldrslt{\ul
-http://traderskillset.com/hit-rate-stock-trading/
-}}}
-\sa180\par}
-{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 PLR | Profit/Loss Ratio | DONE\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 float = jhta.PLR(mean_trade_profit_float, mean_trade_loss_float)}\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://www.investopedia.com/terms/p/profit_loss_ratio.asp"}}{\fldrslt{\ul
-https://www.investopedia.com/terms/p/profit_loss_ratio.asp
-}}}
-\sa180\par}
-{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 EV | Expected Value | DONE\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 float = jhta.EV(hitrade_float, mean_trade_profit_float, mean_trade_loss_float)}\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://en.wikipedia.org/wiki/Expected_value"}}{\fldrslt{\ul
-https://en.wikipedia.org/wiki/Expected_value
-}}}
-\sa180\par}
-{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 POR | Probability of Ruin (Table of Lucas and LeBeau) | DONE\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 int = jhta.POR(hitrade_float, profit_loss_ratio_float)}\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab book: Computer Analysis of the Futures Markets\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs28 {\field{\*\fldinst{HYPERLINK "https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/information/information.py"}}{\fldrslt{\ul
 Information
@@ -1111,6 +1094,31 @@ https://machinelearningmastery.com/implement-simple-linear-regression-scratch-py
 Uncategorised
 }}}
 \par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 HR | Hit Rate / Win Rate | DONE\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 float = jhta.HR(hit_trades_int, total_trades_int)}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "http://traderskillset.com/hit-rate-stock-trading/"}}{\fldrslt{\ul
+http://traderskillset.com/hit-rate-stock-trading/
+}}}
+\sa180\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 PLR | Profit/Loss Ratio | DONE\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 float = jhta.PLR(mean_trade_profit_float, mean_trade_loss_float)}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://www.investopedia.com/terms/p/profit_loss_ratio.asp"}}{\fldrslt{\ul
+https://www.investopedia.com/terms/p/profit_loss_ratio.asp
+}}}
+\sa180\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 EV | Expected Value | DONE\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 float = jhta.EV(hitrade_float, mean_trade_profit_float, mean_trade_loss_float)}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://en.wikipedia.org/wiki/Expected_value"}}{\fldrslt{\ul
+https://en.wikipedia.org/wiki/Expected_value
+}}}
+\sa180\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 POR | Probability of Ruin (Table of Lucas and LeBeau) | DONE\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 int = jhta.POR(hitrade_float, profit_loss_ratio_float)}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab book: Computer Analysis of the Futures Markets\sa180\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs28 {\field{\*\fldinst{HYPERLINK "https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/volatility_indicators/volatility_indicators.py"}}{\fldrslt{\ul
 Volatility Indicators
 }}}
@@ -1162,5 +1170,11 @@ https://www.fmlabs.com/reference/default.htm?url=AccumDist.htm
 https://www.fmlabs.com/reference/default.htm?url=OBV.htm
 }}}
 \sa180\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Donation and Funding\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 BTC: {\field{\*\fldinst{HYPERLINK "3KCoXMyUDgVABoFSuV8GQT3k8qkUhEDG9X"}}{\fldrslt{\ul
+https://insight.bitpay.com/address/3KCoXMyUDgVABoFSuV8GQT3k8qkUhEDG9X
+}}}
+\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 }
