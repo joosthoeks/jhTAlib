@@ -93,6 +93,25 @@ def CDLBODYM(df, n):
         i += 1
     return cdl_list
 
+def GAP(df):
+    """
+    Gap
+    """
+    gap_list = []
+    i = 0
+    while i < len(df):
+        if i < 1:
+            gap = float('NaN')
+        else:
+            gap = .0
+            if df['Low'][i] > df['High'][i - 1]:
+                gap = df['Low'][i] - df['High'][i - 1]
+            if df['High'][i] < df['Low'][i - 1]:
+                gap = df['High'][i] - df['Low'][i - 1]
+        gap_list.append(gap)
+        i += 1
+    return gap_list
+
 def QSTICK(df, n):
     """
     Qstick

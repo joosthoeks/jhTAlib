@@ -403,6 +403,12 @@ import jhtalib as jhta
 
 ---
 
+#### GAP | Gap | DONE
+
+- ```list of floats = jhta.GAP(df)```
+
+---
+
 #### QSTICK | Qstick | DONE
 
 - ```list of floats = jhta.QSTICK(df, n)```
