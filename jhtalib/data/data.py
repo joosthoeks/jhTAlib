@@ -15,7 +15,7 @@ def CSV2DF(csv_file_path):
             df['High'].append(float(row['High']))
             df['Low'].append(float(row['Low']))
             df['Close'].append(float(row['Close']))
-            df['Volume'].append(int(row['Volume']))
+            df['Volume'].append(float(row['Volume']))
     df['datetime'] = tuple(df['datetime'])
     df['Open'] = tuple(df['Open'])
     df['High'] = tuple(df['High'])
@@ -37,7 +37,7 @@ def CSVURL2DF(csv_file_url):
         df['High'].append(float(row['High']))
         df['Low'].append(float(row['Low']))
         df['Close'].append(float(row['Close']))
-        df['Volume'].append(int(row['Volume']))
+        df['Volume'].append(float(row['Volume']))
     df['datetime'] = tuple(df['datetime'])
     df['Open'] = tuple(df['Open'])
     df['High'] = tuple(df['High'])
@@ -62,7 +62,7 @@ def DF2CSV(df, csv_file_path):
                 'High': float(df['High'][i]),
                 'Low': float(df['Low'][i]),
                 'Close': float(df['Close'][i]),
-                'Volume': int(df['Volume'][i])
+                'Volume': float(df['Volume'][i])
                 })
             i += 1
 
