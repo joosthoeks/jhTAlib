@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2019-08-09
+:Date:   2019-08-13
 
 .. contents::
    :depth: 3
@@ -268,7 +268,7 @@ ATH \| All Time High \| DONE
 LMC \| Last Major Correction \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
--  ``dict of lists of floats = jhta.LMC(df, price='Low')``
+-  ``dict of lists of floats = jhta.LMC(df, price='Low', price_high='High')``
 
 --------------
 
@@ -456,6 +456,13 @@ CDLBODYM \| Candle Body Momentum \| DONE
 -  ``list of floats = jhta.CDLBODYM(df, n)``
 
 -  book: Trading Systems and Methods
+
+--------------
+
+GAP \| Gap \| DONE
+^^^^^^^^^^^^^^^^^^
+
+-  ``list of floats = jhta.GAP(df)``
 
 --------------
 

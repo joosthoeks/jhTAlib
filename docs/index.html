@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <meta name="author" content="Joost Hoeks">
-  <meta name="dcterms.date" content="2019-08-09">
+  <meta name="dcterms.date" content="2019-08-13">
   <title>jhTAlib</title>
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" href="pandoc.css">
@@ -17,7 +17,7 @@
 <header>
 <h1 class="title">jhTAlib</h1>
 <p class="author">Joost Hoeks</p>
-<p class="date">2019-08-09</p>
+<p class="date">2019-08-13</p>
 </header>
 <nav id="TOC">
 <ul>
@@ -176,7 +176,7 @@ $ python3 test.py</code></pre>
 <hr />
 <h4 id="lmc-last-major-correction-done">LMC | Last Major Correction | DONE</h4>
 <ul>
-<li><code>dict of lists of floats = jhta.LMC(df, price='Low')</code></li>
+<li><code>dict of lists of floats = jhta.LMC(df, price='Low', price_high='High')</code></li>
 </ul>
 <hr />
 <h4 id="pp-pivot-point-done">PP | Pivot Point | DONE</h4>
@@ -306,6 +306,11 @@ $ python3 test.py</code></pre>
 <ul>
 <li><p><code>list of floats = jhta.CDLBODYM(df, n)</code></p></li>
 <li><p>book: Trading Systems and Methods</p></li>
+</ul>
+<hr />
+<h4 id="gap-gap-done">GAP | Gap | DONE</h4>
+<ul>
+<li><code>list of floats = jhta.GAP(df)</code></li>
 </ul>
 <hr />
 <h4 id="qstick-qstick-done">QSTICK | Qstick | DONE</h4>
