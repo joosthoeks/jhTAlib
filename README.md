@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2019-08-09
+date: 2019-08-13
 ---
 
 # jhTAlib
@@ -237,7 +237,7 @@ import jhtalib as jhta
 
 #### LMC | Last Major Correction | DONE
 
-- ```dict of lists of floats = jhta.LMC(df, price='Low')```
+- ```dict of lists of floats = jhta.LMC(df, price='Low', price_high='High')```
 
 ---
 

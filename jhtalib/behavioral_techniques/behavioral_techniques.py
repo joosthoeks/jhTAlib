@@ -17,12 +17,12 @@ def ATH(df, price='High'):
         i += 1
     return ath_dict
 
-def LMC(df, price='Low'):
+def LMC(df, price='Low', price_high='High'):
     """
     Last Major Correction
     """
     lmc_dict = {'lmc': [], 'lmc_index': []}
-    ath_dict = ATH(df)
+    ath_dict = ATH(df, price_high)
     i = 0
     while i < len(df[price]):
         df_part_list = df[price][ath_dict['ath_index'][i]:i+1]
