@@ -99,7 +99,7 @@ def GAP(df):
     """
     gap_list = []
     i = 0
-    while i < len(df):
+    while i < len(df['Close']):
         if i < 1:
             gap = float('NaN')
         else:
