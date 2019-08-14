@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2019-08-13
+:Date:   2019-08-14
 
 .. contents::
    :depth: 3
@@ -1869,6 +1869,15 @@ POR \| Probability of Ruin (Table of Lucas and LeBeau) \| DONE
 `Volatility Indicators <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/volatility_indicators/volatility_indicators.py>`__
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+AEM \| Arms Ease of Movement \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list of floats = jhta.AEM(df)``
+
+-  https://www.fmlabs.com/reference/default.htm?url=ArmsEMV.htm
+
+--------------
+
 ATR \| Average True Range \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -1935,6 +1944,42 @@ OBV \| On Balance Volume \| DONE
 -  ``list of floats = jhta.OBV(df)``
 
 -  https://www.fmlabs.com/reference/default.htm?url=OBV.htm
+
+--------------
+
+PVR \| Price Volume Rank \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list of ints = jhta.PVR(df, price='Close')``
+
+-  https://www.fmlabs.com/reference/default.htm?url=PVrank.htm
+
+--------------
+
+PVT \| Price Volume Trend \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list of floats = jhta.PVT(df, price='Close')``
+
+-  https://www.fmlabs.com/reference/default.htm?url=PVT.htm
+
+--------------
+
+PVI \| Positive Volume Index \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list of floats = jhta.PVI(df, price='Close')``
+
+-  https://www.fmlabs.com/reference/default.htm?url=PVI.htm
+
+--------------
+
+NVI \| Negative Volume Index \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list of floats = jhta.NVI(df, price='Close')``
+
+-  https://www.fmlabs.com/reference/default.htm?url=NVI.htm
 
 --------------
 

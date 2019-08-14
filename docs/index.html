@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <meta name="author" content="Joost Hoeks">
-  <meta name="dcterms.date" content="2019-08-13">
+  <meta name="dcterms.date" content="2019-08-14">
   <title>jhTAlib</title>
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" href="pandoc.css">
@@ -17,7 +17,7 @@
 <header>
 <h1 class="title">jhTAlib</h1>
 <p class="author">Joost Hoeks</p>
-<p class="date">2019-08-13</p>
+<p class="date">2019-08-14</p>
 </header>
 <nav id="TOC">
 <ul>
@@ -1211,6 +1211,12 @@ $ python3 test.py</code></pre>
 </ul>
 <hr />
 <h3 id="volatility-indicators"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/volatility_indicators/volatility_indicators.py">Volatility Indicators</a></h3>
+<h4 id="aem-arms-ease-of-movement-done">AEM | Arms Ease of Movement | DONE</h4>
+<ul>
+<li><p><code>list of floats = jhta.AEM(df)</code></p></li>
+<li><p><a href="https://www.fmlabs.com/reference/default.htm?url=ArmsEMV.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=ArmsEMV.htm</a></p></li>
+</ul>
+<hr />
 <h4 id="atr-average-true-range-done">ATR | Average True Range | DONE</h4>
 <ul>
 <li><p><code>list of floats = jhta.ATR(df, n)</code></p></li>
@@ -1255,6 +1261,30 @@ $ python3 test.py</code></pre>
 <ul>
 <li><p><code>list of floats = jhta.OBV(df)</code></p></li>
 <li><p><a href="https://www.fmlabs.com/reference/default.htm?url=OBV.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=OBV.htm</a></p></li>
+</ul>
+<hr />
+<h4 id="pvr-price-volume-rank-done">PVR | Price Volume Rank | DONE</h4>
+<ul>
+<li><p><code>list of ints = jhta.PVR(df, price='Close')</code></p></li>
+<li><p><a href="https://www.fmlabs.com/reference/default.htm?url=PVrank.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=PVrank.htm</a></p></li>
+</ul>
+<hr />
+<h4 id="pvt-price-volume-trend-done">PVT | Price Volume Trend | DONE</h4>
+<ul>
+<li><p><code>list of floats = jhta.PVT(df, price='Close')</code></p></li>
+<li><p><a href="https://www.fmlabs.com/reference/default.htm?url=PVT.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=PVT.htm</a></p></li>
+</ul>
+<hr />
+<h4 id="pvi-positive-volume-index-done">PVI | Positive Volume Index | DONE</h4>
+<ul>
+<li><p><code>list of floats = jhta.PVI(df, price='Close')</code></p></li>
+<li><p><a href="https://www.fmlabs.com/reference/default.htm?url=PVI.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=PVI.htm</a></p></li>
+</ul>
+<hr />
+<h4 id="nvi-negative-volume-index-done">NVI | Negative Volume Index | DONE</h4>
+<ul>
+<li><p><code>list of floats = jhta.NVI(df, price='Close')</code></p></li>
+<li><p><a href="https://www.fmlabs.com/reference/default.htm?url=NVI.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=NVI.htm</a></p></li>
 </ul>
 <hr />
 <h2 id="donation-and-funding">Donation and Funding</h2>
