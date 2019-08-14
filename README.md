@@ -1651,9 +1651,9 @@ import jhtalib as jhta
 
 #### PVT | Price Volume Trend | DONE
 
-- ```list of ints = jhta.PVR(df, price='Close')```
+- ```list of floats = jhta.PVT(df, price='Close')```
 
-- [https://www.fmlabs.com/reference/default.htm?url=PVrank.htm](https://www.fmlabs.com/reference/default.htm?url=PVrank.htm)
+- [https://www.fmlabs.com/reference/default.htm?url=PVT.htm](https://www.fmlabs.com/reference/default.htm?url=PVT.htm)
 
 ---
 
