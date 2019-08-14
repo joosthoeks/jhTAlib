@@ -1649,6 +1649,14 @@ import jhtalib as jhta
 
 ---
 
+#### PVT | Price Volume Trend | DONE
+
+- ```list of ints = jhta.PVR(df, price='Close')```
+
+- [https://www.fmlabs.com/reference/default.htm?url=PVrank.htm](https://www.fmlabs.com/reference/default.htm?url=PVrank.htm)
+
+---
+
 ## Donation and Funding
 
 - BTC: [3KCoXMyUDgVABoFSuV8GQT3k8qkUhEDG9X](https://insight.bitpay.com/address/3KCoXMyUDgVABoFSuV8GQT3k8qkUhEDG9X)

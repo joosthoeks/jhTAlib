@@ -59,3 +59,17 @@ def PVR(df, price='Close'):
         i += 1
     return pvr_list
 
+def PVT(df, price='Close'):
+    """
+    Price Volume Trend
+    """
+    pvt_list = []
+    i = 0
+    while i < len(df[price]):
+        pvt = 0
+        if i > 0:
+            pvt = pvt_list[i - 1] + df['Volume'][i] * (df[price][i] - df[price][i - 1]) / df[price][i - 1]
+        pvt_list.append(pvt)
+        i += 1
+    return pvt_list
+
