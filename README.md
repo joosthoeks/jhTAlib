@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2019-08-13
+date: 2019-08-14
 ---
 
 # jhTAlib
@@ -1638,6 +1638,14 @@ import jhtalib as jhta
 - ```list of floats = jhta.OBV(df)```
 
 - [https://www.fmlabs.com/reference/default.htm?url=OBV.htm](https://www.fmlabs.com/reference/default.htm?url=OBV.htm)
+
+---
+
+#### PVR | Price Volume Rank | DONE
+
+- ```list of ints = jhta.PVR(df, price='Close')```
+
+- [https://www.fmlabs.com/reference/default.htm?url=PVrank.htm](https://www.fmlabs.com/reference/default.htm?url=PVrank.htm)
 
 ---
 

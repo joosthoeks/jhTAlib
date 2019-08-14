@@ -37,3 +37,25 @@ def OBV(df):
         i += 1
     return obv_list
 
+def PVR(df, price='Close'):
+    """
+    Price Volume Rank
+    """
+    pvr_list = []
+    i = 0
+    while i < len(df[price]):
+        if i < 1:
+            pvr = float('NaN')
+        else:
+            if df[price][i] > df[price][i - 1] and df['Volume'][i] > df['Volume'][i - 1]:
+                pvr = 1
+            if df[price][i] > df[price][i - 1] and df['Volume'][i] < df['Volume'][i - 1]:
+                pvr = 2
+            if df[price][i] < df[price][i - 1] and df['Volume'][i] < df['Volume'][i - 1]:
+                pvr = 3
+            if df[price][i] < df[price][i - 1] and df['Volume'][i] > df['Volume'][i - 1]:
+                pvr = 4
+        pvr_list.append(pvr)
+        i += 1
+    return pvr_list
+
