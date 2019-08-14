@@ -90,3 +90,20 @@ def PVI(df, price='Close'):
         i += 1
     return pvi_list
 
+def NVI(df, price='Close'):
+    """
+    Negative Volume Index
+    """
+    nvi_list = []
+    i = 0
+    while i < len(df[price]):
+        nvi = 0
+        if i > 0:
+            if df['Volume'][i] < df['Volume'][i - 1]:
+                nvi = nvi_list[i - 1] + (df[price][i] - df[price][i - 1]) / df[price][i - 1]
+            else:
+                nvi = nvi_list[i - 1]
+        nvi_list.append(nvi)
+        i += 1
+    return nvi_list
+

@@ -1665,6 +1665,14 @@ import jhtalib as jhta
 
 ---
 
+#### NVI | Negative Volume Index | DONE
+
+- ```list of floats = jhta.NVI(df, price='Close')```
+
+- [https://www.fmlabs.com/reference/default.htm?url=NVI.htm](https://www.fmlabs.com/reference/default.htm?url=NVI.htm)
+
+---
+
 ## Donation and Funding
 
 - BTC: [3KCoXMyUDgVABoFSuV8GQT3k8qkUhEDG9X](https://insight.bitpay.com/address/3KCoXMyUDgVABoFSuV8GQT3k8qkUhEDG9X)
