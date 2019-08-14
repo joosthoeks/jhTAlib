@@ -1581,6 +1581,14 @@ import jhtalib as jhta
 
 ### [Volatility Indicators](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/volatility_indicators/volatility_indicators.py)
 
+#### AEM | Arms Ease of Movement | DONE
+
+- ```list of floats = jhta.AEM(df)```
+
+- [https://www.fmlabs.com/reference/default.htm?url=ArmsEMV.htm](https://www.fmlabs.com/reference/default.htm?url=ArmsEMV.htm)
+
+---
+
 #### ATR | Average True Range | DONE
 
 - ```list of floats = jhta.ATR(df, n)```

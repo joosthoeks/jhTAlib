@@ -1,6 +1,23 @@
 import jhtalib as jhta
 
 
+def AEM(df):
+    """
+    Arms Ease of Movement
+    """
+    aem_list = []
+    i = 0
+    while i < len(df['Close']):
+        if i < 1:
+            aem = float('NaN')
+        else:
+            midpoint_move = ((df['High'][i] - df['Low'][i]) / 2) - ((df['High'][i - 1] - df['Low'][i - 1]) / 2)
+            boxratio = (df['Volume'][i] / 10000) / (df['High'][i] - df['Low'][i])
+            aem = midpoint_move / boxratio
+        aem_list.append(aem)
+        i += 1
+    return aem_list
+
 def ATR(df, n):
     """
     Average True Range
