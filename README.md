@@ -1657,6 +1657,14 @@ import jhtalib as jhta
 
 ---
 
+#### PVI | Positive Volume Index | DONE
+
+- ```list of floats = jhta.PVI(df, price='Close')```
+
+- [https://www.fmlabs.com/reference/default.htm?url=PVI.htm](https://www.fmlabs.com/reference/default.htm?url=PVI.htm)
+
+---
+
 ## Donation and Funding
 
 - BTC: [3KCoXMyUDgVABoFSuV8GQT3k8qkUhEDG9X](https://insight.bitpay.com/address/3KCoXMyUDgVABoFSuV8GQT3k8qkUhEDG9X)

@@ -73,3 +73,20 @@ def PVT(df, price='Close'):
         i += 1
     return pvt_list
 
+def PVI(df, price='Close'):
+    """
+    Positive Volume Index
+    """
+    pvi_list = []
+    i = 0
+    while i < len(df[price]):
+        pvi = 0
+        if i > 0:
+            if df['Volume'][i] > df['Volume'][i - 1]:
+                pvi = pvi_list[i - 1] + (df[price][i] - df[price][i - 1]) / df[price][i - 1]
+            else:
+                pvi = pvi_list[i - 1]
+        pvi_list.append(pvi)
+        i += 1
+    return pvi_list
+
