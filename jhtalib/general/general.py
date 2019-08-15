@@ -8,17 +8,16 @@ def NORMALIZE(df, price_max='High', price_min='Low', price='Close'):
     normalize_list = []
     i = 0
     start = None
-    norm_max = max(df[price_max])
-    norm_min = min(df[price_min])
     while i < len(df[price]):
         if df[price_max][i] != df[price_max][i] or df[price_min][i] != df[price_min][i] or df[price][i] != df[price][i] or i < 1:
             normalize = float('NaN')
         else:
             if start is None:
                 start = i
-            end = i + 1
-#            norm_max = max(df[price_max][start:end])
-#            norm_min = min(df[price_min][start:end])
+                x_max = df[price_max][start:]
+                norm_max = jhta.MAX({'x': x_max}, len(x_max), 'x')[-1]
+                x_min = df[price_min][start:]
+                norm_min = jhta.MIN({'x': x_min}, len(x_min), 'x')[-1]
             normalize = (df[price][i] - norm_min) / (norm_max - norm_min)
         normalize_list.append(normalize)
         i += 1
@@ -37,10 +36,9 @@ def STANDARDIZE(df, price='Close'):
         else:
             if start is None:
                 start = i
-            end = i + 1
-            x = df[price][start:end]
-            mean = jhta.MEAN({'x': x}, len(x), 'x')[-1]
-            standard_deviation = jhta.STDEV({'x': x}, len(x), 'x')[-1]
+                x = df[price][start:]
+                mean = jhta.MEAN({'x': x}, len(x), 'x')[-1]
+                standard_deviation = jhta.STDEV({'x': x}, len(x), 'x')[-1]
             standardize = (df[price][i] - mean) / standard_deviation
         standardize_list.append(standardize)
         i += 1
