@@ -1,5 +1,3 @@
-
-
 def HR(hit_trades_int, total_trades_int):
     """
     Hit Rate / Win Rate
@@ -52,4 +50,10 @@ def POR(hitrate_float, profit_loss_ratio_float):
         i += 1
 
     return int(table_lucas_lebeau_list[key_profit_loss_ratio][key_hitrate])
+
+def BPPS(trade_start_price, trade_end_price, trade_start_timestamp, trade_end_timestamp):
+    """
+    Basis Points per Second
+    """
+    return (((trade_end_price - trade_start_price) / trade_start_price) / (trade_end_timestamp - trade_start_timestamp)) * 10000
 
