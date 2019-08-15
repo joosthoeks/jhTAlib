@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2019-08-14
+:Date:   2019-08-15
 
 .. contents::
    :depth: 3
@@ -1863,6 +1863,15 @@ POR \| Probability of Ruin (Table of Lucas and LeBeau) \| DONE
 -  ``int = jhta.POR(hitrade_float, profit_loss_ratio_float)``
 
 -  book: Computer Analysis of the Futures Markets
+
+--------------
+
+BPPS \| Basis Points per Second \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``float = jhta.BPPS(trade_start_price, trade_end_price, trade_start_timestamp, trade_end_timestamp)``
+
+-  book: An Introduction to Algorithmic Trading
 
 --------------
 

@@ -6404,6 +6404,38 @@
         <style:list-level-properties text:space-before="2.5in" text:min-label-width="0.25in" />
       </text:list-level-style-bullet>
     </text:list-style>
+    <text:list-style style:name="L201">
+      <text:list-level-style-bullet text:level="1" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
+        <style:list-level-properties text:space-before="0.25in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="2" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="‣">
+        <style:list-level-properties text:space-before="0.5in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="3" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="⁃">
+        <style:list-level-properties text:space-before="0.75in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="4" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
+        <style:list-level-properties text:space-before="1.0in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="5" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="‣">
+        <style:list-level-properties text:space-before="1.25in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="6" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="⁃">
+        <style:list-level-properties text:space-before="1.5in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="7" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
+        <style:list-level-properties text:space-before="1.75in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="8" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="‣">
+        <style:list-level-properties text:space-before="2.0in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="9" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="⁃">
+        <style:list-level-properties text:space-before="2.25in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="10" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
+        <style:list-level-properties text:space-before="2.5in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+    </text:list-style>
     <style:style style:name="P1" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L1">
     </style:style>
     <style:style style:name="P2" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L2">
@@ -6927,6 +6959,8 @@
     <style:style style:name="P219" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L199">
     </style:style>
     <style:style style:name="P220" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L200">
+    </style:style>
+    <style:style style:name="P221" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L201">
       <style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0in" />
     </style:style>
   </office:automatic-styles>
@@ -6934,7 +6968,7 @@
 <office:text>
 <text:p text:style-name="Title">jhTAlib</text:p>
 <text:p text:style-name="Author">Joost Hoeks</text:p>
-<text:p text:style-name="Date">2019-08-14</text:p>
+<text:p text:style-name="Date">2019-08-15</text:p>
 <text:h text:style-name="Heading_20_1" text:outline-level="1">jhTAlib</text:h>
 <text:p text:style-name="First_20_paragraph">Technical Analysis Library
 Time-Series</text:p>
@@ -8811,63 +8845,75 @@ Probability of Ruin (Table of Lucas and LeBeau) | DONE</text:h>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
+<text:h text:style-name="Heading_20_4" text:outline-level="4">BPPS |
+Basis Points per Second | DONE</text:h>
+<text:list text:style-name="L187">
+  <text:list-item>
+    <text:p text:style-name="P207"><text:span text:style-name="Source_Text">float = jhta.BPPS(trade_start_price, trade_end_price, trade_start_timestamp, trade_end_timestamp)</text:span></text:p>
+  </text:list-item>
+  <text:list-item>
+    <text:p text:style-name="P207">book: An Introduction to Algorithmic
+    Trading</text:p>
+  </text:list-item>
+</text:list>
+<text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_3" text:outline-level="3"><text:a xlink:type="simple" xlink:href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/volatility_indicators/volatility_indicators.py" office:name=""><text:span text:style-name="Definition">Volatility
 Indicators</text:span></text:a></text:h>
 <text:h text:style-name="Heading_20_4" text:outline-level="4">AEM | Arms
 Ease of Movement | DONE</text:h>
-<text:list text:style-name="L187">
+<text:list text:style-name="L188">
   <text:list-item>
-    <text:p text:style-name="P207"><text:span text:style-name="Source_Text">list of floats = jhta.AEM(df)</text:span></text:p>
+    <text:p text:style-name="P208"><text:span text:style-name="Source_Text">list of floats = jhta.AEM(df)</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P207"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=ArmsEMV.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=ArmsEMV.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P208"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=ArmsEMV.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=ArmsEMV.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">ATR |
 Average True Range | DONE</text:h>
-<text:list text:style-name="L188">
+<text:list text:style-name="L189">
   <text:list-item>
-    <text:p text:style-name="P208"><text:span text:style-name="Source_Text">list of floats = jhta.ATR(df, n)</text:span></text:p>
+    <text:p text:style-name="P209"><text:span text:style-name="Source_Text">list of floats = jhta.ATR(df, n)</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P208"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=ATR.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=ATR.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P209"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=ATR.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=ATR.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">NATR |
 Normalized Average True Range |</text:h>
-<text:list text:style-name="L189">
+<text:list text:style-name="L190">
   <text:list-item>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">RVI |
 Relative Volatility Index | DONE</text:h>
-<text:list text:style-name="L190">
+<text:list text:style-name="L191">
   <text:list-item>
-    <text:p text:style-name="P210"><text:span text:style-name="Source_Text">list of floats = jhta.RVI(df, n)</text:span></text:p>
+    <text:p text:style-name="P211"><text:span text:style-name="Source_Text">list of floats = jhta.RVI(df, n)</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P210"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=RVI.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=RVI.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P211"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=RVI.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=RVI.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">INERTIA |
 Inertia |</text:h>
-<text:list text:style-name="L191">
+<text:list text:style-name="L192">
   <text:list-item>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">TRANGE |
 True Range | DONE</text:h>
-<text:list text:style-name="L192">
+<text:list text:style-name="L193">
   <text:list-item>
-    <text:p text:style-name="P212"><text:span text:style-name="Source_Text">list of floats = jhta.TRANGE(df)</text:span></text:p>
+    <text:p text:style-name="P213"><text:span text:style-name="Source_Text">list of floats = jhta.TRANGE(df)</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P212"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=TR.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=TR.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P213"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=TR.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=TR.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -8875,82 +8921,82 @@ True Range | DONE</text:h>
 Indicators</text:span></text:a></text:h>
 <text:h text:style-name="Heading_20_4" text:outline-level="4">AD |
 Chaikin A/D Line | DONE</text:h>
-<text:list text:style-name="L193">
+<text:list text:style-name="L194">
   <text:list-item>
-    <text:p text:style-name="P213"><text:span text:style-name="Source_Text">list of floats = jhta.AD(df)</text:span></text:p>
+    <text:p text:style-name="P214"><text:span text:style-name="Source_Text">list of floats = jhta.AD(df)</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P213"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=AccumDist.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=AccumDist.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P214"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=AccumDist.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=AccumDist.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">ADOSC |
 Chaikin A/D Oscillator |</text:h>
-<text:list text:style-name="L194">
+<text:list text:style-name="L195">
   <text:list-item>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">OBV | On
 Balance Volume | DONE</text:h>
-<text:list text:style-name="L195">
+<text:list text:style-name="L196">
   <text:list-item>
-    <text:p text:style-name="P215"><text:span text:style-name="Source_Text">list of floats = jhta.OBV(df)</text:span></text:p>
+    <text:p text:style-name="P216"><text:span text:style-name="Source_Text">list of floats = jhta.OBV(df)</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P215"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=OBV.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=OBV.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P216"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=OBV.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=OBV.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">PVR |
 Price Volume Rank | DONE</text:h>
-<text:list text:style-name="L196">
+<text:list text:style-name="L197">
   <text:list-item>
-    <text:p text:style-name="P216"><text:span text:style-name="Source_Text">list of ints = jhta.PVR(df, price='Close')</text:span></text:p>
+    <text:p text:style-name="P217"><text:span text:style-name="Source_Text">list of ints = jhta.PVR(df, price='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P216"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=PVrank.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=PVrank.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P217"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=PVrank.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=PVrank.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">PVT |
 Price Volume Trend | DONE</text:h>
-<text:list text:style-name="L197">
+<text:list text:style-name="L198">
   <text:list-item>
-    <text:p text:style-name="P217"><text:span text:style-name="Source_Text">list of floats = jhta.PVT(df, price='Close')</text:span></text:p>
+    <text:p text:style-name="P218"><text:span text:style-name="Source_Text">list of floats = jhta.PVT(df, price='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P217"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=PVT.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=PVT.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P218"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=PVT.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=PVT.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">PVI |
 Positive Volume Index | DONE</text:h>
-<text:list text:style-name="L198">
+<text:list text:style-name="L199">
   <text:list-item>
-    <text:p text:style-name="P218"><text:span text:style-name="Source_Text">list of floats = jhta.PVI(df, price='Close')</text:span></text:p>
+    <text:p text:style-name="P219"><text:span text:style-name="Source_Text">list of floats = jhta.PVI(df, price='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P218"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=PVI.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=PVI.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P219"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=PVI.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=PVI.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">NVI |
 Negative Volume Index | DONE</text:h>
-<text:list text:style-name="L199">
+<text:list text:style-name="L200">
   <text:list-item>
-    <text:p text:style-name="P219"><text:span text:style-name="Source_Text">list of floats = jhta.NVI(df, price='Close')</text:span></text:p>
+    <text:p text:style-name="P220"><text:span text:style-name="Source_Text">list of floats = jhta.NVI(df, price='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P219"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=NVI.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=NVI.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P220"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=NVI.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=NVI.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_2" text:outline-level="2">Donation
 and Funding</text:h>
-<text:list text:style-name="L200">
+<text:list text:style-name="L201">
   <text:list-item>
-    <text:p text:style-name="P220">BTC:
+    <text:p text:style-name="P221">BTC:
     <text:a xlink:type="simple" xlink:href="https://insight.bitpay.com/address/3KCoXMyUDgVABoFSuV8GQT3k8qkUhEDG9X" office:name=""><text:span text:style-name="Definition">3KCoXMyUDgVABoFSuV8GQT3k8qkUhEDG9X</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
