@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2019-08-15
+date: 2019-08-18
 ---
 
 # jhTAlib
@@ -1686,6 +1686,16 @@ import jhtalib as jhta
 - ```list of floats = jhta.NVI(df, price='Close')```
 
 - [https://www.fmlabs.com/reference/default.htm?url=NVI.htm](https://www.fmlabs.com/reference/default.htm?url=NVI.htm)
+
+---
+
+## Notebooks
+
+- [https://github.com/joosthoeks/jhTAlib/tree/master/notebooks](https://github.com/joosthoeks/jhTAlib/tree/master/notebooks)
+
+### Recession Probability
+
+- [https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebooks/recession_probability.ipynb](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebooks/recession_probability.ipynb)
 
 ---
 
