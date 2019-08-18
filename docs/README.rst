@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2019-08-15
+:Date:   2019-08-18
 
 .. contents::
    :depth: 3
@@ -1989,6 +1989,18 @@ NVI \| Negative Volume Index \| DONE
 -  ``list of floats = jhta.NVI(df, price='Close')``
 
 -  https://www.fmlabs.com/reference/default.htm?url=NVI.htm
+
+--------------
+
+Notebooks
+---------
+
+-  https://github.com/joosthoeks/jhTAlib/tree/master/notebooks
+
+Recession Probability
+~~~~~~~~~~~~~~~~~~~~~
+
+-  https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebooks/recession_probability.ipynb
 
 --------------
 
