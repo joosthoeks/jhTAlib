@@ -1553,6 +1553,14 @@ import jhtalib as jhta
 
 ---
 
+#### SLOPES | Slopes | DONE
+
+- ```list of floats = jhta.SLOPES(df, n, price='Close')```
+
+- book: An Introduction to Algorithmic Trading
+
+---
+
 ### [Uncategorised](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/uncategorised/uncategorised.py)
 
 #### HR | Hit Rate / Win Rate | DONE
