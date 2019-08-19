@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2019-08-18
+:Date:   2019-08-19
 
 .. contents::
    :depth: 3
@@ -1824,6 +1824,24 @@ SLR \| Simple Linear Regression \| DONE
 -  ``list of floats = jhta.SLR(df, price='Close', predictions_int=0)``
 
 -  https://machinelearningmastery.com/implement-simple-linear-regression-scratch-python/
+
+--------------
+
+SLOPE \| Slope \| DONE
+^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``float = jhta.SLOPE(x1, y1, x2, y2)``
+
+-  book: An Introduction to Algorithmic Trading
+
+--------------
+
+SLOPES \| Slopes \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list of floats = jhta.SLOPES(df, n, price='Close')``
+
+-  book: An Introduction to Algorithmic Trading
 
 --------------
 
