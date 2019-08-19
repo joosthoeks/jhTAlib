@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2019-08-18
+date: 2019-08-19
 ---
 
 # jhTAlib
@@ -1542,6 +1542,14 @@ import jhtalib as jhta
 - ```list of floats = jhta.SLR(df, price='Close', predictions_int=0)```
 
 - [https://machinelearningmastery.com/implement-simple-linear-regression-scratch-python/](https://machinelearningmastery.com/implement-simple-linear-regression-scratch-python/)
+
+---
+
+#### SLOPE | Slope | DONE
+
+- ```float = jhta.SLOPE(x1, y1, x2, y2)```
+
+- book: An Introduction to Algorithmic Trading
 
 ---
 

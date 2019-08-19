@@ -580,3 +580,9 @@ def SLR(df, price='Close', predictions_int=0):
         i += 1
     return slr_list
 
+def SLOPE(x1, y1, x2, y2):
+    """
+    Slope
+    """
+    return (y2 - y1) / (x2 - x1)
+
