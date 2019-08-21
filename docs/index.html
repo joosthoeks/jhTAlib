@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <meta name="author" content="Joost Hoeks">
-  <meta name="dcterms.date" content="2019-08-19">
+  <meta name="dcterms.date" content="2019-08-21">
   <title>jhTAlib</title>
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" href="pandoc.css">
@@ -17,7 +17,7 @@
 <header>
 <h1 class="title">jhTAlib</h1>
 <p class="author">Joost Hoeks</p>
-<p class="date">2019-08-19</p>
+<p class="date">2019-08-21</p>
 </header>
 <nav id="TOC">
 <ul>
@@ -184,7 +184,7 @@ $ python3 test.py</code></pre>
 <hr />
 <h4 id="pp-pivot-point-done">PP | Pivot Point | DONE</h4>
 <ul>
-<li><p><code>dict of lists of floats = jhta.PP(df)</code></p></li>
+<li><p><code>dict of lists of floats = jhta.PP(df, high='High', low='Low', close='Close')</code></p></li>
 <li><p><a href="https://en.wikipedia.org/wiki/Pivot_point_(technical_analysis)" class="uri">https://en.wikipedia.org/wiki/Pivot_point_(technical_analysis)</a></p></li>
 </ul>
 <hr />
@@ -278,59 +278,59 @@ $ python3 test.py</code></pre>
 <h3 id="candlestick"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/candlestick/candlestick.py">Candlestick</a></h3>
 <h4 id="cdlbodys-candle-body-size-done">CDLBODYS | Candle Body Size | DONE</h4>
 <ul>
-<li><p><code>list of floats = jhta.CDLBODYS(df)</code></p></li>
+<li><p><code>list of floats = jhta.CDLBODYS(df, open='Open', close='Close')</code></p></li>
 <li><p><a href="https://www.tradeciety.com/understand-candlesticks-patterns/" class="uri">https://www.tradeciety.com/understand-candlesticks-patterns/</a></p></li>
 </ul>
 <hr />
 <h4 id="cdlwicks-candle-wick-size-done">CDLWICKS | Candle Wick Size | DONE</h4>
 <ul>
-<li><p><code>list of floats = jhta.CDLWICKS(df)</code></p></li>
+<li><p><code>list of floats = jhta.CDLWICKS(df, high='High', low='Low')</code></p></li>
 <li><p><a href="https://www.tradeciety.com/understand-candlesticks-patterns/" class="uri">https://www.tradeciety.com/understand-candlesticks-patterns/</a></p></li>
 </ul>
 <hr />
 <h4 id="cdluppshas-candle-upper-shadow-size-done">CDLUPPSHAS | Candle Upper Shadow Size | DONE</h4>
 <ul>
-<li><p><code>list of floats = jhta.CDLUPPSHAS(df)</code></p></li>
+<li><p><code>list of floats = jhta.CDLUPPSHAS(df, open='Open', high='High', close='Close')</code></p></li>
 <li><p><a href="https://www.tradeciety.com/understand-candlesticks-patterns/" class="uri">https://www.tradeciety.com/understand-candlesticks-patterns/</a></p></li>
 </ul>
 <hr />
 <h4 id="cdllowshas-candle-lower-shadow-size-done">CDLLOWSHAS | Candle Lower Shadow Size | DONE</h4>
 <ul>
-<li><p><code>list of floats = jhta.CDLLOWSHAS(df)</code></p></li>
+<li><p><code>list of floats = jhta.CDLLOWSHAS(df, open='Open', low='Low', close='Close')</code></p></li>
 <li><p><a href="https://www.tradeciety.com/understand-candlesticks-patterns/" class="uri">https://www.tradeciety.com/understand-candlesticks-patterns/</a></p></li>
 </ul>
 <hr />
 <h4 id="cdlbodyp-candle-body-percent-done">CDLBODYP | Candle Body Percent | DONE</h4>
 <ul>
-<li><code>list of floats = jhta.CDLBODYP(p)</code></li>
+<li><code>list of floats = jhta.CDLBODYP(df, open='Open', close='Close')</code></li>
 </ul>
 <hr />
 <h4 id="cdlbodym-candle-body-momentum-done">CDLBODYM | Candle Body Momentum | DONE</h4>
 <ul>
-<li><p><code>list of floats = jhta.CDLBODYM(df, n)</code></p></li>
+<li><p><code>list of floats = jhta.CDLBODYM(df, n, open='Open', close='Close')</code></p></li>
 <li><p>book: Trading Systems and Methods</p></li>
 </ul>
 <hr />
 <h4 id="gap-gap-done">GAP | Gap | DONE</h4>
 <ul>
-<li><code>list of floats = jhta.GAP(df)</code></li>
+<li><code>list of floats = jhta.GAP(df, high='High', low='Low', close='Close')</code></li>
 </ul>
 <hr />
 <h4 id="qstick-qstick-done">QSTICK | Qstick | DONE</h4>
 <ul>
-<li><p><code>list of floats = jhta.QSTICK(df, n)</code></p></li>
+<li><p><code>list of floats = jhta.QSTICK(df, n, open='Open', close='Close')</code></p></li>
 <li><p><a href="https://www.fmlabs.com/reference/default.htm?url=Qstick.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=Qstick.htm</a></p></li>
 </ul>
 <hr />
 <h4 id="shadowt-shadow-trends-done">SHADOWT | Shadow Trends | DONE</h4>
 <ul>
-<li><p><code>dict of lists of floats = jhta.SHADOWT(df, n)</code></p></li>
+<li><p><code>dict of lists of floats = jhta.SHADOWT(df, n, open='Open', high='High', low='Low', close='Close')</code></p></li>
 <li><p>book: The New Technical Trader</p></li>
 </ul>
 <hr />
 <h4 id="imi-intraday-momentum-index-done">IMI | Intraday Momentum Index | DONE</h4>
 <ul>
-<li><p><code>list of floats = jhta.IMI(df)</code></p></li>
+<li><p><code>list of floats = jhta.IMI(df, open='Open', close='Close')</code></p></li>
 <li><p><a href="https://www.fmlabs.com/reference/default.htm?url=IMI.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=IMI.htm</a></p></li>
 </ul>
 <hr />
@@ -374,86 +374,86 @@ $ python3 test.py</code></pre>
 <h3 id="data"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/data/data.py">Data</a></h3>
 <h4 id="csv2df-csv-file-2-datafeed-done">CSV2DF | CSV file 2 DataFeed | DONE</h4>
 <ul>
-<li><code>dict of tuples of floats = jhta.CSV2DF(csv_file_path)</code></li>
+<li><code>dict of tuples of floats = jhta.CSV2DF(csv_file_path, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume')</code></li>
 </ul>
 <hr />
 <h4 id="csvurl2df-csv-file-url-2-datafeed-done">CSVURL2DF | CSV file url 2 DataFeed | DONE</h4>
 <ul>
-<li><code>dict of tuples of floats = jhta.CSVURL2DF(csv_file_url)</code></li>
+<li><code>dict of tuples of floats = jhta.CSVURL2DF(csv_file_url, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume')</code></li>
 </ul>
 <hr />
 <h4 id="df2csv-datafeed-2-csv-file-done">DF2CSV | DataFeed 2 CSV file | DONE</h4>
 <ul>
-<li><code>csv file = jhta.DF2CSV(df, csv_file_path)</code></li>
+<li><code>csv file = jhta.DF2CSV(df, csv_file_path, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume')</code></li>
 </ul>
 <hr />
 <h4 id="df2dfrev-datafeed-2-datafeed-reversed-done">DF2DFREV | DataFeed 2 DataFeed Reversed | DONE</h4>
 <ul>
-<li><code>dict of tuples of floats = jhta.DF2DFREV(df)</code></li>
+<li><code>dict of tuples of floats = jhta.DF2DFREV(df, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume')</code></li>
 </ul>
 <hr />
 <h4 id="df2dfwin-datafeed-2-datafeed-window-done">DF2DFWIN | DataFeed 2 DataFeed Window | DONE</h4>
 <ul>
-<li><code>dict of tuples of floats = jhta.DF2DFWIN(df, start=0, end=10)</code></li>
+<li><code>dict of tuples of floats = jhta.DF2DFWIN(df, start=0, end=10, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume')</code></li>
 </ul>
 <hr />
 <h4 id="df_head-datafeed-head-done">DF_HEAD | DataFeed HEAD | DONE</h4>
 <ul>
-<li><code>dict of tuples of floats = jhta.DF_HEAD(df, n=5)</code></li>
+<li><code>dict of tuples of floats = jhta.DF_HEAD(df, n=5, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume')</code></li>
 </ul>
 <hr />
 <h4 id="df_tail-datafeed-tail-done">DF_TAIL | DataFeed TAIL | DONE</h4>
 <ul>
-<li><code>dict of tuples of floats = jhta.DF_TAIL(df, n=5)</code></li>
+<li><code>dict of tuples of floats = jhta.DF_TAIL(df, n=5, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume')</code></li>
 </ul>
 <hr />
 <h4 id="df2heikin_ashi-datafeed-2-heikin-ashi-datafeed-done">DF2HEIKIN_ASHI | DataFeed 2 Heikin-Ashi DataFeed | DONE</h4>
 <ul>
-<li><code>dict of tuples of floats = jhta.DF2HEIKIN_ASHI(df)</code></li>
+<li><code>dict of tuples of floats = jhta.DF2HEIKIN_ASHI(df, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume')</code></li>
 </ul>
 <hr />
 <h3 id="event-driven"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/event_driven/event_driven.py">Event Driven</a></h3>
 <h4 id="asi-accumulation-swing-index-j.-welles-wilder-done">ASI | Accumulation Swing Index (J. Welles Wilder) | DONE</h4>
 <ul>
-<li><p><code>list of floats = jhta.ASI(df, L)</code></p></li>
+<li><p><code>list of floats = jhta.ASI(df, L, open='Open', high='High', low='Low', close='Close')</code></p></li>
 <li><p>book: New Concepts in Technical Trading Systems</p></li>
 </ul>
 <hr />
 <h4 id="si-swing-index-j.-welles-wilder-done">SI | Swing Index (J. Welles Wilder) | DONE</h4>
 <ul>
-<li><p><code>list of floats = jhta.SI(df, L)</code></p></li>
+<li><p><code>list of floats = jhta.SI(df, L, open='Open', high='High', low='Low', close='Close')</code></p></li>
 <li><p>book: New Concepts in Technical Trading Systems</p></li>
 </ul>
 <hr />
 <h3 id="experimental"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/experimental/experimental.py">Experimental</a></h3>
 <h4 id="jh_savgp-swing-average-price---previous-average-price-done">JH_SAVGP | Swing Average Price - previous Average Price | DONE</h4>
 <ul>
-<li><code>list of floats = jhta.JH_SAVGP(df)</code></li>
+<li><code>list of floats = jhta.JH_SAVGP(df, open='Open', high='High', low='Low', close='Close')</code></li>
 </ul>
 <hr />
 <h4 id="jh_savgps-swing-average-price---previous-average-price-summation-done">JH_SAVGPS | Swing Average Price - previous Average Price Summation | DONE</h4>
 <ul>
-<li><code>list of floats = jhta.JH_SAVGPS(df)</code></li>
+<li><code>list of floats = jhta.JH_SAVGPS(df, open='Open', high='High', low='Low', close='Close')</code></li>
 </ul>
 <hr />
 <h4 id="jh_sco-swing-close---open-done">JH_SCO | Swing Close - Open | DONE</h4>
 <ul>
-<li><code>list of floats = jhta.JH_SCO(df)</code></li>
+<li><code>list of floats = jhta.JH_SCO(df, open='Open', close='Close')</code></li>
 </ul>
 <hr />
 <h4 id="jh_scos-swing-close---open-summation-done">JH_SCOS | Swing Close - Open Summation | DONE</h4>
 <ul>
-<li><code>list of floats = jhta.JH_SCOS(df)</code></li>
+<li><code>list of floats = jhta.JH_SCOS(df, open='Open', close='Close')</code></li>
 </ul>
 <hr />
 <h4 id="jh_smedp-swing-median-price---previous-median-price-done">JH_SMEDP | Swing Median Price - previous Median Price | DONE</h4>
 <ul>
-<li><code>list of floats = jhta.JH_SMEDP(df)</code></li>
+<li><code>list of floats = jhta.JH_SMEDP(df, high='High', low='Low')</code></li>
 </ul>
 <hr />
 <h4 id="jh_smedps-swing-median-price---previous-median-price-summation-done">jh_SMEDPS | Swing Median Price - previous Median Price Summation | DONE</h4>
 <ul>
-<li><code>list of floats = jhta.JH_SMEDPS(df)</code></li>
+<li><code>list of floats = jhta.JH_SMEDPS(df, high='High', low='Low')</code></li>
 </ul>
 <hr />
 <h4 id="jh_spp-swing-price---previous-price-done">JH_SPP | Swing Price - previous Price | DONE</h4>
@@ -468,22 +468,22 @@ $ python3 test.py</code></pre>
 <hr />
 <h4 id="jh_stypp-swing-typical-price---previous-typical-price-done">JH_STYPP | Swing Typical Price - previous Typical Price | DONE</h4>
 <ul>
-<li><code>list of floats = jhta.JH_STYPP(df)</code></li>
+<li><code>list of floats = jhta.JH_STYPP(df, high='High', low='Low', close='Close')</code></li>
 </ul>
 <hr />
 <h4 id="jh_stypps-swing-typical-price---previous-typical-price-summation-done">JH_STYPPS | Swing Typical Price - previous Typical Price Summation | DONE</h4>
 <ul>
-<li><code>list of floats = jhta.JH_STYPPS(df)</code></li>
+<li><code>list of floats = jhta.JH_STYPPS(df, high='High', low='Low', close='Close')</code></li>
 </ul>
 <hr />
 <h4 id="jh_swclp-swing-weighted-close-price---previous-weighted-close-price-done">JH_SWCLP | Swing Weighted Close Price - previous Weighted Close Price | DONE</h4>
 <ul>
-<li><code>list of floats = jhta.JH_SWCLP(df)</code></li>
+<li><code>list of floats = jhta.JH_SWCLP(df, high='High', low='Low', close='Close')</code></li>
 </ul>
 <hr />
 <h4 id="jh_swclps-swing-weighted-close-price---previous-weighted-close-price-summation-done">JH_SWCLPS | Swing Weighted Close Price - previous Weighted Close Price Summation | DONE</h4>
 <ul>
-<li><code>list of floats = jhta.JH_SWCLPS(df)</code></li>
+<li><code>list of floats = jhta.JH_SWCLPS(df, high='High', low='Low', close='Close')</code></li>
 </ul>
 <hr />
 <h3 id="general"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/general/general.py">General</a></h3>
@@ -667,12 +667,12 @@ $ python3 test.py</code></pre>
 <hr />
 <h4 id="add-addition-high-low-done">ADD | Addition High + Low | DONE</h4>
 <ul>
-<li><code>list of floats = jhta.ADD(df)</code></li>
+<li><code>list of floats = jhta.ADD(df, high='High', low='Low')</code></li>
 </ul>
 <hr />
 <h4 id="div-division-high-low-done">DIV | Division High / Low | DONE</h4>
 <ul>
-<li><code>list of floats = jhta.DIV(df)</code></li>
+<li><code>list of floats = jhta.DIV(df, high='High', low='Low')</code></li>
 </ul>
 <hr />
 <h4 id="max-highest-value-over-a-specified-period-done">MAX | Highest value over a specified period | DONE</h4>
@@ -707,12 +707,12 @@ $ python3 test.py</code></pre>
 <hr />
 <h4 id="mult-multiply-high-low-done">MULT | Multiply High * Low | DONE</h4>
 <ul>
-<li><code>list of floats = jhta.MULT(df)</code></li>
+<li><code>list of floats = jhta.MULT(df, high='High', low='Low')</code></li>
 </ul>
 <hr />
 <h4 id="sub-subtraction-high---low-done">SUB | Subtraction High - Low | DONE</h4>
 <ul>
-<li><code>list of floats = jhta.SUB(df)</code></li>
+<li><code>list of floats = jhta.SUB(df, high='High', low='Low')</code></li>
 </ul>
 <hr />
 <h4 id="sum-summation-done">SUM | Summation | DONE</h4>
@@ -879,20 +879,20 @@ $ python3 test.py</code></pre>
 <hr />
 <h4 id="willr-williams-r-done">WILLR | Williams' %R | DONE</h4>
 <ul>
-<li><p><code>list of floats = jhta.WILLR(df, n)</code></p></li>
+<li><p><code>list of floats = jhta.WILLR(df, n, high='High', low='Low', close='Close')</code></p></li>
 <li><p><a href="https://www.fmlabs.com/reference/default.htm?url=WilliamsR.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=WilliamsR.htm</a></p></li>
 </ul>
 <hr />
 <h3 id="overlap-studies"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/overlap_studies/overlap_studies.py">Overlap Studies</a></h3>
 <h4 id="bbands-bollinger-bands-done">BBANDS | Bollinger Bands | DONE</h4>
 <ul>
-<li><p><code>dict of lists of floats = jhta.BBANDS(df, n, f=2)</code></p></li>
+<li><p><code>dict of lists of floats = jhta.BBANDS(df, n, f=2, high='High', low='Low', close='Close')</code></p></li>
 <li><p><a href="https://www.fmlabs.com/reference/default.htm?url=Bollinger.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=Bollinger.htm</a></p></li>
 </ul>
 <hr />
 <h4 id="bbandw-bollinger-band-width-done">BBANDW | Bollinger Band Width | DONE</h4>
 <ul>
-<li><p><code>list of floats = jhta.BBANDW(df, n, f=2)</code></p></li>
+<li><p><code>list of floats = jhta.BBANDW(df, n, f=2, high='High', low='Low', close='Close')</code></p></li>
 <li><p><a href="https://www.fmlabs.com/reference/default.htm?url=BollingerWidth.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=BollingerWidth.htm</a></p></li>
 </ul>
 <hr />
@@ -941,7 +941,7 @@ $ python3 test.py</code></pre>
 <hr />
 <h4 id="midprice-midpoint-price-over-period-done">MIDPRICE | MidPoint Price over period | DONE</h4>
 <ul>
-<li><p><code>list of floats = jhta.MIDPRICE(df, n)</code></p></li>
+<li><p><code>list of floats = jhta.MIDPRICE(df, n, high='High', low='Low')</code></p></li>
 <li><p><a href="http://www.tadoc.org/indicator/MIDPRICE.htm" class="uri">http://www.tadoc.org/indicator/MIDPRICE.htm</a></p></li>
 </ul>
 <hr />
@@ -953,7 +953,7 @@ $ python3 test.py</code></pre>
 <hr />
 <h4 id="sar-parabolic-sar-done">SAR | Parabolic SAR | DONE</h4>
 <ul>
-<li><p><code>list of floats = jhta.SAR(df, af_step=.02, af_max=.2)</code></p></li>
+<li><p><code>list of floats = jhta.SAR(df, af_step=.02, af_max=.2, high='High', low='Low')</code></p></li>
 <li><p>book: New Concepts in Technical Trading Systems</p></li>
 </ul>
 <hr />
@@ -1054,25 +1054,25 @@ $ python3 test.py</code></pre>
 <h3 id="price-transform"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/price_transform/price_transform.py">Price Transform</a></h3>
 <h4 id="avgprice-average-price-done">AVGPRICE | Average Price | DONE</h4>
 <ul>
-<li><p><code>list of floats = jhta.AVGPRICE(df)</code></p></li>
+<li><p><code>list of floats = jhta.AVGPRICE(df, open='Open', high='High', low='Low', close='Close')</code></p></li>
 <li><p><a href="https://www.fmlabs.com/reference/default.htm?url=AvgPrices.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=AvgPrices.htm</a></p></li>
 </ul>
 <hr />
 <h4 id="medprice-median-price-done">MEDPRICE | Median Price | DONE</h4>
 <ul>
-<li><p><code>list of floats = jhta.MEDPRICE(df)</code></p></li>
+<li><p><code>list of floats = jhta.MEDPRICE(df, high='High', low='Low')</code></p></li>
 <li><p><a href="https://www.fmlabs.com/reference/default.htm?url=MedianPrices.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=MedianPrices.htm</a></p></li>
 </ul>
 <hr />
 <h4 id="typprice-typical-price-done">TYPPRICE | Typical Price | DONE</h4>
 <ul>
-<li><p><code>list of floats = jhta.TYPPRICE(df)</code></p></li>
+<li><p><code>list of floats = jhta.TYPPRICE(df, high='High', low='Low', close='Close')</code></p></li>
 <li><p><a href="https://www.fmlabs.com/reference/default.htm?url=TypicalPrices.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=TypicalPrices.htm</a></p></li>
 </ul>
 <hr />
 <h4 id="wclprice-weighted-close-price-done">WCLPRICE | Weighted Close Price | DONE</h4>
 <ul>
-<li><p><code>list of floats = jhta.WCLPRICE(df)</code></p></li>
+<li><p><code>list of floats = jhta.WCLPRICE(df, high='High', low='Low', close='Close')</code></p></li>
 <li><p><a href="https://www.fmlabs.com/reference/default.htm?url=WeightedCloses.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=WeightedCloses.htm</a></p></li>
 </ul>
 <hr />
@@ -1234,13 +1234,13 @@ $ python3 test.py</code></pre>
 <h3 id="volatility-indicators"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/volatility_indicators/volatility_indicators.py">Volatility Indicators</a></h3>
 <h4 id="aem-arms-ease-of-movement-done">AEM | Arms Ease of Movement | DONE</h4>
 <ul>
-<li><p><code>list of floats = jhta.AEM(df)</code></p></li>
+<li><p><code>list of floats = jhta.AEM(df, high='High', low='Low', volume='Volume')</code></p></li>
 <li><p><a href="https://www.fmlabs.com/reference/default.htm?url=ArmsEMV.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=ArmsEMV.htm</a></p></li>
 </ul>
 <hr />
 <h4 id="atr-average-true-range-done">ATR | Average True Range | DONE</h4>
 <ul>
-<li><p><code>list of floats = jhta.ATR(df, n)</code></p></li>
+<li><p><code>list of floats = jhta.ATR(df, n, high='High', low='Low', close='Close')</code></p></li>
 <li><p><a href="https://www.fmlabs.com/reference/default.htm?url=ATR.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=ATR.htm</a></p></li>
 </ul>
 <hr />
@@ -1251,7 +1251,7 @@ $ python3 test.py</code></pre>
 <hr />
 <h4 id="rvi-relative-volatility-index-done">RVI | Relative Volatility Index | DONE</h4>
 <ul>
-<li><p><code>list of floats = jhta.RVI(df, n)</code></p></li>
+<li><p><code>list of floats = jhta.RVI(df, n, high='High', low='Low')</code></p></li>
 <li><p><a href="https://www.fmlabs.com/reference/default.htm?url=RVI.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=RVI.htm</a></p></li>
 </ul>
 <hr />
@@ -1262,14 +1262,14 @@ $ python3 test.py</code></pre>
 <hr />
 <h4 id="trange-true-range-done">TRANGE | True Range | DONE</h4>
 <ul>
-<li><p><code>list of floats = jhta.TRANGE(df)</code></p></li>
+<li><p><code>list of floats = jhta.TRANGE(df, high='High', low='Low', close='Close')</code></p></li>
 <li><p><a href="https://www.fmlabs.com/reference/default.htm?url=TR.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=TR.htm</a></p></li>
 </ul>
 <hr />
 <h3 id="volume-indicators"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/volume_indicators/volume_indicators.py">Volume Indicators</a></h3>
 <h4 id="ad-chaikin-ad-line-done">AD | Chaikin A/D Line | DONE</h4>
 <ul>
-<li><p><code>list of floats = jhta.AD(df)</code></p></li>
+<li><p><code>list of floats = jhta.AD(df, high='High', low='Low', close='Close', volume='Volume')</code></p></li>
 <li><p><a href="https://www.fmlabs.com/reference/default.htm?url=AccumDist.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=AccumDist.htm</a></p></li>
 </ul>
 <hr />
@@ -1280,31 +1280,31 @@ $ python3 test.py</code></pre>
 <hr />
 <h4 id="obv-on-balance-volume-done">OBV | On Balance Volume | DONE</h4>
 <ul>
-<li><p><code>list of floats = jhta.OBV(df)</code></p></li>
+<li><p><code>list of floats = jhta.OBV(df, close='Close', volume='Volume')</code></p></li>
 <li><p><a href="https://www.fmlabs.com/reference/default.htm?url=OBV.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=OBV.htm</a></p></li>
 </ul>
 <hr />
 <h4 id="pvr-price-volume-rank-done">PVR | Price Volume Rank | DONE</h4>
 <ul>
-<li><p><code>list of ints = jhta.PVR(df, price='Close')</code></p></li>
+<li><p><code>list of ints = jhta.PVR(df, price='Close', volume='Volume')</code></p></li>
 <li><p><a href="https://www.fmlabs.com/reference/default.htm?url=PVrank.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=PVrank.htm</a></p></li>
 </ul>
 <hr />
 <h4 id="pvt-price-volume-trend-done">PVT | Price Volume Trend | DONE</h4>
 <ul>
-<li><p><code>list of floats = jhta.PVT(df, price='Close')</code></p></li>
+<li><p><code>list of floats = jhta.PVT(df, price='Close', volume='Volume')</code></p></li>
 <li><p><a href="https://www.fmlabs.com/reference/default.htm?url=PVT.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=PVT.htm</a></p></li>
 </ul>
 <hr />
 <h4 id="pvi-positive-volume-index-done">PVI | Positive Volume Index | DONE</h4>
 <ul>
-<li><p><code>list of floats = jhta.PVI(df, price='Close')</code></p></li>
+<li><p><code>list of floats = jhta.PVI(df, price='Close', volume='Volume')</code></p></li>
 <li><p><a href="https://www.fmlabs.com/reference/default.htm?url=PVI.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=PVI.htm</a></p></li>
 </ul>
 <hr />
 <h4 id="nvi-negative-volume-index-done">NVI | Negative Volume Index | DONE</h4>
 <ul>
-<li><p><code>list of floats = jhta.NVI(df, price='Close')</code></p></li>
+<li><p><code>list of floats = jhta.NVI(df, price='Close', volume='Volume')</code></p></li>
 <li><p><a href="https://www.fmlabs.com/reference/default.htm?url=NVI.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=NVI.htm</a></p></li>
 </ul>
 <hr />

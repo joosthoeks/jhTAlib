@@ -4,7 +4,7 @@
 
 {\pard \qc \f0 \sa180 \li0 \fi0 \b \fs36 jhTAlib\par}
 {\pard \qc \f0 \sa180 \li0 \fi0  Joost Hoeks\par}
-{\pard \qc \f0 \sa180 \li0 \fi0  2019-08-19\par}
+{\pard \qc \f0 \sa180 \li0 \fi0  2019-08-21\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Contents\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab jhTAlib\par}
@@ -279,7 +279,7 @@ Behavioral Techniques
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 dict of lists of floats = jhta.LMC(df, price='Low', price_high='High')}\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 PP | Pivot Point | DONE\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 dict of lists of floats = jhta.PP(df)}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 dict of lists of floats = jhta.PP(df, high='High', low='Low', close='Close')}\par}
 {\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://en.wikipedia.org/wiki/Pivot_point_(technical_analysis)"}}{\fldrslt{\ul
 https://en.wikipedia.org/wiki/Pivot_point_(technical_analysis)
 }}}
@@ -349,56 +349,56 @@ Candlestick
 }}}
 \par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 CDLBODYS | Candle Body Size | DONE\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.CDLBODYS(df)}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.CDLBODYS(df, open='Open', close='Close')}\par}
 {\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://www.tradeciety.com/understand-candlesticks-patterns/"}}{\fldrslt{\ul
 https://www.tradeciety.com/understand-candlesticks-patterns/
 }}}
 \sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 CDLWICKS | Candle Wick Size | DONE\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.CDLWICKS(df)}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.CDLWICKS(df, high='High', low='Low')}\par}
 {\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://www.tradeciety.com/understand-candlesticks-patterns/"}}{\fldrslt{\ul
 https://www.tradeciety.com/understand-candlesticks-patterns/
 }}}
 \sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 CDLUPPSHAS | Candle Upper Shadow Size | DONE\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.CDLUPPSHAS(df)}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.CDLUPPSHAS(df, open='Open', high='High', close='Close')}\par}
 {\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://www.tradeciety.com/understand-candlesticks-patterns/"}}{\fldrslt{\ul
 https://www.tradeciety.com/understand-candlesticks-patterns/
 }}}
 \sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 CDLLOWSHAS | Candle Lower Shadow Size | DONE\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.CDLLOWSHAS(df)}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.CDLLOWSHAS(df, open='Open', low='Low', close='Close')}\par}
 {\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://www.tradeciety.com/understand-candlesticks-patterns/"}}{\fldrslt{\ul
 https://www.tradeciety.com/understand-candlesticks-patterns/
 }}}
 \sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 CDLBODYP | Candle Body Percent | DONE\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.CDLBODYP(p)}\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.CDLBODYP(df, open='Open', close='Close')}\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 CDLBODYM | Candle Body Momentum | DONE\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.CDLBODYM(df, n)}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.CDLBODYM(df, n, open='Open', close='Close')}\par}
 {\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab book: Trading Systems and Methods\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 GAP | Gap | DONE\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.GAP(df)}\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.GAP(df, high='High', low='Low', close='Close')}\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 QSTICK | Qstick | DONE\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.QSTICK(df, n)}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.QSTICK(df, n, open='Open', close='Close')}\par}
 {\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://www.fmlabs.com/reference/default.htm?url=Qstick.htm"}}{\fldrslt{\ul
 https://www.fmlabs.com/reference/default.htm?url=Qstick.htm
 }}}
 \sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 SHADOWT | Shadow Trends | DONE\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 dict of lists of floats = jhta.SHADOWT(df, n)}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 dict of lists of floats = jhta.SHADOWT(df, n, open='Open', high='High', low='Low', close='Close')}\par}
 {\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab book: The New Technical Trader\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 IMI | Intraday Momentum Index | DONE\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.IMI(df)}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.IMI(df, open='Open', close='Close')}\par}
 {\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://www.fmlabs.com/reference/default.htm?url=IMI.htm"}}{\fldrslt{\ul
 https://www.fmlabs.com/reference/default.htm?url=IMI.htm
 }}}
@@ -438,39 +438,39 @@ Data
 }}}
 \par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 CSV2DF | CSV file 2 DataFeed | DONE\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 dict of tuples of floats = jhta.CSV2DF(csv_file_path)}\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 dict of tuples of floats = jhta.CSV2DF(csv_file_path, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume')}\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 CSVURL2DF | CSV file url 2 DataFeed | DONE\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 dict of tuples of floats = jhta.CSVURL2DF(csv_file_url)}\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 dict of tuples of floats = jhta.CSVURL2DF(csv_file_url, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume')}\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 DF2CSV | DataFeed 2 CSV file | DONE\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 csv file = jhta.DF2CSV(df, csv_file_path)}\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 csv file = jhta.DF2CSV(df, csv_file_path, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume')}\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 DF2DFREV | DataFeed 2 DataFeed Reversed | DONE\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 dict of tuples of floats = jhta.DF2DFREV(df)}\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 dict of tuples of floats = jhta.DF2DFREV(df, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume')}\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 DF2DFWIN | DataFeed 2 DataFeed Window | DONE\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 dict of tuples of floats = jhta.DF2DFWIN(df, start=0, end=10)}\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 dict of tuples of floats = jhta.DF2DFWIN(df, start=0, end=10, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume')}\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 DF_HEAD | DataFeed HEAD | DONE\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 dict of tuples of floats = jhta.DF_HEAD(df, n=5)}\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 dict of tuples of floats = jhta.DF_HEAD(df, n=5, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume')}\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 DF_TAIL | DataFeed TAIL | DONE\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 dict of tuples of floats = jhta.DF_TAIL(df, n=5)}\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 dict of tuples of floats = jhta.DF_TAIL(df, n=5, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume')}\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 DF2HEIKIN_ASHI | DataFeed 2 Heikin-Ashi DataFeed | DONE\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 dict of tuples of floats = jhta.DF2HEIKIN_ASHI(df)}\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 dict of tuples of floats = jhta.DF2HEIKIN_ASHI(df, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume')}\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs28 {\field{\*\fldinst{HYPERLINK "https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/event_driven/event_driven.py"}}{\fldrslt{\ul
 Event Driven
 }}}
 \par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 ASI | Accumulation Swing Index (J. Welles Wilder) | DONE\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.ASI(df, L)}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.ASI(df, L, open='Open', high='High', low='Low', close='Close')}\par}
 {\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab book: New Concepts in Technical Trading Systems\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 SI | Swing Index (J. Welles Wilder) | DONE\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.SI(df, L)}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.SI(df, L, open='Open', high='High', low='Low', close='Close')}\par}
 {\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab book: New Concepts in Technical Trading Systems\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs28 {\field{\*\fldinst{HYPERLINK "https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/experimental/experimental.py"}}{\fldrslt{\ul
@@ -478,22 +478,22 @@ Experimental
 }}}
 \par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 JH_SAVGP | Swing Average Price - previous Average Price | DONE\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.JH_SAVGP(df)}\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.JH_SAVGP(df, open='Open', high='High', low='Low', close='Close')}\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 JH_SAVGPS | Swing Average Price - previous Average Price Summation | DONE\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.JH_SAVGPS(df)}\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.JH_SAVGPS(df, open='Open', high='High', low='Low', close='Close')}\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 JH_SCO | Swing Close - Open | DONE\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.JH_SCO(df)}\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.JH_SCO(df, open='Open', close='Close')}\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 JH_SCOS | Swing Close - Open Summation | DONE\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.JH_SCOS(df)}\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.JH_SCOS(df, open='Open', close='Close')}\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 JH_SMEDP | Swing Median Price - previous Median Price | DONE\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.JH_SMEDP(df)}\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.JH_SMEDP(df, high='High', low='Low')}\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 jh_SMEDPS | Swing Median Price - previous Median Price Summation | DONE\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.JH_SMEDPS(df)}\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.JH_SMEDPS(df, high='High', low='Low')}\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 JH_SPP | Swing Price - previous Price | DONE\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.JH_SPP(df, price='Close')}\sa180\par}
@@ -502,16 +502,16 @@ Experimental
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.JH_SPPS(df, price='Close')}\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 JH_STYPP | Swing Typical Price - previous Typical Price | DONE\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.JH_STYPP(df)}\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.JH_STYPP(df, high='High', low='Low', close='Close')}\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 JH_STYPPS | Swing Typical Price - previous Typical Price Summation | DONE\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.JH_STYPPS(df)}\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.JH_STYPPS(df, high='High', low='Low', close='Close')}\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 JH_SWCLP | Swing Weighted Close Price - previous Weighted Close Price | DONE\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.JH_SWCLP(df)}\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.JH_SWCLP(df, high='High', low='Low', close='Close')}\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 JH_SWCLPS | Swing Weighted Close Price - previous Weighted Close Price Summation | DONE\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.JH_SWCLPS(df)}\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.JH_SWCLPS(df, high='High', low='Low', close='Close')}\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs28 {\field{\*\fldinst{HYPERLINK "https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/general/general.py"}}{\fldrslt{\ul
 General
@@ -652,10 +652,10 @@ Math Functions
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.RADIANS(df, price='Close')}\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 ADD | Addition High + Low | DONE\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.ADD(df)}\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.ADD(df, high='High', low='Low')}\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 DIV | Division High / Low | DONE\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.DIV(df)}\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.DIV(df, high='High', low='Low')}\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 MAX | Highest value over a specified period | DONE\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.MAX(df, n, price='Close')}\sa180\par}
@@ -676,10 +676,10 @@ Math Functions
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 dict of lists of ints = jhta.MINMAXINDEX(df, n, price='Close')}\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 MULT | Multiply High * Low | DONE\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.MULT(df)}\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.MULT(df, high='High', low='Low')}\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 SUB | Subtraction High - Low | DONE\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.SUB(df)}\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.SUB(df, high='High', low='Low')}\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 SUM | Summation | DONE\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.SUM(df, n, price='Close')}\sa180\par}
@@ -803,7 +803,7 @@ https://www.fmlabs.com/reference/default.htm?url=Stochastic.htm
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab \sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 WILLR | Williams' %R | DONE\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.WILLR(df, n)}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.WILLR(df, n, high='High', low='Low', close='Close')}\par}
 {\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://www.fmlabs.com/reference/default.htm?url=WilliamsR.htm"}}{\fldrslt{\ul
 https://www.fmlabs.com/reference/default.htm?url=WilliamsR.htm
 }}}
@@ -814,14 +814,14 @@ Overlap Studies
 }}}
 \par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 BBANDS | Bollinger Bands | DONE\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 dict of lists of floats = jhta.BBANDS(df, n, f=2)}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 dict of lists of floats = jhta.BBANDS(df, n, f=2, high='High', low='Low', close='Close')}\par}
 {\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://www.fmlabs.com/reference/default.htm?url=Bollinger.htm"}}{\fldrslt{\ul
 https://www.fmlabs.com/reference/default.htm?url=Bollinger.htm
 }}}
 \sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 BBANDW | Bollinger Band Width | DONE\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.BBANDW(df, n, f=2)}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.BBANDW(df, n, f=2, high='High', low='Low', close='Close')}\par}
 {\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://www.fmlabs.com/reference/default.htm?url=BollingerWidth.htm"}}{\fldrslt{\ul
 https://www.fmlabs.com/reference/default.htm?url=BollingerWidth.htm
 }}}
@@ -864,7 +864,7 @@ http://www.tadoc.org/indicator/MIDPOINT.htm
 \sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 MIDPRICE | MidPoint Price over period | DONE\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.MIDPRICE(df, n)}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.MIDPRICE(df, n, high='High', low='Low')}\par}
 {\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "http://www.tadoc.org/indicator/MIDPRICE.htm"}}{\fldrslt{\ul
 http://www.tadoc.org/indicator/MIDPRICE.htm
 }}}
@@ -878,7 +878,7 @@ https://www.theinvestorspodcast.com/bitcoin-mayer-multiple/
 \sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 SAR | Parabolic SAR | DONE\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.SAR(df, af_step=.02, af_max=.2)}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.SAR(df, af_step=.02, af_max=.2, high='High', low='Low')}\par}
 {\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab book: New Concepts in Technical Trading Systems\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 SAREXT | Parabolic SAR - Extended |\par}
@@ -977,28 +977,28 @@ Price Transform
 }}}
 \par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 AVGPRICE | Average Price | DONE\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.AVGPRICE(df)}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.AVGPRICE(df, open='Open', high='High', low='Low', close='Close')}\par}
 {\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://www.fmlabs.com/reference/default.htm?url=AvgPrices.htm"}}{\fldrslt{\ul
 https://www.fmlabs.com/reference/default.htm?url=AvgPrices.htm
 }}}
 \sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 MEDPRICE | Median Price | DONE\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.MEDPRICE(df)}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.MEDPRICE(df, high='High', low='Low')}\par}
 {\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://www.fmlabs.com/reference/default.htm?url=MedianPrices.htm"}}{\fldrslt{\ul
 https://www.fmlabs.com/reference/default.htm?url=MedianPrices.htm
 }}}
 \sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 TYPPRICE | Typical Price | DONE\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.TYPPRICE(df)}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.TYPPRICE(df, high='High', low='Low', close='Close')}\par}
 {\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://www.fmlabs.com/reference/default.htm?url=TypicalPrices.htm"}}{\fldrslt{\ul
 https://www.fmlabs.com/reference/default.htm?url=TypicalPrices.htm
 }}}
 \sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 WCLPRICE | Weighted Close Price | DONE\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.WCLPRICE(df)}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.WCLPRICE(df, high='High', low='Low', close='Close')}\par}
 {\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://www.fmlabs.com/reference/default.htm?url=WeightedCloses.htm"}}{\fldrslt{\ul
 https://www.fmlabs.com/reference/default.htm?url=WeightedCloses.htm
 }}}
@@ -1141,14 +1141,14 @@ Volatility Indicators
 }}}
 \par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 AEM | Arms Ease of Movement | DONE\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.AEM(df)}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.AEM(df, high='High', low='Low', volume='Volume')}\par}
 {\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://www.fmlabs.com/reference/default.htm?url=ArmsEMV.htm"}}{\fldrslt{\ul
 https://www.fmlabs.com/reference/default.htm?url=ArmsEMV.htm
 }}}
 \sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 ATR | Average True Range | DONE\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.ATR(df, n)}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.ATR(df, n, high='High', low='Low', close='Close')}\par}
 {\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://www.fmlabs.com/reference/default.htm?url=ATR.htm"}}{\fldrslt{\ul
 https://www.fmlabs.com/reference/default.htm?url=ATR.htm
 }}}
@@ -1158,7 +1158,7 @@ https://www.fmlabs.com/reference/default.htm?url=ATR.htm
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab \sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 RVI | Relative Volatility Index | DONE\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.RVI(df, n)}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.RVI(df, n, high='High', low='Low')}\par}
 {\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://www.fmlabs.com/reference/default.htm?url=RVI.htm"}}{\fldrslt{\ul
 https://www.fmlabs.com/reference/default.htm?url=RVI.htm
 }}}
@@ -1168,7 +1168,7 @@ https://www.fmlabs.com/reference/default.htm?url=RVI.htm
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab \sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 TRANGE | True Range | DONE\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.TRANGE(df)}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.TRANGE(df, high='High', low='Low', close='Close')}\par}
 {\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://www.fmlabs.com/reference/default.htm?url=TR.htm"}}{\fldrslt{\ul
 https://www.fmlabs.com/reference/default.htm?url=TR.htm
 }}}
@@ -1179,7 +1179,7 @@ Volume Indicators
 }}}
 \par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 AD | Chaikin A/D Line | DONE\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.AD(df)}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.AD(df, high='High', low='Low', close='Close', volume='Volume')}\par}
 {\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://www.fmlabs.com/reference/default.htm?url=AccumDist.htm"}}{\fldrslt{\ul
 https://www.fmlabs.com/reference/default.htm?url=AccumDist.htm
 }}}
@@ -1189,35 +1189,35 @@ https://www.fmlabs.com/reference/default.htm?url=AccumDist.htm
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab \sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 OBV | On Balance Volume | DONE\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.OBV(df)}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.OBV(df, close='Close', volume='Volume')}\par}
 {\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://www.fmlabs.com/reference/default.htm?url=OBV.htm"}}{\fldrslt{\ul
 https://www.fmlabs.com/reference/default.htm?url=OBV.htm
 }}}
 \sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 PVR | Price Volume Rank | DONE\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of ints = jhta.PVR(df, price='Close')}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of ints = jhta.PVR(df, price='Close', volume='Volume')}\par}
 {\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://www.fmlabs.com/reference/default.htm?url=PVrank.htm"}}{\fldrslt{\ul
 https://www.fmlabs.com/reference/default.htm?url=PVrank.htm
 }}}
 \sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 PVT | Price Volume Trend | DONE\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.PVT(df, price='Close')}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.PVT(df, price='Close', volume='Volume')}\par}
 {\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://www.fmlabs.com/reference/default.htm?url=PVT.htm"}}{\fldrslt{\ul
 https://www.fmlabs.com/reference/default.htm?url=PVT.htm
 }}}
 \sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 PVI | Positive Volume Index | DONE\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.PVI(df, price='Close')}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.PVI(df, price='Close', volume='Volume')}\par}
 {\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://www.fmlabs.com/reference/default.htm?url=PVI.htm"}}{\fldrslt{\ul
 https://www.fmlabs.com/reference/default.htm?url=PVI.htm
 }}}
 \sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 NVI | Negative Volume Index | DONE\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.NVI(df, price='Close')}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.NVI(df, price='Close', volume='Volume')}\par}
 {\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://www.fmlabs.com/reference/default.htm?url=NVI.htm"}}{\fldrslt{\ul
 https://www.fmlabs.com/reference/default.htm?url=NVI.htm
 }}}
