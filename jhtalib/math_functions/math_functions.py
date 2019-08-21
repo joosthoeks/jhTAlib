@@ -277,26 +277,26 @@ def RADIANS(df, price='Close'):
         i += 1
     return radians_list
 
-def ADD(df):
+def ADD(df, high='High', low='Low'):
     """
     Addition High + Low
     """
     add_list = []
     i = 0
-    while i < len(df['Close']):
-        add = df['High'][i] + df['Low'][i]
+    while i < len(df[low]):
+        add = df[high][i] + df[low][i]
         add_list.append(add)
         i += 1
     return add_list
 
-def DIV(df):
+def DIV(df, high='High', low='Low'):
     """
     Division High / Low
     """
     div_list = []
     i = 0
-    while i < len(df['Close']):
-        div = df['High'][i] / df['Low'][i]
+    while i < len(df[low]):
+        div = df[high][i] / df[low][i]
         div_list.append(div)
         i += 1
     return div_list
@@ -439,26 +439,26 @@ def MINMAXINDEX(df, n, price='Close'):
         'max': MAXINDEX(df, n, price)
         }
 
-def MULT(df):
+def MULT(df, high='High', low='Low'):
     """
     Multiply High * Low
     """
     mult_list = []
     i = 0
-    while i < len(df['Close']):
-        mult = df['High'][i] * df['Low'][i]
+    while i < len(df[low]):
+        mult = df[high][i] * df[low][i]
         mult_list.append(mult)
         i += 1
     return mult_list
 
-def SUB(df):
+def SUB(df, high='High', low='Low'):
     """
     Subtraction High - Low
     """
     sub_list = []
     i = 0
-    while i < len(df['Close']):
-        sub = df['High'][i] - df['Low'][i]
+    while i < len(df[low]):
+        sub = df[high][i] - df[low][i]
         sub_list.append(sub)
         i += 1
     return sub_list

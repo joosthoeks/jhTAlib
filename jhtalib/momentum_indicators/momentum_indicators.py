@@ -272,19 +272,19 @@ def ULTOSC(df):
     Ultimate Oscillator
     """
 
-def WILLR(df, n):
+def WILLR(df, n, high='High', low='Low', close='Close'):
     """
     Williams' %R
     """
     willr_list = []
     i = 0
-    while i < len(df['Close']):
+    while i < len(df[close]):
         if i + 1 < n:
             willr = float('NaN')
         else:
             start = i + 1 - n
             end = i + 1
-            willr = (max(df['High'][start:end]) - df['Close'][i]) / (max(df['High'][start:end]) - min(df['Low'][start:end])) * 100
+            willr = (max(df[high][start:end]) - df[close][i]) / (max(df[high][start:end]) - min(df[low][start:end])) * 100
 #            willr *= -1
         willr_list.append(willr)
         i += 1

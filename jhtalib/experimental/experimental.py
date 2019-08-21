@@ -1,14 +1,14 @@
 import jhtalib as jhta
 
 
-def JH_SAVGP(df):
+def JH_SAVGP(df, open='Open', high='High', low='Low', close='Close'):
     """
     Swing Average Price - previous Average Price
     """
     savgp_list = []
-    avgp_list = jhta.AVGPRICE(df)
+    avgp_list = jhta.AVGPRICE(df, open, high, low, close)
     i = 0
-    while i < len(df['Close']):
+    while i < len(df[close]):
         if i < 1:
             savgp = float('NaN')
         else:
@@ -17,14 +17,14 @@ def JH_SAVGP(df):
         i += 1
     return savgp_list
 
-def JH_SAVGPS(df):
+def JH_SAVGPS(df, open='Open', high='High', low='Low', close='Close'):
     """
     Swing Average Price - previous Average Price Summation
     """
     savgps_list = []
-    savgp_list = JH_SAVGP(df)
+    savgp_list = JH_SAVGP(df, open, high, low, close)
     i = 0
-    while i < len(df['Close']):
+    while i < len(df[close]):
         if i < 1:
             savgps = float('NaN')
             savgps_list.append(savgps)
@@ -35,40 +35,40 @@ def JH_SAVGPS(df):
         i += 1
     return savgps_list
 
-def JH_SCO(df):
+def JH_SCO(df, open='Open', close='Close'):
     """
     Swing Close - Open
     """
     sco_list = []
     i = 0
-    while i < len(df['Close']):
-        sco = df['Close'][i] - df['Open'][i]
+    while i < len(df[close]):
+        sco = df[close][i] - df[open][i]
         sco_list.append(sco)
         i += 1
     return sco_list
 
-def JH_SCOS(df):
+def JH_SCOS(df, open='Open', close='Close'):
     """
     Swing Close - Open Summation
     """
     scos_list = []
-    sco_list = JH_SCO(df)
+    sco_list = JH_SCO(df, open, close)
     scos = .0
     i = 0
-    while i < len(df['Close']):
+    while i < len(df[close]):
         scos = scos + sco_list[i]
         scos_list.append(scos)
         i += 1
     return scos_list
 
-def JH_SMEDP(df):
+def JH_SMEDP(df, high='High', low='Low'):
     """
     Swing Median Price - previous Median Price
     """
     smedp_list = []
-    medp_list = jhta.MEDPRICE(df)
+    medp_list = jhta.MEDPRICE(df, high, low)
     i = 0
-    while i < len(df['Close']):
+    while i < len(df[low]):
         if i < 1:
             smedp = float('NaN')
         else:
@@ -77,14 +77,14 @@ def JH_SMEDP(df):
         i += 1
     return smedp_list
 
-def JH_SMEDPS(df):
+def JH_SMEDPS(df, high='High', low='Low'):
     """
     Swing Median Price - previous Median Price Summation
     """
     smedps_list = []
-    smedp_list = JH_SMEDP(df)
+    smedp_list = JH_SMEDP(df, high, low)
     i = 0
-    while i < len(df['Close']):
+    while i < len(df[low]):
         if i < 1:
             smedps = float('NaN')
             smedps_list.append(smedps)
@@ -128,14 +128,14 @@ def JH_SPPS(df, price='Close'):
         i += 1
     return spps_list
 
-def JH_STYPP(df):
+def JH_STYPP(df, high='High', low='Low', close='Close'):
     """
     Swing Typical Price - previous Typical Price
     """
     stypp_list = []
-    typp_list = jhta.TYPPRICE(df)
+    typp_list = jhta.TYPPRICE(df, high, low, close)
     i = 0
-    while i < len(df['Close']):
+    while i < len(df[close]):
         if i < 1:
             stypp = float('NaN')
         else:
@@ -144,14 +144,14 @@ def JH_STYPP(df):
         i += 1
     return stypp_list
 
-def JH_STYPPS(df):
+def JH_STYPPS(df, high='High', low='Low', close='Close'):
     """
     Swing Typical Price - previous Typical Price Summation
     """
     stypps_list = []
-    stypp_list = JH_STYPP(df)
+    stypp_list = JH_STYPP(df, high, low, close)
     i = 0
-    while i < len(df['Close']):
+    while i < len(df[close]):
         if i < 1:
             stypps = float('NaN')
             stypps_list.append(stypps)
@@ -162,14 +162,14 @@ def JH_STYPPS(df):
         i += 1
     return stypps_list
 
-def JH_SWCLP(df):
+def JH_SWCLP(df, high='High', low='Low', close='Close'):
     """
     Swing Weighted Close Price - previous Weighted Close Price
     """
     swclp_list = []
-    wclp_list = jhta.WCLPRICE(df)
+    wclp_list = jhta.WCLPRICE(df, high, low, close)
     i = 0
-    while i < len(df['Close']):
+    while i < len(df[close]):
         if i < 1:
             swclp = float('NaN')
         else:
@@ -178,14 +178,14 @@ def JH_SWCLP(df):
         i += 1
     return swclp_list
 
-def JH_SWCLPS(df):
+def JH_SWCLPS(df, high='High', low='Low', close='Close'):
     """
     Swing Weighted Close Price - previous Weighted Close Price Summation
     """
     swclps_list = []
-    swclp_list = JH_SWCLP(df)
+    swclp_list = JH_SWCLP(df, high, low, close)
     i = 0
-    while i < len(df['Close']):
+    while i < len(df[close]):
         if i < 1:
             swclps = float('NaN')
             swclps_list.append(swclps)

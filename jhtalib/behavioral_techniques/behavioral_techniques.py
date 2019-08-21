@@ -33,26 +33,26 @@ def LMC(df, price='Low', price_high='High'):
         i += 1
     return lmc_dict
 
-def PP(df):
+def PP(df, high='High', low='Low', close='Close'):
     """
     Pivot Point
     """
     pp_dict = {'p': [], 'r1': [], 's1': [], 'r2': [], 's2': [], 'r3': [], 's3': []}
     i = 0
-    while i < len(df['Close']):
-        p = (df['High'][i] + df['Low'][i] + df['Close'][i]) / 3
+    while i < len(df[close]):
+        p = (df[high][i] + df[low][i] + df[close][i]) / 3
         pp_dict['p'].append(p)
-        r1 = p + (p - df['Low'][i])
+        r1 = p + (p - df[low][i])
         pp_dict['r1'].append(r1)
-        s1 = p - (df['High'][i] - p)
+        s1 = p - (df[high][i] - p)
         pp_dict['s1'].append(s1)
-        r2 = p + (df['High'][i] - df['Low'][i])
+        r2 = p + (df[high][i] - df[low][i])
         pp_dict['r2'].append(r2)
-        s2 = p - (df['High'][i] - df['Low'][i])
+        s2 = p - (df[high][i] - df[low][i])
         pp_dict['s2'].append(s2)
-        r3 = r1 + (df['High'][i] - df['Low'][i])
+        r3 = r1 + (df[high][i] - df[low][i])
         pp_dict['r3'].append(r3)
-        s3 = s1 - (df['High'][i] - df['Low'][i])
+        s3 = s1 - (df[high][i] - df[low][i])
         pp_dict['s3'].append(s3)
         i += 1
     return pp_dict
