@@ -553,7 +553,7 @@ TS \| Trend Score \| DONE
 CSV2DF \| CSV file 2 DataFeed \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
--  ``dict of tuples of floats = jhta.CSV2DF(csv_file_path, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume')``
+-  ``dict of tuples of floats = jhta.CSV2DF(csv_file_path, datetime='datetime', Open='Open', high='High', low='Low', close='Close', volume='Volume')``
 
 --------------
 
@@ -567,7 +567,7 @@ CSVURL2DF \| CSV file url 2 DataFeed \| DONE
 DF2CSV \| DataFeed 2 CSV file \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
--  ``csv file = jhta.DF2CSV(df, csv_file_path, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume')``
+-  ``csv file = jhta.DF2CSV(df, csv_file_path, datetime='datetime', Open='Open', high='High', low='Low', close='Close', volume='Volume')``
 
 --------------
 
