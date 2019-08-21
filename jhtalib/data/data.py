@@ -2,23 +2,22 @@ import csv
 import urllib.request
 
 
-def CSV2DF(csv_file_path, datetime='datetime', open='Open', high='High', low='Low', close='Close',
-volume='Volume'):
+def CSV2DF(csv_file_path, datetime='datetime', Open='Open', high='High', low='Low', close='Close', volume='Volume'):
     """
     CSV file 2 DataFeed
     """
-    df = {datetime: [], open: [], high: [], low: [], close: [], volume: []}
+    df = {datetime: [], Open: [], high: [], low: [], close: [], volume: []}
     with open(csv_file_path) as csv_file:
         reader = csv.DictReader(csv_file)
         for row in reader:
             df[datetime].append(row[datetime])
-            df[open].append(float(row[open]))
+            df[Open].append(float(row[Open]))
             df[high].append(float(row[high]))
             df[low].append(float(row[low]))
             df[close].append(float(row[close]))
             df[volume].append(float(row[volume]))
     df[datetime] = tuple(df[datetime])
-    df[open] = tuple(df[open])
+    df[Open] = tuple(df[Open])
     df[high] = tuple(df[high])
     df[low] = tuple(df[low])
     df[close] = tuple(df[close])
@@ -47,19 +46,19 @@ def CSVURL2DF(csv_file_url, datetime='datetime', open='Open', high='High', low='
     df[volume] = tuple(df[volume])
     return dict(df)
 
-def DF2CSV(df, csv_file_path, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume'):
+def DF2CSV(df, csv_file_path, datetime='datetime', Open='Open', high='High', low='Low', close='Close', volume='Volume'):
     """
     DataFeed 2 CSV file
     """
     with open(csv_file_path, 'w') as csv_file:
-        fieldnames = [datetime, open, high, low, close, volume]
+        fieldnames = [datetime, Open, high, low, close, volume]
         writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
         writer.writeheader()
         i = 0
         while i < len(df[close]):
             writer.writerow({
                 datetime: df[datetime][i],
-                open: float(df[open][i]),
+                Open: float(df[Open][i]),
                 high: float(df[high][i]),
                 low: float(df[low][i]),
                 close: float(df[close][i]),

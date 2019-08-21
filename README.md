@@ -483,7 +483,7 @@ import jhtalib as jhta
 
 #### CSV2DF | CSV file 2 DataFeed | DONE
 
-- ```dict of tuples of floats = jhta.CSV2DF(csv_file_path, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume')```
+- ```dict of tuples of floats = jhta.CSV2DF(csv_file_path, datetime='datetime', Open='Open', high='High', low='Low', close='Close', volume='Volume')```
 
 ---
 
@@ -495,7 +495,7 @@ import jhtalib as jhta
 
 #### DF2CSV | DataFeed 2 CSV file | DONE
 
-- ```csv file = jhta.DF2CSV(df, csv_file_path, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume')```
+- ```csv file = jhta.DF2CSV(df, csv_file_path, datetime='datetime', Open='Open', high='High', low='Low', close='Close', volume='Volume')```
 
 ---
 
