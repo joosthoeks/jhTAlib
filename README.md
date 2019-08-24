@@ -1641,6 +1641,14 @@ import jhtalib as jhta
 
 ---
 
+#### PRANGE | %Range | DONE
+
+- ```list of floats = jhta.PRANGE(df, n, max_price='High', min_price='Low')```
+
+- book: An Introduction to Algorithmic Trading
+
+---
+
 #### TRANGE | True Range | DONE
 
 - ```list of floats = jhta.TRANGE(df, high='High', low='Low', close='Close')```

@@ -83,6 +83,23 @@ def RVI(df, n, high='High', low='Low'):
         i += 1
     return rvi_list
 
+def PRANGE(df, n, max_price='High', min_price='Low'):
+    """
+    %Range
+    """
+    max_list = jhta.MAX(df, n, max_price)
+    min_list = jhta.MIN(df, n, min_price)
+    prange_list = []
+    i = 0
+    while i < len(df[max_price]):
+        if i + 1 < n:
+            prange = float('NaN')
+        else:
+            prange = (max_list[i] - min_list[i]) / ((max_list[i] + min_list[i]) / 2) * 100
+        prange_list.append(prange)
+        i += 1
+    return prange_list
+
 def TRANGE(df, high='High', low='Low', close='Close'):
     """
     True Range
