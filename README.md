@@ -227,6 +227,8 @@ $ python3 test.py
 import jhtalib as jhta
 ```
 
+---
+
 ### [Behavioral Techniques](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/behavioral_techniques/behavioral_techniques.py)
 
 #### ATH | All Time High | DONE
@@ -1370,6 +1372,8 @@ import jhtalib as jhta
 #### CDLUPSIDEGAP2CROWS | Upside Gap Two Crows |
 
 #### CDLXSIDEGAP3METHODS | Upside/Downside Gap Three Methods |
+
+---
 
 ### [Price Transform](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/price_transform/price_transform.py)
 
