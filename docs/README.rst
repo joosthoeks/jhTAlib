@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2019-08-21
+:Date:   2019-08-24
 
 .. contents::
    :depth: 3
@@ -1934,6 +1934,15 @@ INERTIA \| Inertia \|
 ^^^^^^^^^^^^^^^^^^^^^
 
 -  
+
+--------------
+
+PRANGE \| %Range \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list of floats = jhta.PRANGE(df, n, max_price='High', min_price='Low')``
+
+-  book: An Introduction to Algorithmic Trading
 
 --------------
 
