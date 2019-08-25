@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2019-08-24
+:Date:   2019-08-25
 
 .. contents::
    :depth: 3
@@ -254,6 +254,8 @@ Reference
 ::
 
     import jhtalib as jhta
+
+--------------
 
 `Behavioral Techniques <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/behavioral_techniques/behavioral_techniques.py>`__
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1050,6 +1052,42 @@ SUM \| Summation \| DONE
 
 --------------
 
+SLOPE \| Slope \| DONE
+^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``float = jhta.SLOPE(x1, y1, x2, y2)``
+
+-  book: An Introduction to Algorithmic Trading
+
+--------------
+
+SLOPES \| Slopes \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list of floats = jhta.SLOPES(df, n, price='Close')``
+
+-  book: An Introduction to Algorithmic Trading
+
+--------------
+
+ED \| Euclidean Distance \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``float = jhta.ED(x1, y1, x2, y2)``
+
+-  book: An Introduction to Algorithmic Trading
+
+--------------
+
+EDS \| Euclidean Distances \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list of floats = jhta.EDS(df, n, price='Close')``
+
+-  book: An Introduction to Algorithmic Trading
+
+--------------
+
 `Momentum Indicators <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/momentum_indicators/momentum_indicators.py>`__
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -1626,6 +1664,8 @@ CDLUPSIDEGAP2CROWS \| Upside Gap Two Crows \|
 CDLXSIDEGAP3METHODS \| Upside/Downside Gap Three Methods \|
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+--------------
+
 `Price Transform <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/price_transform/price_transform.py>`__
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -1824,24 +1864,6 @@ SLR \| Simple Linear Regression \| DONE
 -  ``list of floats = jhta.SLR(df, price='Close', predictions_int=0)``
 
 -  https://machinelearningmastery.com/implement-simple-linear-regression-scratch-python/
-
---------------
-
-SLOPE \| Slope \| DONE
-^^^^^^^^^^^^^^^^^^^^^^
-
--  ``float = jhta.SLOPE(x1, y1, x2, y2)``
-
--  book: An Introduction to Algorithmic Trading
-
---------------
-
-SLOPES \| Slopes \| DONE
-^^^^^^^^^^^^^^^^^^^^^^^^
-
--  ``list of floats = jhta.SLOPES(df, n, price='Close')``
-
--  book: An Introduction to Algorithmic Trading
 
 --------------
 

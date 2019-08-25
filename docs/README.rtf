@@ -4,7 +4,7 @@
 
 {\pard \qc \f0 \sa180 \li0 \fi0 \b \fs36 jhTAlib\par}
 {\pard \qc \f0 \sa180 \li0 \fi0  Joost Hoeks\par}
-{\pard \qc \f0 \sa180 \li0 \fi0  2019-08-24\par}
+{\pard \qc \f0 \sa180 \li0 \fi0  2019-08-25\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Contents\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab jhTAlib\par}
@@ -268,6 +268,7 @@ $ python3 test.py\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Reference\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \f1 import jhtalib as jhta\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs28 {\field{\*\fldinst{HYPERLINK "https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/behavioral_techniques/behavioral_techniques.py"}}{\fldrslt{\ul
 Behavioral Techniques
 }}}
@@ -684,6 +685,22 @@ Math Functions
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 SUM | Summation | DONE\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.SUM(df, n, price='Close')}\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 SLOPE | Slope | DONE\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 float = jhta.SLOPE(x1, y1, x2, y2)}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab book: An Introduction to Algorithmic Trading\sa180\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 SLOPES | Slopes | DONE\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.SLOPES(df, n, price='Close')}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab book: An Introduction to Algorithmic Trading\sa180\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 ED | Euclidean Distance | DONE\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 float = jhta.ED(x1, y1, x2, y2)}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab book: An Introduction to Algorithmic Trading\sa180\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 EDS | Euclidean Distances | DONE\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.EDS(df, n, price='Close')}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab book: An Introduction to Algorithmic Trading\sa180\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs28 {\field{\*\fldinst{HYPERLINK "https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/momentum_indicators/momentum_indicators.py"}}{\fldrslt{\ul
 Momentum Indicators
 }}}
@@ -972,6 +989,7 @@ Pattern Recognition
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 CDLUNIQUE3RIVER | Unique 3 River |\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 CDLUPSIDEGAP2CROWS | Upside Gap Two Crows |\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 CDLXSIDEGAP3METHODS | Upside/Downside Gap Three Methods |\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs28 {\field{\*\fldinst{HYPERLINK "https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/price_transform/price_transform.py"}}{\fldrslt{\ul
 Price Transform
 }}}
@@ -1094,14 +1112,6 @@ https://www.mathsisfun.com/data/least-squares-regression.html
 https://machinelearningmastery.com/implement-simple-linear-regression-scratch-python/
 }}}
 \sa180\par}
-{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 SLOPE | Slope | DONE\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 float = jhta.SLOPE(x1, y1, x2, y2)}\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab book: An Introduction to Algorithmic Trading\sa180\par}
-{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 SLOPES | Slopes | DONE\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.SLOPES(df, n, price='Close')}\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab book: An Introduction to Algorithmic Trading\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs28 {\field{\*\fldinst{HYPERLINK "https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/uncategorised/uncategorised.py"}}{\fldrslt{\ul
 Uncategorised

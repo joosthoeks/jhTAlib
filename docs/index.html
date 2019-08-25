@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <meta name="author" content="Joost Hoeks">
-  <meta name="dcterms.date" content="2019-08-24">
+  <meta name="dcterms.date" content="2019-08-25">
   <title>jhTAlib</title>
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" href="pandoc.css">
@@ -17,7 +17,7 @@
 <header>
 <h1 class="title">jhTAlib</h1>
 <p class="author">Joost Hoeks</p>
-<p class="date">2019-08-24</p>
+<p class="date">2019-08-25</p>
 </header>
 <nav id="TOC">
 <ul>
@@ -171,6 +171,7 @@ $ python3 test.py</code></pre>
 <hr />
 <h2 id="reference">Reference</h2>
 <pre><code>import jhtalib as jhta</code></pre>
+<hr />
 <h3 id="behavioral-techniques"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/behavioral_techniques/behavioral_techniques.py">Behavioral Techniques</a></h3>
 <h4 id="ath-all-time-high-done">ATH | All Time High | DONE</h4>
 <ul>
@@ -720,6 +721,30 @@ $ python3 test.py</code></pre>
 <li><code>list of floats = jhta.SUM(df, n, price='Close')</code></li>
 </ul>
 <hr />
+<h4 id="slope-slope-done">SLOPE | Slope | DONE</h4>
+<ul>
+<li><p><code>float = jhta.SLOPE(x1, y1, x2, y2)</code></p></li>
+<li><p>book: An Introduction to Algorithmic Trading</p></li>
+</ul>
+<hr />
+<h4 id="slopes-slopes-done">SLOPES | Slopes | DONE</h4>
+<ul>
+<li><p><code>list of floats = jhta.SLOPES(df, n, price='Close')</code></p></li>
+<li><p>book: An Introduction to Algorithmic Trading</p></li>
+</ul>
+<hr />
+<h4 id="ed-euclidean-distance-done">ED | Euclidean Distance | DONE</h4>
+<ul>
+<li><p><code>float = jhta.ED(x1, y1, x2, y2)</code></p></li>
+<li><p>book: An Introduction to Algorithmic Trading</p></li>
+</ul>
+<hr />
+<h4 id="eds-euclidean-distances-done">EDS | Euclidean Distances | DONE</h4>
+<ul>
+<li><p><code>list of floats = jhta.EDS(df, n, price='Close')</code></p></li>
+<li><p>book: An Introduction to Algorithmic Trading</p></li>
+</ul>
+<hr />
 <h3 id="momentum-indicators"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/momentum_indicators/momentum_indicators.py">Momentum Indicators</a></h3>
 <h4 id="adx-average-directional-movement-index">ADX | Average Directional Movement Index |</h4>
 <ul>
@@ -1051,6 +1076,7 @@ $ python3 test.py</code></pre>
 <h4 id="cdlunique3river-unique-3-river">CDLUNIQUE3RIVER | Unique 3 River |</h4>
 <h4 id="cdlupsidegap2crows-upside-gap-two-crows">CDLUPSIDEGAP2CROWS | Upside Gap Two Crows |</h4>
 <h4 id="cdlxsidegap3methods-upsidedownside-gap-three-methods">CDLXSIDEGAP3METHODS | Upside/Downside Gap Three Methods |</h4>
+<hr />
 <h3 id="price-transform"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/price_transform/price_transform.py">Price Transform</a></h3>
 <h4 id="avgprice-average-price-done">AVGPRICE | Average Price | DONE</h4>
 <ul>
@@ -1186,18 +1212,6 @@ $ python3 test.py</code></pre>
 <ul>
 <li><p><code>list of floats = jhta.SLR(df, price='Close', predictions_int=0)</code></p></li>
 <li><p><a href="https://machinelearningmastery.com/implement-simple-linear-regression-scratch-python/" class="uri">https://machinelearningmastery.com/implement-simple-linear-regression-scratch-python/</a></p></li>
-</ul>
-<hr />
-<h4 id="slope-slope-done">SLOPE | Slope | DONE</h4>
-<ul>
-<li><p><code>float = jhta.SLOPE(x1, y1, x2, y2)</code></p></li>
-<li><p>book: An Introduction to Algorithmic Trading</p></li>
-</ul>
-<hr />
-<h4 id="slopes-slopes-done">SLOPES | Slopes | DONE</h4>
-<ul>
-<li><p><code>list of floats = jhta.SLOPES(df, n, price='Close')</code></p></li>
-<li><p>book: An Introduction to Algorithmic Trading</p></li>
 </ul>
 <hr />
 <h3 id="uncategorised"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/uncategorised/uncategorised.py">Uncategorised</a></h3>
