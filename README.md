@@ -927,6 +927,14 @@ import jhtalib as jhta
 
 ---
 
+#### ED | Euclidean Distance | DONE
+
+- ```float = jhta.ED(x1, y1, x2, y2)```
+
+- book: An Introduction to Algorithmic Trading
+
+---
+
 ### [Momentum Indicators](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/momentum_indicators/momentum_indicators.py)
 
 #### ADX | Average Directional Movement Index |

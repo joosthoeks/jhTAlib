@@ -518,3 +518,9 @@ def SLOPES(df, n, price='Close'):
         i += 1
     return slope_list
 
+def ED(x1, y1, x2, y2):
+    """
+    Euclidean Distance
+    """
+    return cmath.sqrt((x1 - x2)**2 + (y1 - y2)**2).real
+
