@@ -580,28 +580,3 @@ def SLR(df, price='Close', predictions_int=0):
         i += 1
     return slr_list
 
-def SLOPE(x1, y1, x2, y2):
-    """
-    Slope
-    """
-    return (y2 - y1) / (x2 - x1)
-
-def SLOPES(df, n, price='Close'):
-    """
-    Slopes
-    """
-    slope_list = []
-    i = 0
-    while i < len(df[price]):
-        if i + 1 < n:
-            slope = float('NaN')
-        else:
-            x1 = i - n
-            y1 = df[price][i - n]
-            x2 = i
-            y2 = df[price][i]
-            slope = SLOPE(x1, y1, x2, y2)
-        slope_list.append(slope)
-        i += 1
-    return slope_list
-

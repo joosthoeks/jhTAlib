@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2019-08-24
+date: 2019-08-25
 ---
 
 # jhTAlib
@@ -911,6 +911,22 @@ import jhtalib as jhta
 
 ---
 
+#### SLOPE | Slope | DONE
+
+- ```float = jhta.SLOPE(x1, y1, x2, y2)```
+
+- book: An Introduction to Algorithmic Trading
+
+---
+
+#### SLOPES | Slopes | DONE
+
+- ```list of floats = jhta.SLOPES(df, n, price='Close')```
+
+- book: An Introduction to Algorithmic Trading
+
+---
+
 ### [Momentum Indicators](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/momentum_indicators/momentum_indicators.py)
 
 #### ADX | Average Directional Movement Index |
@@ -1546,22 +1562,6 @@ import jhtalib as jhta
 - ```list of floats = jhta.SLR(df, price='Close', predictions_int=0)```
 
 - [https://machinelearningmastery.com/implement-simple-linear-regression-scratch-python/](https://machinelearningmastery.com/implement-simple-linear-regression-scratch-python/)
-
----
-
-#### SLOPE | Slope | DONE
-
-- ```float = jhta.SLOPE(x1, y1, x2, y2)```
-
-- book: An Introduction to Algorithmic Trading
-
----
-
-#### SLOPES | Slopes | DONE
-
-- ```list of floats = jhta.SLOPES(df, n, price='Close')```
-
-- book: An Introduction to Algorithmic Trading
 
 ---
 
