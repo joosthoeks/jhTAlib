@@ -524,3 +524,22 @@ def ED(x1, y1, x2, y2):
     """
     return cmath.sqrt((x1 - x2)**2 + (y1 - y2)**2).real
 
+def EDS(df, n, price='Close'):
+    """
+    Euclidean Distances
+    """
+    ed_list = []
+    i = 0
+    while i < len(df[price]):
+        if i + 1 < n:
+            ed = float('NaN')
+        else:
+            x1 = i - n
+            y1 = df[price][i - n]
+            x2 = i
+            y2 = df[price][i]
+            ed = ED(x1, y1, x2, y2)
+        ed_list.append(ed)
+        i += 1
+    return ed_list
+
