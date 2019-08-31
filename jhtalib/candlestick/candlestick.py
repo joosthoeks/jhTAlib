@@ -167,3 +167,19 @@ def IMI(df, open='Open', close='Close'):
         i += 1
     return imi_list
 
+def INSBAR(df, high='High', low='Low'):
+    """
+    Inside Bar
+    """
+    insbar_list = []
+    i = 0
+    while i < len(df[low]):
+        if i < 1:
+            insbar = float('NaN')
+        else:
+            insbar = False
+            if df[high][i] < df[high][i - 1] and df[low][i] > df[low][i - 1]:
+                insbar = True
+        insbar_list.append(insbar)
+        i += 1
+    return insbar_list

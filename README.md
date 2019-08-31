@@ -435,6 +435,12 @@ import jhtalib as jhta
 
 ---
 
+#### INSBAR | Inside Bar | DONE
+
+- ```list of booleans = jhta.INSBAR(df, high='High', low='Low')```
+
+---
+
 ### [Cycle Indicators](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/cycle_indicators/cycle_indicators.py)
 
 #### HT_DCPERIOD | Hilbert Transform - Dominant Cycle Period |
