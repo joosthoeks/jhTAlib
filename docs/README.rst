@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2019-08-25
+:Date:   2019-08-31
 
 .. contents::
    :depth: 3
@@ -492,6 +492,20 @@ IMI \| Intraday Momentum Index \| DONE
 -  ``list of floats = jhta.IMI(df, open='Open', close='Close')``
 
 -  https://www.fmlabs.com/reference/default.htm?url=IMI.htm
+
+--------------
+
+INSBAR \| Inside Bar \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list of booleans = jhta.INSBAR(df, high='High', low='Low')``
+
+--------------
+
+OUTSBAR \| Outside Bar \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list of booleans = jhta.OUTSBAR(df, high='High', low='Low')``
 
 --------------
 

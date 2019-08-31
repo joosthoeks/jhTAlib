@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <meta name="author" content="Joost Hoeks">
-  <meta name="dcterms.date" content="2019-08-25">
+  <meta name="dcterms.date" content="2019-08-31">
   <title>jhTAlib</title>
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" href="pandoc.css">
@@ -17,7 +17,7 @@
 <header>
 <h1 class="title">jhTAlib</h1>
 <p class="author">Joost Hoeks</p>
-<p class="date">2019-08-25</p>
+<p class="date">2019-08-31</p>
 </header>
 <nav id="TOC">
 <ul>
@@ -333,6 +333,16 @@ $ python3 test.py</code></pre>
 <ul>
 <li><p><code>list of floats = jhta.IMI(df, open='Open', close='Close')</code></p></li>
 <li><p><a href="https://www.fmlabs.com/reference/default.htm?url=IMI.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=IMI.htm</a></p></li>
+</ul>
+<hr />
+<h4 id="insbar-inside-bar-done">INSBAR | Inside Bar | DONE</h4>
+<ul>
+<li><code>list of booleans = jhta.INSBAR(df, high='High', low='Low')</code></li>
+</ul>
+<hr />
+<h4 id="outsbar-outside-bar-done">OUTSBAR | Outside Bar | DONE</h4>
+<ul>
+<li><code>list of booleans = jhta.OUTSBAR(df, high='High', low='Low')</code></li>
 </ul>
 <hr />
 <h3 id="cycle-indicators"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/cycle_indicators/cycle_indicators.py">Cycle Indicators</a></h3>
