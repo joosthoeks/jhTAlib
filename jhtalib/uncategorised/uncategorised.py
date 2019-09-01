@@ -57,3 +57,17 @@ def BPPS(trade_start_price, trade_end_price, trade_start_timestamp, trade_end_ti
     """
     return (((trade_end_price - trade_start_price) / trade_start_price) / (trade_end_timestamp - trade_start_timestamp)) * 10000
 
+def RET(df, price='Close'):
+    """
+    Return
+    """
+    ret_list = []
+    i = 0
+    while i < len(df[price]):
+        if i < 1:
+            ret = float('NaN')
+        else:
+            ret = df[price][i] - df[price][i - 1]
+        ret_list.append(ret)
+        i += 1
+    return ret_list
