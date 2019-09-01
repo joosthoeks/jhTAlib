@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2019-08-31
+date: 2019-09-01
 ---
 
 # jhTAlib
@@ -1747,11 +1747,11 @@ import jhtalib as jhta
 
 ## Notebooks
 
-- [https://github.com/joosthoeks/jhTAlib/tree/master/notebooks](https://github.com/joosthoeks/jhTAlib/tree/master/notebooks)
+- [https://github.com/joosthoeks/jhTAlib/tree/master/notebook](https://github.com/joosthoeks/jhTAlib/tree/master/notebook)
 
 ### Recession Probability
 
-- [https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebooks/recession_probability.ipynb](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebooks/recession_probability.ipynb)
+- [https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/recession_probability.ipynb](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/recession_probability.ipynb)
 
 ---
 
