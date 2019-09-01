@@ -105,3 +105,21 @@ def PRET(df, price='Close'):
         pret_list.append(pret)
         i += 1
     return pret_list
+
+def PRETS(df, price='Close'):
+    """
+    %Returns
+    """
+    prets_list = []
+    pret_list = PRET(df, price)
+    i = 0
+    while i < len(df[price]):
+        if i < 1:
+            prets = float('NaN')
+            prets_list.append(prets)
+            prets = .0
+        else:
+            prets = prets + pret_list[i]
+            prets_list.append(prets)
+        i += 1
+    return prets_list
