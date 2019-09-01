@@ -71,3 +71,21 @@ def RET(df, price='Close'):
         ret_list.append(ret)
         i += 1
     return ret_list
+
+def RETS(df, price='Close'):
+    """
+    Returns
+    """
+    rets_list = []
+    ret_list = RET(df, price)
+    i = 0
+    while i < len(df[price]):
+        if i < 1:
+            rets = float('NaN')
+            rets_list.append(rets)
+            rets = .0
+        else:
+            rets = rets + ret_list[i]
+            rets_list.append(rets)
+        i += 1
+    return rets_list
