@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2019-08-31
+:Date:   2019-09-01
 
 .. contents::
    :depth: 3
@@ -1929,6 +1929,42 @@ BPPS \| Basis Points per Second \| DONE
 
 --------------
 
+RET \| Return \| DONE
+^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list of floats = jhta.RET(df, price='Close')``
+
+-  book: An Introduction to Algorithmic Trading
+
+--------------
+
+RETS \| Returns \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list of floats = jhta.RETS(df, price='Close')``
+
+-  book: An Introduction to Algorithmic Trading
+
+--------------
+
+PRET \| %Return \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list of floats = jhta.PRET(df, price='Close')``
+
+-  book: An Introduction to Algorithmic Trading
+
+--------------
+
+PRETS \| %Returns \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list of floats = jhta.PRETS(df, price='Close')``
+
+-  book: An Introduction to Algorithmic Trading
+
+--------------
+
 `Volatility Indicators <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/volatility_indicators/volatility_indicators.py>`__
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -2058,12 +2094,12 @@ NVI \| Negative Volume Index \| DONE
 Notebooks
 ---------
 
--  https://github.com/joosthoeks/jhTAlib/tree/master/notebooks
+-  https://github.com/joosthoeks/jhTAlib/tree/master/notebook
 
 Recession Probability
 ~~~~~~~~~~~~~~~~~~~~~
 
--  https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebooks/recession_probability.ipynb
+-  https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/recession_probability.ipynb
 
 --------------
 
