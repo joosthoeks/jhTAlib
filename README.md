@@ -1651,6 +1651,14 @@ import jhtalib as jhta
 
 ---
 
+#### PRET | %Return | DONE
+
+- ```list of floats = jhta.PRET(df, price='Close')```
+
+- book: An Introduction to Algorithmic Trading
+
+---
+
 ### [Volatility Indicators](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/volatility_indicators/volatility_indicators.py)
 
 #### AEM | Arms Ease of Movement | DONE

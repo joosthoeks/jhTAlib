@@ -89,3 +89,19 @@ def RETS(df, price='Close'):
             rets_list.append(rets)
         i += 1
     return rets_list
+
+def PRET(df, price='Close'):
+    """
+    %Return
+    """
+    pret_list = []
+    ret_list = RET(df, price)
+    i = 0
+    while i < len(df[price]):
+        if i < 1:
+            pret = float('NaN')
+        else:
+            pret = ret_list[i] / df[price][i - 1]
+        pret_list.append(pret)
+        i += 1
+    return pret_list
