@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2019-09-01
+date: 2019-09-13
 ---
 
 # jhTAlib
@@ -563,75 +563,75 @@ import jhtalib as jhta
 
 ### [Experimental](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/experimental/experimental.py)
 
-#### JH_SAVGP | Swing Average Price - previous Average Price | DONE
+#### SAVGP | Swing Average Price - previous Average Price | DONE
 
-- ```list of floats = jhta.JH_SAVGP(df, open='Open', high='High', low='Low', close='Close')```
-
----
-
-#### JH_SAVGPS | Swing Average Price - previous Average Price Summation | DONE
-
-- ```list of floats = jhta.JH_SAVGPS(df, open='Open', high='High', low='Low', close='Close')```
+- ```list of floats = jhta.SAVGP(df, open='Open', high='High', low='Low', close='Close')```
 
 ---
 
-#### JH_SCO | Swing Close - Open | DONE
+#### SAVGPS | Swing Average Price - previous Average Price Summation | DONE
 
-- ```list of floats = jhta.JH_SCO(df, open='Open', close='Close')```
-
----
-
-#### JH_SCOS | Swing Close - Open Summation | DONE
-
-- ```list of floats = jhta.JH_SCOS(df, open='Open', close='Close')```
+- ```list of floats = jhta.SAVGPS(df, open='Open', high='High', low='Low', close='Close')```
 
 ---
 
-#### JH_SMEDP | Swing Median Price - previous Median Price | DONE
+#### SCO | Swing Close - Open | DONE
 
-- ```list of floats = jhta.JH_SMEDP(df, high='High', low='Low')```
-
----
-
-#### jh_SMEDPS | Swing Median Price - previous Median Price Summation | DONE
-
-- ```list of floats = jhta.JH_SMEDPS(df, high='High', low='Low')```
+- ```list of floats = jhta.SCO(df, open='Open', close='Close')```
 
 ---
 
-#### JH_SPP | Swing Price - previous Price | DONE
+#### SCOS | Swing Close - Open Summation | DONE
 
-- ```list of floats = jhta.JH_SPP(df, price='Close')```
-
----
-
-#### JH_SPPS | Swing Price - previous Price Summation | DONE
-
-- ```list of floats = jhta.JH_SPPS(df, price='Close')```
+- ```list of floats = jhta.SCOS(df, open='Open', close='Close')```
 
 ---
 
-#### JH_STYPP | Swing Typical Price - previous Typical Price | DONE
+#### SMEDP | Swing Median Price - previous Median Price | DONE
 
-- ```list of floats = jhta.JH_STYPP(df, high='High', low='Low', close='Close')```
-
----
-
-#### JH_STYPPS | Swing Typical Price - previous Typical Price Summation | DONE
-
-- ```list of floats = jhta.JH_STYPPS(df, high='High', low='Low', close='Close')```
+- ```list of floats = jhta.SMEDP(df, high='High', low='Low')```
 
 ---
 
-#### JH_SWCLP | Swing Weighted Close Price - previous Weighted Close Price | DONE
+#### SMEDPS | Swing Median Price - previous Median Price Summation | DONE
 
-- ```list of floats = jhta.JH_SWCLP(df, high='High', low='Low', close='Close')```
+- ```list of floats = jhta.SMEDPS(df, high='High', low='Low')```
 
 ---
 
-#### JH_SWCLPS | Swing Weighted Close Price - previous Weighted Close Price Summation | DONE
+#### SPP | Swing Price - previous Price | DONE
 
-- ```list of floats = jhta.JH_SWCLPS(df, high='High', low='Low', close='Close')```
+- ```list of floats = jhta.SPP(df, price='Close')```
+
+---
+
+#### SPPS | Swing Price - previous Price Summation | DONE
+
+- ```list of floats = jhta.SPPS(df, price='Close')```
+
+---
+
+#### STYPP | Swing Typical Price - previous Typical Price | DONE
+
+- ```list of floats = jhta.STYPP(df, high='High', low='Low', close='Close')```
+
+---
+
+#### STYPPS | Swing Typical Price - previous Typical Price Summation | DONE
+
+- ```list of floats = jhta.STYPPS(df, high='High', low='Low', close='Close')```
+
+---
+
+#### SWCLP | Swing Weighted Close Price - previous Weighted Close Price | DONE
+
+- ```list of floats = jhta.SWCLP(df, high='High', low='Low', close='Close')```
+
+---
+
+#### SWCLPS | Swing Weighted Close Price - previous Weighted Close Price Summation | DONE
+
+- ```list of floats = jhta.SWCLPS(df, high='High', low='Low', close='Close')```
 
 ---
 
