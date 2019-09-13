@@ -7414,7 +7414,7 @@
 <office:text>
 <text:p text:style-name="Title">jhTAlib</text:p>
 <text:p text:style-name="Author">Joost Hoeks</text:p>
-<text:p text:style-name="Date">2019-09-01</text:p>
+<text:p text:style-name="Date">2019-09-13</text:p>
 <text:h text:style-name="Heading_20_1" text:outline-level="1">jhTAlib</text:h>
 <text:p text:style-name="First_20_paragraph">Technical Analysis Library
 Time-Series</text:p>
@@ -7997,101 +7997,101 @@ Index (J. Welles Wilder) | DONE</text:h>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_3" text:outline-level="3"><text:a xlink:type="simple" xlink:href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/experimental/experimental.py" office:name=""><text:span text:style-name="Definition">Experimental</text:span></text:a></text:h>
-<text:h text:style-name="Heading_20_4" text:outline-level="4">JH_SAVGP |
+<text:h text:style-name="Heading_20_4" text:outline-level="4">SAVGP |
 Swing Average Price - previous Average Price | DONE</text:h>
 <text:list text:style-name="L53">
   <text:list-item>
-    <text:p text:style-name="P73"><text:span text:style-name="Source_Text">list of floats = jhta.JH_SAVGP(df, open='Open', high='High', low='Low', close='Close')</text:span></text:p>
+    <text:p text:style-name="P73"><text:span text:style-name="Source_Text">list of floats = jhta.SAVGP(df, open='Open', high='High', low='Low', close='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_4" text:outline-level="4">JH_SAVGPS
-| Swing Average Price - previous Average Price Summation | DONE</text:h>
+<text:h text:style-name="Heading_20_4" text:outline-level="4">SAVGPS |
+Swing Average Price - previous Average Price Summation | DONE</text:h>
 <text:list text:style-name="L54">
   <text:list-item>
-    <text:p text:style-name="P74"><text:span text:style-name="Source_Text">list of floats = jhta.JH_SAVGPS(df, open='Open', high='High', low='Low', close='Close')</text:span></text:p>
+    <text:p text:style-name="P74"><text:span text:style-name="Source_Text">list of floats = jhta.SAVGPS(df, open='Open', high='High', low='Low', close='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_4" text:outline-level="4">JH_SCO |
+<text:h text:style-name="Heading_20_4" text:outline-level="4">SCO |
 Swing Close - Open | DONE</text:h>
 <text:list text:style-name="L55">
   <text:list-item>
-    <text:p text:style-name="P75"><text:span text:style-name="Source_Text">list of floats = jhta.JH_SCO(df, open='Open', close='Close')</text:span></text:p>
+    <text:p text:style-name="P75"><text:span text:style-name="Source_Text">list of floats = jhta.SCO(df, open='Open', close='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_4" text:outline-level="4">JH_SCOS |
+<text:h text:style-name="Heading_20_4" text:outline-level="4">SCOS |
 Swing Close - Open Summation | DONE</text:h>
 <text:list text:style-name="L56">
   <text:list-item>
-    <text:p text:style-name="P76"><text:span text:style-name="Source_Text">list of floats = jhta.JH_SCOS(df, open='Open', close='Close')</text:span></text:p>
+    <text:p text:style-name="P76"><text:span text:style-name="Source_Text">list of floats = jhta.SCOS(df, open='Open', close='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_4" text:outline-level="4">JH_SMEDP |
+<text:h text:style-name="Heading_20_4" text:outline-level="4">SMEDP |
 Swing Median Price - previous Median Price | DONE</text:h>
 <text:list text:style-name="L57">
   <text:list-item>
-    <text:p text:style-name="P77"><text:span text:style-name="Source_Text">list of floats = jhta.JH_SMEDP(df, high='High', low='Low')</text:span></text:p>
+    <text:p text:style-name="P77"><text:span text:style-name="Source_Text">list of floats = jhta.SMEDP(df, high='High', low='Low')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_4" text:outline-level="4">jh_SMEDPS
-| Swing Median Price - previous Median Price Summation | DONE</text:h>
+<text:h text:style-name="Heading_20_4" text:outline-level="4">SMEDPS |
+Swing Median Price - previous Median Price Summation | DONE</text:h>
 <text:list text:style-name="L58">
   <text:list-item>
-    <text:p text:style-name="P78"><text:span text:style-name="Source_Text">list of floats = jhta.JH_SMEDPS(df, high='High', low='Low')</text:span></text:p>
+    <text:p text:style-name="P78"><text:span text:style-name="Source_Text">list of floats = jhta.SMEDPS(df, high='High', low='Low')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_4" text:outline-level="4">JH_SPP |
+<text:h text:style-name="Heading_20_4" text:outline-level="4">SPP |
 Swing Price - previous Price | DONE</text:h>
 <text:list text:style-name="L59">
   <text:list-item>
-    <text:p text:style-name="P79"><text:span text:style-name="Source_Text">list of floats = jhta.JH_SPP(df, price='Close')</text:span></text:p>
+    <text:p text:style-name="P79"><text:span text:style-name="Source_Text">list of floats = jhta.SPP(df, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_4" text:outline-level="4">JH_SPPS |
+<text:h text:style-name="Heading_20_4" text:outline-level="4">SPPS |
 Swing Price - previous Price Summation | DONE</text:h>
 <text:list text:style-name="L60">
   <text:list-item>
-    <text:p text:style-name="P80"><text:span text:style-name="Source_Text">list of floats = jhta.JH_SPPS(df, price='Close')</text:span></text:p>
+    <text:p text:style-name="P80"><text:span text:style-name="Source_Text">list of floats = jhta.SPPS(df, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_4" text:outline-level="4">JH_STYPP |
+<text:h text:style-name="Heading_20_4" text:outline-level="4">STYPP |
 Swing Typical Price - previous Typical Price | DONE</text:h>
 <text:list text:style-name="L61">
   <text:list-item>
-    <text:p text:style-name="P81"><text:span text:style-name="Source_Text">list of floats = jhta.JH_STYPP(df, high='High', low='Low', close='Close')</text:span></text:p>
+    <text:p text:style-name="P81"><text:span text:style-name="Source_Text">list of floats = jhta.STYPP(df, high='High', low='Low', close='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_4" text:outline-level="4">JH_STYPPS
-| Swing Typical Price - previous Typical Price Summation | DONE</text:h>
+<text:h text:style-name="Heading_20_4" text:outline-level="4">STYPPS |
+Swing Typical Price - previous Typical Price Summation | DONE</text:h>
 <text:list text:style-name="L62">
   <text:list-item>
-    <text:p text:style-name="P82"><text:span text:style-name="Source_Text">list of floats = jhta.JH_STYPPS(df, high='High', low='Low', close='Close')</text:span></text:p>
+    <text:p text:style-name="P82"><text:span text:style-name="Source_Text">list of floats = jhta.STYPPS(df, high='High', low='Low', close='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_4" text:outline-level="4">JH_SWCLP |
+<text:h text:style-name="Heading_20_4" text:outline-level="4">SWCLP |
 Swing Weighted Close Price - previous Weighted Close Price |
 DONE</text:h>
 <text:list text:style-name="L63">
   <text:list-item>
-    <text:p text:style-name="P83"><text:span text:style-name="Source_Text">list of floats = jhta.JH_SWCLP(df, high='High', low='Low', close='Close')</text:span></text:p>
+    <text:p text:style-name="P83"><text:span text:style-name="Source_Text">list of floats = jhta.SWCLP(df, high='High', low='Low', close='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_4" text:outline-level="4">JH_SWCLPS
-| Swing Weighted Close Price - previous Weighted Close Price Summation |
+<text:h text:style-name="Heading_20_4" text:outline-level="4">SWCLPS |
+Swing Weighted Close Price - previous Weighted Close Price Summation |
 DONE</text:h>
 <text:list text:style-name="L64">
   <text:list-item>
-    <text:p text:style-name="P84"><text:span text:style-name="Source_Text">list of floats = jhta.JH_SWCLPS(df, high='High', low='Low', close='Close')</text:span></text:p>
+    <text:p text:style-name="P84"><text:span text:style-name="Source_Text">list of floats = jhta.SWCLPS(df, high='High', low='Low', close='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />

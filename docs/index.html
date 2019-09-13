@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <meta name="author" content="Joost Hoeks">
-  <meta name="dcterms.date" content="2019-09-01">
+  <meta name="dcterms.date" content="2019-09-13">
   <title>jhTAlib</title>
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" href="pandoc.css">
@@ -17,7 +17,7 @@
 <header>
 <h1 class="title">jhTAlib</h1>
 <p class="author">Joost Hoeks</p>
-<p class="date">2019-09-01</p>
+<p class="date">2019-09-13</p>
 </header>
 <nav id="TOC">
 <ul>
@@ -437,64 +437,64 @@ $ python3 test.py</code></pre>
 </ul>
 <hr />
 <h3 id="experimental"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/experimental/experimental.py">Experimental</a></h3>
-<h4 id="jh_savgp-swing-average-price---previous-average-price-done">JH_SAVGP | Swing Average Price - previous Average Price | DONE</h4>
+<h4 id="savgp-swing-average-price---previous-average-price-done">SAVGP | Swing Average Price - previous Average Price | DONE</h4>
 <ul>
-<li><code>list of floats = jhta.JH_SAVGP(df, open='Open', high='High', low='Low', close='Close')</code></li>
+<li><code>list of floats = jhta.SAVGP(df, open='Open', high='High', low='Low', close='Close')</code></li>
 </ul>
 <hr />
-<h4 id="jh_savgps-swing-average-price---previous-average-price-summation-done">JH_SAVGPS | Swing Average Price - previous Average Price Summation | DONE</h4>
+<h4 id="savgps-swing-average-price---previous-average-price-summation-done">SAVGPS | Swing Average Price - previous Average Price Summation | DONE</h4>
 <ul>
-<li><code>list of floats = jhta.JH_SAVGPS(df, open='Open', high='High', low='Low', close='Close')</code></li>
+<li><code>list of floats = jhta.SAVGPS(df, open='Open', high='High', low='Low', close='Close')</code></li>
 </ul>
 <hr />
-<h4 id="jh_sco-swing-close---open-done">JH_SCO | Swing Close - Open | DONE</h4>
+<h4 id="sco-swing-close---open-done">SCO | Swing Close - Open | DONE</h4>
 <ul>
-<li><code>list of floats = jhta.JH_SCO(df, open='Open', close='Close')</code></li>
+<li><code>list of floats = jhta.SCO(df, open='Open', close='Close')</code></li>
 </ul>
 <hr />
-<h4 id="jh_scos-swing-close---open-summation-done">JH_SCOS | Swing Close - Open Summation | DONE</h4>
+<h4 id="scos-swing-close---open-summation-done">SCOS | Swing Close - Open Summation | DONE</h4>
 <ul>
-<li><code>list of floats = jhta.JH_SCOS(df, open='Open', close='Close')</code></li>
+<li><code>list of floats = jhta.SCOS(df, open='Open', close='Close')</code></li>
 </ul>
 <hr />
-<h4 id="jh_smedp-swing-median-price---previous-median-price-done">JH_SMEDP | Swing Median Price - previous Median Price | DONE</h4>
+<h4 id="smedp-swing-median-price---previous-median-price-done">SMEDP | Swing Median Price - previous Median Price | DONE</h4>
 <ul>
-<li><code>list of floats = jhta.JH_SMEDP(df, high='High', low='Low')</code></li>
+<li><code>list of floats = jhta.SMEDP(df, high='High', low='Low')</code></li>
 </ul>
 <hr />
-<h4 id="jh_smedps-swing-median-price---previous-median-price-summation-done">jh_SMEDPS | Swing Median Price - previous Median Price Summation | DONE</h4>
+<h4 id="smedps-swing-median-price---previous-median-price-summation-done">SMEDPS | Swing Median Price - previous Median Price Summation | DONE</h4>
 <ul>
-<li><code>list of floats = jhta.JH_SMEDPS(df, high='High', low='Low')</code></li>
+<li><code>list of floats = jhta.SMEDPS(df, high='High', low='Low')</code></li>
 </ul>
 <hr />
-<h4 id="jh_spp-swing-price---previous-price-done">JH_SPP | Swing Price - previous Price | DONE</h4>
+<h4 id="spp-swing-price---previous-price-done">SPP | Swing Price - previous Price | DONE</h4>
 <ul>
-<li><code>list of floats = jhta.JH_SPP(df, price='Close')</code></li>
+<li><code>list of floats = jhta.SPP(df, price='Close')</code></li>
 </ul>
 <hr />
-<h4 id="jh_spps-swing-price---previous-price-summation-done">JH_SPPS | Swing Price - previous Price Summation | DONE</h4>
+<h4 id="spps-swing-price---previous-price-summation-done">SPPS | Swing Price - previous Price Summation | DONE</h4>
 <ul>
-<li><code>list of floats = jhta.JH_SPPS(df, price='Close')</code></li>
+<li><code>list of floats = jhta.SPPS(df, price='Close')</code></li>
 </ul>
 <hr />
-<h4 id="jh_stypp-swing-typical-price---previous-typical-price-done">JH_STYPP | Swing Typical Price - previous Typical Price | DONE</h4>
+<h4 id="stypp-swing-typical-price---previous-typical-price-done">STYPP | Swing Typical Price - previous Typical Price | DONE</h4>
 <ul>
-<li><code>list of floats = jhta.JH_STYPP(df, high='High', low='Low', close='Close')</code></li>
+<li><code>list of floats = jhta.STYPP(df, high='High', low='Low', close='Close')</code></li>
 </ul>
 <hr />
-<h4 id="jh_stypps-swing-typical-price---previous-typical-price-summation-done">JH_STYPPS | Swing Typical Price - previous Typical Price Summation | DONE</h4>
+<h4 id="stypps-swing-typical-price---previous-typical-price-summation-done">STYPPS | Swing Typical Price - previous Typical Price Summation | DONE</h4>
 <ul>
-<li><code>list of floats = jhta.JH_STYPPS(df, high='High', low='Low', close='Close')</code></li>
+<li><code>list of floats = jhta.STYPPS(df, high='High', low='Low', close='Close')</code></li>
 </ul>
 <hr />
-<h4 id="jh_swclp-swing-weighted-close-price---previous-weighted-close-price-done">JH_SWCLP | Swing Weighted Close Price - previous Weighted Close Price | DONE</h4>
+<h4 id="swclp-swing-weighted-close-price---previous-weighted-close-price-done">SWCLP | Swing Weighted Close Price - previous Weighted Close Price | DONE</h4>
 <ul>
-<li><code>list of floats = jhta.JH_SWCLP(df, high='High', low='Low', close='Close')</code></li>
+<li><code>list of floats = jhta.SWCLP(df, high='High', low='Low', close='Close')</code></li>
 </ul>
 <hr />
-<h4 id="jh_swclps-swing-weighted-close-price---previous-weighted-close-price-summation-done">JH_SWCLPS | Swing Weighted Close Price - previous Weighted Close Price Summation | DONE</h4>
+<h4 id="swclps-swing-weighted-close-price---previous-weighted-close-price-summation-done">SWCLPS | Swing Weighted Close Price - previous Weighted Close Price Summation | DONE</h4>
 <ul>
-<li><code>list of floats = jhta.JH_SWCLPS(df, high='High', low='Low', close='Close')</code></li>
+<li><code>list of floats = jhta.SWCLPS(df, high='High', low='Low', close='Close')</code></li>
 </ul>
 <hr />
 <h3 id="general"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/general/general.py">General</a></h3>
