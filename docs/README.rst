@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2019-09-13
+:Date:   2019-09-16
 
 .. contents::
    :depth: 3
@@ -727,6 +727,15 @@ SWCLPS \| Swing Weighted Close Price - previous Weighted Close Price Summation \
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list of floats = jhta.SWCLPS(df, high='High', low='Low', close='Close')``
+
+--------------
+
+VWAP \| Volume Weighted Average Price \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list of floats = jhta.VWAP(df, open='Open', high='High', low='Low', close='Close', volume='Volume')``
+
+-  book: An Introduction to Algorithmic Trading
 
 --------------
 
