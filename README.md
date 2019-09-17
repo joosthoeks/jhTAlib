@@ -667,6 +667,14 @@ import jhtalib as jhta
 
 ---
 
+#### WWS | Welles Wilder Summation | DONE
+
+- ```list of floats = jhta.WWS(df, n, price='Close')```
+
+- [https://www.fmlabs.com/reference/default.htm?url=WellesSum.htm](https://www.fmlabs.com/reference/default.htm?url=WellesSum.htm)
+
+---
+
 ### [General](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/general/general.py)
 
 #### NORMALIZE | Normalize | DONE

@@ -71,3 +71,23 @@ def WWMA(df, n, price='Close'):
             wwma_list.append(wwma)
         i += 1
     return wwma_list
+
+def WWS(df, n, price='Close'):
+    """
+    Welles Wilder Summation
+    """
+    wws_list = []
+    i = 0
+    while i < len(df[price]):
+        if i + 1 < n:
+            wws = float('NaN')
+            wws_list.append(wws)
+            wws = df[price][i]
+        else:
+            start = i + 1 - n
+            end = i + 1
+            wws = wws - (sum(df[price][start:end]) / n) + df[price][i]
+            wws_list.append(wws)
+        i += 1
+    return wws_list
+
