@@ -20,3 +20,15 @@ def VWAP(df, open='Open', high='High', low='Low', close='Close', volume='Volume'
         vwap_list.append(vwap)
         i += 1
     return vwap_list
+
+def MFI(df, high='High', low='Low', volume='Volume'):
+    """
+    Market Facilitation Index
+    """
+    mfi_list = []
+    i = 0
+    while i < len(df[low]):
+        mfi = (df[high][i] - df[low][i]) / df[volume][i]
+        mfi_list.append(mfi)
+        i += 1
+    return mfi_list

@@ -643,6 +643,14 @@ import jhtalib as jhta
 
 ---
 
+#### MFI | Market Facilitation Index | DONE
+
+- ```list of floats = jhta.MFI(df, high='High', low='Low', volume='Volume')```
+
+- [https://www.fmlabs.com/reference/default.htm?url=MFI.htm](https://www.fmlabs.com/reference/default.htm?url=MFI.htm)
+
+---
+
 ### [General](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/general/general.py)
 
 #### NORMALIZE | Normalize | DONE
@@ -1034,12 +1042,6 @@ import jhtalib as jhta
 ---
 
 #### MACDFIX | Moving Average Convergence/Divergence Fix 12/26 |
-
--
-
----
-
-#### MFI | Money Flow Index |
 
 -
 
