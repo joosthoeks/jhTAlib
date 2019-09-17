@@ -659,6 +659,14 @@ import jhtalib as jhta
 
 ---
 
+#### WWMA | Welles Wilder Moving Average | DONE
+
+- ```list of floats = jhta.WWMA(df, n, price='Close')```
+
+- [https://www.fmlabs.com/reference/default.htm?url=WellesMA.htm](https://www.fmlabs.com/reference/default.htm?url=WellesMA.htm)
+
+---
+
 ### [General](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/general/general.py)
 
 #### NORMALIZE | Normalize | DONE

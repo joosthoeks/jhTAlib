@@ -54,3 +54,20 @@ def VAMA(df, n, price='Close', volume='Volume'):
         vama_list.append(vama)
         i += 1
     return vama_list
+
+def WWMA(df, n, price='Close'):
+    """
+    Welles Wilder Moving Average
+    """
+    wwma_list = []
+    i = 0
+    while i < len(df[price]):
+        if i + 1 < n:
+            wwma = float('NaN')
+            wwma_list.append(wwma)
+            wwma = df[price][i]
+        else:
+            wwma = (wwma * (n - 1) + df[price][i]) / n
+            wwma_list.append(wwma)
+        i += 1
+    return wwma_list
