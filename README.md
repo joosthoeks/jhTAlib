@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2019-09-16
+date: 2019-09-17
 ---
 
 # jhTAlib
@@ -561,8 +561,6 @@ import jhtalib as jhta
 
 ---
 
-### [Experimental](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/experimental/experimental.py)
-
 #### SAVGP | Swing Average Price - previous Average Price | DONE
 
 - ```list of floats = jhta.SAVGP(df, open='Open', high='High', low='Low', close='Close')```
@@ -634,6 +632,8 @@ import jhtalib as jhta
 - ```list of floats = jhta.SWCLPS(df, high='High', low='Low', close='Close')```
 
 ---
+
+### [Experimental](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/experimental/experimental.py)
 
 #### VWAP | Volume Weighted Average Price | DONE
 
