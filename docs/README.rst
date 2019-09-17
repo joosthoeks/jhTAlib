@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2019-09-16
+:Date:   2019-09-17
 
 .. contents::
    :depth: 3
@@ -643,9 +643,6 @@ SI \| Swing Index (J. Welles Wilder) \| DONE
 
 --------------
 
-`Experimental <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/experimental/experimental.py>`__
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 SAVGP \| Swing Average Price - previous Average Price \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -730,12 +727,51 @@ SWCLPS \| Swing Weighted Close Price - previous Weighted Close Price Summation \
 
 --------------
 
+`Experimental <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/experimental/experimental.py>`__
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 VWAP \| Volume Weighted Average Price \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``list of floats = jhta.VWAP(df, open='Open', high='High', low='Low', close='Close', volume='Volume')``
 
 -  book: An Introduction to Algorithmic Trading
+
+--------------
+
+MFI \| Market Facilitation Index \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list of floats = jhta.MFI(df, high='High', low='Low', volume='Volume')``
+
+-  https://www.fmlabs.com/reference/default.htm?url=MFI.htm
+
+--------------
+
+VAMA \| Volume Adjusted Moving Average \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list of floats = jhta.VAMA(df, n, price='Close', volume='Volume')``
+
+-  https://www.fmlabs.com/reference/default.htm?url=VolAdjustedMA.htm
+
+--------------
+
+WWMA \| Welles Wilder Moving Average \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list of floats = jhta.WWMA(df, n, price='Close')``
+
+-  https://www.fmlabs.com/reference/default.htm?url=WellesMA.htm
+
+--------------
+
+WWS \| Welles Wilder Summation \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list of floats = jhta.WWS(df, n, price='Close')``
+
+-  https://www.fmlabs.com/reference/default.htm?url=WellesSum.htm
 
 --------------
 
@@ -1195,13 +1231,6 @@ MACDEXT \| MACD with controllable MA type \|
 
 MACDFIX \| Moving Average Convergence/Divergence Fix 12/26 \|
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
--  
-
---------------
-
-MFI \| Money Flow Index \|
-^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  
 

@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <meta name="author" content="Joost Hoeks">
-  <meta name="dcterms.date" content="2019-09-16">
+  <meta name="dcterms.date" content="2019-09-17">
   <title>jhTAlib</title>
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" href="pandoc.css">
@@ -17,7 +17,7 @@
 <header>
 <h1 class="title">jhTAlib</h1>
 <p class="author">Joost Hoeks</p>
-<p class="date">2019-09-16</p>
+<p class="date">2019-09-17</p>
 </header>
 <nav id="TOC">
 <ul>
@@ -436,7 +436,6 @@ $ python3 test.py</code></pre>
 <li><p>book: New Concepts in Technical Trading Systems</p></li>
 </ul>
 <hr />
-<h3 id="experimental"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/experimental/experimental.py">Experimental</a></h3>
 <h4 id="savgp-swing-average-price---previous-average-price-done">SAVGP | Swing Average Price - previous Average Price | DONE</h4>
 <ul>
 <li><code>list of floats = jhta.SAVGP(df, open='Open', high='High', low='Low', close='Close')</code></li>
@@ -497,10 +496,35 @@ $ python3 test.py</code></pre>
 <li><code>list of floats = jhta.SWCLPS(df, high='High', low='Low', close='Close')</code></li>
 </ul>
 <hr />
+<h3 id="experimental"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/experimental/experimental.py">Experimental</a></h3>
 <h4 id="vwap-volume-weighted-average-price-done">VWAP | Volume Weighted Average Price | DONE</h4>
 <ul>
 <li><p><code>list of floats = jhta.VWAP(df, open='Open', high='High', low='Low', close='Close', volume='Volume')</code></p></li>
 <li><p>book: An Introduction to Algorithmic Trading</p></li>
+</ul>
+<hr />
+<h4 id="mfi-market-facilitation-index-done">MFI | Market Facilitation Index | DONE</h4>
+<ul>
+<li><p><code>list of floats = jhta.MFI(df, high='High', low='Low', volume='Volume')</code></p></li>
+<li><p><a href="https://www.fmlabs.com/reference/default.htm?url=MFI.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=MFI.htm</a></p></li>
+</ul>
+<hr />
+<h4 id="vama-volume-adjusted-moving-average-done">VAMA | Volume Adjusted Moving Average | DONE</h4>
+<ul>
+<li><p><code>list of floats = jhta.VAMA(df, n, price='Close', volume='Volume')</code></p></li>
+<li><p><a href="https://www.fmlabs.com/reference/default.htm?url=VolAdjustedMA.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=VolAdjustedMA.htm</a></p></li>
+</ul>
+<hr />
+<h4 id="wwma-welles-wilder-moving-average-done">WWMA | Welles Wilder Moving Average | DONE</h4>
+<ul>
+<li><p><code>list of floats = jhta.WWMA(df, n, price='Close')</code></p></li>
+<li><p><a href="https://www.fmlabs.com/reference/default.htm?url=WellesMA.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=WellesMA.htm</a></p></li>
+</ul>
+<hr />
+<h4 id="wws-welles-wilder-summation-done">WWS | Welles Wilder Summation | DONE</h4>
+<ul>
+<li><p><code>list of floats = jhta.WWS(df, n, price='Close')</code></p></li>
+<li><p><a href="https://www.fmlabs.com/reference/default.htm?url=WellesSum.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=WellesSum.htm</a></p></li>
 </ul>
 <hr />
 <h3 id="general"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/general/general.py">General</a></h3>
@@ -819,11 +843,6 @@ $ python3 test.py</code></pre>
 </ul>
 <hr />
 <h4 id="macdfix-moving-average-convergencedivergence-fix-1226">MACDFIX | Moving Average Convergence/Divergence Fix 12/26 |</h4>
-<ul>
-<li></li>
-</ul>
-<hr />
-<h4 id="mfi-money-flow-index">MFI | Money Flow Index |</h4>
 <ul>
 <li></li>
 </ul>

@@ -4,7 +4,7 @@
 
 {\pard \qc \f0 \sa180 \li0 \fi0 \b \fs36 jhTAlib\par}
 {\pard \qc \f0 \sa180 \li0 \fi0  Joost Hoeks\par}
-{\pard \qc \f0 \sa180 \li0 \fi0  2019-09-16\par}
+{\pard \qc \f0 \sa180 \li0 \fi0  2019-09-17\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Contents\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab jhTAlib\par}
@@ -480,10 +480,6 @@ Event Driven
 {\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.SI(df, L, open='Open', high='High', low='Low', close='Close')}\par}
 {\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab book: New Concepts in Technical Trading Systems\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs28 {\field{\*\fldinst{HYPERLINK "https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/experimental/experimental.py"}}{\fldrslt{\ul
-Experimental
-}}}
-\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 SAVGP | Swing Average Price - previous Average Price | DONE\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.SAVGP(df, open='Open', high='High', low='Low', close='Close')}\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
@@ -520,9 +516,41 @@ Experimental
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 SWCLPS | Swing Weighted Close Price - previous Weighted Close Price Summation | DONE\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.SWCLPS(df, high='High', low='Low', close='Close')}\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs28 {\field{\*\fldinst{HYPERLINK "https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/experimental/experimental.py"}}{\fldrslt{\ul
+Experimental
+}}}
+\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 VWAP | Volume Weighted Average Price | DONE\par}
 {\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.VWAP(df, open='Open', high='High', low='Low', close='Close', volume='Volume')}\par}
 {\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab book: An Introduction to Algorithmic Trading\sa180\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 MFI | Market Facilitation Index | DONE\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.MFI(df, high='High', low='Low', volume='Volume')}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://www.fmlabs.com/reference/default.htm?url=MFI.htm"}}{\fldrslt{\ul
+https://www.fmlabs.com/reference/default.htm?url=MFI.htm
+}}}
+\sa180\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 VAMA | Volume Adjusted Moving Average | DONE\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.VAMA(df, n, price='Close', volume='Volume')}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://www.fmlabs.com/reference/default.htm?url=VolAdjustedMA.htm"}}{\fldrslt{\ul
+https://www.fmlabs.com/reference/default.htm?url=VolAdjustedMA.htm
+}}}
+\sa180\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 WWMA | Welles Wilder Moving Average | DONE\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.WWMA(df, n, price='Close')}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://www.fmlabs.com/reference/default.htm?url=WellesMA.htm"}}{\fldrslt{\ul
+https://www.fmlabs.com/reference/default.htm?url=WellesMA.htm
+}}}
+\sa180\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 WWS | Welles Wilder Summation | DONE\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.WWS(df, n, price='Close')}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://www.fmlabs.com/reference/default.htm?url=WellesSum.htm"}}{\fldrslt{\ul
+https://www.fmlabs.com/reference/default.htm?url=WellesSum.htm
+}}}
+\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs28 {\field{\*\fldinst{HYPERLINK "https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/general/general.py"}}{\fldrslt{\ul
 General
@@ -753,9 +781,6 @@ https://www.fmlabs.com/reference/default.htm?url=PriceOscillator.htm
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab \sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 MACDFIX | Moving Average Convergence/Divergence Fix 12/26 |\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab \sa180\par}
-{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 MFI | Money Flow Index |\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab \sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 MINUS_DI | Minus Directional Indicator |\par}
