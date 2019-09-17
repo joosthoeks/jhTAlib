@@ -651,6 +651,14 @@ import jhtalib as jhta
 
 ---
 
+#### VAMA | Volume Adjusted Moving Average | DONE
+
+- ```list of floats = jhta.VAMA(df, n, price='Close', volume='Volume')```
+
+- [https://www.fmlabs.com/reference/default.htm?url=VolAdjustedMA.htm](https://www.fmlabs.com/reference/default.htm?url=VolAdjustedMA.htm)
+
+---
+
 ### [General](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/general/general.py)
 
 #### NORMALIZE | Normalize | DONE

@@ -32,3 +32,25 @@ def MFI(df, high='High', low='Low', volume='Volume'):
         mfi_list.append(mfi)
         i += 1
     return mfi_list
+
+def VAMA(df, n, price='Close', volume='Volume'):
+    """
+    Volume Adjusted Moving Average
+    """
+    vama_list = []
+    pv_list = []
+    i = 0
+    while i < len(df[price]):
+        if i + 1 < n:
+            vama = float('NaN')
+            pv = float('NaN')
+            pv_list.append(pv)
+        else:
+            start = i + 1 - n
+            end = i + 1
+            pv = df[price][i] * df[volume][i]
+            pv_list.append(pv)
+            vama = sum(pv_list[start:end]) / sum(df[volume][start:end])
+        vama_list.append(vama)
+        i += 1
+    return vama_list
