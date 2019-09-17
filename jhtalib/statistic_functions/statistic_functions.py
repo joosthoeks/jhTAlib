@@ -528,7 +528,7 @@ def LSR(df, price='Close', predictions_int=0):
     x2_list = []
     xy_list = []
     i = 0
-    while i < len(df[price]):
+    while i < len(df[price]) - predictions_int:
         # For each (x,y) calculate x2 and xy:
         x = i
         y = df[price][i]
@@ -547,7 +547,7 @@ def LSR(df, price='Close', predictions_int=0):
     xy_sum = jhta.SUM({'xy_list': xy_list}, len(xy_list), 'xy_list')[-1]
 
     # set n:
-    n = len(df[price])
+    n = len(df[price]) - predictions_int
 
     # Calculate Slope:
     m = (n * xy_sum - x_sum * y_sum) / (n * x2_sum - x_sum * x_sum)
@@ -557,7 +557,7 @@ def LSR(df, price='Close', predictions_int=0):
 
     lsr_list = []
     i = 0
-    while i < len(df[price]) + predictions_int:
+    while i < len(df[price]):
         # Assemble the equation of a line:
         lsr = m * i + b
         lsr_list.append(lsr)
@@ -568,13 +568,13 @@ def SLR(df, price='Close', predictions_int=0):
     """
     Simple Linear Regression
     """
-    x_list = list(range(len(df[price])))
-#    b1 = COVARIANCE({'x': x_list}, {'y': df[price]}, len(x_list), 'x', 'y')[-1] / VARIANCE({'x': x_list}, len(x_list), 'x')[-1]
-    b1 = COV(x_list, df[price]) / VARIANCE({'x': x_list}, len(x_list), 'x')[-1]
-    b0 = MEAN({'y': df[price]}, len(df[price]), 'y')[-1] - b1 * MEAN({'x': x_list}, len(x_list), 'x')[-1]
+    x_list = list(range(len(df[price]) - predictions_int))
+    p_list = df[price][0:len(df[price]) - predictions_int]
+    b1 = COV(x_list, p_list) / VARIANCE({'x': x_list}, len(x_list), 'x')[-1]
+    b0 = MEAN({'y': p_list}, len(p_list), 'y')[-1] - b1 * MEAN({'x': x_list}, len(x_list), 'x')[-1]
     slr_list = []
     i = 0
-    while i < len(df[price]) + predictions_int:
+    while i < len(df[price]):
         slr = b0 + b1 * i
         slr_list.append(slr)
         i += 1
