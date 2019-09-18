@@ -675,6 +675,14 @@ import jhtalib as jhta
 
 ---
 
+#### MFI | Money Flow Index | DONE
+
+- ```list of floats = jhta.MFI(df, n, high='High', low='Low', close='Close', volume='Volume')```
+
+- [https://www.fmlabs.com/reference/default.htm?url=MoneyFlowIndex.htm](https://www.fmlabs.com/reference/default.htm?url=MoneyFlowIndex.htm)
+
+---
+
 ### [General](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/general/general.py)
 
 #### NORMALIZE | Normalize | DONE

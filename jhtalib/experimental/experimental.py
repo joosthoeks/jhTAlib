@@ -91,3 +91,36 @@ def WWS(df, n, price='Close'):
         i += 1
     return wws_list
 
+def MFI(df, n, high='High', low='Low', close='Close', volume='Volume'):
+    """
+    Money Flow Index
+    """
+    mfi_list = []
+    typprice_list = jhta.TYPPRICE(df, high, low, close)
+    mf_pos_list = []
+    mf_neg_list = []
+    i = 0
+    while i < len(df[low]):
+        mf = typprice_list[i] * df[volume][i]
+        if i + 1 < n:
+            mfi = float('NaN')
+            mf_pos_list.append(float('NaN'))
+            mf_neg_list.append(float('NaN'))
+        else:
+            start = i + 1 - n
+            end = i + 1
+            if typprice_list[i] > typprice_list[i - 1]:
+                mf_pos_list.append(mf)
+                mf_neg_list.append(.0)
+            else:
+                mf_pos_list.append(.0)
+                mf_neg_list.append(mf)
+            x = sum(mf_pos_list[start:end])
+            # FIX ZeroDivisionError: float division by zero:
+            y = sum(mf_neg_list[start:end]) or .00000001
+            mr = x / y
+            mfi = 100 - (100 / (1 + mr))
+        mfi_list.append(mfi)
+        i += 1
+    return mfi_list
+
