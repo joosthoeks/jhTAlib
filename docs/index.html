@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <meta name="author" content="Joost Hoeks">
-  <meta name="dcterms.date" content="2019-09-17">
+  <meta name="dcterms.date" content="2019-09-18">
   <title>jhTAlib</title>
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" href="pandoc.css">
@@ -17,7 +17,7 @@
 <header>
 <h1 class="title">jhTAlib</h1>
 <p class="author">Joost Hoeks</p>
-<p class="date">2019-09-17</p>
+<p class="date">2019-09-18</p>
 </header>
 <nav id="TOC">
 <ul>
@@ -503,9 +503,9 @@ $ python3 test.py</code></pre>
 <li><p>book: An Introduction to Algorithmic Trading</p></li>
 </ul>
 <hr />
-<h4 id="mfi-market-facilitation-index-done">MFI | Market Facilitation Index | DONE</h4>
+<h4 id="mfai-market-facilitation-index-done">MFAI | Market Facilitation Index | DONE</h4>
 <ul>
-<li><p><code>list of floats = jhta.MFI(df, high='High', low='Low', volume='Volume')</code></p></li>
+<li><p><code>list of floats = jhta.MFAI(df, high='High', low='Low', volume='Volume')</code></p></li>
 <li><p><a href="https://www.fmlabs.com/reference/default.htm?url=MFI.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=MFI.htm</a></p></li>
 </ul>
 <hr />
@@ -525,6 +525,12 @@ $ python3 test.py</code></pre>
 <ul>
 <li><p><code>list of floats = jhta.WWS(df, n, price='Close')</code></p></li>
 <li><p><a href="https://www.fmlabs.com/reference/default.htm?url=WellesSum.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=WellesSum.htm</a></p></li>
+</ul>
+<hr />
+<h4 id="mfi-money-flow-index-done">MFI | Money Flow Index | DONE</h4>
+<ul>
+<li><p><code>list of floats = jhta.MFI(df, n, high='High', low='Low', close='Close', volume='Volume')</code></p></li>
+<li><p><a href="https://www.fmlabs.com/reference/default.htm?url=MoneyFlowIndex.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=MoneyFlowIndex.htm</a></p></li>
 </ul>
 <hr />
 <h3 id="general"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/general/general.py">General</a></h3>

@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2019-09-17
+:Date:   2019-09-18
 
 .. contents::
    :depth: 3
@@ -739,10 +739,10 @@ VWAP \| Volume Weighted Average Price \| DONE
 
 --------------
 
-MFI \| Market Facilitation Index \| DONE
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MFAI \| Market Facilitation Index \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
--  ``list of floats = jhta.MFI(df, high='High', low='Low', volume='Volume')``
+-  ``list of floats = jhta.MFAI(df, high='High', low='Low', volume='Volume')``
 
 -  https://www.fmlabs.com/reference/default.htm?url=MFI.htm
 
@@ -772,6 +772,15 @@ WWS \| Welles Wilder Summation \| DONE
 -  ``list of floats = jhta.WWS(df, n, price='Close')``
 
 -  https://www.fmlabs.com/reference/default.htm?url=WellesSum.htm
+
+--------------
+
+MFI \| Money Flow Index \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list of floats = jhta.MFI(df, n, high='High', low='Low', close='Close', volume='Volume')``
+
+-  https://www.fmlabs.com/reference/default.htm?url=MoneyFlowIndex.htm
 
 --------------
 
