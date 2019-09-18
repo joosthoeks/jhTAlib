@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2019-09-17
+date: 2019-09-18
 ---
 
 # jhTAlib
@@ -643,9 +643,9 @@ import jhtalib as jhta
 
 ---
 
-#### MFI | Market Facilitation Index | DONE
+#### MFAI | Market Facilitation Index | DONE
 
-- ```list of floats = jhta.MFI(df, high='High', low='Low', volume='Volume')```
+- ```list of floats = jhta.MFAI(df, high='High', low='Low', volume='Volume')```
 
 - [https://www.fmlabs.com/reference/default.htm?url=MFI.htm](https://www.fmlabs.com/reference/default.htm?url=MFI.htm)
 
