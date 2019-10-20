@@ -1874,6 +1874,24 @@ PCORRELATION \| Population Correlation \| DONE
 
 --------------
 
+R2 \| R-Squared \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``float = jhta.R2(list1, list2)``
+
+-  https://www.wallstreetmojo.com/r-squared-formula/
+
+--------------
+
+RSQUARED \| R-Squared \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list of floats = jhta.RSQUARED(df1, df2, n, price1='Close', price2='Close')``
+
+-  https://www.wallstreetmojo.com/r-squared-formula/
+
+--------------
+
 BETA \| Beta \| DONE
 ^^^^^^^^^^^^^^^^^^^^
 
