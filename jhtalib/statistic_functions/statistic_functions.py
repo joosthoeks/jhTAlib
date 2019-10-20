@@ -483,6 +483,40 @@ def R2(list1, list2):
     """
     return jhta.PCOR(list1, list2) ** 2
 
+def RSQUARED(df1, df2, n, price1='Close', price2='Close'):
+    """
+    R-Squared
+    """
+    r2_list = []
+    i = 0
+    if n == len(df1[price1]):
+        start = None
+        while i < len(df1[price1]):
+            if df1[price1][i] != df1[price1][i] or df2[price2][i] != df2[price2][i]:
+                r2 = float('NaN')
+            else:
+                if start is None:
+                    start = i
+                end = i + 1
+                list1 = df1[price1][start:end]
+                list2 = df2[price2][start:end]
+                r2 = R2(list1, list2)
+            r2_list.append(r2)
+            i += 1
+    else:
+        while i < len(df1[price1]):
+            if i + 1 < n:
+                r2 = float('NaN')
+            else:
+                start = i + 1 - n
+                end = i + 1
+                list1 = df1[price1][start:end]
+                list2 = df2[price2][start:end]
+                r2 = R2(list1, list2)
+            r2_list.append(r2)
+            i += 1
+    return r2_list
+
 def BETA(list1, list2):
     """
     Beta
