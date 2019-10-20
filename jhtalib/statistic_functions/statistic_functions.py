@@ -477,6 +477,12 @@ def PCORRELATION(df1, df2, n, price1='Close', price2='Close'):
             i += 1
     return pcorrelation_list
 
+def R2(list1, list2):
+    """
+    R-Squared
+    """
+    return jhta.PCOR(list1, list2) ** 2
+
 def BETA(list1, list2):
     """
     Beta

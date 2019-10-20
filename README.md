@@ -1587,6 +1587,14 @@ import jhtalib as jhta
 
 ---
 
+#### R2 | R-Squared | DONE
+
+- ```float = jhta.R2(list1, list2)```
+
+- [https://www.wallstreetmojo.com/r-squared-formula/](https://www.wallstreetmojo.com/r-squared-formula/)
+
+---
+
 #### BETA | Beta | DONE
 
 - ```float = jhta.BETA(list1, list2)```
