@@ -1,3 +1,6 @@
+import jhtalib as jhta
+
+
 def AD(df, high='High', low='Low', close='Close', volume='Volume'):
     """
     Chaikin A/D Line
@@ -17,6 +20,35 @@ def ADOSC(df):
     """
     Chaikin A/D Oscillator
     """
+
+def MFAI(df, high='High', low='Low', volume='Volume'):
+    """
+    Market Facilitation Index
+    """
+    mfai_list = []
+    i = 0
+    while i < len(df[low]):
+        mfai = (df[high][i] - df[low][i]) / df[volume][i]
+        mfai_list.append(mfai)
+        i += 1
+    return mfai_list
+
+def NVI(df, price='Close', volume='Volume'):
+    """
+    Negative Volume Index
+    """
+    nvi_list = []
+    i = 0
+    while i < len(df[price]):
+        nvi = 0
+        if i > 0:
+            if df[volume][i] < df[volume][i - 1]:
+                nvi = nvi_list[i - 1] + (df[price][i] - df[price][i - 1]) / df[price][i - 1]
+            else:
+                nvi = nvi_list[i - 1]
+        nvi_list.append(nvi)
+        i += 1
+    return nvi_list
 
 def OBV(df, close='Close', volume='Volume'):
     """
@@ -90,20 +122,23 @@ def PVI(df, price='Close', volume='Volume'):
         i += 1
     return pvi_list
 
-def NVI(df, price='Close', volume='Volume'):
+def VWAP(df, open='Open', high='High', low='Low', close='Close', volume='Volume'):
     """
-    Negative Volume Index
+    Volume Weighted Average Price
     """
-    nvi_list = []
+    vwap_list = []
     i = 0
-    while i < len(df[price]):
-        nvi = 0
-        if i > 0:
-            if df[volume][i] < df[volume][i - 1]:
-                nvi = nvi_list[i - 1] + (df[price][i] - df[price][i - 1]) / df[price][i - 1]
-            else:
-                nvi = nvi_list[i - 1]
-        nvi_list.append(nvi)
+    pvs = .0
+    while i < len(df[low]):
+        o = df[open][i]
+        h = df[high][i]
+        l = df[low][i]
+        c = df[close][i]
+        v = df[volume][i]
+#        vwap = sum([o * v/4, h * v/4, l * v/4, c * v/4]) / v
+        pvs += (sum([o, h, l, c]) / 4) * v
+        vwap = pvs / sum(df[volume][0:i + 1])
+        vwap_list.append(vwap)
         i += 1
-    return nvi_list
+    return vwap_list
 

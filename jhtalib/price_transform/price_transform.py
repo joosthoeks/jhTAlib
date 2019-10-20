@@ -1,3 +1,6 @@
+import jhtalib as jhta
+
+
 def AVGPRICE(df, open='Open', high='High', low='Low', close='Close'):
     """
     Average Price

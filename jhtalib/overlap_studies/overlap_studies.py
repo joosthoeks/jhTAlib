@@ -293,8 +293,66 @@ def TRIMA(df, n, price='Close'):
         i += 1
     return tma_list
 
+def VAMA(df, n, price='Close', volume='Volume'):
+    """
+    Volume Adjusted Moving Average
+    """
+    vama_list = []
+    pv_list = []
+    i = 0
+    while i < len(df[price]):
+        if i + 1 < n:
+            vama = float('NaN')
+            pv = float('NaN')
+            pv_list.append(pv)
+        else:
+            start = i + 1 - n
+            end = i + 1
+            pv = df[price][i] * df[volume][i]
+            pv_list.append(pv)
+            vama = sum(pv_list[start:end]) / sum(df[volume][start:end])
+        vama_list.append(vama)
+        i += 1
+    return vama_list
+
 def WMA(df, n, price='Close'):
     """
     Weighted Moving Average
     """
+
+def WWMA(df, n, price='Close'):
+    """
+    Welles Wilder Moving Average
+    """
+    wwma_list = []
+    i = 0
+    while i < len(df[price]):
+        if i + 1 < n:
+            wwma = float('NaN')
+            wwma_list.append(wwma)
+            wwma = df[price][i]
+        else:
+            wwma = (wwma * (n - 1) + df[price][i]) / n
+            wwma_list.append(wwma)
+        i += 1
+    return wwma_list
+
+def WWS(df, n, price='Close'):
+    """
+    Welles Wilder Summation
+    """
+    wws_list = []
+    i = 0
+    while i < len(df[price]):
+        if i + 1 < n:
+            wws = float('NaN')
+            wws_list.append(wws)
+            wws = df[price][i]
+        else:
+            start = i + 1 - n
+            end = i + 1
+            wws = wws - (sum(df[price][start:end]) / n) + df[price][i]
+            wws_list.append(wws)
+        i += 1
+    return wws_list
 

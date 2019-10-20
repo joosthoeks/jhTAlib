@@ -1,3 +1,6 @@
+import jhtalib as jhta
+
+
 def HR(hit_trades_int, total_trades_int):
     """
     Hit Rate / Win Rate

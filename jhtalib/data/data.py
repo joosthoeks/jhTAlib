@@ -1,5 +1,6 @@
 import csv
 import urllib.request
+import jhtalib as jhta
 
 
 def CSV2DF(csv_file_path, datetime='datetime', Open='Open', high='High', low='Low', close='Close', volume='Volume'):
