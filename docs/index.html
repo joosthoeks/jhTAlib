@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <meta name="author" content="Joost Hoeks">
-  <meta name="dcterms.date" content="2019-09-18">
+  <meta name="dcterms.date" content="2019-10-20">
   <title>jhTAlib</title>
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" href="pandoc.css">
@@ -17,7 +17,7 @@
 <header>
 <h1 class="title">jhTAlib</h1>
 <p class="author">Joost Hoeks</p>
-<p class="date">2019-09-18</p>
+<p class="date">2019-10-20</p>
 </header>
 <nav id="TOC">
 <ul>
@@ -497,42 +497,6 @@ $ python3 test.py</code></pre>
 </ul>
 <hr />
 <h3 id="experimental"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/experimental/experimental.py">Experimental</a></h3>
-<h4 id="vwap-volume-weighted-average-price-done">VWAP | Volume Weighted Average Price | DONE</h4>
-<ul>
-<li><p><code>list of floats = jhta.VWAP(df, open='Open', high='High', low='Low', close='Close', volume='Volume')</code></p></li>
-<li><p>book: An Introduction to Algorithmic Trading</p></li>
-</ul>
-<hr />
-<h4 id="mfai-market-facilitation-index-done">MFAI | Market Facilitation Index | DONE</h4>
-<ul>
-<li><p><code>list of floats = jhta.MFAI(df, high='High', low='Low', volume='Volume')</code></p></li>
-<li><p><a href="https://www.fmlabs.com/reference/default.htm?url=MFI.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=MFI.htm</a></p></li>
-</ul>
-<hr />
-<h4 id="vama-volume-adjusted-moving-average-done">VAMA | Volume Adjusted Moving Average | DONE</h4>
-<ul>
-<li><p><code>list of floats = jhta.VAMA(df, n, price='Close', volume='Volume')</code></p></li>
-<li><p><a href="https://www.fmlabs.com/reference/default.htm?url=VolAdjustedMA.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=VolAdjustedMA.htm</a></p></li>
-</ul>
-<hr />
-<h4 id="wwma-welles-wilder-moving-average-done">WWMA | Welles Wilder Moving Average | DONE</h4>
-<ul>
-<li><p><code>list of floats = jhta.WWMA(df, n, price='Close')</code></p></li>
-<li><p><a href="https://www.fmlabs.com/reference/default.htm?url=WellesMA.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=WellesMA.htm</a></p></li>
-</ul>
-<hr />
-<h4 id="wws-welles-wilder-summation-done">WWS | Welles Wilder Summation | DONE</h4>
-<ul>
-<li><p><code>list of floats = jhta.WWS(df, n, price='Close')</code></p></li>
-<li><p><a href="https://www.fmlabs.com/reference/default.htm?url=WellesSum.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=WellesSum.htm</a></p></li>
-</ul>
-<hr />
-<h4 id="mfi-money-flow-index-done">MFI | Money Flow Index | DONE</h4>
-<ul>
-<li><p><code>list of floats = jhta.MFI(df, n, high='High', low='Low', close='Close', volume='Volume')</code></p></li>
-<li><p><a href="https://www.fmlabs.com/reference/default.htm?url=MoneyFlowIndex.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=MoneyFlowIndex.htm</a></p></li>
-</ul>
-<hr />
 <h3 id="general"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/general/general.py">General</a></h3>
 <h4 id="normalize-normalize-done">NORMALIZE | Normalize | DONE</h4>
 <ul>
@@ -853,6 +817,12 @@ $ python3 test.py</code></pre>
 <li></li>
 </ul>
 <hr />
+<h4 id="mfi-money-flow-index-done">MFI | Money Flow Index | DONE</h4>
+<ul>
+<li><p><code>list of floats = jhta.MFI(df, n, high='High', low='Low', close='Close', volume='Volume')</code></p></li>
+<li><p><a href="https://www.fmlabs.com/reference/default.htm?url=MoneyFlowIndex.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=MoneyFlowIndex.htm</a></p></li>
+</ul>
+<hr />
 <h4 id="minus_di-minus-directional-indicator">MINUS_DI | Minus Directional Indicator |</h4>
 <ul>
 <li></li>
@@ -1050,9 +1020,27 @@ $ python3 test.py</code></pre>
 <li><p><a href="https://www.fmlabs.com/reference/default.htm?url=TriangularMA.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=TriangularMA.htm</a></p></li>
 </ul>
 <hr />
+<h4 id="vama-volume-adjusted-moving-average-done">VAMA | Volume Adjusted Moving Average | DONE</h4>
+<ul>
+<li><p><code>list of floats = jhta.VAMA(df, n, price='Close', volume='Volume')</code></p></li>
+<li><p><a href="https://www.fmlabs.com/reference/default.htm?url=VolAdjustedMA.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=VolAdjustedMA.htm</a></p></li>
+</ul>
+<hr />
 <h4 id="wma-weighted-moving-average">WMA | Weighted Moving Average</h4>
 <ul>
 <li></li>
+</ul>
+<hr />
+<h4 id="wwma-welles-wilder-moving-average-done">WWMA | Welles Wilder Moving Average | DONE</h4>
+<ul>
+<li><p><code>list of floats = jhta.WWMA(df, n, price='Close')</code></p></li>
+<li><p><a href="https://www.fmlabs.com/reference/default.htm?url=WellesMA.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=WellesMA.htm</a></p></li>
+</ul>
+<hr />
+<h4 id="wws-welles-wilder-summation-done">WWS | Welles Wilder Summation | DONE</h4>
+<ul>
+<li><p><code>list of floats = jhta.WWS(df, n, price='Close')</code></p></li>
+<li><p><a href="https://www.fmlabs.com/reference/default.htm?url=WellesSum.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=WellesSum.htm</a></p></li>
 </ul>
 <hr />
 <h3 id="pattern-recognition"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/pattern_recognition/pattern_recognition.py">Pattern Recognition</a></h3>
@@ -1363,6 +1351,18 @@ $ python3 test.py</code></pre>
 <li></li>
 </ul>
 <hr />
+<h4 id="mfai-market-facilitation-index-done">MFAI | Market Facilitation Index | DONE</h4>
+<ul>
+<li><p><code>list of floats = jhta.MFAI(df, high='High', low='Low', volume='Volume')</code></p></li>
+<li><p><a href="https://www.fmlabs.com/reference/default.htm?url=MFI.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=MFI.htm</a></p></li>
+</ul>
+<hr />
+<h4 id="nvi-negative-volume-index-done">NVI | Negative Volume Index | DONE</h4>
+<ul>
+<li><p><code>list of floats = jhta.NVI(df, price='Close', volume='Volume')</code></p></li>
+<li><p><a href="https://www.fmlabs.com/reference/default.htm?url=NVI.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=NVI.htm</a></p></li>
+</ul>
+<hr />
 <h4 id="obv-on-balance-volume-done">OBV | On Balance Volume | DONE</h4>
 <ul>
 <li><p><code>list of floats = jhta.OBV(df, close='Close', volume='Volume')</code></p></li>
@@ -1387,10 +1387,10 @@ $ python3 test.py</code></pre>
 <li><p><a href="https://www.fmlabs.com/reference/default.htm?url=PVI.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=PVI.htm</a></p></li>
 </ul>
 <hr />
-<h4 id="nvi-negative-volume-index-done">NVI | Negative Volume Index | DONE</h4>
+<h4 id="vwap-volume-weighted-average-price-done">VWAP | Volume Weighted Average Price | DONE</h4>
 <ul>
-<li><p><code>list of floats = jhta.NVI(df, price='Close', volume='Volume')</code></p></li>
-<li><p><a href="https://www.fmlabs.com/reference/default.htm?url=NVI.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=NVI.htm</a></p></li>
+<li><p><code>list of floats = jhta.VWAP(df, open='Open', high='High', low='Low', close='Close', volume='Volume')</code></p></li>
+<li><p>book: An Introduction to Algorithmic Trading</p></li>
 </ul>
 <hr />
 <h2 id="notebooks">Notebooks</h2>

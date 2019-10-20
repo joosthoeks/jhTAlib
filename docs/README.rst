@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2019-09-18
+:Date:   2019-10-20
 
 .. contents::
    :depth: 3
@@ -730,60 +730,6 @@ SWCLPS \| Swing Weighted Close Price - previous Weighted Close Price Summation \
 `Experimental <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/experimental/experimental.py>`__
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-VWAP \| Volume Weighted Average Price \| DONE
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
--  ``list of floats = jhta.VWAP(df, open='Open', high='High', low='Low', close='Close', volume='Volume')``
-
--  book: An Introduction to Algorithmic Trading
-
---------------
-
-MFAI \| Market Facilitation Index \| DONE
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
--  ``list of floats = jhta.MFAI(df, high='High', low='Low', volume='Volume')``
-
--  https://www.fmlabs.com/reference/default.htm?url=MFI.htm
-
---------------
-
-VAMA \| Volume Adjusted Moving Average \| DONE
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
--  ``list of floats = jhta.VAMA(df, n, price='Close', volume='Volume')``
-
--  https://www.fmlabs.com/reference/default.htm?url=VolAdjustedMA.htm
-
---------------
-
-WWMA \| Welles Wilder Moving Average \| DONE
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
--  ``list of floats = jhta.WWMA(df, n, price='Close')``
-
--  https://www.fmlabs.com/reference/default.htm?url=WellesMA.htm
-
---------------
-
-WWS \| Welles Wilder Summation \| DONE
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
--  ``list of floats = jhta.WWS(df, n, price='Close')``
-
--  https://www.fmlabs.com/reference/default.htm?url=WellesSum.htm
-
---------------
-
-MFI \| Money Flow Index \| DONE
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
--  ``list of floats = jhta.MFI(df, n, high='High', low='Low', close='Close', volume='Volume')``
-
--  https://www.fmlabs.com/reference/default.htm?url=MoneyFlowIndex.htm
-
---------------
-
 `General <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/general/general.py>`__
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -1245,6 +1191,15 @@ MACDFIX \| Moving Average Convergence/Divergence Fix 12/26 \|
 
 --------------
 
+MFI \| Money Flow Index \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list of floats = jhta.MFI(df, n, high='High', low='Low', close='Close', volume='Volume')``
+
+-  https://www.fmlabs.com/reference/default.htm?url=MoneyFlowIndex.htm
+
+--------------
+
 MINUS\_DI \| Minus Directional Indicator \|
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -1532,10 +1487,37 @@ TRIMA \| Triangular Moving Average \| DONE
 
 --------------
 
+VAMA \| Volume Adjusted Moving Average \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list of floats = jhta.VAMA(df, n, price='Close', volume='Volume')``
+
+-  https://www.fmlabs.com/reference/default.htm?url=VolAdjustedMA.htm
+
+--------------
+
 WMA \| Weighted Moving Average
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  
+
+--------------
+
+WWMA \| Welles Wilder Moving Average \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list of floats = jhta.WWMA(df, n, price='Close')``
+
+-  https://www.fmlabs.com/reference/default.htm?url=WellesMA.htm
+
+--------------
+
+WWS \| Welles Wilder Summation \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list of floats = jhta.WWS(df, n, price='Close')``
+
+-  https://www.fmlabs.com/reference/default.htm?url=WellesSum.htm
 
 --------------
 
@@ -2093,6 +2075,24 @@ ADOSC \| Chaikin A/D Oscillator \|
 
 --------------
 
+MFAI \| Market Facilitation Index \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list of floats = jhta.MFAI(df, high='High', low='Low', volume='Volume')``
+
+-  https://www.fmlabs.com/reference/default.htm?url=MFI.htm
+
+--------------
+
+NVI \| Negative Volume Index \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list of floats = jhta.NVI(df, price='Close', volume='Volume')``
+
+-  https://www.fmlabs.com/reference/default.htm?url=NVI.htm
+
+--------------
+
 OBV \| On Balance Volume \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -2129,12 +2129,12 @@ PVI \| Positive Volume Index \| DONE
 
 --------------
 
-NVI \| Negative Volume Index \| DONE
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+VWAP \| Volume Weighted Average Price \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
--  ``list of floats = jhta.NVI(df, price='Close', volume='Volume')``
+-  ``list of floats = jhta.VWAP(df, open='Open', high='High', low='Low', close='Close', volume='Volume')``
 
--  https://www.fmlabs.com/reference/default.htm?url=NVI.htm
+-  book: An Introduction to Algorithmic Trading
 
 --------------
 
