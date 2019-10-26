@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2019-10-20
+date: 2019-10-26
 ---
 
 # jhTAlib
@@ -1549,7 +1549,7 @@ import jhtalib as jhta
 
 #### COV | Covariance | DONE
 
-- ```float = jhta.COV(list1, list2)```
+- ```float = jhta.COV(x_list, y_list)```
 
 - [https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Covariance](https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Covariance)
 
@@ -1565,7 +1565,7 @@ import jhtalib as jhta
 
 #### COR | Correlation | DONE
 
-- ```float = jhta.COR(list1, list2)```
+- ```float = jhta.COR(x_list, y_list)```
 
 ---
 
@@ -1577,7 +1577,7 @@ import jhtalib as jhta
 
 #### PCOR | Population Correlation | DONE
 
-- ```float = jhta.PCOR(list1, list2)```
+- ```float = jhta.PCOR(x_list, y_list)```
 
 ---
 
@@ -1589,7 +1589,7 @@ import jhtalib as jhta
 
 #### R2 | R-Squared | DONE
 
-- ```float = jhta.R2(list1, list2)```
+- ```float = jhta.R2(x_list, y_list)```
 
 - [https://www.wallstreetmojo.com/r-squared-formula/](https://www.wallstreetmojo.com/r-squared-formula/)
 
@@ -1605,7 +1605,7 @@ import jhtalib as jhta
 
 #### BETA | Beta | DONE
 
-- ```float = jhta.BETA(list1, list2)```
+- ```float = jhta.BETA(x_list, y_list)```
 
 - [https://en.wikipedia.org/wiki/Beta_(finance)](https://en.wikipedia.org/wiki/Beta_(finance))
 

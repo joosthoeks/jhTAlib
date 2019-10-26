@@ -344,18 +344,18 @@ def VARIANCE(df, n, price='Close', xbar=None):
             i += 1
     return variance_list
 
-def COV(list1, list2):
+def COV(x_list, y_list):
     """
     Covariance
     """
-    mean1 = MEAN({'list1': list1}, len(list1), 'list1')[-1]
-    mean2 = MEAN({'list2': list2}, len(list2), 'list2')[-1]
+    x_mean = MEAN({'x_list': x_list}, len(x_list), 'x_list')[-1]
+    y_mean = MEAN({'y_list': y_list}, len(y_list), 'y_list')[-1]
     covariance = .0
     i = 0
-    while i < len(list1):
-        a = list1[i] - mean1
-        b = list2[i] - mean2
-        covariance += a * b / len(list1)
+    while i < len(x_list):
+        a = x_list[i] - x_mean
+        b = y_list[i] - y_mean
+        covariance += a * b / len(x_list)
         i += 1
     return covariance
 
@@ -393,13 +393,13 @@ def COVARIANCE(df1, df2, n, price1='Close', price2='Close'):
             i += 1
     return covariance_list
 
-def COR(list1, list2):
+def COR(x_list, y_list):
     """
     Correlation
     """
-    stdev1 = STDEV({'list1': list1}, len(list1), 'list1')[-1]
-    stdev2 = STDEV({'list2': list2}, len(list2), 'list2')[-1]
-    return COV(list1, list2) / (stdev1 * stdev2)
+    x_stdev = STDEV({'x_list': x_list}, len(x_list), 'x_list')[-1]
+    y_stdev = STDEV({'y_list': y_list}, len(y_list), 'y_list')[-1]
+    return COV(x_list, y_list) / (x_stdev * y_stdev)
 
 def CORRELATION(df1, df2, n, price1='Close', price2='Close'):
     """
@@ -435,13 +435,13 @@ def CORRELATION(df1, df2, n, price1='Close', price2='Close'):
             i += 1
     return correlation_list
 
-def PCOR(list1, list2):
+def PCOR(x_list, y_list):
     """
     Population Correlation
     """
-    pstdev1 = PSTDEV({'list1': list1}, len(list1), 'list1')[-1]
-    pstdev2 = PSTDEV({'list2': list2}, len(list2), 'list2')[-1]
-    return COV(list1, list2) / (pstdev1 * pstdev2)
+    x_pstdev = PSTDEV({'x_list': x_list}, len(x_list), 'x_list')[-1]
+    y_pstdev = PSTDEV({'y_list': y_list}, len(y_list), 'y_list')[-1]
+    return COV(x_list, y_list) / (x_pstdev * y_pstdev)
 
 def PCORRELATION(df1, df2, n, price1='Close', price2='Close'):
     """
@@ -477,11 +477,11 @@ def PCORRELATION(df1, df2, n, price1='Close', price2='Close'):
             i += 1
     return pcorrelation_list
 
-def R2(list1, list2):
+def R2(x_list, y_list):
     """
     R-Squared
     """
-    return jhta.PCOR(list1, list2) ** 2
+    return jhta.PCOR(x_list, y_list) ** 2
 
 def RSQUARED(df1, df2, n, price1='Close', price2='Close'):
     """
@@ -517,12 +517,12 @@ def RSQUARED(df1, df2, n, price1='Close', price2='Close'):
             i += 1
     return r2_list
 
-def BETA(list1, list2):
+def BETA(x_list, y_list):
     """
     Beta
     """
-    covariance = COV(list1, list2)
-    variance = VARIANCE({'list2': list2}, len(list2), 'list2')[-1]
+    covariance = COV(x_list, y_list)
+    variance = VARIANCE({'y_list': y_list}, len(y_list), 'y_list')[-1]
     return float(covariance / variance)
 
 def BETAS(df1, df2, n, price1='Close', price2='Close'):
