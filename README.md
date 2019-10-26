@@ -1603,6 +1603,14 @@ import jhtalib as jhta
 
 ---
 
+#### REGRESSION | Regression | DONE
+
+- ```list of floats = jhta.REGRESSION(x_list, y_list)```
+
+- [https://www.wallstreetmojo.com/regression-formula/](https://www.wallstreetmojo.com/regression-formula/)
+
+---
+
 #### BETA | Beta | DONE
 
 - ```float = jhta.BETA(x_list, y_list)```

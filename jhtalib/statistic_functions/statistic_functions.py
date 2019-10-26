@@ -517,6 +517,44 @@ def RSQUARED(df1, df2, n, price1='Close', price2='Close'):
             i += 1
     return r2_list
 
+def REGRESSION(x_list, y_list):
+    """
+    Regression
+    """
+    xy_list = []
+    x2_list = []
+    for i in range(len(x_list)):
+        x = x_list[i]
+        y = y_list[i]
+        xy = x * y
+        x2 = x * x
+        xy_list.append(xy)
+        x2_list.append(x2)
+    
+    # set n:
+    n = len(x_list)
+    
+    # sum it:
+    x_sum = jhta.SUM({'x_list': x_list}, n, 'x_list')[-1]
+    y_sum = jhta.SUM({'y_list': y_list}, n, 'y_list')[-1]
+    xy_sum = jhta.SUM({'xy_list': xy_list}, n, 'xy_list')[-1]
+    x2_sum = jhta.SUM({'x2_list': x2_list}, n, 'x2_list')[-1]
+
+    # calculate intercept:
+    a = ((y_sum * x2_sum) - (x_sum * xy_sum)) / (n * x2_sum - x_sum ** 2)
+
+    # calculate slope:
+    b = ((n * xy_sum) - (x_sum * y_sum)) / (n * x2_sum - x_sum ** 2)
+
+    regression_list = []
+    for i in range(len(x_list)):
+        x = x_list[i]
+        # regression line:
+        y = a + b * x
+        regression_list.append(y)
+
+    return regression_list
+
 def BETA(x_list, y_list):
     """
     Beta
