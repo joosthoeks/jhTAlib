@@ -1,3 +1,4 @@
+import math
 import statistics
 import jhtalib as jhta
 
@@ -569,6 +570,14 @@ def SSE(x_list, y_list):
     Sum Standard Error
     """
     return sum(REGRESSION(x_list, y_list)['err2'])
+
+def SEE(x_list, y_list):
+    """
+    Standard Error of Estimate
+    """
+    sse = SSE(x_list, y_list)
+    n = len(x_list)
+    return math.sqrt(sse / (n - 2))
 
 def BETA(x_list, y_list):
     """
