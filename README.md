@@ -1627,6 +1627,14 @@ import jhtalib as jhta
 
 ---
 
+#### PSEE | Population Standard Error of Estimate | DONE
+
+- ```float = jhta.PSEE(x_list, y_list)```
+
+- [https://www.wikihow.com/Calculate-the-Standard-Error-of-Estimate](https://www.wikihow.com/Calculate-the-Standard-Error-of-Estimate)
+
+---
+
 #### BETA | Beta | DONE
 
 - ```float = jhta.BETA(x_list, y_list)```

@@ -579,6 +579,14 @@ def SEE(x_list, y_list):
     n = len(x_list)
     return math.sqrt(sse / (n - 2))
 
+def PSEE(x_list, y_list):
+    """
+    Population Standard Error of Estimate
+    """
+    sse = SSE(x_list, y_list)
+    n = len(x_list)
+    return math.sqrt(sse / n)
+
 def BETA(x_list, y_list):
     """
     Beta
