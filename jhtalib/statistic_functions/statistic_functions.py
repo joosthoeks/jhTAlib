@@ -564,6 +564,12 @@ def REGRESSION(x_list, y_list):
 
     return {'estimate': estimate_list, 'err': err_list, 'err2': err2_list}
 
+def SSE(x_list, y_list):
+    """
+    Sum Standard Error
+    """
+    return sum(REGRESSION(x_list, y_list)['err2'])
+
 def BETA(x_list, y_list):
     """
     Beta
