@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <meta name="author" content="Joost Hoeks">
-  <meta name="dcterms.date" content="2019-10-20">
+  <meta name="dcterms.date" content="2019-10-27">
   <title>jhTAlib</title>
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" href="pandoc.css">
@@ -17,7 +17,7 @@
 <header>
 <h1 class="title">jhTAlib</h1>
 <p class="author">Joost Hoeks</p>
-<p class="date">2019-10-20</p>
+<p class="date">2019-10-27</p>
 </header>
 <nav id="TOC">
 <ul>
@@ -1189,7 +1189,7 @@ $ python3 test.py</code></pre>
 <hr />
 <h4 id="cov-covariance-done">COV | Covariance | DONE</h4>
 <ul>
-<li><p><code>float = jhta.COV(list1, list2)</code></p></li>
+<li><p><code>float = jhta.COV(x_list, y_list)</code></p></li>
 <li><p><a href="https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Covariance" class="uri">https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Covariance</a></p></li>
 </ul>
 <hr />
@@ -1201,7 +1201,7 @@ $ python3 test.py</code></pre>
 <hr />
 <h4 id="cor-correlation-done">COR | Correlation | DONE</h4>
 <ul>
-<li><code>float = jhta.COR(list1, list2)</code></li>
+<li><code>float = jhta.COR(x_list, y_list)</code></li>
 </ul>
 <hr />
 <h4 id="correlation-correlation-done">CORRELATION | Correlation | DONE</h4>
@@ -1211,7 +1211,7 @@ $ python3 test.py</code></pre>
 <hr />
 <h4 id="pcor-population-correlation-done">PCOR | Population Correlation | DONE</h4>
 <ul>
-<li><code>float = jhta.PCOR(list1, list2)</code></li>
+<li><code>float = jhta.PCOR(x_list, y_list)</code></li>
 </ul>
 <hr />
 <h4 id="pcorrelation-population-correlation-done">PCORRELATION | Population Correlation | DONE</h4>
@@ -1221,7 +1221,7 @@ $ python3 test.py</code></pre>
 <hr />
 <h4 id="r2-r-squared-done">R2 | R-Squared | DONE</h4>
 <ul>
-<li><p><code>float = jhta.R2(list1, list2)</code></p></li>
+<li><p><code>float = jhta.R2(x_list, y_list)</code></p></li>
 <li><p><a href="https://www.wallstreetmojo.com/r-squared-formula/" class="uri">https://www.wallstreetmojo.com/r-squared-formula/</a></p></li>
 </ul>
 <hr />
@@ -1231,9 +1231,33 @@ $ python3 test.py</code></pre>
 <li><p><a href="https://www.wallstreetmojo.com/r-squared-formula/" class="uri">https://www.wallstreetmojo.com/r-squared-formula/</a></p></li>
 </ul>
 <hr />
+<h4 id="regression-regression-done">REGRESSION | Regression | DONE</h4>
+<ul>
+<li><p><code>dict of lists of floats = jhta.REGRESSION(x_list, y_list)</code></p></li>
+<li><p><a href="https://www.wallstreetmojo.com/regression-formula/" class="uri">https://www.wallstreetmojo.com/regression-formula/</a></p></li>
+</ul>
+<hr />
+<h4 id="sse-sum-standard-error-done">SSE | Sum Standard Error | DONE</h4>
+<ul>
+<li><p><code>float = jhta.SSE(x_list, y_list)</code></p></li>
+<li><p><a href="https://www.wikihow.com/Calculate-the-Standard-Error-of-Estimate" class="uri">https://www.wikihow.com/Calculate-the-Standard-Error-of-Estimate</a></p></li>
+</ul>
+<hr />
+<h4 id="see-standard-error-of-estimate-done">SEE | Standard Error of Estimate | DONE</h4>
+<ul>
+<li><p><code>float = jhta.SEE(x_list, y_list)</code></p></li>
+<li><p><a href="https://www.wikihow.com/Calculate-the-Standard-Error-of-Estimate" class="uri">https://www.wikihow.com/Calculate-the-Standard-Error-of-Estimate</a></p></li>
+</ul>
+<hr />
+<h4 id="psee-population-standard-error-of-estimate-done">PSEE | Population Standard Error of Estimate | DONE</h4>
+<ul>
+<li><p><code>float = jhta.PSEE(x_list, y_list)</code></p></li>
+<li><p><a href="https://www.wikihow.com/Calculate-the-Standard-Error-of-Estimate" class="uri">https://www.wikihow.com/Calculate-the-Standard-Error-of-Estimate</a></p></li>
+</ul>
+<hr />
 <h4 id="beta-beta-done">BETA | Beta | DONE</h4>
 <ul>
-<li><p><code>float = jhta.BETA(list1, list2)</code></p></li>
+<li><p><code>float = jhta.BETA(x_list, y_list)</code></p></li>
 <li><p><a href="https://en.wikipedia.org/wiki/Beta_(finance)" class="uri">https://en.wikipedia.org/wiki/Beta_(finance)</a></p></li>
 </ul>
 <hr />

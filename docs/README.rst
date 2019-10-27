@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2019-10-20
+:Date:   2019-10-27
 
 .. contents::
    :depth: 3
@@ -1831,7 +1831,7 @@ VARIANCE \| Sample variance of data \| DONE
 COV \| Covariance \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
--  ``float = jhta.COV(list1, list2)``
+-  ``float = jhta.COV(x_list, y_list)``
 
 -  https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Covariance
 
@@ -1849,7 +1849,7 @@ COVARIANCE \| Covariance \| DONE
 COR \| Correlation \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
--  ``float = jhta.COR(list1, list2)``
+-  ``float = jhta.COR(x_list, y_list)``
 
 --------------
 
@@ -1863,7 +1863,7 @@ CORRELATION \| Correlation \| DONE
 PCOR \| Population Correlation \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
--  ``float = jhta.PCOR(list1, list2)``
+-  ``float = jhta.PCOR(x_list, y_list)``
 
 --------------
 
@@ -1877,7 +1877,7 @@ PCORRELATION \| Population Correlation \| DONE
 R2 \| R-Squared \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^
 
--  ``float = jhta.R2(list1, list2)``
+-  ``float = jhta.R2(x_list, y_list)``
 
 -  https://www.wallstreetmojo.com/r-squared-formula/
 
@@ -1892,10 +1892,46 @@ RSQUARED \| R-Squared \| DONE
 
 --------------
 
+REGRESSION \| Regression \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``dict of lists of floats = jhta.REGRESSION(x_list, y_list)``
+
+-  https://www.wallstreetmojo.com/regression-formula/
+
+--------------
+
+SSE \| Sum Standard Error \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``float = jhta.SSE(x_list, y_list)``
+
+-  https://www.wikihow.com/Calculate-the-Standard-Error-of-Estimate
+
+--------------
+
+SEE \| Standard Error of Estimate \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``float = jhta.SEE(x_list, y_list)``
+
+-  https://www.wikihow.com/Calculate-the-Standard-Error-of-Estimate
+
+--------------
+
+PSEE \| Population Standard Error of Estimate \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``float = jhta.PSEE(x_list, y_list)``
+
+-  https://www.wikihow.com/Calculate-the-Standard-Error-of-Estimate
+
+--------------
+
 BETA \| Beta \| DONE
 ^^^^^^^^^^^^^^^^^^^^
 
--  ``float = jhta.BETA(list1, list2)``
+-  ``float = jhta.BETA(x_list, y_list)``
 
 -  https://en.wikipedia.org/wiki/Beta_(finance)
 

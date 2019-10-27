@@ -4,7 +4,7 @@
 
 {\pard \qc \f0 \sa180 \li0 \fi0 \b \fs36 jhTAlib\par}
 {\pard \qc \f0 \sa180 \li0 \fi0  Joost Hoeks\par}
-{\pard \qc \f0 \sa180 \li0 \fi0  2019-10-20\par}
+{\pard \qc \f0 \sa180 \li0 \fi0  2019-10-27\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Contents\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab jhTAlib\par}
@@ -1091,7 +1091,7 @@ Statistic Functions
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.VARIANCE(df, n, price='Close', xbar=None)}\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 COV | Covariance | DONE\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 float = jhta.COV(list1, list2)}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 float = jhta.COV(x_list, y_list)}\par}
 {\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Covariance"}}{\fldrslt{\ul
 https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Covariance
 }}}
@@ -1105,19 +1105,19 @@ https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Covariance
 \sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 COR | Correlation | DONE\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 float = jhta.COR(list1, list2)}\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 float = jhta.COR(x_list, y_list)}\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 CORRELATION | Correlation | DONE\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.CORRELATION(df1, df2, n, price1='Close', price2='Close')}\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 PCOR | Population Correlation | DONE\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 float = jhta.PCOR(list1, list2)}\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 float = jhta.PCOR(x_list, y_list)}\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 PCORRELATION | Population Correlation | DONE\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 list of floats = jhta.PCORRELATION(df1, df2, n, price1='Close', price2='Close')}\sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 R2 | R-Squared | DONE\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 float = jhta.R2(list1, list2)}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 float = jhta.R2(x_list, y_list)}\par}
 {\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://www.wallstreetmojo.com/r-squared-formula/"}}{\fldrslt{\ul
 https://www.wallstreetmojo.com/r-squared-formula/
 }}}
@@ -1130,8 +1130,36 @@ https://www.wallstreetmojo.com/r-squared-formula/
 }}}
 \sa180\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 REGRESSION | Regression | DONE\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 dict of lists of floats = jhta.REGRESSION(x_list, y_list)}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://www.wallstreetmojo.com/regression-formula/"}}{\fldrslt{\ul
+https://www.wallstreetmojo.com/regression-formula/
+}}}
+\sa180\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 SSE | Sum Standard Error | DONE\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 float = jhta.SSE(x_list, y_list)}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://www.wikihow.com/Calculate-the-Standard-Error-of-Estimate"}}{\fldrslt{\ul
+https://www.wikihow.com/Calculate-the-Standard-Error-of-Estimate
+}}}
+\sa180\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 SEE | Standard Error of Estimate | DONE\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 float = jhta.SEE(x_list, y_list)}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://www.wikihow.com/Calculate-the-Standard-Error-of-Estimate"}}{\fldrslt{\ul
+https://www.wikihow.com/Calculate-the-Standard-Error-of-Estimate
+}}}
+\sa180\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 PSEE | Population Standard Error of Estimate | DONE\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 float = jhta.PSEE(x_list, y_list)}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://www.wikihow.com/Calculate-the-Standard-Error-of-Estimate"}}{\fldrslt{\ul
+https://www.wikihow.com/Calculate-the-Standard-Error-of-Estimate
+}}}
+\sa180\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 BETA | Beta | DONE\par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 float = jhta.BETA(list1, list2)}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\f1 float = jhta.BETA(x_list, y_list)}\par}
 {\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://en.wikipedia.org/wiki/Beta_(finance)"}}{\fldrslt{\ul
 https://en.wikipedia.org/wiki/Beta_(finance)
 }}}
