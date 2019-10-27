@@ -546,14 +546,23 @@ def REGRESSION(x_list, y_list):
     # calculate slope:
     b = ((n * xy_sum) - (x_sum * y_sum)) / (n * x2_sum - x_sum ** 2)
 
-    regression_list = []
+    estimate_list = []
+    err_list = []
+    err2_list = []
     for i in range(len(x_list)):
         x = x_list[i]
-        # regression line:
-        y = a + b * x
-        regression_list.append(y)
+        y = y_list[i]
+        # calculate estimate:
+        yes = a + b * x
+        estimate_list.append(yes)
+        # calculate error:
+        err = y - yes
+        err_list.append(err)
+        # calculate square error:
+        err2 = err ** 2
+        err2_list.append(err2)
 
-    return regression_list
+    return {'estimate': estimate_list, 'err': err_list, 'err2': err2_list}
 
 def BETA(x_list, y_list):
     """

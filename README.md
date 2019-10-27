@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2019-10-26
+date: 2019-10-27
 ---
 
 # jhTAlib
@@ -1605,7 +1605,7 @@ import jhtalib as jhta
 
 #### REGRESSION | Regression | DONE
 
-- ```list of floats = jhta.REGRESSION(x_list, y_list)```
+- ```dict of lists of floats = jhta.REGRESSION(x_list, y_list)```
 
 - [https://www.wallstreetmojo.com/regression-formula/](https://www.wallstreetmojo.com/regression-formula/)
 
