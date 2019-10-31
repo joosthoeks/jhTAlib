@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2019-10-27
+date: 2019-10-31
 ---
 
 # jhTAlib
@@ -1611,7 +1611,7 @@ import jhtalib as jhta
 
 ---
 
-#### SSE | Sum Standard Error | DONE
+#### SSE | Sum of the Squared Errors | DONE
 
 - ```float = jhta.SSE(x_list, y_list)```
 

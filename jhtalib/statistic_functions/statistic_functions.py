@@ -567,7 +567,7 @@ def REGRESSION(x_list, y_list):
 
 def SSE(x_list, y_list):
     """
-    Sum Standard Error
+    Sum of the Squared Errors
     """
     return sum(REGRESSION(x_list, y_list)['err2'])
 
