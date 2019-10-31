@@ -7788,7 +7788,7 @@
 <office:text>
 <text:p text:style-name="Title">jhTAlib</text:p>
 <text:p text:style-name="Author">Joost Hoeks</text:p>
-<text:p text:style-name="Date">2019-10-27</text:p>
+<text:p text:style-name="Date">2019-10-31</text:p>
 <text:h text:style-name="Heading_20_1" text:outline-level="1">jhTAlib</text:h>
 <text:p text:style-name="First_20_paragraph">Technical Analysis Library
 Time-Series</text:p>
@@ -9712,7 +9712,7 @@ R-Squared | DONE</text:h>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">SSE | Sum
-Standard Error | DONE</text:h>
+of the Squared Errors | DONE</text:h>
 <text:list text:style-name="L191">
   <text:list-item>
     <text:p text:style-name="P211"><text:span text:style-name="Source_Text">float = jhta.SSE(x_list, y_list)</text:span></text:p>
