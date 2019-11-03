@@ -587,6 +587,50 @@ def PSEE(x_list, y_list):
     n = len(x_list)
     return math.sqrt(sse / n)
 
+def LSMA(df, n, price='Close'):
+    """
+    Least Squares Moving Average
+    """
+    lsma_list = []
+    for i in range(len(df[price])):
+        if i + 1 < n:
+            lsma = float('NaN')
+        else:
+            start = i + 1 - n
+            end = i + 1
+            x_list = list(range(start, end, 1))
+            y_list = df[price][start:end]
+            '''
+            xy_list = []
+            x2_list = []
+            for i2 in range(len(x_list)):
+                x = x_list[i2]
+                y = y_list[i2]
+                xy = x * y
+                x2 = x * x
+                xy_list.append(xy)
+                x2_list.append(x2)
+            
+            # sum it:
+            x_sum = jhta.SUM({'x_list': x_list}, n, 'x_list')[-1]
+            y_sum = jhta.SUM({'y_list': y_list}, n, 'y_list')[-1]
+            xy_sum = jhta.SUM({'xy_list': xy_list}, n, 'xy_list')[-1]
+            x2_sum = jhta.SUM({'x2_list': x2_list}, n, 'x2_list')[-1]
+
+            # calculate slope:
+            b = ((n * xy_sum) - (x_sum * y_sum)) / (n * x2_sum - x_sum ** 2)
+
+            # calculate intercept:
+#            a = ((y_sum * x2_sum) - (x_sum * xy_sum)) / (n * x2_sum - x_sum ** 2)
+            a = (y_sum - b * x_sum) / n
+
+            x = i
+            lsma = a + b * x
+            '''
+            lsma = jhta.REGRESSION(x_list, y_list)['estimate'][-1]
+        lsma_list.append(lsma)
+    return lsma_list
+
 def BETA(x_list, y_list):
     """
     Beta

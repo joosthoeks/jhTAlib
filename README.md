@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2019-10-31
+date: 2019-11-03
 ---
 
 # jhTAlib
@@ -1632,6 +1632,14 @@ import jhtalib as jhta
 - ```float = jhta.PSEE(x_list, y_list)```
 
 - [https://www.wikihow.com/Calculate-the-Standard-Error-of-Estimate](https://www.wikihow.com/Calculate-the-Standard-Error-of-Estimate)
+
+---
+
+#### LSMA | Least Squares Moving Average | DONE
+
+- ```list of floats = jhta.LSMA(df, n, price='Close')```
+
+- [https://www.fmlabs.com/reference/default.htm?url=LstSqrMA.htm](https://www.fmlabs.com/reference/default.htm?url=LstSqrMA.htm)
 
 ---
 
