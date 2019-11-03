@@ -1781,6 +1781,14 @@ import jhtalib as jhta
 
 ---
 
+#### RVIOC | Relative Volatility Index Original Calculation | DONE
+
+- ```list of floats = jhta.RVIOC(df, n, price='Close')```
+
+- [https://www.fmlabs.com/reference/default.htm?url=RVIoriginal.htm](https://www.fmlabs.com/reference/default.htm?url=RVIoriginal.htm)
+
+---
+
 #### INERTIA | Inertia |
 
 -
