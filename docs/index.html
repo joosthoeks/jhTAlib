@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <meta name="author" content="Joost Hoeks">
-  <meta name="dcterms.date" content="2019-10-31">
+  <meta name="dcterms.date" content="2019-11-03">
   <title>jhTAlib</title>
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" href="pandoc.css">
@@ -17,7 +17,7 @@
 <header>
 <h1 class="title">jhTAlib</h1>
 <p class="author">Joost Hoeks</p>
-<p class="date">2019-10-31</p>
+<p class="date">2019-11-03</p>
 </header>
 <nav id="TOC">
 <ul>
@@ -1255,6 +1255,12 @@ $ python3 test.py</code></pre>
 <li><p><a href="https://www.wikihow.com/Calculate-the-Standard-Error-of-Estimate" class="uri">https://www.wikihow.com/Calculate-the-Standard-Error-of-Estimate</a></p></li>
 </ul>
 <hr />
+<h4 id="lsma-least-squares-moving-average-done">LSMA | Least Squares Moving Average | DONE</h4>
+<ul>
+<li><p><code>list of floats = jhta.LSMA(df, n, price='Close')</code></p></li>
+<li><p><a href="https://www.fmlabs.com/reference/default.htm?url=LstSqrMA.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=LstSqrMA.htm</a></p></li>
+</ul>
+<hr />
 <h4 id="beta-beta-done">BETA | Beta | DONE</h4>
 <ul>
 <li><p><code>float = jhta.BETA(x_list, y_list)</code></p></li>
@@ -1358,9 +1364,16 @@ $ python3 test.py</code></pre>
 <li><p><a href="https://www.fmlabs.com/reference/default.htm?url=RVI.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=RVI.htm</a></p></li>
 </ul>
 <hr />
-<h4 id="inertia-inertia">INERTIA | Inertia |</h4>
+<h4 id="rvioc-relative-volatility-index-original-calculation-done">RVIOC | Relative Volatility Index Original Calculation | DONE</h4>
 <ul>
-<li></li>
+<li><p><code>list of floats = jhta.RVIOC(df, n, price='Close')</code></p></li>
+<li><p><a href="https://www.fmlabs.com/reference/default.htm?url=RVIoriginal.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=RVIoriginal.htm</a></p></li>
+</ul>
+<hr />
+<h4 id="inertia-inertia-done">INERTIA | Inertia | DONE</h4>
+<ul>
+<li><p><code>list of floats = jhta.INERTIA(df, n, price='Close')</code></p></li>
+<li><p><a href="https://www.fmlabs.com/reference/default.htm?url=Inertia.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=Inertia.htm</a></p></li>
 </ul>
 <hr />
 <h4 id="prange-range-done">PRANGE | %Range | DONE</h4>
