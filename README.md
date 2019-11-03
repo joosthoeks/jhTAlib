@@ -1789,9 +1789,11 @@ import jhtalib as jhta
 
 ---
 
-#### INERTIA | Inertia |
+#### INERTIA | Inertia | DONE
 
--
+- ```list of floats = jhta.INERTIA(df, n, price='Close')```
+
+- [https://www.fmlabs.com/reference/default.htm?url=Inertia.htm](https://www.fmlabs.com/reference/default.htm?url=Inertia.htm)
 
 ---
 

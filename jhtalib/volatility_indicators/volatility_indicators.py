@@ -110,6 +110,13 @@ def RVIOC(df, n, price='Close'):
         rvioc_list.append(rvioc)
     return rvioc_list
 
+def INERTIA(df, n, price='Close'):
+    """
+    Inertia
+    """
+    rvioc = RVIOC(df, n, price)
+    return jhta.LSMA({'rvioc': rvioc}, n, 'rvioc')
+
 def PRANGE(df, n, max_price='High', min_price='Low'):
     """
     %Range
