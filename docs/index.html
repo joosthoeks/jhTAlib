@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <meta name="author" content="Joost Hoeks">
-  <meta name="dcterms.date" content="2019-10-31">
+  <meta name="dcterms.date" content="2019-11-04">
   <title>jhTAlib</title>
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" href="pandoc.css">
@@ -17,7 +17,7 @@
 <header>
 <h1 class="title">jhTAlib</h1>
 <p class="author">Joost Hoeks</p>
-<p class="date">2019-10-31</p>
+<p class="date">2019-11-04</p>
 </header>
 <nav id="TOC">
 <ul>
@@ -26,6 +26,7 @@
 <li><a href="#docs">Docs</a></li>
 <li><a href="#install">Install</a></li>
 <li><a href="#update">Update</a></li>
+<li><a href="#in-colab">In Colab</a></li>
 <li><a href="#examples">Examples</a><ul>
 <li><a href="#example-1">Example 1</a></li>
 <li><a href="#example-2">Example 2</a></li>
@@ -109,6 +110,17 @@ $ [sudo] pip3 install -e .</code></pre>
 <p>From <a href="https://github.com/joosthoeks/jhTAlib">source</a>:</p>
 <pre><code>$ cd jhTAlib
 $ git pull [upstream master]</code></pre>
+<hr />
+<h2 id="in-colab">In Colab</h2>
+<p>From <a href="https://pypi.org/project/jhTAlib/">PyPI</a>:</p>
+<pre><code>!pip install --upgrade jhtalib
+import jhtalib as jhta</code></pre>
+<p>From <a href="https://github.com/joosthoeks/jhTAlib">source</a>:</p>
+<pre><code>!git clone [-b branch-name] https://github.com/joosthoeks/jhTAlib.git
+%cd &#39;/content/jhTAlib&#39;
+import jhtalib as jhta
+%cd &#39;/content&#39;
+!rm -rf ./jhTAlib/</code></pre>
 <hr />
 <h2 id="examples">Examples</h2>
 <pre><code>$ cd example/</code></pre>

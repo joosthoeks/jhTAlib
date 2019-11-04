@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2019-10-31
+:Date:   2019-11-04
 
 .. contents::
    :depth: 3
@@ -93,6 +93,28 @@ From `source <https://github.com/joosthoeks/jhTAlib>`__:
 
     $ cd jhTAlib
     $ git pull [upstream master]
+
+--------------
+
+In Colab
+--------
+
+From `PyPI <https://pypi.org/project/jhTAlib/>`__:
+
+::
+
+    !pip install --upgrade jhtalib
+    import jhtalib as jhta
+
+From `source <https://github.com/joosthoeks/jhTAlib>`__:
+
+::
+
+    !git clone [-b branch-name] https://github.com/joosthoeks/jhTAlib.git
+    %cd '/content/jhTAlib'
+    import jhtalib as jhta
+    %cd '/content'
+    !rm -rf ./jhTAlib/
 
 --------------
 
