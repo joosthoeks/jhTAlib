@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2019-11-04
+:Date:   2019-11-05
 
 .. contents::
    :depth: 3
@@ -1950,6 +1950,15 @@ PSEE \| Population Standard Error of Estimate \| DONE
 
 --------------
 
+LSMA \| Least Squares Moving Average \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list of floats = jhta.LSMA(df, n, price='Close')``
+
+-  https://www.fmlabs.com/reference/default.htm?url=LstSqrMA.htm
+
+--------------
+
 BETA \| Beta \| DONE
 ^^^^^^^^^^^^^^^^^^^^
 
@@ -2107,10 +2116,21 @@ RVI \| Relative Volatility Index \| DONE
 
 --------------
 
-INERTIA \| Inertia \|
-^^^^^^^^^^^^^^^^^^^^^
+RVIOC \| Relative Volatility Index Original Calculation \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
--  
+-  ``list of floats = jhta.RVIOC(df, n, price='Close')``
+
+-  https://www.fmlabs.com/reference/default.htm?url=RVIoriginal.htm
+
+--------------
+
+INERTIA \| Inertia \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list of floats = jhta.INERTIA(df, n, price='Close')``
+
+-  https://www.fmlabs.com/reference/default.htm?url=Inertia.htm
 
 --------------
 
