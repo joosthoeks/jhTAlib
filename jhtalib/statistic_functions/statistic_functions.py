@@ -587,6 +587,23 @@ def PSEE(x_list, y_list):
     n = len(x_list)
     return math.sqrt(sse / n)
 
+def LSMA(df, n, price='Close'):
+    """
+    Least Squares Moving Average
+    """
+    lsma_list = []
+    for i in range(len(df[price])):
+        if i + 1 < n:
+            lsma = float('NaN')
+        else:
+            start = i + 1 - n
+            end = i + 1
+            x_list = list(range(start, end, 1))
+            y_list = df[price][start:end]
+            lsma = jhta.REGRESSION(x_list, y_list)['estimate'][-1]
+        lsma_list.append(lsma)
+    return lsma_list
+
 def BETA(x_list, y_list):
     """
     Beta

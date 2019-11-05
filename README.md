@@ -1655,6 +1655,14 @@ import jhtalib as jhta
 
 ---
 
+#### LSMA | Least Squares Moving Average | DONE
+
+- ```list of floats = jhta.LSMA(df, n, price='Close')```
+
+- [https://www.fmlabs.com/reference/default.htm?url=LstSqrMA.htm](https://www.fmlabs.com/reference/default.htm?url=LstSqrMA.htm)
+
+---
+
 #### BETA | Beta | DONE
 
 - ```float = jhta.BETA(x_list, y_list)```
@@ -1793,9 +1801,19 @@ import jhtalib as jhta
 
 ---
 
-#### INERTIA | Inertia |
+#### RVIOC | Relative Volatility Index Original Calculation | DONE
 
--
+- ```list of floats = jhta.RVIOC(df, n, price='Close')```
+
+- [https://www.fmlabs.com/reference/default.htm?url=RVIoriginal.htm](https://www.fmlabs.com/reference/default.htm?url=RVIoriginal.htm)
+
+---
+
+#### INERTIA | Inertia | DONE
+
+- ```list of floats = jhta.INERTIA(df, n, price='Close')```
+
+- [https://www.fmlabs.com/reference/default.htm?url=Inertia.htm](https://www.fmlabs.com/reference/default.htm?url=Inertia.htm)
 
 ---
 

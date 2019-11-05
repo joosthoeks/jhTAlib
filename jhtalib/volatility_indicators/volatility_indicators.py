@@ -83,6 +83,40 @@ def RVI(df, n, high='High', low='Low'):
         i += 1
     return rvi_list
 
+def RVIOC(df, n, price='Close'):
+    """
+    Relative Volatility Index Original Calculation
+    """
+    rvioc_list = []
+    upavg = .0
+    dnavg = .0
+    for i in range(len(df[price])):
+        if i + 1 < n or i < 9:
+            rvioc = float('NaN')
+        else:
+            start = i + 1 - n
+            end = i + 1
+            y_list = df[price][start:end]
+            stdev = jhta.STDEV({'y': y_list}, 9, 'y')[-1]
+            if df[price][i] > df[price][i - 1]:
+                up = stdev
+                dn = 0
+            else:
+                up = 0
+                dn = stdev
+            upavg = (upavg * (n - 1) + up) / n
+            dnavg = (dnavg * (n - 1) + dn) / n
+            rvioc = 100 * upavg / (upavg + dnavg)
+        rvioc_list.append(rvioc)
+    return rvioc_list
+
+def INERTIA(df, n, price='Close'):
+    """
+    Inertia
+    """
+    rvioc = RVIOC(df, n, price)
+    return jhta.LSMA({'rvioc': rvioc}, n, 'rvioc')
+
 def PRANGE(df, n, max_price='High', min_price='Low'):
     """
     %Range
