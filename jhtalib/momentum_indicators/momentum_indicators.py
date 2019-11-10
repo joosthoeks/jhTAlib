@@ -303,6 +303,31 @@ def ULTOSC(df):
     Ultimate Oscillator
     """
 
+def VHF(df, n, price='Close'):
+    """
+    Vertical Horizontal Filter
+    source: https://www.fmlabs.com/reference/default.htm?url=VHF.htm
+    """
+    vhf_list = []
+    c_list = []
+    for i in range(len(df[price])):
+        if i + 1 < n:
+            vhf = float('NaN')
+            c_list.append(float('NaN'))
+        else:
+            start = i + 1 - n
+            end = i + 1
+            highest = max(df[price][start:end])
+            lowest = min(df[price][start:end])
+            c0 = df[price][i]
+            c1 = df[price][i - 1]
+            c = (c0 - c1) / c1
+            c_list.append(c)
+            c_sum = sum(c_list[start:end])
+            vhf = (highest - lowest) / c_sum
+        vhf_list.append(vhf)
+    return vhf_list
+
 def WILLR(df, n, high='High', low='Low', close='Close'):
     """
     Williams' %R
