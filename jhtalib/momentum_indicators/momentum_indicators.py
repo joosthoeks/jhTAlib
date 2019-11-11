@@ -306,7 +306,6 @@ def ULTOSC(df):
 def VHF(df, n, price='Close'):
     """
     Vertical Horizontal Filter
-    source: https://www.fmlabs.com/reference/default.htm?url=VHF.htm
     """
     vhf_list = []
     c_list = []

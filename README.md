@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2019-11-05
+date: 2019-11-11
 ---
 
 # jhTAlib
@@ -1168,6 +1168,14 @@ import jhtalib as jhta
 #### ULTOSC | Ultimate Oscillator |
 
 -
+
+---
+
+#### VHF | Vertical Horizontal Filter | DONE
+
+- ```list of floats = jhta.VHF(df, n, price='Close')```
+
+- [https://www.fmlabs.com/reference/default.htm?url=VHF.htm](https://www.fmlabs.com/reference/default.htm?url=VHF.htm)
 
 ---
 
