@@ -7972,7 +7972,12 @@ only on</text:h>
 <text:a xlink:type="simple" xlink:href="https://pypi.org/project/jhTAlib/" office:name=""><text:span text:style-name="Definition">PyPI</text:span></text:a>:</text:p>
 <text:p text:style-name="P4">$ [sudo] pip3 install jhtalib</text:p>
 <text:p text:style-name="First_20_paragraph">From
-<text:a xlink:type="simple" xlink:href="https://github.com/joosthoeks/jhTAlib" office:name=""><text:span text:style-name="Definition">source</text:span></text:a>:</text:p>
+<text:a xlink:type="simple" xlink:href="https://github.com/joosthoeks/jhTAlib" office:name=""><text:span text:style-name="Definition">source</text:span></text:a>
+-
+<text:a xlink:type="simple" xlink:href="https://gitlab.com/joosthoeks/jhtalib" office:name=""><text:span text:style-name="Definition">source
+mirror 1</text:span></text:a> -
+<text:a xlink:type="simple" xlink:href="https://bitbucket.org/joosthoeks/jhtalib" office:name=""><text:span text:style-name="Definition">source
+mirror 2</text:span></text:a>:</text:p>
 <text:p text:style-name="P5">$ git clone https://github.com/joosthoeks/jhTAlib.git</text:p>
 <text:p text:style-name="P6">$ cd jhTAlib</text:p>
 <text:p text:style-name="P7">$ [sudo] pip3 install -e .</text:p>
@@ -7982,7 +7987,12 @@ only on</text:h>
 <text:a xlink:type="simple" xlink:href="https://pypi.org/project/jhTAlib/" office:name=""><text:span text:style-name="Definition">PyPI</text:span></text:a>:</text:p>
 <text:p text:style-name="P8">$ [sudo] pip3 install --upgrade jhtalib</text:p>
 <text:p text:style-name="First_20_paragraph">From
-<text:a xlink:type="simple" xlink:href="https://github.com/joosthoeks/jhTAlib" office:name=""><text:span text:style-name="Definition">source</text:span></text:a>:</text:p>
+<text:a xlink:type="simple" xlink:href="https://github.com/joosthoeks/jhTAlib" office:name=""><text:span text:style-name="Definition">source</text:span></text:a>
+-
+<text:a xlink:type="simple" xlink:href="https://gitlab.com/joosthoeks/jhtalib" office:name=""><text:span text:style-name="Definition">source
+mirror 1</text:span></text:a> -
+<text:a xlink:type="simple" xlink:href="https://bitbucket.org/joosthoeks/jhtalib" office:name=""><text:span text:style-name="Definition">source
+mirror 2</text:span></text:a>:</text:p>
 <text:p text:style-name="P9">$ cd jhTAlib</text:p>
 <text:p text:style-name="P10">$ git pull [upstream master]</text:p>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -7993,7 +8003,12 @@ Colab</text:h>
 <text:p text:style-name="P11">!pip install --upgrade jhtalib</text:p>
 <text:p text:style-name="P12">import jhtalib as jhta</text:p>
 <text:p text:style-name="First_20_paragraph">From
-<text:a xlink:type="simple" xlink:href="https://github.com/joosthoeks/jhTAlib" office:name=""><text:span text:style-name="Definition">source</text:span></text:a>:</text:p>
+<text:a xlink:type="simple" xlink:href="https://github.com/joosthoeks/jhTAlib" office:name=""><text:span text:style-name="Definition">source</text:span></text:a>
+-
+<text:a xlink:type="simple" xlink:href="https://gitlab.com/joosthoeks/jhtalib" office:name=""><text:span text:style-name="Definition">source
+mirror 1</text:span></text:a> -
+<text:a xlink:type="simple" xlink:href="https://bitbucket.org/joosthoeks/jhtalib" office:name=""><text:span text:style-name="Definition">source
+mirror 2</text:span></text:a>:</text:p>
 <text:p text:style-name="P13">!git clone [-b branch-name] https://github.com/joosthoeks/jhTAlib.git</text:p>
 <text:p text:style-name="P14">%cd '/content/jhTAlib'</text:p>
 <text:p text:style-name="P15">import jhtalib as jhta</text:p>

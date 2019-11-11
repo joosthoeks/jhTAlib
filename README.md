@@ -56,7 +56,7 @@ From [PyPI](https://pypi.org/project/jhTAlib/):
 $ [sudo] pip3 install jhtalib
 ```
 
-From [source](https://github.com/joosthoeks/jhTAlib):
+From [source](https://github.com/joosthoeks/jhTAlib) - [source mirror 1](https://gitlab.com/joosthoeks/jhtalib) - [source mirror 2](https://bitbucket.org/joosthoeks/jhtalib):
 
 ```
 $ git clone https://github.com/joosthoeks/jhTAlib.git
@@ -73,7 +73,7 @@ From [PyPI](https://pypi.org/project/jhTAlib/):
 $ [sudo] pip3 install --upgrade jhtalib
 ```
 
-From [source](https://github.com/joosthoeks/jhTAlib):
+From [source](https://github.com/joosthoeks/jhTAlib) - [source mirror 1](https://gitlab.com/joosthoeks/jhtalib) - [source mirror 2](https://bitbucket.org/joosthoeks/jhtalib):
 
 ```
 $ cd jhTAlib
@@ -90,7 +90,7 @@ From [PyPI](https://pypi.org/project/jhTAlib/):
 import jhtalib as jhta
 ```
 
-From [source](https://github.com/joosthoeks/jhTAlib):
+From [source](https://github.com/joosthoeks/jhTAlib) - [source mirror 1](https://gitlab.com/joosthoeks/jhtalib) - [source mirror 2](https://bitbucket.org/joosthoeks/jhtalib):
 
 ```
 !git clone [-b branch-name] https://github.com/joosthoeks/jhTAlib.git
