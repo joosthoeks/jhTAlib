@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2019-11-05
+:Date:   2019-11-11
 
 .. contents::
    :depth: 3
@@ -1348,6 +1348,15 @@ ULTOSC \| Ultimate Oscillator \|
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  
+
+--------------
+
+VHF \| Vertical Horizontal Filter \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list of floats = jhta.VHF(df, n, price='Close')``
+
+-  https://www.fmlabs.com/reference/default.htm?url=VHF.htm
 
 --------------
 

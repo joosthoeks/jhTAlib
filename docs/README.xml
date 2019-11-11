@@ -7268,6 +7268,38 @@
         <style:list-level-properties text:space-before="2.5in" text:min-label-width="0.25in" />
       </text:list-level-style-bullet>
     </text:list-style>
+    <text:list-style style:name="L228">
+      <text:list-level-style-bullet text:level="1" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
+        <style:list-level-properties text:space-before="0.25in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="2" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="‣">
+        <style:list-level-properties text:space-before="0.5in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="3" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="⁃">
+        <style:list-level-properties text:space-before="0.75in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="4" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
+        <style:list-level-properties text:space-before="1.0in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="5" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="‣">
+        <style:list-level-properties text:space-before="1.25in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="6" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="⁃">
+        <style:list-level-properties text:space-before="1.5in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="7" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
+        <style:list-level-properties text:space-before="1.75in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="8" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="‣">
+        <style:list-level-properties text:space-before="2.0in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="9" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="⁃">
+        <style:list-level-properties text:space-before="2.25in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="10" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
+        <style:list-level-properties text:space-before="2.5in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+    </text:list-style>
     <style:style style:name="P1" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L1">
     </style:style>
     <style:style style:name="P2" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L2">
@@ -7734,7 +7766,6 @@
     <style:style style:name="P197" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L170">
     </style:style>
     <style:style style:name="P198" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L171">
-      <style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0in" />
     </style:style>
     <style:style style:name="P199" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L172">
       <style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0in" />
@@ -7767,11 +7798,11 @@
       <style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0in" />
     </style:style>
     <style:style style:name="P209" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L182">
+      <style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0in" />
     </style:style>
     <style:style style:name="P210" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L183">
     </style:style>
     <style:style style:name="P211" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L184">
-      <style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0in" />
     </style:style>
     <style:style style:name="P212" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L185">
       <style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0in" />
@@ -7783,6 +7814,7 @@
       <style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0in" />
     </style:style>
     <style:style style:name="P215" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L188">
+      <style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0in" />
     </style:style>
     <style:style style:name="P216" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L189">
     </style:style>
@@ -7857,7 +7889,6 @@
     <style:style style:name="P251" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L224">
     </style:style>
     <style:style style:name="P252" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L225">
-      <style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0in" />
     </style:style>
     <style:style style:name="P253" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L226">
       <style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0in" />
@@ -7865,12 +7896,15 @@
     <style:style style:name="P254" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L227">
       <style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0in" />
     </style:style>
+    <style:style style:name="P255" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L228">
+      <style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0in" />
+    </style:style>
   </office:automatic-styles>
 <office:body>
 <office:text>
 <text:p text:style-name="Title">jhTAlib</text:p>
 <text:p text:style-name="Author">Joost Hoeks</text:p>
-<text:p text:style-name="Date">2019-11-05</text:p>
+<text:p text:style-name="Date">2019-11-11</text:p>
 <text:h text:style-name="Heading_20_1" text:outline-level="1">jhTAlib</text:h>
 <text:p text:style-name="First_20_paragraph">Technical Analysis Library
 Time-Series</text:p>
@@ -9239,14 +9273,25 @@ Ultimate Oscillator |</text:h>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_4" text:outline-level="4">WILLR |
-Williams' %R | DONE</text:h>
+<text:h text:style-name="Heading_20_4" text:outline-level="4">VHF |
+Vertical Horizontal Filter | DONE</text:h>
 <text:list text:style-name="L144">
   <text:list-item>
-    <text:p text:style-name="P171"><text:span text:style-name="Source_Text">list of floats = jhta.WILLR(df, n, high='High', low='Low', close='Close')</text:span></text:p>
+    <text:p text:style-name="P171"><text:span text:style-name="Source_Text">list of floats = jhta.VHF(df, n, price='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P171"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=WilliamsR.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=WilliamsR.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P171"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=VHF.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=VHF.htm</text:span></text:a></text:p>
+  </text:list-item>
+</text:list>
+<text:p text:style-name="Horizontal_20_Line" />
+<text:h text:style-name="Heading_20_4" text:outline-level="4">WILLR |
+Williams' %R | DONE</text:h>
+<text:list text:style-name="L145">
+  <text:list-item>
+    <text:p text:style-name="P172"><text:span text:style-name="Source_Text">list of floats = jhta.WILLR(df, n, high='High', low='Low', close='Close')</text:span></text:p>
+  </text:list-item>
+  <text:list-item>
+    <text:p text:style-name="P172"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=WilliamsR.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=WilliamsR.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -9254,208 +9299,208 @@ Williams' %R | DONE</text:h>
 Studies</text:span></text:a></text:h>
 <text:h text:style-name="Heading_20_4" text:outline-level="4">BBANDS |
 Bollinger Bands | DONE</text:h>
-<text:list text:style-name="L145">
+<text:list text:style-name="L146">
   <text:list-item>
-    <text:p text:style-name="P172"><text:span text:style-name="Source_Text">dict of lists of floats = jhta.BBANDS(df, n, f=2, high='High', low='Low', close='Close')</text:span></text:p>
+    <text:p text:style-name="P173"><text:span text:style-name="Source_Text">dict of lists of floats = jhta.BBANDS(df, n, f=2, high='High', low='Low', close='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P172"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=Bollinger.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=Bollinger.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P173"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=Bollinger.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=Bollinger.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">BBANDW |
 Bollinger Band Width | DONE</text:h>
-<text:list text:style-name="L146">
+<text:list text:style-name="L147">
   <text:list-item>
-    <text:p text:style-name="P173"><text:span text:style-name="Source_Text">list of floats = jhta.BBANDW(df, n, f=2, high='High', low='Low', close='Close')</text:span></text:p>
+    <text:p text:style-name="P174"><text:span text:style-name="Source_Text">list of floats = jhta.BBANDW(df, n, f=2, high='High', low='Low', close='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P173"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=BollingerWidth.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=BollingerWidth.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P174"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=BollingerWidth.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=BollingerWidth.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">DEMA |
 Double Exponential Moving Average |</text:h>
-<text:list text:style-name="L147">
+<text:list text:style-name="L148">
   <text:list-item>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">EMA |
 Exponential Moving Average | DONE</text:h>
-<text:list text:style-name="L148">
+<text:list text:style-name="L149">
   <text:list-item>
-    <text:p text:style-name="P175"><text:span text:style-name="Source_Text">list of floats = jhta.EMA(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P176"><text:span text:style-name="Source_Text">list of floats = jhta.EMA(df, n, price='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P175"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=ExpMA.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=ExpMA.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P176"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=ExpMA.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=ExpMA.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">ENVP |
 Envelope Percent | DONE</text:h>
-<text:list text:style-name="L149">
+<text:list text:style-name="L150">
   <text:list-item>
-    <text:p text:style-name="P176"><text:span text:style-name="Source_Text">dict of lists of floats = jhta.ENVP(df, pct=.01, price='Close')</text:span></text:p>
+    <text:p text:style-name="P177"><text:span text:style-name="Source_Text">dict of lists of floats = jhta.ENVP(df, pct=.01, price='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P176"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=EnvelopePct.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=EnvelopePct.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P177"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=EnvelopePct.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=EnvelopePct.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">KAMA |
 Kaufman Adaptive Moving Average |</text:h>
-<text:list text:style-name="L150">
+<text:list text:style-name="L151">
   <text:list-item>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">MA |
 Moving Average |</text:h>
-<text:list text:style-name="L151">
+<text:list text:style-name="L152">
   <text:list-item>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">MAMA |
 MESA Adaptive Moving Average |</text:h>
-<text:list text:style-name="L152">
+<text:list text:style-name="L153">
   <text:list-item>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">MAVP |
 Moving Average with Variable Period |</text:h>
-<text:list text:style-name="L153">
+<text:list text:style-name="L154">
   <text:list-item>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">MIDPOINT |
 MidPoint over period | DONE</text:h>
-<text:list text:style-name="L154">
+<text:list text:style-name="L155">
   <text:list-item>
-    <text:p text:style-name="P181"><text:span text:style-name="Source_Text">list of floats = jhta.MIDPOINT(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P182"><text:span text:style-name="Source_Text">list of floats = jhta.MIDPOINT(df, n, price='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P181"><text:a xlink:type="simple" xlink:href="http://www.tadoc.org/indicator/MIDPOINT.htm" office:name=""><text:span text:style-name="Definition">http://www.tadoc.org/indicator/MIDPOINT.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P182"><text:a xlink:type="simple" xlink:href="http://www.tadoc.org/indicator/MIDPOINT.htm" office:name=""><text:span text:style-name="Definition">http://www.tadoc.org/indicator/MIDPOINT.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">MIDPRICE |
 MidPoint Price over period | DONE</text:h>
-<text:list text:style-name="L155">
+<text:list text:style-name="L156">
   <text:list-item>
-    <text:p text:style-name="P182"><text:span text:style-name="Source_Text">list of floats = jhta.MIDPRICE(df, n, high='High', low='Low')</text:span></text:p>
+    <text:p text:style-name="P183"><text:span text:style-name="Source_Text">list of floats = jhta.MIDPRICE(df, n, high='High', low='Low')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P182"><text:a xlink:type="simple" xlink:href="http://www.tadoc.org/indicator/MIDPRICE.htm" office:name=""><text:span text:style-name="Definition">http://www.tadoc.org/indicator/MIDPRICE.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P183"><text:a xlink:type="simple" xlink:href="http://www.tadoc.org/indicator/MIDPRICE.htm" office:name=""><text:span text:style-name="Definition">http://www.tadoc.org/indicator/MIDPRICE.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">MMR |
 Mayer Multiple Ratio | DONE</text:h>
-<text:list text:style-name="L156">
+<text:list text:style-name="L157">
   <text:list-item>
-    <text:p text:style-name="P183"><text:span text:style-name="Source_Text">list of floats = jhta.MMR(df, n=200, price='Close')</text:span></text:p>
+    <text:p text:style-name="P184"><text:span text:style-name="Source_Text">list of floats = jhta.MMR(df, n=200, price='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P183"><text:a xlink:type="simple" xlink:href="https://www.theinvestorspodcast.com/bitcoin-mayer-multiple/" office:name=""><text:span text:style-name="Definition">https://www.theinvestorspodcast.com/bitcoin-mayer-multiple/</text:span></text:a></text:p>
+    <text:p text:style-name="P184"><text:a xlink:type="simple" xlink:href="https://www.theinvestorspodcast.com/bitcoin-mayer-multiple/" office:name=""><text:span text:style-name="Definition">https://www.theinvestorspodcast.com/bitcoin-mayer-multiple/</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">SAR |
 Parabolic SAR | DONE</text:h>
-<text:list text:style-name="L157">
+<text:list text:style-name="L158">
   <text:list-item>
-    <text:p text:style-name="P184"><text:span text:style-name="Source_Text">list of floats = jhta.SAR(df, af_step=.02, af_max=.2, high='High', low='Low')</text:span></text:p>
+    <text:p text:style-name="P185"><text:span text:style-name="Source_Text">list of floats = jhta.SAR(df, af_step=.02, af_max=.2, high='High', low='Low')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P184">book: New Concepts in Technical
+    <text:p text:style-name="P185">book: New Concepts in Technical
     Trading Systems</text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">SAREXT |
 Parabolic SAR - Extended |</text:h>
-<text:list text:style-name="L158">
+<text:list text:style-name="L159">
   <text:list-item>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">SMA |
 Simple Moving Average | DONE</text:h>
-<text:list text:style-name="L159">
+<text:list text:style-name="L160">
   <text:list-item>
-    <text:p text:style-name="P186"><text:span text:style-name="Source_Text">list of floats = jhta.SMA(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P187"><text:span text:style-name="Source_Text">list of floats = jhta.SMA(df, n, price='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P186"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=SimpleMA.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=SimpleMA.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P187"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=SimpleMA.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=SimpleMA.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">T3 |
 Triple Exponential Moving Average (T3) |</text:h>
-<text:list text:style-name="L160">
+<text:list text:style-name="L161">
   <text:list-item>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">TEMA |
 Triple Exponential Moving Average |</text:h>
-<text:list text:style-name="L161">
+<text:list text:style-name="L162">
   <text:list-item>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">TRIMA |
 Triangular Moving Average | DONE</text:h>
-<text:list text:style-name="L162">
+<text:list text:style-name="L163">
   <text:list-item>
-    <text:p text:style-name="P189"><text:span text:style-name="Source_Text">list of floats = jhta.TRIMA(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P190"><text:span text:style-name="Source_Text">list of floats = jhta.TRIMA(df, n, price='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P189"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=TriangularMA.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=TriangularMA.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P190"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=TriangularMA.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=TriangularMA.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">VAMA |
 Volume Adjusted Moving Average | DONE</text:h>
-<text:list text:style-name="L163">
+<text:list text:style-name="L164">
   <text:list-item>
-    <text:p text:style-name="P190"><text:span text:style-name="Source_Text">list of floats = jhta.VAMA(df, n, price='Close', volume='Volume')</text:span></text:p>
+    <text:p text:style-name="P191"><text:span text:style-name="Source_Text">list of floats = jhta.VAMA(df, n, price='Close', volume='Volume')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P190"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=VolAdjustedMA.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=VolAdjustedMA.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P191"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=VolAdjustedMA.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=VolAdjustedMA.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">WMA |
 Weighted Moving Average</text:h>
-<text:list text:style-name="L164">
+<text:list text:style-name="L165">
   <text:list-item>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">WWMA |
 Welles Wilder Moving Average | DONE</text:h>
-<text:list text:style-name="L165">
+<text:list text:style-name="L166">
   <text:list-item>
-    <text:p text:style-name="P192"><text:span text:style-name="Source_Text">list of floats = jhta.WWMA(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P193"><text:span text:style-name="Source_Text">list of floats = jhta.WWMA(df, n, price='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P192"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=WellesMA.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=WellesMA.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P193"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=WellesMA.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=WellesMA.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">WWS |
 Welles Wilder Summation | DONE</text:h>
-<text:list text:style-name="L166">
+<text:list text:style-name="L167">
   <text:list-item>
-    <text:p text:style-name="P193"><text:span text:style-name="Source_Text">list of floats = jhta.WWS(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P194"><text:span text:style-name="Source_Text">list of floats = jhta.WWS(df, n, price='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P193"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=WellesSum.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=WellesSum.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P194"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=WellesSum.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=WellesSum.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -9588,45 +9633,45 @@ Doji |</text:h>
 Transform</text:span></text:a></text:h>
 <text:h text:style-name="Heading_20_4" text:outline-level="4">AVGPRICE |
 Average Price | DONE</text:h>
-<text:list text:style-name="L167">
+<text:list text:style-name="L168">
   <text:list-item>
-    <text:p text:style-name="P194"><text:span text:style-name="Source_Text">list of floats = jhta.AVGPRICE(df, open='Open', high='High', low='Low', close='Close')</text:span></text:p>
+    <text:p text:style-name="P195"><text:span text:style-name="Source_Text">list of floats = jhta.AVGPRICE(df, open='Open', high='High', low='Low', close='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P194"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=AvgPrices.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=AvgPrices.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P195"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=AvgPrices.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=AvgPrices.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">MEDPRICE |
 Median Price | DONE</text:h>
-<text:list text:style-name="L168">
+<text:list text:style-name="L169">
   <text:list-item>
-    <text:p text:style-name="P195"><text:span text:style-name="Source_Text">list of floats = jhta.MEDPRICE(df, high='High', low='Low')</text:span></text:p>
+    <text:p text:style-name="P196"><text:span text:style-name="Source_Text">list of floats = jhta.MEDPRICE(df, high='High', low='Low')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P195"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=MedianPrices.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=MedianPrices.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P196"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=MedianPrices.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=MedianPrices.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">TYPPRICE |
 Typical Price | DONE</text:h>
-<text:list text:style-name="L169">
+<text:list text:style-name="L170">
   <text:list-item>
-    <text:p text:style-name="P196"><text:span text:style-name="Source_Text">list of floats = jhta.TYPPRICE(df, high='High', low='Low', close='Close')</text:span></text:p>
+    <text:p text:style-name="P197"><text:span text:style-name="Source_Text">list of floats = jhta.TYPPRICE(df, high='High', low='Low', close='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P196"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=TypicalPrices.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=TypicalPrices.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P197"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=TypicalPrices.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=TypicalPrices.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">WCLPRICE |
 Weighted Close Price | DONE</text:h>
-<text:list text:style-name="L170">
+<text:list text:style-name="L171">
   <text:list-item>
-    <text:p text:style-name="P197"><text:span text:style-name="Source_Text">list of floats = jhta.WCLPRICE(df, high='High', low='Low', close='Close')</text:span></text:p>
+    <text:p text:style-name="P198"><text:span text:style-name="Source_Text">list of floats = jhta.WCLPRICE(df, high='High', low='Low', close='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P197"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=WeightedCloses.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=WeightedCloses.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P198"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=WeightedCloses.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=WeightedCloses.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -9634,330 +9679,318 @@ Weighted Close Price | DONE</text:h>
 Functions</text:span></text:a></text:h>
 <text:h text:style-name="Heading_20_4" text:outline-level="4">MEAN |
 Arithmetic mean (average) of data | DONE</text:h>
-<text:list text:style-name="L171">
+<text:list text:style-name="L172">
   <text:list-item>
-    <text:p text:style-name="P198"><text:span text:style-name="Source_Text">list of floats = jhta.MEAN(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P199"><text:span text:style-name="Source_Text">list of floats = jhta.MEAN(df, n, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">HARMONIC_MEAN
 | Harmonic mean of data | DONE</text:h>
-<text:list text:style-name="L172">
+<text:list text:style-name="L173">
   <text:list-item>
-    <text:p text:style-name="P199"><text:span text:style-name="Source_Text">list of floats = jhta.HARMONIC_MEAN(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P200"><text:span text:style-name="Source_Text">list of floats = jhta.HARMONIC_MEAN(df, n, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">MEDIAN |
 Median (middle value) of data | DONE</text:h>
-<text:list text:style-name="L173">
+<text:list text:style-name="L174">
   <text:list-item>
-    <text:p text:style-name="P200"><text:span text:style-name="Source_Text">list of floats = jhta.MEDIAN(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P201"><text:span text:style-name="Source_Text">list of floats = jhta.MEDIAN(df, n, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">MEDIAN_LOW
 | Low median of data | DONE</text:h>
-<text:list text:style-name="L174">
+<text:list text:style-name="L175">
   <text:list-item>
-    <text:p text:style-name="P201"><text:span text:style-name="Source_Text">list of floats = jhta.MEDIAN_LOW(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P202"><text:span text:style-name="Source_Text">list of floats = jhta.MEDIAN_LOW(df, n, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">MEDIAN_HIGH
 | High median of data | DONE</text:h>
-<text:list text:style-name="L175">
+<text:list text:style-name="L176">
   <text:list-item>
-    <text:p text:style-name="P202"><text:span text:style-name="Source_Text">list of floats = jhta.MEDIAN_HIGH(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P203"><text:span text:style-name="Source_Text">list of floats = jhta.MEDIAN_HIGH(df, n, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">MEDIAN_GROUPED
 | Median, or 50th percentile, of grouped data | DONE</text:h>
-<text:list text:style-name="L176">
+<text:list text:style-name="L177">
   <text:list-item>
-    <text:p text:style-name="P203"><text:span text:style-name="Source_Text">list of floats = jhta.MEDIAN_GROUPED(df, n, price='Close', interval=1)</text:span></text:p>
+    <text:p text:style-name="P204"><text:span text:style-name="Source_Text">list of floats = jhta.MEDIAN_GROUPED(df, n, price='Close', interval=1)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">MODE |
 Mode (most common value) of discrete data | DONE</text:h>
-<text:list text:style-name="L177">
+<text:list text:style-name="L178">
   <text:list-item>
-    <text:p text:style-name="P204"><text:span text:style-name="Source_Text">list of floats = jhta.MODE(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P205"><text:span text:style-name="Source_Text">list of floats = jhta.MODE(df, n, price='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">PSTDEV |
 Population standard deviation of data | DONE</text:h>
-<text:list text:style-name="L178">
+<text:list text:style-name="L179">
   <text:list-item>
-    <text:p text:style-name="P205"><text:span text:style-name="Source_Text">list of floats = jhta.PSTDEV(df, n, price='Close', mu=None)</text:span></text:p>
+    <text:p text:style-name="P206"><text:span text:style-name="Source_Text">list of floats = jhta.PSTDEV(df, n, price='Close', mu=None)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">PVARIANCE
 | Population variance of data | DONE</text:h>
-<text:list text:style-name="L179">
+<text:list text:style-name="L180">
   <text:list-item>
-    <text:p text:style-name="P206"><text:span text:style-name="Source_Text">list of floats = jhta.PVARIANCE(df, n, price='Close', mu=None)</text:span></text:p>
+    <text:p text:style-name="P207"><text:span text:style-name="Source_Text">list of floats = jhta.PVARIANCE(df, n, price='Close', mu=None)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">STDEV |
 Sample standard deviation of data | DONE</text:h>
-<text:list text:style-name="L180">
+<text:list text:style-name="L181">
   <text:list-item>
-    <text:p text:style-name="P207"><text:span text:style-name="Source_Text">list of floats = jhta.STDEV(df, n, price='Close', xbar=None)</text:span></text:p>
+    <text:p text:style-name="P208"><text:span text:style-name="Source_Text">list of floats = jhta.STDEV(df, n, price='Close', xbar=None)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">VARIANCE |
 Sample variance of data | DONE</text:h>
-<text:list text:style-name="L181">
+<text:list text:style-name="L182">
   <text:list-item>
-    <text:p text:style-name="P208"><text:span text:style-name="Source_Text">list of floats = jhta.VARIANCE(df, n, price='Close', xbar=None)</text:span></text:p>
+    <text:p text:style-name="P209"><text:span text:style-name="Source_Text">list of floats = jhta.VARIANCE(df, n, price='Close', xbar=None)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">COV |
 Covariance | DONE</text:h>
-<text:list text:style-name="L182">
-  <text:list-item>
-    <text:p text:style-name="P209"><text:span text:style-name="Source_Text">float = jhta.COV(x_list, y_list)</text:span></text:p>
-  </text:list-item>
-  <text:list-item>
-    <text:p text:style-name="P209"><text:a xlink:type="simple" xlink:href="https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Covariance" office:name=""><text:span text:style-name="Definition">https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Covariance</text:span></text:a></text:p>
-  </text:list-item>
-</text:list>
-<text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_4" text:outline-level="4">COVARIANCE
-| Covariance | DONE</text:h>
 <text:list text:style-name="L183">
   <text:list-item>
-    <text:p text:style-name="P210"><text:span text:style-name="Source_Text">list of floats = jhta.COVARIANCE(df1, df2, n, price1='Close', price2='Close')</text:span></text:p>
+    <text:p text:style-name="P210"><text:span text:style-name="Source_Text">float = jhta.COV(x_list, y_list)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P210"><text:a xlink:type="simple" xlink:href="https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Covariance" office:name=""><text:span text:style-name="Definition">https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Covariance</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_4" text:outline-level="4">COR |
-Correlation | DONE</text:h>
+<text:h text:style-name="Heading_20_4" text:outline-level="4">COVARIANCE
+| Covariance | DONE</text:h>
 <text:list text:style-name="L184">
   <text:list-item>
-    <text:p text:style-name="P211"><text:span text:style-name="Source_Text">float = jhta.COR(x_list, y_list)</text:span></text:p>
+    <text:p text:style-name="P211"><text:span text:style-name="Source_Text">list of floats = jhta.COVARIANCE(df1, df2, n, price1='Close', price2='Close')</text:span></text:p>
+  </text:list-item>
+  <text:list-item>
+    <text:p text:style-name="P211"><text:a xlink:type="simple" xlink:href="https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Covariance" office:name=""><text:span text:style-name="Definition">https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Covariance</text:span></text:a></text:p>
+  </text:list-item>
+</text:list>
+<text:p text:style-name="Horizontal_20_Line" />
+<text:h text:style-name="Heading_20_4" text:outline-level="4">COR |
+Correlation | DONE</text:h>
+<text:list text:style-name="L185">
+  <text:list-item>
+    <text:p text:style-name="P212"><text:span text:style-name="Source_Text">float = jhta.COR(x_list, y_list)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">CORRELATION
 | Correlation | DONE</text:h>
-<text:list text:style-name="L185">
+<text:list text:style-name="L186">
   <text:list-item>
-    <text:p text:style-name="P212"><text:span text:style-name="Source_Text">list of floats = jhta.CORRELATION(df1, df2, n, price1='Close', price2='Close')</text:span></text:p>
+    <text:p text:style-name="P213"><text:span text:style-name="Source_Text">list of floats = jhta.CORRELATION(df1, df2, n, price1='Close', price2='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">PCOR |
 Population Correlation | DONE</text:h>
-<text:list text:style-name="L186">
+<text:list text:style-name="L187">
   <text:list-item>
-    <text:p text:style-name="P213"><text:span text:style-name="Source_Text">float = jhta.PCOR(x_list, y_list)</text:span></text:p>
+    <text:p text:style-name="P214"><text:span text:style-name="Source_Text">float = jhta.PCOR(x_list, y_list)</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">PCORRELATION
 | Population Correlation | DONE</text:h>
-<text:list text:style-name="L187">
+<text:list text:style-name="L188">
   <text:list-item>
-    <text:p text:style-name="P214"><text:span text:style-name="Source_Text">list of floats = jhta.PCORRELATION(df1, df2, n, price1='Close', price2='Close')</text:span></text:p>
+    <text:p text:style-name="P215"><text:span text:style-name="Source_Text">list of floats = jhta.PCORRELATION(df1, df2, n, price1='Close', price2='Close')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">R2 |
 R-Squared | DONE</text:h>
-<text:list text:style-name="L188">
-  <text:list-item>
-    <text:p text:style-name="P215"><text:span text:style-name="Source_Text">float = jhta.R2(x_list, y_list)</text:span></text:p>
-  </text:list-item>
-  <text:list-item>
-    <text:p text:style-name="P215"><text:a xlink:type="simple" xlink:href="https://www.wallstreetmojo.com/r-squared-formula/" office:name=""><text:span text:style-name="Definition">https://www.wallstreetmojo.com/r-squared-formula/</text:span></text:a></text:p>
-  </text:list-item>
-</text:list>
-<text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_4" text:outline-level="4">RSQUARED |
-R-Squared | DONE</text:h>
 <text:list text:style-name="L189">
   <text:list-item>
-    <text:p text:style-name="P216"><text:span text:style-name="Source_Text">list of floats = jhta.RSQUARED(df1, df2, n, price1='Close', price2='Close')</text:span></text:p>
+    <text:p text:style-name="P216"><text:span text:style-name="Source_Text">float = jhta.R2(x_list, y_list)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P216"><text:a xlink:type="simple" xlink:href="https://www.wallstreetmojo.com/r-squared-formula/" office:name=""><text:span text:style-name="Definition">https://www.wallstreetmojo.com/r-squared-formula/</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_4" text:outline-level="4">REGRESSION
-| Regression | DONE</text:h>
+<text:h text:style-name="Heading_20_4" text:outline-level="4">RSQUARED |
+R-Squared | DONE</text:h>
 <text:list text:style-name="L190">
   <text:list-item>
-    <text:p text:style-name="P217"><text:span text:style-name="Source_Text">dict of lists of floats = jhta.REGRESSION(x_list, y_list)</text:span></text:p>
+    <text:p text:style-name="P217"><text:span text:style-name="Source_Text">list of floats = jhta.RSQUARED(df1, df2, n, price1='Close', price2='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P217"><text:a xlink:type="simple" xlink:href="https://www.wallstreetmojo.com/regression-formula/" office:name=""><text:span text:style-name="Definition">https://www.wallstreetmojo.com/regression-formula/</text:span></text:a></text:p>
+    <text:p text:style-name="P217"><text:a xlink:type="simple" xlink:href="https://www.wallstreetmojo.com/r-squared-formula/" office:name=""><text:span text:style-name="Definition">https://www.wallstreetmojo.com/r-squared-formula/</text:span></text:a></text:p>
+  </text:list-item>
+</text:list>
+<text:p text:style-name="Horizontal_20_Line" />
+<text:h text:style-name="Heading_20_4" text:outline-level="4">REGRESSION
+| Regression | DONE</text:h>
+<text:list text:style-name="L191">
+  <text:list-item>
+    <text:p text:style-name="P218"><text:span text:style-name="Source_Text">dict of lists of floats = jhta.REGRESSION(x_list, y_list)</text:span></text:p>
+  </text:list-item>
+  <text:list-item>
+    <text:p text:style-name="P218"><text:a xlink:type="simple" xlink:href="https://www.wallstreetmojo.com/regression-formula/" office:name=""><text:span text:style-name="Definition">https://www.wallstreetmojo.com/regression-formula/</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">SSE | Sum
 of the Squared Errors | DONE</text:h>
-<text:list text:style-name="L191">
-  <text:list-item>
-    <text:p text:style-name="P218"><text:span text:style-name="Source_Text">float = jhta.SSE(x_list, y_list)</text:span></text:p>
-  </text:list-item>
-  <text:list-item>
-    <text:p text:style-name="P218"><text:a xlink:type="simple" xlink:href="https://www.wikihow.com/Calculate-the-Standard-Error-of-Estimate" office:name=""><text:span text:style-name="Definition">https://www.wikihow.com/Calculate-the-Standard-Error-of-Estimate</text:span></text:a></text:p>
-  </text:list-item>
-</text:list>
-<text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_4" text:outline-level="4">SEE |
-Standard Error of Estimate | DONE</text:h>
 <text:list text:style-name="L192">
   <text:list-item>
-    <text:p text:style-name="P219"><text:span text:style-name="Source_Text">float = jhta.SEE(x_list, y_list)</text:span></text:p>
+    <text:p text:style-name="P219"><text:span text:style-name="Source_Text">float = jhta.SSE(x_list, y_list)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P219"><text:a xlink:type="simple" xlink:href="https://www.wikihow.com/Calculate-the-Standard-Error-of-Estimate" office:name=""><text:span text:style-name="Definition">https://www.wikihow.com/Calculate-the-Standard-Error-of-Estimate</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_4" text:outline-level="4">PSEE |
-Population Standard Error of Estimate | DONE</text:h>
+<text:h text:style-name="Heading_20_4" text:outline-level="4">SEE |
+Standard Error of Estimate | DONE</text:h>
 <text:list text:style-name="L193">
   <text:list-item>
-    <text:p text:style-name="P220"><text:span text:style-name="Source_Text">float = jhta.PSEE(x_list, y_list)</text:span></text:p>
+    <text:p text:style-name="P220"><text:span text:style-name="Source_Text">float = jhta.SEE(x_list, y_list)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P220"><text:a xlink:type="simple" xlink:href="https://www.wikihow.com/Calculate-the-Standard-Error-of-Estimate" office:name=""><text:span text:style-name="Definition">https://www.wikihow.com/Calculate-the-Standard-Error-of-Estimate</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_4" text:outline-level="4">LSMA |
-Least Squares Moving Average | DONE</text:h>
+<text:h text:style-name="Heading_20_4" text:outline-level="4">PSEE |
+Population Standard Error of Estimate | DONE</text:h>
 <text:list text:style-name="L194">
   <text:list-item>
-    <text:p text:style-name="P221"><text:span text:style-name="Source_Text">list of floats = jhta.LSMA(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P221"><text:span text:style-name="Source_Text">float = jhta.PSEE(x_list, y_list)</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P221"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=LstSqrMA.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=LstSqrMA.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P221"><text:a xlink:type="simple" xlink:href="https://www.wikihow.com/Calculate-the-Standard-Error-of-Estimate" office:name=""><text:span text:style-name="Definition">https://www.wikihow.com/Calculate-the-Standard-Error-of-Estimate</text:span></text:a></text:p>
+  </text:list-item>
+</text:list>
+<text:p text:style-name="Horizontal_20_Line" />
+<text:h text:style-name="Heading_20_4" text:outline-level="4">LSMA |
+Least Squares Moving Average | DONE</text:h>
+<text:list text:style-name="L195">
+  <text:list-item>
+    <text:p text:style-name="P222"><text:span text:style-name="Source_Text">list of floats = jhta.LSMA(df, n, price='Close')</text:span></text:p>
+  </text:list-item>
+  <text:list-item>
+    <text:p text:style-name="P222"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=LstSqrMA.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=LstSqrMA.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">BETA |
 Beta | DONE</text:h>
-<text:list text:style-name="L195">
-  <text:list-item>
-    <text:p text:style-name="P222"><text:span text:style-name="Source_Text">float = jhta.BETA(x_list, y_list)</text:span></text:p>
-  </text:list-item>
-  <text:list-item>
-    <text:p text:style-name="P222"><text:a xlink:type="simple" xlink:href="https://en.wikipedia.org/wiki/Beta_(finance)" office:name=""><text:span text:style-name="Definition">https://en.wikipedia.org/wiki/Beta_(finance)</text:span></text:a></text:p>
-  </text:list-item>
-</text:list>
-<text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_4" text:outline-level="4">BETAS |
-Betas | DONE</text:h>
 <text:list text:style-name="L196">
   <text:list-item>
-    <text:p text:style-name="P223"><text:span text:style-name="Source_Text">list of floats = jhta.BETAS(df1, df2, n, price1='Close', price2='Close')</text:span></text:p>
+    <text:p text:style-name="P223"><text:span text:style-name="Source_Text">float = jhta.BETA(x_list, y_list)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P223"><text:a xlink:type="simple" xlink:href="https://en.wikipedia.org/wiki/Beta_(finance)" office:name=""><text:span text:style-name="Definition">https://en.wikipedia.org/wiki/Beta_(finance)</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_4" text:outline-level="4">LSR |
-Least Squares Regression | DONE</text:h>
+<text:h text:style-name="Heading_20_4" text:outline-level="4">BETAS |
+Betas | DONE</text:h>
 <text:list text:style-name="L197">
   <text:list-item>
-    <text:p text:style-name="P224"><text:span text:style-name="Source_Text">list of floats = jhta.LSR(df, price='Close', predictions_int=0)</text:span></text:p>
+    <text:p text:style-name="P224"><text:span text:style-name="Source_Text">list of floats = jhta.BETAS(df1, df2, n, price1='Close', price2='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P224"><text:a xlink:type="simple" xlink:href="https://www.mathsisfun.com/data/least-squares-regression.html" office:name=""><text:span text:style-name="Definition">https://www.mathsisfun.com/data/least-squares-regression.html</text:span></text:a></text:p>
+    <text:p text:style-name="P224"><text:a xlink:type="simple" xlink:href="https://en.wikipedia.org/wiki/Beta_(finance)" office:name=""><text:span text:style-name="Definition">https://en.wikipedia.org/wiki/Beta_(finance)</text:span></text:a></text:p>
+  </text:list-item>
+</text:list>
+<text:p text:style-name="Horizontal_20_Line" />
+<text:h text:style-name="Heading_20_4" text:outline-level="4">LSR |
+Least Squares Regression | DONE</text:h>
+<text:list text:style-name="L198">
+  <text:list-item>
+    <text:p text:style-name="P225"><text:span text:style-name="Source_Text">list of floats = jhta.LSR(df, price='Close', predictions_int=0)</text:span></text:p>
+  </text:list-item>
+  <text:list-item>
+    <text:p text:style-name="P225"><text:a xlink:type="simple" xlink:href="https://www.mathsisfun.com/data/least-squares-regression.html" office:name=""><text:span text:style-name="Definition">https://www.mathsisfun.com/data/least-squares-regression.html</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">SLR |
 Simple Linear Regression | DONE</text:h>
-<text:list text:style-name="L198">
+<text:list text:style-name="L199">
   <text:list-item>
-    <text:p text:style-name="P225"><text:span text:style-name="Source_Text">list of floats = jhta.SLR(df, price='Close', predictions_int=0)</text:span></text:p>
+    <text:p text:style-name="P226"><text:span text:style-name="Source_Text">list of floats = jhta.SLR(df, price='Close', predictions_int=0)</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P225"><text:a xlink:type="simple" xlink:href="https://machinelearningmastery.com/implement-simple-linear-regression-scratch-python/" office:name=""><text:span text:style-name="Definition">https://machinelearningmastery.com/implement-simple-linear-regression-scratch-python/</text:span></text:a></text:p>
+    <text:p text:style-name="P226"><text:a xlink:type="simple" xlink:href="https://machinelearningmastery.com/implement-simple-linear-regression-scratch-python/" office:name=""><text:span text:style-name="Definition">https://machinelearningmastery.com/implement-simple-linear-regression-scratch-python/</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_3" text:outline-level="3"><text:a xlink:type="simple" xlink:href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/uncategorised/uncategorised.py" office:name=""><text:span text:style-name="Definition">Uncategorised</text:span></text:a></text:h>
 <text:h text:style-name="Heading_20_4" text:outline-level="4">HR | Hit
 Rate / Win Rate | DONE</text:h>
-<text:list text:style-name="L199">
+<text:list text:style-name="L200">
   <text:list-item>
-    <text:p text:style-name="P226"><text:span text:style-name="Source_Text">float = jhta.HR(hit_trades_int, total_trades_int)</text:span></text:p>
+    <text:p text:style-name="P227"><text:span text:style-name="Source_Text">float = jhta.HR(hit_trades_int, total_trades_int)</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P226"><text:a xlink:type="simple" xlink:href="http://traderskillset.com/hit-rate-stock-trading/" office:name=""><text:span text:style-name="Definition">http://traderskillset.com/hit-rate-stock-trading/</text:span></text:a></text:p>
+    <text:p text:style-name="P227"><text:a xlink:type="simple" xlink:href="http://traderskillset.com/hit-rate-stock-trading/" office:name=""><text:span text:style-name="Definition">http://traderskillset.com/hit-rate-stock-trading/</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">PLR |
 Profit/Loss Ratio | DONE</text:h>
-<text:list text:style-name="L200">
+<text:list text:style-name="L201">
   <text:list-item>
-    <text:p text:style-name="P227"><text:span text:style-name="Source_Text">float = jhta.PLR(mean_trade_profit_float, mean_trade_loss_float)</text:span></text:p>
+    <text:p text:style-name="P228"><text:span text:style-name="Source_Text">float = jhta.PLR(mean_trade_profit_float, mean_trade_loss_float)</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P227"><text:a xlink:type="simple" xlink:href="https://www.investopedia.com/terms/p/profit_loss_ratio.asp" office:name=""><text:span text:style-name="Definition">https://www.investopedia.com/terms/p/profit_loss_ratio.asp</text:span></text:a></text:p>
+    <text:p text:style-name="P228"><text:a xlink:type="simple" xlink:href="https://www.investopedia.com/terms/p/profit_loss_ratio.asp" office:name=""><text:span text:style-name="Definition">https://www.investopedia.com/terms/p/profit_loss_ratio.asp</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">EV |
 Expected Value | DONE</text:h>
-<text:list text:style-name="L201">
+<text:list text:style-name="L202">
   <text:list-item>
-    <text:p text:style-name="P228"><text:span text:style-name="Source_Text">float = jhta.EV(hitrade_float, mean_trade_profit_float, mean_trade_loss_float)</text:span></text:p>
+    <text:p text:style-name="P229"><text:span text:style-name="Source_Text">float = jhta.EV(hitrade_float, mean_trade_profit_float, mean_trade_loss_float)</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P228"><text:a xlink:type="simple" xlink:href="https://en.wikipedia.org/wiki/Expected_value" office:name=""><text:span text:style-name="Definition">https://en.wikipedia.org/wiki/Expected_value</text:span></text:a></text:p>
+    <text:p text:style-name="P229"><text:a xlink:type="simple" xlink:href="https://en.wikipedia.org/wiki/Expected_value" office:name=""><text:span text:style-name="Definition">https://en.wikipedia.org/wiki/Expected_value</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">POR |
 Probability of Ruin (Table of Lucas and LeBeau) | DONE</text:h>
-<text:list text:style-name="L202">
+<text:list text:style-name="L203">
   <text:list-item>
-    <text:p text:style-name="P229"><text:span text:style-name="Source_Text">int = jhta.POR(hitrade_float, profit_loss_ratio_float)</text:span></text:p>
+    <text:p text:style-name="P230"><text:span text:style-name="Source_Text">int = jhta.POR(hitrade_float, profit_loss_ratio_float)</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P229">book: Computer Analysis of the
+    <text:p text:style-name="P230">book: Computer Analysis of the
     Futures Markets</text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">BPPS |
 Basis Points per Second | DONE</text:h>
-<text:list text:style-name="L203">
-  <text:list-item>
-    <text:p text:style-name="P230"><text:span text:style-name="Source_Text">float = jhta.BPPS(trade_start_price, trade_end_price, trade_start_timestamp, trade_end_timestamp)</text:span></text:p>
-  </text:list-item>
-  <text:list-item>
-    <text:p text:style-name="P230">book: An Introduction to Algorithmic
-    Trading</text:p>
-  </text:list-item>
-</text:list>
-<text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_4" text:outline-level="4">RET |
-Return | DONE</text:h>
 <text:list text:style-name="L204">
   <text:list-item>
-    <text:p text:style-name="P231"><text:span text:style-name="Source_Text">list of floats = jhta.RET(df, price='Close')</text:span></text:p>
+    <text:p text:style-name="P231"><text:span text:style-name="Source_Text">float = jhta.BPPS(trade_start_price, trade_end_price, trade_start_timestamp, trade_end_timestamp)</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P231">book: An Introduction to Algorithmic
@@ -9965,11 +9998,11 @@ Return | DONE</text:h>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_4" text:outline-level="4">RETS |
-Returns | DONE</text:h>
+<text:h text:style-name="Heading_20_4" text:outline-level="4">RET |
+Return | DONE</text:h>
 <text:list text:style-name="L205">
   <text:list-item>
-    <text:p text:style-name="P232"><text:span text:style-name="Source_Text">list of floats = jhta.RETS(df, price='Close')</text:span></text:p>
+    <text:p text:style-name="P232"><text:span text:style-name="Source_Text">list of floats = jhta.RET(df, price='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P232">book: An Introduction to Algorithmic
@@ -9977,11 +10010,11 @@ Returns | DONE</text:h>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_4" text:outline-level="4">PRET |
-%Return | DONE</text:h>
+<text:h text:style-name="Heading_20_4" text:outline-level="4">RETS |
+Returns | DONE</text:h>
 <text:list text:style-name="L206">
   <text:list-item>
-    <text:p text:style-name="P233"><text:span text:style-name="Source_Text">list of floats = jhta.PRET(df, price='Close')</text:span></text:p>
+    <text:p text:style-name="P233"><text:span text:style-name="Source_Text">list of floats = jhta.RETS(df, price='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P233">book: An Introduction to Algorithmic
@@ -9989,14 +10022,26 @@ Returns | DONE</text:h>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_4" text:outline-level="4">PRETS |
-%Returns | DONE</text:h>
+<text:h text:style-name="Heading_20_4" text:outline-level="4">PRET |
+%Return | DONE</text:h>
 <text:list text:style-name="L207">
   <text:list-item>
-    <text:p text:style-name="P234"><text:span text:style-name="Source_Text">list of floats = jhta.PRETS(df, price='Close')</text:span></text:p>
+    <text:p text:style-name="P234"><text:span text:style-name="Source_Text">list of floats = jhta.PRET(df, price='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P234">book: An Introduction to Algorithmic
+    Trading</text:p>
+  </text:list-item>
+</text:list>
+<text:p text:style-name="Horizontal_20_Line" />
+<text:h text:style-name="Heading_20_4" text:outline-level="4">PRETS |
+%Returns | DONE</text:h>
+<text:list text:style-name="L208">
+  <text:list-item>
+    <text:p text:style-name="P235"><text:span text:style-name="Source_Text">list of floats = jhta.PRETS(df, price='Close')</text:span></text:p>
+  </text:list-item>
+  <text:list-item>
+    <text:p text:style-name="P235">book: An Introduction to Algorithmic
     Trading</text:p>
   </text:list-item>
 </text:list>
@@ -10005,86 +10050,86 @@ Returns | DONE</text:h>
 Indicators</text:span></text:a></text:h>
 <text:h text:style-name="Heading_20_4" text:outline-level="4">AEM | Arms
 Ease of Movement | DONE</text:h>
-<text:list text:style-name="L208">
+<text:list text:style-name="L209">
   <text:list-item>
-    <text:p text:style-name="P235"><text:span text:style-name="Source_Text">list of floats = jhta.AEM(df, high='High', low='Low', volume='Volume')</text:span></text:p>
+    <text:p text:style-name="P236"><text:span text:style-name="Source_Text">list of floats = jhta.AEM(df, high='High', low='Low', volume='Volume')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P235"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=ArmsEMV.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=ArmsEMV.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P236"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=ArmsEMV.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=ArmsEMV.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">ATR |
 Average True Range | DONE</text:h>
-<text:list text:style-name="L209">
+<text:list text:style-name="L210">
   <text:list-item>
-    <text:p text:style-name="P236"><text:span text:style-name="Source_Text">list of floats = jhta.ATR(df, n, high='High', low='Low', close='Close')</text:span></text:p>
+    <text:p text:style-name="P237"><text:span text:style-name="Source_Text">list of floats = jhta.ATR(df, n, high='High', low='Low', close='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P236"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=ATR.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=ATR.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P237"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=ATR.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=ATR.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">NATR |
 Normalized Average True Range |</text:h>
-<text:list text:style-name="L210">
+<text:list text:style-name="L211">
   <text:list-item>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">RVI |
 Relative Volatility Index | DONE</text:h>
-<text:list text:style-name="L211">
+<text:list text:style-name="L212">
   <text:list-item>
-    <text:p text:style-name="P238"><text:span text:style-name="Source_Text">list of floats = jhta.RVI(df, n, high='High', low='Low')</text:span></text:p>
+    <text:p text:style-name="P239"><text:span text:style-name="Source_Text">list of floats = jhta.RVI(df, n, high='High', low='Low')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P238"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=RVI.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=RVI.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P239"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=RVI.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=RVI.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">RVIOC |
 Relative Volatility Index Original Calculation | DONE</text:h>
-<text:list text:style-name="L212">
+<text:list text:style-name="L213">
   <text:list-item>
-    <text:p text:style-name="P239"><text:span text:style-name="Source_Text">list of floats = jhta.RVIOC(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P240"><text:span text:style-name="Source_Text">list of floats = jhta.RVIOC(df, n, price='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P239"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=RVIoriginal.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=RVIoriginal.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P240"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=RVIoriginal.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=RVIoriginal.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">INERTIA |
 Inertia | DONE</text:h>
-<text:list text:style-name="L213">
+<text:list text:style-name="L214">
   <text:list-item>
-    <text:p text:style-name="P240"><text:span text:style-name="Source_Text">list of floats = jhta.INERTIA(df, n, price='Close')</text:span></text:p>
+    <text:p text:style-name="P241"><text:span text:style-name="Source_Text">list of floats = jhta.INERTIA(df, n, price='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P240"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=Inertia.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=Inertia.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P241"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=Inertia.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=Inertia.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">PRANGE |
 %Range | DONE</text:h>
-<text:list text:style-name="L214">
+<text:list text:style-name="L215">
   <text:list-item>
-    <text:p text:style-name="P241"><text:span text:style-name="Source_Text">list of floats = jhta.PRANGE(df, n, max_price='High', min_price='Low')</text:span></text:p>
+    <text:p text:style-name="P242"><text:span text:style-name="Source_Text">list of floats = jhta.PRANGE(df, n, max_price='High', min_price='Low')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P241">book: An Introduction to Algorithmic
+    <text:p text:style-name="P242">book: An Introduction to Algorithmic
     Trading</text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">TRANGE |
 True Range | DONE</text:h>
-<text:list text:style-name="L215">
+<text:list text:style-name="L216">
   <text:list-item>
-    <text:p text:style-name="P242"><text:span text:style-name="Source_Text">list of floats = jhta.TRANGE(df, high='High', low='Low', close='Close')</text:span></text:p>
+    <text:p text:style-name="P243"><text:span text:style-name="Source_Text">list of floats = jhta.TRANGE(df, high='High', low='Low', close='Close')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P242"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=TR.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=TR.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P243"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=TR.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=TR.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
@@ -10092,119 +10137,119 @@ True Range | DONE</text:h>
 Indicators</text:span></text:a></text:h>
 <text:h text:style-name="Heading_20_4" text:outline-level="4">AD |
 Chaikin A/D Line | DONE</text:h>
-<text:list text:style-name="L216">
+<text:list text:style-name="L217">
   <text:list-item>
-    <text:p text:style-name="P243"><text:span text:style-name="Source_Text">list of floats = jhta.AD(df, high='High', low='Low', close='Close', volume='Volume')</text:span></text:p>
+    <text:p text:style-name="P244"><text:span text:style-name="Source_Text">list of floats = jhta.AD(df, high='High', low='Low', close='Close', volume='Volume')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P243"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=AccumDist.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=AccumDist.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P244"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=AccumDist.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=AccumDist.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">ADOSC |
 Chaikin A/D Oscillator |</text:h>
-<text:list text:style-name="L217">
+<text:list text:style-name="L218">
   <text:list-item>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">MFAI |
 Market Facilitation Index | DONE</text:h>
-<text:list text:style-name="L218">
+<text:list text:style-name="L219">
   <text:list-item>
-    <text:p text:style-name="P245"><text:span text:style-name="Source_Text">list of floats = jhta.MFAI(df, high='High', low='Low', volume='Volume')</text:span></text:p>
+    <text:p text:style-name="P246"><text:span text:style-name="Source_Text">list of floats = jhta.MFAI(df, high='High', low='Low', volume='Volume')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P245"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=MFI.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=MFI.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P246"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=MFI.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=MFI.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">NVI |
 Negative Volume Index | DONE</text:h>
-<text:list text:style-name="L219">
+<text:list text:style-name="L220">
   <text:list-item>
-    <text:p text:style-name="P246"><text:span text:style-name="Source_Text">list of floats = jhta.NVI(df, price='Close', volume='Volume')</text:span></text:p>
+    <text:p text:style-name="P247"><text:span text:style-name="Source_Text">list of floats = jhta.NVI(df, price='Close', volume='Volume')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P246"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=NVI.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=NVI.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P247"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=NVI.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=NVI.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">OBV | On
 Balance Volume | DONE</text:h>
-<text:list text:style-name="L220">
+<text:list text:style-name="L221">
   <text:list-item>
-    <text:p text:style-name="P247"><text:span text:style-name="Source_Text">list of floats = jhta.OBV(df, close='Close', volume='Volume')</text:span></text:p>
+    <text:p text:style-name="P248"><text:span text:style-name="Source_Text">list of floats = jhta.OBV(df, close='Close', volume='Volume')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P247"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=OBV.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=OBV.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P248"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=OBV.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=OBV.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">PVR |
 Price Volume Rank | DONE</text:h>
-<text:list text:style-name="L221">
+<text:list text:style-name="L222">
   <text:list-item>
-    <text:p text:style-name="P248"><text:span text:style-name="Source_Text">list of ints = jhta.PVR(df, price='Close', volume='Volume')</text:span></text:p>
+    <text:p text:style-name="P249"><text:span text:style-name="Source_Text">list of ints = jhta.PVR(df, price='Close', volume='Volume')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P248"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=PVrank.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=PVrank.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P249"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=PVrank.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=PVrank.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">PVT |
 Price Volume Trend | DONE</text:h>
-<text:list text:style-name="L222">
+<text:list text:style-name="L223">
   <text:list-item>
-    <text:p text:style-name="P249"><text:span text:style-name="Source_Text">list of floats = jhta.PVT(df, price='Close', volume='Volume')</text:span></text:p>
+    <text:p text:style-name="P250"><text:span text:style-name="Source_Text">list of floats = jhta.PVT(df, price='Close', volume='Volume')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P249"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=PVT.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=PVT.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P250"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=PVT.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=PVT.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">PVI |
 Positive Volume Index | DONE</text:h>
-<text:list text:style-name="L223">
+<text:list text:style-name="L224">
   <text:list-item>
-    <text:p text:style-name="P250"><text:span text:style-name="Source_Text">list of floats = jhta.PVI(df, price='Close', volume='Volume')</text:span></text:p>
+    <text:p text:style-name="P251"><text:span text:style-name="Source_Text">list of floats = jhta.PVI(df, price='Close', volume='Volume')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P250"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=PVI.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=PVI.htm</text:span></text:a></text:p>
+    <text:p text:style-name="P251"><text:a xlink:type="simple" xlink:href="https://www.fmlabs.com/reference/default.htm?url=PVI.htm" office:name=""><text:span text:style-name="Definition">https://www.fmlabs.com/reference/default.htm?url=PVI.htm</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_4" text:outline-level="4">VWAP |
 Volume Weighted Average Price | DONE</text:h>
-<text:list text:style-name="L224">
+<text:list text:style-name="L225">
   <text:list-item>
-    <text:p text:style-name="P251"><text:span text:style-name="Source_Text">list of floats = jhta.VWAP(df, open='Open', high='High', low='Low', close='Close', volume='Volume')</text:span></text:p>
+    <text:p text:style-name="P252"><text:span text:style-name="Source_Text">list of floats = jhta.VWAP(df, open='Open', high='High', low='Low', close='Close', volume='Volume')</text:span></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P251">book: An Introduction to Algorithmic
+    <text:p text:style-name="P252">book: An Introduction to Algorithmic
     Trading</text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_2" text:outline-level="2">Notebooks</text:h>
-<text:list text:style-name="L225">
+<text:list text:style-name="L226">
   <text:list-item>
-    <text:p text:style-name="P252"><text:a xlink:type="simple" xlink:href="https://github.com/joosthoeks/jhTAlib/tree/master/notebook" office:name=""><text:span text:style-name="Definition">https://github.com/joosthoeks/jhTAlib/tree/master/notebook</text:span></text:a></text:p>
+    <text:p text:style-name="P253"><text:a xlink:type="simple" xlink:href="https://github.com/joosthoeks/jhTAlib/tree/master/notebook" office:name=""><text:span text:style-name="Definition">https://github.com/joosthoeks/jhTAlib/tree/master/notebook</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:h text:style-name="Heading_20_3" text:outline-level="3">Recession
 Probability</text:h>
-<text:list text:style-name="L226">
+<text:list text:style-name="L227">
   <text:list-item>
-    <text:p text:style-name="P253"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/recession_probability.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/recession_probability.ipynb</text:span></text:a></text:p>
+    <text:p text:style-name="P254"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/recession_probability.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/recession_probability.ipynb</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_2" text:outline-level="2">Donation
 and Funding</text:h>
-<text:list text:style-name="L227">
+<text:list text:style-name="L228">
   <text:list-item>
-    <text:p text:style-name="P254">BTC:
+    <text:p text:style-name="P255">BTC:
     <text:a xlink:type="simple" xlink:href="https://insight.bitpay.com/address/3KCoXMyUDgVABoFSuV8GQT3k8qkUhEDG9X" office:name=""><text:span text:style-name="Definition">3KCoXMyUDgVABoFSuV8GQT3k8qkUhEDG9X</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
