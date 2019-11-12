@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2019-11-11
+date: 2019-11-12
 ---
 
 # jhTAlib
@@ -1916,6 +1916,12 @@ import jhtalib as jhta
 ## Notebooks
 
 - [https://github.com/joosthoeks/jhTAlib/tree/master/notebook](https://github.com/joosthoeks/jhTAlib/tree/master/notebook)
+
+### Dollar Cost Averaging Discount DCAD
+
+- [https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/dollar_cost_averaging_discount_dcad.ipynb](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/dollar_cost_averaging_discount_dcad.ipynb)
+
+---
 
 ### Recession Probability
 
