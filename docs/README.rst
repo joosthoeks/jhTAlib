@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2019-11-11
+:Date:   2019-11-12
 
 .. contents::
    :depth: 3
@@ -2253,6 +2253,13 @@ Notebooks
 ---------
 
 -  https://github.com/joosthoeks/jhTAlib/tree/master/notebook
+
+Dollar Cost Averaging Discount DCAD
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/dollar_cost_averaging_discount_dcad.ipynb
+
+--------------
 
 Recession Probability
 ~~~~~~~~~~~~~~~~~~~~~
