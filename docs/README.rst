@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2019-11-12
+:Date:   2019-12-28
 
 .. contents::
    :depth: 3
@@ -2164,6 +2164,24 @@ TRANGE \| True Range \| DONE
 -  ``list of floats = jhta.TRANGE(df, high='High', low='Low', close='Close')``
 
 -  https://www.fmlabs.com/reference/default.htm?url=TR.htm
+
+--------------
+
+DVOLA \| Daily Volatility \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list of floats = jhta.DVOLA(df, n=30, price='Close')``
+
+-  https://www.wallstreetmojo.com/volatility-formula/
+
+--------------
+
+AVOLA \| Annual Volatility \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list of floats = jhta.AVOLA(df, n=30, na=252, price='Close')``
+
+-  https://www.wallstreetmojo.com/volatility-formula/
 
 --------------
 

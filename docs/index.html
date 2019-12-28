@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <meta name="author" content="Joost Hoeks">
-  <meta name="dcterms.date" content="2019-11-12">
+  <meta name="dcterms.date" content="2019-12-28">
   <title>jhTAlib</title>
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" href="pandoc.css">
@@ -17,7 +17,7 @@
 <header>
 <h1 class="title">jhTAlib</h1>
 <p class="author">Joost Hoeks</p>
-<p class="date">2019-11-12</p>
+<p class="date">2019-12-28</p>
 </header>
 <nav id="TOC">
 <ul>
@@ -1405,6 +1405,18 @@ $ python3 test.py</code></pre>
 <ul>
 <li><p><code>list of floats = jhta.TRANGE(df, high='High', low='Low', close='Close')</code></p></li>
 <li><p><a href="https://www.fmlabs.com/reference/default.htm?url=TR.htm" class="uri">https://www.fmlabs.com/reference/default.htm?url=TR.htm</a></p></li>
+</ul>
+<hr />
+<h4 id="dvola-daily-volatility-done">DVOLA | Daily Volatility | DONE</h4>
+<ul>
+<li><p><code>list of floats = jhta.DVOLA(df, n=30, price='Close')</code></p></li>
+<li><p><a href="https://www.wallstreetmojo.com/volatility-formula/" class="uri">https://www.wallstreetmojo.com/volatility-formula/</a></p></li>
+</ul>
+<hr />
+<h4 id="avola-annual-volatility-done">AVOLA | Annual Volatility | DONE</h4>
+<ul>
+<li><p><code>list of floats = jhta.AVOLA(df, n=30, na=252, price='Close')</code></p></li>
+<li><p><a href="https://www.wallstreetmojo.com/volatility-formula/" class="uri">https://www.wallstreetmojo.com/volatility-formula/</a></p></li>
 </ul>
 <hr />
 <h3 id="volume-indicators"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/volume_indicators/volume_indicators.py">Volume Indicators</a></h3>
