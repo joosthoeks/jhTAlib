@@ -1849,6 +1849,14 @@ import jhtalib as jhta
 
 ---
 
+#### AVOLA | Annual Volatility | DONE
+
+- ```list of floats = jhta.AVOLA(df, n=30, na=252, price='Close')```
+
+- [https://www.wallstreetmojo.com/volatility-formula/](https://www.wallstreetmojo.com/volatility-formula/)
+
+---
+
 ### [Volume Indicators](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/volume_indicators/volume_indicators.py)
 
 #### AD | Chaikin A/D Line | DONE

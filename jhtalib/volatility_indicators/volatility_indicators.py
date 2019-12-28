@@ -172,3 +172,18 @@ def DVOLA(df, n=30, price='Close'):
             dvola = math.sqrt(pvariance)
         dvola_list.append(dvola)
     return dvola_list
+
+def AVOLA(df, n=30, na=252, price='Close'):
+    """
+    Annual Volatility
+    """
+    dvola_list = DVOLA(df, n, price)
+    avola_list = []
+    for i in range(len(df[price])):
+        if i + 1 < n:
+            avola = float('NaN')
+        else:
+            avola = math.sqrt(na) * dvola_list[i]
+        avola_list.append(avola)
+    return avola_list
+
