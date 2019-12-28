@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2019-11-12
+date: 2019-12-28
 ---
 
 # jhTAlib
@@ -1838,6 +1838,14 @@ import jhtalib as jhta
 - ```list of floats = jhta.TRANGE(df, high='High', low='Low', close='Close')```
 
 - [https://www.fmlabs.com/reference/default.htm?url=TR.htm](https://www.fmlabs.com/reference/default.htm?url=TR.htm)
+
+---
+
+#### DVOLA | Daily Volatility | DONE
+
+- ```list of floats = jhta.DVOLA(df, n=30, price='Close')```
+
+- [https://www.wallstreetmojo.com/volatility-formula/](https://www.wallstreetmojo.com/volatility-formula/)
 
 ---
 

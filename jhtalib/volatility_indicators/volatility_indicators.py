@@ -1,4 +1,6 @@
 import jhtalib as jhta
+import math
+import statistics
 
 
 def AEM(df, high='High', low='Low', volume='Volume'):
@@ -155,3 +157,18 @@ def TRANGE(df, high='High', low='Low', close='Close'):
         i += 1
     return tr_list
 
+def DVOLA(df, n=30, price='Close'):
+    """
+    Daily Volatility
+    """
+    dvola_list = []
+    for i in range(len(df[price])):
+        if i + 1 < n:
+            dvola = float('NaN')
+        else:
+            start = i + 1 - n
+            end = i + 1
+            pvariance = statistics.pvariance(df[price][start:end])
+            dvola = math.sqrt(pvariance)
+        dvola_list.append(dvola)
+    return dvola_list
