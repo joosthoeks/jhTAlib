@@ -9,7 +9,7 @@ with open('README.md', 'r') as f:
 
 setup(
     name='jhTAlib',
-    version='20191228.0',
+    version='20200204.0',
     author='Joost Hoeks',
     author_email='joosthoeks@gmail.com',
     description='Technical Analysis Library Time-Series',
@@ -24,3 +24,8 @@ setup(
     ],
 )
 
+"""
+Upload PyPI:
+$ python3 setup.py sdist bdist_wheel
+$ twine upload dist/*
+"""
