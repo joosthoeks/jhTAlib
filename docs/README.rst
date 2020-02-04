@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2019-12-28
+:Date:   2020-02-04
 
 .. contents::
    :depth: 3
@@ -776,6 +776,20 @@ STANDARDIZE \| Standardize \| DONE
 -  ``list of floats = jhta.STANDARDIZE(df, price='Close')``
 
 -  https://machinelearningmastery.com/normalize-standardize-time-series-data-python/
+
+--------------
+
+REMAP \| Remap \| DONE
+^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``float = jhta.REMAP(x, old_min=0, old_max=1000, new_min=0, new_max=100)``
+
+--------------
+
+REMAPS \| Remaps \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list of floats = jhta.REMAPS(df, old_min=0, old_max=1000, new_min=0, new_max=100, price='Close')``
 
 --------------
 

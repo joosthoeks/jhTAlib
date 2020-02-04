@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <meta name="author" content="Joost Hoeks">
-  <meta name="dcterms.date" content="2019-12-28">
+  <meta name="dcterms.date" content="2020-02-04">
   <title>jhTAlib</title>
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" href="pandoc.css">
@@ -17,7 +17,7 @@
 <header>
 <h1 class="title">jhTAlib</h1>
 <p class="author">Joost Hoeks</p>
-<p class="date">2019-12-28</p>
+<p class="date">2020-02-04</p>
 </header>
 <nav id="TOC">
 <ul>
@@ -521,6 +521,16 @@ $ python3 test.py</code></pre>
 <ul>
 <li><p><code>list of floats = jhta.STANDARDIZE(df, price='Close')</code></p></li>
 <li><p><a href="https://machinelearningmastery.com/normalize-standardize-time-series-data-python/" class="uri">https://machinelearningmastery.com/normalize-standardize-time-series-data-python/</a></p></li>
+</ul>
+<hr />
+<h4 id="remap-remap-done">REMAP | Remap | DONE</h4>
+<ul>
+<li><code>float = jhta.REMAP(x, old_min=0, old_max=1000, new_min=0, new_max=100)</code></li>
+</ul>
+<hr />
+<h4 id="remaps-remaps-done">REMAPS | Remaps | DONE</h4>
+<ul>
+<li><code>list of floats = jhta.REMAPS(df, old_min=0, old_max=1000, new_min=0, new_max=100, price='Close')</code></li>
 </ul>
 <hr />
 <h4 id="ratio-ratio-done">RATIO | Ratio | DONE</h4>
