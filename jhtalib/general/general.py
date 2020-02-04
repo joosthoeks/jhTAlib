@@ -52,6 +52,16 @@ def REMAP(x, old_min=0, old_max=1000, new_min=0, new_max=100):
     new_range = new_max - new_min
     return (((x - old_min) * new_range) / old_range) + new_min
 
+def REMAPS(df, old_min=0, old_max=1000, new_min=0, new_max=100, price='Close'):
+    """
+    Remaps
+    """
+    remap_list = []
+    for i in range(len(df[price])):
+        remap = REMAP(df[price][i], old_min=old_min, old_max=old_max, new_min=new_min, new_max=new_max)
+        remap_list.append(remap)
+    return remap_list
+
 def RATIO(df1, df2, price1='Close', price2='Close'):
     """
     Ratio

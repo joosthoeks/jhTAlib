@@ -675,7 +675,13 @@ import jhtalib as jhta
 
 #### REMAP | Remap | DONE
 
-- ```list of floats = jhta.REMAP(x, old_min=0, old_max=1000, new_min=0, new_max=100)```
+- ```float = jhta.REMAP(x, old_min=0, old_max=1000, new_min=0, new_max=100)```
+
+---
+
+#### REMAPS | Remaps | DONE
+
+- ```list of floats = jhta.REMAPS(df, old_min=0, old_max=1000, new_min=0, new_max=100, price='Close')```
 
 ---
 
