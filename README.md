@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2019-12-28
+date: 2020-02-04
 ---
 
 # jhTAlib
@@ -670,6 +670,12 @@ import jhtalib as jhta
 - ```list of floats = jhta.STANDARDIZE(df, price='Close')```
 
 - [https://machinelearningmastery.com/normalize-standardize-time-series-data-python/](https://machinelearningmastery.com/normalize-standardize-time-series-data-python/)
+
+---
+
+#### REMAP | Remap | DONE
+
+- ```list of floats = jhta.REMAP(x, old_min=0, old_max=1000, new_min=0, new_max=100)```
 
 ---
 

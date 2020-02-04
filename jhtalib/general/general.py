@@ -44,6 +44,14 @@ def STANDARDIZE(df, price='Close'):
         i += 1
     return standardize_list
 
+def REMAP(x, old_min=0, old_max=1000, new_min=0, new_max=100):
+    """
+    Remap
+    """
+    old_range = old_max - old_min
+    new_range = new_max - new_min
+    return (((x - old_min) * new_range) / old_range) + new_min
+
 def RATIO(df1, df2, price1='Close', price2='Close'):
     """
     Ratio
