@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2020-02-04
+date: 2020-02-11
 ---
 
 # jhTAlib
@@ -1944,6 +1944,12 @@ import jhtalib as jhta
 ## Notebooks
 
 - [https://github.com/joosthoeks/jhTAlib/tree/master/notebook](https://github.com/joosthoeks/jhTAlib/tree/master/notebook)
+
+### A Sane and Simple bitcoin Savings plan SSS
+
+- [https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/a_sane_and_simple_bitcoin_savings_plan_(sss).ipynb](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/a_sane_and_simple_bitcoin_savings_plan_(sss).ipynb)
+
+---
 
 ### Dollar Cost Averaging Discount DCAD
 

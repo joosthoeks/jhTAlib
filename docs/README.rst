@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2020-02-04
+:Date:   2020-02-11
 
 .. contents::
    :depth: 3
@@ -2285,6 +2285,13 @@ Notebooks
 ---------
 
 -  https://github.com/joosthoeks/jhTAlib/tree/master/notebook
+
+A Sane and Simple bitcoin Savings plan SSS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/a_sane_and_simple_bitcoin_savings_plan_(sss).ipynb
+
+--------------
 
 Dollar Cost Averaging Discount DCAD
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
