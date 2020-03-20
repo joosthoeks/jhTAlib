@@ -1,3 +1,5 @@
+from .decorators import *
+
 from .behavioral_techniques import *
 from .candlestick import *
 from .cycle_indicators import *
