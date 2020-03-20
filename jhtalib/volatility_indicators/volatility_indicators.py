@@ -1,6 +1,11 @@
-import jhtalib as jhta
+# Import Built-Ins:
 import math
 import statistics
+
+# Import Third-Party:
+
+# Import Homebrew:
+import jhtalib as jhta
 
 
 def AEM(df, high='High', low='Low', volume='Volume'):

@@ -1,5 +1,10 @@
+# Import Built-Ins:
 import csv
 import urllib.request
+
+# Import Third-Party:
+
+# Import Homebrew:
 import jhtalib as jhta
 
 
