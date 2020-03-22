@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <meta name="author" content="Joost Hoeks">
-  <meta name="dcterms.date" content="2020-02-11">
+  <meta name="dcterms.date" content="2020-03-22">
   <title>jhTAlib</title>
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" href="pandoc.css">
@@ -17,7 +17,7 @@
 <header>
 <h1 class="title">jhTAlib</h1>
 <p class="author">Joost Hoeks</p>
-<p class="date">2020-02-11</p>
+<p class="date">2020-03-22</p>
 </header>
 <nav id="TOC">
 <ul>
@@ -351,12 +351,12 @@ $ python3 test.py</code></pre>
 <hr />
 <h4 id="insbar-inside-bar-done">INSBAR | Inside Bar | DONE</h4>
 <ul>
-<li><code>list of booleans = jhta.INSBAR(df, high='High', low='Low')</code></li>
+<li><code>list of ints = jhta.INSBAR(df, high='High', low='Low')</code></li>
 </ul>
 <hr />
 <h4 id="outsbar-outside-bar-done">OUTSBAR | Outside Bar | DONE</h4>
 <ul>
-<li><code>list of booleans = jhta.OUTSBAR(df, high='High', low='Low')</code></li>
+<li><code>list of ints = jhta.OUTSBAR(df, high='High', low='Low')</code></li>
 </ul>
 <hr />
 <h3 id="cycle-indicators"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/cycle_indicators/cycle_indicators.py">Cycle Indicators</a></h3>
@@ -511,6 +511,12 @@ $ python3 test.py</code></pre>
 </ul>
 <hr />
 <h3 id="experimental"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/experimental/experimental.py">Experimental</a></h3>
+<h4 id="montecarlo-monte-carlo-done">MONTECARLO | Monte Carlo | DONE</h4>
+<ul>
+<li><p><code>list of ints = jhta.MONTECARLO(df, price='Close')</code></p></li>
+<li><p><a href="https://en.wikipedia.org/wiki/Monte_Carlo_method" class="uri">https://en.wikipedia.org/wiki/Monte_Carlo_method</a></p></li>
+</ul>
+<hr />
 <h3 id="general"><a href="https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/general/general.py">General</a></h3>
 <h4 id="normalize-normalize-done">NORMALIZE | Normalize | DONE</h4>
 <ul>

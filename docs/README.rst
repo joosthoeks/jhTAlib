@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2020-02-11
+:Date:   2020-03-22
 
 .. contents::
    :depth: 3
@@ -526,14 +526,14 @@ IMI \| Intraday Momentum Index \| DONE
 INSBAR \| Inside Bar \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
--  ``list of booleans = jhta.INSBAR(df, high='High', low='Low')``
+-  ``list of ints = jhta.INSBAR(df, high='High', low='Low')``
 
 --------------
 
 OUTSBAR \| Outside Bar \| DONE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
--  ``list of booleans = jhta.OUTSBAR(df, high='High', low='Low')``
+-  ``list of ints = jhta.OUTSBAR(df, high='High', low='Low')``
 
 --------------
 
@@ -757,6 +757,15 @@ SWCLPS \| Swing Weighted Close Price - previous Weighted Close Price Summation \
 
 `Experimental <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/experimental/experimental.py>`__
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+MONTECARLO \| Monte Carlo \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list of ints = jhta.MONTECARLO(df, price='Close')``
+
+-  https://en.wikipedia.org/wiki/Monte_Carlo_method
+
+--------------
 
 `General <https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/general/general.py>`__
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
