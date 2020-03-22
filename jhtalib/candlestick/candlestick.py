@@ -185,9 +185,9 @@ def INSBAR(df, high='High', low='Low'):
         if i < 1:
             insbar = float('NaN')
         else:
-            insbar = False
+            insbar = 0
             if df[high][i] < df[high][i - 1] and df[low][i] > df[low][i - 1]:
-                insbar = True
+                insbar = 1
         insbar_list.append(insbar)
         i += 1
     return insbar_list
@@ -202,9 +202,9 @@ def OUTSBAR(df, high='High', low='Low'):
         if i < 1:
             outsbar = float('NaN')
         else:
-            outsbar = False
+            outsbar = 0
             if df[high][i] > df[high][i - 1] and df[low][i] < df[low][i - 1]:
-                outsbar = True
+                outsbar = 1
         outsbar_list.append(outsbar)
         i += 1
     return outsbar_list

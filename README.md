@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2020-02-11
+date: 2020-03-22
 ---
 
 # jhTAlib
@@ -457,13 +457,13 @@ import jhtalib as jhta
 
 #### INSBAR | Inside Bar | DONE
 
-- ```list of booleans = jhta.INSBAR(df, high='High', low='Low')```
+- ```list of ints = jhta.INSBAR(df, high='High', low='Low')```
 
 ---
 
 #### OUTSBAR | Outside Bar | DONE
 
-- ```list of booleans = jhta.OUTSBAR(df, high='High', low='Low')```
+- ```list of ints = jhta.OUTSBAR(df, high='High', low='Low')```
 
 ---
 
