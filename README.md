@@ -655,6 +655,14 @@ import jhtalib as jhta
 
 ### [Experimental](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/experimental/experimental.py)
 
+#### MONTECARLO | Monte Carlo | DONE
+
+- ```list of ints = jhta.MONTECARLO(df, price='Close')```
+
+- [https://en.wikipedia.org/wiki/Monte_Carlo_method](https://en.wikipedia.org/wiki/Monte_Carlo_method)
+
+---
+
 ### [General](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/general/general.py)
 
 #### NORMALIZE | Normalize | DONE
