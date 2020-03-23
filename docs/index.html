@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <meta name="author" content="Joost Hoeks">
-  <meta name="dcterms.date" content="2020-03-22">
+  <meta name="dcterms.date" content="2020-03-23">
   <title>jhTAlib</title>
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" href="pandoc.css">
@@ -17,7 +17,7 @@
 <header>
 <h1 class="title">jhTAlib</h1>
 <p class="author">Joost Hoeks</p>
-<p class="date">2020-03-22</p>
+<p class="date">2020-03-23</p>
 </header>
 <nav id="TOC">
 <ul>
@@ -27,6 +27,8 @@
 <li><a href="#install">Install</a></li>
 <li><a href="#update">Update</a></li>
 <li><a href="#in-colab">In Colab</a></li>
+<li><a href="#check-installation">Check Installation</a></li>
+<li><a href="#basic-usage">Basic Usage</a></li>
 <li><a href="#examples">Examples</a><ul>
 <li><a href="#example-1">Example 1</a></li>
 <li><a href="#example-2">Example 2</a></li>
@@ -123,6 +125,38 @@ import jhtalib as jhta</code></pre>
 import jhtalib as jhta
 %cd &#39;/content&#39;
 !rm -rf ./jhTAlib/</code></pre>
+<hr />
+<h2 id="check-installation">Check Installation</h2>
+<pre><code>$ python3
+&gt;&gt;&gt; import jhtalib as jhta
+&gt;&gt;&gt; jhta.example()</code></pre>
+<p>If not errors then installation is correct.</p>
+<pre><code>&gt;&gt;&gt; quit()</code></pre>
+<hr />
+<h2 id="basic-usage">Basic Usage</h2>
+<pre><code># Import Built-Ins:
+from pprint import pprint as pp
+
+# Import Third-Party:
+
+# Import Homebrew:
+import jhtalib as jhta
+
+
+# df is DataFeed:
+df = {
+    &#39;datetime&#39;: (&#39;20151217&#39;, &#39;20151218&#39;, &#39;20151221&#39;, &#39;20151222&#39;, &#39;20151223&#39;, &#39;20151224&#39;, &#39;20151228&#39;, &#39;20151229&#39;, &#39;20151230&#39;, &#39;20151231&#39;),
+    &#39;Open&#39;: (235.8, 232.3, 234.1, 232.2, 232.7, 235.4, 236.9, 234.85, 236.45, 235.0),
+    &#39;High&#39;: (238.05, 236.9, 237.3, 232.4, 235.2, 236.15, 236.9, 237.6, 238.3, 237.25),
+    &#39;Low&#39;: (234.55, 230.6, 230.2, 226.8, 231.5, 233.85, 233.05, 234.6, 234.55, 234.4),
+    &#39;Close&#39;: (234.6, 233.6, 230.2, 230.05, 234.15, 236.15, 233.25, 237.6, 235.75, 234.4),
+    &#39;Volume&#39;: (448294, 629039, 292528, 214170, 215545, 23548, 97574, 192908, 176839, 69347)
+     }
+
+# basic usage:
+#pp (df)
+pp (jhta.SMA(df, 10))
+#pp (jhta.BBANDS(df, 10))</code></pre>
 <hr />
 <h2 id="examples">Examples</h2>
 <pre><code>$ cd example/</code></pre>

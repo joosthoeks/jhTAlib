@@ -146,6 +146,8 @@ pp (jhta.SMA(df, 10))
 #pp (jhta.BBANDS(df, 10))
 ```
 
+---
+
 ## Examples
 
 ```

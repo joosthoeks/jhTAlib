@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2020-03-22
+:Date:   2020-03-23
 
 .. contents::
    :depth: 3
@@ -121,6 +121,54 @@ From `source <https://github.com/joosthoeks/jhTAlib>`__ - `source mirror
     import jhtalib as jhta
     %cd '/content'
     !rm -rf ./jhTAlib/
+
+--------------
+
+Check Installation
+------------------
+
+::
+
+    $ python3
+    >>> import jhtalib as jhta
+    >>> jhta.example()
+
+If not errors then installation is correct.
+
+::
+
+    >>> quit()
+
+--------------
+
+Basic Usage
+-----------
+
+::
+
+    # Import Built-Ins:
+    from pprint import pprint as pp
+
+    # Import Third-Party:
+
+    # Import Homebrew:
+    import jhtalib as jhta
+
+
+    # df is DataFeed:
+    df = {
+        'datetime': ('20151217', '20151218', '20151221', '20151222', '20151223', '20151224', '20151228', '20151229', '20151230', '20151231'),
+        'Open': (235.8, 232.3, 234.1, 232.2, 232.7, 235.4, 236.9, 234.85, 236.45, 235.0),
+        'High': (238.05, 236.9, 237.3, 232.4, 235.2, 236.15, 236.9, 237.6, 238.3, 237.25),
+        'Low': (234.55, 230.6, 230.2, 226.8, 231.5, 233.85, 233.05, 234.6, 234.55, 234.4),
+        'Close': (234.6, 233.6, 230.2, 230.05, 234.15, 236.15, 233.25, 237.6, 235.75, 234.4),
+        'Volume': (448294, 629039, 292528, 214170, 215545, 23548, 97574, 192908, 176839, 69347)
+         }
+
+    # basic usage:
+    #pp (df)
+    pp (jhta.SMA(df, 10))
+    #pp (jhta.BBANDS(df, 10))
 
 --------------
 
