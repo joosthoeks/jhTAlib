@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2020-03-22
+date: 2020-03-23
 ---
 
 # jhTAlib
@@ -98,6 +98,22 @@ From [source](https://github.com/joosthoeks/jhTAlib) - [source mirror 1](https:/
 import jhtalib as jhta
 %cd '/content'
 !rm -rf ./jhTAlib/
+```
+
+---
+
+## Check Installation
+
+```
+$ python3
+>>> import jhtalib as jhta
+>>> jhta.example()
+```
+
+If not errors then installation is correct.
+
+```
+>>> quit()
 ```
 
 ---
