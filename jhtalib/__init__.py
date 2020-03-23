@@ -1,6 +1,7 @@
 from .decorators import *
 from .helpers import *
 
+
 from .behavioral_techniques import *
 from .candlestick import *
 from .cycle_indicators import *
@@ -19,3 +20,5 @@ from .uncategorised import *
 from .volatility_indicators import *
 from .volume_indicators import *
 
+
+from .example import *
