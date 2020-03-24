@@ -7,6 +7,7 @@ import random
 import jhtalib as jhta
 
 
+@jhta.timer
 def MONTECARLO(df, price='Close'):
     """
     Monte Carlo
