@@ -1,6 +1,10 @@
-
-
+# Import Built-Ins:
 from setuptools import setup, find_packages
+
+# Import Third-Party:
+
+# Import Homebrew:
+import jhtalib as jhta
 
 
 with open('README.md', 'r') as f:
@@ -9,19 +13,29 @@ with open('README.md', 'r') as f:
 
 setup(
     name='jhTAlib',
-    version='20200323.0',
-    author='Joost Hoeks',
-    author_email='joosthoeks@gmail.com',
+    version=jhta.__version__,
     description='Technical Analysis Library Time-Series',
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/joosthoeks/jhTAlib',
-    packages=find_packages(),
+    author='Joost Hoeks',
+    author_email='joosthoeks@gmail.com',
     classifiers=[
-    'Programming Language :: Python :: 3',
     'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
     'Operating System :: OS Independent',
+    'Programming Language :: Python :: 3',
     ],
+    project_urls={
+    'Documentation': 'https://github.com/joosthoeks/jhTAlib/blob/master/README.md',
+    'Funding': 'https://jhtalib.joosthoeks.com/#donation-and-funding',
+    'Say Thanks!': 'https://github.com/joosthoeks/jhTAlib/stargazers',
+    'Source': 'https://github.com/joosthoeks/jhTAlib',
+    'Tracker': 'https://github.com/joosthoeks/jhTAlib/issues',
+    },
+    packages=find_packages(),
+    py_modules=[],
+    install_requires=[],
+    python_requires='>=3',
 )
 
 """
