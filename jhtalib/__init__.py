@@ -1,6 +1,6 @@
 
 
-__version__ = '20200323.0'
+__version__ = '20200324.0'
 
 
 from .decorators import *
