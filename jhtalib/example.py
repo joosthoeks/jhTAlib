@@ -7,6 +7,7 @@ from pprint import pprint as pp
 import jhtalib as jhta
 
 
+@jhta.timer
 def example():
 
     # df is DataFeed:
