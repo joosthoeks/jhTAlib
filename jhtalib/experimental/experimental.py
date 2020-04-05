@@ -13,3 +13,18 @@ def MONTECARLO(df, price='Close'):
     Monte Carlo
     """
     return [random.randint(0, 1) for i in range(len(df[price]))]
+
+def PPAMPLITUDE(df, n, price='Close'):
+    """
+    Peak-to-Peak Amplitude
+    """
+    ppamplitude_list = []
+    for i in range(len(df[price])):
+        if i + 1 < n:
+            ppamplitude = float('NaN')
+        else:
+            start = i + 1 - n
+            end = i + 1
+            ppamplitude = max(df[price][start:end]) - min(df[price][start:end])
+        ppamplitude_list.append(ppamplitude)
+    return ppamplitude_list

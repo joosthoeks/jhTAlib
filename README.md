@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2020-03-23
+date: 2020-04-05
 ---
 
 # jhTAlib
@@ -706,6 +706,14 @@ import jhtalib as jhta
 - ```list of ints = jhta.MONTECARLO(df, price='Close')```
 
 - [https://en.wikipedia.org/wiki/Monte_Carlo_method](https://en.wikipedia.org/wiki/Monte_Carlo_method)
+
+---
+
+#### PPAMPLITUDE | Peak-to-Peak Amplitude | DONE
+
+- ```list of floats = jhta.PPAMPLITUDE(df, n, price='Close')```
+
+- [https://en.wikipedia.org/wiki/Amplitude](https://en.wikipedia.org/wiki/Amplitude)
 
 ---
 
