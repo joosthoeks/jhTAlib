@@ -717,6 +717,14 @@ import jhtalib as jhta
 
 ---
 
+#### PAMPLITUDE | Peak Amplitude | DONE
+
+- ```list of floats = jhta.PAMPLITUDE(df, n, price='Close')```
+
+- [https://en.wikipedia.org/wiki/Amplitude](https://en.wikipedia.org/wiki/Amplitude)
+
+---
+
 ### [General](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/general/general.py)
 
 #### NORMALIZE | Normalize | DONE

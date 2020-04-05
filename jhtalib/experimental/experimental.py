@@ -28,3 +28,17 @@ def PPAMPLITUDE(df, n, price='Close'):
             ppamplitude = max(df[price][start:end]) - min(df[price][start:end])
         ppamplitude_list.append(ppamplitude)
     return ppamplitude_list
+
+def PAMPLITUDE(df, n, price='Close'):
+    """
+    Peak Amplitude
+    """
+    pamplitude_list = []
+    ppamplitude_list = jhta.PPAMPLITUDE(df, n, price)
+    for i in range(len(df[price])):
+        if i + 1 < n:
+            pamplitude = float('NaN')
+        else:
+            pamplitude = ppamplitude_list[i] / 2
+        pamplitude_list.append(pamplitude)
+    return pamplitude_list
