@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2020-03-23
+:Date:   2020-04-05
 
 .. contents::
    :depth: 3
@@ -812,6 +812,24 @@ MONTECARLO \| Monte Carlo \| DONE
 -  ``list of ints = jhta.MONTECARLO(df, price='Close')``
 
 -  https://en.wikipedia.org/wiki/Monte_Carlo_method
+
+--------------
+
+PPAMPLITUDE \| Peak-to-Peak Amplitude \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list of floats = jhta.PPAMPLITUDE(df, n, price='Close')``
+
+-  https://en.wikipedia.org/wiki/Amplitude
+
+--------------
+
+PAMPLITUDE \| Peak Amplitude \| DONE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-  ``list of floats = jhta.PAMPLITUDE(df, n, price='Close')``
+
+-  https://en.wikipedia.org/wiki/Amplitude
 
 --------------
 
