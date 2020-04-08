@@ -11,9 +11,8 @@ def ASI(df, L, open='Open', high='High', low='Low', close='Close'):
     Accumulation Swing Index (J. Welles Wilder)
     """
     asi_list = []
-    si_list = SI(df, L, open, high, low, close)
-    i = 0
-    while i < len(df[close]):
+    si_list = jhta.SI(df, L, open, high, low, close)
+    for i in range(len(df[close])):
         if i < 1:
             asi = float('NaN')
             asi_list.append(asi)
@@ -21,7 +20,6 @@ def ASI(df, L, open='Open', high='High', low='Low', close='Close'):
         else:
             asi = asi + si_list[i]
             asi_list.append(asi)
-        i += 1
     return asi_list
 
 def SI(df, L, open='Open', high='High', low='Low', close='Close'):
@@ -29,8 +27,7 @@ def SI(df, L, open='Open', high='High', low='Low', close='Close'):
     Swing Index (J. Welles Wilder)
     """
     si_list = []
-    i = 0
-    while i < len(df[close]):
+    for i in range(len(df[close])):
         if i < 1:
             si = float('NaN')
         else:
@@ -52,7 +49,6 @@ def SI(df, L, open='Open', high='High', low='Low', close='Close'):
                 K = K2
             si = 50 * (N / R) * (K / L)
         si_list.append(si)
-        i += 1
     return si_list
 
 def SAVGP(df, open='Open', high='High', low='Low', close='Close'):
@@ -61,14 +57,12 @@ def SAVGP(df, open='Open', high='High', low='Low', close='Close'):
     """
     savgp_list = []
     avgp_list = jhta.AVGPRICE(df, open, high, low, close)
-    i = 0
-    while i < len(df[close]):
+    for i in range(len(df[close])):
         if i < 1:
             savgp = float('NaN')
         else:
             savgp = avgp_list[i] - avgp_list[i - 1]
         savgp_list.append(savgp)
-        i += 1
     return savgp_list
 
 def SAVGPS(df, open='Open', high='High', low='Low', close='Close'):
@@ -76,9 +70,8 @@ def SAVGPS(df, open='Open', high='High', low='Low', close='Close'):
     Swing Average Price - previous Average Price Summation
     """
     savgps_list = []
-    savgp_list = SAVGP(df, open, high, low, close)
-    i = 0
-    while i < len(df[close]):
+    savgp_list = jhta.SAVGP(df, open, high, low, close)
+    for i in range(len(df[close])):
         if i < 1:
             savgps = float('NaN')
             savgps_list.append(savgps)
@@ -86,33 +79,24 @@ def SAVGPS(df, open='Open', high='High', low='Low', close='Close'):
         else:
             savgps = savgps + savgp_list[i]
             savgps_list.append(savgps)
-        i += 1
     return savgps_list
 
 def SCO(df, open='Open', close='Close'):
     """
     Swing Close - Open
     """
-    sco_list = []
-    i = 0
-    while i < len(df[close]):
-        sco = df[close][i] - df[open][i]
-        sco_list.append(sco)
-        i += 1
-    return sco_list
+    return [df[close][i] - df[open][i] for i in range(len(df[close]))]
 
 def SCOS(df, open='Open', close='Close'):
     """
     Swing Close - Open Summation
     """
     scos_list = []
-    sco_list = SCO(df, open, close)
+    sco_list = jhta.SCO(df, open, close)
     scos = .0
-    i = 0
-    while i < len(df[close]):
+    for i in range(len(df[close])):
         scos = scos + sco_list[i]
         scos_list.append(scos)
-        i += 1
     return scos_list
 
 def SMEDP(df, high='High', low='Low'):
@@ -121,14 +105,12 @@ def SMEDP(df, high='High', low='Low'):
     """
     smedp_list = []
     medp_list = jhta.MEDPRICE(df, high, low)
-    i = 0
-    while i < len(df[low]):
+    for i in range(len(df[low])):
         if i < 1:
             smedp = float('NaN')
         else:
             smedp = medp_list[i] - medp_list[i - 1]
         smedp_list.append(smedp)
-        i += 1
     return smedp_list
 
 def SMEDPS(df, high='High', low='Low'):
@@ -136,9 +118,8 @@ def SMEDPS(df, high='High', low='Low'):
     Swing Median Price - previous Median Price Summation
     """
     smedps_list = []
-    smedp_list = SMEDP(df, high, low)
-    i = 0
-    while i < len(df[low]):
+    smedp_list = jhta.SMEDP(df, high, low)
+    for i in range(len(df[low])):
         if i < 1:
             smedps = float('NaN')
             smedps_list.append(smedps)
@@ -146,7 +127,6 @@ def SMEDPS(df, high='High', low='Low'):
         else:
             smedps = smedps + smedp_list[i]
             smedps_list.append(smedps)
-        i += 1
     return smedps_list
 
 def SPP(df, price='Close'):
@@ -154,14 +134,12 @@ def SPP(df, price='Close'):
     Swing Price - previous Price
     """
     spp_list = []
-    i = 0
-    while i < len(df[price]):
+    for i in range(len(df[price])):
         if i < 1:
             spp = float('NaN')
         else:
             spp = df[price][i] - df[price][i - 1]
         spp_list.append(spp)
-        i += 1
     return spp_list
 
 def SPPS(df, price='Close'):
@@ -169,9 +147,8 @@ def SPPS(df, price='Close'):
     Swing Price - previous Price Summation
     """
     spps_list = []
-    spp_list = SPP(df, price)
-    i = 0
-    while i < len(df[price]):
+    spp_list = jhta.SPP(df, price)
+    for i in range(len(df[price])):
         if i < 1:
             spps = float('NaN')
             spps_list.append(spps)
@@ -179,7 +156,6 @@ def SPPS(df, price='Close'):
         else:
             spps = spps + spp_list[i]
             spps_list.append(spps)
-        i += 1
     return spps_list
 
 def STYPP(df, high='High', low='Low', close='Close'):
@@ -188,14 +164,12 @@ def STYPP(df, high='High', low='Low', close='Close'):
     """
     stypp_list = []
     typp_list = jhta.TYPPRICE(df, high, low, close)
-    i = 0
-    while i < len(df[close]):
+    for i in range(len(df[close])):
         if i < 1:
             stypp = float('NaN')
         else:
             stypp = typp_list[i] - typp_list[i - 1]
         stypp_list.append(stypp)
-        i += 1
     return stypp_list
 
 def STYPPS(df, high='High', low='Low', close='Close'):
@@ -203,9 +177,8 @@ def STYPPS(df, high='High', low='Low', close='Close'):
     Swing Typical Price - previous Typical Price Summation
     """
     stypps_list = []
-    stypp_list = STYPP(df, high, low, close)
-    i = 0
-    while i < len(df[close]):
+    stypp_list = jhta.STYPP(df, high, low, close)
+    for i in range(len(df[close])):
         if i < 1:
             stypps = float('NaN')
             stypps_list.append(stypps)
@@ -213,7 +186,6 @@ def STYPPS(df, high='High', low='Low', close='Close'):
         else:
             stypps = stypps + stypp_list[i]
             stypps_list.append(stypps)
-        i += 1
     return stypps_list
 
 def SWCLP(df, high='High', low='Low', close='Close'):
@@ -222,14 +194,12 @@ def SWCLP(df, high='High', low='Low', close='Close'):
     """
     swclp_list = []
     wclp_list = jhta.WCLPRICE(df, high, low, close)
-    i = 0
-    while i < len(df[close]):
+    for i in range(len(df[close])):
         if i < 1:
             swclp = float('NaN')
         else:
             swclp = wclp_list[i] - wclp_list[i - 1]
         swclp_list.append(swclp)
-        i += 1
     return swclp_list
 
 def SWCLPS(df, high='High', low='Low', close='Close'):
@@ -237,9 +207,8 @@ def SWCLPS(df, high='High', low='Low', close='Close'):
     Swing Weighted Close Price - previous Weighted Close Price Summation
     """
     swclps_list = []
-    swclp_list = SWCLP(df, high, low, close)
-    i = 0
-    while i < len(df[close]):
+    swclp_list = jhta.SWCLP(df, high, low, close)
+    for i in range(len(df[close])):
         if i < 1:
             swclps = float('NaN')
             swclps_list.append(swclps)
@@ -247,5 +216,4 @@ def SWCLPS(df, high='High', low='Low', close='Close'):
         else:
             swclps = swclps + swclp_list[i]
             swclps_list.append(swclps)
-        i += 1
     return swclps_list
