@@ -44,18 +44,14 @@ def POR(hitrate_float, profit_loss_ratio_float):
     ]
 
     key_hitrate = 0
-    i = 0
-    while i < len(hitrate_list):
+    for i in range(len(hitrate_list)):
         if hitrate_float >= hitrate_list[i]:
             key_hitrate = i
-        i += 1
 
     key_profit_loss_ratio = 0
-    i = 0
-    while i < len(profit_loss_ratio_list):
+    for i in range(len(profit_loss_ratio_list)):
         if profit_loss_ratio_float >= profit_loss_ratio_list[i]:
             key_profit_loss_ratio = i
-        i += 1
 
     return int(table_lucas_lebeau_list[key_profit_loss_ratio][key_hitrate])
 
@@ -70,14 +66,12 @@ def RET(df, price='Close'):
     Return
     """
     ret_list = []
-    i = 0
-    while i < len(df[price]):
+    for i in range(len(df[price])):
         if i < 1:
             ret = float('NaN')
         else:
             ret = df[price][i] - df[price][i - 1]
         ret_list.append(ret)
-        i += 1
     return ret_list
 
 def RETS(df, price='Close'):
@@ -85,9 +79,8 @@ def RETS(df, price='Close'):
     Returns
     """
     rets_list = []
-    ret_list = RET(df, price)
-    i = 0
-    while i < len(df[price]):
+    ret_list = jhta.RET(df, price)
+    for i in range(len(df[price])):
         if i < 1:
             rets = float('NaN')
             rets_list.append(rets)
@@ -95,7 +88,6 @@ def RETS(df, price='Close'):
         else:
             rets = rets + ret_list[i]
             rets_list.append(rets)
-        i += 1
     return rets_list
 
 def PRET(df, price='Close'):
@@ -103,15 +95,13 @@ def PRET(df, price='Close'):
     %Return
     """
     pret_list = []
-    ret_list = RET(df, price)
-    i = 0
-    while i < len(df[price]):
+    ret_list = jhta.RET(df, price)
+    for i in range(len(df[price])):
         if i < 1:
             pret = float('NaN')
         else:
             pret = ret_list[i] / df[price][i - 1]
         pret_list.append(pret)
-        i += 1
     return pret_list
 
 def PRETS(df, price='Close'):
@@ -119,9 +109,8 @@ def PRETS(df, price='Close'):
     %Returns
     """
     prets_list = []
-    pret_list = PRET(df, price)
-    i = 0
-    while i < len(df[price]):
+    pret_list = jhta.PRET(df, price)
+    for i in range(len(df[price])):
         if i < 1:
             prets = float('NaN')
             prets_list.append(prets)
@@ -129,5 +118,4 @@ def PRETS(df, price='Close'):
         else:
             prets = prets + pret_list[i]
             prets_list.append(prets)
-        i += 1
     return prets_list
