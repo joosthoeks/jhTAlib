@@ -60,8 +60,7 @@ def DF2CSV(df, csv_file_path, datetime='datetime', Open='Open', high='High', low
         fieldnames = [datetime, Open, high, low, close, volume]
         writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
         writer.writeheader()
-        i = 0
-        while i < len(df[close]):
+        for i in range(len(df[close])):
             writer.writerow({
                 datetime: df[datetime][i],
                 Open: float(df[Open][i]),
@@ -70,7 +69,6 @@ def DF2CSV(df, csv_file_path, datetime='datetime', Open='Open', high='High', low
                 close: float(df[close][i]),
                 volume: float(df[volume][i])
                 })
-            i += 1
 
 def DF2DFREV(df, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume'):
     """
@@ -144,8 +142,7 @@ def DF2HEIKIN_ASHI(df, datetime='datetime', open='Open', high='High', low='Low',
     ha_High_list = []
     ha_Low_list = []
     ha_Close_list = []
-    i = 0
-    while i < len(df[close]):
+    for i in range(len(df[close])):
         if i is 0:
             ha_Open = (df[open][i] + df[close][i]) / 2
             ha_Close = (df[open][i] + df[high][i] + df[low][i] + df[close][i]) / 4
@@ -160,7 +157,6 @@ def DF2HEIKIN_ASHI(df, datetime='datetime', open='Open', high='High', low='Low',
         ha_High_list.append(float(ha_High))
         ha_Low_list.append(float(ha_Low))
         ha_Close_list.append(float(ha_Close))
-        i += 1
     return dict({
         datetime: tuple(df[datetime]),
         open: tuple(ha_Open_list),
