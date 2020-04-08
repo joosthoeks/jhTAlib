@@ -1,6 +1,6 @@
 
 
-__version__ = '20200405.0'
+__version__ = '20200408.0'
 
 
 from .decorators import *
@@ -27,3 +27,10 @@ from .volume_indicators import *
 
 
 from .example import *
+
+
+"""
+Upload PyPI:
+$ python3 setup.py sdist bdist_wheel
+$ twine upload dist/*
+"""
