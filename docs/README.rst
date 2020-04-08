@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2020-04-05
+:Date:   2020-04-08
 
 .. contents::
    :depth: 3
@@ -540,7 +540,7 @@ CDLBODYM \| Candle Body Momentum \| DONE
 GAP \| Gap \| DONE
 ^^^^^^^^^^^^^^^^^^
 
--  ``list of floats = jhta.GAP(df, high='High', low='Low', close='Close')``
+-  ``list of floats = jhta.GAP(df, high='High', low='Low')``
 
 --------------
 

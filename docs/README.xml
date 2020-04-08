@@ -8268,7 +8268,7 @@
 <office:text>
 <text:p text:style-name="Title">jhTAlib</text:p>
 <text:p text:style-name="Author">Joost Hoeks</text:p>
-<text:p text:style-name="Date">2020-04-05</text:p>
+<text:p text:style-name="Date">2020-04-08</text:p>
 <text:h text:style-name="Heading_20_1" text:outline-level="1">jhTAlib</text:h>
 <text:p text:style-name="First_20_paragraph">Technical Analysis Library
 Time-Series</text:p>
@@ -8714,7 +8714,7 @@ Candle Body Momentum | DONE</text:h>
 | DONE</text:h>
 <text:list text:style-name="L30">
   <text:list-item>
-    <text:p text:style-name="P84"><text:span text:style-name="Source_Text">list of floats = jhta.GAP(df, high='High', low='Low', close='Close')</text:span></text:p>
+    <text:p text:style-name="P84"><text:span text:style-name="Source_Text">list of floats = jhta.GAP(df, high='High', low='Low')</text:span></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
