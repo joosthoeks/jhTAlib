@@ -12,10 +12,9 @@ def BBANDS(df, n, f=2, high='High', low='Low', close='Close'):
     """
     bbands_dict = {'midband': [], 'upperband': [], 'lowerband': []}
     tp_dict = {'tp': jhta.TYPPRICE(df, high, low, close)}
-    sma_list = SMA(tp_dict, n, 'tp')
+    sma_list = jhta.SMA(tp_dict, n, 'tp')
     stdev_list = jhta.STDEV(tp_dict, n, 'tp')
-    i = 0
-    while i < len(df[close]):
+    for i in range(len(df[close])):
         if i + 1 < n:
             midband = float('NaN')
             upperband = float('NaN')
@@ -27,7 +26,6 @@ def BBANDS(df, n, f=2, high='High', low='Low', close='Close'):
         bbands_dict['midband'].append(midband)
         bbands_dict['upperband'].append(upperband)
         bbands_dict['lowerband'].append(lowerband)
-        i += 1
     return bbands_dict
 
 def BBANDW(df, n, f=2, high='High', low='Low', close='Close'):
@@ -37,14 +35,12 @@ def BBANDW(df, n, f=2, high='High', low='Low', close='Close'):
     bbandw_list = []
     tp_dict = {'tp': jhta.TYPPRICE(df, high, low, close)}
     stdev_list = jhta.STDEV(tp_dict, n, 'tp')
-    i = 0
-    while i < len(df[close]):
+    for i in range(len(df[close])):
         if i + 1 < n:
             bbandw = float('NaN')
         else:
             bbandw = 2 * f * stdev_list[i]
         bbandw_list.append(bbandw)
-        i += 1
     return bbandw_list
 
 def DEMA(df, n):
@@ -57,8 +53,7 @@ def EMA(df, n, price='Close'):
     Exponential Moving Average
     """
     ema_list = []
-    i = 0
-    while i < len(df[price]):
+    for i in range(len(df[price])):
         if i + 1 < n:
             ema = float('NaN')
         else:
@@ -67,7 +62,6 @@ def EMA(df, n, price='Close'):
             k = 2 / (n + 1)
             ema = k * df[price][i] + (1 - k) * ema
         ema_list.append(ema)
-        i += 1
     return ema_list
 
 def ENVP(df, pct=.01, price='Close'):
@@ -75,13 +69,11 @@ def ENVP(df, pct=.01, price='Close'):
     Envelope Percent
     """
     envp_dict = {'hi': [], 'lo': []}
-    i = 0
-    while i < len(df[price]):
+    for i in range(len(df[price])):
         hi = df[price][i] + df[price][i] * pct
         lo = df[price][i] - df[price][i] * pct
         envp_dict['hi'].append(hi)
         envp_dict['lo'].append(lo)
-        i += 1
     return envp_dict
 
 def KAMA(df, n):
@@ -109,8 +101,7 @@ def MIDPOINT(df, n, price='Close'):
     MidPoint over period
     """
     midpoint_list = []
-    i = 0
-    while i < len(df[price]):
+    for i in range(len(df[price])):
         if i + 1 < n:
             midpoint = float('NaN')
         else:
@@ -118,7 +109,6 @@ def MIDPOINT(df, n, price='Close'):
             end = i + 1
             midpoint = (max(df[price][start:end]) + min(df[price][start:end])) / 2
         midpoint_list.append(midpoint)
-        i += 1
     return midpoint_list
 
 def MIDPRICE(df, n, high='High', low='Low'):
@@ -126,8 +116,7 @@ def MIDPRICE(df, n, high='High', low='Low'):
     Midpoint Price over period
     """
     midprice_list = []
-    i = 0
-    while i < len(df[low]):
+    for i in range(len(df[low])):
         if i + 1 < n:
             midprice = float('NaN')
         else:
@@ -135,7 +124,6 @@ def MIDPRICE(df, n, high='High', low='Low'):
             end = i + 1
             midprice = (max(df[high][start:end]) + min(df[low][start:end])) / 2
         midprice_list.append(midprice)
-        i += 1
     return midprice_list
 
 def MMR(df, n=200, price='Close'):
@@ -143,15 +131,13 @@ def MMR(df, n=200, price='Close'):
     Mayer Multiple Ratio
     """
     mmr_list = []
-    sma_list = SMA(df, n, price)
-    i = 0
-    while i < len(df[price]):
+    sma_list = jhta.SMA(df, n, price)
+    for i in range(len(df[price])):
         if i + 1 < n:
             mmr = float('NaN')
         else:
             mmr = df[price][i] / sma_list[i]
         mmr_list.append(mmr)
-        i += 1
     return mmr_list
 
 def SAR(df, af_step=.02, af_max=.2, high='High', low='Low'):
@@ -159,8 +145,7 @@ def SAR(df, af_step=.02, af_max=.2, high='High', low='Low'):
     Parabolic SAR (J. Welles Wilder)
     """
     sar_list = []
-    i = 0
-    while i < len(df[low]):
+    for i in range(len(df[low])):
         if i < 1:
             sar = float('NaN')
             sar_list.append(sar)
@@ -229,7 +214,6 @@ def SAR(df, af_step=.02, af_max=.2, high='High', low='Low'):
                         sar = df[high][i - 1]
                     if sar < df[high][i]:
                         sar = df[high][i]
-        i += 1
     return sar_list
 
 def SAREXT(df):
@@ -242,8 +226,7 @@ def SMA(df, n, price='Close'):
     Simple Moving Average
     """
     sma_list = []
-    i = 0
-    while i < len(df[price]):
+    for i in range(len(df[price])):
         if i + 1 < n:
             sma = float('NaN')
         else:
@@ -251,7 +234,6 @@ def SMA(df, n, price='Close'):
             end = i + 1
             sma = sum(df[price][start:end]) / n
         sma_list.append(sma)
-        i += 1
     return sma_list
 
 def T3(df, n, price='Close'):
@@ -270,8 +252,7 @@ def TRIMA(df, n, price='Close'):
     """
     tma_list = []
     sma_list = []
-    i = 0
-    while i < len(df[price]):
+    for i in range(len(df[price])):
         if n % 2 == 0:
             n_sma = n / 2 + 1
             start = i + 1 - n_sma
@@ -295,7 +276,6 @@ def TRIMA(df, n, price='Close'):
         else:
             tma = sum(sma_list[start:end]) / n_tma
         tma_list.append(tma)
-        i += 1
     return tma_list
 
 def VAMA(df, n, price='Close', volume='Volume'):
@@ -304,8 +284,7 @@ def VAMA(df, n, price='Close', volume='Volume'):
     """
     vama_list = []
     pv_list = []
-    i = 0
-    while i < len(df[price]):
+    for i in range(len(df[price])):
         if i + 1 < n:
             vama = float('NaN')
             pv = float('NaN')
@@ -317,7 +296,6 @@ def VAMA(df, n, price='Close', volume='Volume'):
             pv_list.append(pv)
             vama = sum(pv_list[start:end]) / sum(df[volume][start:end])
         vama_list.append(vama)
-        i += 1
     return vama_list
 
 def WMA(df, n, price='Close'):
@@ -330,8 +308,7 @@ def WWMA(df, n, price='Close'):
     Welles Wilder Moving Average
     """
     wwma_list = []
-    i = 0
-    while i < len(df[price]):
+    for i in range(len(df[price])):
         if i + 1 < n:
             wwma = float('NaN')
             wwma_list.append(wwma)
@@ -339,7 +316,6 @@ def WWMA(df, n, price='Close'):
         else:
             wwma = (wwma * (n - 1) + df[price][i]) / n
             wwma_list.append(wwma)
-        i += 1
     return wwma_list
 
 def WWS(df, n, price='Close'):
@@ -347,8 +323,7 @@ def WWS(df, n, price='Close'):
     Welles Wilder Summation
     """
     wws_list = []
-    i = 0
-    while i < len(df[price]):
+    for i in range(len(df[price])):
         if i + 1 < n:
             wws = float('NaN')
             wws_list.append(wws)
@@ -358,6 +333,5 @@ def WWS(df, n, price='Close'):
             end = i + 1
             wws = wws - (sum(df[price][start:end]) / n) + df[price][i]
             wws_list.append(wws)
-        i += 1
     return wws_list
 
