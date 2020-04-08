@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2020-04-05
+date: 2020-04-08
 ---
 
 # jhTAlib
@@ -473,7 +473,7 @@ import jhtalib as jhta
 
 #### GAP | Gap | DONE
 
-- ```list of floats = jhta.GAP(df, high='High', low='Low', close='Close')```
+- ```list of floats = jhta.GAP(df, high='High', low='Low')```
 
 ---
 
