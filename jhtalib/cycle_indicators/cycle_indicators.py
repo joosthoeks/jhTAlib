@@ -41,8 +41,7 @@ def TS(df, n, price='Close'):
     Trend Score
     """
     t_list = []
-    i = 0
-    while i < len(df[price]):
+    for i in range(len(df[price])):
         if i < 1:
             t = 0
         else:
@@ -51,10 +50,8 @@ def TS(df, n, price='Close'):
             else:
                 t = -1
         t_list.append(t)
-        i += 1
     ts_list = []
-    i = 0
-    while i < len(df[price]):
+    for i in range(len(df[price])):
         if i + 1 < n:
             ts = float('NaN')
         else:
@@ -62,6 +59,5 @@ def TS(df, n, price='Close'):
             end = i + 1
             ts = sum(t_list[start:end])
         ts_list.append(ts)
-        i += 1
     return ts_list
 
