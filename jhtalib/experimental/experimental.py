@@ -42,3 +42,10 @@ def PAMPLITUDE(df, n, price='Close'):
             pamplitude = ppamplitude_list[i] / 2
         pamplitude_list.append(pamplitude)
     return pamplitude_list
+
+def PAMPLITUDE2(df, n, price='Close'):
+    """
+    Peak Amplitude
+    """
+    ppamplitude_list = jhta.PPAMPLITUDE(df, n, price)
+    return [ppamplitude_list[i] / 2 for i in range(len(df[price]))]
