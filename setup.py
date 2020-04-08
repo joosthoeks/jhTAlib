@@ -27,7 +27,7 @@ setup(
     ],
     project_urls={
     'Documentation': 'https://github.com/joosthoeks/jhTAlib/blob/master/README.md',
-    'Funding': 'https://github.com/joosthoeks/jhTAlib#donation-and-funding',
+    'Funding': 'https://github.com/joosthoeks/jhTAlib/blob/master/README.md#donation-and-funding',
     'Say Thanks!': 'https://github.com/joosthoeks/jhTAlib/stargazers',
     'Source': 'https://github.com/joosthoeks/jhTAlib',
     'Tracker': 'https://github.com/joosthoeks/jhTAlib/issues',
