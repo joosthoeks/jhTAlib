@@ -13,8 +13,7 @@ def AEM(df, high='High', low='Low', volume='Volume'):
     Arms Ease of Movement
     """
     aem_list = []
-    i = 0
-    while i < len(df[low]):
+    for i in range(len(df[low])):
         if i < 1:
             aem = float('NaN')
         else:
@@ -22,23 +21,20 @@ def AEM(df, high='High', low='Low', volume='Volume'):
             boxratio = (df[volume][i] / 10000) / (df[high][i] - df[low][i])
             aem = midpoint_move / boxratio
         aem_list.append(aem)
-        i += 1
     return aem_list
 
 def ATR(df, n, high='High', low='Low', close='Close'):
     """
     Average True Range
     """
-    tr_list = TRANGE(df, high, low, close)
+    tr_list = jhta.TRANGE(df, high, low, close)
     atr_list = []
-    i = 0
-    while i < len(df[close]):
+    for i in range(len(df[close])):
         if i + 1 < n:
             atr = float('NaN')
         else:
             atr = ((tr_list[i - 1] * (n - 1)) + tr_list[i]) / n
         atr_list.append(atr)
-        i += 1
     return atr_list
 
 def NATR(df, n):
@@ -55,8 +51,7 @@ def RVI(df, n, high='High', low='Low'):
     h_dnavg = .0
     l_upavg = .0
     l_dnavg = .0
-    i = 0
-    while i < len(df[low]):
+    for i in range(len(df[low])):
         if i + 1 < n or i < 9:
             h_rvi = float('NaN')
             l_rvi = float('NaN')
@@ -87,7 +82,6 @@ def RVI(df, n, high='High', low='Low'):
             l_rvi = 100 * l_upavg / (l_upavg + l_dnavg)
         rvi = (h_rvi + l_rvi) / 2
         rvi_list.append(rvi)
-        i += 1
     return rvi_list
 
 def RVIOC(df, n, price='Close'):
@@ -121,7 +115,7 @@ def INERTIA(df, n, price='Close'):
     """
     Inertia
     """
-    rvioc = RVIOC(df, n, price)
+    rvioc = jhta.RVIOC(df, n, price)
     return jhta.LSMA({'rvioc': rvioc}, n, 'rvioc')
 
 def PRANGE(df, n, max_price='High', min_price='Low'):
@@ -131,14 +125,12 @@ def PRANGE(df, n, max_price='High', min_price='Low'):
     max_list = jhta.MAX(df, n, max_price)
     min_list = jhta.MIN(df, n, min_price)
     prange_list = []
-    i = 0
-    while i < len(df[max_price]):
+    for i in range(len(df[max_price])):
         if i + 1 < n:
             prange = float('NaN')
         else:
             prange = (max_list[i] - min_list[i]) / ((max_list[i] + min_list[i]) / 2) * 100
         prange_list.append(prange)
-        i += 1
     return prange_list
 
 def TRANGE(df, high='High', low='Low', close='Close'):
@@ -146,8 +138,7 @@ def TRANGE(df, high='High', low='Low', close='Close'):
     True Range
     """
     tr_list = []
-    i = 0
-    while i < len(df[close]):
+    for i in range(len(df[close])):
         if i < 1:
             tr = float('NaN')
         else:
@@ -159,7 +150,6 @@ def TRANGE(df, high='High', low='Low', close='Close'):
                 true_low = df[close][i - 1]
             tr = true_high - true_low
         tr_list.append(tr)
-        i += 1
     return tr_list
 
 def DVOLA(df, n=30, price='Close'):
@@ -182,7 +172,7 @@ def AVOLA(df, n=30, na=252, price='Close'):
     """
     Annual Volatility
     """
-    dvola_list = DVOLA(df, n, price)
+    dvola_list = jhta.DVOLA(df, n, price)
     avola_list = []
     for i in range(len(df[price])):
         if i + 1 < n:
