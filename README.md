@@ -308,83 +308,10 @@ $ python3
 >>> help(jhta.pattern_recognition)
 >>> help(jhta.price_transform)
 >>> help(jhta.statistic_functions)
+>>> help(jhta.uncategorised)
 
 >>> quit()
 ```
-
----
-
-### [Uncategorised](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/uncategorised/uncategorised.py)
-
-#### HR | Hit Rate / Win Rate | DONE
-
-- ```float = jhta.HR(hit_trades_int, total_trades_int)```
-
-- [http://traderskillset.com/hit-rate-stock-trading/](http://traderskillset.com/hit-rate-stock-trading/)
-
----
-
-#### PLR | Profit/Loss Ratio | DONE
-
-- ```float = jhta.PLR(mean_trade_profit_float, mean_trade_loss_float)```
-
-- [https://www.investopedia.com/terms/p/profit_loss_ratio.asp](https://www.investopedia.com/terms/p/profit_loss_ratio.asp)
-
----
-
-#### EV | Expected Value | DONE
-
-- ```float = jhta.EV(hitrade_float, mean_trade_profit_float, mean_trade_loss_float)```
-
-- [https://en.wikipedia.org/wiki/Expected_value](https://en.wikipedia.org/wiki/Expected_value)
-
----
-
-#### POR | Probability of Ruin (Table of Lucas and LeBeau) | DONE
-
-- ```int = jhta.POR(hitrade_float, profit_loss_ratio_float)```
-
-- book: Computer Analysis of the Futures Markets
-
----
-
-#### BPPS | Basis Points per Second | DONE
-
-- ```float = jhta.BPPS(trade_start_price, trade_end_price, trade_start_timestamp, trade_end_timestamp)```
-
-- book: An Introduction to Algorithmic Trading
-
----
-
-#### RET | Return | DONE
-
-- ```list of floats = jhta.RET(df, price='Close')```
-
-- book: An Introduction to Algorithmic Trading
-
----
-
-#### RETS | Returns | DONE
-
-- ```list of floats = jhta.RETS(df, price='Close')```
-
-- book: An Introduction to Algorithmic Trading
-
----
-
-#### PRET | %Return | DONE
-
-- ```list of floats = jhta.PRET(df, price='Close')```
-
-- book: An Introduction to Algorithmic Trading
-
----
-
-#### PRETS | %Returns | DONE
-
-- ```list of floats = jhta.PRETS(df, price='Close')```
-
-- book: An Introduction to Algorithmic Trading
 
 ---
 

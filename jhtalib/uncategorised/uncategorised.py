@@ -10,24 +10,32 @@ import jhtalib as jhta
 def HR(hit_trades_int, total_trades_int):
     """
     Hit Rate / Win Rate
+    Returns: float = jhta.HR(hit_trades_int, total_trades_int)
+    Source: http://traderskillset.com/hit-rate-stock-trading/
     """
     return float(hit_trades_int / total_trades_int)
 
 def PLR(mean_trade_profit_float, mean_trade_loss_float):
     """
     Profit/Loss Ratio
+    Returns: float = jhta.PLR(mean_trade_profit_float, mean_trade_loss_float)
+    Source: https://www.investopedia.com/terms/p/profit_loss_ratio.asp
     """
     return float(mean_trade_profit_float / mean_trade_loss_float)
 
 def EV(hitrate_float, mean_trade_profit_float, mean_trade_loss_float):
     """
     Expected Value
+    Returns: float = jhta.EV(hitrade_float, mean_trade_profit_float, mean_trade_loss_float)
+    Source: https://en.wikipedia.org/wiki/Expected_value
     """
     return float((hitrate_float * mean_trade_profit_float) + ((1 - hitrate_float) * mean_trade_loss_float))
 
 def POR(hitrate_float, profit_loss_ratio_float):
     """
     Probability of Ruin (Table of Lucas and LeBeau)
+    Returns: int = jhta.POR(hitrade_float, profit_loss_ratio_float)
+    Source: book: Computer Analysis of the Futures Markets
     """
     hitrate_list = [.0, .25, .3, .35, .4, .45, .5, .55, .6, .65, .7]
     profit_loss_ratio_list = [.0, .75, 1, 1.5, 2, 2.5, 3, 3.5, 4]
@@ -59,12 +67,16 @@ def POR(hitrate_float, profit_loss_ratio_float):
 def BPPS(trade_start_price, trade_end_price, trade_start_timestamp, trade_end_timestamp):
     """
     Basis Points per Second
+    Returns: float = jhta.BPPS(trade_start_price, trade_end_price, trade_start_timestamp, trade_end_timestamp)
+    Source: book: An Introduction to Algorithmic Trading
     """
     return (((trade_end_price - trade_start_price) / trade_start_price) / (trade_end_timestamp - trade_start_timestamp)) * 10000
 
 def RET(df, price='Close'):
     """
     Return
+    Returns: list of floats = jhta.RET(df, price='Close')
+    Source: book: An Introduction to Algorithmic Trading
     """
     ret_list = []
     for i in range(len(df[price])):
@@ -78,6 +90,8 @@ def RET(df, price='Close'):
 def RETS(df, price='Close'):
     """
     Returns
+    Returns: list of floats = jhta.RETS(df, price='Close')
+    Source: book: An Introduction to Algorithmic Trading
     """
     rets_list = []
     ret_list = jhta.RET(df, price)
@@ -94,6 +108,8 @@ def RETS(df, price='Close'):
 def PRET(df, price='Close'):
     """
     %Return
+    Returns: list of floats = jhta.PRET(df, price='Close')
+    Source: book: An Introduction to Algorithmic Trading
     """
     pret_list = []
     ret_list = jhta.RET(df, price)
@@ -108,6 +124,8 @@ def PRET(df, price='Close'):
 def PRETS(df, price='Close'):
     """
     %Returns
+    Returns: list of floats = jhta.PRETS(df, price='Close')
+    Source: book: An Introduction to Algorithmic Trading
     """
     prets_list = []
     pret_list = jhta.PRET(df, price)
@@ -120,3 +138,4 @@ def PRETS(df, price='Close'):
             prets = prets + pret_list[i]
             prets_list.append(prets)
     return prets_list
+
