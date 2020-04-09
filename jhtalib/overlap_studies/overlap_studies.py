@@ -10,6 +10,8 @@ import jhtalib as jhta
 def BBANDS(df, n, f=2, high='High', low='Low', close='Close'):
     """
     Bollinger Bands
+    Returns: dict of lists of floats = jhta.BBANDS(df, n, f=2, high='High', low='Low', close='Close')
+    Source: https://www.fmlabs.com/reference/default.htm?url=Bollinger.htm
     """
     bbands_dict = {'midband': [], 'upperband': [], 'lowerband': []}
     tp_dict = {'tp': jhta.TYPPRICE(df, high, low, close)}
@@ -32,6 +34,8 @@ def BBANDS(df, n, f=2, high='High', low='Low', close='Close'):
 def BBANDW(df, n, f=2, high='High', low='Low', close='Close'):
     """
     Bollinger Band Width
+    Returns: list of floats = jhta.BBANDW(df, n, f=2, high='High', low='Low', close='Close')
+    Source: https://www.fmlabs.com/reference/default.htm?url=BollingerWidth.htm
     """
     bbandw_list = []
     tp_dict = {'tp': jhta.TYPPRICE(df, high, low, close)}
@@ -52,6 +56,8 @@ def DEMA(df, n):
 def EMA(df, n, price='Close'):
     """
     Exponential Moving Average
+    Returns: list of floats = jhta.EMA(df, n, price='Close')
+    Source: https://www.fmlabs.com/reference/default.htm?url=ExpMA.htm
     """
     ema_list = []
     for i in range(len(df[price])):
@@ -68,6 +74,8 @@ def EMA(df, n, price='Close'):
 def ENVP(df, pct=.01, price='Close'):
     """
     Envelope Percent
+    Returns: dict of lists of floats = jhta.ENVP(df, pct=.01, price='Close')
+    Source: https://www.fmlabs.com/reference/default.htm?url=EnvelopePct.htm
     """
     envp_dict = {'hi': [], 'lo': []}
     for i in range(len(df[price])):
@@ -100,6 +108,8 @@ def MAVP(df, price='Close'):
 def MIDPOINT(df, n, price='Close'):
     """
     MidPoint over period
+    Returns: list of floats = jhta.MIDPOINT(df, n, price='Close')
+    Source: http://www.tadoc.org/indicator/MIDPOINT.htm
     """
     midpoint_list = []
     for i in range(len(df[price])):
@@ -115,6 +125,8 @@ def MIDPOINT(df, n, price='Close'):
 def MIDPRICE(df, n, high='High', low='Low'):
     """
     Midpoint Price over period
+    Returns: list of floats = jhta.MIDPRICE(df, n, high='High', low='Low')
+    Source: http://www.tadoc.org/indicator/MIDPRICE.htm
     """
     midprice_list = []
     for i in range(len(df[low])):
@@ -130,6 +142,8 @@ def MIDPRICE(df, n, high='High', low='Low'):
 def MMR(df, n=200, price='Close'):
     """
     Mayer Multiple Ratio
+    Returns: list of floats = jhta.MMR(df, n=200, price='Close')
+    Source: https://www.theinvestorspodcast.com/bitcoin-mayer-multiple/
     """
     mmr_list = []
     sma_list = jhta.SMA(df, n, price)
@@ -144,6 +158,8 @@ def MMR(df, n=200, price='Close'):
 def SAR(df, af_step=.02, af_max=.2, high='High', low='Low'):
     """
     Parabolic SAR (J. Welles Wilder)
+    Returns: list of floats = jhta.SAR(df, af_step=.02, af_max=.2, high='High', low='Low')
+    Source: book: New Concepts in Technical Trading Systems
     """
     sar_list = []
     for i in range(len(df[low])):
@@ -225,6 +241,8 @@ def SAREXT(df):
 def SMA(df, n, price='Close'):
     """
     Simple Moving Average
+    Returns: list of floats = jhta.SMA(df, n, price='Close')
+    Source: https://www.fmlabs.com/reference/default.htm?url=SimpleMA.htm
     """
     sma_list = []
     for i in range(len(df[price])):
@@ -250,6 +268,8 @@ def TEMA(df, n, price='Close'):
 def TRIMA(df, n, price='Close'):
     """
     Triangular Moving Average
+    Returns: list of floats = jhta.TRIMA(df, n, price='Close')
+    Source: https://www.fmlabs.com/reference/default.htm?url=TriangularMA.htm
     """
     tma_list = []
     sma_list = []
@@ -282,6 +302,8 @@ def TRIMA(df, n, price='Close'):
 def VAMA(df, n, price='Close', volume='Volume'):
     """
     Volume Adjusted Moving Average
+    Returns: list of floats = jhta.VAMA(df, n, price='Close', volume='Volume')
+    Source: https://www.fmlabs.com/reference/default.htm?url=VolAdjustedMA.htm
     """
     vama_list = []
     pv_list = []
@@ -307,6 +329,8 @@ def WMA(df, n, price='Close'):
 def WWMA(df, n, price='Close'):
     """
     Welles Wilder Moving Average
+    Returns: list of floats = jhta.WWMA(df, n, price='Close')
+    Source: https://www.fmlabs.com/reference/default.htm?url=WellesMA.htm
     """
     wwma_list = []
     for i in range(len(df[price])):
@@ -322,6 +346,8 @@ def WWMA(df, n, price='Close'):
 def WWS(df, n, price='Close'):
     """
     Welles Wilder Summation
+    Returns: list of floats = jhta.WWS(df, n, price='Close')
+    Source: https://www.fmlabs.com/reference/default.htm?url=WellesSum.htm
     """
     wws_list = []
     for i in range(len(df[price])):
