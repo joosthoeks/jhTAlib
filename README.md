@@ -310,81 +310,9 @@ $ python3
 >>> help(jhta.statistic_functions)
 >>> help(jhta.uncategorised)
 >>> help(jhta.volatility_indicators)
-
+>>> help(jhta.volume_indicators)
 >>> quit()
 ```
-
----
-
-### [Volume Indicators](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/volume_indicators/volume_indicators.py)
-
-#### AD | Chaikin A/D Line | DONE
-
-- ```list of floats = jhta.AD(df, high='High', low='Low', close='Close', volume='Volume')```
-
-- [https://www.fmlabs.com/reference/default.htm?url=AccumDist.htm](https://www.fmlabs.com/reference/default.htm?url=AccumDist.htm)
-
----
-
-#### ADOSC | Chaikin A/D Oscillator |
-
--
-
----
-
-#### MFAI | Market Facilitation Index | DONE
-
-- ```list of floats = jhta.MFAI(df, high='High', low='Low', volume='Volume')```
-
-- [https://www.fmlabs.com/reference/default.htm?url=MFI.htm](https://www.fmlabs.com/reference/default.htm?url=MFI.htm)
-
----
-
-#### NVI | Negative Volume Index | DONE
-
-- ```list of floats = jhta.NVI(df, price='Close', volume='Volume')```
-
-- [https://www.fmlabs.com/reference/default.htm?url=NVI.htm](https://www.fmlabs.com/reference/default.htm?url=NVI.htm)
-
----
-
-#### OBV | On Balance Volume | DONE
-
-- ```list of floats = jhta.OBV(df, close='Close', volume='Volume')```
-
-- [https://www.fmlabs.com/reference/default.htm?url=OBV.htm](https://www.fmlabs.com/reference/default.htm?url=OBV.htm)
-
----
-
-#### PVR | Price Volume Rank | DONE
-
-- ```list of ints = jhta.PVR(df, price='Close', volume='Volume')```
-
-- [https://www.fmlabs.com/reference/default.htm?url=PVrank.htm](https://www.fmlabs.com/reference/default.htm?url=PVrank.htm)
-
----
-
-#### PVT | Price Volume Trend | DONE
-
-- ```list of floats = jhta.PVT(df, price='Close', volume='Volume')```
-
-- [https://www.fmlabs.com/reference/default.htm?url=PVT.htm](https://www.fmlabs.com/reference/default.htm?url=PVT.htm)
-
----
-
-#### PVI | Positive Volume Index | DONE
-
-- ```list of floats = jhta.PVI(df, price='Close', volume='Volume')```
-
-- [https://www.fmlabs.com/reference/default.htm?url=PVI.htm](https://www.fmlabs.com/reference/default.htm?url=PVI.htm)
-
----
-
-#### VWAP | Volume Weighted Average Price | DONE
-
-- ```list of floats = jhta.VWAP(df, open='Open', high='High', low='Low', close='Close', volume='Volume')```
-
-- book: An Introduction to Algorithmic Trading
 
 ---
 

@@ -10,6 +10,8 @@ import jhtalib as jhta
 def AD(df, high='High', low='Low', close='Close', volume='Volume'):
     """
     Chaikin A/D Line
+    Returns: list of floats = jhta.AD(df, high='High', low='Low', close='Close', volume='Volume')
+    Source: https://www.fmlabs.com/reference/default.htm?url=AccumDist.htm
     """
     ad_list = []
     for i in range(len(df[close])):
@@ -28,12 +30,16 @@ def ADOSC(df):
 def MFAI(df, high='High', low='Low', volume='Volume'):
     """
     Market Facilitation Index
+    Returns: list of floats = jhta.MFAI(df, high='High', low='Low', volume='Volume')
+    Source: https://www.fmlabs.com/reference/default.htm?url=MFI.htm
     """
     return [(df[high][i] - df[low][i]) / df[volume][i] for i in range(len(df[low]))]
 
 def NVI(df, price='Close', volume='Volume'):
     """
     Negative Volume Index
+    Returns: list of floats = jhta.NVI(df, price='Close', volume='Volume')
+    Source: https://www.fmlabs.com/reference/default.htm?url=NVI.htm
     """
     nvi_list = []
     for i in range(len(df[price])):
@@ -49,6 +55,8 @@ def NVI(df, price='Close', volume='Volume'):
 def OBV(df, close='Close', volume='Volume'):
     """
     On Balance Volume
+    Returns: list of floats = jhta.OBV(df, close='Close', volume='Volume')
+    Source: https://www.fmlabs.com/reference/default.htm?url=OBV.htm
     """
     obv_list = []
     for i in range(len(df[close])):
@@ -66,6 +74,8 @@ def OBV(df, close='Close', volume='Volume'):
 def PVR(df, price='Close', volume='Volume'):
     """
     Price Volume Rank
+    Returns: list of ints = jhta.PVR(df, price='Close', volume='Volume')
+    Source: https://www.fmlabs.com/reference/default.htm?url=PVrank.htm
     """
     pvr_list = []
     for i in range(len(df[price])):
@@ -86,6 +96,8 @@ def PVR(df, price='Close', volume='Volume'):
 def PVT(df, price='Close', volume='Volume'):
     """
     Price Volume Trend
+    Returns: list of floats = jhta.PVT(df, price='Close', volume='Volume')
+    Source: https://www.fmlabs.com/reference/default.htm?url=PVT.htm
     """
     pvt_list = []
     for i in range(len(df[price])):
@@ -98,6 +110,8 @@ def PVT(df, price='Close', volume='Volume'):
 def PVI(df, price='Close', volume='Volume'):
     """
     Positive Volume Index
+    Returns: list of floats = jhta.PVI(df, price='Close', volume='Volume')
+    Source: https://www.fmlabs.com/reference/default.htm?url=PVI.htm
     """
     pvi_list = []
     for i in range(len(df[price])):
@@ -113,6 +127,8 @@ def PVI(df, price='Close', volume='Volume'):
 def VWAP(df, open='Open', high='High', low='Low', close='Close', volume='Volume'):
     """
     Volume Weighted Average Price
+    Returns: list of floats = jhta.VWAP(df, open='Open', high='High', low='Low', close='Close', volume='Volume')
+    Source: book: An Introduction to Algorithmic Trading
     """
     vwap_list = []
     pvs = .0
