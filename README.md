@@ -299,35 +299,10 @@ $ python3
 >>> help(jhta.cycle_indicators)
 >>> help(jhta.data)
 >>> help(jhta.event_driven)
+>>> help(jhta.experimental)
 
 >>> quit()
 ```
-
----
-
-### [Experimental](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/experimental/experimental.py)
-
-#### MONTECARLO | Monte Carlo | DONE
-
-- ```list of ints = jhta.MONTECARLO(df, price='Close')```
-
-- [https://en.wikipedia.org/wiki/Monte_Carlo_method](https://en.wikipedia.org/wiki/Monte_Carlo_method)
-
----
-
-#### PPAMPLITUDE | Peak-to-Peak Amplitude | DONE
-
-- ```list of floats = jhta.PPAMPLITUDE(df, n, price='Close')```
-
-- [https://en.wikipedia.org/wiki/Amplitude](https://en.wikipedia.org/wiki/Amplitude)
-
----
-
-#### PAMPLITUDE | Peak Amplitude | DONE
-
-- ```list of floats = jhta.PAMPLITUDE(df, n, price='Close')```
-
-- [https://en.wikipedia.org/wiki/Amplitude](https://en.wikipedia.org/wiki/Amplitude)
 
 ---
 

@@ -8,16 +8,19 @@ import random
 import jhtalib as jhta
 
 
-@jhta.timer
 def MONTECARLO(df, price='Close'):
     """
     Monte Carlo
+    Returns: list of ints = jhta.MONTECARLO(df, price='Close')
+    Source: https://en.wikipedia.org/wiki/Monte_Carlo_method
     """
     return [random.randint(0, 1) for i in range(len(df[price]))]
 
 def PPAMPLITUDE(df, n, price='Close'):
     """
     Peak-to-Peak Amplitude
+    Returns: list of floats = jhta.PPAMPLITUDE(df, n, price='Close')
+    Source: https://en.wikipedia.org/wiki/Amplitude
     """
     ppamplitude_list = []
     for i in range(len(df[price])):
@@ -33,20 +36,9 @@ def PPAMPLITUDE(df, n, price='Close'):
 def PAMPLITUDE(df, n, price='Close'):
     """
     Peak Amplitude
-    """
-    pamplitude_list = []
-    ppamplitude_list = jhta.PPAMPLITUDE(df, n, price)
-    for i in range(len(df[price])):
-        if i + 1 < n:
-            pamplitude = float('NaN')
-        else:
-            pamplitude = ppamplitude_list[i] / 2
-        pamplitude_list.append(pamplitude)
-    return pamplitude_list
-
-def PAMPLITUDE2(df, n, price='Close'):
-    """
-    Peak Amplitude
+    Returns: list of floats = jhta.PAMPLITUDE(df, n, price='Close')
+    Source: https://en.wikipedia.org/wiki/Amplitude
     """
     ppamplitude_list = jhta.PPAMPLITUDE(df, n, price)
     return [ppamplitude_list[i] / 2 for i in range(len(df[price]))]
+
