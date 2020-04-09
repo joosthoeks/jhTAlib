@@ -309,89 +309,10 @@ $ python3
 >>> help(jhta.price_transform)
 >>> help(jhta.statistic_functions)
 >>> help(jhta.uncategorised)
+>>> help(jhta.volatility_indicators)
 
 >>> quit()
 ```
-
----
-
-### [Volatility Indicators](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/volatility_indicators/volatility_indicators.py)
-
-#### AEM | Arms Ease of Movement | DONE
-
-- ```list of floats = jhta.AEM(df, high='High', low='Low', volume='Volume')```
-
-- [https://www.fmlabs.com/reference/default.htm?url=ArmsEMV.htm](https://www.fmlabs.com/reference/default.htm?url=ArmsEMV.htm)
-
----
-
-#### ATR | Average True Range | DONE
-
-- ```list of floats = jhta.ATR(df, n, high='High', low='Low', close='Close')```
-
-- [https://www.fmlabs.com/reference/default.htm?url=ATR.htm](https://www.fmlabs.com/reference/default.htm?url=ATR.htm)
-
----
-
-#### NATR | Normalized Average True Range |
-
--
-
----
-
-#### RVI | Relative Volatility Index | DONE
-
-- ```list of floats = jhta.RVI(df, n, high='High', low='Low')```
-
-- [https://www.fmlabs.com/reference/default.htm?url=RVI.htm](https://www.fmlabs.com/reference/default.htm?url=RVI.htm)
-
----
-
-#### RVIOC | Relative Volatility Index Original Calculation | DONE
-
-- ```list of floats = jhta.RVIOC(df, n, price='Close')```
-
-- [https://www.fmlabs.com/reference/default.htm?url=RVIoriginal.htm](https://www.fmlabs.com/reference/default.htm?url=RVIoriginal.htm)
-
----
-
-#### INERTIA | Inertia | DONE
-
-- ```list of floats = jhta.INERTIA(df, n, price='Close')```
-
-- [https://www.fmlabs.com/reference/default.htm?url=Inertia.htm](https://www.fmlabs.com/reference/default.htm?url=Inertia.htm)
-
----
-
-#### PRANGE | %Range | DONE
-
-- ```list of floats = jhta.PRANGE(df, n, max_price='High', min_price='Low')```
-
-- book: An Introduction to Algorithmic Trading
-
----
-
-#### TRANGE | True Range | DONE
-
-- ```list of floats = jhta.TRANGE(df, high='High', low='Low', close='Close')```
-
-- [https://www.fmlabs.com/reference/default.htm?url=TR.htm](https://www.fmlabs.com/reference/default.htm?url=TR.htm)
-
----
-
-#### DVOLA | Daily Volatility | DONE
-
-- ```list of floats = jhta.DVOLA(df, n=30, price='Close')```
-
-- [https://www.wallstreetmojo.com/volatility-formula/](https://www.wallstreetmojo.com/volatility-formula/)
-
----
-
-#### AVOLA | Annual Volatility | DONE
-
-- ```list of floats = jhta.AVOLA(df, n=30, na=252, price='Close')```
-
-- [https://www.wallstreetmojo.com/volatility-formula/](https://www.wallstreetmojo.com/volatility-formula/)
 
 ---
 

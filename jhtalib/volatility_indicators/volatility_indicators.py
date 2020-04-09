@@ -12,6 +12,8 @@ import jhtalib as jhta
 def AEM(df, high='High', low='Low', volume='Volume'):
     """
     Arms Ease of Movement
+    Returns: list of floats = jhta.AEM(df, high='High', low='Low', volume='Volume')
+    Source: https://www.fmlabs.com/reference/default.htm?url=ArmsEMV.htm
     """
     aem_list = []
     for i in range(len(df[low])):
@@ -27,6 +29,8 @@ def AEM(df, high='High', low='Low', volume='Volume'):
 def ATR(df, n, high='High', low='Low', close='Close'):
     """
     Average True Range
+    Returns: list of floats = jhta.ATR(df, n, high='High', low='Low', close='Close')
+    Source: https://www.fmlabs.com/reference/default.htm?url=ATR.htm
     """
     tr_list = jhta.TRANGE(df, high, low, close)
     atr_list = []
@@ -46,6 +50,8 @@ def NATR(df, n):
 def RVI(df, n, high='High', low='Low'):
     """
     Relative Volatility Index
+    Returns: list of floats = jhta.RVI(df, n, high='High', low='Low')
+    Source: https://www.fmlabs.com/reference/default.htm?url=RVI.htm
     """
     rvi_list = []
     h_upavg = .0
@@ -88,6 +94,8 @@ def RVI(df, n, high='High', low='Low'):
 def RVIOC(df, n, price='Close'):
     """
     Relative Volatility Index Original Calculation
+    Returns: list of floats = jhta.RVIOC(df, n, price='Close')
+    Source: https://www.fmlabs.com/reference/default.htm?url=RVIoriginal.htm
     """
     rvioc_list = []
     upavg = .0
@@ -115,6 +123,8 @@ def RVIOC(df, n, price='Close'):
 def INERTIA(df, n, price='Close'):
     """
     Inertia
+    Returns: list of floats = jhta.INERTIA(df, n, price='Close')
+    Source: https://www.fmlabs.com/reference/default.htm?url=Inertia.htm
     """
     rvioc = jhta.RVIOC(df, n, price)
     return jhta.LSMA({'rvioc': rvioc}, n, 'rvioc')
@@ -122,6 +132,8 @@ def INERTIA(df, n, price='Close'):
 def PRANGE(df, n, max_price='High', min_price='Low'):
     """
     %Range
+    Returns: list of floats = jhta.PRANGE(df, n, max_price='High', min_price='Low')
+    Source: book: An Introduction to Algorithmic Trading
     """
     max_list = jhta.MAX(df, n, max_price)
     min_list = jhta.MIN(df, n, min_price)
@@ -137,6 +149,8 @@ def PRANGE(df, n, max_price='High', min_price='Low'):
 def TRANGE(df, high='High', low='Low', close='Close'):
     """
     True Range
+    Returns: list of floats = jhta.TRANGE(df, high='High', low='Low', close='Close')
+    Source: https://www.fmlabs.com/reference/default.htm?url=TR.htm
     """
     tr_list = []
     for i in range(len(df[close])):
@@ -156,6 +170,8 @@ def TRANGE(df, high='High', low='Low', close='Close'):
 def DVOLA(df, n=30, price='Close'):
     """
     Daily Volatility
+    Returns: list of floats = jhta.DVOLA(df, n=30, price='Close')
+    Source: https://www.wallstreetmojo.com/volatility-formula/
     """
     dvola_list = []
     for i in range(len(df[price])):
@@ -172,6 +188,8 @@ def DVOLA(df, n=30, price='Close'):
 def AVOLA(df, n=30, na=252, price='Close'):
     """
     Annual Volatility
+    Returns: list of floats = jhta.AVOLA(df, n=30, na=252, price='Close')
+    Source: https://www.wallstreetmojo.com/volatility-formula/
     """
     dvola_list = jhta.DVOLA(df, n, price)
     avola_list = []
