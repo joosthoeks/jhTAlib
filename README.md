@@ -297,59 +297,10 @@ $ python3
 >>> help(jhta.behavioral_techniques)
 >>> help(jhta.candlestick)
 >>> help(jhta.cycle_indicators)
+>>> help(jhta.data)
 
 >>> quit()
 ```
-
----
-
-### [Data](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/data/data.py)
-
-#### CSV2DF | CSV file 2 DataFeed | DONE
-
-- ```dict of tuples of floats = jhta.CSV2DF(csv_file_path, datetime='datetime', Open='Open', high='High', low='Low', close='Close', volume='Volume')```
-
----
-
-#### CSVURL2DF | CSV file url 2 DataFeed | DONE
-
-- ```dict of tuples of floats = jhta.CSVURL2DF(csv_file_url, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume')```
-
----
-
-#### DF2CSV | DataFeed 2 CSV file | DONE
-
-- ```csv file = jhta.DF2CSV(df, csv_file_path, datetime='datetime', Open='Open', high='High', low='Low', close='Close', volume='Volume')```
-
----
-
-#### DF2DFREV | DataFeed 2 DataFeed Reversed | DONE
-
-- ```dict of tuples of floats = jhta.DF2DFREV(df, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume')```
-
----
-
-#### DF2DFWIN | DataFeed 2 DataFeed Window | DONE
-
-- ```dict of tuples of floats = jhta.DF2DFWIN(df, start=0, end=10, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume')```
-
----
-
-#### DF_HEAD | DataFeed HEAD | DONE
-
-- ```dict of tuples of floats = jhta.DF_HEAD(df, n=5, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume')```
-
----
-
-#### DF_TAIL | DataFeed TAIL | DONE
-
-- ```dict of tuples of floats = jhta.DF_TAIL(df, n=5, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume')```
-
----
-
-#### DF2HEIKIN_ASHI | DataFeed 2 Heikin-Ashi DataFeed | DONE
-
-- ```dict of tuples of floats = jhta.DF2HEIKIN_ASHI(df, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume')```
 
 ---
 

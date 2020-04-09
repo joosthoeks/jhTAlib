@@ -12,6 +12,7 @@ import jhtalib as jhta
 def CSV2DF(csv_file_path, datetime='datetime', Open='Open', high='High', low='Low', close='Close', volume='Volume'):
     """
     CSV file 2 DataFeed
+    Returns: dict of tuples of floats = jhta.CSV2DF(csv_file_path, datetime='datetime', Open='Open', high='High', low='Low', close='Close', volume='Volume')
     """
     df = {datetime: [], Open: [], high: [], low: [], close: [], volume: []}
     with open(csv_file_path) as csv_file:
@@ -34,6 +35,7 @@ def CSV2DF(csv_file_path, datetime='datetime', Open='Open', high='High', low='Lo
 def CSVURL2DF(csv_file_url, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume'):
     """
     CSV file url 2 DataFeed
+    Returns: dict of tuples of floats = jhta.CSVURL2DF(csv_file_url, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume')
     """
     df = {datetime: [], open: [], high: [], low: [], close: [], volume: []}
     csv_file = urllib.request.urlopen(csv_file_url).read().decode('utf-8').splitlines()
@@ -56,6 +58,7 @@ def CSVURL2DF(csv_file_url, datetime='datetime', open='Open', high='High', low='
 def DF2CSV(df, csv_file_path, datetime='datetime', Open='Open', high='High', low='Low', close='Close', volume='Volume'):
     """
     DataFeed 2 CSV file
+    Returns: csv file = jhta.DF2CSV(df, csv_file_path, datetime='datetime', Open='Open', high='High', low='Low', close='Close', volume='Volume')
     """
     with open(csv_file_path, 'w') as csv_file:
         fieldnames = [datetime, Open, high, low, close, volume]
@@ -74,6 +77,7 @@ def DF2CSV(df, csv_file_path, datetime='datetime', Open='Open', high='High', low
 def DF2DFREV(df, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume'):
     """
     DataFeed 2 DataFeed Reversed
+    Returns: dict of tuples of floats = jhta.DF2DFREV(df, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume')
     """
     df_r = {datetime: [], open: [], high: [], low: [], close: [], volume: []}
     i = len(df[close])-1
@@ -96,6 +100,7 @@ def DF2DFREV(df, datetime='datetime', open='Open', high='High', low='Low', close
 def DF2DFWIN(df, start=0, end=10, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume'):
     """
     DataFeed 2 DataFeed Window
+    Returns: dict of tuples of floats = jhta.DF2DFWIN(df, start=0, end=10, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume')
     """
     return dict({
         datetime: tuple(df[datetime][start:end]),
@@ -109,6 +114,7 @@ def DF2DFWIN(df, start=0, end=10, datetime='datetime', open='Open', high='High',
 def DF_HEAD(df, n=5, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume'):
     """
     DataFeed HEAD
+    Returns: dict of tuples of floats = jhta.DF_HEAD(df, n=5, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume')
     """
     end = n
     return dict({
@@ -123,6 +129,7 @@ def DF_HEAD(df, n=5, datetime='datetime', open='Open', high='High', low='Low', c
 def DF_TAIL(df, n=5, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume'):
     """
     DataFeed TAIL
+    Returns: dict of tuples of floats = jhta.DF_TAIL(df, n=5, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume')
     """
     start = len(df[close]) - n
     end = len(df[close])
@@ -138,6 +145,7 @@ def DF_TAIL(df, n=5, datetime='datetime', open='Open', high='High', low='Low', c
 def DF2HEIKIN_ASHI(df, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume'):
     """
     DataFeed 2 Heikin-Ashi DataFeed
+    Returns: dict of tuples of floats = jhta.DF2HEIKIN_ASHI(df, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume')
     """
     ha_Open_list = []
     ha_High_list = []
