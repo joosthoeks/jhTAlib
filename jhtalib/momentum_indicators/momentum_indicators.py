@@ -20,6 +20,8 @@ def ADXR(df, n):
 def APO(df, n_fast, n_slow, price='Close'):
     """
     Absolute Price Oscillator
+    Returns: list of floats = jhta.APO(df, n_fast, n_slow, price='Close')
+    Source: https://www.fmlabs.com/reference/default.htm?url=PriceOscillator.htm
     """
     apo_list = []
     for i in range(len(df[price])):
@@ -85,6 +87,8 @@ def MACDFIX(df, n, price='Close'):
 def MFI(df, n, high='High', low='Low', close='Close', volume='Volume'):
     """
     Money Flow Index
+    Returns: list of floats = jhta.MFI(df, n, high='High', low='Low', close='Close', volume='Volume')
+    Source: https://www.fmlabs.com/reference/default.htm?url=MoneyFlowIndex.htm
     """
     mfi_list = []
     typprice_list = jhta.TYPPRICE(df, high, low, close)
@@ -126,6 +130,8 @@ def MINUS_DM(df, n):
 def MOM(df, n, price='Close'):
     """
     Momentum
+    Returns: list of floats = jhta.MOM(df, n, price='Close')
+    Source: https://www.fmlabs.com/reference/default.htm?url=Momentum.htm
     """
     mom_list = []
     for i in range(len(df[price])):
@@ -154,6 +160,8 @@ def PPO(df, price='Close'):
 def RMI(df, n, price='Close'):
     """
     Relative Momentum Index
+    Returns: list of floats = jhta.RMI(df, n, price='Close')
+    Source: https://www.fmlabs.com/reference/default.htm?url=RMI.htm
     """
     rmi_list = []
     upavg = .0
@@ -180,6 +188,7 @@ def RMI(df, n, price='Close'):
 def ROC(df, n, price='Close'):
     """
     Rate of change : ((price/prevPrice)-1)*100
+    Returns: list of floats = jhta.ROC(df, n, price='Close')
     """
     roc_list = []
     for i in range(len(df[price])):
@@ -193,6 +202,7 @@ def ROC(df, n, price='Close'):
 def ROCP(df, n, price='Close'):
     """
     Rate of change Percentage: (price-prevPrice)/prevPrice
+    Returns: list of floats = jhta.ROCP(df, n, price='Close')
     """
     rocp_list = []
     for i in range(len(df[price])):
@@ -206,6 +216,7 @@ def ROCP(df, n, price='Close'):
 def ROCR(df, n, price='Close'):
     """
     Rate of change ratio: (price/prevPrice)
+    Returns: list of floats = jhta.ROCR(df, n, price='Close')
     """
     rocr_list = []
     for i in range(len(df[price])):
@@ -219,6 +230,8 @@ def ROCR(df, n, price='Close'):
 def ROCR100(df, n, price='Close'):
     """
     Rate of change ratio 100 scale: (price/prevPrice)*100
+    Returns: list of floats = jhta.ROCR100(df, n, price='Close')
+    Source: https://www.fmlabs.com/reference/default.htm?url=RateOfChange.htm
     """
     rocr100_list = []
     for i in range(len(df[price])):
@@ -232,6 +245,8 @@ def ROCR100(df, n, price='Close'):
 def RSI(df, n, price='Close'):
     """
     Relative Strength Index
+    Returns: list of floats = jhta.RSI(df, n, price='Close')
+    Source: https://www.fmlabs.com/reference/default.htm?url=rsi.htm
     """
     rsi_list = []
     upavg = .0
@@ -255,6 +270,8 @@ def RSI(df, n, price='Close'):
 def STOCH(df, n, price='Close'):
     """
     Stochastic
+    Returns: list of floats = jhta.STOCH(df, n, price='Close')
+    Source: https://www.fmlabs.com/reference/default.htm?url=Stochastic.htm
     """
     stoch_list = []
     for i in range(len(df[price])):
@@ -292,6 +309,8 @@ def ULTOSC(df):
 def VHF(df, n, price='Close'):
     """
     Vertical Horizontal Filter
+    Returns: list of floats = jhta.VHF(df, n, price='Close')
+    Source: https://www.fmlabs.com/reference/default.htm?url=VHF.htm
     """
     vhf_list = []
     c_list = []
@@ -316,6 +335,8 @@ def VHF(df, n, price='Close'):
 def WILLR(df, n, high='High', low='Low', close='Close'):
     """
     Williams' %R
+    Returns: list of floats = jhta.WILLR(df, n, high='High', low='Low', close='Close')
+    Source: https://www.fmlabs.com/reference/default.htm?url=WilliamsR.htm
     """
     willr_list = []
     for i in range(len(df[close])):
