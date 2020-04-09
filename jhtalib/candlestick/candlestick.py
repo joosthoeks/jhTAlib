@@ -10,18 +10,24 @@ import jhtalib as jhta
 def CDLBODYS(df, open='Open', close='Close'):
     """
     Candle Body Size
+    Returns: list of floats = jhta.CDLBODYS(df, open='Open', close='Close')
+    Source: https://www.tradeciety.com/understand-candlesticks-patterns/
     """
     return [df[close][i] - df[open][i] for i in range(len(df[close]))]
 
 def CDLWICKS(df, high='High', low='Low'):
     """
     Candle Wick Size
+    Returns: list of floats = jhta.CDLWICKS(df, high='High', low='Low')
+    Source: https://www.tradeciety.com/understand-candlesticks-patterns/
     """
     return [df[high][i] - df[low][i] for i in range(len(df[low]))]
 
 def CDLUPPSHAS(df, open='Open', high='High', close='Close'):
     """
     Candle Upper Shadow Size
+    Returns: list of floats = jhta.CDLUPPSHAS(df, open='Open', high='High', close='Close')
+    Source: https://www.tradeciety.com/understand-candlesticks-patterns/
     """
     cdl_list = []
     for i in range(len(df[close])):
@@ -36,6 +42,8 @@ def CDLUPPSHAS(df, open='Open', high='High', close='Close'):
 def CDLLOWSHAS(df, open='Open', low='Low', close='Close'):
     """
     Candle Lower Shadow Size
+    Returns: list of floats = jhta.CDLLOWSHAS(df, open='Open', low='Low', close='Close')
+    Source: https://www.tradeciety.com/understand-candlesticks-patterns/
     """
     cdl_list = []
     for i in range(len(df[close])):
@@ -50,12 +58,15 @@ def CDLLOWSHAS(df, open='Open', low='Low', close='Close'):
 def CDLBODYP(df, open='Open', close='Close'):
     """
     Candle Body Percent
+    Returns: list of floats = jhta.CDLBODYP(df, open='Open', close='Close')
     """
     return [(df[close][i] - df[open][i]) / df[open][i] for i in range(len(df[close]))]
 
 def CDLBODYM(df, n, open='Open', close='Close'):
     """
     Candle Body Momentum
+    Returns: list of floats = jhta.CDLBODYM(df, n, open='Open', close='Close')
+    Source: book: Trading Systems and Methods
     """
     cdl_list = []
     for i in range(len(df[close])):
@@ -79,6 +90,7 @@ def CDLBODYM(df, n, open='Open', close='Close'):
 def GAP(df, high='High', low='Low'):
     """
     Gap
+    Returns: list of floats = jhta.GAP(df, high='High', low='Low')
     """
     gap_list = []
     for i in range(len(df[low])):
@@ -96,6 +108,8 @@ def GAP(df, high='High', low='Low'):
 def QSTICK(df, n, open='Open', close='Close'):
     """
     Qstick
+    Returns: list of floats = jhta.QSTICK(df, n, open='Open', close='Close')
+    Source: https://www.fmlabs.com/reference/default.htm?url=Qstick.htm
     """
     qstick_list = []
     for i in range(len(df[close])):
@@ -111,6 +125,8 @@ def QSTICK(df, n, open='Open', close='Close'):
 def SHADOWT(df, n, open='Open', high='High', low='Low', close='Close'):
     """
     Shadow Trends
+    Returns: dict of lists of floats = jhta.SHADOWT(df, n, open='Open', high='High', low='Low', close='Close')
+    Source: book: The New Technical Trader
     """
     shadowt_dict = {'upper': [], 'lower': []}
     for i in range(len(df[close])):
@@ -129,6 +145,8 @@ def SHADOWT(df, n, open='Open', high='High', low='Low', close='Close'):
 def IMI(df, open='Open', close='Close'):
     """
     Intraday Momentum Index
+    Returns: list of floats = jhta.IMI(df, open='Open', close='Close')
+    Source: https://www.fmlabs.com/reference/default.htm?url=IMI.htm
     """
     imi_list = []
     upsum = .0
@@ -145,6 +163,7 @@ def IMI(df, open='Open', close='Close'):
 def INSBAR(df, high='High', low='Low'):
     """
     Inside Bar
+    Returns: list of ints = jhta.INSBAR(df, high='High', low='Low')
     """
     insbar_list = []
     for i in range(len(df[low])):
@@ -160,6 +179,7 @@ def INSBAR(df, high='High', low='Low'):
 def OUTSBAR(df, high='High', low='Low'):
     """
     Outside Bar
+    Returns: list of ints = jhta.OUTSBAR(df, high='High', low='Low')
     """
     outsbar_list = []
     for i in range(len(df[low])):
