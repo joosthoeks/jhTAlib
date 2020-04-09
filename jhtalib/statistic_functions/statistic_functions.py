@@ -12,6 +12,7 @@ import jhtalib as jhta
 def MEAN(df, n, price='Close'):
     """
     Arithmetic mean (average) of data
+    Returns: list of floats = jhta.MEAN(df, n, price='Close')
     """
     mean_list = []
     if n == len(df[price]):
@@ -39,6 +40,7 @@ def MEAN(df, n, price='Close'):
 def HARMONIC_MEAN(df, n, price='Close'):
     """
     Harmonic mean of data
+    Returns: list of floats = jhta.HARMONIC_MEAN(df, n, price='Close')
     """
     harmonic_mean_list = []
     if n == len(df[price]):
@@ -66,6 +68,7 @@ def HARMONIC_MEAN(df, n, price='Close'):
 def MEDIAN(df, n, price='Close'):
     """
     Median (middle value) of data
+    Returns: list of floats = jhta.MEDIAN(df, n, price='Close')
     """
     median_list = []
     if n == len(df[price]):
@@ -93,6 +96,7 @@ def MEDIAN(df, n, price='Close'):
 def MEDIAN_LOW(df, n, price='Close'):
     """
     Low median of data
+    Returns: list of floats = jhta.MEDIAN_LOW(df, n, price='Close')
     """
     median_low_list = []
     if n == len(df[price]):
@@ -120,6 +124,7 @@ def MEDIAN_LOW(df, n, price='Close'):
 def MEDIAN_HIGH(df, n, price='Close'):
     """
     High median of data
+    Returns: list of floats = jhta.MEDIAN_HIGH(df, n, price='Close')
     """
     median_high_list = []
     if n == len(df[price]):
@@ -147,6 +152,7 @@ def MEDIAN_HIGH(df, n, price='Close'):
 def MEDIAN_GROUPED(df, n, price='Close', interval=1):
     """
     Median, or 50th percentile, of grouped data
+    Returns: list of floats = jhta.MEDIAN_GROUPED(df, n, price='Close', interval=1)
     """
     median_grouped_list = []
     if n == len(df[price]):
@@ -174,6 +180,7 @@ def MEDIAN_GROUPED(df, n, price='Close', interval=1):
 def MODE(df, n, price='Close'):
     """
     Mode (most common value) of discrete data
+    Returns: list of floats = jhta.MODE(df, n, price='Close')
     """
     mode_list = []
     if n == len(df[price]):
@@ -201,6 +208,7 @@ def MODE(df, n, price='Close'):
 def PSTDEV(df, n, price='Close', mu=None):
     """
     Population standard deviation of data
+    Returns: list of floats = jhta.PSTDEV(df, n, price='Close', mu=None)
     """
     pstdev_list = []
     if n == len(df[price]):
@@ -228,6 +236,7 @@ def PSTDEV(df, n, price='Close', mu=None):
 def PVARIANCE(df, n, price='Close', mu=None):
     """
     Population variance of data
+    Returns: list of floats = jhta.PVARIANCE(df, n, price='Close', mu=None)
     """
     pvariance_list = []
     if n == len(df[price]):
@@ -255,6 +264,7 @@ def PVARIANCE(df, n, price='Close', mu=None):
 def STDEV(df, n, price='Close', xbar=None):
     """
     Sample standard deviation of data
+    Returns: list of floats = jhta.STDEV(df, n, price='Close', xbar=None)
     """
     stdev_list = []
     if n == len(df[price]):
@@ -288,6 +298,7 @@ def STDEV(df, n, price='Close', xbar=None):
 def VARIANCE(df, n, price='Close', xbar=None):
     """
     Sample variance of data
+    Returns: list of floats = jhta.VARIANCE(df, n, price='Close', xbar=None)
     """
     variance_list = []
     if n == len(df[price]):
@@ -321,6 +332,8 @@ def VARIANCE(df, n, price='Close', xbar=None):
 def COV(x_list, y_list):
     """
     Covariance
+    Returns: float = jhta.COV(x_list, y_list)
+    Source: https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Covariance
     """
     x_mean = jhta.MEAN({'x_list': x_list}, len(x_list), 'x_list')[-1]
     y_mean = jhta.MEAN({'y_list': y_list}, len(y_list), 'y_list')[-1]
@@ -334,6 +347,8 @@ def COV(x_list, y_list):
 def COVARIANCE(df1, df2, n, price1='Close', price2='Close'):
     """
     Covariance
+    Returns: list of floats = jhta.COVARIANCE(df1, df2, n, price1='Close', price2='Close')
+    Source: https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Covariance
     """
     covariance_list = []
     if n == len(df1[price1]):
@@ -365,6 +380,7 @@ def COVARIANCE(df1, df2, n, price1='Close', price2='Close'):
 def COR(x_list, y_list):
     """
     Correlation
+    Returns: float = jhta.COR(x_list, y_list)
     """
     x_stdev = jhta.STDEV({'x_list': x_list}, len(x_list), 'x_list')[-1]
     y_stdev = jhta.STDEV({'y_list': y_list}, len(y_list), 'y_list')[-1]
@@ -373,6 +389,7 @@ def COR(x_list, y_list):
 def CORRELATION(df1, df2, n, price1='Close', price2='Close'):
     """
     Correlation
+    Returns: list of floats = jhta.CORRELATION(df1, df2, n, price1='Close', price2='Close')
     """
     correlation_list = []
     if n == len(df1[price1]):
@@ -404,6 +421,7 @@ def CORRELATION(df1, df2, n, price1='Close', price2='Close'):
 def PCOR(x_list, y_list):
     """
     Population Correlation
+    Returns: float = jhta.PCOR(x_list, y_list)
     """
     x_pstdev = jhta.PSTDEV({'x_list': x_list}, len(x_list), 'x_list')[-1]
     y_pstdev = jhta.PSTDEV({'y_list': y_list}, len(y_list), 'y_list')[-1]
@@ -412,6 +430,7 @@ def PCOR(x_list, y_list):
 def PCORRELATION(df1, df2, n, price1='Close', price2='Close'):
     """
     Population Correlation
+    Returns: list of floats = jhta.PCORRELATION(df1, df2, n, price1='Close', price2='Close')
     """
     pcorrelation_list = []
     if n == len(df1[price1]):
@@ -443,12 +462,16 @@ def PCORRELATION(df1, df2, n, price1='Close', price2='Close'):
 def R2(x_list, y_list):
     """
     R-Squared
+    Returns: float = jhta.R2(x_list, y_list)
+    Source: https://www.wallstreetmojo.com/r-squared-formula/
     """
     return jhta.PCOR(x_list, y_list) ** 2
 
 def RSQUARED(df1, df2, n, price1='Close', price2='Close'):
     """
     R-Squared
+    Returns: list of floats = jhta.RSQUARED(df1, df2, n, price1='Close', price2='Close')
+    Source: https://www.wallstreetmojo.com/r-squared-formula/
     """
     r2_list = []
     if n == len(df1[price1]):
@@ -480,6 +503,8 @@ def RSQUARED(df1, df2, n, price1='Close', price2='Close'):
 def REGRESSION(x_list, y_list):
     """
     Regression
+    Returns: dict of lists of floats = jhta.REGRESSION(x_list, y_list)
+    Source: https://www.wallstreetmojo.com/regression-formula/
     """
     xy_list = []
     x2_list = []
@@ -527,12 +552,16 @@ def REGRESSION(x_list, y_list):
 def SSE(x_list, y_list):
     """
     Sum of the Squared Errors
+    Returns: float = jhta.SSE(x_list, y_list)
+    Source: https://www.wikihow.com/Calculate-the-Standard-Error-of-Estimate
     """
     return sum(jhta.REGRESSION(x_list, y_list)['err2'])
 
 def SEE(x_list, y_list):
     """
     Standard Error of Estimate
+    Returns: float = jhta.SEE(x_list, y_list)
+    Source: https://www.wikihow.com/Calculate-the-Standard-Error-of-Estimate
     """
     sse = jhta.SSE(x_list, y_list)
     n = len(x_list)
@@ -541,6 +570,8 @@ def SEE(x_list, y_list):
 def PSEE(x_list, y_list):
     """
     Population Standard Error of Estimate
+    Returns: float = jhta.PSEE(x_list, y_list)
+    Source: https://www.wikihow.com/Calculate-the-Standard-Error-of-Estimate
     """
     sse = jhta.SSE(x_list, y_list)
     n = len(x_list)
@@ -549,6 +580,8 @@ def PSEE(x_list, y_list):
 def LSMA(df, n, price='Close'):
     """
     Least Squares Moving Average
+    Returns: list of floats = jhta.LSMA(df, n, price='Close')
+    Source: https://www.fmlabs.com/reference/default.htm?url=LstSqrMA.htm
     """
     lsma_list = []
     for i in range(len(df[price])):
@@ -566,6 +599,8 @@ def LSMA(df, n, price='Close'):
 def BETA(x_list, y_list):
     """
     Beta
+    Returns: float = jhta.BETA(x_list, y_list)
+    Source: https://en.wikipedia.org/wiki/Beta_(finance)
     """
     covariance = jhta.COV(x_list, y_list)
     variance = jhta.VARIANCE({'y_list': y_list}, len(y_list), 'y_list')[-1]
@@ -574,6 +609,8 @@ def BETA(x_list, y_list):
 def BETAS(df1, df2, n, price1='Close', price2='Close'):
     """
     Betas
+    Returns: list of floats = jhta.BETAS(df1, df2, n, price1='Close', price2='Close')
+    Source: https://en.wikipedia.org/wiki/Beta_(finance)
     """
     beta_list = []
     if n == len(df1[price1]):
@@ -605,6 +642,8 @@ def BETAS(df1, df2, n, price1='Close', price2='Close'):
 def LSR(df, price='Close', predictions_int=0):
     """
     Least Squares Regression
+    Returns: list of floats = jhta.LSR(df, price='Close', predictions_int=0)
+    Source: https://www.mathsisfun.com/data/least-squares-regression.html
     """
     x_list = []
     y_list = []
@@ -642,6 +681,8 @@ def LSR(df, price='Close', predictions_int=0):
 def SLR(df, price='Close', predictions_int=0):
     """
     Simple Linear Regression
+    Returns: list of floats = jhta.SLR(df, price='Close', predictions_int=0)
+    Source: https://machinelearningmastery.com/implement-simple-linear-regression-scratch-python/
     """
     x_list = list(range(len(df[price]) - predictions_int))
     p_list = df[price][0:len(df[price]) - predictions_int]
