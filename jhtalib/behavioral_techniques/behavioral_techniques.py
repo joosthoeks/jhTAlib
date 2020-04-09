@@ -11,6 +11,7 @@ import jhtalib as jhta
 def ATH(df, price='High'):
     """
     All Time High
+    Returns: dict of lists of floats = jhta.ATH(df, price='High')
     """
     ath_dict = {'ath': [], 'ath_index': []}
     for i in range(len(df[price])):
@@ -24,6 +25,7 @@ def ATH(df, price='High'):
 def LMC(df, price='Low', price_high='High'):
     """
     Last Major Correction
+    Returns: dict of lists of floats = jhta.LMC(df, price='Low', price_high='High')
     """
     lmc_dict = {'lmc': [], 'lmc_index': []}
     ath_dict = jhta.ATH(df, price_high)
@@ -38,6 +40,8 @@ def LMC(df, price='Low', price_high='High'):
 def PP(df, high='High', low='Low', close='Close'):
     """
     Pivot Point
+    Returns: dict of lists of floats = jhta.PP(df, high='High', low='Low', close='Close')
+    Source: https://en.wikipedia.org/wiki/Pivot_point_(technical_analysis)
     """
     pp_dict = {'p': [], 'r1': [], 's1': [], 'r2': [], 's2': [], 'r3': [], 's3': []}
     for i in range(len(df[close])):
@@ -60,6 +64,7 @@ def PP(df, high='High', low='Low', close='Close'):
 def FIBOPR(df, price='Close'):
     """
     Fibonacci Price Retracements
+    Returns: dict of lists of floats = jhta.FIBOPR(df, price='Close')
     """
     fibopr_dict = {
             '618': [], '-618': [],
@@ -82,6 +87,7 @@ def FIBOTR(df, price='Close'):
 def GANNPR(df, price='Close'):
     """
     W. D. Gann Price Retracements
+    Returns: dict of lists of floats = jhta.GANNPR(df, price='Close')
     """
     gannpr_dict = {
             '1x8': [], '-1x8': [],
@@ -117,6 +123,8 @@ def GANNTR(df, price='Close'):
 def JDN(utc_year, utc_month, utc_day):
     """
     Julian Day Number
+    Returns: jdn = jhta.JDN(utc_year, utc_month, utc_day)
+    Source: https://en.wikipedia.org/wiki/Julian_day
     """
     year = int(utc_year)
     month = int(utc_month)
@@ -131,6 +139,8 @@ def JDN(utc_year, utc_month, utc_day):
 def JD(utc_year, utc_month, utc_day, utc_hour, utc_minute, utc_second):
     """
     Julian Date
+    Returns: jd = jhta.JD(utc_year, utc_month, utc_day, utc_hour, utc_minute, utc_second)
+    Source: https://en.wikipedia.org/wiki/Julian_day
     """
     hour = int(utc_hour)
     minute = int(utc_minute)

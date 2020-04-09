@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2020-04-08
+date: 2020-04-09
 ---
 
 # jhTAlib
@@ -290,136 +290,14 @@ $ python3 test.py
 ## Reference
 
 ```
-import jhtalib as jhta
+$ python3
+>>> import jhtalib as jhta
+>>> dir(jhta)
+>>> help(jhta)
+>>> help(jhta.behavioral_techniques)
+
+>>> quit()
 ```
-
----
-
-### [Behavioral Techniques](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/behavioral_techniques/behavioral_techniques.py)
-
-#### ATH | All Time High | DONE
-
-- ```dict of lists of floats = jhta.ATH(df, price='High')```
-
----
-
-#### LMC | Last Major Correction | DONE
-
-- ```dict of lists of floats = jhta.LMC(df, price='Low', price_high='High')```
-
----
-
-#### PP | Pivot Point | DONE
-
-- ```dict of lists of floats = jhta.PP(df, high='High', low='Low', close='Close')```
-
-- [https://en.wikipedia.org/wiki/Pivot_point_(technical_analysis)](https://en.wikipedia.org/wiki/Pivot_point_(technical_analysis))
-
----
-
-#### FIBOPR | Fibonacci Price Retracements | DONE
-
-- ```dict of lists of floats = jhta.FIBOPR(df, price='Close')```
-
----
-
-#### FIBTR | Fibonacci Time Retracements |
-
--
-
----
-
-#### GANNPR | W. D. Gann Price Retracements | DONE
-
-- ```dict of lists of floats = jhta.GANNPR(df, price='Close')```
-
----
-
-#### GANNTR | W. D. Gann Time Retracements |
-
--
-
----
-
-#### JDN | Julian Day Number | DONE
-
-- ```jdn = jhta.JDN(utc_year, utc_month, utc_day)```
-
-- [https://en.wikipedia.org/wiki/Julian_day](https://en.wikipedia.org/wiki/Julian_day)
-
----
-
-#### JD | Julian Date | DONE
-
-- ```jd = jhta.JD(utc_year, utc_month, utc_day, utc_hour, utc_minute, utc_second)```
-
-- [https://en.wikipedia.org/wiki/Julian_day](https://en.wikipedia.org/wiki/Julian_day)
-
----
-
-#### SUNC | Sun Cycle |
-
--
-
----
-
-#### MERCURYC | Mercury Cycle |
-
--
-
----
-
-#### VENUSC | Venus Cycle |
-
--
-
----
-
-#### EARTHC | Earth Cycle |
-
--
-
----
-
-#### MARSC | Mars Cycle |
-
--
-
----
-
-#### JUPITERC | Jupiter Cycle |
-
--
-
----
-
-#### SATURNC | Saturn Cycle |
-
--
-
----
-
-#### URANUSC | Uranus Cycle |
-
--
-
----
-
-#### NEPTUNEC | Neptune Cycle |
-
--
-
----
-
-#### PLUTOC | Pluto Cycle |
-
--
-
----
-
-#### MOONC | Moon Cycle |
-
--
 
 ---
 
