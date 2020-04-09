@@ -300,77 +300,10 @@ $ python3
 >>> help(jhta.data)
 >>> help(jhta.event_driven)
 >>> help(jhta.experimental)
+>>> help(jhta.general)
 
 >>> quit()
 ```
-
----
-
-### [General](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/general/general.py)
-
-#### NORMALIZE | Normalize | DONE
-
-- ```list of floats = jhta.NORMALIZE(df, price_max='High', price_min='Low', price='Close')```
-
-- [https://machinelearningmastery.com/normalize-standardize-time-series-data-python/](https://machinelearningmastery.com/normalize-standardize-time-series-data-python/)
-
----
-
-#### STANDARDIZE | Standardize | DONE
-
-- ```list of floats = jhta.STANDARDIZE(df, price='Close')```
-
-- [https://machinelearningmastery.com/normalize-standardize-time-series-data-python/](https://machinelearningmastery.com/normalize-standardize-time-series-data-python/)
-
----
-
-#### REMAP | Remap | DONE
-
-- ```float = jhta.REMAP(x, old_min=0, old_max=1000, new_min=0, new_max=100)```
-
----
-
-#### REMAPS | Remaps | DONE
-
-- ```list of floats = jhta.REMAPS(df, old_min=0, old_max=1000, new_min=0, new_max=100, price='Close')```
-
----
-
-#### RATIO | Ratio | DONE
-
-- ```list of floats = jhta.RATIO(df1, df2, price1='Close', price2='Close')```
-
-- [https://www.fmlabs.com/reference/default.htm?url=Ratio.htm](https://www.fmlabs.com/reference/default.htm?url=Ratio.htm)
-
----
-
-#### SPREAD | Spread | DONE
-
-- ```list of floats = jhta.SPREAD(df1, df2, price1='Close', price2='Close')```
-
----
-
-#### CP | Comparative Performance | DONE
-
-- ```list of floats = jhta.CP(df1, df2, price1='Close', price2='Close')```
-
-- [https://www.fmlabs.com/reference/default.htm?url=CompPerformance.htm](https://www.fmlabs.com/reference/default.htm?url=CompPerformance.htm)
-
----
-
-#### CRSI | Comparative Relative Strength Index | DONE
-
-- ```list of floats = jhta.CRSI(df1, df2, n, price1='Close', price2='Close')```
-
-- [https://www.fmlabs.com/reference/default.htm?url=RSIC.htm](https://www.fmlabs.com/reference/default.htm?url=RSIC.htm)
-
----
-
-#### CS | Comparative Strength | DONE
-
-- ```list of floats = jhta.CS(df1, df2, price1='Close', price2='Close')```
-
-- [https://www.fmlabs.com/reference/default.htm?url=CompStrength.htm](https://www.fmlabs.com/reference/default.htm?url=CompStrength.htm)
 
 ---
 

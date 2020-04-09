@@ -10,6 +10,8 @@ import jhtalib as jhta
 def NORMALIZE(df, price_max='High', price_min='Low', price='Close'):
     """
     Normalize
+    Returns: list of floats = jhta.NORMALIZE(df, price_max='High', price_min='Low', price='Close')
+    Source: https://machinelearningmastery.com/normalize-standardize-time-series-data-python/
     """
     normalize_list = []
     start = None
@@ -30,6 +32,8 @@ def NORMALIZE(df, price_max='High', price_min='Low', price='Close'):
 def STANDARDIZE(df, price='Close'):
     """
     Standardize
+    Returns: list of floats = jhta.STANDARDIZE(df, price='Close')
+    Source: https://machinelearningmastery.com/normalize-standardize-time-series-data-python/
     """
     standardize_list = []
     start = None
@@ -49,6 +53,7 @@ def STANDARDIZE(df, price='Close'):
 def REMAP(x, old_min=0, old_max=1000, new_min=0, new_max=100):
     """
     Remap
+    Returns: float = jhta.REMAP(x, old_min=0, old_max=1000, new_min=0, new_max=100)
     """
     old_range = old_max - old_min
     new_range = new_max - new_min
@@ -57,6 +62,7 @@ def REMAP(x, old_min=0, old_max=1000, new_min=0, new_max=100):
 def REMAPS(df, old_min=0, old_max=1000, new_min=0, new_max=100, price='Close'):
     """
     Remaps
+    Returns: list of floats = jhta.REMAPS(df, old_min=0, old_max=1000, new_min=0, new_max=100, price='Close')
     """
     remap_list = []
     for i in range(len(df[price])):
@@ -67,18 +73,23 @@ def REMAPS(df, old_min=0, old_max=1000, new_min=0, new_max=100, price='Close'):
 def RATIO(df1, df2, price1='Close', price2='Close'):
     """
     Ratio
+    Returns: list of floats = jhta.RATIO(df1, df2, price1='Close', price2='Close')
+    Source: https://www.fmlabs.com/reference/default.htm?url=Ratio.htm
     """
     return [df1[price1][i] / df2[price2][i] for i in range(len(df1[price1]))]
 
 def SPREAD(df1, df2, price1='Close', price2='Close'):
     """
     Spread
+    Returns: list of floats = jhta.SPREAD(df1, df2, price1='Close', price2='Close')
     """
     return [df1[price1][i] - df2[price2][i] for i in range(len(df1[price1]))]
 
 def CP(df1, df2, price1='Close', price2='Close'):
     """
     Comparative Performance
+    Returns: list of floats = jhta.CP(df1, df2, price1='Close', price2='Close')
+    Source: https://www.fmlabs.com/reference/default.htm?url=CompPerformance.htm
     """
     cp_list = []
     for i in range(len(df1[price1])):
@@ -89,6 +100,8 @@ def CP(df1, df2, price1='Close', price2='Close'):
 def CRSI(df1, df2, n, price1='Close', price2='Close'):
     """
     Comparative Relative Strength Index
+    Returns: list of floats = jhta.CRSI(df1, df2, n, price1='Close', price2='Close')
+    Source: https://www.fmlabs.com/reference/default.htm?url=RSIC.htm
     """
     crsi_list = []
     for i in range(len(df1[price1])):
@@ -102,5 +115,8 @@ def CRSI(df1, df2, n, price1='Close', price2='Close'):
 def CS(df1, df2, price1='Close', price2='Close'):
     """
     Comparative Strength
+    Returns: list of floats = jhta.CS(df1, df2, price1='Close', price2='Close')
+    Source: https://www.fmlabs.com/reference/default.htm?url=CompStrength.htm
     """
     return [df1[price1][i] / df2[price2][i] for i in range(len(df1[price1]))]
+
