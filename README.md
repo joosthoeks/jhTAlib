@@ -306,43 +306,10 @@ $ python3
 >>> help(jhta.momentum_indicators)
 >>> help(jhta.overlap_studies)
 >>> help(jhta.pattern_recognition)
+>>> help(jhta.price_transform)
 
 >>> quit()
 ```
-
----
-
-### [Price Transform](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/price_transform/price_transform.py)
-
-#### AVGPRICE | Average Price | DONE
-
-- ```list of floats = jhta.AVGPRICE(df, open='Open', high='High', low='Low', close='Close')```
-
-- [https://www.fmlabs.com/reference/default.htm?url=AvgPrices.htm](https://www.fmlabs.com/reference/default.htm?url=AvgPrices.htm)
-
----
-
-#### MEDPRICE | Median Price | DONE
-
-- ```list of floats = jhta.MEDPRICE(df, high='High', low='Low')```
-
-- [https://www.fmlabs.com/reference/default.htm?url=MedianPrices.htm](https://www.fmlabs.com/reference/default.htm?url=MedianPrices.htm)
-
----
-
-#### TYPPRICE | Typical Price | DONE
-
-- ```list of floats = jhta.TYPPRICE(df, high='High', low='Low', close='Close')```
-
-- [https://www.fmlabs.com/reference/default.htm?url=TypicalPrices.htm](https://www.fmlabs.com/reference/default.htm?url=TypicalPrices.htm)
-
----
-
-#### WCLPRICE | Weighted Close Price | DONE
-
-- ```list of floats = jhta.WCLPRICE(df, high='High', low='Low', close='Close')```
-
-- [https://www.fmlabs.com/reference/default.htm?url=WeightedCloses.htm](https://www.fmlabs.com/reference/default.htm?url=WeightedCloses.htm)
 
 ---
 
