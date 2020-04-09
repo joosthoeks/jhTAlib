@@ -40,6 +40,8 @@ def HT_TRENDMODE(df, price='Close'):
 def TS(df, n, price='Close'):
     """
     Trend Score
+    Returns: list of floats = jhta.TS(df, n, price='Close')
+    Source: https://www.fmlabs.com/reference/default.htm?url=TrendScore.htm
     """
     t_list = []
     for i in range(len(df[price])):

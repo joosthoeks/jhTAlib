@@ -296,55 +296,10 @@ $ python3
 >>> help(jhta)
 >>> help(jhta.behavioral_techniques)
 >>> help(jhta.candlestick)
+>>> help(jhta.cycle_indicators)
 
 >>> quit()
 ```
-
----
-
-### [Cycle Indicators](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/cycle_indicators/cycle_indicators.py)
-
-#### HT_DCPERIOD | Hilbert Transform - Dominant Cycle Period |
-
--
-
----
-
-#### HT_DCPHASE | Hilbert Transform - Dominant Cycle Phase |
-
--
-
----
-
-#### HT_PHASOR | Hilbert Transform - Phasor Components |
-
--
-
----
-
-#### HT_SINE | Hilbert Transform - SineWave |
-
--
-
----
-
-#### HT_TRENDLINE | Hilbert Transform - Instantaneous Trendline |
-
--
-
----
-
-#### HT_TRENDMODE | Hilbert Transform - Trend vs Cycle Mode |
-
--
-
----
-
-#### TS | Trend Score | DONE
-
-- ```list of floats = jhta.TS(df, n, price='Close')```
-
-- [https://www.fmlabs.com/reference/default.htm?url=TrendScore.htm](https://www.fmlabs.com/reference/default.htm?url=TrendScore.htm)
 
 ---
 
