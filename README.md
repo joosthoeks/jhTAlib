@@ -301,23 +301,10 @@ $ python3
 >>> help(jhta.event_driven)
 >>> help(jhta.experimental)
 >>> help(jhta.general)
+>>> help(jhta.information)
 
 >>> quit()
 ```
-
----
-
-### [Information](https://github.com/joosthoeks/jhTAlib/blob/master/jhtalib/information/information.py)
-
-#### INFO | Print df Information | DONE
-
-- ```print = jhta.INFO(df, price='Close')```
-
----
-
-#### INFO_TRADES | Print Trades Information | DONE
-
-- ```print = jhta.INFO_TRADES(profit_trades_list, loss_trades_list)```
 
 ---
 

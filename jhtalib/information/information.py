@@ -10,6 +10,7 @@ import jhtalib as jhta
 def INFO(df, price='Close'):
     """
     Print df Information
+    Returns: print = jhta.INFO(df, price='Close')
     """
     print ('{:_<28}:{:_>22}'.format('DF PRICE COLUMN', price))
     print ('{:_<28}:{:_>22d}'.format('LEN', len(df[price])))
@@ -31,6 +32,7 @@ def INFO(df, price='Close'):
 def INFO_TRADES(profit_trades_list, loss_trades_list):
     """
     Print Trades Information
+    Returns: print = jhta.INFO_TRADES(profit_trades_list, loss_trades_list)
     """
     total_trades = len(profit_trades_list) + len(loss_trades_list)
     hr = jhta.HR(len(profit_trades_list), total_trades)
