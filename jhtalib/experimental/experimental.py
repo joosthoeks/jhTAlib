@@ -16,6 +16,15 @@ def MONTECARLO(df, price='Close'):
     """
     return [random.randint(0, 1) for i in range(len(df[price]))]
 
+def PAMPLITUDE(df, n, price='Close'):
+    """
+    Peak Amplitude
+    Returns: list of floats = jhta.PAMPLITUDE(df, n, price='Close')
+    Source: https://en.wikipedia.org/wiki/Amplitude
+    """
+    ppamplitude_list = jhta.PPAMPLITUDE(df, n, price)
+    return [ppamplitude_list[i] / 2 for i in range(len(df[price]))]
+
 def PPAMPLITUDE(df, n, price='Close'):
     """
     Peak-to-Peak Amplitude
@@ -32,13 +41,4 @@ def PPAMPLITUDE(df, n, price='Close'):
             ppamplitude = max(df[price][start:end]) - min(df[price][start:end])
         ppamplitude_list.append(ppamplitude)
     return ppamplitude_list
-
-def PAMPLITUDE(df, n, price='Close'):
-    """
-    Peak Amplitude
-    Returns: list of floats = jhta.PAMPLITUDE(df, n, price='Close')
-    Source: https://en.wikipedia.org/wiki/Amplitude
-    """
-    ppamplitude_list = jhta.PPAMPLITUDE(df, n, price)
-    return [ppamplitude_list[i] / 2 for i in range(len(df[price]))]
 
