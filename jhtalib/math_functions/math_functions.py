@@ -9,12 +9,149 @@ import cmath
 import jhtalib as jhta
 
 
+def ACOS(df, price='Close'):
+    """
+    Arc Cosine
+    Returns: list of floats = jhta.ACOS(df, price='Close')
+    """
+    return [cmath.acos(df[price][i]).real for i in range(len(df[price]))]
+
+def ACOSH(df, price='Close'):
+    """
+    Inverse Hyperbolic Cosine
+    Returns: list of floats = jhta.ACOSH(df, price='Close')
+    """
+    return [cmath.acosh(df[price][i]).real for i in range(len(df[price]))]
+
+def ADD(df, high='High', low='Low'):
+    """
+    Addition High + Low
+    Returns: list of floats = jhta.ADD(df, high='High', low='Low')
+    """
+    return [df[high][i] + df[low][i] for i in range(len(df[low]))]
+
+def ASIN(df, price='Close'):
+    """
+    Arc Sine
+    Returns: list of floats = jhta.ASIN(df, price='Close')
+    """
+    return [cmath.asin(df[price][i]).real for i in range(len(df[price]))]
+
+def ASINH(df, price='Close'):
+    """
+    Inverse Hyperbolic Sine
+    Returns: list of floats = jhta.ASINH(df, price='Close')
+    """
+    return [cmath.asinh(df[price][i]).real for i in range(len(df[price]))]
+
+def ATAN(df, price='Close'):
+    """
+    Arc Tangent
+    Returns: list of floats = jhta.ATAN(df, price='Close')
+    """
+    return [cmath.atan(df[price][i]).real for i in range(len(df[price]))]
+
+def ATANH(df, price='Close'):
+    """
+    Inverse Hyperbolic Tangent
+    Returns: list of floats = jhta.ATANH(df, price='Close')
+    """
+    return [cmath.atanh(df[price][i]).real for i in range(len(df[price]))]
+
+def CEIL(df, price='Close'):
+    """
+    Ceiling
+    Returns: list of floats = jhta.CEIL(df, price='Close')
+    """
+    return [math.ceil(df[price][i]) for i in range(len(df[price]))]
+
+def COS(df, price='Close'):
+    """
+    Cosine
+    Returns: list of floats = jhta.COS(df, price='Close')
+    """
+    return [cmath.cos(df[price][i]).real for i in range(len(df[price]))]
+
+def COSH(df, price='Close'):
+    """
+    Hyperbolic Cosine
+    Returns: list of floats = jhta.COSH(df, price='Close')
+    """
+    return [cmath.cosh(df[price][i]).real for i in range(len(df[price]))]
+
+def DEGREES(df, price='Close'):
+    """
+    Radians to Degrees
+    Returns: list of floats = jhta.DEGREES(df, price='Close')
+    """
+    return [math.degrees(df[price][i]) for i in range(len(df[price]))]
+
+def DIV(df, high='High', low='Low'):
+    """
+    Division High / Low
+    Returns: list of floats = jhta.DIV(df, high='High', low='Low')
+    """
+    return [df[high][i] / df[low][i] for i in range(len(df[low]))]
+
+def E():
+    """
+    Mathematical constant E
+    Returns: float = jhta.E()
+    """
+    return cmath.e
+
+def ED(x1, y1, x2, y2):
+    """
+    Euclidean Distance
+    Returns: float = jhta.ED(x1, y1, x2, y2)
+    Source: book: An Introduction to Algorithmic Trading
+    """
+    return cmath.sqrt((x1 - x2)**2 + (y1 - y2)**2).real
+
+def EDS(df, n, price='Close'):
+    """
+    Euclidean Distances
+    Returns: list of floats = jhta.EDS(df, n, price='Close')
+    Source: book: An Introduction to Algorithmic Trading
+    """
+    ed_list = []
+    for i in range(len(df[price])):
+        if i + 1 < n:
+            ed = float('NaN')
+        else:
+            x1 = i - n
+            y1 = df[price][i - n]
+            x2 = i
+            y2 = df[price][i]
+            ed = jhta.ED(x1, y1, x2, y2)
+        ed_list.append(ed)
+    return ed_list
+
 def EXP(df, price='Close'):
     """
     Exponential
     Returns: list of floats = jhta.EXP(df, price='Close')
     """
     return [cmath.exp(df[price][i]).real for i in range(len(df[price]))]
+
+def FIB(n):
+    """
+    Fibonacci series up to n
+    Returns: list of ints = jhta.FIB(n)
+    """
+    fib_list = []
+    a, b = 0, 1
+    while a < n:
+        fib_list.append(a)
+        a, b = b, a + b
+    return fib_list
+
+def FLOOR(df, price='Close'):
+    """
+    Floor
+    Returns: list of floats = jhta.FLOOR(df, price='Close')
+    """
+    return [math.floor(df[price][i]) for i in range(len(df[price]))]
 
 def LOG(df, price='Close'):
     """
@@ -29,179 +166,6 @@ def LOG10(df, price='Close'):
     Returns: list of floats = jhta.LOG10(df, price='Close')
     """
     return [cmath.log10(df[price][i]).real for i in range(len(df[price]))]
-
-def SQRT(df, price='Close'):
-    """
-    Square Root
-    Returns: list of floats = jhta.SQRT(df, price='Close')
-    """
-    return [cmath.sqrt(df[price][i]).real for i in range(len(df[price]))]
-
-def ACOS(df, price='Close'):
-    """
-    Arc Cosine
-    Returns: list of floats = jhta.ACOS(df, price='Close')
-    """
-    return [cmath.acos(df[price][i]).real for i in range(len(df[price]))]
-
-def ASIN(df, price='Close'):
-    """
-    Arc Sine
-    Returns: list of floats = jhta.ASIN(df, price='Close')
-    """
-    return [cmath.asin(df[price][i]).real for i in range(len(df[price]))]
-
-def ATAN(df, price='Close'):
-    """
-    Arc Tangent
-    Returns: list of floats = jhta.ATAN(df, price='Close')
-    """
-    return [cmath.atan(df[price][i]).real for i in range(len(df[price]))]
-
-def COS(df, price='Close'):
-    """
-    Cosine
-    Returns: list of floats = jhta.COS(df, price='Close')
-    """
-    return [cmath.cos(df[price][i]).real for i in range(len(df[price]))]
-
-def SIN(df, price='Close'):
-    """
-    Sine
-    Returns: list of floats = jhta.SIN(df, price='Close')
-    """
-    return [cmath.sin(df[price][i]).real for i in range(len(df[price]))]
-
-def TAN(df, price='Close'):
-    """
-    Tangent
-    Returns: list of floats = jhta.TAN(df, price='Close')
-    """
-    return [cmath.tan(df[price][i]).real for i in range(len(df[price]))]
-
-def ACOSH(df, price='Close'):
-    """
-    Inverse Hyperbolic Cosine
-    Returns: list of floats = jhta.ACOSH(df, price='Close')
-    """
-    return [cmath.acosh(df[price][i]).real for i in range(len(df[price]))]
-
-def ASINH(df, price='Close'):
-    """
-    Inverse Hyperbolic Sine
-    Returns: list of floats = jhta.ASINH(df, price='Close')
-    """
-    return [cmath.asinh(df[price][i]).real for i in range(len(df[price]))]
-
-def ATANH(df, price='Close'):
-    """
-    Inverse Hyperbolic Tangent
-    Returns: list of floats = jhta.ATANH(df, price='Close')
-    """
-    return [cmath.atanh(df[price][i]).real for i in range(len(df[price]))]
-
-def COSH(df, price='Close'):
-    """
-    Hyperbolic Cosine
-    Returns: list of floats = jhta.COSH(df, price='Close')
-    """
-    return [cmath.cosh(df[price][i]).real for i in range(len(df[price]))]
-
-def SINH(df, price='Close'):
-    """
-    Hyperbolic Sine
-    Returns: list of floats = jhta.SINH(df, price='Close')
-    """
-    return [cmath.sinh(df[price][i]).real for i in range(len(df[price]))]
-
-def TANH(df, price='Close'):
-    """
-    Hyperbolic Tangent
-    Returns: list of floats = jhta.TANH(df, price='Close')
-    """
-    return [cmath.tanh(df[price][i]).real for i in range(len(df[price]))]
-
-def PI():
-    """
-    Mathematical constant PI
-    Returns: float = jhta.PI()
-    """
-    return cmath.pi
-
-def E():
-    """
-    Mathematical constant E
-    Returns: float = jhta.E()
-    """
-    return cmath.e
-
-def TAU():
-    """
-    Mathematical constant TAU
-    Returns: float = jhta.TAU()
-    """
-    return cmath.tau
-
-def PHI():
-    """
-    Mathematical constant PHI
-    Returns: float = jhta.PHI()
-    """
-    return (cmath.sqrt(5).real + 1) / 2
-
-def FIB(n):
-    """
-    Fibonacci series up to n
-    Returns: list of ints = jhta.FIB(n)
-    """
-    fib_list = []
-    a, b = 0, 1
-    while a < n:
-        fib_list.append(a)
-        a, b = b, a + b
-    return fib_list
-
-def CEIL(df, price='Close'):
-    """
-    Ceiling
-    Returns: list of floats = jhta.CEIL(df, price='Close')
-    """
-    return [math.ceil(df[price][i]) for i in range(len(df[price]))]
-
-def FLOOR(df, price='Close'):
-    """
-    Floor
-    Returns: list of floats = jhta.FLOOR(df, price='Close')
-    """
-    return [math.floor(df[price][i]) for i in range(len(df[price]))]
-
-def DEGREES(df, price='Close'):
-    """
-    Radians to Degrees
-    Returns: list of floats = jhta.DEGREES(df, price='Close')
-    """
-    return [math.degrees(df[price][i]) for i in range(len(df[price]))]
-
-def RADIANS(df, price='Close'):
-    """
-    Degrees to Radians
-    Returns: list of floats = jhta.RADIANS(df, price='Close')
-    """
-    return [math.radians(df[price][i]) for i in range(len(df[price]))]
-
-def ADD(df, high='High', low='Low'):
-    """
-    Addition High + Low
-    Returns: list of floats = jhta.ADD(df, high='High', low='Low')
-    """
-    return [df[high][i] + df[low][i] for i in range(len(df[low]))]
-
-def DIV(df, high='High', low='Low'):
-    """
-    Division High / Low
-    Returns: list of floats = jhta.DIV(df, high='High', low='Low')
-    """
-    return [df[high][i] / df[low][i] for i in range(len(df[low]))]
 
 def MAX(df, n, price='Close'):
     """
@@ -342,6 +306,75 @@ def MULT(df, high='High', low='Low'):
     """
     return [df[high][i] * df[low][i] for i in range(len(df[low]))]
 
+def PHI():
+    """
+    Mathematical constant PHI
+    Returns: float = jhta.PHI()
+    """
+    return (cmath.sqrt(5).real + 1) / 2
+
+def PI():
+    """
+    Mathematical constant PI
+    Returns: float = jhta.PI()
+    """
+    return cmath.pi
+
+def RADIANS(df, price='Close'):
+    """
+    Degrees to Radians
+    Returns: list of floats = jhta.RADIANS(df, price='Close')
+    """
+    return [math.radians(df[price][i]) for i in range(len(df[price]))]
+
+def SIN(df, price='Close'):
+    """
+    Sine
+    Returns: list of floats = jhta.SIN(df, price='Close')
+    """
+    return [cmath.sin(df[price][i]).real for i in range(len(df[price]))]
+
+def SINH(df, price='Close'):
+    """
+    Hyperbolic Sine
+    Returns: list of floats = jhta.SINH(df, price='Close')
+    """
+    return [cmath.sinh(df[price][i]).real for i in range(len(df[price]))]
+
+def SLOPE(x1, y1, x2, y2):
+    """
+    Slope
+    Returns: float = jhta.SLOPE(x1, y1, x2, y2)
+    Source: book: An Introduction to Algorithmic Trading
+    """
+    return (y2 - y1) / (x2 - x1)
+
+def SLOPES(df, n, price='Close'):
+    """
+    Slopes
+    Returns: list of floats = jhta.SLOPES(df, n, price='Close')
+    Source: book: An Introduction to Algorithmic Trading
+    """
+    slope_list = []
+    for i in range(len(df[price])):
+        if i + 1 < n:
+            slope = float('NaN')
+        else:
+            x1 = i - n
+            y1 = df[price][i - n]
+            x2 = i
+            y2 = df[price][i]
+            slope = jhta.SLOPE(x1, y1, x2, y2)
+        slope_list.append(slope)
+    return slope_list
+
+def SQRT(df, price='Close'):
+    """
+    Square Root
+    Returns: list of floats = jhta.SQRT(df, price='Close')
+    """
+    return [cmath.sqrt(df[price][i]).real for i in range(len(df[price]))]
+
 def SUB(df, high='High', low='Low'):
     """
     Subtraction High - Low
@@ -377,57 +410,24 @@ def SUM(df, n, price='Close'):
             sum_list.append(SUM)
     return sum_list
 
-def SLOPE(x1, y1, x2, y2):
+def TAN(df, price='Close'):
     """
-    Slope
-    Returns: float = jhta.SLOPE(x1, y1, x2, y2)
-    Source: book: An Introduction to Algorithmic Trading
+    Tangent
+    Returns: list of floats = jhta.TAN(df, price='Close')
     """
-    return (y2 - y1) / (x2 - x1)
+    return [cmath.tan(df[price][i]).real for i in range(len(df[price]))]
 
-def SLOPES(df, n, price='Close'):
+def TANH(df, price='Close'):
     """
-    Slopes
-    Returns: list of floats = jhta.SLOPES(df, n, price='Close')
-    Source: book: An Introduction to Algorithmic Trading
+    Hyperbolic Tangent
+    Returns: list of floats = jhta.TANH(df, price='Close')
     """
-    slope_list = []
-    for i in range(len(df[price])):
-        if i + 1 < n:
-            slope = float('NaN')
-        else:
-            x1 = i - n
-            y1 = df[price][i - n]
-            x2 = i
-            y2 = df[price][i]
-            slope = jhta.SLOPE(x1, y1, x2, y2)
-        slope_list.append(slope)
-    return slope_list
+    return [cmath.tanh(df[price][i]).real for i in range(len(df[price]))]
 
-def ED(x1, y1, x2, y2):
+def TAU():
     """
-    Euclidean Distance
-    Returns: float = jhta.ED(x1, y1, x2, y2)
-    Source: book: An Introduction to Algorithmic Trading
+    Mathematical constant TAU
+    Returns: float = jhta.TAU()
     """
-    return cmath.sqrt((x1 - x2)**2 + (y1 - y2)**2).real
-
-def EDS(df, n, price='Close'):
-    """
-    Euclidean Distances
-    Returns: list of floats = jhta.EDS(df, n, price='Close')
-    Source: book: An Introduction to Algorithmic Trading
-    """
-    ed_list = []
-    for i in range(len(df[price])):
-        if i + 1 < n:
-            ed = float('NaN')
-        else:
-            x1 = i - n
-            y1 = df[price][i - n]
-            x2 = i
-            y2 = df[price][i]
-            ed = jhta.ED(x1, y1, x2, y2)
-        ed_list.append(ed)
-    return ed_list
+    return cmath.tau
 
