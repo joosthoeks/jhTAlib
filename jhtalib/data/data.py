@@ -111,37 +111,6 @@ def DF2DFWIN(df, start=0, end=10, datetime='datetime', open='Open', high='High',
         volume: tuple(df[volume][start:end])
         })
 
-def DF_HEAD(df, n=5, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume'):
-    """
-    DataFeed HEAD
-    Returns: dict of tuples of floats = jhta.DF_HEAD(df, n=5, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume')
-    """
-    end = n
-    return dict({
-        datetime: tuple(df[datetime][0:end]),
-        open: tuple(df[open][0:end]),
-        high: tuple(df[high][0:end]),
-        low: tuple(df[low][0:end]),
-        close: tuple(df[close][0:end]),
-        volume: tuple(df[volume][0:end])
-        })
-
-def DF_TAIL(df, n=5, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume'):
-    """
-    DataFeed TAIL
-    Returns: dict of tuples of floats = jhta.DF_TAIL(df, n=5, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume')
-    """
-    start = len(df[close]) - n
-    end = len(df[close])
-    return dict({
-        datetime: tuple(df[datetime][start:end]),
-        open: tuple(df[open][start:end]),
-        high: tuple(df[high][start:end]),
-        low: tuple(df[low][start:end]),
-        close: tuple(df[close][start:end]),
-        volume: tuple(df[volume][start:end])
-        })
-
 def DF2HEIKIN_ASHI(df, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume'):
     """
     DataFeed 2 Heikin-Ashi DataFeed
@@ -173,5 +142,36 @@ def DF2HEIKIN_ASHI(df, datetime='datetime', open='Open', high='High', low='Low',
         low: tuple(ha_Low_list),
         close: tuple(ha_Close_list),
         volume: tuple(df[volume])
+        })
+
+def DF_HEAD(df, n=5, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume'):
+    """
+    DataFeed HEAD
+    Returns: dict of tuples of floats = jhta.DF_HEAD(df, n=5, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume')
+    """
+    end = n
+    return dict({
+        datetime: tuple(df[datetime][0:end]),
+        open: tuple(df[open][0:end]),
+        high: tuple(df[high][0:end]),
+        low: tuple(df[low][0:end]),
+        close: tuple(df[close][0:end]),
+        volume: tuple(df[volume][0:end])
+        })
+
+def DF_TAIL(df, n=5, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume'):
+    """
+    DataFeed TAIL
+    Returns: dict of tuples of floats = jhta.DF_TAIL(df, n=5, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume')
+    """
+    start = len(df[close]) - n
+    end = len(df[close])
+    return dict({
+        datetime: tuple(df[datetime][start:end]),
+        open: tuple(df[open][start:end]),
+        high: tuple(df[high][start:end]),
+        low: tuple(df[low][start:end]),
+        close: tuple(df[close][start:end]),
+        volume: tuple(df[volume][start:end])
         })
 
