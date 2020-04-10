@@ -42,10 +42,70 @@ def ATR(df, n, high='High', low='Low', close='Close'):
         atr_list.append(atr)
     return atr_list
 
+def AVOLA(df, n=30, na=252, price='Close'):
+    """
+    Annual Volatility
+    Returns: list of floats = jhta.AVOLA(df, n=30, na=252, price='Close')
+    Source: https://www.wallstreetmojo.com/volatility-formula/
+    """
+    dvola_list = jhta.DVOLA(df, n, price)
+    avola_list = []
+    for i in range(len(df[price])):
+        if i + 1 < n:
+            avola = float('NaN')
+        else:
+            avola = math.sqrt(na) * dvola_list[i]
+        avola_list.append(avola)
+    return avola_list
+
+def DVOLA(df, n=30, price='Close'):
+    """
+    Daily Volatility
+    Returns: list of floats = jhta.DVOLA(df, n=30, price='Close')
+    Source: https://www.wallstreetmojo.com/volatility-formula/
+    """
+    dvola_list = []
+    for i in range(len(df[price])):
+        if i + 1 < n:
+            dvola = float('NaN')
+        else:
+            start = i + 1 - n
+            end = i + 1
+            pvariance = statistics.pvariance(df[price][start:end])
+            dvola = math.sqrt(pvariance)
+        dvola_list.append(dvola)
+    return dvola_list
+
+def INERTIA(df, n, price='Close'):
+    """
+    Inertia
+    Returns: list of floats = jhta.INERTIA(df, n, price='Close')
+    Source: https://www.fmlabs.com/reference/default.htm?url=Inertia.htm
+    """
+    rvioc = jhta.RVIOC(df, n, price)
+    return jhta.LSMA({'rvioc': rvioc}, n, 'rvioc')
+
 def NATR(df, n):
     """
     Normalized Average True Range
     """
+
+def PRANGE(df, n, max_price='High', min_price='Low'):
+    """
+    %Range
+    Returns: list of floats = jhta.PRANGE(df, n, max_price='High', min_price='Low')
+    Source: book: An Introduction to Algorithmic Trading
+    """
+    max_list = jhta.MAX(df, n, max_price)
+    min_list = jhta.MIN(df, n, min_price)
+    prange_list = []
+    for i in range(len(df[max_price])):
+        if i + 1 < n:
+            prange = float('NaN')
+        else:
+            prange = (max_list[i] - min_list[i]) / ((max_list[i] + min_list[i]) / 2) * 100
+        prange_list.append(prange)
+    return prange_list
 
 def RVI(df, n, high='High', low='Low'):
     """
@@ -120,32 +180,6 @@ def RVIOC(df, n, price='Close'):
         rvioc_list.append(rvioc)
     return rvioc_list
 
-def INERTIA(df, n, price='Close'):
-    """
-    Inertia
-    Returns: list of floats = jhta.INERTIA(df, n, price='Close')
-    Source: https://www.fmlabs.com/reference/default.htm?url=Inertia.htm
-    """
-    rvioc = jhta.RVIOC(df, n, price)
-    return jhta.LSMA({'rvioc': rvioc}, n, 'rvioc')
-
-def PRANGE(df, n, max_price='High', min_price='Low'):
-    """
-    %Range
-    Returns: list of floats = jhta.PRANGE(df, n, max_price='High', min_price='Low')
-    Source: book: An Introduction to Algorithmic Trading
-    """
-    max_list = jhta.MAX(df, n, max_price)
-    min_list = jhta.MIN(df, n, min_price)
-    prange_list = []
-    for i in range(len(df[max_price])):
-        if i + 1 < n:
-            prange = float('NaN')
-        else:
-            prange = (max_list[i] - min_list[i]) / ((max_list[i] + min_list[i]) / 2) * 100
-        prange_list.append(prange)
-    return prange_list
-
 def TRANGE(df, high='High', low='Low', close='Close'):
     """
     True Range
@@ -166,38 +200,4 @@ def TRANGE(df, high='High', low='Low', close='Close'):
             tr = true_high - true_low
         tr_list.append(tr)
     return tr_list
-
-def DVOLA(df, n=30, price='Close'):
-    """
-    Daily Volatility
-    Returns: list of floats = jhta.DVOLA(df, n=30, price='Close')
-    Source: https://www.wallstreetmojo.com/volatility-formula/
-    """
-    dvola_list = []
-    for i in range(len(df[price])):
-        if i + 1 < n:
-            dvola = float('NaN')
-        else:
-            start = i + 1 - n
-            end = i + 1
-            pvariance = statistics.pvariance(df[price][start:end])
-            dvola = math.sqrt(pvariance)
-        dvola_list.append(dvola)
-    return dvola_list
-
-def AVOLA(df, n=30, na=252, price='Close'):
-    """
-    Annual Volatility
-    Returns: list of floats = jhta.AVOLA(df, n=30, na=252, price='Close')
-    Source: https://www.wallstreetmojo.com/volatility-formula/
-    """
-    dvola_list = jhta.DVOLA(df, n, price)
-    avola_list = []
-    for i in range(len(df[price])):
-        if i + 1 < n:
-            avola = float('NaN')
-        else:
-            avola = math.sqrt(na) * dvola_list[i]
-        avola_list.append(avola)
-    return avola_list
 
