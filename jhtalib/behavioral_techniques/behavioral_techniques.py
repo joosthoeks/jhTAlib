@@ -31,18 +31,28 @@ def FIBOPR(df, price='Close'):
     """
     Fibonacci Price Retracements
     Returns: dict of lists of floats = jhta.FIBOPR(df, price='Close')
+    Source: https://github.com/joosthoeks/jhTAlib/issues/15
     """
     fibopr_dict = {
-            '618': [], '-618': [],
-            '381': [], '-381': []
-            }
+        '100': [], '61.8': [], '50.0': [], '38.1': [], '0': [],
+        '-38.1': [], '-50.0': [], '-61.8': [], '-100': []
+    }
     p0618 = jhta.PHI() - 1
+    p05 = .5
     p0381 = 1 - p0618
-    for i, price in enumerate(df[price]):
-        fibopr_dict['618'].append(price+(price*p0618))
-        fibopr_dict['-618'].append(price-(price*p0618))
-        fibopr_dict['381'].append(price+(price*p0381))
-        fibopr_dict['-381'].append(price-(price*p0381))
+    ath = jhta.ATH(df, price)['ath']
+    lmc = jhta.LMC(df, price, price)['lmc']
+    for i in range(len(df[price])):
+        diff = ath[i] - lmc[i]
+        fibopr_dict['100'].append(ath[i] + diff)
+        fibopr_dict['61.8'].append(ath[i] + diff * p0618)
+        fibopr_dict['50.0'].append(ath[i] + diff * p05)
+        fibopr_dict['38.1'].append(ath[i] + diff * p0381)
+        fibopr_dict['0'].append(ath[i])
+        fibopr_dict['-38.1'].append(ath[i] - diff * p0381)
+        fibopr_dict['-50.0'].append(ath[i] - diff * p05)
+        fibopr_dict['-61.8'].append(ath[i] - diff * p0618)
+        fibopr_dict['-100'].append(ath[i] - diff)
     return fibopr_dict
 
 def FIBOTR(df, price='Close'):
