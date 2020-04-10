@@ -22,44 +22,10 @@ def ATH(df, price='High'):
         ath_dict['ath_index'].append(ath_index)
     return ath_dict
 
-def LMC(df, price='Low', price_high='High'):
+def EARTHC(df):
     """
-    Last Major Correction
-    Returns: dict of lists of floats = jhta.LMC(df, price='Low', price_high='High')
+    Earth Cycle
     """
-    lmc_dict = {'lmc': [], 'lmc_index': []}
-    ath_dict = jhta.ATH(df, price_high)
-    for i in range(len(df[price])):
-        df_part_list = df[price][ath_dict['ath_index'][i]:i+1]
-        lmc = min(df_part_list)
-        lmc_dict['lmc'].append(lmc)
-        lmc_index = df_part_list.index(min(df_part_list))
-        lmc_dict['lmc_index'].append(lmc_index)
-    return lmc_dict
-
-def PP(df, high='High', low='Low', close='Close'):
-    """
-    Pivot Point
-    Returns: dict of lists of floats = jhta.PP(df, high='High', low='Low', close='Close')
-    Source: https://en.wikipedia.org/wiki/Pivot_point_(technical_analysis)
-    """
-    pp_dict = {'p': [], 'r1': [], 's1': [], 'r2': [], 's2': [], 'r3': [], 's3': []}
-    for i in range(len(df[close])):
-        p = (df[high][i] + df[low][i] + df[close][i]) / 3
-        pp_dict['p'].append(p)
-        r1 = p + (p - df[low][i])
-        pp_dict['r1'].append(r1)
-        s1 = p - (df[high][i] - p)
-        pp_dict['s1'].append(s1)
-        r2 = p + (df[high][i] - df[low][i])
-        pp_dict['r2'].append(r2)
-        s2 = p - (df[high][i] - df[low][i])
-        pp_dict['s2'].append(s2)
-        r3 = r1 + (df[high][i] - df[low][i])
-        pp_dict['r3'].append(r3)
-        s3 = s1 - (df[high][i] - df[low][i])
-        pp_dict['s3'].append(s3)
-    return pp_dict
 
 def FIBOPR(df, price='Close'):
     """
@@ -120,6 +86,20 @@ def GANNTR(df, price='Close'):
     W. D. Gann Time Retracements
     """
 
+def JD(utc_year, utc_month, utc_day, utc_hour, utc_minute, utc_second):
+    """
+    Julian Date
+    Returns: jd = jhta.JD(utc_year, utc_month, utc_day, utc_hour, utc_minute, utc_second)
+    Source: https://en.wikipedia.org/wiki/Julian_day
+    """
+    hour = int(utc_hour)
+    minute = int(utc_minute)
+    second = int(utc_second)
+
+    jdn = JDN(utc_year, utc_month, utc_day)
+
+    return jdn + ((hour-12)/24) + (minute/1440) + (second/86400)
+
 def JDN(utc_year, utc_month, utc_day):
     """
     Julian Day Number
@@ -136,23 +116,29 @@ def JDN(utc_year, utc_month, utc_day):
 
     return day + math.floor(((153*m)+2)/5) + (365*y) + math.floor(y/4) - math.floor(y/100) + math.floor(y/400) - 32045
 
-def JD(utc_year, utc_month, utc_day, utc_hour, utc_minute, utc_second):
+def JUPITERC(df):
     """
-    Julian Date
-    Returns: jd = jhta.JD(utc_year, utc_month, utc_day, utc_hour, utc_minute, utc_second)
-    Source: https://en.wikipedia.org/wiki/Julian_day
+    Jupiter Cycle
     """
-    hour = int(utc_hour)
-    minute = int(utc_minute)
-    second = int(utc_second)
 
-    jdn = JDN(utc_year, utc_month, utc_day)
-
-    return jdn + ((hour-12)/24) + (minute/1440) + (second/86400)
-
-def SUNC(df):
+def LMC(df, price='Low', price_high='High'):
     """
-    Sun Cycle
+    Last Major Correction
+    Returns: dict of lists of floats = jhta.LMC(df, price='Low', price_high='High')
+    """
+    lmc_dict = {'lmc': [], 'lmc_index': []}
+    ath_dict = jhta.ATH(df, price_high)
+    for i in range(len(df[price])):
+        df_part_list = df[price][ath_dict['ath_index'][i]:i+1]
+        lmc = min(df_part_list)
+        lmc_dict['lmc'].append(lmc)
+        lmc_index = df_part_list.index(min(df_part_list))
+        lmc_dict['lmc_index'].append(lmc_index)
+    return lmc_dict
+
+def MARSC(df):
+    """
+    Mars Cycle
     """
 
 def MERCURYC(df):
@@ -160,34 +146,9 @@ def MERCURYC(df):
     Mercury Cycle
     """
 
-def VENUSC(df):
+def MOONC(df):
     """
-    Venus Cycle
-    """
-
-def EARTHC(df):
-    """
-    Earth Cycle
-    """
-
-def MARSC(df):
-    """
-    Mars Cycle
-    """
-
-def JUPITERC(df):
-    """
-    Jupiter Cycle
-    """
-
-def SATURNC(df):
-    """
-    Saturn Cycle
-    """
-
-def URANUSC(df):
-    """
-    Uranus Cycle
+    Moon Cycle
     """
 
 def NEPTUNEC(df):
@@ -200,8 +161,47 @@ def PLUTOC(df):
     Pluto Cycle
     """
 
-def MOONC(df):
+def PP(df, high='High', low='Low', close='Close'):
     """
-    Moon Cycle
+    Pivot Point
+    Returns: dict of lists of floats = jhta.PP(df, high='High', low='Low', close='Close')
+    Source: https://en.wikipedia.org/wiki/Pivot_point_(technical_analysis)
+    """
+    pp_dict = {'p': [], 'r1': [], 's1': [], 'r2': [], 's2': [], 'r3': [], 's3': []}
+    for i in range(len(df[close])):
+        p = (df[high][i] + df[low][i] + df[close][i]) / 3
+        pp_dict['p'].append(p)
+        r1 = p + (p - df[low][i])
+        pp_dict['r1'].append(r1)
+        s1 = p - (df[high][i] - p)
+        pp_dict['s1'].append(s1)
+        r2 = p + (df[high][i] - df[low][i])
+        pp_dict['r2'].append(r2)
+        s2 = p - (df[high][i] - df[low][i])
+        pp_dict['s2'].append(s2)
+        r3 = r1 + (df[high][i] - df[low][i])
+        pp_dict['r3'].append(r3)
+        s3 = s1 - (df[high][i] - df[low][i])
+        pp_dict['s3'].append(s3)
+    return pp_dict
+
+def SATURNC(df):
+    """
+    Saturn Cycle
+    """
+
+def SUNC(df):
+    """
+    Sun Cycle
+    """
+
+def URANUSC(df):
+    """
+    Uranus Cycle
+    """
+
+def VENUSC(df):
+    """
+    Venus Cycle
     """
 
