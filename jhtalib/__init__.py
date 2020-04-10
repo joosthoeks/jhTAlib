@@ -1,6 +1,6 @@
 
 
-__version__ = '20200409.0'
+__version__ = '20200410.0'
 
 
 from .decorators import *
@@ -34,3 +34,4 @@ Upload PyPI:
 $ python3 setup.py sdist bdist_wheel
 $ twine upload dist/*
 """
+
