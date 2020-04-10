@@ -7,6 +7,22 @@
 import jhtalib as jhta
 
 
+def BPPS(trade_start_price, trade_end_price, trade_start_timestamp, trade_end_timestamp):
+    """
+    Basis Points per Second
+    Returns: float = jhta.BPPS(trade_start_price, trade_end_price, trade_start_timestamp, trade_end_timestamp)
+    Source: book: An Introduction to Algorithmic Trading
+    """
+    return (((trade_end_price - trade_start_price) / trade_start_price) / (trade_end_timestamp - trade_start_timestamp)) * 10000
+
+def EV(hitrate_float, mean_trade_profit_float, mean_trade_loss_float):
+    """
+    Expected Value
+    Returns: float = jhta.EV(hitrade_float, mean_trade_profit_float, mean_trade_loss_float)
+    Source: https://en.wikipedia.org/wiki/Expected_value
+    """
+    return float((hitrate_float * mean_trade_profit_float) + ((1 - hitrate_float) * mean_trade_loss_float))
+
 def HR(hit_trades_int, total_trades_int):
     """
     Hit Rate / Win Rate
@@ -22,14 +38,6 @@ def PLR(mean_trade_profit_float, mean_trade_loss_float):
     Source: https://www.investopedia.com/terms/p/profit_loss_ratio.asp
     """
     return float(mean_trade_profit_float / mean_trade_loss_float)
-
-def EV(hitrate_float, mean_trade_profit_float, mean_trade_loss_float):
-    """
-    Expected Value
-    Returns: float = jhta.EV(hitrade_float, mean_trade_profit_float, mean_trade_loss_float)
-    Source: https://en.wikipedia.org/wiki/Expected_value
-    """
-    return float((hitrate_float * mean_trade_profit_float) + ((1 - hitrate_float) * mean_trade_loss_float))
 
 def POR(hitrate_float, profit_loss_ratio_float):
     """
@@ -64,47 +72,6 @@ def POR(hitrate_float, profit_loss_ratio_float):
 
     return int(table_lucas_lebeau_list[key_profit_loss_ratio][key_hitrate])
 
-def BPPS(trade_start_price, trade_end_price, trade_start_timestamp, trade_end_timestamp):
-    """
-    Basis Points per Second
-    Returns: float = jhta.BPPS(trade_start_price, trade_end_price, trade_start_timestamp, trade_end_timestamp)
-    Source: book: An Introduction to Algorithmic Trading
-    """
-    return (((trade_end_price - trade_start_price) / trade_start_price) / (trade_end_timestamp - trade_start_timestamp)) * 10000
-
-def RET(df, price='Close'):
-    """
-    Return
-    Returns: list of floats = jhta.RET(df, price='Close')
-    Source: book: An Introduction to Algorithmic Trading
-    """
-    ret_list = []
-    for i in range(len(df[price])):
-        if i < 1:
-            ret = float('NaN')
-        else:
-            ret = df[price][i] - df[price][i - 1]
-        ret_list.append(ret)
-    return ret_list
-
-def RETS(df, price='Close'):
-    """
-    Returns
-    Returns: list of floats = jhta.RETS(df, price='Close')
-    Source: book: An Introduction to Algorithmic Trading
-    """
-    rets_list = []
-    ret_list = jhta.RET(df, price)
-    for i in range(len(df[price])):
-        if i < 1:
-            rets = float('NaN')
-            rets_list.append(rets)
-            rets = .0
-        else:
-            rets = rets + ret_list[i]
-            rets_list.append(rets)
-    return rets_list
-
 def PRET(df, price='Close'):
     """
     %Return
@@ -138,4 +105,37 @@ def PRETS(df, price='Close'):
             prets = prets + pret_list[i]
             prets_list.append(prets)
     return prets_list
+
+def RET(df, price='Close'):
+    """
+    Return
+    Returns: list of floats = jhta.RET(df, price='Close')
+    Source: book: An Introduction to Algorithmic Trading
+    """
+    ret_list = []
+    for i in range(len(df[price])):
+        if i < 1:
+            ret = float('NaN')
+        else:
+            ret = df[price][i] - df[price][i - 1]
+        ret_list.append(ret)
+    return ret_list
+
+def RETS(df, price='Close'):
+    """
+    Returns
+    Returns: list of floats = jhta.RETS(df, price='Close')
+    Source: book: An Introduction to Algorithmic Trading
+    """
+    rets_list = []
+    ret_list = jhta.RET(df, price)
+    for i in range(len(df[price])):
+        if i < 1:
+            rets = float('NaN')
+            rets_list.append(rets)
+            rets = .0
+        else:
+            rets = rets + ret_list[i]
+            rets_list.append(rets)
+    return rets_list
 
