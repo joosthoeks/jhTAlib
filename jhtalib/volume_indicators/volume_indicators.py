@@ -71,6 +71,23 @@ def OBV(df, close='Close', volume='Volume'):
         obv_list.append(obv)
     return obv_list
 
+def PVI(df, price='Close', volume='Volume'):
+    """
+    Positive Volume Index
+    Returns: list of floats = jhta.PVI(df, price='Close', volume='Volume')
+    Source: https://www.fmlabs.com/reference/default.htm?url=PVI.htm
+    """
+    pvi_list = []
+    for i in range(len(df[price])):
+        pvi = 0
+        if i > 0:
+            if df[volume][i] > df[volume][i - 1]:
+                pvi = pvi_list[i - 1] + (df[price][i] - df[price][i - 1]) / df[price][i - 1]
+            else:
+                pvi = pvi_list[i - 1]
+        pvi_list.append(pvi)
+    return pvi_list
+
 def PVR(df, price='Close', volume='Volume'):
     """
     Price Volume Rank
@@ -106,23 +123,6 @@ def PVT(df, price='Close', volume='Volume'):
             pvt = pvt_list[i - 1] + df[volume][i] * (df[price][i] - df[price][i - 1]) / df[price][i - 1]
         pvt_list.append(pvt)
     return pvt_list
-
-def PVI(df, price='Close', volume='Volume'):
-    """
-    Positive Volume Index
-    Returns: list of floats = jhta.PVI(df, price='Close', volume='Volume')
-    Source: https://www.fmlabs.com/reference/default.htm?url=PVI.htm
-    """
-    pvi_list = []
-    for i in range(len(df[price])):
-        pvi = 0
-        if i > 0:
-            if df[volume][i] > df[volume][i - 1]:
-                pvi = pvi_list[i - 1] + (df[price][i] - df[price][i - 1]) / df[price][i - 1]
-            else:
-                pvi = pvi_list[i - 1]
-        pvi_list.append(pvi)
-    return pvi_list
 
 def VWAP(df, open='Open', high='High', low='Low', close='Close', volume='Volume'):
     """
