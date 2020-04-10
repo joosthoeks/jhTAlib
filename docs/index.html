@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <meta name="author" content="Joost Hoeks">
-  <meta name="dcterms.date" content="2020-04-09">
+  <meta name="dcterms.date" content="2020-04-10">
   <title>jhTAlib</title>
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" href="pandoc.css">
@@ -17,38 +17,18 @@
 <header>
 <h1 class="title">jhTAlib</h1>
 <p class="author">Joost Hoeks</p>
-<p class="date">2020-04-09</p>
+<p class="date">2020-04-10</p>
 </header>
 <nav id="TOC">
 <ul>
 <li><a href="#jhtalib">jhTAlib</a><ul>
 <li><a href="#depends-only-on">Depends only on</a></li>
-<li><a href="#docs">Docs</a></li>
 <li><a href="#install">Install</a></li>
 <li><a href="#update">Update</a></li>
 <li><a href="#in-colab">In Colab</a></li>
-<li><a href="#check-installation">Check Installation</a></li>
 <li><a href="#basic-usage">Basic Usage</a></li>
-<li><a href="#examples">Examples</a><ul>
-<li><a href="#example-1">Example 1</a></li>
-<li><a href="#example-2">Example 2</a></li>
-<li><a href="#example-3">Example 3</a></li>
-<li><a href="#example-4">Example 4</a></li>
-<li><a href="#example-5">Example 5</a></li>
-<li><a href="#example-6">Example 6</a></li>
-<li><a href="#example-7">Example 7</a></li>
-<li><a href="#example-8">Example 8</a></li>
-<li><a href="#example-9">Example 9</a></li>
-<li><a href="#example-10">Example 10</a></li>
-<li><a href="#example-11">Example 11</a></li>
-</ul></li>
-<li><a href="#test">Test</a></li>
 <li><a href="#reference">Reference</a></li>
-<li><a href="#notebooks">Notebooks</a><ul>
-<li><a href="#a-sane-and-simple-bitcoin-savings-plan-sss">A Sane and Simple bitcoin Savings plan SSS</a></li>
-<li><a href="#dollar-cost-averaging-discount-dcad">Dollar Cost Averaging Discount DCAD</a></li>
-<li><a href="#recession-probability">Recession Probability</a></li>
-</ul></li>
+<li><a href="#check-installation">Check Installation</a></li>
 <li><a href="#donation-and-funding">Donation and Funding</a></li>
 </ul></li>
 </ul>
@@ -68,18 +48,6 @@
 <h2 id="depends-only-on">Depends only on</h2>
 <ul>
 <li><a href="https://docs.python.org/3/library/index.html">The Python Standard Library</a></li>
-</ul>
-<hr />
-<h2 id="docs">Docs</h2>
-<ul>
-<li><p><a href="https://jhtalib.joosthoeks.com">.html</a></p></li>
-<li><p><a href="https://jhtalib.joosthoeks.com/README.epub">.epub</a></p></li>
-<li><p><a href="https://jhtalib.joosthoeks.com/README.json">.json</a></p></li>
-<li><p><a href="https://jhtalib.joosthoeks.com/README.odt">.odt</a></p></li>
-<li><p><a href="https://jhtalib.joosthoeks.com/README.pdf">.pdf</a></p></li>
-<li><p><a href="https://jhtalib.joosthoeks.com/README.rst">.rst</a></p></li>
-<li><p><a href="https://jhtalib.joosthoeks.com/README.rtf">.rtf</a></p></li>
-<li><p><a href="https://jhtalib.joosthoeks.com/README.xml">.xml</a></p></li>
 </ul>
 <hr />
 <h2 id="install">Install</h2>
@@ -108,15 +76,9 @@ import jhtalib as jhta
 %cd &#39;/content&#39;
 !rm -rf ./jhTAlib/</code></pre>
 <hr />
-<h2 id="check-installation">Check Installation</h2>
-<pre><code>$ python3
-&gt;&gt;&gt; import jhtalib as jhta
-&gt;&gt;&gt; jhta.example()</code></pre>
-<p>If not errors then installation is correct.</p>
-<pre><code>&gt;&gt;&gt; quit()</code></pre>
-<hr />
 <h2 id="basic-usage">Basic Usage</h2>
-<pre><code># Import Built-Ins:
+<pre><code>&quot;&quot;&quot;&quot;&quot;&quot;
+# Import Built-Ins:
 from pprint import pprint as pp
 
 # Import Third-Party:
@@ -139,65 +101,6 @@ df = {
 #pp (df)
 pp (jhta.SMA(df, 10))
 #pp (jhta.BBANDS(df, 10))</code></pre>
-<hr />
-<h2 id="examples">Examples</h2>
-<pre><code>$ cd example/</code></pre>
-<h3 id="example-1">Example 1</h3>
-<pre><code>$ python3 example-1-plot.py</code></pre>
-<p>or</p>
-<p><a href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-1-plot.ipynb" class="uri">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-1-plot.ipynb</a></p>
-<hr />
-<h3 id="example-2">Example 2</h3>
-<pre><code>$ python3 example-2-plot.py</code></pre>
-<p>or</p>
-<p><a href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-2-plot.ipynb" class="uri">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-2-plot.ipynb</a></p>
-<hr />
-<h3 id="example-3">Example 3</h3>
-<pre><code>$ python3 example-3-plot.py</code></pre>
-<p>or</p>
-<p><a href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-3-plot.ipynb" class="uri">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-3-plot.ipynb</a></p>
-<hr />
-<h3 id="example-4">Example 4</h3>
-<pre><code>$ python3 example-4-plot-quandl.py</code></pre>
-<p>or</p>
-<p><a href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-4-plot-quandl.ipynb" class="uri">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-4-plot-quandl.ipynb</a></p>
-<hr />
-<h3 id="example-5">Example 5</h3>
-<pre><code>$ python3 example-5-plot-quandl.py</code></pre>
-<p>or</p>
-<p><a href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-5-plot-quandl.ipynb" class="uri">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-5-plot-quandl.ipynb</a></p>
-<hr />
-<h3 id="example-6">Example 6</h3>
-<pre><code>$ python3 example-6-plot-quandl.py</code></pre>
-<p>or</p>
-<p><a href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-6-plot-quandl.ipynb" class="uri">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-6-plot-quandl.ipynb</a></p>
-<hr />
-<h3 id="example-7">Example 7</h3>
-<pre><code>$ python3 example-7-quandl-2-df.py</code></pre>
-<p>or</p>
-<p><a href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-7-quandl-2-df.ipynb" class="uri">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-7-quandl-2-df.ipynb</a></p>
-<hr />
-<h3 id="example-8">Example 8</h3>
-<pre><code>$ python3 example-8-alphavantage-2-df.py</code></pre>
-<p>or</p>
-<p><a href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-8-alphavantage-2-df.ipynb" class="uri">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-8-alphavantage-2-df.ipynb</a></p>
-<hr />
-<h3 id="example-9">Example 9</h3>
-<pre><code>$ python3 example-9-cryptocompare-2-df.py</code></pre>
-<p>or</p>
-<p><a href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-9-cryptocompare-2-df.ipynb" class="uri">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-9-cryptocompare-2-df.ipynb</a></p>
-<hr />
-<h3 id="example-10">Example 10</h3>
-<p>DF NumPy Pandas</p>
-<p><a href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-10-df-numpy-pandas.ipynb" class="uri">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-10-df-numpy-pandas.ipynb</a></p>
-<hr />
-<h3 id="example-11">Example 11</h3>
-<p>Basic Usage</p>
-<p><a href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-11-basic-usage.ipynb" class="uri">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-11-basic-usage.ipynb</a></p>
-<hr />
-<h2 id="test">Test</h2>
-<pre><code>$ cd test/
-$ python3 test.py</code></pre>
 <hr />
 <h2 id="reference">Reference</h2>
 <pre><code>$ python3
@@ -223,24 +126,12 @@ $ python3 test.py</code></pre>
 &gt;&gt;&gt; help(jhta.volume_indicators)
 &gt;&gt;&gt; quit()</code></pre>
 <hr />
-<h2 id="notebooks">Notebooks</h2>
-<ul>
-<li><a href="https://github.com/joosthoeks/jhTAlib/tree/master/notebook" class="uri">https://github.com/joosthoeks/jhTAlib/tree/master/notebook</a></li>
-</ul>
-<h3 id="a-sane-and-simple-bitcoin-savings-plan-sss">A Sane and Simple bitcoin Savings plan SSS</h3>
-<ul>
-<li><a href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/a_sane_and_simple_bitcoin_savings_plan_(sss).ipynb" class="uri">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/a_sane_and_simple_bitcoin_savings_plan_(sss).ipynb</a></li>
-</ul>
-<hr />
-<h3 id="dollar-cost-averaging-discount-dcad">Dollar Cost Averaging Discount DCAD</h3>
-<ul>
-<li><a href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/dollar_cost_averaging_discount_dcad.ipynb" class="uri">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/dollar_cost_averaging_discount_dcad.ipynb</a></li>
-</ul>
-<hr />
-<h3 id="recession-probability">Recession Probability</h3>
-<ul>
-<li><a href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/recession_probability.ipynb" class="uri">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/recession_probability.ipynb</a></li>
-</ul>
+<h2 id="check-installation">Check Installation</h2>
+<pre><code>$ python3
+&gt;&gt;&gt; import jhtalib as jhta
+&gt;&gt;&gt; jhta.example()</code></pre>
+<p>If not errors then installation is correct.</p>
+<pre><code>&gt;&gt;&gt; quit()</code></pre>
 <hr />
 <h2 id="donation-and-funding">Donation and Funding</h2>
 <ul>

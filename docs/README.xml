@@ -100,172 +100,12 @@
         <style:list-level-properties text:space-before="2.5in" text:min-label-width="0.25in" />
       </text:list-level-style-bullet>
     </text:list-style>
-    <text:list-style style:name="L4">
-      <text:list-level-style-bullet text:level="1" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
-        <style:list-level-properties text:space-before="0.25in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="2" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="‣">
-        <style:list-level-properties text:space-before="0.5in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="3" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="⁃">
-        <style:list-level-properties text:space-before="0.75in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="4" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
-        <style:list-level-properties text:space-before="1.0in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="5" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="‣">
-        <style:list-level-properties text:space-before="1.25in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="6" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="⁃">
-        <style:list-level-properties text:space-before="1.5in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="7" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
-        <style:list-level-properties text:space-before="1.75in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="8" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="‣">
-        <style:list-level-properties text:space-before="2.0in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="9" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="⁃">
-        <style:list-level-properties text:space-before="2.25in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="10" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
-        <style:list-level-properties text:space-before="2.5in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-    </text:list-style>
-    <text:list-style style:name="L5">
-      <text:list-level-style-bullet text:level="1" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
-        <style:list-level-properties text:space-before="0.25in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="2" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="‣">
-        <style:list-level-properties text:space-before="0.5in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="3" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="⁃">
-        <style:list-level-properties text:space-before="0.75in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="4" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
-        <style:list-level-properties text:space-before="1.0in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="5" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="‣">
-        <style:list-level-properties text:space-before="1.25in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="6" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="⁃">
-        <style:list-level-properties text:space-before="1.5in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="7" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
-        <style:list-level-properties text:space-before="1.75in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="8" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="‣">
-        <style:list-level-properties text:space-before="2.0in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="9" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="⁃">
-        <style:list-level-properties text:space-before="2.25in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="10" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
-        <style:list-level-properties text:space-before="2.5in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-    </text:list-style>
-    <text:list-style style:name="L6">
-      <text:list-level-style-bullet text:level="1" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
-        <style:list-level-properties text:space-before="0.25in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="2" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="‣">
-        <style:list-level-properties text:space-before="0.5in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="3" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="⁃">
-        <style:list-level-properties text:space-before="0.75in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="4" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
-        <style:list-level-properties text:space-before="1.0in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="5" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="‣">
-        <style:list-level-properties text:space-before="1.25in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="6" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="⁃">
-        <style:list-level-properties text:space-before="1.5in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="7" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
-        <style:list-level-properties text:space-before="1.75in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="8" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="‣">
-        <style:list-level-properties text:space-before="2.0in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="9" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="⁃">
-        <style:list-level-properties text:space-before="2.25in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="10" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
-        <style:list-level-properties text:space-before="2.5in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-    </text:list-style>
-    <text:list-style style:name="L7">
-      <text:list-level-style-bullet text:level="1" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
-        <style:list-level-properties text:space-before="0.25in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="2" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="‣">
-        <style:list-level-properties text:space-before="0.5in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="3" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="⁃">
-        <style:list-level-properties text:space-before="0.75in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="4" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
-        <style:list-level-properties text:space-before="1.0in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="5" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="‣">
-        <style:list-level-properties text:space-before="1.25in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="6" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="⁃">
-        <style:list-level-properties text:space-before="1.5in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="7" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
-        <style:list-level-properties text:space-before="1.75in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="8" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="‣">
-        <style:list-level-properties text:space-before="2.0in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="9" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="⁃">
-        <style:list-level-properties text:space-before="2.25in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="10" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
-        <style:list-level-properties text:space-before="2.5in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-    </text:list-style>
-    <text:list-style style:name="L8">
-      <text:list-level-style-bullet text:level="1" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
-        <style:list-level-properties text:space-before="0.25in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="2" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="‣">
-        <style:list-level-properties text:space-before="0.5in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="3" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="⁃">
-        <style:list-level-properties text:space-before="0.75in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="4" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
-        <style:list-level-properties text:space-before="1.0in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="5" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="‣">
-        <style:list-level-properties text:space-before="1.25in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="6" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="⁃">
-        <style:list-level-properties text:space-before="1.5in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="7" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
-        <style:list-level-properties text:space-before="1.75in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="8" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="‣">
-        <style:list-level-properties text:space-before="2.0in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="9" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="⁃">
-        <style:list-level-properties text:space-before="2.25in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-      <text:list-level-style-bullet text:level="10" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
-        <style:list-level-properties text:space-before="2.5in" text:min-label-width="0.25in" />
-      </text:list-level-style-bullet>
-    </text:list-style>
     <style:style style:name="P1" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L1">
     </style:style>
     <style:style style:name="P2" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L2">
       <style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0in" />
     </style:style>
-    <style:style style:name="P3" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L3">
+    <style:style style:name="P3" style:family="paragraph" style:parent-style-name="Preformatted_20_Text">
     </style:style>
     <style:style style:name="P4" style:family="paragraph" style:parent-style-name="Preformatted_20_Text">
     </style:style>
@@ -393,43 +233,7 @@
     </style:style>
     <style:style style:name="P66" style:family="paragraph" style:parent-style-name="Preformatted_20_Text">
     </style:style>
-    <style:style style:name="P67" style:family="paragraph" style:parent-style-name="Preformatted_20_Text">
-    </style:style>
-    <style:style style:name="P68" style:family="paragraph" style:parent-style-name="Preformatted_20_Text">
-    </style:style>
-    <style:style style:name="P69" style:family="paragraph" style:parent-style-name="Preformatted_20_Text">
-    </style:style>
-    <style:style style:name="P70" style:family="paragraph" style:parent-style-name="Preformatted_20_Text">
-    </style:style>
-    <style:style style:name="P71" style:family="paragraph" style:parent-style-name="Preformatted_20_Text">
-    </style:style>
-    <style:style style:name="P72" style:family="paragraph" style:parent-style-name="Preformatted_20_Text">
-    </style:style>
-    <style:style style:name="P73" style:family="paragraph" style:parent-style-name="Preformatted_20_Text">
-    </style:style>
-    <style:style style:name="P74" style:family="paragraph" style:parent-style-name="Preformatted_20_Text">
-    </style:style>
-    <style:style style:name="P75" style:family="paragraph" style:parent-style-name="Preformatted_20_Text">
-    </style:style>
-    <style:style style:name="P76" style:family="paragraph" style:parent-style-name="Preformatted_20_Text">
-    </style:style>
-    <style:style style:name="P77" style:family="paragraph" style:parent-style-name="Preformatted_20_Text">
-    </style:style>
-    <style:style style:name="P78" style:family="paragraph" style:parent-style-name="Preformatted_20_Text">
-    </style:style>
-    <style:style style:name="P79" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L4">
-      <style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0in" />
-    </style:style>
-    <style:style style:name="P80" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L5">
-      <style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0in" />
-    </style:style>
-    <style:style style:name="P81" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L6">
-      <style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0in" />
-    </style:style>
-    <style:style style:name="P82" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L7">
-      <style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0in" />
-    </style:style>
-    <style:style style:name="P83" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L8">
+    <style:style style:name="P67" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L3">
       <style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0in" />
     </style:style>
   </office:automatic-styles>
@@ -437,7 +241,7 @@
 <office:text>
 <text:p text:style-name="Title">jhTAlib</text:p>
 <text:p text:style-name="Author">Joost Hoeks</text:p>
-<text:p text:style-name="Date">2020-04-09</text:p>
+<text:p text:style-name="Date">2020-04-10</text:p>
 <text:h text:style-name="Heading_20_1" text:outline-level="1">jhTAlib</text:h>
 <text:p text:style-name="First_20_paragraph">Technical Analysis Library
 Time-Series</text:p>
@@ -472,38 +276,10 @@ only on</text:h>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_2" text:outline-level="2">Docs</text:h>
-<text:list text:style-name="L3">
-  <text:list-item>
-    <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="https://jhtalib.joosthoeks.com" office:name=""><text:span text:style-name="Definition">.html</text:span></text:a></text:p>
-  </text:list-item>
-  <text:list-item>
-    <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="https://jhtalib.joosthoeks.com/README.epub" office:name=""><text:span text:style-name="Definition">.epub</text:span></text:a></text:p>
-  </text:list-item>
-  <text:list-item>
-    <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="https://jhtalib.joosthoeks.com/README.json" office:name=""><text:span text:style-name="Definition">.json</text:span></text:a></text:p>
-  </text:list-item>
-  <text:list-item>
-    <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="https://jhtalib.joosthoeks.com/README.odt" office:name=""><text:span text:style-name="Definition">.odt</text:span></text:a></text:p>
-  </text:list-item>
-  <text:list-item>
-    <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="https://jhtalib.joosthoeks.com/README.pdf" office:name=""><text:span text:style-name="Definition">.pdf</text:span></text:a></text:p>
-  </text:list-item>
-  <text:list-item>
-    <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="https://jhtalib.joosthoeks.com/README.rst" office:name=""><text:span text:style-name="Definition">.rst</text:span></text:a></text:p>
-  </text:list-item>
-  <text:list-item>
-    <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="https://jhtalib.joosthoeks.com/README.rtf" office:name=""><text:span text:style-name="Definition">.rtf</text:span></text:a></text:p>
-  </text:list-item>
-  <text:list-item>
-    <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="https://jhtalib.joosthoeks.com/README.xml" office:name=""><text:span text:style-name="Definition">.xml</text:span></text:a></text:p>
-  </text:list-item>
-</text:list>
-<text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_2" text:outline-level="2">Install</text:h>
 <text:p text:style-name="First_20_paragraph">From
 <text:a xlink:type="simple" xlink:href="https://pypi.org/project/jhTAlib/" office:name=""><text:span text:style-name="Definition">PyPI</text:span></text:a>:</text:p>
-<text:p text:style-name="P4">$ [sudo] pip3 install jhtalib</text:p>
+<text:p text:style-name="P3">$ [sudo] pip3 install jhtalib</text:p>
 <text:p text:style-name="First_20_paragraph">From
 <text:a xlink:type="simple" xlink:href="https://github.com/joosthoeks/jhTAlib" office:name=""><text:span text:style-name="Definition">source</text:span></text:a>
 -
@@ -511,14 +287,14 @@ only on</text:h>
 mirror 1</text:span></text:a> -
 <text:a xlink:type="simple" xlink:href="https://bitbucket.org/joosthoeks/jhtalib" office:name=""><text:span text:style-name="Definition">source
 mirror 2</text:span></text:a>:</text:p>
-<text:p text:style-name="P5">$ git clone https://github.com/joosthoeks/jhTAlib.git</text:p>
-<text:p text:style-name="P6">$ cd jhTAlib</text:p>
-<text:p text:style-name="P7">$ [sudo] pip3 install -e .</text:p>
+<text:p text:style-name="P4">$ git clone https://github.com/joosthoeks/jhTAlib.git</text:p>
+<text:p text:style-name="P5">$ cd jhTAlib</text:p>
+<text:p text:style-name="P6">$ [sudo] pip3 install -e .</text:p>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_2" text:outline-level="2">Update</text:h>
 <text:p text:style-name="First_20_paragraph">From
 <text:a xlink:type="simple" xlink:href="https://pypi.org/project/jhTAlib/" office:name=""><text:span text:style-name="Definition">PyPI</text:span></text:a>:</text:p>
-<text:p text:style-name="P8">$ [sudo] pip3 install --upgrade jhtalib</text:p>
+<text:p text:style-name="P7">$ [sudo] pip3 install --upgrade jhtalib</text:p>
 <text:p text:style-name="First_20_paragraph">From
 <text:a xlink:type="simple" xlink:href="https://github.com/joosthoeks/jhTAlib" office:name=""><text:span text:style-name="Definition">source</text:span></text:a>
 -
@@ -526,15 +302,15 @@ mirror 2</text:span></text:a>:</text:p>
 mirror 1</text:span></text:a> -
 <text:a xlink:type="simple" xlink:href="https://bitbucket.org/joosthoeks/jhtalib" office:name=""><text:span text:style-name="Definition">source
 mirror 2</text:span></text:a>:</text:p>
-<text:p text:style-name="P9">$ cd jhTAlib</text:p>
-<text:p text:style-name="P10">$ git pull [upstream master]</text:p>
+<text:p text:style-name="P8">$ cd jhTAlib</text:p>
+<text:p text:style-name="P9">$ git pull [upstream master]</text:p>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_2" text:outline-level="2">In
 Colab</text:h>
 <text:p text:style-name="First_20_paragraph">From
 <text:a xlink:type="simple" xlink:href="https://pypi.org/project/jhTAlib/" office:name=""><text:span text:style-name="Definition">PyPI</text:span></text:a>:</text:p>
-<text:p text:style-name="P11">!pip install --upgrade jhtalib</text:p>
-<text:p text:style-name="P12">import jhtalib as jhta</text:p>
+<text:p text:style-name="P10">!pip install --upgrade jhtalib</text:p>
+<text:p text:style-name="P11">import jhtalib as jhta</text:p>
 <text:p text:style-name="First_20_paragraph">From
 <text:a xlink:type="simple" xlink:href="https://github.com/joosthoeks/jhTAlib" office:name=""><text:span text:style-name="Definition">source</text:span></text:a>
 -
@@ -542,176 +318,77 @@ Colab</text:h>
 mirror 1</text:span></text:a> -
 <text:a xlink:type="simple" xlink:href="https://bitbucket.org/joosthoeks/jhtalib" office:name=""><text:span text:style-name="Definition">source
 mirror 2</text:span></text:a>:</text:p>
-<text:p text:style-name="P13">!git clone [-b branch-name] https://github.com/joosthoeks/jhTAlib.git</text:p>
-<text:p text:style-name="P14">%cd '/content/jhTAlib'</text:p>
-<text:p text:style-name="P15">import jhtalib as jhta</text:p>
-<text:p text:style-name="P16">%cd '/content'</text:p>
-<text:p text:style-name="P17">!rm -rf ./jhTAlib/</text:p>
-<text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_2" text:outline-level="2">Check
-Installation</text:h>
-<text:p text:style-name="P18">$ python3</text:p>
-<text:p text:style-name="P19">&gt;&gt;&gt; import jhtalib as jhta</text:p>
-<text:p text:style-name="P20">&gt;&gt;&gt; jhta.example()</text:p>
-<text:p text:style-name="First_20_paragraph">If not errors then
-installation is correct.</text:p>
-<text:p text:style-name="P21">&gt;&gt;&gt; quit()</text:p>
+<text:p text:style-name="P12">!git clone [-b branch-name] https://github.com/joosthoeks/jhTAlib.git</text:p>
+<text:p text:style-name="P13">%cd '/content/jhTAlib'</text:p>
+<text:p text:style-name="P14">import jhtalib as jhta</text:p>
+<text:p text:style-name="P15">%cd '/content'</text:p>
+<text:p text:style-name="P16">!rm -rf ./jhTAlib/</text:p>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_2" text:outline-level="2">Basic
 Usage</text:h>
-<text:p text:style-name="P22"># Import Built-Ins:</text:p>
-<text:p text:style-name="P23">from pprint import pprint as pp</text:p>
-<text:p text:style-name="P24"></text:p>
-<text:p text:style-name="P25"># Import Third-Party:</text:p>
+<text:p text:style-name="P17">&quot;&quot;&quot;&quot;&quot;&quot;</text:p>
+<text:p text:style-name="P18"># Import Built-Ins:</text:p>
+<text:p text:style-name="P19">from pprint import pprint as pp</text:p>
+<text:p text:style-name="P20"></text:p>
+<text:p text:style-name="P21"># Import Third-Party:</text:p>
+<text:p text:style-name="P22"></text:p>
+<text:p text:style-name="P23"># Import Homebrew:</text:p>
+<text:p text:style-name="P24">import jhtalib as jhta</text:p>
+<text:p text:style-name="P25"></text:p>
 <text:p text:style-name="P26"></text:p>
-<text:p text:style-name="P27"># Import Homebrew:</text:p>
-<text:p text:style-name="P28">import jhtalib as jhta</text:p>
-<text:p text:style-name="P29"></text:p>
-<text:p text:style-name="P30"></text:p>
-<text:p text:style-name="P31"># df is DataFeed:</text:p>
-<text:p text:style-name="P32">df = {</text:p>
-<text:p text:style-name="P33"><text:s text:c="4" />'datetime': ('20151217', '20151218', '20151221', '20151222', '20151223', '20151224', '20151228', '20151229', '20151230', '20151231'),</text:p>
-<text:p text:style-name="P34"><text:s text:c="4" />'Open': (235.8, 232.3, 234.1, 232.2, 232.7, 235.4, 236.9, 234.85, 236.45, 235.0),</text:p>
-<text:p text:style-name="P35"><text:s text:c="4" />'High': (238.05, 236.9, 237.3, 232.4, 235.2, 236.15, 236.9, 237.6, 238.3, 237.25),</text:p>
-<text:p text:style-name="P36"><text:s text:c="4" />'Low': (234.55, 230.6, 230.2, 226.8, 231.5, 233.85, 233.05, 234.6, 234.55, 234.4),</text:p>
-<text:p text:style-name="P37"><text:s text:c="4" />'Close': (234.6, 233.6, 230.2, 230.05, 234.15, 236.15, 233.25, 237.6, 235.75, 234.4),</text:p>
-<text:p text:style-name="P38"><text:s text:c="4" />'Volume': (448294, 629039, 292528, 214170, 215545, 23548, 97574, 192908, 176839, 69347)</text:p>
-<text:p text:style-name="P39"><text:s text:c="5" />}</text:p>
-<text:p text:style-name="P40"></text:p>
-<text:p text:style-name="P41"># basic usage:</text:p>
-<text:p text:style-name="P42">#pp (df)</text:p>
-<text:p text:style-name="P43">pp (jhta.SMA(df, 10))</text:p>
-<text:p text:style-name="P44">#pp (jhta.BBANDS(df, 10))</text:p>
-<text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_2" text:outline-level="2">Examples</text:h>
-<text:p text:style-name="P45">$ cd example/</text:p>
-<text:h text:style-name="Heading_20_3" text:outline-level="3">Example
-1</text:h>
-<text:p text:style-name="P46">$ python3 example-1-plot.py</text:p>
-<text:p text:style-name="First_20_paragraph">or</text:p>
-<text:p text:style-name="Text_20_body"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-1-plot.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-1-plot.ipynb</text:span></text:a></text:p>
-<text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_3" text:outline-level="3">Example
-2</text:h>
-<text:p text:style-name="P47">$ python3 example-2-plot.py</text:p>
-<text:p text:style-name="First_20_paragraph">or</text:p>
-<text:p text:style-name="Text_20_body"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-2-plot.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-2-plot.ipynb</text:span></text:a></text:p>
-<text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_3" text:outline-level="3">Example
-3</text:h>
-<text:p text:style-name="P48">$ python3 example-3-plot.py</text:p>
-<text:p text:style-name="First_20_paragraph">or</text:p>
-<text:p text:style-name="Text_20_body"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-3-plot.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-3-plot.ipynb</text:span></text:a></text:p>
-<text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_3" text:outline-level="3">Example
-4</text:h>
-<text:p text:style-name="P49">$ python3 example-4-plot-quandl.py</text:p>
-<text:p text:style-name="First_20_paragraph">or</text:p>
-<text:p text:style-name="Text_20_body"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-4-plot-quandl.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-4-plot-quandl.ipynb</text:span></text:a></text:p>
-<text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_3" text:outline-level="3">Example
-5</text:h>
-<text:p text:style-name="P50">$ python3 example-5-plot-quandl.py</text:p>
-<text:p text:style-name="First_20_paragraph">or</text:p>
-<text:p text:style-name="Text_20_body"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-5-plot-quandl.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-5-plot-quandl.ipynb</text:span></text:a></text:p>
-<text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_3" text:outline-level="3">Example
-6</text:h>
-<text:p text:style-name="P51">$ python3 example-6-plot-quandl.py</text:p>
-<text:p text:style-name="First_20_paragraph">or</text:p>
-<text:p text:style-name="Text_20_body"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-6-plot-quandl.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-6-plot-quandl.ipynb</text:span></text:a></text:p>
-<text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_3" text:outline-level="3">Example
-7</text:h>
-<text:p text:style-name="P52">$ python3 example-7-quandl-2-df.py</text:p>
-<text:p text:style-name="First_20_paragraph">or</text:p>
-<text:p text:style-name="Text_20_body"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-7-quandl-2-df.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-7-quandl-2-df.ipynb</text:span></text:a></text:p>
-<text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_3" text:outline-level="3">Example
-8</text:h>
-<text:p text:style-name="P53">$ python3 example-8-alphavantage-2-df.py</text:p>
-<text:p text:style-name="First_20_paragraph">or</text:p>
-<text:p text:style-name="Text_20_body"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-8-alphavantage-2-df.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-8-alphavantage-2-df.ipynb</text:span></text:a></text:p>
-<text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_3" text:outline-level="3">Example
-9</text:h>
-<text:p text:style-name="P54">$ python3 example-9-cryptocompare-2-df.py</text:p>
-<text:p text:style-name="First_20_paragraph">or</text:p>
-<text:p text:style-name="Text_20_body"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-9-cryptocompare-2-df.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-9-cryptocompare-2-df.ipynb</text:span></text:a></text:p>
-<text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_3" text:outline-level="3">Example
-10</text:h>
-<text:p text:style-name="First_20_paragraph">DF NumPy Pandas</text:p>
-<text:p text:style-name="Text_20_body"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-10-df-numpy-pandas.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-10-df-numpy-pandas.ipynb</text:span></text:a></text:p>
-<text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_3" text:outline-level="3">Example
-11</text:h>
-<text:p text:style-name="First_20_paragraph">Basic Usage</text:p>
-<text:p text:style-name="Text_20_body"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-11-basic-usage.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-11-basic-usage.ipynb</text:span></text:a></text:p>
-<text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_2" text:outline-level="2">Test</text:h>
-<text:p text:style-name="P55">$ cd test/</text:p>
-<text:p text:style-name="P56">$ python3 test.py</text:p>
+<text:p text:style-name="P27"># df is DataFeed:</text:p>
+<text:p text:style-name="P28">df = {</text:p>
+<text:p text:style-name="P29"><text:s text:c="4" />'datetime': ('20151217', '20151218', '20151221', '20151222', '20151223', '20151224', '20151228', '20151229', '20151230', '20151231'),</text:p>
+<text:p text:style-name="P30"><text:s text:c="4" />'Open': (235.8, 232.3, 234.1, 232.2, 232.7, 235.4, 236.9, 234.85, 236.45, 235.0),</text:p>
+<text:p text:style-name="P31"><text:s text:c="4" />'High': (238.05, 236.9, 237.3, 232.4, 235.2, 236.15, 236.9, 237.6, 238.3, 237.25),</text:p>
+<text:p text:style-name="P32"><text:s text:c="4" />'Low': (234.55, 230.6, 230.2, 226.8, 231.5, 233.85, 233.05, 234.6, 234.55, 234.4),</text:p>
+<text:p text:style-name="P33"><text:s text:c="4" />'Close': (234.6, 233.6, 230.2, 230.05, 234.15, 236.15, 233.25, 237.6, 235.75, 234.4),</text:p>
+<text:p text:style-name="P34"><text:s text:c="4" />'Volume': (448294, 629039, 292528, 214170, 215545, 23548, 97574, 192908, 176839, 69347)</text:p>
+<text:p text:style-name="P35"><text:s text:c="5" />}</text:p>
+<text:p text:style-name="P36"></text:p>
+<text:p text:style-name="P37"># basic usage:</text:p>
+<text:p text:style-name="P38">#pp (df)</text:p>
+<text:p text:style-name="P39">pp (jhta.SMA(df, 10))</text:p>
+<text:p text:style-name="P40">#pp (jhta.BBANDS(df, 10))</text:p>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_2" text:outline-level="2">Reference</text:h>
-<text:p text:style-name="P57">$ python3</text:p>
-<text:p text:style-name="P58">&gt;&gt;&gt; import jhtalib as jhta</text:p>
-<text:p text:style-name="P59">&gt;&gt;&gt; dir(jhta)</text:p>
-<text:p text:style-name="P60">&gt;&gt;&gt; help(jhta)</text:p>
-<text:p text:style-name="P61">&gt;&gt;&gt; help(jhta.behavioral_techniques)</text:p>
-<text:p text:style-name="P62">&gt;&gt;&gt; help(jhta.candlestick)</text:p>
-<text:p text:style-name="P63">&gt;&gt;&gt; help(jhta.cycle_indicators)</text:p>
-<text:p text:style-name="P64">&gt;&gt;&gt; help(jhta.data)</text:p>
-<text:p text:style-name="P65">&gt;&gt;&gt; help(jhta.event_driven)</text:p>
-<text:p text:style-name="P66">&gt;&gt;&gt; help(jhta.experimental)</text:p>
-<text:p text:style-name="P67">&gt;&gt;&gt; help(jhta.general)</text:p>
-<text:p text:style-name="P68">&gt;&gt;&gt; help(jhta.information)</text:p>
-<text:p text:style-name="P69">&gt;&gt;&gt; help(jhta.math_functions)</text:p>
-<text:p text:style-name="P70">&gt;&gt;&gt; help(jhta.momentum_indicators)</text:p>
-<text:p text:style-name="P71">&gt;&gt;&gt; help(jhta.overlap_studies)</text:p>
-<text:p text:style-name="P72">&gt;&gt;&gt; help(jhta.pattern_recognition)</text:p>
-<text:p text:style-name="P73">&gt;&gt;&gt; help(jhta.price_transform)</text:p>
-<text:p text:style-name="P74">&gt;&gt;&gt; help(jhta.statistic_functions)</text:p>
-<text:p text:style-name="P75">&gt;&gt;&gt; help(jhta.uncategorised)</text:p>
-<text:p text:style-name="P76">&gt;&gt;&gt; help(jhta.volatility_indicators)</text:p>
-<text:p text:style-name="P77">&gt;&gt;&gt; help(jhta.volume_indicators)</text:p>
-<text:p text:style-name="P78">&gt;&gt;&gt; quit()</text:p>
+<text:p text:style-name="P41">$ python3</text:p>
+<text:p text:style-name="P42">&gt;&gt;&gt; import jhtalib as jhta</text:p>
+<text:p text:style-name="P43">&gt;&gt;&gt; dir(jhta)</text:p>
+<text:p text:style-name="P44">&gt;&gt;&gt; help(jhta)</text:p>
+<text:p text:style-name="P45">&gt;&gt;&gt; help(jhta.behavioral_techniques)</text:p>
+<text:p text:style-name="P46">&gt;&gt;&gt; help(jhta.candlestick)</text:p>
+<text:p text:style-name="P47">&gt;&gt;&gt; help(jhta.cycle_indicators)</text:p>
+<text:p text:style-name="P48">&gt;&gt;&gt; help(jhta.data)</text:p>
+<text:p text:style-name="P49">&gt;&gt;&gt; help(jhta.event_driven)</text:p>
+<text:p text:style-name="P50">&gt;&gt;&gt; help(jhta.experimental)</text:p>
+<text:p text:style-name="P51">&gt;&gt;&gt; help(jhta.general)</text:p>
+<text:p text:style-name="P52">&gt;&gt;&gt; help(jhta.information)</text:p>
+<text:p text:style-name="P53">&gt;&gt;&gt; help(jhta.math_functions)</text:p>
+<text:p text:style-name="P54">&gt;&gt;&gt; help(jhta.momentum_indicators)</text:p>
+<text:p text:style-name="P55">&gt;&gt;&gt; help(jhta.overlap_studies)</text:p>
+<text:p text:style-name="P56">&gt;&gt;&gt; help(jhta.pattern_recognition)</text:p>
+<text:p text:style-name="P57">&gt;&gt;&gt; help(jhta.price_transform)</text:p>
+<text:p text:style-name="P58">&gt;&gt;&gt; help(jhta.statistic_functions)</text:p>
+<text:p text:style-name="P59">&gt;&gt;&gt; help(jhta.uncategorised)</text:p>
+<text:p text:style-name="P60">&gt;&gt;&gt; help(jhta.volatility_indicators)</text:p>
+<text:p text:style-name="P61">&gt;&gt;&gt; help(jhta.volume_indicators)</text:p>
+<text:p text:style-name="P62">&gt;&gt;&gt; quit()</text:p>
 <text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_2" text:outline-level="2">Notebooks</text:h>
-<text:list text:style-name="L4">
-  <text:list-item>
-    <text:p text:style-name="P79"><text:a xlink:type="simple" xlink:href="https://github.com/joosthoeks/jhTAlib/tree/master/notebook" office:name=""><text:span text:style-name="Definition">https://github.com/joosthoeks/jhTAlib/tree/master/notebook</text:span></text:a></text:p>
-  </text:list-item>
-</text:list>
-<text:h text:style-name="Heading_20_3" text:outline-level="3">A Sane and
-Simple bitcoin Savings plan SSS</text:h>
-<text:list text:style-name="L5">
-  <text:list-item>
-    <text:p text:style-name="P80"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/a_sane_and_simple_bitcoin_savings_plan_(sss).ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/a_sane_and_simple_bitcoin_savings_plan_(sss).ipynb</text:span></text:a></text:p>
-  </text:list-item>
-</text:list>
-<text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_3" text:outline-level="3">Dollar
-Cost Averaging Discount DCAD</text:h>
-<text:list text:style-name="L6">
-  <text:list-item>
-    <text:p text:style-name="P81"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/dollar_cost_averaging_discount_dcad.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/dollar_cost_averaging_discount_dcad.ipynb</text:span></text:a></text:p>
-  </text:list-item>
-</text:list>
-<text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_3" text:outline-level="3">Recession
-Probability</text:h>
-<text:list text:style-name="L7">
-  <text:list-item>
-    <text:p text:style-name="P82"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/recession_probability.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/recession_probability.ipynb</text:span></text:a></text:p>
-  </text:list-item>
-</text:list>
+<text:h text:style-name="Heading_20_2" text:outline-level="2">Check
+Installation</text:h>
+<text:p text:style-name="P63">$ python3</text:p>
+<text:p text:style-name="P64">&gt;&gt;&gt; import jhtalib as jhta</text:p>
+<text:p text:style-name="P65">&gt;&gt;&gt; jhta.example()</text:p>
+<text:p text:style-name="First_20_paragraph">If not errors then
+installation is correct.</text:p>
+<text:p text:style-name="P66">&gt;&gt;&gt; quit()</text:p>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_2" text:outline-level="2">Donation
 and Funding</text:h>
-<text:list text:style-name="L8">
+<text:list text:style-name="L3">
   <text:list-item>
-    <text:p text:style-name="P83">BTC:
+    <text:p text:style-name="P67">BTC:
     <text:a xlink:type="simple" xlink:href="https://insight.bitpay.com/address/3KCoXMyUDgVABoFSuV8GQT3k8qkUhEDG9X" office:name=""><text:span text:style-name="Definition">3KCoXMyUDgVABoFSuV8GQT3k8qkUhEDG9X</text:span></text:a></text:p>
   </text:list-item>
 </text:list>

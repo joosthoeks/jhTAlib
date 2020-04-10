@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2020-04-09
+:Date:   2020-04-10
 
 .. contents::
    :depth: 3
@@ -35,27 +35,6 @@ Depends only on
 
 -  `The Python Standard
    Library <https://docs.python.org/3/library/index.html>`__
-
---------------
-
-Docs
-----
-
--  `.html <https://jhtalib.joosthoeks.com>`__
-
--  `.epub <https://jhtalib.joosthoeks.com/README.epub>`__
-
--  `.json <https://jhtalib.joosthoeks.com/README.json>`__
-
--  `.odt <https://jhtalib.joosthoeks.com/README.odt>`__
-
--  `.pdf <https://jhtalib.joosthoeks.com/README.pdf>`__
-
--  `.rst <https://jhtalib.joosthoeks.com/README.rst>`__
-
--  `.rtf <https://jhtalib.joosthoeks.com/README.rtf>`__
-
--  `.xml <https://jhtalib.joosthoeks.com/README.xml>`__
 
 --------------
 
@@ -124,28 +103,12 @@ From `source <https://github.com/joosthoeks/jhTAlib>`__ - `source mirror
 
 --------------
 
-Check Installation
-------------------
-
-::
-
-    $ python3
-    >>> import jhtalib as jhta
-    >>> jhta.example()
-
-If not errors then installation is correct.
-
-::
-
-    >>> quit()
-
---------------
-
 Basic Usage
 -----------
 
 ::
 
+    """"""
     # Import Built-Ins:
     from pprint import pprint as pp
 
@@ -169,158 +132,6 @@ Basic Usage
     #pp (df)
     pp (jhta.SMA(df, 10))
     #pp (jhta.BBANDS(df, 10))
-
---------------
-
-Examples
---------
-
-::
-
-    $ cd example/
-
-Example 1
-~~~~~~~~~
-
-::
-
-    $ python3 example-1-plot.py
-
-or
-
-https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-1-plot.ipynb
-
---------------
-
-Example 2
-~~~~~~~~~
-
-::
-
-    $ python3 example-2-plot.py
-
-or
-
-https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-2-plot.ipynb
-
---------------
-
-Example 3
-~~~~~~~~~
-
-::
-
-    $ python3 example-3-plot.py
-
-or
-
-https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-3-plot.ipynb
-
---------------
-
-Example 4
-~~~~~~~~~
-
-::
-
-    $ python3 example-4-plot-quandl.py
-
-or
-
-https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-4-plot-quandl.ipynb
-
---------------
-
-Example 5
-~~~~~~~~~
-
-::
-
-    $ python3 example-5-plot-quandl.py
-
-or
-
-https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-5-plot-quandl.ipynb
-
---------------
-
-Example 6
-~~~~~~~~~
-
-::
-
-    $ python3 example-6-plot-quandl.py
-
-or
-
-https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-6-plot-quandl.ipynb
-
---------------
-
-Example 7
-~~~~~~~~~
-
-::
-
-    $ python3 example-7-quandl-2-df.py
-
-or
-
-https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-7-quandl-2-df.ipynb
-
---------------
-
-Example 8
-~~~~~~~~~
-
-::
-
-    $ python3 example-8-alphavantage-2-df.py
-
-or
-
-https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-8-alphavantage-2-df.ipynb
-
---------------
-
-Example 9
-~~~~~~~~~
-
-::
-
-    $ python3 example-9-cryptocompare-2-df.py
-
-or
-
-https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-9-cryptocompare-2-df.ipynb
-
---------------
-
-Example 10
-~~~~~~~~~~
-
-DF NumPy Pandas
-
-https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-10-df-numpy-pandas.ipynb
-
---------------
-
-Example 11
-~~~~~~~~~~
-
-Basic Usage
-
-https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-11-basic-usage.ipynb
-
---------------
-
-Test
-----
-
-::
-
-    $ cd test/
-    $ python3 test.py
 
 --------------
 
@@ -354,29 +165,20 @@ Reference
 
 --------------
 
-Notebooks
----------
+Check Installation
+------------------
 
--  https://github.com/joosthoeks/jhTAlib/tree/master/notebook
+::
 
-A Sane and Simple bitcoin Savings plan SSS
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    $ python3
+    >>> import jhtalib as jhta
+    >>> jhta.example()
 
--  https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/a_sane_and_simple_bitcoin_savings_plan_(sss).ipynb
+If not errors then installation is correct.
 
---------------
+::
 
-Dollar Cost Averaging Discount DCAD
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
--  https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/dollar_cost_averaging_discount_dcad.ipynb
-
---------------
-
-Recession Probability
-~~~~~~~~~~~~~~~~~~~~~
-
--  https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/recession_probability.ipynb
+    >>> quit()
 
 --------------
 
