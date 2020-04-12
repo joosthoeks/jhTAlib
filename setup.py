@@ -1,3 +1,4 @@
+""""""
 # Import Built-Ins:
 from setuptools import setup, find_packages
 
@@ -12,14 +13,14 @@ with open('README.md', 'r') as f:
 
 
 setup(
-    name='jhTAlib',
+    name=jhta.__name__,
     version=jhta.__version__,
-    description='Technical Analysis Library Time-Series',
+    description=jhta.__description__,
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/joosthoeks/jhTAlib',
-    author='Joost Hoeks',
-    author_email='joosthoeks@gmail.com',
+    url=jhta.__url__,
+    author=jhta.__author__,
+    author_email=jhta.__author_email__,
     classifiers=[
     'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
     'Operating System :: OS Independent',

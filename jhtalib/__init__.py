@@ -1,8 +1,20 @@
+""""""
 
 
-__version__ = '20200410.0'
+# Set Global Attributes:
+__name__ = 'jhTAlib'
+__version__ = '20200412.0'
+__description__ = 'Technical Analysis Library Time-Series'
+__url__ = 'https://github.com/joosthoeks/jhTAlib'
+__author__ = 'Joost Hoeks'
+__author_email__ = 'joosthoeks@gmail.com'
 
 
+# Import Built-Ins:
+
+# Import Third-Party:
+
+# Import Homebrew:
 from .decorators import *
 from .helpers import *
 
