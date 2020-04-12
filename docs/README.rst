@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2020-04-10
+:Date:   2020-04-12
 
 .. contents::
    :depth: 3
@@ -43,7 +43,7 @@ Install
 
 From `PyPI <https://pypi.org/project/jhTAlib/>`__:
 
-::
+.. code:: bash
 
     $ [sudo] pip3 install jhtalib
 
@@ -51,7 +51,7 @@ From `source <https://github.com/joosthoeks/jhTAlib>`__ - `source mirror
 1 <https://gitlab.com/joosthoeks/jhtalib>`__ - `source mirror
 2 <https://bitbucket.org/joosthoeks/jhtalib>`__:
 
-::
+.. code:: bash
 
     $ git clone https://github.com/joosthoeks/jhTAlib.git
     $ cd jhTAlib
@@ -64,7 +64,7 @@ Update
 
 From `PyPI <https://pypi.org/project/jhTAlib/>`__:
 
-::
+.. code:: bash
 
     $ [sudo] pip3 install --upgrade jhtalib
 
@@ -72,10 +72,37 @@ From `source <https://github.com/joosthoeks/jhTAlib>`__ - `source mirror
 1 <https://gitlab.com/joosthoeks/jhtalib>`__ - `source mirror
 2 <https://bitbucket.org/joosthoeks/jhtalib>`__:
 
-::
+.. code:: bash
 
     $ cd jhTAlib
     $ git pull [upstream master]
+
+--------------
+
+In Docker
+---------
+
+From `DockerHub <https://hub.docker.com/r/joosthoeks/jhtalib>`__:
+
+.. code:: bash
+
+    $ docker pull joosthoeks/jhtalib
+    $ docker run -it joosthoeks/jhtalib /bin/bash
+    /usr/src/app# python3
+    >>> import jhtalib as jhta
+
+From `source <https://github.com/joosthoeks/jhTAlib>`__ - `source mirror
+1 <https://gitlab.com/joosthoeks/jhtalib>`__ - `source mirror
+2 <https://bitbucket.org/joosthoeks/jhtalib>`__:
+
+.. code:: bash
+
+    $ git clone https://github.com/joosthoeks/jhTAlib.git
+    $ cd jhTAlib
+    $ docker build -f Dockerfile -t jhtalib .
+    $ docker run -it jhtalib /bin/bash
+    /usr/src/app# python3
+    >>> import jhtalib as jhta
 
 --------------
 
@@ -84,7 +111,7 @@ In Colab
 
 From `PyPI <https://pypi.org/project/jhTAlib/>`__:
 
-::
+.. code:: bash
 
     !pip install --upgrade jhtalib
     import jhtalib as jhta
@@ -93,7 +120,7 @@ From `source <https://github.com/joosthoeks/jhTAlib>`__ - `source mirror
 1 <https://gitlab.com/joosthoeks/jhtalib>`__ - `source mirror
 2 <https://bitbucket.org/joosthoeks/jhtalib>`__:
 
-::
+.. code:: bash
 
     !git clone [-b branch-name] https://github.com/joosthoeks/jhTAlib.git
     %cd '/content/jhTAlib'
@@ -106,7 +133,7 @@ From `source <https://github.com/joosthoeks/jhTAlib>`__ - `source mirror
 Basic Usage
 -----------
 
-::
+.. code:: python
 
     """"""
     # Import Built-Ins:
@@ -138,7 +165,7 @@ Basic Usage
 Reference
 ---------
 
-::
+.. code:: python
 
     $ python3
     >>> import jhtalib as jhta
@@ -168,7 +195,7 @@ Reference
 Check Installation
 ------------------
 
-::
+.. code:: python
 
     $ python3
     >>> import jhtalib as jhta
@@ -176,7 +203,7 @@ Check Installation
 
 If not errors then installation is correct.
 
-::
+.. code:: python
 
     >>> quit()
 

@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2020-04-10
+date: 2020-04-12
 ---
 
 # jhTAlib
@@ -32,13 +32,13 @@ Work in progress...
 ## Install
 From [PyPI](https://pypi.org/project/jhTAlib/):
 
-```
+```bash
 $ [sudo] pip3 install jhtalib
 ```
 
 From [source](https://github.com/joosthoeks/jhTAlib) - [source mirror 1](https://gitlab.com/joosthoeks/jhtalib) - [source mirror 2](https://bitbucket.org/joosthoeks/jhtalib):
 
-```
+```bash
 $ git clone https://github.com/joosthoeks/jhTAlib.git
 $ cd jhTAlib
 $ [sudo] pip3 install -e .
@@ -49,15 +49,38 @@ $ [sudo] pip3 install -e .
 ## Update
 From [PyPI](https://pypi.org/project/jhTAlib/):
 
-```
+```bash
 $ [sudo] pip3 install --upgrade jhtalib
 ```
 
 From [source](https://github.com/joosthoeks/jhTAlib) - [source mirror 1](https://gitlab.com/joosthoeks/jhtalib) - [source mirror 2](https://bitbucket.org/joosthoeks/jhtalib):
 
-```
+```bash
 $ cd jhTAlib
 $ git pull [upstream master]
+```
+
+---
+
+## In Docker
+From [DockerHub](https://hub.docker.com/r/joosthoeks/jhtalib):
+
+```bash
+$ docker pull joosthoeks/jhtalib
+$ docker run -it joosthoeks/jhtalib /bin/bash
+/usr/src/app# python3
+>>> import jhtalib as jhta
+```
+
+From [source](https://github.com/joosthoeks/jhTAlib) - [source mirror 1](https://gitlab.com/joosthoeks/jhtalib) - [source mirror 2](https://bitbucket.org/joosthoeks/jhtalib):
+
+```bash
+$ git clone https://github.com/joosthoeks/jhTAlib.git
+$ cd jhTAlib
+$ docker build -f Dockerfile -t jhtalib .
+$ docker run -it jhtalib /bin/bash
+/usr/src/app# python3
+>>> import jhtalib as jhta
 ```
 
 ---
@@ -65,14 +88,14 @@ $ git pull [upstream master]
 ## In Colab
 From [PyPI](https://pypi.org/project/jhTAlib/):
 
-```
+```bash
 !pip install --upgrade jhtalib
 import jhtalib as jhta
 ```
 
 From [source](https://github.com/joosthoeks/jhTAlib) - [source mirror 1](https://gitlab.com/joosthoeks/jhtalib) - [source mirror 2](https://bitbucket.org/joosthoeks/jhtalib):
 
-```
+```bash
 !git clone [-b branch-name] https://github.com/joosthoeks/jhTAlib.git
 %cd '/content/jhTAlib'
 import jhtalib as jhta
@@ -84,7 +107,7 @@ import jhtalib as jhta
 
 ## Basic Usage
 
-```
+```python
 """"""
 # Import Built-Ins:
 from pprint import pprint as pp
@@ -115,7 +138,7 @@ pp (jhta.SMA(df, 10))
 
 ## Reference
 
-```
+```python
 $ python3
 >>> import jhtalib as jhta
 >>> dir(jhta)
@@ -144,7 +167,7 @@ $ python3
 
 ## Check Installation
 
-```
+```python
 $ python3
 >>> import jhtalib as jhta
 >>> jhta.example()
@@ -152,7 +175,7 @@ $ python3
 
 If not errors then installation is correct.
 
-```
+```python
 >>> quit()
 ```
 

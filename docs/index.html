@@ -5,9 +5,46 @@
   <meta name="generator" content="pandoc">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <meta name="author" content="Joost Hoeks">
-  <meta name="dcterms.date" content="2020-04-10">
+  <meta name="dcterms.date" content="2020-04-12">
   <title>jhTAlib</title>
   <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
   <link rel="stylesheet" href="pandoc.css">
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
@@ -17,7 +54,7 @@
 <header>
 <h1 class="title">jhTAlib</h1>
 <p class="author">Joost Hoeks</p>
-<p class="date">2020-04-10</p>
+<p class="date">2020-04-12</p>
 </header>
 <nav id="TOC">
 <ul>
@@ -25,6 +62,7 @@
 <li><a href="#depends-only-on">Depends only on</a></li>
 <li><a href="#install">Install</a></li>
 <li><a href="#update">Update</a></li>
+<li><a href="#in-docker">In Docker</a></li>
 <li><a href="#in-colab">In Colab</a></li>
 <li><a href="#basic-usage">Basic Usage</a></li>
 <li><a href="#reference">Reference</a></li>
@@ -52,86 +90,100 @@
 <hr />
 <h2 id="install">Install</h2>
 <p>From <a href="https://pypi.org/project/jhTAlib/">PyPI</a>:</p>
-<pre><code>$ [sudo] pip3 install jhtalib</code></pre>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ [<span class="ex">sudo</span>] pip3 install jhtalib</code></pre></div>
 <p>From <a href="https://github.com/joosthoeks/jhTAlib">source</a> - <a href="https://gitlab.com/joosthoeks/jhtalib">source mirror 1</a> - <a href="https://bitbucket.org/joosthoeks/jhtalib">source mirror 2</a>:</p>
-<pre><code>$ git clone https://github.com/joosthoeks/jhTAlib.git
-$ cd jhTAlib
-$ [sudo] pip3 install -e .</code></pre>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">git</span> clone https://github.com/joosthoeks/jhTAlib.git
+$ <span class="bu">cd</span> jhTAlib
+$ [<span class="ex">sudo</span>] pip3 install -e .</code></pre></div>
 <hr />
 <h2 id="update">Update</h2>
 <p>From <a href="https://pypi.org/project/jhTAlib/">PyPI</a>:</p>
-<pre><code>$ [sudo] pip3 install --upgrade jhtalib</code></pre>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ [<span class="ex">sudo</span>] pip3 install --upgrade jhtalib</code></pre></div>
 <p>From <a href="https://github.com/joosthoeks/jhTAlib">source</a> - <a href="https://gitlab.com/joosthoeks/jhtalib">source mirror 1</a> - <a href="https://bitbucket.org/joosthoeks/jhtalib">source mirror 2</a>:</p>
-<pre><code>$ cd jhTAlib
-$ git pull [upstream master]</code></pre>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="bu">cd</span> jhTAlib
+$ <span class="fu">git</span> pull [upstream master]</code></pre></div>
+<hr />
+<h2 id="in-docker">In Docker</h2>
+<p>From <a href="https://hub.docker.com/r/joosthoeks/jhtalib">DockerHub</a>:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="ex">docker</span> pull joosthoeks/jhtalib
+$ <span class="ex">docker</span> run -it joosthoeks/jhtalib /bin/bash
+<span class="ex">/usr/src</span>/<span class="ex">app</span># python3
+<span class="op">&gt;&gt;&gt;</span> <span class="ex">import</span> jhtalib as jhta</code></pre></div>
+<p>From <a href="https://github.com/joosthoeks/jhTAlib">source</a> - <a href="https://gitlab.com/joosthoeks/jhtalib">source mirror 1</a> - <a href="https://bitbucket.org/joosthoeks/jhtalib">source mirror 2</a>:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">git</span> clone https://github.com/joosthoeks/jhTAlib.git
+$ <span class="bu">cd</span> jhTAlib
+$ <span class="ex">docker</span> build -f Dockerfile -t jhtalib .
+$ <span class="ex">docker</span> run -it jhtalib /bin/bash
+<span class="ex">/usr/src</span>/<span class="ex">app</span># python3
+<span class="op">&gt;&gt;&gt;</span> <span class="ex">import</span> jhtalib as jhta</code></pre></div>
 <hr />
 <h2 id="in-colab">In Colab</h2>
 <p>From <a href="https://pypi.org/project/jhTAlib/">PyPI</a>:</p>
-<pre><code>!pip install --upgrade jhtalib
-import jhtalib as jhta</code></pre>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">!<span class="ex">pip</span> install --upgrade jhtalib
+<span class="ex">import</span> jhtalib as jhta</code></pre></div>
 <p>From <a href="https://github.com/joosthoeks/jhTAlib">source</a> - <a href="https://gitlab.com/joosthoeks/jhtalib">source mirror 1</a> - <a href="https://bitbucket.org/joosthoeks/jhtalib">source mirror 2</a>:</p>
-<pre><code>!git clone [-b branch-name] https://github.com/joosthoeks/jhTAlib.git
-%cd &#39;/content/jhTAlib&#39;
-import jhtalib as jhta
-%cd &#39;/content&#39;
-!rm -rf ./jhTAlib/</code></pre>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">!<span class="fu">git</span> clone [-b branch-name] https://github.com/joosthoeks/jhTAlib.git
+<span class="ex">%cd</span> <span class="st">&#39;/content/jhTAlib&#39;</span>
+<span class="ex">import</span> jhtalib as jhta
+<span class="ex">%cd</span> <span class="st">&#39;/content&#39;</span>
+!<span class="fu">rm</span> -rf ./jhTAlib/</code></pre></div>
 <hr />
 <h2 id="basic-usage">Basic Usage</h2>
-<pre><code>&quot;&quot;&quot;&quot;&quot;&quot;
-# Import Built-Ins:
-from pprint import pprint as pp
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="co">&quot;&quot;&quot;&quot;&quot;&quot;</span>
+<span class="co"># Import Built-Ins:</span>
+<span class="im">from</span> pprint <span class="im">import</span> pprint <span class="im">as</span> pp
 
-# Import Third-Party:
+<span class="co"># Import Third-Party:</span>
 
-# Import Homebrew:
-import jhtalib as jhta
+<span class="co"># Import Homebrew:</span>
+<span class="im">import</span> jhtalib <span class="im">as</span> jhta
 
 
-# df is DataFeed:
-df = {
-    &#39;datetime&#39;: (&#39;20151217&#39;, &#39;20151218&#39;, &#39;20151221&#39;, &#39;20151222&#39;, &#39;20151223&#39;, &#39;20151224&#39;, &#39;20151228&#39;, &#39;20151229&#39;, &#39;20151230&#39;, &#39;20151231&#39;),
-    &#39;Open&#39;: (235.8, 232.3, 234.1, 232.2, 232.7, 235.4, 236.9, 234.85, 236.45, 235.0),
-    &#39;High&#39;: (238.05, 236.9, 237.3, 232.4, 235.2, 236.15, 236.9, 237.6, 238.3, 237.25),
-    &#39;Low&#39;: (234.55, 230.6, 230.2, 226.8, 231.5, 233.85, 233.05, 234.6, 234.55, 234.4),
-    &#39;Close&#39;: (234.6, 233.6, 230.2, 230.05, 234.15, 236.15, 233.25, 237.6, 235.75, 234.4),
-    &#39;Volume&#39;: (448294, 629039, 292528, 214170, 215545, 23548, 97574, 192908, 176839, 69347)
+<span class="co"># df is DataFeed:</span>
+df <span class="op">=</span> {
+    <span class="st">&#39;datetime&#39;</span>: (<span class="st">&#39;20151217&#39;</span>, <span class="st">&#39;20151218&#39;</span>, <span class="st">&#39;20151221&#39;</span>, <span class="st">&#39;20151222&#39;</span>, <span class="st">&#39;20151223&#39;</span>, <span class="st">&#39;20151224&#39;</span>, <span class="st">&#39;20151228&#39;</span>, <span class="st">&#39;20151229&#39;</span>, <span class="st">&#39;20151230&#39;</span>, <span class="st">&#39;20151231&#39;</span>),
+    <span class="st">&#39;Open&#39;</span>: (<span class="fl">235.8</span>, <span class="fl">232.3</span>, <span class="fl">234.1</span>, <span class="fl">232.2</span>, <span class="fl">232.7</span>, <span class="fl">235.4</span>, <span class="fl">236.9</span>, <span class="fl">234.85</span>, <span class="fl">236.45</span>, <span class="fl">235.0</span>),
+    <span class="st">&#39;High&#39;</span>: (<span class="fl">238.05</span>, <span class="fl">236.9</span>, <span class="fl">237.3</span>, <span class="fl">232.4</span>, <span class="fl">235.2</span>, <span class="fl">236.15</span>, <span class="fl">236.9</span>, <span class="fl">237.6</span>, <span class="fl">238.3</span>, <span class="fl">237.25</span>),
+    <span class="st">&#39;Low&#39;</span>: (<span class="fl">234.55</span>, <span class="fl">230.6</span>, <span class="fl">230.2</span>, <span class="fl">226.8</span>, <span class="fl">231.5</span>, <span class="fl">233.85</span>, <span class="fl">233.05</span>, <span class="fl">234.6</span>, <span class="fl">234.55</span>, <span class="fl">234.4</span>),
+    <span class="st">&#39;Close&#39;</span>: (<span class="fl">234.6</span>, <span class="fl">233.6</span>, <span class="fl">230.2</span>, <span class="fl">230.05</span>, <span class="fl">234.15</span>, <span class="fl">236.15</span>, <span class="fl">233.25</span>, <span class="fl">237.6</span>, <span class="fl">235.75</span>, <span class="fl">234.4</span>),
+    <span class="st">&#39;Volume&#39;</span>: (<span class="dv">448294</span>, <span class="dv">629039</span>, <span class="dv">292528</span>, <span class="dv">214170</span>, <span class="dv">215545</span>, <span class="dv">23548</span>, <span class="dv">97574</span>, <span class="dv">192908</span>, <span class="dv">176839</span>, <span class="dv">69347</span>)
      }
 
-# basic usage:
-#pp (df)
-pp (jhta.SMA(df, 10))
-#pp (jhta.BBANDS(df, 10))</code></pre>
+<span class="co"># basic usage:</span>
+<span class="co">#pp (df)</span>
+pp (jhta.SMA(df, <span class="dv">10</span>))
+<span class="co">#pp (jhta.BBANDS(df, 10))</span></code></pre></div>
 <hr />
 <h2 id="reference">Reference</h2>
-<pre><code>$ python3
-&gt;&gt;&gt; import jhtalib as jhta
-&gt;&gt;&gt; dir(jhta)
-&gt;&gt;&gt; help(jhta)
-&gt;&gt;&gt; help(jhta.behavioral_techniques)
-&gt;&gt;&gt; help(jhta.candlestick)
-&gt;&gt;&gt; help(jhta.cycle_indicators)
-&gt;&gt;&gt; help(jhta.data)
-&gt;&gt;&gt; help(jhta.event_driven)
-&gt;&gt;&gt; help(jhta.experimental)
-&gt;&gt;&gt; help(jhta.general)
-&gt;&gt;&gt; help(jhta.information)
-&gt;&gt;&gt; help(jhta.math_functions)
-&gt;&gt;&gt; help(jhta.momentum_indicators)
-&gt;&gt;&gt; help(jhta.overlap_studies)
-&gt;&gt;&gt; help(jhta.pattern_recognition)
-&gt;&gt;&gt; help(jhta.price_transform)
-&gt;&gt;&gt; help(jhta.statistic_functions)
-&gt;&gt;&gt; help(jhta.uncategorised)
-&gt;&gt;&gt; help(jhta.volatility_indicators)
-&gt;&gt;&gt; help(jhta.volume_indicators)
-&gt;&gt;&gt; quit()</code></pre>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">$ python3
+<span class="op">&gt;&gt;&gt;</span> <span class="im">import</span> jhtalib <span class="im">as</span> jhta
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">dir</span>(jhta)
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">help</span>(jhta)
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">help</span>(jhta.behavioral_techniques)
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">help</span>(jhta.candlestick)
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">help</span>(jhta.cycle_indicators)
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">help</span>(jhta.data)
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">help</span>(jhta.event_driven)
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">help</span>(jhta.experimental)
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">help</span>(jhta.general)
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">help</span>(jhta.information)
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">help</span>(jhta.math_functions)
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">help</span>(jhta.momentum_indicators)
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">help</span>(jhta.overlap_studies)
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">help</span>(jhta.pattern_recognition)
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">help</span>(jhta.price_transform)
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">help</span>(jhta.statistic_functions)
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">help</span>(jhta.uncategorised)
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">help</span>(jhta.volatility_indicators)
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">help</span>(jhta.volume_indicators)
+<span class="op">&gt;&gt;&gt;</span> quit()</code></pre></div>
 <hr />
 <h2 id="check-installation">Check Installation</h2>
-<pre><code>$ python3
-&gt;&gt;&gt; import jhtalib as jhta
-&gt;&gt;&gt; jhta.example()</code></pre>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">$ python3
+<span class="op">&gt;&gt;&gt;</span> <span class="im">import</span> jhtalib <span class="im">as</span> jhta
+<span class="op">&gt;&gt;&gt;</span> jhta.example()</code></pre></div>
 <p>If not errors then installation is correct.</p>
-<pre><code>&gt;&gt;&gt; quit()</code></pre>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> quit()</code></pre></div>
 <hr />
 <h2 id="donation-and-funding">Donation and Funding</h2>
 <ul>

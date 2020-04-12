@@ -4,13 +4,14 @@
 
 {\pard \qc \f0 \sa180 \li0 \fi0 \b \fs36 jhTAlib\par}
 {\pard \qc \f0 \sa180 \li0 \fi0  Joost Hoeks\par}
-{\pard \qc \f0 \sa180 \li0 \fi0  2020-04-10\par}
+{\pard \qc \f0 \sa180 \li0 \fi0  2020-04-12\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Contents\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab jhTAlib\par}
 {\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Depends only on\par}
 {\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Install\par}
 {\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Update\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab In Docker\par}
 {\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab In Colab\par}
 {\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Basic Usage\par}
 {\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Reference\par}
@@ -70,6 +71,32 @@ source mirror 2
 :\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \f1 $ cd jhTAlib\line
 $ git pull [upstream master]\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 In Docker\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 From {\field{\*\fldinst{HYPERLINK "https://hub.docker.com/r/joosthoeks/jhtalib"}}{\fldrslt{\ul
+DockerHub
+}}}
+:\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 $ docker pull joosthoeks/jhtalib\line
+$ docker run -it joosthoeks/jhtalib /bin/bash\line
+/usr/src/app# python3\line
+>>> import jhtalib as jhta\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 From {\field{\*\fldinst{HYPERLINK "https://github.com/joosthoeks/jhTAlib"}}{\fldrslt{\ul
+source
+}}}
+ - {\field{\*\fldinst{HYPERLINK "https://gitlab.com/joosthoeks/jhtalib"}}{\fldrslt{\ul
+source mirror 1
+}}}
+ - {\field{\*\fldinst{HYPERLINK "https://bitbucket.org/joosthoeks/jhtalib"}}{\fldrslt{\ul
+source mirror 2
+}}}
+:\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 $ git clone https://github.com/joosthoeks/jhTAlib.git\line
+$ cd jhTAlib\line
+$ docker build -f Dockerfile -t jhtalib .\line
+$ docker run -it jhtalib /bin/bash\line
+/usr/src/app# python3\line
+>>> import jhtalib as jhta\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 In Colab\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 From {\field{\*\fldinst{HYPERLINK "https://pypi.org/project/jhTAlib/"}}{\fldrslt{\ul
