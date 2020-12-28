@@ -3,7 +3,7 @@
 
 # Set Global Attributes:
 __name__ = 'jhTAlib'
-__version__ = '20200412.0'
+__version__ = '20201228.0'
 __description__ = 'Technical Analysis Library Time-Series'
 __url__ = 'https://github.com/joosthoeks/jhTAlib'
 __author__ = 'Joost Hoeks'
