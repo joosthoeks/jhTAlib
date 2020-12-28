@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2020-04-12
+:Date:   2020-12-28
 
 .. contents::
    :depth: 3
@@ -212,7 +212,6 @@ If not errors then installation is correct.
 Donation and Funding
 --------------------
 
--  BTC:
-   `3KCoXMyUDgVABoFSuV8GQT3k8qkUhEDG9X <https://insight.bitpay.com/address/3KCoXMyUDgVABoFSuV8GQT3k8qkUhEDG9X>`__
+-  https://github.com/joosthoeks/jhTAlib/stargazers
 
 --------------

@@ -261,7 +261,7 @@
 <office:text>
 <text:p text:style-name="Title">jhTAlib</text:p>
 <text:p text:style-name="Author">Joost Hoeks</text:p>
-<text:p text:style-name="Date">2020-04-12</text:p>
+<text:p text:style-name="Date">2020-12-28</text:p>
 <text:h text:style-name="Heading_20_1" text:outline-level="1">jhTAlib</text:h>
 <text:p text:style-name="First_20_paragraph">Technical Analysis Library
 Time-Series</text:p>
@@ -430,8 +430,7 @@ installation is correct.</text:p>
 and Funding</text:h>
 <text:list text:style-name="L3">
   <text:list-item>
-    <text:p text:style-name="P77">BTC:
-    <text:a xlink:type="simple" xlink:href="https://insight.bitpay.com/address/3KCoXMyUDgVABoFSuV8GQT3k8qkUhEDG9X" office:name=""><text:span text:style-name="Definition">3KCoXMyUDgVABoFSuV8GQT3k8qkUhEDG9X</text:span></text:a></text:p>
+    <text:p text:style-name="P77"><text:a xlink:type="simple" xlink:href="https://github.com/joosthoeks/jhTAlib/stargazers" office:name=""><text:span text:style-name="Definition">https://github.com/joosthoeks/jhTAlib/stargazers</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />

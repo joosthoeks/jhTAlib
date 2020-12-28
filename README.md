@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2020-04-12
+date: 2020-12-28
 ---
 
 # jhTAlib
@@ -183,7 +183,7 @@ If not errors then installation is correct.
 
 ## Donation and Funding
 
-- BTC: [3KCoXMyUDgVABoFSuV8GQT3k8qkUhEDG9X](https://insight.bitpay.com/address/3KCoXMyUDgVABoFSuV8GQT3k8qkUhEDG9X)
+- [https://github.com/joosthoeks/jhTAlib/stargazers](https://github.com/joosthoeks/jhTAlib/stargazers)
 
 ---
 
