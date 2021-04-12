@@ -100,6 +100,70 @@
         <style:list-level-properties text:space-before="2.5in" text:min-label-width="0.25in" />
       </text:list-level-style-bullet>
     </text:list-style>
+    <text:list-style style:name="L4">
+      <text:list-level-style-bullet text:level="1" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
+        <style:list-level-properties text:space-before="0.25in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="2" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="‣">
+        <style:list-level-properties text:space-before="0.5in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="3" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="⁃">
+        <style:list-level-properties text:space-before="0.75in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="4" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
+        <style:list-level-properties text:space-before="1.0in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="5" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="‣">
+        <style:list-level-properties text:space-before="1.25in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="6" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="⁃">
+        <style:list-level-properties text:space-before="1.5in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="7" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
+        <style:list-level-properties text:space-before="1.75in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="8" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="‣">
+        <style:list-level-properties text:space-before="2.0in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="9" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="⁃">
+        <style:list-level-properties text:space-before="2.25in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="10" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
+        <style:list-level-properties text:space-before="2.5in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+    </text:list-style>
+    <text:list-style style:name="L5">
+      <text:list-level-style-bullet text:level="1" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
+        <style:list-level-properties text:space-before="0.25in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="2" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="‣">
+        <style:list-level-properties text:space-before="0.5in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="3" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="⁃">
+        <style:list-level-properties text:space-before="0.75in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="4" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
+        <style:list-level-properties text:space-before="1.0in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="5" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="‣">
+        <style:list-level-properties text:space-before="1.25in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="6" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="⁃">
+        <style:list-level-properties text:space-before="1.5in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="7" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
+        <style:list-level-properties text:space-before="1.75in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="8" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="‣">
+        <style:list-level-properties text:space-before="2.0in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="9" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="⁃">
+        <style:list-level-properties text:space-before="2.25in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="10" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
+        <style:list-level-properties text:space-before="2.5in" text:min-label-width="0.25in" />
+      </text:list-level-style-bullet>
+    </text:list-style>
     <style:style style:name="P1" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L1">
     </style:style>
     <style:style style:name="P2" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L2">
@@ -254,6 +318,10 @@
     <style:style style:name="P76" style:family="paragraph" style:parent-style-name="Preformatted_20_Text">
     </style:style>
     <style:style style:name="P77" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L3">
+    </style:style>
+    <style:style style:name="P78" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L4">
+    </style:style>
+    <style:style style:name="P79" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L5">
       <style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0in" />
     </style:style>
   </office:automatic-styles>
@@ -261,7 +329,7 @@
 <office:text>
 <text:p text:style-name="Title">jhTAlib</text:p>
 <text:p text:style-name="Author">Joost Hoeks</text:p>
-<text:p text:style-name="Date">2020-12-28</text:p>
+<text:p text:style-name="Date">2021-04-12</text:p>
 <text:h text:style-name="Heading_20_1" text:outline-level="1">jhTAlib</text:h>
 <text:p text:style-name="First_20_paragraph">Technical Analysis Library
 Time-Series</text:p>
@@ -426,11 +494,61 @@ Installation</text:h>
 installation is correct.</text:p>
 <text:p text:style-name="P76">&gt;&gt;&gt; quit()</text:p>
 <text:p text:style-name="Horizontal_20_Line" />
-<text:h text:style-name="Heading_20_2" text:outline-level="2">Donation
-and Funding</text:h>
+<text:h text:style-name="Heading_20_2" text:outline-level="2">Examples</text:h>
 <text:list text:style-name="L3">
   <text:list-item>
-    <text:p text:style-name="P77"><text:a xlink:type="simple" xlink:href="https://github.com/joosthoeks/jhTAlib/stargazers" office:name=""><text:span text:style-name="Definition">https://github.com/joosthoeks/jhTAlib/stargazers</text:span></text:a></text:p>
+    <text:p text:style-name="P77"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-1-plot.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-1-plot.ipynb</text:span></text:a></text:p>
+  </text:list-item>
+  <text:list-item>
+    <text:p text:style-name="P77"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-2-plot.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-2-plot.ipynb</text:span></text:a></text:p>
+  </text:list-item>
+  <text:list-item>
+    <text:p text:style-name="P77"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-3-plot.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-3-plot.ipynb</text:span></text:a></text:p>
+  </text:list-item>
+  <text:list-item>
+    <text:p text:style-name="P77"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-4-plot-quandl.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-4-plot-quandl.ipynb</text:span></text:a></text:p>
+  </text:list-item>
+  <text:list-item>
+    <text:p text:style-name="P77"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-5-plot-quandl.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-5-plot-quandl.ipynb</text:span></text:a></text:p>
+  </text:list-item>
+  <text:list-item>
+    <text:p text:style-name="P77"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-6-plot-quandl.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-6-plot-quandl.ipynb</text:span></text:a></text:p>
+  </text:list-item>
+  <text:list-item>
+    <text:p text:style-name="P77"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-7-quandl-2-df.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-7-quandl-2-df.ipynb</text:span></text:a></text:p>
+  </text:list-item>
+  <text:list-item>
+    <text:p text:style-name="P77"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-8-alphavantage-2-df.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-8-alphavantage-2-df.ipynb</text:span></text:a></text:p>
+  </text:list-item>
+  <text:list-item>
+    <text:p text:style-name="P77"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-9-cryptocompare-2-df.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-9-cryptocompare-2-df.ipynb</text:span></text:a></text:p>
+  </text:list-item>
+  <text:list-item>
+    <text:p text:style-name="P77"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-10-df-numpy-pandas.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-10-df-numpy-pandas.ipynb</text:span></text:a></text:p>
+  </text:list-item>
+  <text:list-item>
+    <text:p text:style-name="P77"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-11-basic-usage.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-11-basic-usage.ipynb</text:span></text:a></text:p>
+  </text:list-item>
+</text:list>
+<text:p text:style-name="Horizontal_20_Line" />
+<text:h text:style-name="Heading_20_2" text:outline-level="2">Notebooks</text:h>
+<text:list text:style-name="L4">
+  <text:list-item>
+    <text:p text:style-name="P78"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/a_sane_and_simple_bitcoin_savings_plan_(sss).ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/a_sane_and_simple_bitcoin_savings_plan_(sss).ipynb</text:span></text:a></text:p>
+  </text:list-item>
+  <text:list-item>
+    <text:p text:style-name="P78"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/dollar_cost_averaging_discount_dcad.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/dollar_cost_averaging_discount_dcad.ipynb</text:span></text:a></text:p>
+  </text:list-item>
+  <text:list-item>
+    <text:p text:style-name="P78"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/recession_probability.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/recession_probability.ipynb</text:span></text:a></text:p>
+  </text:list-item>
+</text:list>
+<text:p text:style-name="Horizontal_20_Line" />
+<text:h text:style-name="Heading_20_2" text:outline-level="2">Donation
+and Funding</text:h>
+<text:list text:style-name="L5">
+  <text:list-item>
+    <text:p text:style-name="P79"><text:a xlink:type="simple" xlink:href="https://github.com/joosthoeks/jhTAlib/stargazers" office:name=""><text:span text:style-name="Definition">https://github.com/joosthoeks/jhTAlib/stargazers</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
