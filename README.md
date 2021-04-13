@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2021-04-12
+date: 2021-04-13
 ---
 
 # jhTAlib
@@ -183,37 +183,37 @@ If not errors then installation is correct.
 
 ## Examples
 
-- [https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-1-plot.ipynb](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-1-plot.ipynb)
+- [https://joosthoeks.github.io/jhTAlib/example-1-plot.html](https://joosthoeks.github.io/jhTAlib/example-1-plot.html)
 
-- [https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-2-plot.ipynb](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-2-plot.ipynb)
+- [https://joosthoeks.github.io/jhTAlib/example-2-plot.html](https://joosthoeks.github.io/jhTAlib/example-2-plot.html)
 
-- [https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-3-plot.ipynb](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-3-plot.ipynb)
+- [https://joosthoeks.github.io/jhTAlib/example-3-plot.html](https://joosthoeks.github.io/jhTAlib/example-3-plot.html)
 
-- [https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-4-plot-quandl.ipynb](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-4-plot-quandl.ipynb)
+- [https://joosthoeks.github.io/jhTAlib/example-4-plot-quandl.html](https://joosthoeks.github.io/jhTAlib/example-4-plot-quandl.html)
 
-- [https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-5-plot-quandl.ipynb](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-5-plot-quandl.ipynb)
+- [https://joosthoeks.github.io/jhTAlib/example-5-plot-quandl.html](https://joosthoeks.github.io/jhTAlib/example-5-plot-quandl.html)
 
-- [https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-6-plot-quandl.ipynb](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-6-plot-quandl.ipynb)
+- [https://joosthoeks.github.io/jhTAlib/example-6-plot-quandl.html](https://joosthoeks.github.io/jhTAlib/example-6-plot-quandl.html)
 
-- [https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-7-quandl-2-df.ipynb](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-7-quandl-2-df.ipynb)
+- [https://joosthoeks.github.io/jhTAlib/example-7-quandl-2-df.html](https://joosthoeks.github.io/jhTAlib/example-7-quandl-2-df.html)
 
-- [https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-8-alphavantage-2-df.ipynb](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-8-alphavantage-2-df.ipynb)
+- [https://joosthoeks.github.io/jhTAlib/example-8-alphavantage-2-df.html](https://joosthoeks.github.io/jhTAlib/example-8-alphavantage-2-df.html)
 
-- [https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-9-cryptocompare-2-df.ipynb](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-9-cryptocompare-2-df.ipynb)
+- [https://joosthoeks.github.io/jhTAlib/example-9-cryptocompare-2-df.html](https://joosthoeks.github.io/jhTAlib/example-9-cryptocompare-2-df.html)
 
-- [https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-10-df-numpy-pandas.ipynb](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-10-df-numpy-pandas.ipynb)
+- [https://joosthoeks.github.io/jhTAlib/example-10-df-numpy-pandas.html](https://joosthoeks.github.io/jhTAlib/example-10-df-numpy-pandas.html)
 
-- [https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-11-basic-usage.ipynb](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-11-basic-usage.ipynb)
+- [https://joosthoeks.github.io/jhTAlib/example-11-basic-usage.html](https://joosthoeks.github.io/jhTAlib/example-11-basic-usage.html)
 
 ---
 
 ## Notebooks
 
-- [https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/a_sane_and_simple_bitcoin_savings_plan_(sss).ipynb](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/a_sane_and_simple_bitcoin_savings_plan_(sss).ipynb)
+- [https://joosthoeks.github.io/jhTAlib/a_sane_and_simple_bitcoin_savings_plan_(sss).html](https://joosthoeks.github.io/jhTAlib/a_sane_and_simple_bitcoin_savings_plan_(sss).html)
 
-- [https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/dollar_cost_averaging_discount_dcad.ipynb](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/dollar_cost_averaging_discount_dcad.ipynb)
+- [https://joosthoeks.github.io/jhTAlib/dollar_cost_averaging_discount_dcad.html](https://joosthoeks.github.io/jhTAlib/dollar_cost_averaging_discount_dcad.html)
 
-- [https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/recession_probability.ipynb](https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/recession_probability.ipynb)
+- [https://joosthoeks.github.io/jhTAlib/recession_probability.html](https://joosthoeks.github.io/jhTAlib/recession_probability.html)
 
 ---
 
