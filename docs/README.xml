@@ -329,7 +329,7 @@
 <office:text>
 <text:p text:style-name="Title">jhTAlib</text:p>
 <text:p text:style-name="Author">Joost Hoeks</text:p>
-<text:p text:style-name="Date">2021-04-12</text:p>
+<text:p text:style-name="Date">2021-04-13</text:p>
 <text:h text:style-name="Heading_20_1" text:outline-level="1">jhTAlib</text:h>
 <text:p text:style-name="First_20_paragraph">Technical Analysis Library
 Time-Series</text:p>
@@ -497,50 +497,50 @@ installation is correct.</text:p>
 <text:h text:style-name="Heading_20_2" text:outline-level="2">Examples</text:h>
 <text:list text:style-name="L3">
   <text:list-item>
-    <text:p text:style-name="P77"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-1-plot.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-1-plot.ipynb</text:span></text:a></text:p>
+    <text:p text:style-name="P77"><text:a xlink:type="simple" xlink:href="https://joosthoeks.github.io/jhTAlib/example-1-plot.html" office:name=""><text:span text:style-name="Definition">https://joosthoeks.github.io/jhTAlib/example-1-plot.html</text:span></text:a></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P77"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-2-plot.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-2-plot.ipynb</text:span></text:a></text:p>
+    <text:p text:style-name="P77"><text:a xlink:type="simple" xlink:href="https://joosthoeks.github.io/jhTAlib/example-2-plot.html" office:name=""><text:span text:style-name="Definition">https://joosthoeks.github.io/jhTAlib/example-2-plot.html</text:span></text:a></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P77"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-3-plot.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-3-plot.ipynb</text:span></text:a></text:p>
+    <text:p text:style-name="P77"><text:a xlink:type="simple" xlink:href="https://joosthoeks.github.io/jhTAlib/example-3-plot.html" office:name=""><text:span text:style-name="Definition">https://joosthoeks.github.io/jhTAlib/example-3-plot.html</text:span></text:a></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P77"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-4-plot-quandl.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-4-plot-quandl.ipynb</text:span></text:a></text:p>
+    <text:p text:style-name="P77"><text:a xlink:type="simple" xlink:href="https://joosthoeks.github.io/jhTAlib/example-4-plot-quandl.html" office:name=""><text:span text:style-name="Definition">https://joosthoeks.github.io/jhTAlib/example-4-plot-quandl.html</text:span></text:a></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P77"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-5-plot-quandl.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-5-plot-quandl.ipynb</text:span></text:a></text:p>
+    <text:p text:style-name="P77"><text:a xlink:type="simple" xlink:href="https://joosthoeks.github.io/jhTAlib/example-5-plot-quandl.html" office:name=""><text:span text:style-name="Definition">https://joosthoeks.github.io/jhTAlib/example-5-plot-quandl.html</text:span></text:a></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P77"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-6-plot-quandl.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-6-plot-quandl.ipynb</text:span></text:a></text:p>
+    <text:p text:style-name="P77"><text:a xlink:type="simple" xlink:href="https://joosthoeks.github.io/jhTAlib/example-6-plot-quandl.html" office:name=""><text:span text:style-name="Definition">https://joosthoeks.github.io/jhTAlib/example-6-plot-quandl.html</text:span></text:a></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P77"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-7-quandl-2-df.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-7-quandl-2-df.ipynb</text:span></text:a></text:p>
+    <text:p text:style-name="P77"><text:a xlink:type="simple" xlink:href="https://joosthoeks.github.io/jhTAlib/example-7-quandl-2-df.html" office:name=""><text:span text:style-name="Definition">https://joosthoeks.github.io/jhTAlib/example-7-quandl-2-df.html</text:span></text:a></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P77"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-8-alphavantage-2-df.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-8-alphavantage-2-df.ipynb</text:span></text:a></text:p>
+    <text:p text:style-name="P77"><text:a xlink:type="simple" xlink:href="https://joosthoeks.github.io/jhTAlib/example-8-alphavantage-2-df.html" office:name=""><text:span text:style-name="Definition">https://joosthoeks.github.io/jhTAlib/example-8-alphavantage-2-df.html</text:span></text:a></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P77"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-9-cryptocompare-2-df.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-9-cryptocompare-2-df.ipynb</text:span></text:a></text:p>
+    <text:p text:style-name="P77"><text:a xlink:type="simple" xlink:href="https://joosthoeks.github.io/jhTAlib/example-9-cryptocompare-2-df.html" office:name=""><text:span text:style-name="Definition">https://joosthoeks.github.io/jhTAlib/example-9-cryptocompare-2-df.html</text:span></text:a></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P77"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-10-df-numpy-pandas.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-10-df-numpy-pandas.ipynb</text:span></text:a></text:p>
+    <text:p text:style-name="P77"><text:a xlink:type="simple" xlink:href="https://joosthoeks.github.io/jhTAlib/example-10-df-numpy-pandas.html" office:name=""><text:span text:style-name="Definition">https://joosthoeks.github.io/jhTAlib/example-10-df-numpy-pandas.html</text:span></text:a></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P77"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-11-basic-usage.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/example/example-11-basic-usage.ipynb</text:span></text:a></text:p>
+    <text:p text:style-name="P77"><text:a xlink:type="simple" xlink:href="https://joosthoeks.github.io/jhTAlib/example-11-basic-usage.html" office:name=""><text:span text:style-name="Definition">https://joosthoeks.github.io/jhTAlib/example-11-basic-usage.html</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_2" text:outline-level="2">Notebooks</text:h>
 <text:list text:style-name="L4">
   <text:list-item>
-    <text:p text:style-name="P78"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/a_sane_and_simple_bitcoin_savings_plan_(sss).ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/a_sane_and_simple_bitcoin_savings_plan_(sss).ipynb</text:span></text:a></text:p>
+    <text:p text:style-name="P78"><text:a xlink:type="simple" xlink:href="https://joosthoeks.github.io/jhTAlib/a_sane_and_simple_bitcoin_savings_plan_(sss).html" office:name=""><text:span text:style-name="Definition">https://joosthoeks.github.io/jhTAlib/a_sane_and_simple_bitcoin_savings_plan_(sss).html</text:span></text:a></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P78"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/dollar_cost_averaging_discount_dcad.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/dollar_cost_averaging_discount_dcad.ipynb</text:span></text:a></text:p>
+    <text:p text:style-name="P78"><text:a xlink:type="simple" xlink:href="https://joosthoeks.github.io/jhTAlib/dollar_cost_averaging_discount_dcad.html" office:name=""><text:span text:style-name="Definition">https://joosthoeks.github.io/jhTAlib/dollar_cost_averaging_discount_dcad.html</text:span></text:a></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P78"><text:a xlink:type="simple" xlink:href="https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/recession_probability.ipynb" office:name=""><text:span text:style-name="Definition">https://colab.research.google.com/github/joosthoeks/jhTAlib/blob/master/notebook/recession_probability.ipynb</text:span></text:a></text:p>
+    <text:p text:style-name="P78"><text:a xlink:type="simple" xlink:href="https://joosthoeks.github.io/jhTAlib/recession_probability.html" office:name=""><text:span text:style-name="Definition">https://joosthoeks.github.io/jhTAlib/recession_probability.html</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="Horizontal_20_Line" />
