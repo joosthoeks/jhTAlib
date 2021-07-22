@@ -183,7 +183,7 @@ def LSMA(df, n, price='Close'):
             start = i + 1 - n
             end = i + 1
             x_list = list(range(start, end, 1))
-            y_list = df[price][start:end]
+            y_list = list(df[price][start:end].values)
             lsma = jhta.REGRESSION(x_list, y_list)['estimate'][-1]
         lsma_list.append(lsma)
     return lsma_list
