@@ -22,6 +22,20 @@ def ATH(df, price='High'):
         ath_dict['ath_index'].append(ath_index)
     return ath_dict
 
+def ATL(df, price='Low'):
+    """
+    All Time Low
+    Returns: dict of lists of floats = jhta.ATL(df, price='Low')
+    """
+    atl_dict = {'atl': [], 'atl_index': []}
+    for i in range(len(df[price])):
+        df_part_list = df[price][0:i+1]
+        atl = min(df_part_list)
+        atl_dict['atl'].append(atl)
+        atl_index = df_part_list.index(min(df_part_list))
+        atl_dict['atl_index'].append(atl_index)
+    return atl_dict
+
 def EARTHC(df):
     """
     Earth Cycle
