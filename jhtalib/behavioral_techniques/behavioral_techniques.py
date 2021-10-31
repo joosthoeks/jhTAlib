@@ -80,29 +80,30 @@ def GANNPR(df, price='Close'):
     Returns: dict of lists of floats = jhta.GANNPR(df, price='Close')
     """
     gannpr_dict = {
-            '1x8': [], '-1x8': [],
-            '1x4': [], '-1x4': [],
-            '1x2': [], '-1x2': [],
-            '1x1': [], '-1x1': [],
-            '2x1': [], '-2x1': [],
-            '4x1': [], '-4x1': [],
-            '8x1': [], '-8x1': []
-            }
-    for i, price in enumerate(df[price]):
-        gannpr_dict['1x8'].append(price+(price/8))
-        gannpr_dict['-1x8'].append(price-(price/8))
-        gannpr_dict['1x4'].append(price+(price/8*2))
-        gannpr_dict['-1x4'].append(price-(price/8*2))
-        gannpr_dict['1x2'].append(price+(price/8*3))
-        gannpr_dict['-1x2'].append(price-(price/8*3))
-        gannpr_dict['1x1'].append(price+(price/8*4))
-        gannpr_dict['-1x1'].append(price-(price/8*4))
-        gannpr_dict['2x1'].append(price+(price/8*5))
-        gannpr_dict['-2x1'].append(price-(price/8*5))
-        gannpr_dict['4x1'].append(price+(price/8*6))
-        gannpr_dict['-4x1'].append(price-(price/8*6))
-        gannpr_dict['8x1'].append(price+(price/8*7))
-        gannpr_dict['-8x1'].append(price-(price/8*7))
+        '87.5': [], '75.0': [], '62.5': [], '50.0': [],
+        '37.5': [], '25.0': [], '12.5': [], '0': [],
+        '-12.5': [], '-25.0': [], '-37.5': [], '-50.0': [],
+        '-62.5': [], '-75.0': [], '-87.5': []
+    }
+    ath = jhta.ATH(df, price)['ath']
+    atl = jhta.ATL(df, price)['atl']
+    for i in range(len(df[price])):
+        diff = ath[i] - atl[i]
+        gannpr_dict['87.5'].append(ath[i] + diff * .875)
+        gannpr_dict['75.0'].append(ath[i] + diff * .75)
+        gannpr_dict['62.5'].append(ath[i] + diff * .625)
+        gannpr_dict['50.0'].append(ath[i] + diff * .5)
+        gannpr_dict['37.5'].append(ath[i] + diff * .375)
+        gannpr_dict['25.0'].append(ath[i] + diff * .25)
+        gannpr_dict['12.5'].append(ath[i] + diff * .125)
+        gannpr_dict['0'].append(ath[i])
+        gannpr_dict['-12.5'].append(ath[i] - diff * .125)
+        gannpr_dict['-25.0'].append(ath[i] - diff * .25)
+        gannpr_dict['-37.5'].append(ath[i] - diff * .375)
+        gannpr_dict['-50.0'].append(ath[i] - diff * .5)
+        gannpr_dict['-62.5'].append(ath[i] - diff * .625)
+        gannpr_dict['-75.0'].append(ath[i] - diff * .75)
+        gannpr_dict['-87.5'].append(ath[i] - diff * .875)
     return gannpr_dict
 
 def GANNTR(df, price='Close'):
