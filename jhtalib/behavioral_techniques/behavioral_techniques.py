@@ -55,9 +55,9 @@ def FIBOPR(df, price='Close'):
     p05 = .5
     p0381 = 1 - p0618
     ath = jhta.ATH(df, price)['ath']
-    lmc = jhta.LMC(df, price, price)['lmc']
+    atl = jhta.ATL(df, price)['atl']
     for i in range(len(df[price])):
-        diff = ath[i] - lmc[i]
+        diff = ath[i] - atl[i]
         fibopr_dict['100'].append(ath[i] + diff)
         fibopr_dict['61.8'].append(ath[i] + diff * p0618)
         fibopr_dict['50.0'].append(ath[i] + diff * p05)
