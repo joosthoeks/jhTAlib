@@ -3,7 +3,7 @@ jhTAlib
 =======
 
 :Author: Joost Hoeks
-:Date:   2021-04-13
+:Date:   2021-10-31
 
 .. contents::
    :depth: 3
@@ -41,7 +41,7 @@ Depends only on
 Install
 -------
 
-From `PyPI <https://pypi.org/project/jhTAlib/>`__:
+From `PyPI <https://pypi.org/project/jhTAlib/>`__: (OLD)
 
 .. code:: bash
 
@@ -62,7 +62,7 @@ From `source <https://github.com/joosthoeks/jhTAlib>`__ - `source mirror
 Update
 ------
 
-From `PyPI <https://pypi.org/project/jhTAlib/>`__:
+From `PyPI <https://pypi.org/project/jhTAlib/>`__: (OLD)
 
 .. code:: bash
 
@@ -109,7 +109,7 @@ From `source <https://github.com/joosthoeks/jhTAlib>`__ - `source mirror
 In Colab
 --------
 
-From `PyPI <https://pypi.org/project/jhTAlib/>`__:
+From `PyPI <https://pypi.org/project/jhTAlib/>`__: (OLD)
 
 .. code:: bash
 

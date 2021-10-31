@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2021-04-13
+date: 2021-10-31
 ---
 
 # jhTAlib
@@ -30,7 +30,7 @@ Work in progress...
 ---
 
 ## Install
-From [PyPI](https://pypi.org/project/jhTAlib/):
+From [PyPI](https://pypi.org/project/jhTAlib/): (OLD)
 
 ```bash
 $ [sudo] pip3 install jhtalib
@@ -47,7 +47,7 @@ $ [sudo] pip3 install -e .
 ---
 
 ## Update
-From [PyPI](https://pypi.org/project/jhTAlib/):
+From [PyPI](https://pypi.org/project/jhTAlib/): (OLD)
 
 ```bash
 $ [sudo] pip3 install --upgrade jhtalib
@@ -86,7 +86,7 @@ $ docker run -it jhtalib /bin/bash
 ---
 
 ## In Colab
-From [PyPI](https://pypi.org/project/jhTAlib/):
+From [PyPI](https://pypi.org/project/jhTAlib/): (OLD)
 
 ```bash
 !pip install --upgrade jhtalib

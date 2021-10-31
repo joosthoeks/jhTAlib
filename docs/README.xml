@@ -329,7 +329,7 @@
 <office:text>
 <text:p text:style-name="Title">jhTAlib</text:p>
 <text:p text:style-name="Author">Joost Hoeks</text:p>
-<text:p text:style-name="Date">2021-04-13</text:p>
+<text:p text:style-name="Date">2021-10-31</text:p>
 <text:h text:style-name="Heading_20_1" text:outline-level="1">jhTAlib</text:h>
 <text:p text:style-name="First_20_paragraph">Technical Analysis Library
 Time-Series</text:p>
@@ -366,7 +366,8 @@ only on</text:h>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_2" text:outline-level="2">Install</text:h>
 <text:p text:style-name="First_20_paragraph">From
-<text:a xlink:type="simple" xlink:href="https://pypi.org/project/jhTAlib/" office:name=""><text:span text:style-name="Definition">PyPI</text:span></text:a>:</text:p>
+<text:a xlink:type="simple" xlink:href="https://pypi.org/project/jhTAlib/" office:name=""><text:span text:style-name="Definition">PyPI</text:span></text:a>:
+(OLD)</text:p>
 <text:p text:style-name="P3">$ [sudo] pip3 install jhtalib</text:p>
 <text:p text:style-name="First_20_paragraph">From
 <text:a xlink:type="simple" xlink:href="https://github.com/joosthoeks/jhTAlib" office:name=""><text:span text:style-name="Definition">source</text:span></text:a>
@@ -381,7 +382,8 @@ mirror 2</text:span></text:a>:</text:p>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:h text:style-name="Heading_20_2" text:outline-level="2">Update</text:h>
 <text:p text:style-name="First_20_paragraph">From
-<text:a xlink:type="simple" xlink:href="https://pypi.org/project/jhTAlib/" office:name=""><text:span text:style-name="Definition">PyPI</text:span></text:a>:</text:p>
+<text:a xlink:type="simple" xlink:href="https://pypi.org/project/jhTAlib/" office:name=""><text:span text:style-name="Definition">PyPI</text:span></text:a>:
+(OLD)</text:p>
 <text:p text:style-name="P7">$ [sudo] pip3 install --upgrade jhtalib</text:p>
 <text:p text:style-name="First_20_paragraph">From
 <text:a xlink:type="simple" xlink:href="https://github.com/joosthoeks/jhTAlib" office:name=""><text:span text:style-name="Definition">source</text:span></text:a>
@@ -418,7 +420,8 @@ mirror 2</text:span></text:a>:</text:p>
 <text:h text:style-name="Heading_20_2" text:outline-level="2">In
 Colab</text:h>
 <text:p text:style-name="First_20_paragraph">From
-<text:a xlink:type="simple" xlink:href="https://pypi.org/project/jhTAlib/" office:name=""><text:span text:style-name="Definition">PyPI</text:span></text:a>:</text:p>
+<text:a xlink:type="simple" xlink:href="https://pypi.org/project/jhTAlib/" office:name=""><text:span text:style-name="Definition">PyPI</text:span></text:a>:
+(OLD)</text:p>
 <text:p text:style-name="P20">!pip install --upgrade jhtalib</text:p>
 <text:p text:style-name="P21">import jhtalib as jhta</text:p>
 <text:p text:style-name="First_20_paragraph">From
