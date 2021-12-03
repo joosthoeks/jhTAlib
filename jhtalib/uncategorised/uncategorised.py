@@ -21,7 +21,7 @@ def EV(hitrate_float, mean_trade_profit_float, mean_trade_loss_float):
     Returns: float = jhta.EV(hitrade_float, mean_trade_profit_float, mean_trade_loss_float)
     Source: https://en.wikipedia.org/wiki/Expected_value
     """
-    return float((hitrate_float * mean_trade_profit_float) + ((1 - hitrate_float) * mean_trade_loss_float))
+    return float((hitrate_float * mean_trade_profit_float) + ((1 - hitrate_float) * mean_trade_loss_float * -1))
 
 def HR(hit_trades_int, total_trades_int):
     """
