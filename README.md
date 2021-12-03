@@ -1,10 +1,11 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2021-10-31
+date: 2021-12-03
 ---
 
 # jhTAlib
+
 Technical Analysis Library Time-Series
 
 You can use and import it for your:
@@ -30,11 +31,6 @@ Work in progress...
 ---
 
 ## Install
-From [PyPI](https://pypi.org/project/jhTAlib/): (OLD)
-
-```bash
-$ [sudo] pip3 install jhtalib
-```
 
 From [source](https://github.com/joosthoeks/jhTAlib) - [source mirror 1](https://gitlab.com/joosthoeks/jhtalib) - [source mirror 2](https://bitbucket.org/joosthoeks/jhtalib):
 
@@ -47,11 +43,6 @@ $ [sudo] pip3 install -e .
 ---
 
 ## Update
-From [PyPI](https://pypi.org/project/jhTAlib/): (OLD)
-
-```bash
-$ [sudo] pip3 install --upgrade jhtalib
-```
 
 From [source](https://github.com/joosthoeks/jhTAlib) - [source mirror 1](https://gitlab.com/joosthoeks/jhtalib) - [source mirror 2](https://bitbucket.org/joosthoeks/jhtalib):
 
@@ -63,6 +54,7 @@ $ git pull [upstream master]
 ---
 
 ## In Docker
+
 From [DockerHub](https://hub.docker.com/r/joosthoeks/jhtalib):
 
 ```bash
@@ -86,12 +78,6 @@ $ docker run -it jhtalib /bin/bash
 ---
 
 ## In Colab
-From [PyPI](https://pypi.org/project/jhTAlib/): (OLD)
-
-```bash
-!pip install --upgrade jhtalib
-import jhtalib as jhta
-```
 
 From [source](https://github.com/joosthoeks/jhTAlib) - [source mirror 1](https://gitlab.com/joosthoeks/jhtalib) - [source mirror 2](https://bitbucket.org/joosthoeks/jhtalib):
 
