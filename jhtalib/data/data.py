@@ -121,7 +121,7 @@ def DF2HEIKIN_ASHI(df, datetime='datetime', open='Open', high='High', low='Low',
     ha_Low_list = []
     ha_Close_list = []
     for i in range(len(df[close])):
-        if i is 0:
+        if i == 0:
             ha_Open = (df[open][i] + df[close][i]) / 2
             ha_Close = (df[open][i] + df[high][i] + df[low][i] + df[close][i]) / 4
             ha_High = df[high][i]
