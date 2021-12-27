@@ -3,7 +3,7 @@
 
 # Set Global Attributes:
 __name__ = 'jhTAlib'
-__version__ = '20211203.0'
+__version__ = '20211227.0'
 __description__ = 'Technical Analysis Library Time-Series'
 __url__ = 'https://github.com/joosthoeks/jhTAlib'
 __author__ = 'Joost Hoeks'
@@ -39,11 +39,4 @@ from .volume_indicators import *
 
 
 from .example import *
-
-
-"""
-Upload PyPI:
-$ python3 setup.py sdist bdist_wheel
-$ twine upload dist/*
-"""
 
