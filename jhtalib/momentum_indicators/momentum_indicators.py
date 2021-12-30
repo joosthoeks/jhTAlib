@@ -158,7 +158,7 @@ def PMOM(df, n, price='Close'):
     Returns: list of floats = jhta.PMOM(df, n, price='Close')
     """
     pmom_list = []
-    mom_list = jhta.MOM(df, n, price=price)
+    mom_list = jhta.MOM(df, n, price)
     for i in range(len(df[price])):
         if i + 1 < n:
             pmom = float('NaN')
