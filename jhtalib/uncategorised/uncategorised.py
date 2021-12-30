@@ -164,3 +164,20 @@ def RETS(df, price='Close'):
             rets_list.append(rets)
     return rets_list
 
+def RETSLOG(df, price='Close'):
+    """
+    Returns Log
+    Returns: list of floats = jhta.RETSLOG(df, price='Close')
+    """
+    retslog_list = []
+    retlog_list = jhta.RETLOG(df, price)
+    for i in range(len(df[price])):
+        if i < 1:
+            retslog = float('NaN')
+            retslog_list.append(retslog)
+            retslog = .0
+        else:
+            retslog = retslog + retlog_list[i]
+            retslog_list.append(retslog)
+    return retslog_list
+
