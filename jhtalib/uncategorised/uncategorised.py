@@ -122,6 +122,23 @@ def PRETS(df, price='Close'):
             prets_list.append(prets)
     return prets_list
 
+def PRETSLOG(df, price='Close'):
+    """
+    %Returns Log
+    Returns: list of floats = jhta.PRETSLOG(df, price='Close')
+    """
+    pretslog_list = []
+    pretlog_list = jhta.PRETLOG(df, price)
+    for i in range(len(df[price])):
+        if i < 1:
+            pretslog = float('NaN')
+            pretslog_list.append(pretslog)
+            pretslog = .0
+        else:
+            pretslog = pretslog + pretlog_list[i]
+            pretslog_list.append(pretslog)
+    return pretslog_list
+
 def RET(df, price='Close'):
     """
     Return
