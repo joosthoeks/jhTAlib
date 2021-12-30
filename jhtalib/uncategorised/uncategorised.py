@@ -1,5 +1,6 @@
 """"""
 # Import Built-Ins:
+import cmath
 
 # Import Third-Party:
 
@@ -87,6 +88,21 @@ def PRET(df, price='Close'):
             pret = ret_list[i] / df[price][i - 1]
         pret_list.append(pret)
     return pret_list
+
+def PRETLOG(df, price='Close'):
+    """
+    %Return Log
+    Returns: list of floats = jhta.PRETLOG(df, price='Close')
+    Source: https://fintechprofessor.com/2017/12/02/log-vs-simple-returns-examples-and-comparisons/
+    """
+    pretlog_list = []
+    for i in range(len(df[price])):
+        if i < 1:
+            pretlog = float('NaN')
+        else:
+            pretlog = cmath.log(df[price][i] / df[price][i - 1]).real
+        pretlog_list.append(pretlog)
+    return pretlog_list
 
 def PRETS(df, price='Close'):
     """
