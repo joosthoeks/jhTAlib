@@ -152,6 +152,21 @@ def PLUS_DM(df, n):
     Plus Directional Movement
     """
 
+def PMOM(df, n, price='Close'):
+    """
+    %Momentum
+    Returns: list of floats = jhta.PMOM(df, n, price='Close')
+    """
+    pmom_list = []
+    mom_list = jhta.MOM(df, n, price=price)
+    for i in range(len(df[price])):
+        if i + 1 < n:
+            pmom = float('NaN')
+        else:
+            pmom = mom_list[i] / df[price][i - n]
+        pmom_list.append(pmom)
+    return pmom_list
+
 def PPO(df, price='Close'):
     """
     Percentage Price Oscillator
