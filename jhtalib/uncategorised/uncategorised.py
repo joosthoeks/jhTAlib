@@ -121,6 +121,15 @@ def RET(df, price='Close'):
         ret_list.append(ret)
     return ret_list
 
+def RETLOG(df, price='Close'):
+    """
+    Return Log
+    Returns: list of floats = jhta.RETLOG(df, price='Close')
+    Source: https://fintechprofessor.com/2017/12/02/log-vs-simple-returns-examples-and-comparisons/
+    """
+    ret_list = jhta.RET(df, price)
+    return jhta.LOG({'ret': ret_list}, 'ret')
+
 def RETS(df, price='Close'):
     """
     Returns
