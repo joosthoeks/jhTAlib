@@ -188,3 +188,17 @@ def NUMPY2DF(df_np, datetime='datetime', open='Open', high='High', low='Low', cl
         close: tuple(df_np[close]),
         volume: tuple(df_np[volume])
     }
+
+def PANDAS2DF(df_pd, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume'):
+    """
+    Pandas DataFeed 2 DataFeed
+    Returns: dict of tuples of floats = jhta.PANDAS2DF(df_pd, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume')
+    """
+    return {
+        datetime: tuple(df_pd[datetime]),
+        open: tuple(df_pd[open]),
+        high: tuple(df_pd[high]),
+        low: tuple(df_pd[low]),
+        close: tuple(df_pd[close]),
+        volume: tuple(df_pd[volume])
+    }
