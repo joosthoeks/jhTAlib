@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2021-12-30
+date: 2022-08-26
 ---
 
 # jhTAlib
@@ -77,7 +77,7 @@ $ docker run -it jhtalib /bin/bash
 
 ---
 
-## In Colab
+## In Jupyter
 
 From [source](https://github.com/joosthoeks/jhTAlib) - [source mirror 1](https://gitlab.com/joosthoeks/jhtalib) - [source mirror 2](https://bitbucket.org/joosthoeks/jhtalib):
 
