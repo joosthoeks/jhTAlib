@@ -175,3 +175,16 @@ def DF_TAIL(df, n=5, datetime='datetime', open='Open', high='High', low='Low', c
         volume: tuple(df[volume][start:end])
         })
 
+def NUMPY2DF(df_np, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume'):
+    """
+    NumPy DataFeed 2 DataFeed
+    Returns: dict of tuples of floats = jhta.NUMPY2DF(df_np, datetime='datetime', open='Open', high='High', low='Low', close='Close', volume='Volume')
+    """
+    return {
+        datetime: tuple(df_np[datetime]),
+        open: tuple(df_np[open]),
+        high: tuple(df_np[high]),
+        low: tuple(df_np[low]),
+        close: tuple(df_np[close]),
+        volume: tuple(df_np[volume])
+    }
