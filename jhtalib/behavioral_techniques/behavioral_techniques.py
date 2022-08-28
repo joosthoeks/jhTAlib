@@ -194,19 +194,28 @@ def PP(df, high='High', low='Low', close='Close'):
     """
     pp_dict = {'p': [], 'r1': [], 's1': [], 'r2': [], 's2': [], 'r3': [], 's3': []}
     for i in range(len(df[close])):
-        p = (df[high][i] + df[low][i] + df[close][i]) / 3
+        if i < 1:
+            p = float('NaN')
+            r1 = float('NaN')
+            s1 = float('NaN')
+            r2 = float('NaN')
+            s2 = float('NaN')
+            r3 = float('NaN')
+            s3 = float('NaN')
+        else:
+            p = (df[high][i - 1] + df[low][i - 1] + df[close][i - 1]) / 3
+            r1 = p + (p - df[low][i - 1])
+            s1 = p - (df[high][i - 1] - p)
+            r2 = p + (df[high][i - 1] - df[low][i - 1])
+            s2 = p - (df[high][i - 1] - df[low][i - 1])
+            r3 = r1 + (df[high][i - 1] - df[low][i - 1])
+            s3 = s1 - (df[high][i - 1] - df[low][i - 1])
         pp_dict['p'].append(p)
-        r1 = p + (p - df[low][i])
         pp_dict['r1'].append(r1)
-        s1 = p - (df[high][i] - p)
         pp_dict['s1'].append(s1)
-        r2 = p + (df[high][i] - df[low][i])
         pp_dict['r2'].append(r2)
-        s2 = p - (df[high][i] - df[low][i])
         pp_dict['s2'].append(s2)
-        r3 = r1 + (df[high][i] - df[low][i])
         pp_dict['r3'].append(r3)
-        s3 = s1 - (df[high][i] - df[low][i])
         pp_dict['s3'].append(s3)
     return pp_dict
 
