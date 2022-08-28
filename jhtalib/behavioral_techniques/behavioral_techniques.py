@@ -219,6 +219,42 @@ def PP(df, high='High', low='Low', close='Close'):
         pp_dict['s3'].append(s3)
     return pp_dict
 
+def PP_FIBO(df, high='High', low='Low', close='Close'):
+    """
+    Fibonacci's Pivot Points
+    Returns: dict of lists of floats = jhta.PP_FIBO(df, high='High', low='Low', close='Close')
+    Source: https://gannsecret.blogspot.com/p/pivot-point-definition.html
+    """
+    pp_dict = {'p': [], 'r1': [], 's1': [], 'r2': [], 's2': [], 'r3': [], 's3': []}
+    for i in range(len(df[close])):
+        if i < 1:
+            p = float('NaN')
+            r1 = float('NaN')
+            s1 = float('NaN')
+            r2 = float('NaN')
+            s2 = float('NaN')
+            r3 = float('NaN')
+            s3 = float('NaN')
+        else:
+            h = df[high][i - 1]
+            l = df[low][i - 1]
+            c = df[close][i - 1]
+            p = (h + l + c) / 3
+            r1 = p + .382 * (h - l)
+            s1 = p - .382 * (h - l)
+            r2 = p + .618 * (h - l)
+            s2 = p - .618 * (h - l)
+            r3 = p + 1 * (h - l)
+            s3 = p - 1 * (h - l)
+        pp_dict['p'].append(p)
+        pp_dict['r1'].append(r1)
+        pp_dict['s1'].append(s1)
+        pp_dict['r2'].append(r2)
+        pp_dict['s2'].append(s2)
+        pp_dict['r3'].append(r3)
+        pp_dict['s3'].append(s3)
+    return pp_dict
+
 def SATURNC(df):
     """
     Saturn Cycle
