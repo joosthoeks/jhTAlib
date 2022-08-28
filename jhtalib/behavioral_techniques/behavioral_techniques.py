@@ -219,6 +219,48 @@ def PP(df, high='High', low='Low', close='Close'):
         pp_dict['s3'].append(s3)
     return pp_dict
 
+def PP_CAMARILLA(df, high='High', low='Low', close='Close'):
+    """
+    Camarilla Pivot Points
+    Returns: dict of lists of floats = jhta.PP_CAMARILLA(df, high='High', low='Low', close='Close')
+    Source: https://gannsecret.blogspot.com/p/pivot-point-definition.html
+    """
+    pp_dict = {'p': [], 'r1': [], 's1': [], 'r2': [], 's2': [], 'r3': [], 's3': [], 'r4': [], 's4': []}
+    for i in range(len(df[close])):
+        if i < 1:
+            p = float('NaN')
+            r1 = float('NaN')
+            s1 = float('NaN')
+            r2 = float('NaN')
+            s2 = float('NaN')
+            r3 = float('NaN')
+            s3 = float('NaN')
+            r4 = float('NaN')
+            s4 = float('NaN')
+        else:
+            h = df[high][i - 1]
+            l = df[low][i - 1]
+            c = df[close][i - 1]
+            p = (h + l + c) / 3
+            r1 = c + (h - l) * 1.1 / 12
+            s1 = c - (h - l) * 1.1 / 12
+            r2 = c + (h - l) * 1.1 / 6
+            s2 = c - (h - l) * 1.1 / 6
+            r3 = c + (h - l) * 1.1 / 4
+            s3 = c - (h - l) * 1.1 / 4
+            r4 = c + (h - l) * 1.1 / 2
+            s4 = c - (h - l) * 1.1 / 2
+        pp_dict['p'].append(p)
+        pp_dict['r1'].append(r1)
+        pp_dict['s1'].append(s1)
+        pp_dict['r2'].append(r2)
+        pp_dict['s2'].append(s2)
+        pp_dict['r3'].append(r3)
+        pp_dict['s3'].append(s3)
+        pp_dict['r4'].append(r4)
+        pp_dict['s4'].append(s4)
+    return pp_dict
+
 def PP_DEMARK(df, open='Open', high='High', low='Low', close='Close'):
     """
     Demark Pivot Points
