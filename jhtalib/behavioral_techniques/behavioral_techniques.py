@@ -219,6 +219,33 @@ def PP(df, high='High', low='Low', close='Close'):
         pp_dict['s3'].append(s3)
     return pp_dict
 
+def PP_DEMARK(df, open='Open', high='High', low='Low', close='Close'):
+    """
+    Demark Pivot Points
+    Returns: dict of lists of floats = jhta.PP_DEMARK(df, open='Open', high='High', low='Low', close='Close')
+    Source: https://gannsecret.blogspot.com/p/pivot-point-definition.html
+    """
+    pp_dict = {'r1': [], 's1': []}
+    for i in range(len(df[close])):
+        if i < 1:
+            r1 = float('NaN')
+            s1 = float('NaN')
+        else:
+            o = df[open][i - 1]
+            h = df[high][i - 1]
+            l = df[low][i - 1]
+            c = df[close][i - 1]
+            x = h + l + 2 * c
+            if c < o:
+                x = h + 2 * l + c
+            if c > o:
+                x = 2 * h + l + c
+            r1 = x / 2 - l
+            s1 = x / 2 - h
+        pp_dict['r1'].append(r1)
+        pp_dict['s1'].append(s1)
+    return pp_dict
+
 def PP_FIBO(df, high='High', low='Low', close='Close'):
     """
     Fibonacci's Pivot Points
