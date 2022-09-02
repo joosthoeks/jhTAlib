@@ -28,7 +28,6 @@ def HR(hit_trades_int, total_trades_int):
     """
     Hit Rate / Win Rate
     Returns: float = jhta.HR(hit_trades_int, total_trades_int)
-    Source: http://traderskillset.com/hit-rate-stock-trading/
     """
     return float(hit_trades_int / total_trades_int)
 

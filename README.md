@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2022-08-31
+date: 2022-09-02
 ---
 
 # jhTAlib
@@ -122,7 +122,7 @@ pp (jhta.SMA(df, 10))
 
 ---
 
-## Reference
+## Help
 
 ```python
 $ python3
@@ -200,6 +200,66 @@ If not errors then installation is correct.
 - [https://joosthoeks.github.io/jhTAlib/dollar_cost_averaging_discount_dcad.html](https://joosthoeks.github.io/jhTAlib/dollar_cost_averaging_discount_dcad.html)
 
 - [https://joosthoeks.github.io/jhTAlib/recession_probability.html](https://joosthoeks.github.io/jhTAlib/recession_probability.html)
+
+---
+
+## References
+
+### Books
+
+- An Introduction to Algorithmic Trading
+
+- Computer Analysis of the Futures Markets
+
+- New Concepts in Technical Trading Systems
+
+- The New Technical Trader
+
+- Trading Systems and Methods
+
+### Urls
+
+- [https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/overview](https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/overview)
+
+- [https://fintechprofessor.com/2017/12/02/log-vs-simple-returns-examples-and-comparisons/](https://fintechprofessor.com/2017/12/02/log-vs-simple-returns-examples-and-comparisons/)
+
+- [https://www.fmlabs.com/reference/default.htm](https://www.fmlabs.com/reference/default.htm)
+
+- [https://gannsecret.blogspot.com/p/pivot-point-definition.html](https://gannsecret.blogspot.com/p/pivot-point-definition.html)
+
+- [https://www.investopedia.com/terms/p/profit_loss_ratio.asp](https://www.investopedia.com/terms/p/profit_loss_ratio.asp)
+
+- [https://machinelearningmastery.com/implement-simple-linear-regression-scratch-python/](https://machinelearningmastery.com/implement-simple-linear-regression-scratch-python/)
+
+- [https://machinelearningmastery.com/normalize-standardize-time-series-data-python/](https://machinelearningmastery.com/normalize-standardize-time-series-data-python/)
+
+- [https://www.mathsisfun.com/data/least-squares-regression.html](https://www.mathsisfun.com/data/least-squares-regression.html)
+
+- [https://www.tadoc.org/index.htm](https://www.tadoc.org/index.htm)
+
+- [https://www.theinvestorspodcast.com/bitcoin-mayer-multiple/](https://www.theinvestorspodcast.com/bitcoin-mayer-multiple/)
+
+- [https://www.tradeciety.com/understand-candlesticks-patterns/](https://www.tradeciety.com/understand-candlesticks-patterns/)
+
+- [https://www.wallstreetmojo.com/statistics-guides/](https://www.wallstreetmojo.com/statistics-guides/)
+
+- [https://www.wallstreetmojo.com/investment-banking/corporate-finance/](https://www.wallstreetmojo.com/investment-banking/corporate-finance/)
+
+- [https://www.wikihow.com/Calculate-the-Standard-Error-of-Estimate](https://www.wikihow.com/Calculate-the-Standard-Error-of-Estimate)
+
+- [https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Covariance](https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Covariance)
+
+- [https://en.wikipedia.org/wiki/Amplitude](https://en.wikipedia.org/wiki/Amplitude)
+
+- [https://en.wikipedia.org/wiki/Beta_(finance)](https://en.wikipedia.org/wiki/Beta_(finance))
+
+- [https://en.wikipedia.org/wiki/Expected_value](https://en.wikipedia.org/wiki/Expected_value)
+
+- [https://en.wikipedia.org/wiki/Julian_day](https://en.wikipedia.org/wiki/Julian_day)
+
+- [https://en.wikipedia.org/wiki/Monte_Carlo_method](https://en.wikipedia.org/wiki/Monte_Carlo_method)
+
+- [https://en.wikipedia.org/wiki/Pivot_point_(technical_analysis)](https://en.wikipedia.org/wiki/Pivot_point_(technical_analysis))
 
 ---
 
