@@ -193,6 +193,19 @@ def NEPTUNEC(df):
     Neptune Cycle
     """
 
+def PDDSATH(df, price='High'):
+    """
+    %DrawDown Since All Time High
+    Returns: list of floats = jhta.PDDSATH(df, price='High')
+    """
+    pddsath_list = []
+    ath_list = jhta.ATH(df, price)
+    ddsath_list = jhta.DDSATH(df, price)
+    for i in range(len(df[price])):
+        pddsath = ddsath_list[i] / ath_list['ath'][i]
+        pddsath_list.append(pddsath)
+    return pddsath_list
+
 def PLUTOC(df):
     """
     Pluto Cycle
