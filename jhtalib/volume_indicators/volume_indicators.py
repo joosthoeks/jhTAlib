@@ -46,29 +46,14 @@ def CMF(df, n, high='High', low='Low', close='Close', volume='Volume'):
                 l = df[low][start:end][i2]
                 c = df[close][start:end][i2]
                 v = df[volume][start:end][i2]
-                formula = (((c - l) - (h - c)) / (h - l)) * v
+                hl = (h - l) or .00000001
+                formula = (((c - l) - (h - c)) / hl) * v
+#                formula = (((c - l) - (h - c)) / (h - l)) * v
                 formula_list.append(formula)
             sum_formula = sum(formula_list)
             sum_volume = sum(df[volume][start:end])
             cmf = sum_formula / sum_volume
         cmf_list.append(cmf)
-
-    """
-    cmf_list = []
-    for i in range(len(df[close])):
-        if i + 1 < n:
-            cmf = float('NaN')
-        else:
-            start = i + 1 - n
-            end = i + 1
-            h = sum(df[high][start:end])
-            l = sum(df[low][start:end])
-            c = sum(df[close][start:end])
-            v = sum(df[volume][start:end])
-            cmf = ((((c - l) - (h - c)) / (h - l)) * v) / v
-        cmf_list.append(cmf)
-    """
-    
     return cmf_list
 
 def MFAI(df, high='High', low='Low', volume='Volume'):
