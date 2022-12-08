@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2022-09-02
+date: 2022-12-08
 ---
 
 # jhTAlib
@@ -83,9 +83,9 @@ From [source](https://github.com/joosthoeks/jhTAlib) - [source mirror 1](https:/
 
 ```bash
 !git clone [-b branch-name] https://github.com/joosthoeks/jhTAlib.git
-%cd '/content/jhTAlib'
+%cd 'jhTAlib/'
 import jhtalib as jhta
-%cd '/content'
+%cd '../'
 !rm -rf ./jhTAlib/
 ```
 
