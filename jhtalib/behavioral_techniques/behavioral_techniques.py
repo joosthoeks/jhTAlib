@@ -123,6 +123,18 @@ def GANNTR(df, price='Close'):
     W. D. Gann Time Retracements
     """
 
+def GSLMC(df, price='Low', price_high='High'):
+    """
+    Gain Since Last Major Correction
+    Returns: list of floats = jhta.GSLMC(df, price='Low', price_high='High')
+    """
+    gslmc_list = []
+    lmc_list = jhta.LMC(df, price, price_high)
+    for i in range(len(df[price])):
+        gslmc = df[price][i] - lmc_list['lmc'][i]
+        gslmc_list.append(gslmc)
+    return gslmc_list
+
 def JD(utc_year, utc_month, utc_day, utc_hour, utc_minute, utc_second):
     """
     Julian Date
