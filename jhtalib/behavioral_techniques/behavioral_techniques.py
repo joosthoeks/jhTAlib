@@ -36,6 +36,18 @@ def ATL(df, price='Low'):
         atl_dict['atl_index'].append(atl_index)
     return atl_dict
 
+def DDSATH(df, price='High'):
+    """
+    DrawDown Since All Time High
+    Returns: list of floats = jhta.DDSATH(df, price='High')
+    """
+    ddsath_list = []
+    ath_list = jhta.ATH(df, price)
+    for i in range(len(df[price])):
+        ddsath = (ath_list['ath'][i] - df[price][i]) * -1
+        ddsath_list.append(ddsath)
+    return ddsath_list
+
 def EARTHC(df):
     """
     Earth Cycle
