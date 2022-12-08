@@ -218,6 +218,19 @@ def PDDSATH(df, price='High'):
         pddsath_list.append(pddsath)
     return pddsath_list
 
+def PGSLMC(df, price='Low', price_high='High'):
+    """
+    %Gain Since Last Major Correction
+    Returns: list of floats = jhta.PGSLMC(df, price='Low', price_high='High')
+    """
+    pgslmc_list = []
+    lmc_list = jhta.LMC(df, price, price_high)
+    gslmc_list = jhta.GSLMC(df, price, price_high)
+    for i in range(len(df[price])):
+        pgslmc = gslmc_list[i] / lmc_list['lmc'][i]
+        pgslmc_list.append(pgslmc)
+    return pgslmc_list
+
 def PLUTOC(df):
     """
     Pluto Cycle
