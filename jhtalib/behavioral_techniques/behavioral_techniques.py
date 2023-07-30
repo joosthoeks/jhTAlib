@@ -181,7 +181,8 @@ def LMC(df, price='Low', price_high='High'):
         df_part_list = df[price][ath_dict['ath_index'][i]:i+1]
         lmc = min(df_part_list)
         lmc_dict['lmc'].append(lmc)
-        lmc_index = df_part_list.index(min(df_part_list))
+#        lmc_index = df_part_list.index(min(df_part_list))
+        lmc_index = len(df_part_list) - 1 - df_part_list[::-1].index(min(df_part_list))
         lmc_dict['lmc_index'].append(lmc_index)
     return lmc_dict
 
