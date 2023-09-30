@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2023-07-30
+date: 2023-09-30
 ---
 
 # jhTAlib
@@ -227,6 +227,8 @@ If not errors then installation is correct.
 - [https://www.fmlabs.com/reference/default.htm](https://www.fmlabs.com/reference/default.htm)
 
 - [https://gannsecret.blogspot.com/p/pivot-point-definition.html](https://gannsecret.blogspot.com/p/pivot-point-definition.html)
+
+- [https://www.investopedia.com/terms/k/kellycriterion.asp](https://www.investopedia.com/terms/k/kellycriterion.asp)
 
 - [https://www.investopedia.com/terms/p/profit_loss_ratio.asp](https://www.investopedia.com/terms/p/profit_loss_ratio.asp)
 
