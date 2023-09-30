@@ -22,6 +22,16 @@ def HR(hit_trades_int, total_trades_int):
     """
     return float(hit_trades_int / total_trades_int)
 
+def KELLY(hitrate_float, profit_loss_ratio_float):
+    """
+    Kelly Criterion (Bet Size)
+    Returns: float = jhta.KELLY(hitrate_float, profit_loss_ratio_float)
+    Source: https://www.investopedia.com/terms/k/kellycriterion.asp
+    """
+    W = hitrate_float
+    R = profit_loss_ratio_float
+    return float(W - (1 - W) / R)
+
 def PLR(mean_trade_profit_float, mean_trade_loss_float):
     """
     Profit/Loss Ratio
