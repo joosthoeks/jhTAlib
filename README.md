@@ -139,6 +139,7 @@ $ python3
 >>> help(jhta.information)
 >>> help(jhta.math_functions)
 >>> help(jhta.momentum_indicators)
+>>> help(jhta.money_management)
 >>> help(jhta.overlap_studies)
 >>> help(jhta.pattern_recognition)
 >>> help(jhta.price_transform)

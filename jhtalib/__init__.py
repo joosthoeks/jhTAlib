@@ -29,6 +29,7 @@ from .general import *
 from .information import *
 from .math_functions import *
 from .momentum_indicators import *
+from .money_management import *
 from .overlap_studies import *
 from .pattern_recognition import *
 from .price_transform import *
