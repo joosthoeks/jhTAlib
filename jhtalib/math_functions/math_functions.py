@@ -167,10 +167,10 @@ def LOG10(df, price='Close'):
     """
     return [cmath.log10(df[price][i]).real for i in range(len(df[price]))]
 
-def MAX(df, n, price='Close'):
+def MAX(df, n, price='High'):
     """
     Highest value over a specified period
-    Returns: list of floats = jhta.MAX(df, n, price='Close')
+    Returns: list of floats = jhta.MAX(df, n, price='High')
     """
     max_list = []
     if n == len(df[price]):
@@ -195,10 +195,10 @@ def MAX(df, n, price='Close'):
             max_list.append(MAX)
     return max_list
 
-def MAXINDEX(df, n, price='Close'):
+def MAXINDEX(df, n, price='High'):
     """
     Index of highest value over a specified period
-    Returns: list of ints = jhta.MAXINDEX(df, n, price='Close')
+    Returns: list of ints = jhta.MAXINDEX(df, n, price='High')
     """
     max_index_list = []
     if n == len(df[price]):
@@ -223,10 +223,10 @@ def MAXINDEX(df, n, price='Close'):
             max_index_list.append(max_index)
     return max_index_list
 
-def MIN(df, n, price='Close'):
+def MIN(df, n, price='Low'):
     """
     Lowest value over a specified period
-    Returns: list of floats = jhta.MIN(df, n, price='Close')
+    Returns: list of floats = jhta.MIN(df, n, price='Low')
     """
     min_list = []
     if n == len(df[price]):
@@ -251,10 +251,10 @@ def MIN(df, n, price='Close'):
             min_list.append(MIN)
     return min_list
 
-def MININDEX(df, n, price='Close'):
+def MININDEX(df, n, price='Low'):
     """
     Index of lowest value over a specified period
-    Returns: list of ints = jhta.MININDEX(df, n, price='Close')
+    Returns: list of ints = jhta.MININDEX(df, n, price='Low')
     """
     min_index_list = []
     if n == len(df[price]):
@@ -279,24 +279,24 @@ def MININDEX(df, n, price='Close'):
             min_index_list.append(min_index)
     return min_index_list
 
-def MINMAX(df, n, price='Close'):
+def MINMAX(df, n, high='High', low='Low'):
     """
     Lowest and highest values over a specified period
-    Returns: dict of lists of floats = jhta.MINMAX(df, n, price='Close')
+    Returns: dict of lists of floats = jhta.MINMAX(df, n, high='High', low='Low')
     """
     return {
-        'min': MIN(df, n, price),
-        'max': MAX(df, n, price)
+        'max': jhta.MAX(df, n, high),
+        'min': jhta.MIN(df, n, low)
         }
 
-def MINMAXINDEX(df, n, price='Close'):
+def MINMAXINDEX(df, n, high='High', low='Low'):
     """
     Indexes of lowest and highest values over a specified period
-    Returns: dict of lists of ints = jhta.MINMAXINDEX(df, n, price='Close')
+    Returns: dict of lists of ints = jhta.MINMAXINDEX(df, n, high='High', low='Low')
     """
     return {
-        'min': MININDEX(df, n, price),
-        'max': MAXINDEX(df, n, price)
+        'max': jhta.MAXINDEX(df, n, high),
+        'min': jhta.MININDEX(df, n, low)
         }
 
 def MULT(df, high='High', low='Low'):
