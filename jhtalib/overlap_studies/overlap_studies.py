@@ -85,6 +85,23 @@ def ENVP(df, pct=.01, price='Close'):
         envp_dict['lo'].append(lo)
     return envp_dict
 
+def EWMA(df, n, price='Close'):
+    """
+    Exponential Weighted Moving Average (EWMA)
+    Returns: list of floats = jhta.EWMA(df, n, price='Close')
+    """
+    alpha = 2 / (n + 1)
+    ewma_list = [float('NaN')] * (n - 1)
+
+    ewma = df[price][n - 1]
+    ewma_list.append(ewma)
+    
+    for i in range(n, len(df[price])):
+        ewma = alpha * df[price][i] + (1 - alpha) * ewma
+        ewma_list.append(ewma)
+    
+    return ewma_list
+
 def KAMA(df, n):
     """
     Kaufman Adaptive Moving Average
