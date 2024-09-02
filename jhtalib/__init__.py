@@ -23,6 +23,7 @@ from .behavioral_techniques import *
 from .candlestick import *
 from .cycle_indicators import *
 from .data import *
+from .derivatives import *
 from .event_driven import *
 from .experimental import *
 from .general import *
