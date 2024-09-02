@@ -76,6 +76,26 @@ def DVOLA(df, n=30, price='Close'):
         dvola_list.append(dvola)
     return dvola_list
 
+def HVOL(df, n, scaling_factor=252, price='Close'):
+    """
+    Historical Volatility
+    Returns: list of floats = jhta.HVOL(df, n, scaling_factor=252, price='Close')
+    """
+    hvol_list = []
+    for i in range(len(df[price])):
+        if i + 1 < n:
+            hvol = float('NaN')
+        else:
+            start = i + 1 - n
+            end = i + 1
+            data = df[price][start:end]
+            returns = [(data[i] / data[i - 1] - 1) for i in range(1, len(data))]
+            mean = sum(returns) / len(returns)
+            variance = sum((r - mean) ** 2 for r in returns) / (len(returns) - 1)
+            hvol = (variance ** 0.5) * (scaling_factor ** 0.5)
+        hvol_list.append(hvol)
+    return hvol_list
+
 def INERTIA(df, n, price='Close'):
     """
     Inertia
