@@ -1,7 +1,7 @@
 ---
 title: jhTAlib
 author: Joost Hoeks
-date: 2024-09-02
+date: 2025-06-24
 ---
 
 # jhTAlib
@@ -133,6 +133,7 @@ $ python3
 >>> help(jhta.candlestick)
 >>> help(jhta.cycle_indicators)
 >>> help(jhta.data)
+>>> help(jhta.derivatives)
 >>> help(jhta.event_driven)
 >>> help(jhta.experimental)
 >>> help(jhta.general)
@@ -231,6 +232,8 @@ If not errors then installation is correct.
 - [https://www.investopedia.com/terms/k/kellycriterion.asp](https://www.investopedia.com/terms/k/kellycriterion.asp)
 
 - [https://www.investopedia.com/terms/p/profit_loss_ratio.asp](https://www.investopedia.com/terms/p/profit_loss_ratio.asp)
+
+- [https://leverage.trading/liquidation-price-calculator/](https://leverage.trading/liquidation-price-calculator/)
 
 - [https://machinelearningmastery.com/implement-simple-linear-regression-scratch-python/](https://machinelearningmastery.com/implement-simple-linear-regression-scratch-python/)
 
