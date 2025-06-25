@@ -7,6 +7,14 @@
 import jhtalib as jhta
 
 
+def get_elp_distance(leverage):
+    """
+    Estimated Liquidation Price Distance
+    Returns: float = jhta.get_elp_distance(leverage)
+    Source: https://leverage.trading/liquidation-price-calculator/
+    """
+    return 100 / leverage /100
+
 def get_elp_long(entry_price, leverage):
     """
     Estimated Liquidation Price Long
