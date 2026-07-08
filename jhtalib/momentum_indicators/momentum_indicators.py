@@ -49,10 +49,31 @@ def AROONOSC(df, n):
     Aroon Oscillator
     """
 
-def BOP(df):
+def BOP(df, open='Open', high='High', low='Low', close='Close'):
     """
-    Balance Of Power
+    Balance Of Power - Buying vs Selling Pressure
+    Theory: BOP = (Close - Open) / (High - Low). Measures buyers vs sellers within the bar.
+            > 0 = buyers stronger, < 0 = sellers stronger, 0 = balanced. No period - calculated per bar.
+    Returns: list of floats (-1 to +1)
+    Source: Igor Levshin
     """
+    result = []
+
+    for i in range(len(df[close])):
+        o = df[open][i]
+        h = df[high][i]
+        l = df[low][i]
+        c = df[close][i]
+
+        hl_range = h - l
+        if hl_range == 0:
+            bop = 0
+        else:
+            bop = (c - o) / hl_range
+
+        result.append(bop)
+
+    return result
 
 def CCI(df, n):
     """
