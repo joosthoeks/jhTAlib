@@ -41,4 +41,4 @@ from .volume_indicators import *
 
 
 from .example import *
-
+from jhtalib.demark_indicators.demark_indicators import *
