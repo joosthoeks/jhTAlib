@@ -193,3 +193,4 @@ def SHADOWT(df, n, open='Open', high='High', low='Low', close='Close'):
     return shadowt_dict
 
 # Added Hammer and Hanging Man patterns
+# Added Inverted Hammer and Shooting Star patterns
