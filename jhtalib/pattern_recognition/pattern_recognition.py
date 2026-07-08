@@ -107,10 +107,57 @@ def CDLEVENINGDOJISTAR(df):
     Evening Doji Star
     """
 
-def CDLEVENINGSTAR(df):
+def CDLEVENINGSTAR(df, open='Open', high='High', low='Low', close='Close'):
     """
-    Evening Star
+    Evening Star - Bearish 3-candle reversal pattern
+    1st: large up candle. 2nd: small body candle (gap up from 1st). 3rd: down candle closing into 1st body
+    Theory: Appears after uptrend. First candle is strong bullish. Gap up creates second candle with
+            small body (often doji). Third candle reverses, closing well into first candle's body.
+            Signals exhaustion of uptrend and reversal to downtrend.
+    Returns: list of -1/0/1 (bearish/none/bullish)
+    Source: Steve Nison - Japanese Candlestick Charting Techniques
     """
+    result = []
+    for i in range(len(df[close])):
+        if i < 2:
+            result.append(0)
+            continue
+
+        # Three candles for evening star
+        # 1st candle (i-2): large up candle
+        c1_o = df[open][i-2]
+        c1_c = df[close][i-2]
+        c1_h = df[high][i-2]
+        c1_l = df[low][i-2]
+
+        # 2nd candle (i-1): small body, gap up
+        c2_o = df[open][i-1]
+        c2_c = df[close][i-1]
+        c2_h = df[high][i-1]
+        c2_l = df[low][i-1]
+        c2_body = abs(c2_c - c2_o)
+
+        # 3rd candle (i): down candle
+        c3_o = df[open][i]
+        c3_c = df[close][i]
+        c3_l = df[low][i]
+
+        c1_body = abs(c1_c - c1_o)
+
+        # Evening star criteria:
+        # 1. First candle is up (white)
+        # 2. Second candle has small body and gaps up (open > max of 1st candle close)
+        # 3. Third candle is down, closes into first candle's body
+        if (c1_c > c1_o and  # 1st is up
+            c2_body > 0 and c2_body < c1_body * 0.5 and  # 2nd has small body
+            min(c2_o, c2_c) > max(c1_o, c1_c) and  # 2nd gaps up
+            c3_c < c3_o and  # 3rd is down
+            c3_c < max(c1_o, c1_c) and c3_c > min(c1_o, c1_c)):  # 3rd closes into 1st body
+            result.append(-1)  # Bearish
+        else:
+            result.append(0)
+
+    return result
 
 def CDLGAPSIDESIDEWHITE(df):
     """
