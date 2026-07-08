@@ -41,4 +41,4 @@ from .volume_indicators import *
 
 
 from .example import *
-
+from jhtalib.market_profile.market_profile import *
