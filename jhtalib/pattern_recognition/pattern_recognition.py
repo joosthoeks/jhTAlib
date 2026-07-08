@@ -137,10 +137,55 @@ def CDLHARAMI(df):
     Harami Pattern
     """
 
-def CDLHARAMICROSS(df):
+def CDLHARAMICROSS(df, open='Open', high='High', low='Low', close='Close'):
     """
-    Harami Cross Pattern
+    Harami Cross - Reversal pattern (doji inside large candle)
+    Harami pattern where 2nd candle is a doji (open = close, small body)
+    Theory: Like harami but with doji showing indecision. Stronger reversal signal than regular harami.
+            First large candle shows trend direction, doji inside shows momentum exhaustion.
+    Returns: list of -1/0/1 (bearish/none/bullish)
+    Source: Steve Nison - Japanese Candlestick Charting Techniques
     """
+    result = []
+    for i in range(len(df[close])):
+        if i < 1:
+            result.append(0)
+            continue
+
+        # Previous (first) candle
+        prev_o = df[open][i-1]
+        prev_h = df[high][i-1]
+        prev_l = df[low][i-1]
+        prev_c = df[close][i-1]
+        prev_body = abs(prev_c - prev_o)
+
+        # Current (second) candle - should be doji
+        o, h, l, c = df[open][i], df[high][i], df[low][i], df[close][i]
+        body = abs(c - o)
+
+        # Doji criteria: open ≈ close (body < 0.1 of high-low range)
+        hl_range = h - l
+        doji_threshold = 0.1 * hl_range if hl_range > 0 else 0.0001
+
+        is_doji = body < doji_threshold and hl_range > 0
+
+        # Harami cross criteria: doji inside 1st candle's range
+        if prev_body > 0 and is_doji:
+            if h <= prev_h and l >= prev_l:
+                # Bullish harami cross: prev is down, current is doji
+                if prev_c < prev_o:
+                    result.append(1)  # Bullish
+                # Bearish harami cross: prev is up, current is doji
+                elif prev_c > prev_o:
+                    result.append(-1)  # Bearish
+                else:
+                    result.append(0)
+            else:
+                result.append(0)
+        else:
+            result.append(0)
+
+    return result
 
 def CDLHIGHWAVE(df):
     """
