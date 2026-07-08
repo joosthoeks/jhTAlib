@@ -122,10 +122,37 @@ def CDLGRAVESTONEDOJI(df):
     Gravestone Doji
     """
 
-def CDLHAMMER(df):
+def CDLHAMMER(df, open='Open', high='High', low='Low', close='Close'):
     """
-    Hammer
+    Hammer - Bullish reversal pattern
+    Small body at top, long lower shadow (2x+ body length), small upper shadow
+    Theory: Appears in downtrend; indicates potential trend reversal. The long lower shadow
+            shows rejection of lower prices. Signals bullish reversal if followed by bullish candle.
+    Returns: list of -1/0/1 (bearish/none/bullish)
+    Source: Steve Nison - Japanese Candlestick Charting Techniques
     """
+    result = []
+    for i in range(len(df[close])):
+        if i < 1:
+            result.append(0)
+            continue
+
+        # Current candle measurements
+        o, h, l, c = df[open][i], df[high][i], df[low][i], df[close][i]
+        body = abs(c - o)
+        lower_shadow = min(o, c) - l
+        upper_shadow = h - max(o, c)
+
+        # Previous candle was downtrend
+        prev_c = df[close][i-1]
+
+        # Hammer criteria: small body, long lower shadow (2x body), small upper shadow, in downtrend
+        if body > 0 and lower_shadow >= 2 * body and upper_shadow < body * 0.5 and prev_c > c:
+            result.append(1)  # Bullish
+        else:
+            result.append(0)
+
+    return result
 
 def CDLHANGINGMAN(df):
     """
