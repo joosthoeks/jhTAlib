@@ -41,4 +41,4 @@ from .volume_indicators import *
 
 
 from .example import *
-
+from jhtalib.crypto_indicators.crypto_indicators import *
