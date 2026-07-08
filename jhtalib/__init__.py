@@ -41,4 +41,4 @@ from .volume_indicators import *
 
 
 from .example import *
-
+from jhtalib.cycle_timing.cycle_timing import *
