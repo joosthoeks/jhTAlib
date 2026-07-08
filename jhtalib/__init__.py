@@ -41,4 +41,4 @@ from .volume_indicators import *
 
 
 from .example import *
-
+from jhtalib.polynomial_features.polynomial_features import *
