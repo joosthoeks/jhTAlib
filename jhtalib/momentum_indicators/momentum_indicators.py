@@ -44,10 +44,39 @@ def AROON(df, n):
     Aroon
     """
 
-def AROONOSC(df, n):
+def AROONOSC(df, n, high='High', low='Low'):
     """
-    Aroon Oscillator
+    Aroon Oscillator - measures trend strength as the spread between Aroon Up and Aroon Down
+    Theory: Aroon Up = 100 * (n - periods since highest high in last n+1 bars) / n;
+            Aroon Down = 100 * (n - periods since lowest low in last n+1 bars) / n;
+            AROONOSC = Aroon Up - Aroon Down, ranging -100 to +100.
+            Above 0 the uptrend is dominant, below 0 the downtrend is dominant;
+            a zero-line crossover signals a potential trend reversal.
+    Returns: list of floats = jhta.AROONOSC(df, n)
+    Source: https://school.stockcharts.com/doku.php?id=technical_indicators:aroon_oscillator
     """
+    aroonosc_list = []
+    highs = df[high]
+    lows = df[low]
+    for i in range(len(highs)):
+        if i + 1 < n + 1:
+            aroonosc = float('NaN')
+        else:
+            high_window = highs[i - n:i + 1]
+            low_window = lows[i - n:i + 1]
+            highest_i = 0
+            lowest_i = 0
+            for j in range(1, n + 1):
+                if high_window[j] >= high_window[highest_i]:
+                    highest_i = j
+                if low_window[j] <= low_window[lowest_i]:
+                    lowest_i = j
+            # periods since extreme = n - index of extreme within the window
+            aroon_up = 100 * (n - (n - highest_i)) / n    # == 100 * highest_i / n
+            aroon_down = 100 * (n - (n - lowest_i)) / n   # == 100 * lowest_i / n
+            aroonosc = aroon_up - aroon_down
+        aroonosc_list.append(aroonosc)
+    return aroonosc_list
 
 def BOP(df):
     """
