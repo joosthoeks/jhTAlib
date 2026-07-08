@@ -301,10 +301,42 @@ def STOCH(df, n, price='Close'):
         stoch_list.append(stoch)
     return stoch_list
 
-def STOCHF(df):
+def STOCHF(df, n=14, high='High', low='Low', close='Close'):
     """
-    Stochastic Fast
+    Stochastic Fast - Unsmoothed Stochastic Oscillator
+    Theory: %K = (Close - Low) / (High - Low) * 100. %D = 3-period SMA of %K.
+            Fast version without smoothing. 0-100 scale. >80 = overbought, <20 = oversold.
+    Returns: dict with '%k' and '%d' lists
+    Source: George C. Lane - Stochastic analysis
     """
+    k_list = []
+    d_list = []
+
+    for i in range(len(df[close])):
+        if i + 1 < n:
+            k_list.append(float('NaN'))
+        else:
+            start = i + 1 - n
+            end = i + 1
+            highest_high = max(df[high][start:end])
+            lowest_low = min(df[low][start:end])
+
+            if highest_high == lowest_low:
+                k = 50
+            else:
+                k = 100 * (df[close][i] - lowest_low) / (highest_high - lowest_low)
+
+            k_list.append(k)
+
+    # Calculate %D (3-period SMA of %K)
+    for i in range(len(k_list)):
+        if i < 2 or isinstance(k_list[i], float) and k_list[i] != k_list[i]:
+            d_list.append(float('NaN'))
+        else:
+            d = sum(k for k in k_list[i-2:i+1]) / 3
+            d_list.append(d)
+
+    return {'%k': k_list, '%d': d_list}
 
 def STOCHRSI(df, n, price='Close'):
     """
