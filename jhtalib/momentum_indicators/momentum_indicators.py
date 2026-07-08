@@ -74,10 +74,62 @@ def MACD(df, price='Close'):
     Moving Average Convergence/Divergence
     """
 
-def MACDEXT(df, price='Close'):
+def MACDEXT(df, fast_n=12, slow_n=26, signal_n=9, fast_matype='EMA', slow_matype='EMA', signal_matype='EMA', price='Close'):
     """
-    MACD with controllable MA type
+    Moving Average Convergence/Divergence with controllable moving average types
+    Theory: MACD line = fast MA(price) - slow MA(price); signal line = MA(MACD line); histogram = MACD line - signal line.
+    Unlike classic MACD (fixed EMAs), each of the three moving averages can independently be a Simple ('SMA'),
+    Exponential ('EMA', SMA-seeded) or linearly Weighted ('WMA') moving average.
+    Returns: dict of lists of floats = jhta.MACDEXT(df, fast_n=12, slow_n=26, signal_n=9, fast_matype='EMA', slow_matype='EMA', signal_matype='EMA', price='Close')
+    Source: https://www.ta-lib.org/ (MACDEXT); Gerald Appel, "The Moving Average Convergence-Divergence Trading Method" (1979)
     """
+    def _ma(series, n, matype):
+        matype = str(matype).upper()
+        if matype not in ('SMA', 'EMA', 'WMA'):
+            raise ValueError('matype must be one of SMA, EMA, WMA, got %r' % matype)
+        length = len(series)
+        out = [float('NaN')] * length
+        start = 0
+        while start < length and series[start] != series[start]:
+            start += 1
+        if n < 1 or start + n > length:
+            return out
+        if matype == 'SMA':
+            for i in range(start + n - 1, length):
+                out[i] = sum(series[i - n + 1:i + 1]) / n
+        elif matype == 'EMA':
+            k = 2.0 / (n + 1)
+            ema = sum(series[start:start + n]) / n
+            out[start + n - 1] = ema
+            for i in range(start + n, length):
+                ema = k * series[i] + (1 - k) * ema
+                out[i] = ema
+        else:
+            denominator = n * (n + 1) / 2.0
+            for i in range(start + n - 1, length):
+                numerator = 0.0
+                for j in range(n):
+                    numerator += (j + 1) * series[i - n + 1 + j]
+                out[i] = numerator / denominator
+        return out
+
+    prices = [float(x) for x in df[price]]
+    fast_list = _ma(prices, fast_n, fast_matype)
+    slow_list = _ma(prices, slow_n, slow_matype)
+    macd_list = []
+    for i in range(len(prices)):
+        if fast_list[i] != fast_list[i] or slow_list[i] != slow_list[i]:
+            macd_list.append(float('NaN'))
+        else:
+            macd_list.append(fast_list[i] - slow_list[i])
+    signal_list = _ma(macd_list, signal_n, signal_matype)
+    histogram_list = []
+    for i in range(len(prices)):
+        if macd_list[i] != macd_list[i] or signal_list[i] != signal_list[i]:
+            histogram_list.append(float('NaN'))
+        else:
+            histogram_list.append(macd_list[i] - signal_list[i])
+    return {'macd': macd_list, 'signal': signal_list, 'histogram': histogram_list}
 
 def MACDFIX(df, n, price='Close'):
     """
