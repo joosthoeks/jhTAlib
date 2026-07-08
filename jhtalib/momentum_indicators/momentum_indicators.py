@@ -79,10 +79,59 @@ def MACDEXT(df, price='Close'):
     MACD with controllable MA type
     """
 
-def MACDFIX(df, n, price='Close'):
+def MACDFIX(df, n=9, price='Close'):
     """
-    Moving Average Convergence/Divergence Fix 12/26
+    Moving Average Convergence/Divergence Fix 12/26 - MACD with the fast/slow periods fixed at 12 and 26 bars and an adjustable signal period
+    Theory: The MACD line is the 12-period EMA minus the 26-period EMA of the price
+    series. The signal line is an n-period EMA of the MACD line and the histogram is
+    the MACD line minus the signal line. Only the signal period n is adjustable,
+    matching the classic Gerald Appel parameterisation with fixed 12/26 spans.
+    Returns: dict of lists of floats = jhta.MACDFIX(df, n=9, price='Close')
+    Source: Gerald Appel, "Technical Analysis: Power Tools for Active Investors"; https://ta-lib.org/functions/ (MACDFIX); https://www.fmlabs.com/reference/default.htm?url=MACD.htm
     """
+    prices = df[price]
+    x = len(prices)
+
+    def ema_series(values, period):
+        emas = []
+        ema = float('NaN')
+        valid = 0
+        k = 2.0 / (period + 1)
+        for value in values:
+            if value != value:
+                ema = float('NaN')
+                valid = 0
+            else:
+                valid += 1
+                if valid < period:
+                    ema = float('NaN')
+                elif valid == period:
+                    ema = float(value)
+                else:
+                    ema = k * value + (1.0 - k) * ema
+            emas.append(ema)
+        return emas
+
+    ema_fast_list = ema_series(prices, 12)
+    ema_slow_list = ema_series(prices, 26)
+
+    macd_list = []
+    for i in range(x):
+        if ema_fast_list[i] != ema_fast_list[i] or ema_slow_list[i] != ema_slow_list[i]:
+            macd_list.append(float('NaN'))
+        else:
+            macd_list.append(ema_fast_list[i] - ema_slow_list[i])
+
+    signal_list = ema_series(macd_list, n)
+
+    histogram_list = []
+    for i in range(x):
+        if macd_list[i] != macd_list[i] or signal_list[i] != signal_list[i]:
+            histogram_list.append(float('NaN'))
+        else:
+            histogram_list.append(macd_list[i] - signal_list[i])
+
+    return {'macd': macd_list, 'signal': signal_list, 'histogram': histogram_list}
 
 def MFI(df, n, high='High', low='Low', close='Close', volume='Volume'):
     """
