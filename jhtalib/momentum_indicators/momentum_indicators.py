@@ -152,6 +152,54 @@ def PLUS_DM(df, n):
     Plus Directional Movement
     """
 
+def RSI(df, n, price='Close'):
+    """
+    Relative Strength Index
+    Returns: list of floats = jhta.RSI(df, n, price='Close')
+    Source: https://www.fmlabs.com/reference/default.htm?url=RSI.htm
+    """
+    rsi_list = []
+    gains = []
+    losses = []
+
+    # Calculate price changes
+    for i in range(len(df[price])):
+        if i == 0:
+            gains.append(0)
+            losses.append(0)
+        else:
+            change = df[price][i] - df[price][i-1]
+            if change > 0:
+                gains.append(change)
+                losses.append(0)
+            else:
+                gains.append(0)
+                losses.append(abs(change))
+
+    # Calculate RSI using average gains/losses
+    for i in range(len(df[price])):
+        if i + 1 < n:
+            rsi = float('NaN')
+        else:
+            # Get n-period gains and losses
+            n_gains = gains[i-n+1:i+1]
+            n_losses = losses[i-n+1:i+1]
+
+            # Calculate average gains and losses
+            avg_gain = sum(n_gains) / n if n > 0 else 0
+            avg_loss = sum(n_losses) / n if n > 0 else 0
+
+            # Calculate RS and RSI (0-100 scale)
+            if avg_loss == 0:
+                rsi = 100.0 if avg_gain > 0 else 0.0
+            else:
+                rs = avg_gain / avg_loss
+                rsi = 100 - (100 / (1 + rs))
+
+        rsi_list.append(rsi)
+
+    return rsi_list
+
 def PMOM(df, n, price='Close'):
     """
     %Momentum
