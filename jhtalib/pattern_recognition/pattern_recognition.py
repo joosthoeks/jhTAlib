@@ -222,10 +222,57 @@ def CDLMORNINGDOJISTAR(df):
     Morning Doji Star
     """
 
-def CDLMORNINGSTAR(df):
+def CDLMORNINGSTAR(df, open='Open', high='High', low='Low', close='Close'):
     """
-    Morning Star
+    Morning Star - Bullish 3-candle reversal pattern
+    1st: large down candle. 2nd: small body candle (gap down from 1st). 3rd: up candle closing into 1st body
+    Theory: Appears after downtrend. First candle is strong bearish. Gap down creates second candle with
+            small body (often doji). Third candle reverses, closing well into first candle's body.
+            Signals exhaustion of downtrend and reversal to uptrend.
+    Returns: list of -1/0/1 (bearish/none/bullish)
+    Source: Steve Nison - Japanese Candlestick Charting Techniques
     """
+    result = []
+    for i in range(len(df[close])):
+        if i < 2:
+            result.append(0)
+            continue
+
+        # Three candles for morning star
+        # 1st candle (i-2): large down candle
+        c1_o = df[open][i-2]
+        c1_c = df[close][i-2]
+        c1_h = df[high][i-2]
+        c1_l = df[low][i-2]
+
+        # 2nd candle (i-1): small body, gap down
+        c2_o = df[open][i-1]
+        c2_c = df[close][i-1]
+        c2_h = df[high][i-1]
+        c2_l = df[low][i-1]
+        c2_body = abs(c2_c - c2_o)
+
+        # 3rd candle (i): up candle
+        c3_o = df[open][i]
+        c3_c = df[close][i]
+        c3_h = df[high][i]
+
+        c1_body = abs(c1_c - c1_o)
+
+        # Morning star criteria:
+        # 1. First candle is down (black)
+        # 2. Second candle has small body and gaps down (close < min of 1st candle)
+        # 3. Third candle is up, closes into first candle's body
+        if (c1_c < c1_o and  # 1st is down
+            c2_body > 0 and c2_body < c1_body * 0.5 and  # 2nd has small body
+            max(c2_o, c2_c) < min(c1_o, c1_c) and  # 2nd gaps down
+            c3_c > c3_o and  # 3rd is up
+            c3_c > min(c1_o, c1_c) and c3_c < max(c1_o, c1_c)):  # 3rd closes into 1st body
+            result.append(1)  # Bullish
+        else:
+            result.append(0)
+
+    return result
 
 def CDLONNECK(df):
     """
