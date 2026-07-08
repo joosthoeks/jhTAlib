@@ -252,10 +252,38 @@ def CDLSEPARATINGLINES(df):
     Separating Lines
     """
 
-def CDLSHOOTINGSTAR(df):
+def CDLSHOOTINGSTAR(df, open='Open', high='High', low='Low', close='Close'):
     """
-    Shooting Star
+    Shooting Star - Bearish reversal pattern
+    Small body at bottom, long upper shadow (2x+ body length), small lower shadow
+    Theory: Appears in uptrend; indicates potential trend reversal. The long upper shadow
+            shows rejection of higher prices despite opening high. Signals bearish reversal
+            if followed by bearish candle. Inverse of inverted hammer.
+    Returns: list of -1/0/1 (bearish/none/bullish)
+    Source: Steve Nison - Japanese Candlestick Charting Techniques
     """
+    result = []
+    for i in range(len(df[close])):
+        if i < 1:
+            result.append(0)
+            continue
+
+        # Current candle measurements
+        o, h, l, c = df[open][i], df[high][i], df[low][i], df[close][i]
+        body = abs(c - o)
+        upper_shadow = h - max(o, c)
+        lower_shadow = min(o, c) - l
+
+        # Previous candle was uptrend
+        prev_c = df[close][i-1]
+
+        # Shooting star criteria: small body, long upper shadow (2x body), small lower shadow, in uptrend
+        if body > 0 and upper_shadow >= 2 * body and lower_shadow < body * 0.5 and prev_c < c:
+            result.append(-1)  # Bearish
+        else:
+            result.append(0)
+
+    return result
 
 def CDLSHORTLINE(df):
     """
