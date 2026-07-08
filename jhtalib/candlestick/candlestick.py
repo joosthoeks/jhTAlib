@@ -194,3 +194,4 @@ def SHADOWT(df, n, open='Open', high='High', low='Low', close='Close'):
 
 # Added Hammer and Hanging Man patterns
 # Added Inverted Hammer and Shooting Star patterns
+# Added Engulfing candlestick patterns
