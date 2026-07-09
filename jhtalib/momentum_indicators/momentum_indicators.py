@@ -147,10 +147,38 @@ def PLUS_DI(df, n):
     Plus Directional Indicator
     """
 
-def PLUS_DM(df, n):
+def PLUS_DM(df, n, high='High', low='Low', close='Close'):
     """
-    Plus Directional Movement
+    Plus Directional Movement (+DM) - Wilder's raw upward directional movement.
+    Theory: For each bar, up_move = High[i] - High[i-1] and
+            down_move = Low[i-1] - Low[i]. The bar's +DM is up_move only when
+            up_move > down_move AND up_move > 0, otherwise 0. This disqualifies
+            outside/inside bars where the downward move dominates, so +DM is 0
+            throughout a strict downtrend. The result is the rolling sum of these
+            per-bar +DM values over the last n bars (Wilder's directional-movement
+            accumulation), the precursor to +DI (which divides the smoothed +DM by
+            True Range x100).
+    Returns: list of floats = jhta.PLUS_DM(df, n, high='High', low='Low', close='Close')
+             (NaN for the first n warm-up bars)
+    Source: J. Welles Wilder Jr. - New Concepts in Technical Trading Systems (1978)
     """
+    result = []
+
+    for i in range(len(df[close])):
+        if i < n:
+            result.append(float('NaN'))
+            continue
+
+        dm_sum = 0.0
+        for j in range(i - n + 1, i + 1):
+            up_move = df[high][j] - df[high][j - 1]
+            down_move = df[low][j - 1] - df[low][j]
+            if up_move > down_move and up_move > 0:
+                dm_sum += up_move
+
+        result.append(dm_sum)
+
+    return result
 
 def PMOM(df, n, price='Close'):
     """
