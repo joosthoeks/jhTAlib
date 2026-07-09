@@ -122,10 +122,48 @@ def MINUS_DI(df, n):
     Minus Directional Indicator
     """
 
-def MINUS_DM(df, n):
+def MINUS_DM(df, n, high='High', low='Low', close='Close'):
     """
-    Minus Directional Movement
+    Minus Directional Movement (Wilder-smoothed -DM)
+    Theory: Wilder's Directional Movement isolates downward directional pressure.
+            For each bar, up_move = High[i] - High[i-1] and
+            down_move = Low[i-1] - Low[i]. The raw minus-directional movement is
+            -DM = down_move when (down_move > up_move and down_move > 0), else 0.0.
+            The raw -DM series is then Wilder-smoothed over n periods (the first
+            valid bar seeds the smoother with the window sum; each later bar uses
+            smoothed = smoothed - smoothed / n + -DM). Consequently -DM is exactly
+            0 in a strict uptrend and grows in a strict downtrend; dividing the
+            smoothed -DM by the Wilder-smoothed True Range yields -DI, keeping this
+            function internally consistent with DX/ADX.
+    Returns: list of floats = jhta.MINUS_DM(df, n, high='High', low='Low', close='Close')
+    Source: J. Welles Wilder Jr. - New Concepts in Technical Trading Systems (1978)
     """
+    minus_dm_list = []
+    raw_list = []
+    minus_dm_smoothed = float('NaN')
+    for i in range(len(df[close])):
+        if i == 0:
+            raw = 0.0
+        else:
+            up_move = df[high][i] - df[high][i - 1]
+            down_move = df[low][i - 1] - df[low][i]
+            if down_move > up_move and down_move > 0:
+                raw = down_move
+            else:
+                raw = 0.0
+        raw_list.append(raw)
+        if i < n:
+            minus_dm = float('NaN')
+        elif i == n:
+            # Wilder seed: sum of the first n genuine -DM values (bars 1..n);
+            # bar 0 has no prior bar and is excluded from the seed.
+            minus_dm_smoothed = sum(raw_list[1:n + 1])
+            minus_dm = minus_dm_smoothed
+        else:
+            minus_dm_smoothed = minus_dm_smoothed - (minus_dm_smoothed / n) + raw
+            minus_dm = minus_dm_smoothed
+        minus_dm_list.append(minus_dm)
+    return minus_dm_list
 
 def MOM(df, n, price='Close'):
     """
