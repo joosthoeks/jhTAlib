@@ -7,6 +7,35 @@
 import jhtalib as jhta
 
 
+def DPO(df, n=20, price='Close'):
+    """
+    Detrended Price Oscillator
+    Removes the longer trend from price by comparing the close to a
+    displaced Simple Moving Average: dpo = close - sma(n) of (n / 2 + 1)
+    bars ago.
+    Theory: price is a mix of trend and cycles. Subtracting a moving
+    average that has been shifted back by half its length strips out the
+    trend component, leaving the short-term cycle swinging around zero.
+    Peaks and troughs of the DPO reveal the length and amplitude of that
+    cycle, which helps with timing entries inside a trend (buy cycle lows
+    in an uptrend) and with estimating when the next swing high or low is
+    due. It is a cycle tool, not a momentum signal. This is the
+    non-centered variant that TradingView plots by default; the centered
+    variant shifts the DPO itself back into the past instead.
+    Returns: list of floats = jhta.DPO(df, n=20, price='Close')
+    Source: https://school.stockcharts.com/doku.php?id=technical_indicators:detrended_price_osci
+    """
+    dpo_list = []
+    shift = int(n / 2) + 1
+    sma_list = jhta.SMA(df, n, price)
+    for i in range(len(df[price])):
+        if i < n + shift - 1:
+            dpo = float('NaN')
+        else:
+            dpo = df[price][i] - sma_list[i - shift]
+        dpo_list.append(dpo)
+    return dpo_list
+
 def HT_DCPERIOD(df, price='Close'):
     """
     Hilbert Transform - Dominant Cycle Period
