@@ -1,5 +1,6 @@
 """"""
 # Import Built-Ins:
+import math
 
 # Import Third-Party:
 
@@ -365,3 +366,51 @@ def WILLR(df, n, high='High', low='Low', close='Close'):
         willr_list.append(willr)
     return willr_list
 
+def FISHER(df, n=9, high='High', low='Low'):
+    """
+    Fisher Transform
+    Converts the position of the bar midpoint within its recent range into
+    a sharply peaked oscillator that makes price extremes stand out.
+    Theory: John Ehlers observed that prices are not normally distributed,
+    so oscillator extremes are hard to compare. The Fisher Transform first
+    normalizes the midpoint (high + low) / 2 into the range -1 to +1 over
+    the last n bars and then applies 0.5 * ln((1 + x) / (1 - x)), which
+    reshapes the values into a nearly Gaussian distribution. Turning
+    points show up as sharp, clearly defined peaks, often one bar earlier
+    than in RSI or Stochastic. 'signal' is the fisher value of the
+    previous bar; a cross of 'fisher' through 'signal' at an extreme is
+    the classic reversal trigger.
+    Returns: dict of lists of floats = jhta.FISHER(df, n=9, high='High', low='Low')
+    with keys 'fisher' and 'signal'
+    Source: https://www.mesasoftware.com/papers/UsingTheFisherTransform.pdf
+    """
+    fisher_dict = {'fisher': [], 'signal': []}
+    mid_list = []
+    for i in range(len(df[high])):
+        mid_list.append((df[high][i] + df[low][i]) / 2)
+    value = 0.0
+    fisher = 0.0
+    for i in range(len(df[high])):
+        if i + 1 < n:
+            fisher_dict['fisher'].append(float('NaN'))
+            fisher_dict['signal'].append(float('NaN'))
+        else:
+            start = i + 1 - n
+            end = i + 1
+            max_h = max(mid_list[start:end])
+            min_l = min(mid_list[start:end])
+            if max_h - min_l == 0:
+                raw = 0.0
+            else:
+                raw = (mid_list[i] - min_l) / (max_h - min_l) - .5
+            # smooth and clamp the normalized value to avoid ln() blowing up:
+            value = .66 * raw + .67 * value
+            if value > .99:
+                value = .999
+            elif value < -.99:
+                value = -.999
+            signal = fisher
+            fisher = .5 * math.log((1 + value) / (1 - value)) + .5 * fisher
+            fisher_dict['fisher'].append(fisher)
+            fisher_dict['signal'].append(signal)
+    return fisher_dict
