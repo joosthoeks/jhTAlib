@@ -200,6 +200,96 @@ def RVIOC(df, n, price='Close'):
         rvioc_list.append(rvioc)
     return rvioc_list
 
+def SUPERTREND(df, n=10, f=3, high='High', low='Low', close='Close'):
+    """
+    Supertrend
+    A trend following overlay that plots one stop-and-reverse line: below
+    price while the trend is up and above price while the trend is down.
+    Theory: the line is built from the bar midpoint (high + low) / 2 plus or
+    minus f Average True Ranges. The ATR is Wilder's running average of the
+    True Range (ATR[i] = (ATR[i-1] * (n - 1) + TR[i]) / n, seeded with the
+    simple mean of the first available true ranges), so a volatility spike is
+    remembered and decays gradually over roughly n bars instead of vanishing
+    after two bars. The offset therefore keeps more distance in volatile
+    markets and hugs price in quiet markets. While the trend is up the final
+    lower band may only rise and while the trend is down the final upper band
+    may only fall (the line ratchets), unless the prior close broke the band;
+    the trend flips as soon as the close crosses the active band. This makes
+    Supertrend useful both as a trend filter and as a trailing stop.
+    Returns: dict of lists of floats = jhta.SUPERTREND(df, n=10, f=3, high='High', low='Low', close='Close')
+    with keys 'supertrend' (the stop line) and 'direction' (1 = uptrend, -1 = downtrend)
+    Source: https://www.tradingview.com/support/solutions/43000634738-supertrend/
+    (Wilder ATR: J. Welles Wilder, New Concepts in Technical Trading Systems, 1978)
+    """
+    supertrend_dict = {'supertrend': [], 'direction': []}
+    # True Range (Wilder): TR[i] = max(High, Close[i-1]) - min(Low, Close[i-1])
+    tr_list = []
+    for i in range(len(df[close])):
+        if i < 1:
+            tr_list.append(float('NaN'))
+        else:
+            true_high = df[high][i]
+            if df[close][i - 1] > true_high:
+                true_high = df[close][i - 1]
+            true_low = df[low][i]
+            if df[close][i - 1] < true_low:
+                true_low = df[close][i - 1]
+            tr_list.append(true_high - true_low)
+    # Wilder-smoothed Average True Range, first valid at index n - 1.
+    atr_list = []
+    atr = float('NaN')
+    for i in range(len(df[close])):
+        if i + 1 < n:
+            atr_list.append(float('NaN'))
+        elif atr != atr:
+            # seed with the simple mean of the true ranges available so far
+            atr = sum(tr_list[1:i + 1]) / len(tr_list[1:i + 1])
+            atr_list.append(atr)
+        else:
+            atr = (atr * (n - 1) + tr_list[i]) / n
+            atr_list.append(atr)
+    final_ub = float('NaN')
+    final_lb = float('NaN')
+    supertrend = float('NaN')
+    direction = float('NaN')
+    for i in range(len(df[close])):
+        if i + 1 < n or i < 1:
+            supertrend = float('NaN')
+            direction = float('NaN')
+        else:
+            midpoint = (df[high][i] + df[low][i]) / 2
+            basic_ub = midpoint + f * atr_list[i]
+            basic_lb = midpoint - f * atr_list[i]
+            if supertrend != supertrend:
+                # seed on the first bar with a valid Average True Range:
+                final_ub = basic_ub
+                final_lb = basic_lb
+                supertrend = final_ub
+                direction = -1
+            else:
+                # bands only tighten unless price closed beyond them:
+                if basic_ub < final_ub or df[close][i - 1] > final_ub:
+                    final_ub = basic_ub
+                if basic_lb > final_lb or df[close][i - 1] < final_lb:
+                    final_lb = basic_lb
+                if direction == -1:
+                    if df[close][i] <= final_ub:
+                        supertrend = final_ub
+                        direction = -1
+                    else:
+                        supertrend = final_lb
+                        direction = 1
+                else:
+                    if df[close][i] >= final_lb:
+                        supertrend = final_lb
+                        direction = 1
+                    else:
+                        supertrend = final_ub
+                        direction = -1
+        supertrend_dict['supertrend'].append(supertrend)
+        supertrend_dict['direction'].append(direction)
+    return supertrend_dict
+
 def TRANGE(df, high='High', low='Low', close='Close'):
     """
     True Range
