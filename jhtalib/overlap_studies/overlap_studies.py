@@ -172,6 +172,37 @@ def MMR(df, n=200, price='Close'):
         mmr_list.append(mmr)
     return mmr_list
 
+def PERCENT_B(df, n=20, f=2, high='High', low='Low', close='Close'):
+    """
+    Bollinger %B
+    Shows where the close sits inside the Bollinger Bands as one number:
+    0 = at the lower band, 0.5 = at the middle band, 1 = at the upper
+    band; values above 1 or below 0 mean the close is outside the bands.
+    Theory: John Bollinger created %B to make band position comparable
+    and machine readable. Because the bands adapt to volatility, %B is a
+    self-normalizing oscillator: readings near 1 flag strength or
+    overbought conditions, near 0 weakness or oversold conditions, and
+    divergences between price highs and %B highs warn of fading trends.
+    It is also the basis of band-based systems that buy breakouts
+    (%B > 1) or fade extremes. Uses jhta.BBANDS, which builds the bands
+    on the Typical Price.
+    Returns: list of floats = jhta.PERCENT_B(df, n=20, f=2, high='High', low='Low', close='Close')
+    Source: https://school.stockcharts.com/doku.php?id=technical_indicators:bollinger_band_perce
+    """
+    percent_b_list = []
+    bbands_dict = jhta.BBANDS(df, n, f, high, low, close)
+    for i in range(len(df[close])):
+        if i + 1 < n:
+            percent_b = float('NaN')
+        else:
+            bandwidth = bbands_dict['upperband'][i] - bbands_dict['lowerband'][i]
+            if bandwidth == 0:
+                percent_b = float('NaN')
+            else:
+                percent_b = (df[close][i] - bbands_dict['lowerband'][i]) / bandwidth
+        percent_b_list.append(percent_b)
+    return percent_b_list
+
 def SAR(df, af_step=.02, af_max=.2, high='High', low='Low'):
     """
     Parabolic SAR (J. Welles Wilder)
