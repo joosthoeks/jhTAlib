@@ -119,8 +119,74 @@ def MFI(df, n, high='High', low='Low', close='Close', volume='Volume'):
 
 def MINUS_DI(df, n):
     """
-    Minus Directional Indicator
+    Minus Directional Indicator (-DI).
+
+    Wilder's -DI: the share of range attributable to downward directional
+    movement. It is 0 in a strict uptrend and rises toward 100 as declines
+    dominate.
+
+    Theory:
+        up_move   = High[i] - High[i - 1]
+        down_move = Low[i - 1] - Low[i]
+        +DM = up_move   if (up_move   > down_move and up_move   > 0) else 0
+        -DM = down_move if (down_move > up_move   and down_move > 0) else 0
+        True Range (TR) uses the previous close:
+            TR = max(High[i], Close[i-1]) - min(Low[i], Close[i-1])
+        Both -DM and TR are Wilder-smoothed over n periods (the running sum
+        S is seeded with the sum of the first n raw values, then updated as
+        S = S - S / n + current). Finally:
+            -DI = 100 * Wilder_sum(-DM) / Wilder_sum(TR)
+        In a strict downtrend up_move < 0 so -DM = down_move and +DM = 0; in a
+        strict uptrend down_move < 0 so -DM = 0, giving -DI = 0. This is
+        internally consistent with +DI, DX and ADX built on the same DM/TR.
+
+    Returns:
+        list of floats = jhta.MINUS_DI(df, n)
+
+    Source:
+        J. Welles Wilder Jr., "New Concepts in Technical Trading Systems" (1978);
+        https://www.fmlabs.com/reference/default.htm?url=DI.htm
     """
+    minus_di_list = []
+    minus_dm_list = []
+    tr_list = []
+    # Raw directional movement and true range (index 0 has no prior bar).
+    for i in range(len(df['Close'])):
+        if i < 1:
+            minus_dm_list.append(float('NaN'))
+            tr_list.append(float('NaN'))
+            continue
+        up_move = df['High'][i] - df['High'][i - 1]
+        down_move = df['Low'][i - 1] - df['Low'][i]
+        if down_move > up_move and down_move > 0:
+            minus_dm = down_move
+        else:
+            minus_dm = .0
+        minus_dm_list.append(minus_dm)
+        true_high = df['High'][i]
+        if df['Close'][i - 1] > true_high:
+            true_high = df['Close'][i - 1]
+        true_low = df['Low'][i]
+        if df['Close'][i - 1] < true_low:
+            true_low = df['Close'][i - 1]
+        tr_list.append(true_high - true_low)
+    # Wilder-smoothed running sums. The first smoothed value at index n is the
+    # sum of the first n raw DM/TR values (bars 1..n); thereafter Wilder update.
+    minus_dm_sum = .0
+    tr_sum = .0
+    for i in range(len(df['Close'])):
+        if i < n:
+            minus_di = float('NaN')
+        elif i == n:
+            minus_dm_sum = sum(minus_dm_list[1:n + 1])
+            tr_sum = sum(tr_list[1:n + 1])
+            minus_di = .0 if tr_sum == 0 else 100 * (minus_dm_sum / tr_sum)
+        else:
+            minus_dm_sum = minus_dm_sum - (minus_dm_sum / n) + minus_dm_list[i]
+            tr_sum = tr_sum - (tr_sum / n) + tr_list[i]
+            minus_di = .0 if tr_sum == 0 else 100 * (minus_dm_sum / tr_sum)
+        minus_di_list.append(minus_di)
+    return minus_di_list
 
 def MINUS_DM(df, n):
     """
