@@ -167,10 +167,75 @@ def PMOM(df, n, price='Close'):
         pmom_list.append(pmom)
     return pmom_list
 
-def PPO(df, price='Close'):
+def PPO(df, n_fast=12, n_slow=26, price='Close'):
     """
-    Percentage Price Oscillator
+    Percentage Price Oscillator - momentum oscillator expressing MACD as a percent.
+    Theory: PPO line = ((EMA(n_fast) - EMA(n_slow)) / EMA(n_slow)) * 100, using true
+            exponential moving averages with smoothing factor alpha = 2 / (period + 1),
+            each EMA seeded by the simple moving average of its first 'period' values.
+            Signal line = EMA(9) of the PPO line. Histogram = PPO - Signal. Because it
+            is normalised by the slow EMA, PPO is comparable across different price
+            levels and across instruments, unlike the absolute MACD line.
+    Returns: dict of lists = jhta.PPO(df, n_fast=12, n_slow=26, price='Close')
+             keys: 'ppo' (PPO line), 'signal' (EMA(9) of PPO), 'histogram' (ppo - signal)
+    Source: Gerald Appel / Thomas Aspray, Percentage Price Oscillator;
+            https://www.investopedia.com/terms/p/ppo.asp
     """
+    def _ema_series(values, period):
+        # True EMA over a list that may carry leading NaNs.
+        # NaN warm-up until 'period' valid values are seen; the first EMA value
+        # is the SMA of those first 'period' values, then recursive smoothing.
+        length = len(values)
+        out = [float('NaN')] * length
+        first = None
+        for idx in range(length):
+            v = values[idx]
+            if isinstance(v, float) and v != v:
+                continue
+            first = idx
+            break
+        if first is None:
+            return out
+        seed_idx = first + period - 1
+        if seed_idx >= length:
+            return out
+        alpha = 2.0 / (period + 1)
+        prev = sum(values[first:first + period]) / period
+        out[seed_idx] = prev
+        for idx in range(seed_idx + 1, length):
+            prev = values[idx] * alpha + prev * (1.0 - alpha)
+            out[idx] = prev
+        return out
+
+    n_signal = 9
+    ema_fast = _ema_series(df[price], n_fast)
+    ema_slow = _ema_series(df[price], n_slow)
+
+    ppo_line = []
+    for i in range(len(df[price])):
+        if i + 1 < n_slow:
+            ppo_line.append(float('NaN'))
+        else:
+            slow = ema_slow[i]
+            if slow != 0:
+                ppo_line.append((ema_fast[i] - slow) / slow * 100)
+            else:
+                ppo_line.append(0.0)
+
+    signal_line = _ema_series(ppo_line, n_signal)
+
+    histogram = []
+    for i in range(len(ppo_line)):
+        p = ppo_line[i]
+        s = signal_line[i]
+        if isinstance(p, float) and p != p:
+            histogram.append(float('NaN'))
+        elif isinstance(s, float) and s != s:
+            histogram.append(float('NaN'))
+        else:
+            histogram.append(p - s)
+
+    return {'ppo': ppo_line, 'signal': signal_line, 'histogram': histogram}
 
 def RMI(df, n, price='Close'):
     """
