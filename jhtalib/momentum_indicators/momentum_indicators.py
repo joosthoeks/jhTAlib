@@ -414,3 +414,59 @@ def FISHER(df, n=9, high='High', low='Low'):
             fisher_dict['fisher'].append(fisher)
             fisher_dict['signal'].append(signal)
     return fisher_dict
+
+def KST(df, r1=10, r2=15, r3=20, r4=30, n1=10, n2=10, n3=10, n4=15, ns=9, price='Close'):
+    """
+    Know Sure Thing
+    Martin Pring's momentum oscillator that combines the smoothed Rate of
+    Change of four different lookbacks into one weighted sum, plus a
+    signal line.
+    Theory: markets move in several overlapping cycles at the same time. A
+    single Rate of Change only sees one of them, so Pring averages four:
+    ROC(r1..r4), each smoothed with a Simple Moving Average (n1..n4) and
+    weighted 1 to 4 so the slowest, most important cycle dominates. The
+    result swings around zero: crosses above the signal line (an
+    ns-period Simple Moving Average of the KST) and above zero indicate
+    building upside momentum, and divergences against price warn of
+    reversals.
+    Returns: dict of lists of floats = jhta.KST(df, r1=10, r2=15, r3=20, r4=30, n1=10, n2=10, n3=10, n4=15, ns=9, price='Close')
+    with keys 'kst' and 'signal'
+    Source: https://school.stockcharts.com/doku.php?id=technical_indicators:know_sure_thing_kst
+    """
+    kst_dict = {'kst': [], 'signal': []}
+    warmup = max(r1 + n1, r2 + n2, r3 + n3, r4 + n4) - 1
+    kst_list = []
+    for i in range(len(df[price])):
+        if i < warmup:
+            kst = float('NaN')
+        else:
+            # smoothed Rate of Change 1 (weight 1):
+            rcma1 = 0.0
+            for j in range(n1):
+                rcma1 += ((df[price][i - j] / df[price][i - j - r1]) - 1) * 100
+            rcma1 = rcma1 / n1
+            # smoothed Rate of Change 2 (weight 2):
+            rcma2 = 0.0
+            for j in range(n2):
+                rcma2 += ((df[price][i - j] / df[price][i - j - r2]) - 1) * 100
+            rcma2 = rcma2 / n2
+            # smoothed Rate of Change 3 (weight 3):
+            rcma3 = 0.0
+            for j in range(n3):
+                rcma3 += ((df[price][i - j] / df[price][i - j - r3]) - 1) * 100
+            rcma3 = rcma3 / n3
+            # smoothed Rate of Change 4 (weight 4):
+            rcma4 = 0.0
+            for j in range(n4):
+                rcma4 += ((df[price][i - j] / df[price][i - j - r4]) - 1) * 100
+            rcma4 = rcma4 / n4
+            kst = rcma1 * 1 + rcma2 * 2 + rcma3 * 3 + rcma4 * 4
+        kst_list.append(kst)
+    for i in range(len(df[price])):
+        kst_dict['kst'].append(kst_list[i])
+        if i < warmup + ns - 1:
+            signal = float('NaN')
+        else:
+            signal = sum(kst_list[i + 1 - ns:i + 1]) / ns
+        kst_dict['signal'].append(signal)
+    return kst_dict
