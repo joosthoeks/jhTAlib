@@ -169,6 +169,41 @@ def HARMONIC_MEAN(df, n, price='Close'):
             harmonic_mean_list.append(harmonic_mean)
     return harmonic_mean_list
 
+def LINREG_SLOPE(df, n, price='Close'):
+    """
+    Linear Regression Slope
+    The slope (price change per bar) of a least squares straight line
+    fitted through the last n prices.
+    Theory: fitting a straight line through recent prices summarizes the
+    trend of that window in one number. A positive slope means an uptrend,
+    a negative slope a downtrend, and the size of the slope measures how
+    steep the trend is. Crosses through zero flag trend changes, and a
+    rising slope in a falling market (or vice versa) warns of a turn
+    before price itself does. Complements jhta.LSMA, which returns the
+    value of the fitted line instead of its slope.
+    Returns: list of floats = jhta.LINREG_SLOPE(df, n, price='Close')
+    Source: https://www.fmlabs.com/reference/default.htm?url=LinearRegSlope.htm
+    """
+    linreg_slope_list = []
+    # x values 0 .. n - 1 are the same for every window:
+    sum_x = n * (n - 1) / 2
+    sum_x2 = (n - 1) * n * (2 * n - 1) / 6
+    denominator = n * sum_x2 - sum_x * sum_x
+    for i in range(len(df[price])):
+        if i + 1 < n:
+            linreg_slope = float('NaN')
+        else:
+            start = i + 1 - n
+            sum_y = 0.0
+            sum_xy = 0.0
+            for x in range(n):
+                y = df[price][start + x]
+                sum_y += y
+                sum_xy += x * y
+            linreg_slope = (n * sum_xy - sum_x * sum_y) / denominator
+        linreg_slope_list.append(linreg_slope)
+    return linreg_slope_list
+
 def LSMA(df, n, price='Close'):
     """
     Least Squares Moving Average
