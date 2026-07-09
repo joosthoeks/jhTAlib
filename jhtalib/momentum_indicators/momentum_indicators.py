@@ -470,3 +470,50 @@ def KST(df, r1=10, r2=15, r3=20, r4=30, n1=10, n2=10, n3=10, n4=15, ns=9, price=
             signal = sum(kst_list[i + 1 - ns:i + 1]) / ns
         kst_dict['signal'].append(signal)
     return kst_dict
+
+def TSI(df, n_long=25, n_short=13, n_signal=13, price='Close'):
+    """
+    True Strength Index
+    William Blau's double smoothed momentum oscillator that swings between
+    -100 and +100, plus a signal line.
+    Theory: raw bar-to-bar momentum (close minus previous close) is far
+    too noisy to trade. Blau smooths it twice with Exponential Moving
+    Averages (first over n_long, then over n_short bars) and divides by
+    the equally double smoothed absolute momentum. The division rescales
+    the result to -100..+100, so it works like an RSI but with much less
+    noise: values above zero mean buyers are in control, crosses of the
+    signal line (an n_signal EMA of the TSI) give entries, and
+    divergences against price warn of reversals.
+    Returns: dict of lists of floats = jhta.TSI(df, n_long=25, n_short=13, n_signal=13, price='Close')
+    with keys 'tsi' and 'signal'
+    Source: https://school.stockcharts.com/doku.php?id=technical_indicators:true_strength_index
+    """
+    tsi_dict = {'tsi': [], 'signal': []}
+    mom_dict = {'mom': [], 'absmom': []}
+    for i in range(len(df[price])):
+        if i < 1:
+            mom = float('NaN')
+        else:
+            mom = df[price][i] - df[price][i - 1]
+        mom_dict['mom'].append(mom)
+        mom_dict['absmom'].append(abs(mom))
+    smooth_dict = {
+        'mom': jhta.EMA(mom_dict, n_long, 'mom'),
+        'absmom': jhta.EMA(mom_dict, n_long, 'absmom')
+    }
+    double_dict = {
+        'mom': jhta.EMA(smooth_dict, n_short, 'mom'),
+        'absmom': jhta.EMA(smooth_dict, n_short, 'absmom')
+    }
+    tsi_list = []
+    for i in range(len(df[price])):
+        double_mom = double_dict['mom'][i]
+        double_absmom = double_dict['absmom'][i]
+        if double_absmom != double_absmom or double_absmom == 0:
+            tsi = float('NaN')
+        else:
+            tsi = 100 * double_mom / double_absmom
+        tsi_list.append(tsi)
+    tsi_dict['tsi'] = tsi_list
+    tsi_dict['signal'] = jhta.EMA({'tsi': tsi_list}, n_signal, 'tsi')
+    return tsi_dict
