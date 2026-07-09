@@ -69,10 +69,71 @@ def DX(df, n):
     Directional Movement Index
     """
 
-def MACD(df, price='Close'):
+def MACD(df, n_fast=12, n_slow=26, price='Close'):
     """
-    Moving Average Convergence/Divergence
+    Moving Average Convergence/Divergence - trend-following momentum indicator.
+    Theory: MACD line = EMA(n_fast) - EMA(n_slow), using true exponential moving
+            averages with smoothing factor alpha = 2 / (period + 1), each EMA
+            seeded by the simple moving average of its first 'period' values.
+            Signal line = EMA(9) of the MACD line. Histogram = MACD - Signal.
+            Positive MACD is bullish, negative is bearish; the histogram tracks
+            the momentum of the convergence/divergence.
+    Returns: dict of lists = jhta.MACD(df, n_fast=12, n_slow=26, price='Close')
+             keys: 'macd' (MACD line), 'signal' (EMA(9) of MACD), 'histogram' (macd - signal)
+    Source: Gerald Appel, "Technical Analysis: Power Tools for Active Investors";
+            https://www.investopedia.com/terms/m/macd.asp
     """
+    def _ema_series(values, period):
+        # True EMA over a list that may carry leading NaNs.
+        # NaN warm-up until 'period' valid values are seen; the first EMA value
+        # is the SMA of those first 'period' values, then recursive smoothing.
+        length = len(values)
+        out = [float('NaN')] * length
+        first = None
+        for idx in range(length):
+            v = values[idx]
+            if isinstance(v, float) and v != v:
+                continue
+            first = idx
+            break
+        if first is None:
+            return out
+        seed_idx = first + period - 1
+        if seed_idx >= length:
+            return out
+        alpha = 2.0 / (period + 1)
+        prev = sum(values[first:first + period]) / period
+        out[seed_idx] = prev
+        for idx in range(seed_idx + 1, length):
+            prev = values[idx] * alpha + prev * (1.0 - alpha)
+            out[idx] = prev
+        return out
+
+    n_signal = 9
+    ema_fast = _ema_series(df[price], n_fast)
+    ema_slow = _ema_series(df[price], n_slow)
+
+    macd_line = []
+    for i in range(len(df[price])):
+        if i + 1 < n_slow:
+            macd_line.append(float('NaN'))
+        else:
+            macd_line.append(ema_fast[i] - ema_slow[i])
+
+    signal_line = _ema_series(macd_line, n_signal)
+
+    histogram = []
+    for i in range(len(macd_line)):
+        m = macd_line[i]
+        s = signal_line[i]
+        if isinstance(m, float) and m != m:
+            histogram.append(float('NaN'))
+        elif isinstance(s, float) and s != s:
+            histogram.append(float('NaN'))
+        else:
+            histogram.append(m - s)
+
+    return {'macd': macd_line, 'signal': signal_line, 'histogram': histogram}
 
 def MACDEXT(df, price='Close'):
     """
