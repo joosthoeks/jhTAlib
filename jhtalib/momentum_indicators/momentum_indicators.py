@@ -941,6 +941,30 @@ def PPO(df, n_fast=12, n_slow=26, price='Close'):
 
     return {'ppo': ppo_line, 'signal': signal_line, 'histogram': histogram}
 
+def PRICE_ACCELERATION(df, price='Close'):
+    """
+    Price Acceleration - second difference of price, measuring how fast the bar-to-bar price change itself is changing
+    Theory: the first difference (p[i] - p[i-1]) is the discrete velocity of price; the second
+            difference (p[i] - p[i-1]) - (p[i-1] - p[i-2]) = p[i] - 2*p[i-1] + p[i-2] is its
+            discrete acceleration. In simple terms: positive values mean the price move is
+            speeding up in the upward direction (or an existing decline is slowing down), while
+            negative values mean upward momentum is fading or a decline is intensifying. It is
+            the finite-difference analogue of the second derivative from calculus. The first two
+            values are NaN because two prior bars are needed.
+    Returns: list of floats = jhta.PRICE_ACCELERATION(df, price='Close')
+    Source: Boole, G. (1860). A Treatise on the Calculus of Finite Differences. Macmillan;
+            https://en.wikipedia.org/wiki/Finite_difference
+    """
+    prices = df[price]
+    acceleration_list = []
+    for i in range(len(prices)):
+        if i < 2:
+            acceleration = float('NaN')
+        else:
+            acceleration = (prices[i] - prices[i - 1]) - (prices[i - 1] - prices[i - 2])
+        acceleration_list.append(acceleration)
+    return acceleration_list
+
 def RMI(df, n, price='Close'):
     """
     Relative Momentum Index
