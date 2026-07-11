@@ -182,6 +182,73 @@ def HMA(df, n, price='Close'):
         hma_list.append(hma)
     return hma_list
 
+def ICHIMOKU(df, n_tenkan=9, n_kijun=26, n_senkou=52, high='High', low='Low', close='Close'):
+    """
+    Ichimoku Cloud (Ichimoku Kinko Hyo)
+    A complete Japanese trend system that shows trend direction, momentum
+    and support/resistance in one view, using five lines built from period
+    highs and lows.
+    Theory: each line is the midpoint of the highest high and lowest low
+    over its lookback, which represents the equilibrium of that period.
+    Price above the cloud (the area between Senkou Span A and B) means an
+    uptrend, below it a downtrend, inside it a transition. The Tenkan-sen /
+    Kijun-sen cross gives entry signals and the cloud ahead of price acts
+    as projected support and resistance.
+    All lists have the same length as the input data: 'senkou_span_a' and
+    'senkou_span_b' are already shifted n_kijun bars forward (the value at
+    index i was calculated n_kijun bars earlier, as plotted on a chart) and
+    'chikou_span' is the close shifted n_kijun bars backward (the value at
+    index i is the close of bar i + n_kijun).
+    Returns: dict of lists of floats = jhta.ICHIMOKU(df, n_tenkan=9, n_kijun=26, n_senkou=52, high='High', low='Low', close='Close')
+    with keys 'tenkan_sen', 'kijun_sen', 'senkou_span_a', 'senkou_span_b' and 'chikou_span'
+    Source: https://www.tradingview.com/support/solutions/43000589152-ichimoku-cloud/
+    """
+    ichimoku_dict = {'tenkan_sen': [], 'kijun_sen': [], 'senkou_span_a': [], 'senkou_span_b': [], 'chikou_span': []}
+    tenkan_list = []
+    kijun_list = []
+    for i in range(len(df[close])):
+        # Tenkan-sen (Conversion Line):
+        if i + 1 < n_tenkan:
+            tenkan = float('NaN')
+        else:
+            start = i + 1 - n_tenkan
+            end = i + 1
+            tenkan = (max(df[high][start:end]) + min(df[low][start:end])) / 2
+        tenkan_list.append(tenkan)
+        # Kijun-sen (Base Line):
+        if i + 1 < n_kijun:
+            kijun = float('NaN')
+        else:
+            start = i + 1 - n_kijun
+            end = i + 1
+            kijun = (max(df[high][start:end]) + min(df[low][start:end])) / 2
+        kijun_list.append(kijun)
+    for i in range(len(df[close])):
+        ichimoku_dict['tenkan_sen'].append(tenkan_list[i])
+        ichimoku_dict['kijun_sen'].append(kijun_list[i])
+        # Senkou Span A (Leading Span A), shifted n_kijun bars forward:
+        j = i - n_kijun
+        if j < 0 or tenkan_list[j] != tenkan_list[j] or kijun_list[j] != kijun_list[j]:
+            senkou_a = float('NaN')
+        else:
+            senkou_a = (tenkan_list[j] + kijun_list[j]) / 2
+        ichimoku_dict['senkou_span_a'].append(senkou_a)
+        # Senkou Span B (Leading Span B), shifted n_kijun bars forward:
+        if j < 0 or j + 1 < n_senkou:
+            senkou_b = float('NaN')
+        else:
+            start = j + 1 - n_senkou
+            end = j + 1
+            senkou_b = (max(df[high][start:end]) + min(df[low][start:end])) / 2
+        ichimoku_dict['senkou_span_b'].append(senkou_b)
+        # Chikou Span (Lagging Span), close shifted n_kijun bars backward:
+        if i + n_kijun < len(df[close]):
+            chikou = df[close][i + n_kijun]
+        else:
+            chikou = float('NaN')
+        ichimoku_dict['chikou_span'].append(chikou)
+    return ichimoku_dict
+
 def KAMA(df, n):
     """
     Kaufman Adaptive Moving Average
