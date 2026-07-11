@@ -1054,10 +1054,56 @@ def TRIX(df, n=15, price='Close'):
         result[i] = 100 * (cur - prev) / prev
     return result
 
-def ULTOSC(df):
+def ULTOSC(df, p1=7, p2=14, p3=28, high='High', low='Low', close='Close'):
     """
-    Ultimate Oscillator
+    Ultimate Oscillator - Multi-period momentum indicator
+    Theory: Weighted combination of 3 stochastic calculations (7, 14, 28 periods).
+            0-100 scale. >70 = overbought, <30 = oversold. Uses True Range normalization.
+    Returns: list of floats (0-100 scale, NaN for periods < longest)
+    Source: Larry Williams - Ultimate Oscillator methodology
     """
+    result = []
+
+    for i in range(len(df[close])):
+        if i < p3:
+            result.append(float('NaN'))
+            continue
+
+        # Calculate for each period
+        uos_values = []
+
+        for period in [p1, p2, p3]:
+            start = i + 1 - period
+            tr_sum = 0
+            bp_sum = 0
+
+            for j in range(start, i + 1):
+                h = df[high][j]
+                l = df[low][j]
+                c = df[close][j]
+                prev_c = df[close][j-1]
+
+                # True Range
+                tr = max(h - l, abs(h - prev_c), abs(l - prev_c))
+                tr_sum += tr
+
+                # Buying Pressure
+                bp = c - min(l, prev_c)
+                bp_sum += bp
+
+            if tr_sum > 0:
+                raw = bp_sum / tr_sum
+            else:
+                raw = 0
+
+            uos_values.append(raw)
+
+        # Weighted average: 4*p1 + 2*p2 + p3
+        uo = 100 * (4 * uos_values[0] + 2 * uos_values[1] + uos_values[2]) / 7
+
+        result.append(uo)
+
+    return result
 
 def VHF(df, n, price='Close'):
     """
