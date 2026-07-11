@@ -97,10 +97,48 @@ def CDLDRAGONFLYDOJI(df):
     Dragonfly Doji
     """
 
-def CDLENGULFING(df):
+def CDLENGULFING(df, open='Open', high='High', low='Low', close='Close'):
     """
-    Engulfing Pattern
+    Engulfing - Two-candle reversal pattern
+    Second candle completely engulfs (contains) the first candle's body
+    Theory: First candle shows trend direction with normal body. Second candle is larger
+            and completely contains first candle's open/close range. Shows reversal of momentum.
+            Bullish: down then up. Bearish: up then down.
+    Returns: list of -1/0/1 (bearish/none/bullish)
+    Source: Steve Nison - Japanese Candlestick Charting Techniques
     """
+    result = []
+    for i in range(len(df[close])):
+        if i < 1:
+            result.append(0)
+            continue
+
+        # Previous (first) candle
+        prev_o = df[open][i-1]
+        prev_c = df[close][i-1]
+        prev_body_open = min(prev_o, prev_c)
+        prev_body_close = max(prev_o, prev_c)
+
+        # Current (second) candle
+        o = df[open][i]
+        c = df[close][i]
+        body_open = min(o, c)
+        body_close = max(o, c)
+
+        # Engulfing criteria: 2nd candle engulfs 1st candle's body
+        if body_open < prev_body_open and body_close > prev_body_close:
+            # Bullish engulfing: prev down (c < o), current up (c > o)
+            if prev_c < prev_o and c > o:
+                result.append(1)  # Bullish
+            # Bearish engulfing: prev up (c > o), current down (c < o)
+            elif prev_c > prev_o and c < o:
+                result.append(-1)  # Bearish
+            else:
+                result.append(0)
+        else:
+            result.append(0)
+
+    return result
 
 def CDLEVENINGDOJISTAR(df):
     """
