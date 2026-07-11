@@ -105,6 +105,62 @@ def INERTIA(df, n, price='Close'):
     rvioc = jhta.RVIOC(df, n, price)
     return jhta.LSMA({'rvioc': rvioc}, n, 'rvioc')
 
+def KC(df, n=20, f=2, high='High', low='Low', close='Close'):
+    """
+    Keltner Channels: a volatility envelope of an EMA midline with bands set a
+    multiple of the Average True Range above and below it.
+
+    Theory: like Bollinger Bands, Keltner Channels widen when the market gets
+    more volatile and tighten when it calms down, but they measure volatility
+    with Wilder's Average True Range instead of the standard deviation, which
+    makes them smoother and less jumpy. The midline is an n-period Exponential
+    Moving Average of the close; the upper and lower bands sit f * ATR(n) above
+    and below it. A close outside a band signals an unusually strong move: a
+    breakout when a trend starts, or an overbought/oversold extreme in a range.
+    The ATR here is a genuine Wilder-smoothed n-period average (seeded by the
+    simple average of the first n true ranges, then ATR = (prev_ATR*(n-1) +
+    TR)/n), so a volatility spike is retained across the whole n-bar window
+    rather than being discarded after two bars.
+
+    Returns: dict of lists of floats = jhta.KC(df, n=20, f=2, high='High', low='Low', close='Close')
+    with keys 'midband', 'upperband' and 'lowerband'
+    Source: J. Welles Wilder Jr., New Concepts in Technical Trading Systems (1978);
+    https://school.stockcharts.com/doku.php?id=technical_indicators:keltner_channels
+    """
+    kc_dict = {'midband': [], 'upperband': [], 'lowerband': []}
+    ema_list = jhta.EMA(df, n, close)
+    tr_list = jhta.TRANGE(df, high, low, close)
+    # Wilder-smoothed Average True Range: a true n-period average, not a 2-bar blend.
+    atr_list = []
+    atr = float('NaN')
+    for i in range(len(df[close])):
+        if i + 1 < n:
+            atr_list.append(float('NaN'))
+            continue
+        if atr != atr:
+            # Seed: simple average of the first n true ranges (TR[0] is NaN, so
+            # average the valid true ranges available in the seeding window).
+            window = tr_list[i - n + 1:i + 1]
+            valid = [tr for tr in window if tr == tr]
+            atr = sum(valid) / len(valid)
+        else:
+            atr = (atr * (n - 1) + tr_list[i]) / n
+        atr_list.append(atr)
+    for i in range(len(df[close])):
+        midband = ema_list[i]
+        atr = atr_list[i]
+        if midband != midband or atr != atr:
+            midband = float('NaN')
+            upperband = float('NaN')
+            lowerband = float('NaN')
+        else:
+            upperband = midband + f * atr
+            lowerband = midband - f * atr
+        kc_dict['midband'].append(midband)
+        kc_dict['upperband'].append(upperband)
+        kc_dict['lowerband'].append(lowerband)
+    return kc_dict
+
 def NATR(df, n):
     """
     Normalized Average True Range
