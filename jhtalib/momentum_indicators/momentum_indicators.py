@@ -994,10 +994,65 @@ def STOCHRSI(df, n=14, price='Close'):
 
     return {'k_line': k_list, 'd_line': d_list}
 
-def TRIX(df, n, price='Close'):
+def TRIX(df, n=15, price='Close'):
     """
-    1-day Rate-Of-Change (ROC) of a Triple Smooth EMA
+    TRIX - 1-day rate of change of a triple exponential moving average.
+
+    Theory: TRIX is the percentage rate of change of a triple-smoothed
+            exponential moving average (an EMA of an EMA of an EMA) of price.
+            Triple smoothing filters out cycles shorter than n periods, so
+            TRIX oscillates around zero; zero-line crossovers and divergences
+            signal trend changes. With smoothing factor alpha = 2 / (n + 1):
+                ema1 = EMA(price, n)
+                ema2 = EMA(ema1,  n)
+                ema3 = EMA(ema2,  n)
+                TRIX = 100 * (ema3[i] - ema3[i - 1]) / ema3[i - 1]
+    Returns: list of floats = jhta.TRIX(df, n=15, price='Close')
+             (NaN during the 3 * n - 1 bar warm-up, output length == input length)
+    Source: Jack K. Hutson, "Good TRIX", Technical Analysis of Stocks &
+            Commodities magazine (1983);
+            https://en.wikipedia.org/wiki/Trix_(technical_analysis)
     """
+    close = df[price]
+    size = len(close)
+    alpha = 2 / (n + 1)
+
+    def _ema(values):
+        # EMA over a series that may carry leading NaNs (from a prior EMA
+        # stage). Warm up until n valid inputs have been seen, seed the
+        # recursion with that n-th valid value, then apply standard EMA
+        # smoothing. Output length == len(values); NaN while warming up.
+        out = [float('NaN')] * len(values)
+        ema = float('NaN')
+        count = 0
+        for i in range(len(values)):
+            v = values[i]
+            if v != v:  # NaN input -> still warming up
+                continue
+            count += 1
+            if count < n:
+                continue
+            if ema != ema:  # seed at the n-th valid input
+                ema = v
+            else:
+                ema = alpha * v + (1 - alpha) * ema
+            out[i] = ema
+        return out
+
+    ema1 = _ema(close)
+    ema2 = _ema(ema1)
+    ema3 = _ema(ema2)
+
+    result = [float('NaN')] * size
+    for i in range(size):
+        if i + 1 < n * 3:  # documented 3 * n - 1 bar warm-up
+            continue
+        prev = ema3[i - 1]
+        cur = ema3[i]
+        if prev != prev or cur != cur or prev == 0:
+            continue
+        result[i] = 100 * (cur - prev) / prev
+    return result
 
 def ULTOSC(df):
     """
