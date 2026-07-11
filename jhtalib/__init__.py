@@ -15,7 +15,12 @@ __author_email__ = 'joosthoeks@gmail.com'
 # Import Third-Party:
 
 # Import Homebrew:
+from .crypto_indicators import *
+from .cycle_timing import *
 from .decorators import *
+from .demark_indicators import *
+from .fama_french import *
+from .gann_indicators import *
 from .helpers import *
 
 
@@ -28,13 +33,17 @@ from .event_driven import *
 from .experimental import *
 from .general import *
 from .information import *
+from .market_profile import *
 from .math_functions import *
 from .momentum_indicators import *
 from .money_management import *
 from .overlap_studies import *
 from .pattern_recognition import *
+from .polynomial_features import *
 from .price_transform import *
 from .statistic_functions import *
+from .statistical_indicators import *
+from .time_series_forecast import *
 from .uncategorised import *
 from .volatility_indicators import *
 from .volume_indicators import *
