@@ -184,10 +184,48 @@ def BOP(df, open='Open', high='High', low='Low', close='Close'):
 
     return result
 
-def CCI(df, n):
+def CCI(df, n, high='High', low='Low', close='Close'):
     """
-    Commodity Channel Index
+    Commodity Channel Index - Measures deviation from average price
+    Theory: CCI = (Typical Price - SMA of TP) / (0.015 * Mean Deviation).
+            > +100 = overbought (strong uptrend), < -100 = oversold (strong downtrend). 0 = neutral.
+    Returns: list of floats (NaN for periods < n)
+    Source: Donald Lambert - Commodity Trading Systems
     """
+    result = []
+
+    for i in range(len(df[close])):
+        if i + 1 < n:
+            result.append(float('NaN'))
+            continue
+
+        start = i + 1 - n
+        end = i + 1
+
+        # Calculate typical price for period
+        tp_list = []
+        for j in range(start, end):
+            tp = (df[high][j] + df[low][j] + df[close][j]) / 3
+            tp_list.append(tp)
+
+        # SMA of TP
+        sma_tp = sum(tp_list) / n
+
+        # Mean deviation
+        mean_dev = sum(abs(tp - sma_tp) for tp in tp_list) / n
+
+        # Current TP
+        current_tp = (df[high][i] + df[low][i] + df[close][i]) / 3
+
+        # CCI
+        if mean_dev == 0:
+            cci = 0
+        else:
+            cci = (current_tp - sma_tp) / (0.015 * mean_dev)
+
+        result.append(cci)
+
+    return result
 
 def CMO(df, n, price='Close'):
     """
