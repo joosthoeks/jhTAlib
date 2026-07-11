@@ -7,10 +7,78 @@
 import jhtalib as jhta
 
 
-def ADX(df, n):
+def ADX(df, n, high='High', low='Low', close='Close'):
     """
     Average Directional Movement Index
+    Measures trend strength on a 0-100 scale regardless of trend direction.
+    Theory: True Range, +DM and -DM are Wilder-smoothed (first value = n-bar sum,
+            then smoothed[i] = smoothed[i-1] - smoothed[i-1] / n + value[i]).
+            +DI = 100 * smoothed(+DM) / smoothed(TR),
+            -DI = 100 * smoothed(-DM) / smoothed(TR),
+            DX  = 100 * |+DI - -DI| / (+DI + -DI).
+            ADX is the Wilder-smoothed DX: the first ADX (at index 2*n-1) is the mean
+            of the first n DX values, then ADX[i] = (ADX[i-1] * (n - 1) + DX[i]) / n.
+            ADX > 25 signals a strong trend; ADX < 20 signals a weak or ranging market.
+    Returns: list of floats (ADX values 0-100, NaN during the warm-up before index 2*n-1)
+    Source: J. Welles Wilder Jr., New Concepts in Technical Trading Systems (1978)
     """
+    highs = df[high]
+    lows = df[low]
+    closes = df[close]
+    length = len(closes)
+
+    # True Range, +DM, -DM (defined from the second bar onward)
+    tr_list = [float('NaN')]
+    pdm_list = [float('NaN')]
+    mdm_list = [float('NaN')]
+    for i in range(1, length):
+        tr = max(highs[i] - lows[i], abs(highs[i] - closes[i - 1]), abs(lows[i] - closes[i - 1]))
+        up_move = highs[i] - highs[i - 1]
+        down_move = lows[i - 1] - lows[i]
+        pdm = up_move if (up_move > down_move and up_move > 0) else .0
+        mdm = down_move if (down_move > up_move and down_move > 0) else .0
+        tr_list.append(tr)
+        pdm_list.append(pdm)
+        mdm_list.append(mdm)
+
+    # Wilder smoothing of TR, +DM, -DM and the resulting DX series
+    dx_list = [float('NaN')] * length
+    smoothed_tr = .0
+    smoothed_pdm = .0
+    smoothed_mdm = .0
+    for i in range(1, length):
+        if i < n:
+            continue
+        if i == n:
+            smoothed_tr = sum(tr_list[1:n + 1])
+            smoothed_pdm = sum(pdm_list[1:n + 1])
+            smoothed_mdm = sum(mdm_list[1:n + 1])
+        else:
+            smoothed_tr = smoothed_tr - smoothed_tr / n + tr_list[i]
+            smoothed_pdm = smoothed_pdm - smoothed_pdm / n + pdm_list[i]
+            smoothed_mdm = smoothed_mdm - smoothed_mdm / n + mdm_list[i]
+        if smoothed_tr != 0:
+            pdi = 100 * smoothed_pdm / smoothed_tr
+            mdi = 100 * smoothed_mdm / smoothed_tr
+        else:
+            pdi = .0
+            mdi = .0
+        di_sum = pdi + mdi
+        dx_list[i] = 100 * abs(pdi - mdi) / di_sum if di_sum != 0 else .0
+
+    # ADX: first value = mean of first n DX values (index 2*n-1), then Wilder-smoothed
+    adx_list = [float('NaN')] * length
+    adx = float('NaN')
+    for i in range(length):
+        if i + 1 < 2 * n:
+            continue
+        if i + 1 == 2 * n:
+            adx = sum(dx_list[n:2 * n]) / n
+        else:
+            adx = (adx * (n - 1) + dx_list[i]) / n
+        adx_list[i] = adx
+
+    return adx_list
 
 def ADXR(df, n):
     """
