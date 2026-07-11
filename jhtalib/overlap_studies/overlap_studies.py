@@ -53,6 +53,37 @@ def DEMA(df, n):
     Double Exponential Moving Average
     """
 
+def DONCHIAN(df, n=20, high='High', low='Low'):
+    """
+    Donchian Channels
+    A price channel made of the highest high and the lowest low of the last
+    n bars, plus a middle line halfway between them.
+    Theory: made famous by Richard Donchian and the Turtle Traders. If
+    price touches the upper band it is trading at an n-bar high, which
+    signals strength and is often used as a breakout entry; the lower band
+    marks an n-bar low. The channel width is also a simple volatility
+    measure, and the middle line acts as a slow trend reference.
+    Returns: dict of lists of floats = jhta.DONCHIAN(df, n=20, high='High', low='Low')
+    with keys 'upperband', 'midband' and 'lowerband'
+    Source: https://www.tradingview.com/support/solutions/43000502253-donchian-channels-dc/
+    """
+    donchian_dict = {'upperband': [], 'midband': [], 'lowerband': []}
+    for i in range(len(df[high])):
+        if i + 1 < n:
+            upperband = float('NaN')
+            midband = float('NaN')
+            lowerband = float('NaN')
+        else:
+            start = i + 1 - n
+            end = i + 1
+            upperband = max(df[high][start:end])
+            lowerband = min(df[low][start:end])
+            midband = (upperband + lowerband) / 2
+        donchian_dict['upperband'].append(upperband)
+        donchian_dict['midband'].append(midband)
+        donchian_dict['lowerband'].append(lowerband)
+    return donchian_dict
+
 def EMA(df, n, price='Close'):
     """
     Exponential Moving Average
