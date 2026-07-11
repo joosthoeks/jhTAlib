@@ -900,10 +900,99 @@ def STOCHF(df, n=14, high='High', low='Low', close='Close'):
 
     return {'%k': k_list, '%d': d_list}
 
-def STOCHRSI(df, n, price='Close'):
+def STOCHRSI(df, n=14, price='Close'):
     """
-    Stochastic Relative Strength Index
+    Stochastic oscillator applied to RSI values instead of price.
+
+    Theory: StochRSI = (RSI - lowest RSI over the lookback) /
+            (highest RSI - lowest RSI over the lookback), scaled to 0..100.
+            It measures where the current RSI sits within its own recent
+            range, making it more sensitive to momentum extremes than a
+            price-based Stochastic. When the RSI range over the window is
+            effectively flat (highest == lowest within floating-point
+            tolerance) the oscillator is undefined; by convention it is
+            reported as the neutral midpoint 50.0 rather than a spurious
+            0 or 100 produced by 1-ulp rounding noise. The same neutral-midpoint
+            convention applies to a fully flat price series, where RSI itself
+            (0/0) is undefined.
+    Returns: dict of lists = jhta.STOCHRSI(df, n=14, price='Close'),
+             {'k_line': [...], 'd_line': [...]}, each length == len(df[price]),
+             NaN-padded during the warm-up.
+    Source: Tushar S. Chande & Stanley Kroll, "The New Technical Trader" (1994).
     """
+    # Inline Wilder RSI (identical recursion to the library RSI) with a
+    # flat-market guard: 100*upavg/(upavg+dnavg) is 0/0 when price never
+    # changes, so a constant series must yield the neutral midpoint 50.0
+    # instead of raising ZeroDivisionError.
+    prices = df[price]
+    rsi_list = []
+    upavg = .0
+    dnavg = .0
+    for j in range(len(prices)):
+        if j + 1 < n:
+            rsi = float('NaN')
+        else:
+            if prices[j] > prices[j - 1]:
+                up = prices[j] - prices[j - 1]
+                dn = 0
+            else:
+                up = 0
+                dn = prices[j - 1] - prices[j]
+            upavg = (upavg * (n - 1) + up) / n
+            dnavg = (dnavg * (n - 1) + dn) / n
+            total = upavg + dnavg
+            if total == 0:
+                rsi = 50.0
+            else:
+                rsi = 100 * upavg / total
+        rsi_list.append(rsi)
+
+    k_list = []
+    d_list = []
+
+    # Stochastic lookback over the RSI series (classic StochRSI uses 14;
+    # kept fixed to preserve the library's verified stochastic-of-RSI math).
+    stoch_period = 14
+    # Relative tolerance for treating the RSI window as flat. A strict uptrend
+    # pins RSI at 100 but exact arithmetic can round a single bar to
+    # 100.00000000000001, giving a window range of ~1e-14; an exact
+    # highest == lowest test would miss that and misread the strongest
+    # possible uptrend as maximally oversold (%K = 0). The tolerance closes
+    # that hole.
+    tol_factor = 1e-12
+
+    for i in range(len(rsi_list)):
+        if i + 1 < stoch_period or (isinstance(rsi_list[i], float) and rsi_list[i] != rsi_list[i]):
+            k_list.append(float('NaN'))
+        else:
+            start = i + 1 - stoch_period
+            end = i + 1
+            valid_rsi = [r for r in rsi_list[start:end] if isinstance(r, float) and r == r]
+
+            if valid_rsi:
+                highest_rsi = max(valid_rsi)
+                lowest_rsi = min(valid_rsi)
+
+                if highest_rsi - lowest_rsi <= tol_factor * max(1.0, abs(highest_rsi)):
+                    # Flat RSI window (within float tolerance) -> neutral.
+                    k = 50.0
+                else:
+                    k = 100 * (rsi_list[i] - lowest_rsi) / (highest_rsi - lowest_rsi)
+            else:
+                k = float('NaN')
+
+            k_list.append(k)
+
+    # Calculate %D (3-period SMA of %K)
+    for i in range(len(k_list)):
+        if i < 2 or (isinstance(k_list[i], float) and k_list[i] != k_list[i]):
+            d_list.append(float('NaN'))
+        else:
+            valid_k = [k for k in k_list[i - 2:i + 1] if isinstance(k, float) and k == k]
+            d = sum(valid_k) / len(valid_k) if valid_k else float('NaN')
+            d_list.append(d)
+
+    return {'k_line': k_list, 'd_line': d_list}
 
 def TRIX(df, n, price='Close'):
     """
