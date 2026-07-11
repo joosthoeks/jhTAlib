@@ -58,6 +58,60 @@ def AVOLA(df, n=30, na=252, price='Close'):
         avola_list.append(avola)
     return avola_list
 
+def CHANDELIER(df, n=22, f=3, high='High', low='Low', close='Close'):
+    """
+    Chandelier Exit
+    Charles Le Beau's volatility based trailing stop: for long positions
+    the stop hangs f Average True Ranges below the highest high of the
+    last n bars, for short positions it sits f Average True Ranges above
+    the lowest low of the last n bars.
+    Theory: a good trailing stop must give a trade room to breathe in
+    volatile markets and tighten up in quiet ones. By anchoring the stop
+    to the extreme of the move (like a chandelier hanging from the
+    ceiling) and setting the distance in Average True Ranges, the exit
+    adapts automatically to volatility and only gets hit when the market
+    gives back an abnormal amount, which usually means the trend is over.
+    The Average True Range is Wilder-smoothed (RMA): each bar carries the
+    PREVIOUS ATR forward -- ATR[i] = (ATR[i - 1] * (n - 1) + TR[i]) / n,
+    seeded by the simple average of the warm-up true ranges -- so a single
+    volatility spike keeps widening the stop for many bars instead of
+    being forgotten after one, which is the whole point of the indicator.
+    Returns: dict of lists of floats = jhta.CHANDELIER(df, n=22, f=3, high='High', low='Low', close='Close')
+    with keys 'long' (exit for long positions) and 'short' (exit for short positions)
+    Source: https://school.stockcharts.com/doku.php?id=technical_indicators:chandelier_exit
+    """
+    chandelier_dict = {'long': [], 'short': []}
+    tr_list = jhta.TRANGE(df, high, low, close)
+    # Wilder-smoothed ATR that recurses on the PREVIOUS ATR (not the
+    # previous true range); this is the fix that makes the exit honour a
+    # volatility spike for the full averaging window.
+    atr_list = []
+    atr = float('NaN')
+    for i in range(len(df[close])):
+        if i + 1 < n:
+            atr_list.append(float('NaN'))
+            continue
+        if atr != atr:
+            # first valid bar: seed with the simple average of the
+            # available (non-NaN) true ranges in the warm-up window
+            window = [tr for tr in tr_list[i + 1 - n:i + 1] if tr == tr]
+            atr = math.fsum(window) / len(window) if window else float('NaN')
+        else:
+            atr = ((atr * (n - 1)) + tr_list[i]) / n
+        atr_list.append(atr)
+    for i in range(len(df[close])):
+        if i + 1 < n:
+            long_exit = float('NaN')
+            short_exit = float('NaN')
+        else:
+            start = i + 1 - n
+            end = i + 1
+            long_exit = max(df[high][start:end]) - f * atr_list[i]
+            short_exit = min(df[low][start:end]) + f * atr_list[i]
+        chandelier_dict['long'].append(long_exit)
+        chandelier_dict['short'].append(short_exit)
+    return chandelier_dict
+
 def DVOLA(df, n=30, price='Close'):
     """
     Daily Volatility
