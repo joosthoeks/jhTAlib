@@ -397,10 +397,38 @@ def CDLINNECK(df):
     In-Neck Pattern
     """
 
-def CDLINVERTEDHAMMER(df):
+def CDLINVERTEDHAMMER(df, open='Open', high='High', low='Low', close='Close'):
     """
-    Inverted Hammer
+    Inverted Hammer - Bullish reversal pattern
+    Small body at bottom, long upper shadow (2x+ body length), small lower shadow
+    Theory: Appears in downtrend; indicates potential trend reversal. The long upper shadow
+            shows rejection of lower prices and buying interest. Signals bullish reversal
+            if followed by bullish candle.
+    Returns: list of -1/0/1 (bearish/none/bullish)
+    Source: Steve Nison - Japanese Candlestick Charting Techniques
     """
+    result = []
+    for i in range(len(df[close])):
+        if i < 1:
+            result.append(0)
+            continue
+
+        # Current candle measurements
+        o, h, l, c = df[open][i], df[high][i], df[low][i], df[close][i]
+        body = abs(c - o)
+        upper_shadow = h - max(o, c)
+        lower_shadow = min(o, c) - l
+
+        # Previous candle was downtrend
+        prev_c = df[close][i-1]
+
+        # Inverted hammer criteria: small body, long upper shadow (2x body), small lower shadow, in downtrend
+        if body > 0 and upper_shadow >= 2 * body and lower_shadow < body * 0.5 and prev_c > c:
+            result.append(1)  # Bullish
+        else:
+            result.append(0)
+
+    return result
 
 def CDLKICKING(df):
     """
