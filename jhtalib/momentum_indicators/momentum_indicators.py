@@ -229,8 +229,47 @@ def CCI(df, n, high='High', low='Low', close='Close'):
 
 def CMO(df, n, price='Close'):
     """
-    Chande Momentum Oscillator
+    Chande Momentum Oscillator - momentum via the net of up moves and down moves.
+    Theory: CMO = 100 * (sumUp - sumDown) / (sumUp + sumDown), computed over the
+            last n price changes ending at the current bar. A price change at bar
+            j is df[price][j] - df[price][j-1]; sumUp is the sum of the positive
+            changes, sumDown the sum of the absolute value of the negative changes.
+            The oscillator ranges from -100 (all down) to +100 (all up). Unlike
+            RSI, the up/down sums are not Wilder-smoothed. Because n changes require
+            n+1 prices, the first n bars are NaN (warm-up) and there is no
+            wraparound to index -1.
+    Returns: list of floats (-100 to +100) = jhta.CMO(df, n, price='Close')
+    Source: Tushar Chande and Stanley Kroll - The New Technical Trader (1994)
     """
+    result = []
+
+    for i in range(len(df[price])):
+        if i < n:
+            result.append(float('NaN'))
+            continue
+
+        start = i + 1 - n
+        end = i + 1
+
+        up_sum = .0
+        down_sum = .0
+
+        for j in range(start, end):
+            change = df[price][j] - df[price][j - 1]
+            if change > 0:
+                up_sum += change
+            else:
+                down_sum += abs(change)
+
+        total = up_sum + down_sum
+        if total == 0:
+            cmo = .0
+        else:
+            cmo = 100 * (up_sum - down_sum) / total
+
+        result.append(cmo)
+
+    return result
 
 def DX(df, n):
     """
