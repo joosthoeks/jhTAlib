@@ -570,10 +570,51 @@ def MOM(df, n, price='Close'):
         mom_list.append(mom)
     return mom_list
 
-def PLUS_DI(df, n):
+def PLUS_DI(df, n, high='High', low='Low', close='Close'):
     """
-    Plus Directional Indicator
+    Plus Directional Indicator (+DI), Wilder's uptrend-strength component.
+    Theory: Wilder's Directional Movement isolates genuine upward pressure.
+            For each bar, up_move = High[i] - High[i-1] and
+            down_move = Low[i-1] - Low[i]. The Plus Directional Movement is
+            +DM = up_move only when up_move > down_move AND up_move > 0,
+            otherwise +DM = 0 (an up-move that is outrun by a larger down-move
+            on an outside bar is NOT directional and must be discarded). The
+            +DM is accumulated over n bars and normalized by the accumulated
+            True Range, then scaled by 100. +DI is 0 in a strict downtrend and
+            large in a strong uptrend; it is used together with -DI/ADX/DX.
+    Returns: list of floats = jhta.PLUS_DI(df, n, high='High', low='Low', close='Close')
+             (NaN for the first n warm-up bars)
+    Source: J. Welles Wilder Jr. - New Concepts in Technical Trading Systems (1978)
     """
+    result = []
+
+    for i in range(len(df[close])):
+        if i < n:
+            result.append(float('NaN'))
+            continue
+
+        plus_dm_sum = 0
+        tr_sum = 0
+
+        for j in range(i - n + 1, i + 1):
+            up_move = df[high][j] - df[high][j - 1]
+            down_move = df[low][j - 1] - df[low][j]
+
+            # Wilder's directional-movement gate: an up-move counts only
+            # when it strictly exceeds the concurrent down-move and is positive.
+            if up_move > down_move and up_move > 0:
+                plus_dm_sum += up_move
+
+            h = df[high][j]
+            l = df[low][j]
+            c = df[close][j - 1]
+            tr = max(h - l, abs(h - c), abs(l - c))
+            tr_sum += tr
+
+        di = 100 * plus_dm_sum / tr_sum if tr_sum > 0 else 0
+        result.append(di)
+
+    return result
 
 def PLUS_DM(df, n):
     """
