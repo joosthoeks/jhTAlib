@@ -107,10 +107,51 @@ def APO(df, n_fast, n_slow, price='Close'):
         apo_list.append(apo)
     return apo_list
 
-def AROON(df, n):
+def AROON(df, n, high='High', low='Low'):
     """
-    Aroon
+    Aroon - Identifies trend direction (up vs down)
+    Returns periods since n-period high/low
+    Theory: AROON_UP = (n - periods since high) / n * 100. AROON_DOWN = (n - periods since low) / n * 100.
+            Values 0-100. High AroonUp (>70) = uptrend. High AroonDown (>70) = downtrend. Crossovers signal reversal.
+    Returns: dict with 'aroon_up' and 'aroon_down' lists (0-100 scale)
+    Source: Tushar Chande - The New Technical Trader
     """
+    aroon_up = []
+    aroon_down = []
+
+    for i in range(len(df[high])):
+        if i + 1 < n:
+            aroon_up.append(float('NaN'))
+            aroon_down.append(float('NaN'))
+            continue
+
+        start = i + 1 - n
+        end = i + 1
+        window_high = max(df[high][start:end])
+        window_low = min(df[low][start:end])
+
+        # Periods since highest high
+        periods_since_high = 0
+        for j in range(i, start - 1, -1):
+            if df[high][j] == window_high:
+                break
+            periods_since_high += 1
+
+        # Periods since lowest low
+        periods_since_low = 0
+        for j in range(i, start - 1, -1):
+            if df[low][j] == window_low:
+                break
+            periods_since_low += 1
+
+        # Calculate Aroon values
+        au = ((n - periods_since_high) / n) * 100
+        ad = ((n - periods_since_low) / n) * 100
+
+        aroon_up.append(au)
+        aroon_down.append(ad)
+
+    return {'aroon_up': aroon_up, 'aroon_down': aroon_down}
 
 def AROONOSC(df, n):
     """
