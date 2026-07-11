@@ -102,6 +102,55 @@ def EWMA(df, n, price='Close'):
     
     return ewma_list
 
+def HMA(df, n, price='Close'):
+    """
+    Hull Moving Average
+    A fast and smooth moving average developed by Alan Hull. It follows
+    price much more closely than a Simple or Exponential Moving Average of
+    the same length, while still filtering out most of the bar-to-bar noise.
+    Theory: every moving average lags behind price. The HMA reduces that lag
+    by taking a Weighted Moving Average over half the period, doubling it,
+    subtracting the full period Weighted Moving Average and finally
+    smoothing the result with a Weighted Moving Average over the square
+    root of the period: HMA = WMA(2 * WMA(n / 2) - WMA(n), sqrt(n)).
+    The doubled half-length average overshoots in the direction of the
+    trend by about as much as the full-length average lags, so the lag
+    largely cancels out.
+    Returns: list of floats = jhta.HMA(df, n, price='Close')
+    Source: https://alanhull.com/hull-moving-average
+    """
+    n_half = int(n / 2)
+    n_sqrt = int(n ** .5)
+    raw_list = []
+    for i in range(len(df[price])):
+        if i + 1 < n:
+            raw = float('NaN')
+        else:
+            # Weighted Moving Average over the last n_half prices:
+            wma_half = 0.0
+            for j in range(n_half):
+                wma_half += df[price][i - j] * (n_half - j)
+            wma_half = wma_half / (n_half * (n_half + 1) / 2)
+            # Weighted Moving Average over the last n prices:
+            wma_full = 0.0
+            for j in range(n):
+                wma_full += df[price][i - j] * (n - j)
+            wma_full = wma_full / (n * (n + 1) / 2)
+            raw = 2 * wma_half - wma_full
+        raw_list.append(raw)
+    hma_list = []
+    for i in range(len(df[price])):
+        if i + 1 < n + n_sqrt - 1:
+            hma = float('NaN')
+        else:
+            # Weighted Moving Average over the last n_sqrt raw values:
+            hma = 0.0
+            for j in range(n_sqrt):
+                hma += raw_list[i - j] * (n_sqrt - j)
+            hma = hma / (n_sqrt * (n_sqrt + 1) / 2)
+        hma_list.append(hma)
+    return hma_list
+
 def KAMA(df, n):
     """
     Kaufman Adaptive Moving Average
