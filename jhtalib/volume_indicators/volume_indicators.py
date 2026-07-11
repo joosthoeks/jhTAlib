@@ -153,6 +153,29 @@ def PVT(df, price='Close', volume='Volume'):
         pvt_list.append(pvt)
     return pvt_list
 
+def VROC(df, n, volume='Volume'):
+    """
+    Volume Rate of Change
+    The percentage change of volume compared to n bars ago:
+    ((volume / volume n bars ago) - 1) * 100.
+    Theory: significant price moves need fuel, and that fuel is volume. A
+    rising VROC shows that market participation is expanding, which
+    confirms breakouts and trend starts; a falling VROC shows interest
+    drying up, which often precedes stalls and reversals. Because volume
+    usually spikes at panic bottoms and euphoric tops, VROC extremes can
+    also mark exhaustion points. It is the volume twin of the price ROC.
+    Returns: list of floats = jhta.VROC(df, n, volume='Volume')
+    Source: https://www.investopedia.com/articles/technical/02/091002.asp
+    """
+    vroc_list = []
+    for i in range(len(df[volume])):
+        if i < n or df[volume][i - n] == 0:
+            vroc = float('NaN')
+        else:
+            vroc = ((df[volume][i] / df[volume][i - n]) - 1) * 100
+        vroc_list.append(vroc)
+    return vroc_list
+
 def VWAP(df, open='Open', high='High', low='Low', close='Close', volume='Volume'):
     """
     Volume Weighted Average Price
