@@ -640,3 +640,95 @@ def CDLXSIDEGAP3METHODS(df):
     Upside/Downside Gap Three Methods
     """
 
+def ZIGZAG(df, pct=5, high='High', low='Low'):
+    """
+    Zig Zag
+    Filters out price movements smaller than pct percent and connects the
+    remaining swing highs and swing lows with straight lines.
+    Theory: markets never move in straight lines, and most of the small
+    wiggles are noise. The Zig Zag ignores every countermove smaller than
+    the threshold, leaving only the significant swings. That makes the
+    underlying wave structure visible, which is useful for Elliott Wave
+    counts, chart patterns (double tops, head and shoulders) and for
+    measuring swing sizes. Note: the last leg is provisional and repaints
+    until a countermove larger than pct percent confirms it, so the Zig
+    Zag describes the past and must not be used as a realtime signal.
+    Returns: list of floats = jhta.ZIGZAG(df, pct=5, high='High', low='Low')
+    Source: https://school.stockcharts.com/doku.php?id=technical_indicators:zigzag
+    """
+    zigzag_list = [float('NaN') for i in range(len(df[high]))]
+    if len(df[high]) < 2:
+        return zigzag_list
+    factor = pct / 100.0
+    trend = 0
+    pivot_i = 0
+    pivot_price = float('NaN')
+    ext_hi_i = 0
+    ext_hi = df[high][0]
+    ext_lo_i = 0
+    ext_lo = df[low][0]
+    ext_i = 0
+    ext_price = float('NaN')
+    for i in range(1, len(df[high])):
+        if trend == 0:
+            # no swing found yet, track running extremes:
+            if df[high][i] > ext_hi:
+                ext_hi = df[high][i]
+                ext_hi_i = i
+            if df[low][i] < ext_lo:
+                ext_lo = df[low][i]
+                ext_lo_i = i
+            if df[low][i] <= ext_hi * (1 - factor):
+                # first pivot is a swing high, now in a down leg:
+                pivot_i = ext_hi_i
+                pivot_price = ext_hi
+                trend = -1
+                ext_i = i
+                ext_price = df[low][i]
+            elif df[high][i] >= ext_lo * (1 + factor):
+                # first pivot is a swing low, now in an up leg:
+                pivot_i = ext_lo_i
+                pivot_price = ext_lo
+                trend = 1
+                ext_i = i
+                ext_price = df[high][i]
+        elif trend == 1:
+            if df[high][i] > ext_price:
+                ext_price = df[high][i]
+                ext_i = i
+            elif df[low][i] <= ext_price * (1 - factor):
+                # swing high confirmed, draw the completed up leg:
+                steps = ext_i - pivot_i
+                if steps > 0:
+                    for j in range(steps + 1):
+                        zigzag_list[pivot_i + j] = pivot_price + (ext_price - pivot_price) * j / steps
+                else:
+                    zigzag_list[ext_i] = ext_price
+                pivot_i = ext_i
+                pivot_price = ext_price
+                trend = -1
+                ext_i = i
+                ext_price = df[low][i]
+        else:
+            if df[low][i] < ext_price:
+                ext_price = df[low][i]
+                ext_i = i
+            elif df[high][i] >= ext_price * (1 + factor):
+                # swing low confirmed, draw the completed down leg:
+                steps = ext_i - pivot_i
+                if steps > 0:
+                    for j in range(steps + 1):
+                        zigzag_list[pivot_i + j] = pivot_price + (ext_price - pivot_price) * j / steps
+                else:
+                    zigzag_list[ext_i] = ext_price
+                pivot_i = ext_i
+                pivot_price = ext_price
+                trend = 1
+                ext_i = i
+                ext_price = df[high][i]
+    # provisional last leg to the current extreme (repaints until confirmed):
+    if trend != 0 and ext_i > pivot_i:
+        steps = ext_i - pivot_i
+        for j in range(steps + 1):
+            zigzag_list[pivot_i + j] = pivot_price + (ext_price - pivot_price) * j / steps
+    return zigzag_list
